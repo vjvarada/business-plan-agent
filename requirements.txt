@@ -1,0 +1,19 @@
+# Auto-generated requirements for this agent workspace
+
+# Google APIs
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+gspread
+
+# Market Research
+google-search-results  # SerpAPI
+
+# Data Processing
+pandas
+
+# LLM APIs (optional - only for standalone mode)
+openai
+anthropic
+
+# Utilities
