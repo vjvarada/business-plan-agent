@@ -11,13 +11,25 @@
 5.  **05_Customer_Validation.md** - Honda/TVS/Toyota pilots + testimonials
 6.  **06_Go_To_Market_Strategy.md** - Dual GTM (Enterprise + SMB/PLG)
 7.  **07_Revenue_Model.md** - 5 revenue streams, $104M Y8, unit economics, pricing, **working capital**
-8.  **08_Team_Organization_Fixed_Costs.md** - Headcount plan, compensation, fixed costs by year
-9.  **09_Fundraising_Strategy.md** - Seed/A/B rounds, cap table, investor targeting, exit scenarios
+8.  **08_Team_Organization_Fixed_Costs.md** - Headcount plan, compensation, **R&D infrastructure & IP**, fixed costs by year
+9.  **09_Fundraising_Strategy.md** - Seed/A/B rounds, cap table, investor targeting, exit scenarios, **24% EBITDA**
 
 ### Planned Sections (To Be Created)
 
 10. **10_Financial_Projections.md** - 8-year P&L, cash flow, balance sheet, key metrics
 11. **11_Risk_Analysis.md** - Market, execution, competitive risks + mitigations
+
+## Key Financial Summary (Year 8)
+
+| Metric | Value |
+| --- | --- |
+| Revenue | $104M |
+| Gross Margin | 65% |
+| R&D Investment | $7.43M (7.1%) |
+| Fixed Costs (G&A) | $7.10M (6.8%) |
+| EBITDA | $24.82M (24%) |
+| GAAP Operating Income | $22.74M (22%) |
+| Rule of 40 | 59 (35% + 24%) |
 
 ## How to Use
 
@@ -28,4 +40,4 @@
 
 ---
 
-_Last Updated: January 25, 2026_
+_Last Updated: January 27, 2026_

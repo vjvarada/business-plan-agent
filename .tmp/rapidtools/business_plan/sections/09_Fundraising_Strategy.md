@@ -200,12 +200,14 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 - $82M cash by Y8 enables M&A or special dividends
 
 **Note on Operating CF:** Reflects comprehensive cost investments:
+- R&D infrastructure (CAD licenses, ML compute, data platform) → $650K/year by Y8
+- R&D partnerships & IP (university research, patents, prototypes) → $400K/year by Y8
 - Marketing programs (4.8% of revenue) + Trade shows ($800K/year)
 - Compliance (SOC2/ISO $100K/year) + Analyst relations ($150K/year)
 - Customer enablement ($250K/year) + Employee L&D ($350K/year)
 - Contingency reserves ($200K/year) + Stock-based compensation ($2.1M/year)
 
-These costs reduce Operating CF vs. earlier projections but build a more defensible, investor-ready business.
+These costs reduce Operating CF vs. earlier projections but build a more defensible, investor-ready business with strong IP moat.
 
 **EBITDA vs Operating Cash Flow Reconciliation:**
 
