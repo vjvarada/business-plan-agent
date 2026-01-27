@@ -7,7 +7,7 @@
 
 RapidTools plans a **capital-efficient fundraising path** aligned with key business milestones. Leveraging India's cost advantage, we require **60-70% less capital** than a comparable US-based startup to reach the same scale while maintaining adequate safety margins for market uncertainty.
 
-**Total Raise:** **$38M** across three rounds -> Path to **$104M ARR** by Year 8
+**Total Raise:** **$38M** across three rounds → Path to **$104M ARR** by Year 8
 
 | Round        | Amount | Timing | Pre-Money     | ARR at Raise | Key Milestone                    | Runway   |
 | ------------ | ------ | ------ | ------------- | ------------ | -------------------------------- | -------- |

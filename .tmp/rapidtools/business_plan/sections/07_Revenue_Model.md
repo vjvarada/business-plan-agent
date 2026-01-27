@@ -1362,7 +1362,7 @@ Software subscriptions are billed **annually upfront** (75% of customers) or mon
 
 - Source: Industry standard (a16z, Bessemer)
 - Key Data: LTV:CAC >3:1 is healthy; 5-10:1 is strong; 10-15:1 is excellent
-- Relevance: RapidTools 11.0:1 blended LTV:CAC reflects India beachhead cost advantage with conservative assumptions; expect normalization to 5-8:1 in global expansion
+- Relevance: RapidTools 11.7:1 blended LTV:CAC reflects India beachhead cost advantage with conservative assumptions; expect normalization to 5-8:1 in global expansion
 
 <a name="ref-22"></a> 22. **Switching Costs and Customer Lock-In - Intuit Case Study**
 

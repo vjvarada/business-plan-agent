@@ -895,7 +895,7 @@
 | **Dimension**             | **RapidTools**                            | **Trinckle FixtureMate**                  |
 | ------------------------- | ----------------------------------------- | ----------------------------------------- |
 | **Founded**               | 2024 (spin-out from Fracktal Works)       | 2013 (12+ years in market)                |
-| **Funding**               | Raising Seed (~$2M target)                | €3M Series A (2022)                       |
+| **Funding**               | Raising Seed ($3M target)                 | €3M Series A (2022)                       |
 | **Tool Types**            | 2 production, 8 roadmap                   | **10+ production**                        |
 | **OEM Customers**         | Honda (pilot)                             | **Audi, Ford, VW, Airbus** (production)   |
 | **Technology**            | Hybrid (UX + LLM + Gen AI + CAD Kernels)  | paramate + trCAD (own kernel)             |

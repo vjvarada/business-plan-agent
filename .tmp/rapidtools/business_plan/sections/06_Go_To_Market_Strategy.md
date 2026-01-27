@@ -60,7 +60,7 @@ Autodesk generated **$4.5B in manufacturing revenue** with only ~200 direct sale
 | **CAC**             | $35K (high touch sales)              | **$8K-12K** (partner-driven) [^8]            | 3-4× more efficient          |
 | **Sales Cycle**     | 3-6 months (direct outreach)         | **1-2 months** (existing relationships) [^8] | Faster conversions           |
 | **Local Support**   | Limited (timezone/language barriers) | **Native language, same-day on-site**        | Superior customer experience |
-| **Scalability**     | Linear (hire 1 rep = 1 territory)    | **Exponential** (1 partner = 10 reps)        | 10� faster growth            |
+| **Scalability**     | Linear (hire 1 rep = 1 territory)    | **Exponential** (1 partner = 10 reps)        | 10× faster growth            |
 
 **Why This Works for RapidTools:**
 
@@ -816,8 +816,8 @@ A **Value-Added Reseller** is an independent company that:
 - URL: https://www.saas-capital.com/research/
 - Key Data:
   - **Channel CAC**: 60-70% lower than direct sales ($3K-5K vs. $15K-25K)
-  - **Sales cycle**: Partner-led deals close 2-3� faster (30-60 days vs. 90-180 days)
-  - **LTV:CAC**: Direct 3-5�, Channel 8-15� (partner customer retention higher)
+  - **Sales cycle**: Partner-led deals close 2-3× faster (30-60 days vs. 90-180 days)
+  - **LTV:CAC**: Direct 3-5×, Channel 8-15× (partner customer retention higher)
   - **CAC Payback**: Direct 12-18 months, Channel 3-6 months
 - Methodology: Survey of 1,200+ private B2B SaaS companies
 - Relevance: RapidTools CAC efficiency ($7,000 blended), sales cycle acceleration (1-2 months), LTV:CAC targets (11.0:1 blended with conservative assumptions)
@@ -827,7 +827,7 @@ A **Value-Added Reseller** is an independent company that:
 - URL: https://www.forrester.com/
 - Key Data:
   - 70-80% of B2B software sold through channels (VARs, distributors, MSPs)
-  - Channel-first companies grow revenue 2.1� faster
+  - Channel-first companies grow revenue 2.1× faster
   - Partner-sourced customers have 30% higher retention
   - "1 partner = 10 reps" rule: Geographic coverage without headcount scaling
 - Methodology: Survey of 500+ B2B software companies
@@ -881,7 +881,7 @@ A **Value-Added Reseller** is an independent company that:
   - Median direct sales cycle: 90-180 days ($15K-50K deals)
   - Median channel sales cycle: 30-60 days (existing VAR relationships)
   - Channel conversion rates: 15-20% (Y1) ? 25-35% (mature programs)
-  - VAR-sourced customer LTV: 1.3� higher than direct (lower churn)
+  - VAR-sourced customer LTV: 1.3× higher than direct (lower churn)
 - Methodology: Annual survey of 400+ private/public SaaS companies
 - Relevance: Sales cycle acceleration (3-6 months ? 1-2 months), VAR conversion rate targets (15% Y1 ? 30% Y8)
 
@@ -940,7 +940,7 @@ A **Value-Added Reseller** is an independent company that:
 ### Research Methodology Notes
 
 **VAR Profitability Calculation [^11]:**
-The 3.4� profitability advantage is calculated conservatively:
+The 3.4× profitability advantage is calculated conservatively:
 
 - **Baseline assumption**: VAR generates $875K total annual revenue from RapidTools ecosystem
 - **Margin assumptions**: Sourced from CompTIA [^12] industry benchmarks (25th-75th percentile ranges)
