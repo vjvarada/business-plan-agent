@@ -169,9 +169,9 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 | ------------- | ------------------------------------------------- | -------- |
 | ARR achieved  | $104M                                             | Y8       |
 | Team scale    | 380 FTEs globally                                 | Y8       |
-| VAR network   | 75-95 VARs across 4 continents (30 customers/VAR) | Y8       |
+| VAR network   | 85 VARs × 55 customers avg = 4,675 VAR customers (85% of count, 65% of revenue) | Y8       |
 | EBITDA margin | 24%                                               | Y5+      |
-| Customer base | 5,500 customers, <10% logo churn                  | Y8       |
+| Customer base | 5,500 customers, <15% blended logo churn (~12% revenue-weighted) | Y8       |
 | Exit-ready    | Strategic acquisition or IPO path                 | Y6-Y8    |
 
 ---
@@ -499,14 +499,14 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 **Why Concentration Drops Rapidly:**
 
 1. **Top 3 grow at ~25% CAGR** (enterprise expansion, multi-plant rollouts)
-2. **Portfolio grows at 51% CAGR** (VAR channel scales faster than direct)
+2. **Total customer base grows faster** (8 → 5,500 customers as VAR channel scales)
 3. **Segment diversification:** Y8 = 275 enterprise + 1,375 mid-market + 3,850 SMB
 
 **Structural Mitigations:**
 
-| Mitigation                       | Mechanism                                         | Impact                                |
-| -------------------------------- | ------------------------------------------------- | ------------------------------------- |
-| **VAR Channel (65% of revenue)** | 85 VARs bring 2,300+ customers; no single VAR >3% | Eliminates single-customer dependency |
+| Mitigation                       | Mechanism                                          | Impact                                |
+| -------------------------------- | -------------------------------------------------- | ------------------------------------- |
+| **VAR Channel (65% of revenue)** | 85 VARs × 55 customers avg = 4,675 (85% of count); no single VAR >3% | Eliminates single-customer dependency |
 | **Geographic Diversification**   | India (40%) → SE Asia (25%) → EU/Americas (35%)   | No single-market dependency           |
 | **Multi-Product**                | Software, services, hardware, consumables         | No single-product dependency          |
 | **Segment Mix**                  | SMB 70%, Mid 25%, Enterprise 5% (by count)        | Broad base vs. whale hunting          |

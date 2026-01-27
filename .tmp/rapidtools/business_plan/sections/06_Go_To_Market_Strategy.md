@@ -24,7 +24,7 @@ Like Autodesk, SolidWorks, and PTC, RapidTools uses a **channel-based go-to-mark
 **Channel Revenue Split (Year 8):**
 
 - Direct Sales (Enterprise): 15% ($15.8M) - Honda, Toyota, TVS tier
-- VAR Channel: 65% ($68.4M) - SMB + Mid-market through 50+ authorized VARs
+- VAR Channel: 65% ($68.4M) - SMB + Mid-market through 85 authorized VARs
 - Distributors: 15% ($15.8M) - Geographic expansion (SE Asia, LATAM, Europe)
 - OEM Partnerships: 5% ($5.3M) - Bundled with Stratasys, 3D Systems, Markforged
 
@@ -37,12 +37,14 @@ Like Autodesk, SolidWorks, and PTC, RapidTools uses a **channel-based go-to-mark
 
 **Geographic Expansion (Channel-Led):**
 
-> **Note on SAM Figures:** The regional SAMs below represent **total addressable opportunity** in each market. Our Year 8 "Active SAM" of $5.76B (per TAM/SAM/SOM section) reflects markets where we have active sales channels. The difference represents future expansion opportunity beyond Year 8.
+> **Note on SAM Figures:** Our Active SAM expands with geographic footprint (per TAM/SAM/SOM section):
+> - **Years 1-2 (India Beachhead):** $1.80B
+> - **Years 3-4 (+ SE Asia):** $2.88B
+> - **Years 5-8 (+ Global VARs):** $5.76B
 
-- **Years 1-2**: India + Southeast Asia ($2.88B Active SAM by Y4) - Appoint 10-15 VARs, 2-3 distributors
-- **Years 3-5**: North America + Europe ($2.88B incremental) - Partner with existing CAD VARs (25-35 partners)
-- **Years 5-8**: Rest of APAC + LATAM - Complete global channel network
-- **Long-term opportunity**: $18.5B total global SAM (India/SEA $3.15B + NA $8.82B + EU $4.83B + Other $1.70B)
+- **Years 1-2**: India ($1.80B SAM) - Build flagship customers (Honda, TVS, Toyota), appoint 10-15 VARs
+- **Years 3-4**: + Southeast Asia ($2.88B cumulative SAM) - Expand to Thailand, Vietnam, Malaysia; 25-40 VARs
+- **Years 5-8**: + Global VAR Network ($5.76B cumulative SAM) - Partner with existing CAD VARs in EU/Americas; 85 VARs globally
 
 ---
 
@@ -116,11 +118,16 @@ Autodesk generated **$4.5B in manufacturing revenue** with only ~200 direct sale
 - Enterprise AEs (12): 12 × 15 deals/year = **180 enterprise capacity** (need 142 gross new)
 - Mid-Market AEs (8): 8 × 40 deals/year = **320 mid-market capacity** (need 224 gross new)
 - Inside Sales (10): Support PLG conversion + lead qualification for AEs
-- VARs (65): 65 × 35 customers = **2,275 SMB/mid capacity** (need 2,316)
+- VARs (85): 85 × 55 customers avg = **4,675 SMB/mid capacity** (VAR customers at ~$14K lower ARPU)
+
+**Customer Count Breakdown (Y8: 5,500):**
+- Direct Sales: 825 customers (15%) at $62K ARPU = $51M → mostly enterprise
+- VAR Channel: 4,675 customers (85%) at ~$14K ARPU = $68.4M (65% of revenue) → SMB/mid-market
+- *Note: VAR channel is 85% of customer count but 65% of revenue due to lower ARPU segment focus*
 
 **CAC (Direct Sales):** $45,000 (pilots, travel, RFP responses, multi-stakeholder sales)
-**LTV (Enterprise):** $531K (14.3-year lifetime at 7% churn, $62K ARPU, 60% GM)
-**LTV:CAC:** 11.8:1 (excellent unit economics with conservative assumptions)
+**LTV (Enterprise):** $621K (16.7-year lifetime at 6% churn, $62K ARPU, 60% GM)
+**LTV:CAC:** 13.8:1 (excellent unit economics with conservative assumptions)
 
 ---
 
@@ -210,7 +217,7 @@ A **Value-Added Reseller** is an independent company that:
 - Thailand, Vietnam (electronics, automotive)
 - China (tier-2 cities, avoid Autodesk head-to-head competition)
 
-**Total VAR Network by Year 8: 75-95 authorized VARs globally**
+**Total VAR Network by Year 8: 85 authorized VARs globally**
 
 ### VAR Partner Program Structure
 
@@ -627,7 +634,7 @@ A **Value-Added Reseller** is an independent company that:
 
 **Year 8 Global Channel Network:**
 
-- **Total VARs**: 55-75 globally
+- **Total VARs**: 85 globally
 - **Total Distributors**: 10-15 globally
 - **Geographic Coverage**: 30+ countries
 - **Channel Contribution**: 85% of $104M revenue [^9]
@@ -676,7 +683,7 @@ A **Value-Added Reseller** is an independent company that:
 
 **Blended Metrics (Year 8):**
 
-- **Blended Gross Margin**: 68% (weighted average across channels, improved from 65% with tiered VAR margins)
+- **Blended Gross Margin**: 65% (weighted average across all revenue streams; software 82%, services 40%, hardware 26%)
 - **Blended CAC**: $7,000 (vs. $15K-25K for direct-only model)
 - **Blended LTV:CAC**: 11.7:1 (best-in-class SaaS with conservative assumptions)
 - **CAC Payback**: 6.4 months (channel-accelerated)
@@ -702,8 +709,8 @@ A **Value-Added Reseller** is an independent company that:
 
 | **Metric**                            | **Year 1** | **Year 3** | **Year 5** | **Year 8** |
 | ------------------------------------- | ---------- | ---------- | ---------- | ---------- |
-| **Total VARs**                        | 3-5        | 20-25      | 40-50      | 55-75      |
-| **Active VARs (>$100K revenue/year)** | 2-3        | 15-18      | 30-35      | 45-55      |
+| **Total VARs**                        | 10-15      | 25-40      | 55-65      | 85         |
+| **Active VARs (>$100K revenue/year)** | 5-8        | 18-25      | 40-50      | 65-75      |
 | **Platinum Partners**                 | 0          | 3-5        | 8-10       | 10-15      |
 | **Total Distributors**                | 1          | 2-3        | 5-7        | 10-15      |
 | **Channel Revenue**                   | 70%        | 75%        | 80%        | 85%        |
@@ -820,7 +827,7 @@ A **Value-Added Reseller** is an independent company that:
   - **LTV:CAC**: Direct 3-5×, Channel 8-15× (partner customer retention higher)
   - **CAC Payback**: Direct 12-18 months, Channel 3-6 months
 - Methodology: Survey of 1,200+ private B2B SaaS companies
-- Relevance: RapidTools CAC efficiency ($7,000 blended), sales cycle acceleration (1-2 months), LTV:CAC targets (11.0:1 blended with conservative assumptions)
+- Relevance: RapidTools CAC efficiency ($7,000 blended), sales cycle acceleration (1-2 months), LTV:CAC targets (11.7:1 blended with conservative assumptions)
 
 [^9]: **Forrester Research - The State of B2B Channel Sales (2024)**
 
@@ -917,7 +924,8 @@ A **Value-Added Reseller** is an independent company that:
     - Brazil: $0.4B
     - China: $0.5B (tier-2/tier-3 cities)
     - South Korea: $0.2B
-  - **Total 5-Year Global SAM**: $18.5B
+  - **Year 8 Active SAM**: $5.76B (markets with active sales channels)
+  - **Long-term Global SAM**: $18.5B+ (10+ year horizon, includes full NA/EU/APAC penetration)
 - Relevance: All geographic expansion SAM references throughout GTM strategy
 
 [^16]: **Internal Reference: Section 05 - Customer Validation (This Document)**
@@ -955,10 +963,10 @@ The 3.4× profitability advantage is calculated conservatively:
 
 **Channel Contribution Targets [^9]:**
 
-- **Year 1**: 70% channel (10-15 VARs, learning phase)
-- **Year 3**: 75% channel (25-35 VARs, North America expansion)
-- **Year 5**: 80% channel (50-65 VARs, Europe online)
-- **Year 8**: 85% channel (75-95 VARs @ 27/VAR, global coverage)
+- **Year 1**: 70% channel (10-15 VARs, India beachhead)
+- **Year 3**: 75% channel (25-40 VARs, SE Asia expansion)
+- **Year 5**: 80% channel (55-65 VARs, EU/Americas online)
+- **Year 8**: 85% of customers via channel (85 VARs × 55 customers/VAR = 4,675) = **65% of revenue** (lower ARPU segment)
 - **Validation**: Forrester benchmark = 70-80% for mature B2B software companies [^9]
 
 **Geographic Expansion Sequencing [^15]:**

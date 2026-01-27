@@ -693,7 +693,7 @@ This is **intentional and healthy**—it reflects the classic SaaS "land with en
 
 **Why Investors Should View This Positively:**
 
-1. **Unit Economics Improve:** SMB LTV:CAC (14.5:1) and Enterprise (11.8:1) are both excellent because CAC drops faster than ARPU
+1. **Unit Economics Improve:** SMB LTV:CAC (15.4:1) and Enterprise (13.8:1) are both excellent because CAC drops faster than ARPU
 2. **Revenue Quality:** Lower ARPU from many customers > higher ARPU from few (reduces concentration risk)
 3. **Market Expansion:** SMB is 70% of our TAM—ignoring it would cap growth at ~$30M ARR
 4. **Bessemer Pattern:** Datadog, HubSpot, and Atlassian all followed this trajectory (enterprise validation → PLG scale)
@@ -753,7 +753,7 @@ This is **intentional and healthy**—it reflects the classic SaaS "land with en
 **Key Observations:**
 
 - Blended ARPU declines from $62K (Y1) → $19K (Y8) as customer mix shifts toward SMB (see "ARPU Decline" section above for why this is healthy)
-- Customer growth moderates (8 → 5,500 = 688× in 8 years, 51% CAGR)
+- Customer growth: 8 → 5,500 = 688× over 8 years (YoY growth decelerates from 275% to 90% as we scale)
 - Revenue growth endures at ~70% rate (per Bessemer benchmarks)
 - Penetration remains conservative (<2% of active SAM by Year 8)
 
@@ -872,7 +872,7 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 **Risk 2: Addressability Filters Too Optimistic (MEDIUM PROBABILITY)**
 
 - Assumed 40.9% CAD-ready, 24% 3D printing-ready
-- If reality is 50% of assumptions: SAM = $18.5B → $9.2B
+- If reality is 50% of assumptions: Year 8 Active SAM = $5.76B → $2.88B (Long-term Global SAM: $18.5B → $9.2B)
 - **Mitigation:** Bottom-up validation from Honda/TVS/Toyota confirms addressability assumptions
 
 **Risk 3: Regional Market Growth Slower Than Expected (LOW PROBABILITY)**
@@ -885,8 +885,8 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 
 **Risk 4: Customer Acquisition Slower Than Projected (MEDIUM PROBABILITY)**
 
-- Assumed $2,500 customers by Year 8 (52% CAGR)
-- If acquisition is 50% slower: $2,250 customers, $45M revenue
+- Assumed 5,500 customers by Year 8 (YoY growth decelerating from 275% to 90%)
+- If acquisition is 50% slower: 2,750 customers, $52M revenue
 - **Mitigation:** Honda/TVS converting to production licenses de-risks customer acquisition
 
 **Risk 5: ARPU Realization Lower Than Modeled (LOW PROBABILITY)**
@@ -1303,11 +1303,11 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 
 - Request Honda/TVS contracts under NDA (verify $200K/$150K conversion values) [[17]](#ref-17), [[18]](#ref-18)
 - Review pilot metrics (80-96% time savings, 75% cost savings)
-- Validate LTV:CAC ratios (14.5:1 SMB, 16.8:1 Mid-market, 11.8:1 Enterprise) [[23]](#ref-23)
+- Validate LTV:CAC ratios (15.4:1 SMB, 18.3:1 Mid-market, 13.8:1 Enterprise, 11.7:1 Blended) [[23]](#ref-23)
 
 **Red Flags to Watch:**
 
-1. If addressability filters (40.9% CAD-ready, 24% 3D printing-ready) are 50% overstated, SAM drops from $18.5B → $9.2B
+1. If addressability filters (40.9% CAD-ready, 24% 3D printing-ready) are 50% overstated, Year 8 Active SAM drops from $5.76B → $2.88B (Long-term Global SAM: $18.5B → $9.2B)
 2. If customer pilots (Honda/TVS) do NOT convert to production licenses, customer acquisition assumptions need revision
 3. If Services TAM tooling % assumptions (40%, 18%, 20%) are overstated, Services TAM could be $15-18B instead of $20B (still defensible)
 

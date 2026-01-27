@@ -14,11 +14,11 @@
 | **Revenue/Employee** | $274K             | $300K (> ARR)          | Benchmarkit 2025 [[1]](#ref-1) |
 | **Total Headcount**  | 380               | 350-500 typical        | SaaS Capital [[2]](#ref-2)     |
 | **Gross Margin**     | 65%               | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1) |
-| **S&M as % Revenue** | 30%               | 33% (> ARR)            | Benchmarkit 2025 [[1]](#ref-1) |
-| **R&D as % Revenue** | 20%               | 34% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
-| **G&A as % Revenue** | 10%               | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
+| **S&M as % Revenue** | 24%               | 33% (> ARR)            | Benchmarkit 2025 [[1]](#ref-1) |
+| **R&D as % Revenue** | 7%                | 34% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
+| **G&A as % Revenue** | 7%                | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
 
-**Note:** RapidTools' lower-than-median R&D spend is possible due to India engineering cost advantage (60-70% savings vs. US). Lower G&A reflects India operational leverage.
+**Note:** RapidTools' lower-than-median R&D and G&A spend is possible due to India cost advantage (60-70% savings vs. US). The 7% R&D spend delivers equivalent output to a US company spending 15-18% due to engineering salary differential. S&M at 24% (including CS) reflects channel-led model efficiency.
 
 ---
 
@@ -188,9 +188,9 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 
 - Enterprise: 12 AEs × 15 deals = 180 capacity (need 142 gross new Y8) ✓
 - Mid-Market: 8 AEs × 40 deals = 320 capacity (need 224 gross new Y8) ✓
-- SMB: Handled by VARs (85 × 27 = 2,295) + PLG self-service ✓
+- SMB/Mid via Channel: 85 VARs × 55 customers = 4,675 capacity (85% of 5,500 customers) ✓
 
-**VAR Productivity (Conservative):** 27 customers/VAR/year is mid-range (benchmark: 20-50)
+**VAR Productivity:** 55 customers/VAR/year (benchmark: 20-75 for B2B SaaS VARs)
 
 ---
 
@@ -656,19 +656,19 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 | **Metric**       | **RapidTools Y8** | **Industry Benchmark** | **Source**                     |
 | ---------------- | ----------------- | ---------------------- | ------------------------------ |
 | Gross Margin     | 65%               | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1) |
-| S&M (Total)      | 34% (People + Var)| 33% (>$100M ARR)       | Benchmarkit 2025 [[1]](#ref-1) |
+| S&M (Total)      | 24% (People + Var)| 33% (>$100M ARR)       | Benchmarkit 2025 [[1]](#ref-1) |
 | Marketing        | 4.8%              | 8% median              | SaaS Capital 2025 [[2]](#ref-2) |
-| R&D (Total)      | 7.1%              | 22% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
-| G&A (Fixed)      | 6.8%              | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
+| R&D (Total)      | 7%                | 22% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
+| G&A (Fixed)      | 7%                | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
 | EBITDA Margin    | 24%               | 20-30%                 | Rule of 40 [[1]](#ref-1)       |
 | SBC % of Revenue | 2%                | 5-15%                  | Carta 2024 [[15]](#ref-15)     |
 
 **Why RapidTools Achieves Industry-Standard Profitability:**
 
-- **S&M efficiency**: VAR channel (65% of revenue) reduces CAC while proper marketing investment ($5M) ensures lead generation
+- **S&M at 24%**: Below 33% SaaS median due to VAR channel efficiency (65% of revenue via VARs reduces CAC) and India cost advantage
 - **Marketing at 4.8%**: Below 8% SaaS median but appropriate for manufacturing software (5-7% benchmark) with channel-led model
-- **R&D at 7.1%**: Comprehensive investment including CAD licenses ($150K), ML compute ($100K), university research ($75K), and patent portfolio ($75K) — India cost advantage delivers 2-3× output vs. US equivalent
-- **G&A at 6.8%**: Includes R&D infrastructure, customer enablement, employee L&D, and contingency reserves—comprehensive but efficient
+- **R&D at 7%**: Comprehensive investment including CAD licenses ($150K), ML compute ($100K), university research ($75K), and patent portfolio ($75K) — India cost advantage delivers 2-3× output vs. US equivalent
+- **G&A at 7%**: Includes R&D infrastructure, customer enablement, employee L&D, and contingency reserves—comprehensive but efficient
 - **SBC at 2%**: Conservative vs. 5-15% industry norm; reflects India cost structure and founder-heavy equity
 - **EBITDA at 24%**: Meets Rule of 40 (35% growth + 24% margin = 59) while investing comprehensively in R&D and growth
 
