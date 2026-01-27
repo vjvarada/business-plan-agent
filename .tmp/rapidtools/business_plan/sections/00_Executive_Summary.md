@@ -194,7 +194,7 @@ Four forces are converging simultaneously—this window won't last forever:
 
 ### Competitive Moats (Ranked by Defensibility)
 
-1. **Founder Domain Expertise (10+ Year Lead):** CEO built Fracktal Works (3D printer OEM)—DfAM rules, material science, OEM relationships cannot be hired
+1. **Founder Technical + Domain Expertise (10+ Year Lead):** CEO built Fracktal Works (3D printer OEM) AND developed the computational geometry engine powering it—3D printing slicer, embedded systems, electronics. Already built working demos: Fixture Automation and Vacuum Casting Tool Automation. This rare combination of deep software engineering + manufacturing domain expertise cannot be hired.
 2. **Full Product Suite (10 Tools by Y1):** All design automation tools production-ready by end of Year 1—complete platform from day one
 3. **Automotive OEM Validation:** Active Honda pilot for IATF 16949 compliance
 4. **Multi-Dependency Platform (Building):** Software + Services + Hardware + Consumables creates 5× switching costs vs. software-only competitors
@@ -358,8 +358,8 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 
 | Role                  | Name                | Background                                                                                            |
 | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
-| **CEO**               | Vijay Raghav Varada | 15 years building Fracktal Works (3D printer OEM); deep automotive relationships (Honda, TVS, Toyota) |
-| **CTO**               | Hiring (Seed Stage) | CAD/CAM development, computational geometry, AI/ML for generative design                              |
+| **CEO**               | Vijay Raghav Varada | 15 years building Fracktal Works (3D printer OEM); developed computational geometry engine (slicer, embedded systems, CAD algorithms); built working demos—Fixture Automation, Vacuum Casting Tool Automation; deep automotive relationships (Honda, TVS, Toyota) |
+| **CTO**               | Hiring (Seed Stage) | Senior engineering leader to accelerate product velocity; CEO can execute core product roadmap independently |
 
 ### Planned Leadership Additions
 
@@ -431,7 +431,7 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 
 | Risk                         | Severity | Mitigation                                                                            |
 | ---------------------------- | -------- | ------------------------------------------------------------------------------------- |
-| **Single founder**           | Medium   | CTO hire at Seed stage (active search); advisors formalizing Q2 2026                  |
+| **Single founder**           | Low      | CEO has deep technical expertise (built slicer, computational geometry engine, working demos); CTO hire will accelerate but is not blocking; advisors formalizing Q2 2026 |
 | **Trinckle competition**     | Medium   | India/SEA focus (untapped); casting tools (differentiated); LLM input (lower barrier) |
 | **Enterprise sales cycles**  | Medium   | VAR channel (65% of revenue) reduces dependency on direct deals                       |
 | **Services margin pressure** | Low      | Software automation increases Tooling Services margin from 30% → 50%+                 |

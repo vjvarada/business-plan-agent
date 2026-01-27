@@ -4,6 +4,17 @@
 
 ### Current Status (January 2026)
 
+**Working Demos — Proof of Technical Capability:**
+
+Two design automation tools are already functional, built by CEO Vijay Raghav Varada using his computational geometry expertise:
+
+| Demo | Capability | Status |
+|------|-----------|--------|
+| **Fixture Automation** | Upload part → automated fixture design with GD&T validation | **Working Demo** |
+| **Vacuum Casting Tool Automation** | Upload part → mold design with parting lines, runners, vents | **Working Demo** |
+
+These demos prove the core technology works—we're not starting from a blank slate.
+
 **Honda Manufacturing (Kolar, India) — First Enterprise Validation:**
 
 - **Hardware Investment**: Honda purchased a Fracktal Works 3D printer for **₹10 lakh (~$12K)** — demonstrating serious commitment to 3D printed tooling
@@ -13,6 +24,7 @@
 
 **What We've Validated So Far:**
 
+- **Technical feasibility**: Working demos for Fixture and Vacuum Casting automation prove the computational geometry approach works
 - **Financial commitment**: Honda invested ₹10 lakh in hardware through Fracktal Works — this is not a "tire-kicker" evaluation
 - **Operations buyer confirmed**: Manufacturing operations team (not just R&D) is the intended user and decision-maker
 - **Integrated model validated**: Hardware purchase + software beta validates the bundled platform approach

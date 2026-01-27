@@ -28,10 +28,10 @@
 
 | Role                 | Name                     | Background                                                                                                                                                  |
 | -------------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **CEO / Founder**    | Vijay Raghav Varada      | 15 years building Fracktal Works (3D printer OEM); deep automotive tooling relationships (Honda, TVS, Toyota); mechanical engineering + business operations |
-| **CTO**              | Hiring (Seed Stage)      | CAD/CAM software development; computational geometry; AI/ML for generative design; target start Q2 2026                                                     |
+| **CEO / Founder**    | Vijay Raghav Varada      | 15 years building Fracktal Works (3D printer OEM); **developed computational geometry engine** (3D printing slicer, mesh algorithms, B-spline operations); built **working demos**—Fixture Automation, Vacuum Casting Tool Automation; deep automotive tooling relationships (Honda, TVS, Toyota) |
+| **CTO**              | Hiring (Seed Stage)      | Senior engineering leader to scale the team and accelerate product velocity; target start Q2 2026                                                           |
 
-**Note on Leadership:** The CTO is a critical Seed-stage hire. We are actively recruiting a technical co-founder or senior CTO with deep CAD/CAM development experience to lead product architecture and the engineering team. Vijay's domain expertise in manufacturing and 3D printing provides the industry context; the CTO will drive technical execution.
+**Note on Leadership:** Unlike typical solo founders, Vijay combines rare **dual expertise**: (1) deep manufacturing domain knowledge from 15 years building Fracktal Works, AND (2) hands-on computational geometry and software development—having personally built the 3D printing slicer, embedded firmware, and working demos (Fixture Automation, Vacuum Casting Tool Automation). The CEO can independently execute the core product roadmap. A CTO hire will accelerate development velocity and help scale the engineering team, but is not a blocking dependency for product delivery.
 
 ### Active Co-Founder & Advisor Search
 
@@ -42,7 +42,7 @@ RapidTools is actively building out its leadership team:
 | **Industry Advisor** | Senior automotive manufacturing executive; tooling/die design domain expertise               | In discussions |
 | **Technical Mentor** | Deep learning for 3D geometry; experience at Autodesk, Siemens, or similar CAD/CAM companies | In discussions |
 
-**Timeline:** CTO hire targeted for Seed stage (Q2 2026); advisors/mentors expected to formalize Q2-Q3 2026.
+**Timeline:** CTO hire targeted for Seed stage (Q2 2026) to accelerate engineering velocity; advisors/mentors expected to formalize Q2-Q3 2026. Note: CEO has been actively building team members with computational geometry expertise over the past few months.
 
 ### Fracktal Works Leverage
 

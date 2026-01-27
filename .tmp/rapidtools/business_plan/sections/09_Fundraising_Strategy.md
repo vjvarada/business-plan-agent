@@ -65,7 +65,7 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 | Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota) | Q2 Y1               |
 | Paying customers     | 8 paying pilots/customers                 | Q4 Y1               |
 | ARR achieved         | $500K                                     | Q4 Y1 (18-month Y1) |
-| Team built           | 16 FTEs (incl. CTO)                       | Q4 Y1               |
+| Team built           | 16 FTEs (CTO to accelerate velocity)      | Q4 Y1               |
 | Product-market fit   | NPS >40, <15% logo churn                  | Q4 Y2               |
 | Y2 revenue target    | $2.5M                                     | Q4 Y2               |
 | ARR run rate         | $5M+                                      | Q2 Y3               |
@@ -347,7 +347,7 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 | **Strategic Angels**            | Ex-Autodesk/Siemens executives                    | Domain expertise         |
 | **Manufacturing Founders**      | Razorpay, Freshworks founders                     | Operator experience      |
 
-**Pitch Focus:** Founder-market fit (15 years Fracktal), customer validation (Honda/TVS pilots), India cost advantage
+**Pitch Focus:** Founder-market fit (15 years Fracktal) + technical depth (built slicer, computational geometry engine, working demos), customer validation (Honda/TVS pilots), India cost advantage
 
 ### Series A ($10M)
 
@@ -477,7 +477,7 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 | Risk                      | Mitigation                                                |
 | ------------------------- | --------------------------------------------------------- |
 | Miss ARR targets          | Conservative projections; services revenue provides floor |
-| Key person risk           | CTO hired at Seed stage; building deep bench              |
+| Key person risk           | CEO has dual technical + domain expertise (built slicer, demos); CTO accelerates but doesn't block |
 | Customer concentration    | Structured diversification plan (see below)               |
 | Competition from Autodesk | Focus on vertical (tooling) vs. horizontal; services moat |
 
