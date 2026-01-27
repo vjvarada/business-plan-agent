@@ -267,20 +267,31 @@ Per MyHQ, GoFloaters, and 99acres research [[9]](#ref-9) [[10]](#ref-10) [[11]](
 
 ### Fixed Cost Scaling by Year
 
-| Year   | Revenue | Fixed Costs | % of Revenue | Key Additions                              |
-| ------ | ------- | ----------- | ------------ | ------------------------------------------ |
-| **Y1** | $0.5M   | $180K       | 36%          | Coworking (Fracktal leverage), minimal L&D |
-| **Y2** | $2.5M   | $320K       | 13%          | Dedicated office, LMS platform             |
-| **Y3** | $7.0M   | $580K       | 8%           | Regional office (Mumbai), expanded L&D     |
-| **Y4** | $15.0M  | $1.47M      | 10%          | SE Asia office, SBC begins, full compliance|
-| **Y5** | $30.0M  | $2.40M      | 8%           | Chennai + expanded Bangalore, CAB program  |
-| **Y6** | $50.0M  | $3.50M      | 7%           | Thailand/Vietnam, higher SBC grants        |
-| **Y7** | $77.0M  | $4.50M      | 6%           | Scaled infrastructure, pre-IPO SBC         |
-| **Y8** | $104.0M | $5.70M      | 5%           | Mature global ops, full SBC load           |
+| Year   | Revenue | Fixed Costs | % of Revenue | Key Additions                                    |
+| ------ | ------- | ----------- | ------------ | ------------------------------------------------ |
+| **Y1** | $0.5M   | $200K       | 40%          | Coworking, basic CAD licenses, minimal R&D infra |
+| **Y2** | $2.5M   | $420K       | 17%          | Dedicated office, LMS, expanded CAD licenses     |
+| **Y3** | $7.0M   | $780K       | 11%          | Mumbai office, ML compute, patent filings        |
+| **Y4** | $15.0M  | $1.75M      | 12%          | Singapore, full R&D infra, university research   |
+| **Y5** | $30.0M  | $2.80M      | 9%           | Chennai, expanded ML compute, CAB program        |
+| **Y6** | $50.0M  | $4.20M      | 8%           | Thailand/Vietnam, higher SBC, IP portfolio       |
+| **Y7** | $77.0M  | $5.50M      | 7%           | Scaled R&D infra, pre-IPO SBC                    |
+| **Y8** | $104.0M | $7.10M      | 7%           | Mature global ops, full R&D + SBC load           |
 
-**Note:** Y1 fixed cost % is high because it's an 18-month PMF validation period with minimal revenue. % normalizes from Y2 as revenue scales. SBC increases significantly Y4+ as equity grants vest and new hires receive options.
+**R&D Fixed Costs Scaling:**
 
-**Note:** Y1 fixed cost % is high because it's an 18-month PMF validation period with minimal revenue. % normalizes from Y2 as revenue scales.
+| Year   | R&D Infra | R&D Partnerships | Total R&D Fixed | % of Revenue |
+| ------ | --------- | ---------------- | --------------- | ------------ |
+| **Y1** | $30K      | $20K             | $50K            | 10%          |
+| **Y2** | $60K      | $40K             | $100K           | 4%           |
+| **Y3** | $100K     | $70K             | $170K           | 2.4%         |
+| **Y4** | $168K     | $114K            | $282K           | 1.9%         |
+| **Y5** | $280K     | $180K            | $460K           | 1.5%         |
+| **Y6** | $400K     | $250K            | $650K           | 1.3%         |
+| **Y7** | $520K     | $320K            | $840K           | 1.1%         |
+| **Y8** | $650K     | $400K            | $1,050K         | 1.0%         |
+
+**Note:** Y1 fixed cost % is high because it's an 18-month PMF validation period with minimal revenue. % normalizes from Y2 as revenue scales. R&D fixed costs (CAD licenses, ML compute, patents) complement Engineering headcount.
 
 ---
 
@@ -318,6 +329,39 @@ Per MyHQ, GoFloaters, and 99acres research [[9]](#ref-9) [[10]](#ref-10) [[11]](
 | **Penetration Testing**   | $4,000      | Annual external security assessment                |
 | **TOTAL**                 | **$72,000** |                                                    |
 
+### R&D Infrastructure & Tools
+
+| Item                       | Monthly     | Annual       | Notes                                                      |
+| -------------------------- | ----------- | ------------ | ---------------------------------------------------------- |
+| **CAD/CAM Software**       | $5,000      | $60,000      | Autodesk Fusion, SolidWorks, Siemens NX licenses           |
+| **ML/AI Compute**          | $4,000      | $48,000      | GPU instances for model training (AWS/GCP)                 |
+| **Data Platform**          | $2,500      | $30,000      | Snowflake/Databricks for analytics, feature store          |
+| **Testing Infrastructure** | $1,500      | $18,000      | Automated testing, simulation environments                 |
+| **API/Integration Tools**  | $1,000      | $12,000      | Postman, API management, integration testing               |
+| **TOTAL R&D INFRA**        | **$14,000** | **$168,000** |                                                            |
+
+**CAD/CAM Software Licenses (Critical for R&D):**
+
+| Software              | Annual Cost | Seats | Purpose                                              |
+| --------------------- | ----------- | ----- | ---------------------------------------------------- |
+| **Autodesk Fusion**   | $20,000     | 10    | Primary design validation, integration testing       |
+| **SolidWorks**        | $18,000     | 6     | Customer file compatibility testing                  |
+| **Siemens NX**        | $15,000     | 3     | Enterprise customer integration testing              |
+| **FreeCAD/OpenCASCADE** | $0        | ∞    | Open-source geometry kernel development              |
+| **Misc. CAD Tools**   | $7,000      | —     | Specialized tooling formats, legacy support          |
+| **TOTAL**             | **$60,000** |       |                                                      |
+
+**ML/AI Compute Budget (Generative Design Training):**
+
+| Use Case                   | Monthly Cost | Annual Cost | Notes                                         |
+| -------------------------- | ------------ | ----------- | --------------------------------------------- |
+| **Model Training**         | $2,500       | $30,000     | GPU clusters for fixture/jig generation models|
+| **Inference (Production)** | $1,000       | $12,000     | Real-time design generation API               |
+| **Experimentation**        | $500         | $6,000      | R&D experiments, A/B testing                  |
+| **TOTAL**                  | **$4,000**   | **$48,000** |                                               |
+
+**Note on R&D Infrastructure:** These costs are separate from cloud production infrastructure. They fund the tools and compute needed to build and improve RapidTools' core generative design capabilities.
+
 ### Professional Services
 
 | Item                    | Monthly     | Annual       | Notes                                                  |
@@ -337,6 +381,41 @@ Per MyHQ, GoFloaters, and 99acres research [[9]](#ref-9) [[10]](#ref-10) [[11]](
 | **Gartner Inquiry**       | $20,000     | 10-15 analyst inquiries/year for positioning       |
 | **Forrester Now Tech**    | $15,000     | Manufacturing software coverage                    |
 | **TOTAL**                 | **$60,000** | Builds enterprise credibility for $45K+ deals      |
+
+### R&D Partnerships & Intellectual Property
+
+| Item                       | Monthly     | Annual       | Notes                                                  |
+| -------------------------- | ----------- | ------------ | ------------------------------------------------------ |
+| **University Research**    | $2,500      | $30,000      | IISc, IIT partnerships for ML/geometry research        |
+| **Patent Filing**          | $3,000      | $36,000      | 6-8 new patent applications/year                       |
+| **Patent Maintenance**     | $1,500      | $18,000      | Existing portfolio maintenance fees                    |
+| **Prototype Materials**    | $1,500      | $18,000      | Physical testing of generated tooling designs          |
+| **Technical Conferences**  | $1,000      | $12,000      | SIGGRAPH, CAD conferences, paper submissions           |
+| **TOTAL R&D PARTNERSHIPS** | **$9,500**  | **$114,000** |                                                        |
+
+**Patent Portfolio Strategy:**
+
+| Category                    | Filed Y1-Y4 | Annual Filing | Cost/Patent | Notes                                    |
+| --------------------------- | ----------- | ------------- | ----------- | ---------------------------------------- |
+| **Generative Design Core**  | 4           | 2/year        | $5,000      | Algorithm innovations, design generation |
+| **CAD Integration**         | 2           | 1/year        | $5,000      | File format handling, plugin architecture|
+| **ML/AI Methods**           | 3           | 2/year        | $5,000      | Training approaches, inference optimizations|
+| **Manufacturing Process**   | 2           | 1/year        | $5,000      | Print path optimization, tooling methods |
+| **TOTAL PORTFOLIO**         | **11**      | **6/year**    |             | Builds defensible IP moat                |
+
+**University Research Partnerships:**
+
+| Institution       | Focus Area                    | Annual Cost | Deliverables                              |
+| ----------------- | ----------------------------- | ----------- | ----------------------------------------- |
+| **IISc Bangalore**| Computational geometry, ML    | $15,000     | 2 research papers, intern pipeline        |
+| **IIT Madras**    | Manufacturing systems         | $10,000     | Industry validation, student projects     |
+| **International** | (Future: MIT, Stanford)       | $5,000      | Conference sponsorships, visiting scholars|
+| **TOTAL**         |                               | **$30,000** |                                           |
+
+**R&D Partnership ROI:**
+- University partnerships: Access to cutting-edge research at 10% of in-house cost
+- Patent portfolio: Each granted patent adds ~$2-5M to company valuation (CAD software benchmark)
+- Conference presence: Establishes technical credibility, attracts ML/AI talent
 
 ### Operations & Travel
 
@@ -410,17 +489,29 @@ Per MyHQ, GoFloaters, and 99acres research [[9]](#ref-9) [[10]](#ref-10) [[11]](
 
 | Category                        | Annual Cost    | % of Fixed |
 | ------------------------------- | -------------- | ---------- |
-| **Facilities & Infrastructure** | $264,000       | 18%        |
-| **Technology & Tools**          | $378,000       | 26%        |
-| **Professional Services**       | $216,000       | 15%        |
-| **Operations & Travel**         | $222,000       | 15%        |
-| **Customer Enablement**         | $84,000        | 6%         |
-| **Employee Development**        | $90,000        | 6%         |
+| **Facilities & Infrastructure** | $264,000       | 15%        |
+| **Technology & Tools**          | $378,000       | 21%        |
+| **R&D Infrastructure & Tools**  | $168,000       | 9%         |
+| **Professional Services**       | $216,000       | 12%        |
+| **R&D Partnerships & IP**       | $114,000       | 6%         |
+| **Operations & Travel**         | $222,000       | 12%        |
+| **Customer Enablement**         | $84,000        | 5%         |
+| **Employee Development**        | $90,000        | 5%         |
 | **Contingency & Reserves**      | $66,000        | 4%         |
-| **Stock-Based Compensation**    | $150,000       | 10%        |
-| **TOTAL FIXED COSTS**           | **$1,470,000** | **100%**   |
+| **Stock-Based Compensation**    | $150,000       | 8%         |
+| **TOTAL FIXED COSTS**           | **$1,752,000** | **100%**   |
 
-**Fixed Costs as % of Revenue (Y4):** $1.47M ÷ $15.0M = **9.8%**
+**Fixed Costs as % of Revenue (Y4):** $1.75M ÷ $15.0M = **11.7%**
+
+**R&D-Specific Fixed Costs (Y4):**
+
+| R&D Category              | Annual Cost | Notes                                    |
+| ------------------------- | ----------- | ---------------------------------------- |
+| **R&D Infrastructure**    | $168,000    | CAD licenses, ML compute, data platform  |
+| **R&D Partnerships & IP** | $114,000    | University research, patents, prototypes |
+| **TOTAL R&D FIXED**       | **$282,000**| **1.9% of Y4 revenue**                   |
+
+**Note:** R&D Fixed Costs are separate from Engineering People Cost (~$2.0M in Y4). Combined R&D investment = $2.28M = **15% of Y4 revenue**.
 
 **Note on Stock-Based Compensation (SBC):**
 - SBC is a **non-cash expense** representing equity grants to employees
@@ -428,12 +519,14 @@ Per MyHQ, GoFloaters, and 99acres research [[9]](#ref-9) [[10]](#ref-10) [[11]](
 - Y4 estimate: $150K (1% of revenue) growing to $2.1M (2% of revenue) by Y8
 - ESOP pool: 10-12% reserved for employee grants over 8 years
 
-**Note on Fixed Cost Increase:** The increase from previous estimates reflects industry-standard investments in:
-- SOC2/ISO compliance ($72K vs $24K) — Required for enterprise sales
-- Analyst relations ($60K new) — Gartner/Forrester coverage for credibility
-- Product localization ($42K new) — Enables EU/Americas expansion
-- Bad debt reserve ($48K new) — Prudent financial practice (1.5% of AR)
-- Enhanced insurance ($30K vs $24K) — Cyber liability, E&O coverage
+**Note on Fixed Cost Comprehensiveness:** This budget includes industry-standard investments in:
+- **R&D Infrastructure** ($168K): CAD/CAM licenses, ML/AI compute, data platforms
+- **R&D Partnerships & IP** ($114K): University research, patent portfolio, prototypes
+- **SOC2/ISO compliance** ($72K): Required for enterprise sales
+- **Analyst relations** ($60K): Gartner/Forrester coverage for credibility
+- **Customer enablement** ($84K): LMS, CAB, training programs
+- **Employee development** ($90K): L&D, certifications, retention
+- **Contingency reserves** ($66K): Operating buffer, IP defense
 
 ---
 
@@ -468,14 +561,14 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 
 | Year   | Revenue | COGS          | Gross Profit | People Cost | S&M Variable | Fixed Costs | SBC (non-cash) | EBITDA   | EBITDA Margin |
 | ------ | ------- | ------------- | ------------ | ----------- | ------------ | ----------- | -------------- | -------- | ------------- |
-| **Y1** | $0.5M   | $0.23M (46%)  | $0.27M       | $0.68M      | $0.05M       | $0.18M      | $0.02M         | ($0.64M) | (128%)        |
-| **Y2** | $2.5M   | $1.00M (40%)  | $1.50M       | $1.61M      | $0.25M       | $0.32M      | $0.05M         | ($0.68M) | (27%)         |
-| **Y3** | $7.0M   | $2.66M (38%)  | $4.34M       | $3.29M      | $0.70M       | $0.58M      | $0.10M         | ($0.23M) | (3%)          |
-| **Y4** | $15.0M  | $5.55M (37%)  | $9.45M       | $5.76M      | $1.50M       | $1.32M      | $0.15M         | $0.87M   | 6%            |
-| **Y5** | $30.0M  | $10.80M (36%) | $19.20M      | $9.50M      | $3.00M       | $2.10M      | $0.30M         | $4.60M   | 15%           |
-| **Y6** | $50.0M  | $18.00M (36%) | $32.00M      | $14.04M     | $5.50M       | $2.90M      | $0.60M         | $9.56M   | 19%           |
-| **Y7** | $77.0M  | $27.72M (36%) | $49.28M      | $18.36M     | $9.50M       | $3.80M      | $1.20M         | $17.62M  | 23%           |
-| **Y8** | $104.0M | $36.40M (35%) | $67.60M      | $21.28M     | $14.40M      | $5.70M      | $2.08M         | $26.22M  | 25%           |
+| **Y1** | $0.5M   | $0.23M (46%)  | $0.27M       | $0.68M      | $0.05M       | $0.20M      | $0.02M         | ($0.66M) | (132%)        |
+| **Y2** | $2.5M   | $1.00M (40%)  | $1.50M       | $1.61M      | $0.25M       | $0.42M      | $0.05M         | ($0.78M) | (31%)         |
+| **Y3** | $7.0M   | $2.66M (38%)  | $4.34M       | $3.29M      | $0.70M       | $0.78M      | $0.10M         | ($0.43M) | (6%)          |
+| **Y4** | $15.0M  | $5.55M (37%)  | $9.45M       | $5.76M      | $1.50M       | $1.60M      | $0.15M         | $0.59M   | 4%            |
+| **Y5** | $30.0M  | $10.80M (36%) | $19.20M      | $9.50M      | $3.00M       | $2.50M      | $0.30M         | $4.20M   | 14%           |
+| **Y6** | $50.0M  | $18.00M (36%) | $32.00M      | $14.04M     | $5.50M       | $3.60M      | $0.60M         | $8.86M   | 18%           |
+| **Y7** | $77.0M  | $27.72M (36%) | $49.28M      | $18.36M     | $9.50M       | $4.70M      | $1.20M         | $16.72M  | 22%           |
+| **Y8** | $104.0M | $36.40M (35%) | $67.60M      | $21.28M     | $14.40M      | $7.10M      | $2.08M         | $24.82M  | 24%           |
 
 **Key Observations:**
 
@@ -483,12 +576,12 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 - **COGS % improves** from 46% (Y1) to 35% (Y8) as software mix increases (62% by Y8)
 - **Gross margin improves** from 54% (Y1) to 65% (Y8)
 - **S&M Variable** scales from 10% (Y1) to 14% (Y8), reflecting proper marketing investment (5% of revenue) and trade show presence (0.8%)
-- **Fixed Costs** include customer enablement ($200K Y8), employee L&D ($350K Y8), and contingency ($200K Y8)
+- **Fixed Costs** now include explicit R&D infrastructure ($650K Y8), R&D partnerships ($400K Y8), customer enablement, employee L&D, and contingency
 - **Stock-Based Compensation** grows from $20K (Y1) to $2.08M (Y8) as equity grants scale with headcount
-- **EBITDA margin** improves from negative (Y1-Y3) to 25% (Y8) - excludes SBC per industry standard
-- **Break-even achieved Y4** - slightly later due to proper investment, but still capital efficient
+- **EBITDA margin** improves from negative (Y1-Y3) to 24% (Y8) - excludes SBC per industry standard
+- **Break-even achieved Y4** - later due to comprehensive R&D investment, but builds defensible IP moat
 
-**Note on SBC:** Stock-based compensation is shown separately as a non-cash expense. EBITDA excludes SBC (industry standard). If included, GAAP operating margin would be ~23% in Y8.
+**Note on SBC:** Stock-based compensation is shown separately as a non-cash expense. EBITDA excludes SBC (industry standard). If included, GAAP operating margin would be ~22% in Y8.
 
 ### Cost Categories as % of Revenue (Year 8)
 
@@ -497,10 +590,10 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 | **Gross Margin**        | $67.6M   | 65%          | After COGS                                         |
 | **People Cost**         | $21.28M  | 20%          | 380 FTEs × $56K avg                                |
 | **S&M Variable**        | $14.40M  | 14%          | Marketing $5M + Events $0.8M + VAR $5M + Comm $3.6M |
-| **Fixed Costs (G&A)**   | $5.70M   | 5%           | Facilities, tools, compliance, L&D, contingency    |
-| **EBITDA**              | $26.22M  | **25%**      | Before interest, taxes, D&A, SBC                   |
+| **Fixed Costs (G&A)**   | $7.10M   | 7%           | Facilities, tools, R&D infra, compliance, L&D      |
+| **EBITDA**              | $24.82M  | **24%**      | Before interest, taxes, D&A, SBC                   |
 | **Stock Compensation**  | $2.08M   | 2%           | Non-cash equity grants (GAAP OpEx)                 |
-| **GAAP Operating Inc.** | $24.14M  | **23%**      | EBITDA minus SBC                                   |
+| **GAAP Operating Inc.** | $22.74M  | **22%**      | EBITDA minus SBC                                   |
 | **TOTAL**               | $104M    | 100%         |                                                    |
 
 **S&M Variable Breakdown (Year 8):**
@@ -517,14 +610,27 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 
 | Category                        | Amount  | % of Revenue | Notes                                       |
 | ------------------------------- | ------- | ------------ | ------------------------------------------- |
-| **Facilities & Infrastructure** | $1.50M  | 1.4%         | Global offices (India, Singapore, EU)       |
-| **Technology & Tools**          | $1.80M  | 1.7%         | Cloud, dev tools, compliance, analytics     |
-| **Professional Services**       | $1.00M  | 1.0%         | Legal, audit, analyst relations             |
-| **Operations**                  | $0.60M  | 0.6%         | Insurance, localization, bad debt reserve   |
+| **Facilities & Infrastructure** | $1.80M  | 1.7%         | Global offices (India, Singapore, EU)       |
+| **Technology & Tools**          | $2.00M  | 1.9%         | Cloud, dev tools, compliance, analytics     |
+| **R&D Infrastructure**          | $0.65M  | 0.6%         | CAD/CAM licenses, ML compute, data platform |
+| **Professional Services**       | $1.20M  | 1.2%         | Legal, audit, analyst relations             |
+| **R&D Partnerships & IP**       | $0.40M  | 0.4%         | University research, patents, prototypes    |
+| **Operations**                  | $0.45M  | 0.4%         | Insurance, localization, bad debt reserve   |
 | **Customer Enablement**         | $0.25M  | 0.2%         | LMS, CAB, training content                  |
 | **Employee Development**        | $0.35M  | 0.3%         | L&D, certifications, team events            |
-| **Contingency & Reserves**      | $0.20M  | 0.2%         | Operating contingency, IP defense reserve   |
-| **TOTAL**                       | $5.70M  | **5.5%**     |                                             |
+| **TOTAL**                       | $7.10M  | **6.8%**     |                                             |
+
+**Total R&D Investment (Year 8):**
+
+| R&D Component              | Amount   | % of Revenue | Notes                                    |
+| -------------------------- | -------- | ------------ | ---------------------------------------- |
+| **Engineering Headcount**  | $5.32M   | 5.1%         | 95 engineers × $56K avg                  |
+| **Product Headcount**      | $1.06M   | 1.0%         | 19 product team × $56K avg               |
+| **R&D Infrastructure**     | $0.65M   | 0.6%         | CAD licenses, ML compute, data platform  |
+| **R&D Partnerships & IP**  | $0.40M   | 0.4%         | University research, patents, prototypes |
+| **TOTAL R&D**              | **$7.43M**| **7.1%**    | Comprehensive R&D investment             |
+
+**Note on R&D %:** At 7.1% of revenue, RapidTools invests below the 22% median for private SaaS due to India cost advantage. However, the absolute R&D output (114 R&D FTEs + infrastructure) is equivalent to a US company spending 15-18% of revenue on R&D.
 
 **Benchmark Comparison:**
 
@@ -533,25 +639,27 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 | Gross Margin     | 65%               | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1) |
 | S&M (Total)      | 34% (People + Var)| 33% (>$100M ARR)       | Benchmarkit 2025 [[1]](#ref-1) |
 | Marketing        | 4.8%              | 8% median              | SaaS Capital 2025 [[2]](#ref-2) |
-| R&D              | 5.5% (in People)  | 22% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
-| G&A (Fixed)      | 5.5%              | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
-| EBITDA Margin    | 25%               | 20-30%                 | Rule of 40 [[1]](#ref-1)       |
+| R&D (Total)      | 7.1%              | 22% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
+| G&A (Fixed)      | 6.8%              | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
+| EBITDA Margin    | 24%               | 20-30%                 | Rule of 40 [[1]](#ref-1)       |
 | SBC % of Revenue | 2%                | 5-15%                  | Carta 2024 [[15]](#ref-15)     |
 
 **Why RapidTools Achieves Industry-Standard Profitability:**
 
 - **S&M efficiency**: VAR channel (65% of revenue) reduces CAC while proper marketing investment ($5M) ensures lead generation
 - **Marketing at 4.8%**: Below 8% SaaS median but appropriate for manufacturing software (5-7% benchmark) with channel-led model
-- **R&D at 5.5%**: India engineering cost advantage (60-70% savings vs US) delivers same output at lower cost
-- **G&A at 5.5%**: Includes customer enablement, employee L&D, and contingency reserves—comprehensive but efficient
+- **R&D at 7.1%**: Comprehensive investment including CAD licenses ($150K), ML compute ($100K), university research ($75K), and patent portfolio ($75K) — India cost advantage delivers 2-3× output vs. US equivalent
+- **G&A at 6.8%**: Includes R&D infrastructure, customer enablement, employee L&D, and contingency reserves—comprehensive but efficient
 - **SBC at 2%**: Conservative vs. 5-15% industry norm; reflects India cost structure and founder-heavy equity
-- **EBITDA at 25%**: Meets Rule of 40 (35% growth + 25% margin = 60) while investing properly in growth and employee development
+- **EBITDA at 24%**: Meets Rule of 40 (35% growth + 24% margin = 59) while investing comprehensively in R&D and growth
 
-**Note on Rule of 40:** The revised 25% EBITDA margin (vs 27% previously) reflects additional investments in:
-- Customer enablement/training: $250K (reduces churn, improves expansion)
-- Employee L&D: $350K (reduces attrition, improves productivity)  
-- Contingency reserves: $200K (prudent risk management)
-- Stock-based compensation disclosure: $2.08M (GAAP transparency)
+**Note on Rule of 40:** The 24% EBITDA margin reflects comprehensive investments in:
+- **R&D Infrastructure** ($650K Y8): CAD/CAM licenses, ML compute, data platforms
+- **R&D Partnerships & IP** ($400K Y8): University research, patent portfolio, prototypes
+- **Customer enablement/training** ($250K): Reduces churn, improves expansion
+- **Employee L&D** ($350K): Reduces attrition, improves productivity  
+- **Contingency reserves** ($200K): Prudent risk management
+- **Stock-based compensation** ($2.08M): GAAP transparency
 
 ---
 

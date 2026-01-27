@@ -170,7 +170,7 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 | ARR achieved  | $104M                                             | Y8       |
 | Team scale    | 380 FTEs globally                                 | Y8       |
 | VAR network   | 75-95 VARs across 4 continents (30 customers/VAR) | Y8       |
-| EBITDA margin | 25%                                               | Y5+      |
+| EBITDA margin | 24%                                               | Y5+      |
 | Customer base | 5,500 customers, <10% logo churn                  | Y8       |
 | Exit-ready    | Strategic acquisition or IPO path                 | Y6-Y8    |
 
@@ -209,7 +209,7 @@ These costs reduce Operating CF vs. earlier projections but build a more defensi
 
 **EBITDA vs Operating Cash Flow Reconciliation:**
 
-The Rule of 40 table shows EBITDA margins of 6-25% (Y4-Y8), while Operating CF margins are 2-20%. The ~4-5% gap is explained by:
+The Rule of 40 table shows EBITDA margins of 4-24% (Y4-Y8), while Operating CF margins are 2-18%. The ~4-6% gap is explained by:
 
 | Factor                         | Impact on Cash Flow | Notes                                                                      |
 | ------------------------------ | ------------------- | -------------------------------------------------------------------------- |
@@ -295,13 +295,20 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 | ---- | ----------- | ------------- | ---------- | ----------- |
 | Y2   | 400%        | -27%          | **373%**   | Exceptional (growth-mode) |
 | Y3   | 180%        | -3%           | **177%**   | Exceptional (near breakeven) |
-| Y4   | 114%        | 6%            | **120%**   | Exceptional |
-| Y5   | 100%        | 15%           | **115%**   | Exceptional |
-| Y6   | 67%         | 19%           | **86%**    | Excellent   |
-| Y7   | 54%         | 23%           | **77%**    | Strong      |
-| Y8   | 35%         | 25%           | **60%**    | Strong      |
+| Y4   | 114%        | 4%            | **118%**   | Exceptional |
+| Y5   | 100%        | 14%           | **114%**   | Exceptional |
+| Y6   | 67%         | 18%           | **85%**    | Excellent   |
+| Y7   | 54%         | 22%           | **76%**    | Strong      |
+| Y8   | 35%         | 24%           | **59%**    | Strong      |
 
 **Note on EBITDA Margins:** These margins reflect comprehensive, industry-standard cost investments:
+
+**R&D Infrastructure & IP (1.0% of Y8 revenue):**
+- CAD/CAM software licenses ($150K) — Autodesk, SolidWorks, Siemens NX for development
+- ML/AI compute ($100K) — GPU clusters for generative design model training
+- University research partnerships ($75K) — IISc, IIT Madras collaborations
+- Patent portfolio expansion ($75K) — 6-8 filings/year, builds defensible IP moat
+- Prototypes & testing ($40K) — Physical validation of generated designs
 
 **S&M Variable Costs (14% of Y8 revenue):**
 - Marketing Programs at 4.8% of revenue — Meets manufacturing software benchmark of 5-7%
@@ -309,7 +316,7 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 - VAR Incentives at 4.8% — SPIFs, MDF, volume bonuses
 - Sales Commissions at 3.5% — 15-20% of direct sales
 
-**Fixed Costs/G&A (5.5% of Y8 revenue):**
+**Fixed Costs/G&A (6.8% of Y8 revenue):**
 - SOC2/ISO Compliance at $100K/year — Required for enterprise sales
 - Analyst Relations at $150K/year — Gartner/Forrester coverage for credibility
 - Product Localization at $150K/year — Multi-language support for EU/Americas
@@ -320,10 +327,10 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 
 **Stock-Based Compensation ($2.08M Y8, 2% of revenue):**
 - Non-cash expense excluded from EBITDA (industry standard)
-- GAAP Operating Income = EBITDA - SBC = 23% margin
+- GAAP Operating Income = EBITDA - SBC = 22% margin
 - Conservative vs. 5-15% industry norm for VC-backed startups
 
-The revised 25% EBITDA margin (vs 27% in prior iteration) is **more realistic and defensible** — it reflects full investment in customer success, employee development, and prudent reserves while still exceeding Rule of 40 benchmark.
+The 24% EBITDA margin is **realistic and defensible** — it reflects full investment in R&D infrastructure, customer success, employee development, and prudent reserves while still meeting Rule of 40 benchmark.
 
 ---
 
@@ -369,7 +376,7 @@ The revised 25% EBITDA margin (vs 27% in prior iteration) is **more realistic an
 | Scenario                  | Timing | Valuation  | Multiple  | Probability |
 | ------------------------- | ------ | ---------- | --------- | ----------- |
 | **Strategic Acquisition** | Y6-Y8  | $400-600M  | 4-6x ARR  | **60%**     |
-| **Private Equity Buyout** | Y7-Y8  | $500-800M  | 5-8x ARR  | **25%**     |
+| **Private Equity Buyout** | Y7-Y8  | $500-800M  | 5-8x ARR  | **24%**     |
 | **IPO (India/US)**        | Y8-Y10 | $800M-1.2B | 8-12x ARR | **15%**     |
 
 ### Strategic Acquisition (Most Likely)
@@ -396,7 +403,7 @@ The revised 25% EBITDA margin (vs 27% in prior iteration) is **more realistic an
 
 **Attractive to PE:**
 
-- Strong EBITDA margin (25%)
+- Strong EBITDA margin (24%)
 - Recurring revenue (65% software)
 - Low CapEx requirements
 - India cost arbitrage opportunity
