@@ -288,12 +288,12 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 
 **Unlike typical startups that must build distribution from scratch, RapidTools has immediate access to 4 established CAD/CAM channel partners:**
 
-| Partner | Location | Customer Base | Strategic Value |
-|---------|----------|---------------|-----------------|
-| **USAM Technology Solutions** | Chennai + Kerala | 3,000+ organizations (25+ years) | Largest IT/CAD reseller in South India |
-| **3D Works Design Solutions** | Punjab + North India | 1,000+ companies | SOLIDWORKS + Cimatron CAM (tooling-focused) |
-| **MSD Facilitators** | Delhi NCR (Gurugram) | 2,000+ clients | Dassault Systèmes authorized SOLIDWORKS reseller |
-| **VSD Enterprises** | Telangana (Hyderabad) | Defence, Aerospace, Automotive | 3D printing specialist, Rucha Chemtech spinoff |
+| Partner                       | Location              | Customer Base                    | Strategic Value                                  |
+| ----------------------------- | --------------------- | -------------------------------- | ------------------------------------------------ |
+| **USAM Technology Solutions** | Chennai + Kerala      | 3,000+ organizations (25+ years) | Largest IT/CAD reseller in South India           |
+| **3D Works Design Solutions** | Punjab + North India  | 1,000+ companies                 | SOLIDWORKS + Cimatron CAM (tooling-focused)      |
+| **MSD Facilitators**          | Delhi NCR (Gurugram)  | 2,000+ clients                   | Dassault Systèmes authorized SOLIDWORKS reseller |
+| **VSD Enterprises**           | Telangana (Hyderabad) | Defence, Aerospace, Automotive   | 3D printing specialist, Rucha Chemtech spinoff   |
 
 **Combined: 6,000+ customer relationships** across India's major manufacturing clusters—ready for immediate activation.
 
@@ -358,14 +358,14 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 
 | Role                  | Name                | Background                                                                                            |
 | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
-| **CEO & Interim CTO** | Vijay Raghav Varada | 15 years building Fracktal Works (3D printer OEM); deep automotive relationships (Honda, TVS, Toyota) |
+| **CEO**               | Vijay Raghav Varada | 15 years building Fracktal Works (3D printer OEM); deep automotive relationships (Honda, TVS, Toyota) |
+| **CTO**               | Hiring (Seed Stage) | CAD/CAM development, computational geometry, AI/ML for generative design                              |
 
 ### Planned Leadership Additions
 
-| Role                         | Profile                                     | Timeline         |
-| ---------------------------- | ------------------------------------------- | ---------------- |
-| **Technical Co-Founder/CTO** | CAD/CAM development, computational geometry | By Series A (Y3) |
-| **Industry Advisor**         | Senior automotive manufacturing executive   | Q2-Q3 2026       |
+| Role                 | Profile                                   | Timeline   |
+| -------------------- | ----------------------------------------- | ---------- |
+| **Industry Advisor** | Senior automotive manufacturing executive | Q2-Q3 2026 |
 
 ### Year 8 Organization (380 FTEs)
 
@@ -431,7 +431,7 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 
 | Risk                         | Severity | Mitigation                                                                            |
 | ---------------------------- | -------- | ------------------------------------------------------------------------------------- |
-| **Single founder**           | Medium   | CTO hire by Series A; advisors formalizing Q2 2026                                    |
+| **Single founder**           | Medium   | CTO hire at Seed stage (active search); advisors formalizing Q2 2026                  |
 | **Trinckle competition**     | Medium   | India/SEA focus (untapped); casting tools (differentiated); LLM input (lower barrier) |
 | **Enterprise sales cycles**  | Medium   | VAR channel (65% of revenue) reduces dependency on direct deals                       |
 | **Services margin pressure** | Low      | Software automation increases Tooling Services margin from 30% → 50%+                 |

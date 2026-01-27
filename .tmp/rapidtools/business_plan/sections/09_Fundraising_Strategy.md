@@ -477,7 +477,7 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 | Risk                      | Mitigation                                                |
 | ------------------------- | --------------------------------------------------------- |
 | Miss ARR targets          | Conservative projections; services revenue provides floor |
-| Key person risk           | Build deep bench; CTO hire critical                       |
+| Key person risk           | CTO hired at Seed stage; building deep bench              |
 | Customer concentration    | Structured diversification plan (see below)               |
 | Competition from Autodesk | Focus on vertical (tooling) vs. horizontal; services moat |
 

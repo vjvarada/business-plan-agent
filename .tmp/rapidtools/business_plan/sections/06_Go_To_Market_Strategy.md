@@ -38,6 +38,7 @@ Like Autodesk, SolidWorks, and PTC, RapidTools uses a **channel-based go-to-mark
 **Geographic Expansion (Channel-Led):**
 
 > **Note on SAM Figures:** Our Active SAM expands with geographic footprint (per TAM/SAM/SOM section):
+>
 > - **Years 1-2 (India Beachhead):** $1.80B
 > - **Years 3-4 (+ SE Asia):** $2.88B
 > - **Years 5-8 (+ Global VARs):** $5.76B
@@ -121,9 +122,10 @@ Autodesk generated **$4.5B in manufacturing revenue** with only ~200 direct sale
 - VARs (85): 85 × 55 customers avg = **4,675 SMB/mid capacity** (VAR customers at ~$14K lower ARPU)
 
 **Customer Count Breakdown (Y8: 5,500):**
+
 - Direct Sales: 825 customers (15%) at $62K ARPU = $51M → mostly enterprise
 - VAR Channel: 4,675 customers (85%) at ~$14K ARPU = $68.4M (65% of revenue) → SMB/mid-market
-- *Note: VAR channel is 85% of customer count but 65% of revenue due to lower ARPU segment focus*
+- _Note: VAR channel is 85% of customer count but 65% of revenue due to lower ARPU segment focus_
 
 **CAC (Direct Sales):** $45,000 (pilots, travel, RFP responses, multi-stakeholder sales)
 **LTV (Enterprise):** $621K (16.7-year lifetime at 6% churn, $62K ARPU, 60% GM)
@@ -177,12 +179,12 @@ A **Value-Added Reseller** is an independent company that:
 
 **RapidTools has an immediate go-to-market advantage:** Fracktal Works' existing CAD/CAM channel partners can be onboarded as Value-Added Resellers from Day 1. These partners already sell SOLIDWORKS, CAM software, and 3D printing solutions to manufacturing customers—the exact target market for RapidTools.
 
-| **Partner** | **Location** | **Portfolio** | **Customer Base** | **Strategic Value** |
-|-------------|--------------|---------------|-------------------|---------------------|
-| **USAM Technology Solutions** | Chennai, Tamil Nadu + Kerala | CAD Software, 3D Printers, BIM Services, IT Solutions | 3,000+ organizations (25+ years) | Largest IT/CAD reseller in South India; deep manufacturing relationships |
-| **3D Works Design Solutions** | Ludhiana, Punjab + North India | SOLIDWORKS, DraftSight, BobCAM, Cimatron CAM, 3D Printers, FARO Scanners | 1,000+ companies (1,000+ active users) | Full CAD/CAM/CAE stack; strong in machinery/automotive belt |
-| **MSD Facilitators** | Gurugram (Delhi NCR) | SOLIDWORKS 3D CAD, Simulation, PDM, CAM, Electrical | 2,000+ clients (2,500+ projects) | Dassault Systèmes authorized reseller; covers India's largest manufacturing corridor |
-| **VSD Enterprises** | Secunderabad, Telangana | 3D Printing, Rapid Prototyping, Additive Manufacturing | Education, Defence, Aerospace, Automotive, Medical | Spin-off of Rucha Chemtech; serves PSUs and OEMs across South/Central India |
+| **Partner**                   | **Location**                   | **Portfolio**                                                            | **Customer Base**                                  | **Strategic Value**                                                                  |
+| ----------------------------- | ------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **USAM Technology Solutions** | Chennai, Tamil Nadu + Kerala   | CAD Software, 3D Printers, BIM Services, IT Solutions                    | 3,000+ organizations (25+ years)                   | Largest IT/CAD reseller in South India; deep manufacturing relationships             |
+| **3D Works Design Solutions** | Ludhiana, Punjab + North India | SOLIDWORKS, DraftSight, BobCAM, Cimatron CAM, 3D Printers, FARO Scanners | 1,000+ companies (1,000+ active users)             | Full CAD/CAM/CAE stack; strong in machinery/automotive belt                          |
+| **MSD Facilitators**          | Gurugram (Delhi NCR)           | SOLIDWORKS 3D CAD, Simulation, PDM, CAM, Electrical                      | 2,000+ clients (2,500+ projects)                   | Dassault Systèmes authorized reseller; covers India's largest manufacturing corridor |
+| **VSD Enterprises**           | Secunderabad, Telangana        | 3D Printing, Rapid Prototyping, Additive Manufacturing                   | Education, Defence, Aerospace, Automotive, Medical | Spin-off of Rucha Chemtech; serves PSUs and OEMs across South/Central India          |
 
 **Why This Matters for Investors:**
 
@@ -194,12 +196,12 @@ A **Value-Added Reseller** is an independent company that:
 
 **Onboarding Timeline:**
 
-| Phase | Timeline | Action | Expected Outcome |
-|-------|----------|--------|------------------|
-| Partner Briefing | Q1 2026 | Present Honda case study, VAR economics ($387K profit potential) | Commitment from 3-4 partners |
-| Certification Training | Q2 2026 | 2-day sales + 5-day technical certification | 8-12 certified reps across partners |
-| Pilot Sales | Q2-Q3 2026 | Each partner targets 5-10 existing customers | 20-40 qualified pipeline opportunities |
-| First Closes | Q3-Q4 2026 | Convert pilot opportunities | **15-25 customers via channel** |
+| Phase                  | Timeline   | Action                                                           | Expected Outcome                       |
+| ---------------------- | ---------- | ---------------------------------------------------------------- | -------------------------------------- |
+| Partner Briefing       | Q1 2026    | Present Honda case study, VAR economics ($387K profit potential) | Commitment from 3-4 partners           |
+| Certification Training | Q2 2026    | 2-day sales + 5-day technical certification                      | 8-12 certified reps across partners    |
+| Pilot Sales            | Q2-Q3 2026 | Each partner targets 5-10 existing customers                     | 20-40 qualified pipeline opportunities |
+| First Closes           | Q3-Q4 2026 | Convert pilot opportunities                                      | **15-25 customers via channel**        |
 
 **Revenue Potential (Year 1 via Existing Partners):**
 

@@ -304,12 +304,12 @@ Cold Outreach → Education → "Aha" Moment → Demo → Pilot → Production
 
 **Beyond Fracktal Works' direct customer base, RapidTools has access to an established network of 4 CAD/CAM Value-Added Resellers** who currently sell SOLIDWORKS, CAM software, and 3D printing solutions. These partners can be onboarded immediately as RapidTools VARs:
 
-| **Partner** | **Location** | **Core Offerings** | **Customer Reach** | **Years in Business** |
-|-------------|--------------|--------------------|--------------------|----------------------|
-| **USAM Technology Solutions** [[7]](#ref-7) | Chennai + Kerala | CAD Software, 3D Printers, BIM, IT Services | 3,000+ organizations | 25+ years |
-| **3D Works Design Solutions** [[8]](#ref-8) | Ludhiana, Punjab (+ North India) | SOLIDWORKS, Cimatron CAM, BobCAM, 3D Printers, FARO Scanners | 1,000+ companies | 10+ years |
-| **MSD Facilitators** [[9]](#ref-9) | Gurugram, Delhi NCR | SOLIDWORKS CAD/CAM/PDM (Dassault Authorized) | 2,000+ clients | 10+ years |
-| **VSD Enterprises** [[10]](#ref-10) | Secunderabad, Telangana | 3D Printing, Rapid Prototyping, Additive Manufacturing | Defence, Aerospace, Automotive, Medical | Rucha Chemtech spinoff |
+| **Partner**                                 | **Location**                     | **Core Offerings**                                           | **Customer Reach**                      | **Years in Business**  |
+| ------------------------------------------- | -------------------------------- | ------------------------------------------------------------ | --------------------------------------- | ---------------------- |
+| **USAM Technology Solutions** [[7]](#ref-7) | Chennai + Kerala                 | CAD Software, 3D Printers, BIM, IT Services                  | 3,000+ organizations                    | 25+ years              |
+| **3D Works Design Solutions** [[8]](#ref-8) | Ludhiana, Punjab (+ North India) | SOLIDWORKS, Cimatron CAM, BobCAM, 3D Printers, FARO Scanners | 1,000+ companies                        | 10+ years              |
+| **MSD Facilitators** [[9]](#ref-9)          | Gurugram, Delhi NCR              | SOLIDWORKS CAD/CAM/PDM (Dassault Authorized)                 | 2,000+ clients                          | 10+ years              |
+| **VSD Enterprises** [[10]](#ref-10)         | Secunderabad, Telangana          | 3D Printing, Rapid Prototyping, Additive Manufacturing       | Defence, Aerospace, Automotive, Medical | Rucha Chemtech spinoff |
 
 **Combined Network Reach:**
 

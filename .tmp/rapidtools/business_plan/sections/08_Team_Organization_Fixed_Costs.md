@@ -26,23 +26,23 @@
 
 ### Founding Team
 
-| Role                            | Name                | Background                                                                                                                                                  |
-| ------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **CEO & Interim CTO / Founder** | Vijay Raghav Varada | 15 years building Fracktal Works (3D printer OEM); deep automotive tooling relationships (Honda, TVS, Toyota); mechanical engineering + business operations |
+| Role                 | Name                     | Background                                                                                                                                                  |
+| -------------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CEO / Founder**    | Vijay Raghav Varada      | 15 years building Fracktal Works (3D printer OEM); deep automotive tooling relationships (Honda, TVS, Toyota); mechanical engineering + business operations |
+| **CTO**              | Hiring (Seed Stage)      | CAD/CAM software development; computational geometry; AI/ML for generative design; target start Q2 2026                                                     |
 
-**Note on Leadership:** Vijay currently handles both CEO and CTO responsibilities, leveraging his hands-on experience in manufacturing technology and product development from building Fracktal Works. The dual role is sustainable through the Seed stage given the focused product scope (Fixtures tool first) and planned engineering hires.
+**Note on Leadership:** The CTO is a critical Seed-stage hire. We are actively recruiting a technical co-founder or senior CTO with deep CAD/CAM development experience to lead product architecture and the engineering team. Vijay's domain expertise in manufacturing and 3D printing provides the industry context; the CTO will drive technical execution.
 
 ### Active Co-Founder & Advisor Search
 
 RapidTools is actively building out its leadership team:
 
-| Role Sought              | Ideal Profile                                                                                | Status         |
-| ------------------------ | -------------------------------------------------------------------------------------------- | -------------- |
-| **Technical Co-Founder** | CAD/CAM software development; computational geometry; AI/ML for generative design            | Active search  |
-| **Industry Advisor**     | Senior automotive manufacturing executive; tooling/die design domain expertise               | In discussions |
-| **Technical Mentor**     | Deep learning for 3D geometry; experience at Autodesk, Siemens, or similar CAD/CAM companies | In discussions |
+| Role Sought          | Ideal Profile                                                                                | Status         |
+| -------------------- | -------------------------------------------------------------------------------------------- | -------------- |
+| **Industry Advisor** | Senior automotive manufacturing executive; tooling/die design domain expertise               | In discussions |
+| **Technical Mentor** | Deep learning for 3D geometry; experience at Autodesk, Siemens, or similar CAD/CAM companies | In discussions |
 
-**Timeline:** Targeting technical co-founder addition by Series A (Y3 Q2 / mid-2028) at latest; advisors/mentors expected to formalize Q2-Q3 2026.
+**Timeline:** CTO hire targeted for Seed stage (Q2 2026); advisors/mentors expected to formalize Q2-Q3 2026.
 
 ### Fracktal Works Leverage
 
@@ -81,8 +81,8 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 
 | Year   | Revenue | Headcount | Rev/Employee | YoY Growth |
 | ------ | ------- | --------- | ------------ | ---------- |
-| **Y1** | $0.5M   | 15        | $33K         | —          |
-| **Y2** | $2.5M   | 35        | $71K         | +133%      |
+| **Y1** | $0.5M   | 16        | $31K         | —          |
+| **Y2** | $2.5M   | 35        | $71K         | +119%      |
 | **Y3** | $7.0M   | 70        | $100K        | +100%      |
 | **Y4** | $15.0M  | 120       | $125K        | +71%       |
 | **Y5** | $30.0M  | 190       | $158K        | +58%       |
@@ -90,7 +90,7 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 | **Y7** | $77.0M  | 340       | $226K        | +26%       |
 | **Y8** | $104.0M | 380       | $274K        | +12%       |
 
-**Note:** Y1 Revenue/Employee is low ($33K) because it's an 18-month PMF validation period with limited revenue ($500K from 8 customers). Efficiency improves rapidly as revenue scales faster than headcount, reaching $274K/employee by Y8.
+**Note:** Y1 Revenue/Employee is low ($31K) because it's an 18-month PMF validation period with limited revenue ($500K from 8 customers). Efficiency improves rapidly as revenue scales faster than headcount, reaching $274K/employee by Y8.
 
 **Customers per Employee:** 5,500 customers ÷ 380 FTEs = **14.5 customers/employee** (healthy for B2B SaaS with services)
 
@@ -126,10 +126,10 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 | **Sales & Marketing** | 3      | 20%      | 1 Sales Lead, 1 BDR, 1 Marketing |
 | **Customer Success**  | 2      | 13%      | 1 CS Manager, 1 Support          |
 | **Operations**        | 1      | 7%       | Services Delivery                |
-| **Executive**         | 1      | 7%       | CEO/Interim CTO (Founder)        |
-| **TOTAL**             | **15** | **100%** |                                  |
+| **Executive**         | 2      | 13%      | CEO (Founder), CTO (Seed Hire)   |
+| **TOTAL**             | **16** | **100%** |                                  |
 
-**Note:** Year 1 assumes CEO continues dual CEO/CTO role with strong engineering leads reporting directly. Technical co-founder or dedicated CTO hire planned for Year 2-3 as product complexity grows.
+**Note:** Year 1 includes dedicated CTO (Seed stage hire, Q2 2026) to lead technical architecture and engineering team. This enables CEO to focus on GTM, fundraising, and customer relationships.
 
 ### Year 4 Team (120 FTEs)
 
@@ -140,7 +140,7 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 | **Sales & Marketing**   | 35      | 29%      | 4 Ent AEs, 2 Mid AEs, 4 SDRs, channel, mkt |
 | **Customer Success**    | 20      | 17%      | CSMs, implementation, training             |
 | **Operations/Services** | 12      | 10%      | EMS delivery, finance, HR                  |
-| **Executive**           | 5       | 4%       | CEO, CTO\*, VP Sales, VP Eng, VP CS        |
+| **Executive**           | 5       | 4%       | CEO, CTO, VP Sales, VP Eng, VP CS          |
 | **TOTAL**               | **120** | **100%** |                                            |
 
 **Year 4 S&M Breakdown (35 FTEs):**
@@ -148,8 +148,6 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 - Direct Sales: 16 (4 Enterprise AEs, 2 Mid-Market AEs, 4 Inside Sales, 3 SEs, 2 Channel Mgrs, 1 VP)
 - Marketing: 12 (Demand gen, product marketing, content)
 - Sales/Revenue Ops: 7 (CRM, analytics, deal desk)
-
-\*CTO = Technical Co-Founder or dedicated hire expected by Series A (Year 2-3)
 
 ### Year 8 Team (380 FTEs)
 
@@ -243,7 +241,7 @@ Per India labour law research [[6]](#ref-6) [[7]](#ref-7), employer costs above 
 
 | Year   | Headcount | Avg Cost/FTE | Total People Cost | % of Revenue |
 | ------ | --------- | ------------ | ----------------- | ------------ |
-| **Y1** | 15        | $45,000      | $675K             | 135%         |
+| **Y1** | 16        | $50,000      | $800K             | 160%         |
 | **Y2** | 35        | $46,000      | $1.61M            | 64%          |
 | **Y3** | 70        | $47,000      | $3.29M            | 47%          |
 | **Y4** | 120       | $48,000      | $5.76M            | 38%          |
@@ -684,10 +682,10 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 
 ## Key Hiring Milestones
 
-### Seed Stage (Y1: 15 FTEs)
+### Seed Stage (Y1: 16 FTEs)
 
 - CEO/Founder: Vijay Raghav Varada
-- CTO hire (co-founder or early employee)
+- **CTO (Q2 2026):** Technical co-founder or senior hire; CAD/CAM development, computational geometry
 - Core engineering team (6-7 engineers)
 - First sales hire (Head of Sales)
 - First CS hire (CS Manager)
