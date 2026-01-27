@@ -65,7 +65,7 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 | Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota) | Q2 Y1               |
 | Paying customers     | 8 paying pilots/customers                 | Q4 Y1               |
 | ARR achieved         | $500K                                     | Q4 Y1 (18-month Y1) |
-| Team built           | 15 FTEs                                   | Q4 Y1               |
+| Team built           | 16 FTEs (incl. CTO)                       | Q4 Y1               |
 | Product-market fit   | NPS >40, <15% logo churn                  | Q4 Y2               |
 | Y2 revenue target    | $2.5M                                     | Q4 Y2               |
 | ARR run rate         | $5M+                                      | Q2 Y3               |

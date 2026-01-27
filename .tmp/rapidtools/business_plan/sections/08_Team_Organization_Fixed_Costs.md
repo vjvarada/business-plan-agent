@@ -117,15 +117,15 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 
 ## Team Composition by Function
 
-### Year 1 Team (15 FTEs)
+### Year 1 Team (16 FTEs)
 
 | Function              | Count  | %        | Key Roles                        |
 | --------------------- | ------ | -------- | -------------------------------- |
-| **Engineering**       | 7      | 47%      | 4 Software, 2 ML/AI, 1 DevOps    |
-| **Product**           | 1      | 7%       | Product Manager                  |
-| **Sales & Marketing** | 3      | 20%      | 1 Sales Lead, 1 BDR, 1 Marketing |
-| **Customer Success**  | 2      | 13%      | 1 CS Manager, 1 Support          |
-| **Operations**        | 1      | 7%       | Services Delivery                |
+| **Engineering**       | 7      | 44%      | 4 Software, 2 ML/AI, 1 DevOps    |
+| **Product**           | 1      | 6%       | Product Manager                  |
+| **Sales & Marketing** | 3      | 19%      | 1 Sales Lead, 1 BDR, 1 Marketing |
+| **Customer Success**  | 2      | 12%      | 1 CS Manager, 1 Support          |
+| **Operations**        | 1      | 6%       | Services Delivery                |
 | **Executive**         | 2      | 13%      | CEO (Founder), CTO (Seed Hire)   |
 | **TOTAL**             | **16** | **100%** |                                  |
 
