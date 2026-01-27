@@ -692,7 +692,7 @@ A **Value-Added Reseller** is an independent company that:
 | **Year 3**   | New product line + DaaS services      | $75,000+ | **VAR delivers DaaS (60% margin)**  |
 
 **3-Year Customer Growth: 15× ($5K → $75K)** | This is expansion over 3 years (not annual NRR)
-**Annual Net Revenue Retention: 108-130%** (Enterprise 130%, Mid-market 114%, SMB 95%)
+**Annual Net Revenue Retention: 102-133%** (Enterprise 133%, Mid-market 117%, SMB 102%, Blended 111%)
 
 ---
 

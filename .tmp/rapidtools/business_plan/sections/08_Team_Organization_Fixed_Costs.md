@@ -94,6 +94,25 @@ Per Benchmarkit 2025 SaaS Performance Metrics [[1]](#ref-1):
 
 **Customers per Employee:** 5,500 customers ÷ 380 FTEs = **14.5 customers/employee** (healthy for B2B SaaS with services)
 
+### Revenue/Employee Cross-Validation
+
+| Metric | RapidTools Y8 | Industry Benchmark | Validation |
+| --- | --- | --- | --- |
+| **Revenue/Employee** | $274K ($104M / 380) | $200-300K for $50M-100M ARR | ✓ Within range |
+| **S&M Efficiency** | $912K/S&M FTE ($104M / 114) | $800K-1.2M for vertical SaaS | ✓ On target |
+| **Engineering Leverage** | $1.1M/Eng ($104M / 95 Eng) | $800K-1.5M for platform cos | ✓ Strong leverage |
+| **CS Ratio** | 72 customers/CS FTE | 50-100 for B2B mid-market | ✓ Healthy ratio |
+
+**Why India Cost Structure Enables This:**
+- Avg employee cost: ~$45K/year (vs. $150K+ in US)
+- 380 FTEs at India costs = equivalent to ~140 FTEs at US costs
+- Effective "US-equivalent" Rev/FTE: $743K — top-decile efficiency
+
+**Services Component Impact:**
+- 30% of revenue ($31.6M) is services (Tooling Services + EMS)
+- Services requires ~80 delivery FTEs (designers, operators, CS)
+- Excluding services staff: 300 FTEs supporting $72.4M software+hardware = $241K/FTE ✓
+
 ---
 
 ## Team Composition by Function

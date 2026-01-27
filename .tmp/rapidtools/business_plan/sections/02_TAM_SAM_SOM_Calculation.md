@@ -20,7 +20,7 @@
 **Serviceable Obtainable Market (SOM): $104 Million (Year 8)**
 
 - Market Penetration: 1.81% of Year 8 SAM ($5.76B with global expansion)
-- Revenue Mix: 62% Software, 23% Services, 7% EMS, 7% Hardware, 1% Consumables
+- Revenue Mix: 62% Software, 30% Services (23% Tooling Services + 7% EMS), 7% Hardware, 1% Consumables
 - Customer Base: 5,500 customers (Year 8) across SMB, Mid-market, Enterprise
 
 **Confidence Assessment:**
@@ -499,7 +499,7 @@ Based on first-hand plant visits (see Market Drivers document for methodology):
 
 ### Market Penetration Strategy
 
-**Target Market Penetration Rate by Year 8:** 1.56% of active SAM ($5.76B with global expansion)
+**Target Market Penetration Rate by Year 8:** 1.81% of active SAM ($5.76B with global expansion)
 
 - Conservative vs. industry benchmarks (2-5% penetration typical for B2B SaaS by Year 5-7)
 - Penetration calculated against **active SAM** (markets where we have sales presence), not total regional SAM
@@ -606,6 +606,8 @@ Using conservative churn benchmarks for B2B SaaS [[23]](#ref-23):
 
 1. **India beachhead:** CAC is 60-70% lower than US/Europe (expect normalization to 5-8:1 in global expansion)
 2. **Long customer lifetimes:** Manufacturing customers have low churn (6-17%) due to high switching costs [[21]](#ref-21)
+
+**LTV:CAC Sustainability:** Current ratios represent India beachhead economics. As we expand to US/Europe via VARs (Y5-Y8), CAC increases 2-2.5× while LTV remains stable, normalizing ratios to industry-typical 5-8:1. Our P&L projections budget for this normalization. (See detailed methodology in [Revenue Model](07_Revenue_Model.md#ltvcac-methodology-walkthrough).)
 
 ---
 
@@ -724,13 +726,13 @@ This is **intentional and healthy**—it reflects the classic SaaS "land with en
 
 **Why Penetration Increases with Geographic Expansion:**
 
-- Y1-Y2 penetration (0.11-0.31%): Building product, early pilots, limited sales capacity
-- Y3-Y4 penetration (0.42-0.76%): Product-market fit, SE Asia expansion with local teams
-- Y5-Y8 penetration (0.87-1.56%): Global VAR network distributing to established markets
+- Y1-Y2 penetration (0.03-0.14%): Building product, early pilots, limited sales capacity
+- Y3-Y4 penetration (0.24-0.52%): Product-market fit, SE Asia expansion with local teams
+- Y5-Y8 penetration (0.69-1.81%): Global VAR network distributing to established markets
 
 **Conservative Validation:**
 
-- Year 8 penetration of **1.56%** is well within industry benchmark (2-5% for B2B SaaS by Year 5-7)
+- Year 8 penetration of **1.81%** is well within industry benchmark (2-5% for B2B SaaS by Year 5-7)
 - Penetration calculated against **active SAM** (market we're actually selling into that year)
 - No credit taken for global TAM ($42B) until we have active sales channels
 
@@ -810,19 +812,19 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 
 **RapidTools Year 8 Penetration (with Geographic Expansion):**
 
-- **Blended: 1.56%** of $5.76B active SAM (well within industry standard 2-5% range)
+- **Blended: 1.81%** of $5.76B active SAM (well within industry standard 2-5% range)
 - Calculated against markets where we have actual sales presence (not total global TAM)
 
 **Penetration Evolution with Geographic Expansion:**
 
 | Year | Geography     | Active SAM | Penetration | Assessment                        |
 | ---- | ------------- | ---------- | ----------- | --------------------------------- |
-| Y2   | India         | $1.80B     | 0.31%       | Niche Player (market entry)       |
-| Y4   | + SE Asia     | $2.88B     | 0.76%       | Niche Player (regional growth)    |
-| Y6   | + Global VARs | $4.80B     | 1.17%       | Fast Follower trajectory          |
-| Y8   | Global        | $5.76B     | 1.56%       | Fast Follower (industry standard) |
+| Y2   | India         | $1.80B     | 0.14%       | Niche Player (market entry)       |
+| Y4   | + SE Asia     | $2.88B     | 0.52%       | Niche Player (regional growth)    |
+| Y6   | + Global VARs | $4.80B     | 1.15%       | Fast Follower trajectory          |
+| Y8   | Global        | $5.76B     | 1.81%       | Fast Follower (industry standard) |
 
-**Key Insight:** As SAM expands geographically, penetration percentage _decreases_ relative to static SAM calculation (was 3.1% against $2.88B, now 1.56% against $5.76B). This is **more conservative** and **more realistic** - we don't get credit for markets we haven't entered yet.
+**Key Insight:** As SAM expands geographically, penetration percentage remains conservative relative to static SAM calculation (1.81% against $5.76B global active SAM). This is **realistic** - we don't take credit for markets until we have active sales channels.
 
 **Penetration by Revenue Stream (Y8 against Global Active SAM $5.76B):**
 
@@ -882,12 +884,12 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 
 ### Sensitivity Analysis
 
-| Scenario              | TAM Assumption                               | SAM Assumption              | SOM (Year 8) | Penetration | Assessment                                           |
+| Scenario              | TAM Assumption                               | Active SAM (Y8)             | SOM (Year 8) | Penetration | Assessment                                           |
 | --------------------- | -------------------------------------------- | --------------------------- | ------------ | ----------- | ---------------------------------------------------- |
-| **Base Case**         | $42B (all streams validated)                 | $2.88B                      | $104M        | 3.6%        | Realistic-ambitious                                  |
-| **Conservative**      | $32B (Services at $10B instead of $20B)      | $2.16B (50% addressability) | $52M         | 2.4%        | Niche player                                         |
-| **Aggressive**        | $42B                                         | $2.88B                      | $210M        | 7.3%        | Requires market leader positioning                   |
-| **Services Downside** | $37B (Services $15B if tooling % overstated) | $2.52B                      | $104M        | 4.1%        | Still defensible (all other streams HIGH confidence) |
+| **Base Case**         | $42B (all streams validated)                 | $5.76B (global expansion)   | $104M        | 1.81%       | Realistic-ambitious                                  |
+| **Conservative**      | $32B (Services at $10B instead of $20B)      | $4.32B (50% global reach)   | $52M         | 1.20%       | Niche player                                         |
+| **Aggressive**        | $42B                                         | $5.76B                      | $210M        | 3.65%       | Requires market leader positioning                   |
+| **Services Downside** | $37B (Services $15B if tooling % overstated) | $5.04B (reduced services)   | $104M        | 2.06%       | Still defensible (all other streams HIGH confidence) |
 
 **Recommended Investor Framing:**
 
