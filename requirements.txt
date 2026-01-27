@@ -11,9 +11,16 @@ google-search-results  # SerpAPI
 
 # Data Processing
 pandas
+openpyxl  # Excel file parsing and creation
+xlsxwriter  # Advanced Excel formatting
+python-docx  # Word document creation
+
+# Formatting utilities
+gspread-formatting  # Google Sheets formatting
 
 # LLM APIs (optional - only for standalone mode)
 openai
 anthropic
 
 # Utilities
+python-dotenv

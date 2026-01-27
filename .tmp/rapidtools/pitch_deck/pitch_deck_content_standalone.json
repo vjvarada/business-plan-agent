@@ -1,0 +1,421 @@
+{
+  "company": "RapidTools",
+  "tagline": "AI-Powered Manufacturing Tooling Platform",
+  "slides": {
+    "title": {
+      "company": "RapidTools",
+      "tagline": "AI-Powered Manufacturing Tooling Platform",
+      "subtitle": "Democratizing advanced tooling design for manufacturers worldwide",
+      "round": "Seed Round - $1M at $2M pre-money",
+      "website": "portal.appliedadditive.com"
+    },
+    "company_intro": {
+      "headline": "About RapidTools",
+      "points": [
+        "AI-powered manufacturing tooling platform",
+        "Headquartered in Singapore for global market access",
+        "R&D and operations based in India",
+        "Proven technology with automotive OEM pilot customers"
+      ]
+    },
+    "problem": {
+      "headline": "Manufacturing Tooling is Broken",
+      "points": [
+        "Custom tooling design takes 2-4 weeks, costs $5,000-$20,000",
+        "80% of manufacturers lack in-house CAD expertise for tooling",
+        "Existing CAD software is complex, expensive, not tooling-specific",
+        "Long lead times cause production delays and lost revenue",
+        "Industry 4.0 demands agility that legacy processes cannot deliver"
+      ]
+    },
+    "solution": {
+      "headline": "RapidTools: Design to Production in Hours",
+      "points": [
+        "AI-powered design automation - 80% faster than manual CAD",
+        "10 specialized modules for jigs, fixtures, EOAT, casting tools",
+        "Integrated 3D printing hardware for same-day production",
+        "Full-service options: job work and managed services"
+      ],
+      "demo_url": "portal.appliedadditive.com"
+    },
+    "product": {
+      "headline": "Complete Tooling Ecosystem",
+      "software": {
+        "name": "RapidTools Platform",
+        "modules": [
+          "Jigs & Fixtures",
+          "Assembly Guides",
+          "Drilling Guides",
+          "Alignment Tools",
+          "Shadow Boxes",
+          "Custom Palletizing",
+          "Sand Casting Tools",
+          "Vacuum Casting Tools",
+          "Soft Jaws",
+          "EOAT"
+        ],
+        "pricing": "$1,500/seat/year"
+      },
+      "hardware": {
+        "name": "Industrial 3D Printers",
+        "materials": "CF-Nylon, PETG, ABS",
+        "pricing": "$7,000/unit"
+      },
+      "services": {
+        "job_work": "$100/job",
+        "managed_services": "$30,000/year"
+      }
+    },
+    "traction": {
+      "headline": "Validated by Industry Leaders",
+      "pilot_customers": [
+        {
+          "name": "Honda",
+          "engagement": "Software pilot for manufacturing fixture design"
+        },
+        {
+          "name": "TVS Motors",
+          "engagement": "Software pilot for assembly guide automation"
+        },
+        {
+          "name": "Toyota",
+          "engagement": "Software pilot for tooling design validation"
+        }
+      ],
+      "metrics": [
+        {
+          "metric": "Pilot Customers",
+          "value": "3 OEMs",
+          "note": "Honda, TVS, Toyota"
+        },
+        {
+          "metric": "TRL Status",
+          "value": "6-7 to 9",
+          "note": "Production-ready by Mar 2026"
+        },
+        {
+          "metric": "Team Size",
+          "value": "14",
+          "note": "Experienced founding team"
+        },
+        {
+          "metric": "IP Status",
+          "value": "Patent filing",
+          "note": "Proprietary algorithms"
+        }
+      ],
+      "technology": {
+        "current_trl": "TRL 6-7",
+        "target_trl": "TRL 9",
+        "timeline": "End of March 2026"
+      }
+    },
+    "market": {
+      "headline": "$2.1 Billion Market Opportunity",
+      "tam": {
+        "value": "$2.1B",
+        "description": "Global manufacturing tooling software & services"
+      },
+      "sam": {
+        "value": "$206M",
+        "description": "29,474 addressable companies"
+      },
+      "som": {
+        "value": "$20.7M",
+        "year": "Year 5",
+        "penetration": "8% SAM penetration"
+      }
+    },
+    "business_model": {
+      "headline": "Multi-Revenue Stream Model",
+      "streams": [
+        {
+          "name": "Software Subscriptions",
+          "y5_revenue": "$10.6M",
+          "margin": "85%",
+          "mix": "51%"
+        },
+        {
+          "name": "3D Printer Sales",
+          "y5_revenue": "$1.9M",
+          "margin": "40%",
+          "mix": "9%"
+        },
+        {
+          "name": "Consumables",
+          "y5_revenue": "$1.7M",
+          "margin": "40%",
+          "mix": "8%"
+        },
+        {
+          "name": "Managed Services",
+          "y5_revenue": "$3.5M",
+          "margin": "45%",
+          "mix": "17%"
+        },
+        {
+          "name": "Job Work",
+          "y5_revenue": "$2.8M",
+          "margin": "45%",
+          "mix": "14%"
+        }
+      ],
+      "total_y5": "$20.7M"
+    },
+    "unit_economics": {
+      "headline": "Best-in-Class Unit Economics",
+      "metrics": {
+        "ltv_cac": "17.7x",
+        "payback": "6.8 months",
+        "gross_margin": "53% (Y0) to 66% (Y5)",
+        "churn": "10%"
+      }
+    },
+    "competition": {
+      "headline": "Differentiated Position",
+      "competitors": [
+        {
+          "name": "Traditional CAD",
+          "examples": "Autodesk, SolidWorks, PTC",
+          "weakness": "High cost, steep learning curve, not tooling-specific"
+        },
+        {
+          "name": "3D Print Services",
+          "examples": "Protolabs, Xometry, Stratasys",
+          "weakness": "Service-only model, no software platform"
+        },
+        {
+          "name": "Niche Players",
+          "examples": "ToolBox, JigBuilder",
+          "weakness": "Limited functionality, poor user experience"
+        }
+      ],
+      "our_advantage": "Only integrated platform combining AI design automation + industrial 3D printing hardware + full-service delivery"
+    },
+    "financials": {
+      "headline": "Path to $20M+ Revenue",
+      "projections": [
+        {
+          "year": "Y0",
+          "revenue": "$194K",
+          "customers": 29,
+          "ebitda_margin": "-162%"
+        },
+        {
+          "year": "Y1",
+          "revenue": "$1.19M",
+          "customers": 147,
+          "ebitda_margin": "-6%"
+        },
+        {
+          "year": "Y2",
+          "revenue": "$3.48M",
+          "customers": 442,
+          "ebitda_margin": "13%"
+        },
+        {
+          "year": "Y3",
+          "revenue": "$7.97M",
+          "customers": 884,
+          "ebitda_margin": "29%"
+        },
+        {
+          "year": "Y4",
+          "revenue": "$13.0M",
+          "customers": 1474,
+          "ebitda_margin": "32%"
+        },
+        {
+          "year": "Y5",
+          "revenue": "$20.7M",
+          "customers": 2358,
+          "ebitda_margin": "33%"
+        }
+      ],
+      "key_metrics": {
+        "y5_revenue": "$20.7M",
+        "y5_ebitda": "$6.8M",
+        "y5_customers": "2,358",
+        "break_even": "Year 2"
+      }
+    },
+    "team": {
+      "headline": "Experienced Leadership",
+      "founder": {
+        "name": "Vijay Raghav Varada",
+        "role": "CEO & Founder",
+        "linkedin": "linkedin.com/in/vijay-raghav-varada-4763216b",
+        "background": "14+ years in additive manufacturing and industrial technology",
+        "expertise": "Manufacturing tooling, CAD automation, 3D printing"
+      },
+      "team_highlights": [
+        "Deep expertise in CAD automation and materials science",
+        "Established relationships with Honda, TVS, Toyota",
+        "Industry advisors from automotive, aerospace, manufacturing"
+      ],
+      "headcount": {
+        "current": 14,
+        "y5_target": 60
+      }
+    },
+    "roadmap": {
+      "headline": "18-Month Roadmap to Series A",
+      "milestones": [
+        {
+          "quarter": "Q1 2026",
+          "goals": [
+            "TRL 9 (production-ready)",
+            "Complete 10 software modules"
+          ]
+        },
+        {
+          "quarter": "Q2-Q3 2026",
+          "goals": [
+            "50+ paying customers",
+            "India market traction"
+          ]
+        },
+        {
+          "quarter": "Q4 2026 - Q1 2027",
+          "goals": [
+            "Expand to SE Asia",
+            "100+ customers"
+          ]
+        },
+        {
+          "quarter": "Q2 2027",
+          "goals": [
+            "Series A ready",
+            "150+ customers",
+            "$1.2M ARR"
+          ]
+        }
+      ]
+    },
+    "strategic_alignment": {
+      "headline": "Strategic Partnership Opportunities",
+      "target_sectors": [
+        {
+          "sector": "Aerospace & Defense",
+          "use_cases": "Aircraft assembly jigs, precision drilling guides, EOAT"
+        },
+        {
+          "sector": "Automotive/Transportation",
+          "use_cases": "Assembly guides, alignment tools, production fixtures"
+        },
+        {
+          "sector": "Hi-Tech/Semiconductors",
+          "use_cases": "Electronics tooling, clean-room fixtures"
+        },
+        {
+          "sector": "Energy",
+          "use_cases": "Turbine tooling, precision fixtures"
+        },
+        {
+          "sector": "Medical Devices",
+          "use_cases": "Assembly fixtures, sterilizable tooling"
+        }
+      ],
+      "partnership_interest": "Seeking go-to-market partnerships with engineering services companies"
+    },
+    "ask": {
+      "headline": "Investment Opportunity",
+      "raise": "$1,000,000",
+      "valuation": "$2M pre-money ($3M post-money)",
+      "investor_ownership": "33.3%",
+      "use_of_funds": [
+        {
+          "category": "Product Development",
+          "amount": "$400K",
+          "percent": "40%"
+        },
+        {
+          "category": "Sales & Marketing",
+          "amount": "$250K",
+          "percent": "25%"
+        },
+        {
+          "category": "Team Expansion",
+          "amount": "$200K",
+          "percent": "20%"
+        },
+        {
+          "category": "Operations",
+          "amount": "$100K",
+          "percent": "10%"
+        },
+        {
+          "category": "Working Capital",
+          "amount": "$50K",
+          "percent": "5%"
+        }
+      ],
+      "milestones_to_series_a": [
+        "150+ paying customers",
+        "$1.2M ARR",
+        "3 geographic markets",
+        "EBITDA positive trajectory"
+      ],
+      "series_a_plan": {
+        "timing": "Year 2",
+        "amount": "$2.5M",
+        "pre_money": "$8M"
+      }
+    },
+    "returns": {
+      "headline": "Attractive Return Profile",
+      "cap_table": {
+        "post_seed": {
+          "founders": "66.7%",
+          "seed": "33.3%"
+        },
+        "post_series_a": {
+          "founders": "50.8%",
+          "seed": "25.4%",
+          "series_a": "23.8%"
+        }
+      },
+      "exit_scenarios": {
+        "conservative": {
+          "valuation": "$42.7M",
+          "seed_moic": "10.8x"
+        },
+        "base": {
+          "valuation": "$103M",
+          "seed_moic": "26.2x"
+        },
+        "upside": {
+          "valuation": "$145M",
+          "seed_moic": "36.8x"
+        }
+      },
+      "exit_options": [
+        "Strategic acquisition (Autodesk, Siemens)",
+        "PE buyout",
+        "IPO at $50M+ revenue"
+      ]
+    },
+    "references": {
+      "headline": "Sources & References",
+      "sources": [
+        {
+          "name": "Business Research Co",
+          "topic": "Dies, Jigs & Tools Market 2024"
+        },
+        {
+          "name": "Precedence Research",
+          "topic": "Industrial 3D Printing Market"
+        },
+        {
+          "name": "IMARC Group",
+          "topic": "EOAT Market Analysis"
+        }
+      ],
+      "contact": {
+        "name": "Vijay Raghav Varada",
+        "linkedin": "linkedin.com/in/vijay-raghav-varada-4763216b",
+        "website": "portal.appliedadditive.com"
+      }
+    }
+  }
+}

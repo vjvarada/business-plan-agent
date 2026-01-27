@@ -1,0 +1,1521 @@
+{
+  "name": "RapidTools Financial Model Template",
+  "spreadsheet_id": "1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY",
+  "url": "https://docs.google.com/spreadsheets/d/1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY/edit",
+  "sheets": [
+    {
+      "name": "Sources & References",
+      "row_count": 247,
+      "col_count": 5,
+      "structure": [
+        {
+          "row": 1,
+          "label": "Sources & References - RapidTools Financial Model"
+        },
+        {
+          "row": 3,
+          "label": "SECTION A: KEY METRICS (Linkable Values)"
+        },
+        {
+          "row": 5,
+          "label": "TAM - Total Addressable Market"
+        },
+        {
+          "row": 6,
+          "label": "Metric"
+        },
+        {
+          "row": 7,
+          "label": "Dies, Jigs & Tools Market 2024"
+        },
+        {
+          "row": 8,
+          "label": "EOAT Market 2024"
+        },
+        {
+          "row": 9,
+          "label": "Industrial 3D Printing 2024"
+        },
+        {
+          "row": 10,
+          "label": "3D Printing Services 2024"
+        },
+        {
+          "row": 11,
+          "label": "Sand Casting Market 2024"
+        },
+        {
+          "row": 12,
+          "label": "Vacuum Casting Market 2024"
+        },
+        {
+          "row": 13,
+          "label": "Palletizing Equipment 2024"
+        },
+        {
+          "row": 14,
+          "label": "Workholding Devices 2024"
+        },
+        {
+          "row": 15,
+          "label": "Global Tooling Market 2024"
+        },
+        {
+          "row": 17,
+          "label": "Design Automation Software TAM (10 Modules)"
+        },
+        {
+          "row": 18,
+          "label": "Module"
+        },
+        {
+          "row": 19,
+          "label": "1. Jigs & Fixtures"
+        },
+        {
+          "row": 20,
+          "label": "2. Assembly Guides"
+        },
+        {
+          "row": 21,
+          "label": "3. Drilling Guides"
+        },
+        {
+          "row": 22,
+          "label": "4. Alignment Tools"
+        },
+        {
+          "row": 23,
+          "label": "5. Shadow Boxes"
+        },
+        {
+          "row": 24,
+          "label": "6. Custom Palletizing"
+        },
+        {
+          "row": 25,
+          "label": "7. Sand Casting Tools"
+        },
+        {
+          "row": 26,
+          "label": "8. Vacuum Casting Tools"
+        },
+        {
+          "row": 27,
+          "label": "9. Soft Jaws"
+        },
+        {
+          "row": 28,
+          "label": "10. EOAT"
+        },
+        {
+          "row": 29,
+          "label": "SOFTWARE TAM TOTAL"
+        },
+        {
+          "row": 31,
+          "label": "Hardware & Services TAM"
+        },
+        {
+          "row": 32,
+          "label": "Revenue Stream"
+        },
+        {
+          "row": 33,
+          "label": "3D Printers (Hardware)"
+        },
+        {
+          "row": 34,
+          "label": "Consumables"
+        }
+      ]
+    },
+    {
+      "name": "Assumptions",
+      "row_count": 157,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "Assumptions"
+        },
+        {
+          "row": 3,
+          "label": "GENERAL PARAMETERS"
+        },
+        {
+          "row": 4,
+          "label": "Tax Rate"
+        },
+        {
+          "row": 5,
+          "label": "Capex"
+        },
+        {
+          "row": 6,
+          "label": "Depreciation Years"
+        },
+        {
+          "row": 7,
+          "label": "Debtor Days"
+        },
+        {
+          "row": 8,
+          "label": "Creditor Days"
+        },
+        {
+          "row": 9,
+          "label": "Interest Rate"
+        },
+        {
+          "row": 10,
+          "label": "Equity Infusion"
+        },
+        {
+          "row": 11,
+          "label": "Debt Drawdown"
+        },
+        {
+          "row": 12,
+          "label": "Cost Inflation Rate"
+        },
+        {
+          "row": 14,
+          "label": "REVENUE STREAMS"
+        },
+        {
+          "row": 15,
+          "label": "Software Subscription: Price"
+        },
+        {
+          "row": 16,
+          "label": "Software Subscription: Volume"
+        },
+        {
+          "row": 17,
+          "label": "Software Subscription: Growth"
+        },
+        {
+          "row": 18,
+          "label": "Software Subscription: COGS %"
+        },
+        {
+          "row": 19,
+          "label": "3D Printer Sales: Price"
+        },
+        {
+          "row": 20,
+          "label": "3D Printer Sales: Volume"
+        },
+        {
+          "row": 21,
+          "label": "3D Printer Sales: Growth"
+        },
+        {
+          "row": 22,
+          "label": "3D Printer Sales: COGS %"
+        },
+        {
+          "row": 23,
+          "label": "Consumables Materials: Price"
+        },
+        {
+          "row": 24,
+          "label": "Consumables Materials: Volume"
+        },
+        {
+          "row": 25,
+          "label": "Consumables Materials: Growth"
+        },
+        {
+          "row": 26,
+          "label": "Consumables Materials: COGS %"
+        },
+        {
+          "row": 27,
+          "label": "AMC Spares: Price"
+        },
+        {
+          "row": 28,
+          "label": "AMC Spares: Volume"
+        },
+        {
+          "row": 29,
+          "label": "AMC Spares: Growth"
+        },
+        {
+          "row": 30,
+          "label": "AMC Spares: COGS %"
+        },
+        {
+          "row": 31,
+          "label": "Managed Services: Price"
+        },
+        {
+          "row": 32,
+          "label": "Managed Services: Volume"
+        }
+      ]
+    },
+    {
+      "name": "Headcount Plan",
+      "row_count": 84,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "HEADCOUNT PLAN"
+        },
+        {
+          "row": 2,
+          "label": "Dynamic salary model with editable parameters"
+        },
+        {
+          "row": 4,
+          "label": "PARAMETERS"
+        },
+        {
+          "row": 5,
+          "label": "Annual Salary Growth Rate"
+        },
+        {
+          "row": 7,
+          "label": "Regional Salary Premiums"
+        },
+        {
+          "row": 8,
+          "label": "India (Base)"
+        },
+        {
+          "row": 9,
+          "label": "SE Asia"
+        },
+        {
+          "row": 10,
+          "label": "MENA"
+        },
+        {
+          "row": 11,
+          "label": "Europe"
+        },
+        {
+          "row": 12,
+          "label": "Americas"
+        },
+        {
+          "row": 14,
+          "label": "BASE SALARY RATES ($/yr)"
+        },
+        {
+          "row": 15,
+          "label": "Founders / Leadership"
+        },
+        {
+          "row": 16,
+          "label": "Engineering Team"
+        },
+        {
+          "row": 17,
+          "label": "Sales & Marketing"
+        },
+        {
+          "row": 18,
+          "label": "Customer Success"
+        },
+        {
+          "row": 19,
+          "label": "Customer Support"
+        },
+        {
+          "row": 20,
+          "label": "Support Manager"
+        },
+        {
+          "row": 21,
+          "label": "Finance/HR/Admin"
+        },
+        {
+          "row": 22,
+          "label": "AI/Data Specialists"
+        },
+        {
+          "row": 23,
+          "label": "Regional Managers (Base)"
+        },
+        {
+          "row": 25,
+          "label": "SALARY RATES BY YEAR"
+        },
+        {
+          "row": 26,
+          "label": "Founders / Leadership"
+        },
+        {
+          "row": 27,
+          "label": "Engineering Team"
+        },
+        {
+          "row": 28,
+          "label": "Sales & Marketing"
+        },
+        {
+          "row": 29,
+          "label": "Customer Success"
+        },
+        {
+          "row": 30,
+          "label": "Customer Support"
+        },
+        {
+          "row": 31,
+          "label": "Support Manager"
+        },
+        {
+          "row": 32,
+          "label": "Finance/HR/Admin"
+        },
+        {
+          "row": 33,
+          "label": "AI/Data Specialists"
+        },
+        {
+          "row": 34,
+          "label": "Regional Managers (Base)"
+        }
+      ]
+    },
+    {
+      "name": "Revenue",
+      "row_count": 27,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "REVENUE"
+        },
+        {
+          "row": 3,
+          "label": "Software Subscription"
+        },
+        {
+          "row": 4,
+          "label": "3D Printer Sales"
+        },
+        {
+          "row": 5,
+          "label": "Consumables Materials"
+        },
+        {
+          "row": 6,
+          "label": "AMC Spares"
+        },
+        {
+          "row": 7,
+          "label": "Managed Services"
+        },
+        {
+          "row": 8,
+          "label": "Job Work Services"
+        },
+        {
+          "row": 10,
+          "label": "TOTAL REVENUE"
+        },
+        {
+          "row": 12,
+          "label": "Revenue Mix"
+        },
+        {
+          "row": 13,
+          "label": "Software Subscription %"
+        },
+        {
+          "row": 14,
+          "label": "3D Printer Sales %"
+        },
+        {
+          "row": 15,
+          "label": "Consumables Materials %"
+        },
+        {
+          "row": 16,
+          "label": "AMC Spares %"
+        },
+        {
+          "row": 17,
+          "label": "Managed Services %"
+        },
+        {
+          "row": 18,
+          "label": "Job Work Services %"
+        }
+      ]
+    },
+    {
+      "name": "Operating Costs",
+      "row_count": 36,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "OPERATING COSTS"
+        },
+        {
+          "row": 3,
+          "label": "COST OF GOODS SOLD"
+        },
+        {
+          "row": 4,
+          "label": "COGS: Software Subscription"
+        },
+        {
+          "row": 5,
+          "label": "COGS: 3D Printer Sales"
+        },
+        {
+          "row": 6,
+          "label": "COGS: Consumables Materials"
+        },
+        {
+          "row": 7,
+          "label": "COGS: AMC Spares"
+        },
+        {
+          "row": 8,
+          "label": "COGS: Managed Services"
+        },
+        {
+          "row": 9,
+          "label": "COGS: Job Work Services"
+        },
+        {
+          "row": 10,
+          "label": "Total COGS"
+        },
+        {
+          "row": 12,
+          "label": "FIXED COSTS"
+        },
+        {
+          "row": 13,
+          "label": "Salaries and Benefits"
+        },
+        {
+          "row": 14,
+          "label": "Office and Coworking"
+        },
+        {
+          "row": 15,
+          "label": "Warehouse and Depot"
+        },
+        {
+          "row": 16,
+          "label": "Utilities"
+        },
+        {
+          "row": 17,
+          "label": "Software Cloud Internal"
+        },
+        {
+          "row": 18,
+          "label": "RD Product Development"
+        },
+        {
+          "row": 19,
+          "label": "Legal and Compliance"
+        },
+        {
+          "row": 20,
+          "label": "Insurance"
+        },
+        {
+          "row": 21,
+          "label": "Travel Trade Shows"
+        },
+        {
+          "row": 22,
+          "label": "Marketing Content"
+        },
+        {
+          "row": 23,
+          "label": "Total Fixed Costs"
+        },
+        {
+          "row": 25,
+          "label": "SALES & MARKETING"
+        },
+        {
+          "row": 26,
+          "label": "Customer Acquisition Cost"
+        },
+        {
+          "row": 28,
+          "label": "TOTAL"
+        },
+        {
+          "row": 29,
+          "label": "TOTAL OPERATING COSTS"
+        }
+      ]
+    },
+    {
+      "name": "P&L",
+      "row_count": 61,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "PROFIT & LOSS"
+        },
+        {
+          "row": 3,
+          "label": "REVENUE"
+        },
+        {
+          "row": 4,
+          "label": "Software Subscription"
+        },
+        {
+          "row": 5,
+          "label": "3D Printer Sales"
+        },
+        {
+          "row": 6,
+          "label": "Consumables Materials"
+        },
+        {
+          "row": 7,
+          "label": "AMC Spares"
+        },
+        {
+          "row": 8,
+          "label": "Managed Services"
+        },
+        {
+          "row": 9,
+          "label": "Job Work Services"
+        },
+        {
+          "row": 10,
+          "label": "Total Revenue"
+        },
+        {
+          "row": 12,
+          "label": "COST OF GOODS SOLD"
+        },
+        {
+          "row": 13,
+          "label": "Total COGS"
+        },
+        {
+          "row": 15,
+          "label": "GROSS PROFIT"
+        },
+        {
+          "row": 16,
+          "label": "Gross Profit"
+        },
+        {
+          "row": 17,
+          "label": "Gross Margin %"
+        },
+        {
+          "row": 19,
+          "label": "OPERATING EXPENSES"
+        },
+        {
+          "row": 20,
+          "label": "Fixed Costs"
+        },
+        {
+          "row": 21,
+          "label": "Sales & Marketing"
+        },
+        {
+          "row": 22,
+          "label": "Total Operating Expenses"
+        },
+        {
+          "row": 24,
+          "label": "EBITDA"
+        },
+        {
+          "row": 25,
+          "label": "EBITDA"
+        },
+        {
+          "row": 26,
+          "label": "EBITDA Margin %"
+        },
+        {
+          "row": 28,
+          "label": "Depreciation & Amortization"
+        },
+        {
+          "row": 30,
+          "label": "EBIT (Operating Profit)"
+        },
+        {
+          "row": 32,
+          "label": "Interest Expense"
+        },
+        {
+          "row": 33,
+          "label": "PBT (Profit Before Tax)"
+        },
+        {
+          "row": 34,
+          "label": "Tax (25%)"
+        },
+        {
+          "row": 35,
+          "label": "NET INCOME"
+        },
+        {
+          "row": 36,
+          "label": "PAT (Net Income)"
+        },
+        {
+          "row": 37,
+          "label": "Net Margin %"
+        }
+      ]
+    },
+    {
+      "name": "Cash Flow",
+      "row_count": 20,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "CASH FLOW"
+        },
+        {
+          "row": 3,
+          "label": "OPERATING CASH FLOW"
+        },
+        {
+          "row": 4,
+          "label": "PAT"
+        },
+        {
+          "row": 5,
+          "label": "D&A (Add back)"
+        },
+        {
+          "row": 6,
+          "label": "Change in Working Capital"
+        },
+        {
+          "row": 7,
+          "label": "Operating Cash Flow"
+        },
+        {
+          "row": 9,
+          "label": "INVESTING CASH FLOW"
+        },
+        {
+          "row": 10,
+          "label": "Capex"
+        },
+        {
+          "row": 11,
+          "label": "FINANCING CASH FLOW"
+        },
+        {
+          "row": 12,
+          "label": "Equity"
+        },
+        {
+          "row": 13,
+          "label": "Debt"
+        },
+        {
+          "row": 14,
+          "label": "Net Cash Flow"
+        },
+        {
+          "row": 15,
+          "label": "Cumulative Cash"
+        }
+      ]
+    },
+    {
+      "name": "Balance Sheet",
+      "row_count": 25,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "BALANCE SHEET"
+        },
+        {
+          "row": 3,
+          "label": "ASSETS"
+        },
+        {
+          "row": 4,
+          "label": "Fixed Assets (Net)"
+        },
+        {
+          "row": 5,
+          "label": "Debtors"
+        },
+        {
+          "row": 6,
+          "label": "Cash"
+        },
+        {
+          "row": 7,
+          "label": "Total Assets"
+        },
+        {
+          "row": 9,
+          "label": "LIABILITIES & EQUITY"
+        },
+        {
+          "row": 10,
+          "label": "Creditors"
+        },
+        {
+          "row": 11,
+          "label": "Equity"
+        },
+        {
+          "row": 12,
+          "label": "Debt"
+        },
+        {
+          "row": 13,
+          "label": "Retained Earnings"
+        },
+        {
+          "row": 14,
+          "label": "Total Liab & Equity"
+        },
+        {
+          "row": 16,
+          "label": "Check (should be 0)"
+        }
+      ]
+    },
+    {
+      "name": "Summary",
+      "row_count": 41,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "KEY METRICS SUMMARY"
+        },
+        {
+          "row": 3,
+          "label": "REVENUE"
+        },
+        {
+          "row": 4,
+          "label": "Total Revenue"
+        },
+        {
+          "row": 5,
+          "label": "Revenue Growth"
+        },
+        {
+          "row": 7,
+          "label": "PROFITABILITY"
+        },
+        {
+          "row": 8,
+          "label": "Gross Profit"
+        },
+        {
+          "row": 9,
+          "label": "Gross Margin %"
+        },
+        {
+          "row": 10,
+          "label": "EBITDA"
+        },
+        {
+          "row": 11,
+          "label": "EBITDA Margin %"
+        },
+        {
+          "row": 12,
+          "label": "Net Income"
+        },
+        {
+          "row": 13,
+          "label": "Net Profit Margin %"
+        },
+        {
+          "row": 14,
+          "label": "CASH & FUNDING"
+        },
+        {
+          "row": 15,
+          "label": "Cash Balance"
+        },
+        {
+          "row": 16,
+          "label": "Cash from Operations"
+        },
+        {
+          "row": 18,
+          "label": "CUSTOMERS"
+        },
+        {
+          "row": 19,
+          "label": "Total Customers"
+        },
+        {
+          "row": 20,
+          "label": "New Customers"
+        },
+        {
+          "row": 21,
+          "label": "Churned Customers"
+        },
+        {
+          "row": 22,
+          "label": "Customer Growth Rate"
+        },
+        {
+          "row": 24,
+          "label": "UNIT ECONOMICS"
+        },
+        {
+          "row": 25,
+          "label": "CAC (per customer)"
+        },
+        {
+          "row": 26,
+          "label": "Total CAC Spend"
+        },
+        {
+          "row": 27,
+          "label": "ARPU (Annual)"
+        },
+        {
+          "row": 28,
+          "label": "ARPU (Monthly)"
+        },
+        {
+          "row": 29,
+          "label": "Churn Rate"
+        },
+        {
+          "row": 30,
+          "label": "Avg Customer Lifetime"
+        },
+        {
+          "row": 31,
+          "label": "LTV (Gross)"
+        },
+        {
+          "row": 32,
+          "label": "LTV (Net of COGS)"
+        },
+        {
+          "row": 33,
+          "label": "LTV:CAC Ratio"
+        },
+        {
+          "row": 34,
+          "label": "CAC Payback (months)"
+        }
+      ]
+    },
+    {
+      "name": "Sensitivity Analysis",
+      "row_count": 60,
+      "col_count": 15,
+      "structure": [
+        {
+          "row": 1,
+          "label": "SENSITIVITY ANALYSIS"
+        },
+        {
+          "row": 3,
+          "label": "SCENARIO ANALYSIS"
+        },
+        {
+          "row": 5,
+          "label": "Revenue Growth Adjustment"
+        },
+        {
+          "row": 6,
+          "label": "Cost Adjustment"
+        },
+        {
+          "row": 7,
+          "label": "Price Adjustment"
+        },
+        {
+          "row": 9,
+          "label": "Scenario Outputs (Year 5)"
+        },
+        {
+          "row": 10,
+          "label": "Revenue"
+        },
+        {
+          "row": 11,
+          "label": "EBITDA"
+        },
+        {
+          "row": 12,
+          "label": "Net Income"
+        },
+        {
+          "row": 14,
+          "label": "REVENUE SENSITIVITY TABLE"
+        },
+        {
+          "row": 15,
+          "label": "Price Change / Volume Change"
+        },
+        {
+          "row": 16,
+          "label": "-20%"
+        },
+        {
+          "row": 17,
+          "label": "-10%"
+        },
+        {
+          "row": 18,
+          "label": "Base"
+        },
+        {
+          "row": 19,
+          "label": "+10%"
+        },
+        {
+          "row": 20,
+          "label": "+20%"
+        },
+        {
+          "row": 22,
+          "label": "EBITDA SENSITIVITY TABLE"
+        },
+        {
+          "row": 23,
+          "label": "Revenue Change / Cost Change"
+        },
+        {
+          "row": 24,
+          "label": "-20%"
+        },
+        {
+          "row": 25,
+          "label": "-10%"
+        },
+        {
+          "row": 26,
+          "label": "Base"
+        },
+        {
+          "row": 27,
+          "label": "+10%"
+        },
+        {
+          "row": 28,
+          "label": "+20%"
+        },
+        {
+          "row": 30,
+          "label": "KEY ASSUMPTIONS IMPACT"
+        },
+        {
+          "row": 31,
+          "label": "Variable"
+        },
+        {
+          "row": 32,
+          "label": "Revenue Growth Rate"
+        },
+        {
+          "row": 33,
+          "label": "COGS %"
+        },
+        {
+          "row": 34,
+          "label": "Fixed Costs"
+        },
+        {
+          "row": 35,
+          "label": "CAC"
+        }
+      ]
+    },
+    {
+      "name": "Valuation",
+      "row_count": 50,
+      "col_count": 5,
+      "structure": [
+        {
+          "row": 1,
+          "label": "COMPANY VALUATION"
+        },
+        {
+          "row": 3,
+          "label": "DCF VALUATION"
+        },
+        {
+          "row": 4,
+          "label": "Year 5 Revenue"
+        },
+        {
+          "row": 5,
+          "label": "Exit Multiple"
+        },
+        {
+          "row": 6,
+          "label": "Terminal Value (5x Revenue)"
+        },
+        {
+          "row": 7,
+          "label": "Discount Rate"
+        },
+        {
+          "row": 8,
+          "label": "Discount Factor (Year 5)"
+        },
+        {
+          "row": 9,
+          "label": "PV of Terminal Value"
+        },
+        {
+          "row": 11,
+          "label": "Year 5 Free Cash Flow"
+        },
+        {
+          "row": 12,
+          "label": "PV of Year 5 FCF"
+        },
+        {
+          "row": 13,
+          "label": "Enterprise Value (DCF)"
+        },
+        {
+          "row": 15,
+          "label": "COMPARABLES VALUATION"
+        },
+        {
+          "row": 17,
+          "label": "Revenue Multiple Method"
+        },
+        {
+          "row": 18,
+          "label": "Year 5 Revenue"
+        },
+        {
+          "row": 19,
+          "label": "EV/Revenue Multiple"
+        },
+        {
+          "row": 20,
+          "label": "Implied Valuation"
+        },
+        {
+          "row": 22,
+          "label": "EBITDA Multiple Method"
+        },
+        {
+          "row": 23,
+          "label": "Year 5 EBITDA"
+        },
+        {
+          "row": 24,
+          "label": "EV/EBITDA Multiple"
+        },
+        {
+          "row": 25,
+          "label": "Implied Valuation"
+        },
+        {
+          "row": 27,
+          "label": "VALUATION SUMMARY"
+        },
+        {
+          "row": 28,
+          "label": "DCF (Terminal Value)"
+        },
+        {
+          "row": 29,
+          "label": "Revenue Multiple"
+        },
+        {
+          "row": 30,
+          "label": "EBITDA Multiple"
+        },
+        {
+          "row": 31,
+          "label": "Average Valuation"
+        },
+        {
+          "row": 33,
+          "label": "INVESTOR RETURNS AT EXIT"
+        },
+        {
+          "row": 34,
+          "label": "Exit Valuation"
+        },
+        {
+          "row": 35,
+          "label": "Founder Ownership"
+        },
+        {
+          "row": 36,
+          "label": "Seed Ownership"
+        },
+        {
+          "row": 37,
+          "label": "Series A Ownership"
+        }
+      ]
+    },
+    {
+      "name": "Break-even Analysis",
+      "row_count": 40,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "BREAK-EVEN ANALYSIS"
+        },
+        {
+          "row": 3,
+          "label": "CONTRIBUTION MARGIN"
+        },
+        {
+          "row": 4,
+          "label": "Total Revenue"
+        },
+        {
+          "row": 5,
+          "label": "Variable Costs (COGS)"
+        },
+        {
+          "row": 6,
+          "label": "Contribution Margin"
+        },
+        {
+          "row": 7,
+          "label": "Contribution Margin %"
+        },
+        {
+          "row": 8,
+          "label": "Fixed Costs"
+        },
+        {
+          "row": 10,
+          "label": "BREAK-EVEN ANALYSIS"
+        },
+        {
+          "row": 11,
+          "label": "Break-even Revenue"
+        },
+        {
+          "row": 12,
+          "label": "Actual Revenue"
+        },
+        {
+          "row": 13,
+          "label": "Margin of Safety"
+        },
+        {
+          "row": 14,
+          "label": "Margin of Safety %"
+        },
+        {
+          "row": 15,
+          "label": "Months to Break-even"
+        },
+        {
+          "row": 16,
+          "label": "Break-even Quarter"
+        },
+        {
+          "row": 17,
+          "label": "Revenue/Fixed Cost Ratio"
+        },
+        {
+          "row": 18,
+          "label": "Break-even Achieved?"
+        },
+        {
+          "row": 20,
+          "label": "OPERATING LEVERAGE"
+        },
+        {
+          "row": 21,
+          "label": "Degree of Operating Leverage"
+        },
+        {
+          "row": 22,
+          "label": "Interpretation"
+        },
+        {
+          "row": 24,
+          "label": "MARGIN OF SAFETY"
+        },
+        {
+          "row": 25,
+          "label": "Margin of Safety ($)"
+        },
+        {
+          "row": 26,
+          "label": "Margin of Safety (%)"
+        },
+        {
+          "row": 28,
+          "label": "PROFITABILITY TIMELINE"
+        },
+        {
+          "row": 29,
+          "label": "EBITDA"
+        },
+        {
+          "row": 30,
+          "label": "EBITDA Positive?"
+        },
+        {
+          "row": 31,
+          "label": "Net Income"
+        },
+        {
+          "row": 32,
+          "label": "Net Income Positive?"
+        }
+      ]
+    },
+    {
+      "name": "Funding Cap Table",
+      "row_count": 30,
+      "col_count": 8,
+      "structure": [
+        {
+          "row": 1,
+          "label": "FUNDING & CAP TABLE"
+        },
+        {
+          "row": 3,
+          "label": "FUNDING ROUNDS"
+        },
+        {
+          "row": 4,
+          "label": "Equity Raised"
+        },
+        {
+          "row": 5,
+          "label": "Cumulative Equity"
+        },
+        {
+          "row": 6,
+          "label": "Debt Raised"
+        },
+        {
+          "row": 7,
+          "label": "Cumulative Debt"
+        },
+        {
+          "row": 9,
+          "label": "ROUND DETAILS"
+        },
+        {
+          "row": 10,
+          "label": "Pre-money Valuation"
+        },
+        {
+          "row": 11,
+          "label": "Post-money Valuation"
+        },
+        {
+          "row": 12,
+          "label": "Round Ownership %"
+        },
+        {
+          "row": 14,
+          "label": "CAP TABLE (Ownership %)"
+        },
+        {
+          "row": 15,
+          "label": "Founders"
+        },
+        {
+          "row": 16,
+          "label": "Seed Investors"
+        },
+        {
+          "row": 17,
+          "label": "Series A Investors"
+        },
+        {
+          "row": 18,
+          "label": "Series B Investors"
+        },
+        {
+          "row": 19,
+          "label": "Total"
+        },
+        {
+          "row": 21,
+          "label": "INVESTOR RETURNS"
+        },
+        {
+          "row": 22,
+          "label": "Exit Valuation (5x Rev)"
+        },
+        {
+          "row": 23,
+          "label": "Seed Investor Return"
+        },
+        {
+          "row": 24,
+          "label": "Seed Multiple (MOIC)"
+        },
+        {
+          "row": 25,
+          "label": "Series A Return"
+        },
+        {
+          "row": 26,
+          "label": "Series A Multiple (MOIC)"
+        },
+        {
+          "row": 27,
+          "label": "Founder Value at Exit"
+        }
+      ]
+    },
+    {
+      "name": "Charts Data",
+      "row_count": 101,
+      "col_count": 15,
+      "structure": [
+        {
+          "row": 1,
+          "label": "CHART 1: REVENUE GROWTH"
+        },
+        {
+          "row": 2,
+          "label": "Year"
+        },
+        {
+          "row": 3,
+          "label": "Revenue ($K)"
+        },
+        {
+          "row": 5,
+          "label": "CHART 2: REVENUE MIX (Year 5)"
+        },
+        {
+          "row": 6,
+          "label": "Stream"
+        },
+        {
+          "row": 7,
+          "label": "Software Subscription"
+        },
+        {
+          "row": 8,
+          "label": "3D Printer Sales"
+        },
+        {
+          "row": 9,
+          "label": "Consumables"
+        },
+        {
+          "row": 10,
+          "label": "AMC Spares"
+        },
+        {
+          "row": 11,
+          "label": "Managed Services"
+        },
+        {
+          "row": 12,
+          "label": "Job Work Services"
+        },
+        {
+          "row": 14,
+          "label": "CHART 3: PROFITABILITY TREND"
+        },
+        {
+          "row": 15,
+          "label": "Year"
+        },
+        {
+          "row": 16,
+          "label": "Gross Profit ($K)"
+        },
+        {
+          "row": 17,
+          "label": "EBITDA ($K)"
+        },
+        {
+          "row": 18,
+          "label": "Net Income ($K)"
+        },
+        {
+          "row": 20,
+          "label": "CHART 4: CUSTOMER GROWTH"
+        },
+        {
+          "row": 21,
+          "label": "Year"
+        },
+        {
+          "row": 22,
+          "label": "Total Customers"
+        },
+        {
+          "row": 23,
+          "label": "New Customers"
+        },
+        {
+          "row": 25,
+          "label": "CHART 5: UNIT ECONOMICS"
+        },
+        {
+          "row": 26,
+          "label": "Year"
+        },
+        {
+          "row": 27,
+          "label": "LTV:CAC Ratio"
+        },
+        {
+          "row": 28,
+          "label": "CAC Payback (months)"
+        },
+        {
+          "row": 30,
+          "label": "CHART 6: CASH POSITION"
+        },
+        {
+          "row": 31,
+          "label": "Year"
+        },
+        {
+          "row": 32,
+          "label": "Cash Balance ($K)"
+        },
+        {
+          "row": 34,
+          "label": "CHART 7: MARGIN TRENDS"
+        },
+        {
+          "row": 35,
+          "label": "Year"
+        },
+        {
+          "row": 36,
+          "label": "Gross Margin %"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "company": "RapidTools",
+  "tagline": "AI-Powered Manufacturing Tooling Platform",
+  "slides": {
+    "title": {
+      "company": "RapidTools",
+      "tagline": "AI-Powered Manufacturing Tooling Platform",
+      "subtitle": "Democratizing advanced tooling design for manufacturers worldwide",
+      "round": "Seed Round - $1M at $2M pre-money"
+    },
+    "problem": {
+      "headline": "Manufacturing Tooling is Broken",
+      "points": [
+        "Custom tooling design takes weeks, costs thousands",
+        "80% of manufacturers lack in-house CAD expertise",
+        "Existing software is complex, expensive, not tooling-specific",
+        "Long lead times cause production delays and lost revenue"
+      ],
+      "pain_metrics": {
+        "avg_design_time": "2-4 weeks",
+        "avg_design_cost": "$5,000-$20,000",
+        "companies_affected": "300,000+ globally"
+      }
+    },
+    "solution": {
+      "headline": "RapidTools: Design to Production in Hours",
+      "points": [
+        "AI-powered design automation - 80% faster than manual CAD",
+        "10 specialized modules for jigs, fixtures, EOAT, casting tools",
+        "Integrated 3D printing hardware for same-day production",
+        "Full-service options: job work and managed services"
+      ],
+      "demo_url": "www.rapidtools.io/demo"
+    },
+    "product": {
+      "headline": "Complete Tooling Ecosystem",
+      "software": {
+        "name": "RapidTools Platform",
+        "modules": ["Jigs & Fixtures", "Assembly Guides", "Drilling Guides", "EOAT", "Casting Tools"],
+        "pricing": "$1,500/seat/year"
+      },
+      "hardware": {
+        "name": "RapidTools 3D Printers",
+        "types": ["Industrial FDM", "Resin"],
+        "pricing": "$7,000/unit"
+      },
+      "services": {
+        "job_work": "$100/job",
+        "managed_services": "$30,000/year"
+      }
+    },
+    "market": {
+      "headline": "$2.1 Billion Market Opportunity",
+      "tam": {
+        "value": "$2.1B",
+        "description": "Global manufacturing tooling software & services"
+      },
+      "sam": {
+        "value": "$206M",
+        "description": "29,474 addressable companies"
+      },
+      "som": {
+        "value": "$20.7M",
+        "year": "Year 5",
+        "penetration": "8%"
+      }
+    },
+    "tam_sam_som": {
+      "headline": "Large Market, Focused Approach",
+      "tam_breakdown": [
+        {"segment": "Software Platform", "value": "$562M"},
+        {"segment": "3D Printers", "value": "$534M"},
+        {"segment": "Consumables", "value": "$313M"},
+        {"segment": "Services", "value": "$689M"}
+      ],
+      "sam_regions": [
+        {"region": "India", "companies": 5850},
+        {"region": "SE Asia", "companies": 2904},
+        {"region": "Japan", "companies": 6600},
+        {"region": "Germany/EU", "companies": 6120},
+        {"region": "Others", "companies": 8000}
+      ]
+    },
+    "business_model": {
+      "headline": "Multi-Revenue Stream Model",
+      "streams": [
+        {"name": "Software Subscriptions", "y5_revenue": "$14.1M", "margin": "85%"},
+        {"name": "Hardware Sales", "y5_revenue": "$1.9M", "margin": "40%"},
+        {"name": "Consumables", "y5_revenue": "$1.7M", "margin": "40%"},
+        {"name": "Services", "y5_revenue": "$5.6M", "margin": "45%"}
+      ],
+      "total_y5": "$20.7M"
+    },
+    "traction": {
+      "headline": "Early Traction & Validation",
+      "metrics": [
+        {"metric": "Paying Customers", "value": "29", "note": "At launch"},
+        {"metric": "Y0 Revenue", "value": "$194K", "note": "Pilot phase"},
+        {"metric": "LTV:CAC", "value": "17.7x", "note": "Exceptional"},
+        {"metric": "CAC Payback", "value": "6.8 months", "note": "Industry: <12"}
+      ],
+      "logos": ["Customer A", "Customer B", "Customer C"]
+    },
+    "unit_economics": {
+      "headline": "Best-in-Class Unit Economics",
+      "metrics": {
+        "arpu": "$6,703/year",
+        "cac": "$2,000",
+        "ltv": "$67,034",
+        "ltv_cac": "17.7x",
+        "payback": "6.8 months",
+        "gross_margin": "53%  66%",
+        "churn": "10%"
+      }
+    },
+    "competition": {
+      "headline": "Differentiated Position",
+      "competitors": [
+        {"name": "Traditional CAD", "examples": "Autodesk, SolidWorks", "weakness": "Complex, expensive, generic"},
+        {"name": "3D Print Services", "examples": "Protolabs, Xometry", "weakness": "Service only, no software"},
+        {"name": "Niche Players", "examples": "ToolBox, JigBuilder", "weakness": "Limited features, poor UX"}
+      ],
+      "our_advantage": "Only integrated platform with AI-design + hardware + services"
+    },
+    "financials": {
+      "headline": "Path to $20M+ Revenue",
+      "projections": [
+        {"year": "Y0", "revenue": "$194K", "ebitda_margin": "-162%"},
+        {"year": "Y1", "revenue": "$1.19M", "ebitda_margin": "-6%"},
+        {"year": "Y2", "revenue": "$3.48M", "ebitda_margin": "13%"},
+        {"year": "Y3", "revenue": "$7.97M", "ebitda_margin": "29%"},
+        {"year": "Y4", "revenue": "$13.0M", "ebitda_margin": "32%"},
+        {"year": "Y5", "revenue": "$20.7M", "ebitda_margin": "33%"}
+      ],
+      "key_metrics": {
+        "y5_revenue": "$20.7M",
+        "y5_ebitda": "$6.8M",
+        "y5_customers": "2,358"
+      }
+    },
+    "team": {
+      "headline": "Experienced Team",
+      "members": [
+        {"name": "CEO/Co-founder", "background": "10+ years manufacturing tech"},
+        {"name": "CTO/Co-founder", "background": "Ex-Autodesk, CAD specialist"},
+        {"name": "VP Engineering", "background": "Industrial software leader"},
+        {"name": "VP Sales", "background": "B2B SaaS sales expert"}
+      ],
+      "headcount": {"current": 14, "y5_target": 60}
+    },
+    "roadmap": {
+      "headline": "18-Month Roadmap",
+      "milestones": [
+        {"quarter": "Q1-Q2", "goals": ["Launch 8 software modules", "50 customers"]},
+        {"quarter": "Q3-Q4", "goals": ["Expand to SE Asia", "100 customers"]},
+        {"quarter": "Q5-Q6", "goals": ["Series A ready", "$1.2M ARR", "150 customers"]}
+      ]
+    },
+    "ask": {
+      "headline": "Investment Opportunity",
+      "raise": "$1,000,000",
+      "valuation": "$2M pre-money ($3M post-money)",
+      "use_of_funds": [
+        {"category": "Product Development", "amount": "$400K", "percent": "40%"},
+        {"category": "Sales & Marketing", "amount": "$250K", "percent": "25%"},
+        {"category": "Team Expansion", "amount": "$200K", "percent": "20%"},
+        {"category": "Operations", "amount": "$100K", "percent": "10%"},
+        {"category": "Working Capital", "amount": "$50K", "percent": "5%"}
+      ],
+      "milestones_to_series_a": [
+        "150+ paying customers",
+        "$1.2M ARR",
+        "3 geographic markets",
+        "EBITDA positive (Y2)"
+      ]
+    },
+    "returns": {
+      "headline": "Attractive Return Profile",
+      "exit_scenarios": {
+        "conservative": {"valuation": "$42.7M", "seed_moic": "10.8x"},
+        "base": {"valuation": "$103M", "seed_moic": "26.2x"},
+        "upside": {"valuation": "$145M", "seed_moic": "36.8x"}
+      },
+      "exit_options": ["Strategic acquisition (Autodesk, Siemens)", "PE buyout", "IPO at $50M+ revenue"]
+    },
+    "references": {
+      "headline": "Sources & References",
+      "sources": [
+        {"name": "Business Research Co", "topic": "Dies, Jigs & Tools Market 2024"},
+        {"name": "Precedence Research", "topic": "Industrial 3D Printing Market"},
+        {"name": "IMARC Group", "topic": "EOAT Market Analysis"},
+        {"name": "McKinsey", "topic": "Digital Manufacturing in India"},
+        {"name": "UNIDO", "topic": "Global Manufacturing Statistics"}
+      ],
+      "financial_model": "https://docs.google.com/spreadsheets/d/1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "consolidated_at": "2026-01-26T19:58:29.111549",
+  "total_files": 12,
+  "total_sources": 109,
+  "unique_sources": 68,
+  "duplicates_removed": 51,
+  "new_sources": 68,
+  "mode": "incremental",
+  "merge_stats": {
+    "new_sources_added": 58,
+    "existing_sources_preserved": 441,
+    "by_category": {
+      "market": {
+        "added": 0,
+        "duplicates": 0,
+        "total": 206
+      },
+      "headcount": {
+        "added": 0,
+        "duplicates": 0,
+        "total": 30
+      },
+      "geographic": {
+        "added": 0,
+        "duplicates": 0,
+        "total": 65
+      },
+      "business_model": {
+        "added": 58,
+        "duplicates": 0,
+        "total": 86
+      },
+      "competitors": {
+        "added": 0,
+        "duplicates": 0,
+        "total": 0
+      },
+      "benchmarks": {
+        "added": 0,
+        "duplicates": 0,
+        "total": 82
+      },
+      "general": {
+        "added": 0,
+        "duplicates": 0,
+        "total": 30
+      }
+    }
+  }
+}

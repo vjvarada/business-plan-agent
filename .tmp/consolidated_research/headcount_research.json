@@ -1,0 +1,218 @@
+{
+  "category": "Headcount & Hiring",
+  "description": "Team composition, salaries, roles, hiring benchmarks",
+  "consolidated_at": "2026-01-26T19:58:29.111549",
+  "source_files": [],
+  "sources": [
+    {
+      "title": "2025 Revenue Per Employee Benchmarks for Private ...",
+      "url": "https://www.saas-capital.com/blog-posts/revenue-per-employee-benchmarks-for-private-saas-companies/",
+      "snippet": "As of 2025, the median revenue per employee for private SaaS companies is $129,724, up from $125,000 the previous year. However, it is important ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "2025 SaaS Benchmarks: What \u201cGreat\u201d Looks Like (and ...",
+      "url": "https://burklandassociates.com/2025/11/18/2025-saas-benchmarks-what-great-looks-like-and-how-to-reach-it/",
+      "snippet": "Since 2022, ARR per employee has climbed in every ARR band, while median headcount has fallen, especially for companies at $5M+ ARR. Bar ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Annual recurring revenue per employee: What it is, why it's ...",
+      "url": "https://www.drivetrain.ai/strategic-finance-glossary/annual-recurring-revenue-per-employee",
+      "snippet": "Industry benchmarks suggest the overall median revenue per employee for private SaaS companies is around $112,500, varying by company size. At ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "85 SaaS Statistics, Trends and Benchmarks for 2026",
+      "url": "https://www.venasolutions.com/blog/saas-statistics",
+      "snippet": "11. The median growth rate for public SaaS companies as of October 2024 is 30%, down from an overall median of 35% reported in 2023.",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Hiring SaaS Executives: Ramp, Retention and ROI ...",
+      "url": "https://talentfoot.com/hiring-saas-executive-data/",
+      "snippet": "Explore SaaS executive hiring benchmarks on ramp, retention, and ROI to help CEOs and boards set expectations and measure leadership impact.",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "What Is Revenue per Employee in Saas? How to Improve It",
+      "url": "https://www.alexanderjarvis.com/what-is-revenue-per-employee-in-saas/",
+      "snippet": "For context, most public SaaS companies achieve between $190,000 and $210,000 per employee, while top performers push that number to $250,000 or even $300,000.",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Boost SaaS Revenue Per Employee With Actionable ...",
+      "url": "https://saasoperations.com/saas-revenue-per-employee/",
+      "snippet": "Learn how to measure and maximize saas revenue per employee with real benchmarks, worked examples, and a step-by-step playbook for scalable ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "ARR to Headcount Ratio: The SaaS Gut Check",
+      "url": "https://medium.com/reformation-partners/arr-to-headcount-ratio-the-saas-gut-check-d9d13bc9e",
+      "snippet": "SaaS companies tend to conform to a ARR to Headcount ratio of around $100k plus or minus $50k, meaning a $1M ARR business tends to have between 7 and 20 ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "State of Startup Compensation, H1 2024",
+      "url": "https://carta.com/data/startup-compensation-h1-2024/",
+      "snippet": "The biggest recent shift has occurred at Series C, where median headcount for SaaS companies has fallen from 131.7 in H1 2022 to 86.5 in H1 2024 ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Typical Employee Count for SaaS Companies \u2013",
+      "url": "https://publicsaascompanies.com/typical-employee-count-for-saas-companies/",
+      "snippet": "For instance, many established SaaS firms might employ between 500 to 2,000 people, reflecting their broader market reach and extensive service ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "15 Critical B2B Sales Metrics Every Team Should Track in ...",
+      "url": "https://monday.com/blog/crm-and-sales/b2b-sales-metrics/",
+      "snippet": "Client retention rate: Retaining 90%+ of clients annually is standard in professional services, as ongoing relationships generate predictable ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "How to Think About Scaling Your Customer Success Team ...",
+      "url": "https://www.saastr.com/the-2-million-dollar-man-woman-how-to-think-about-scaling-your-customer-success-team/",
+      "snippet": "$2m ARR per Customer Success Manager \u2014 but hired in advance, not arrears \u2014 is a solid model to scale with ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "The Tactical Guide To SaaS Customer Success For B2B ...",
+      "url": "https://onboard.io/blog/tactical-guide-to-saas-customer-success-for-b2b",
+      "snippet": "SaaS customer success involves a lengthy customer journey with a focus on retention and the recurring revenue that this provides.",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "31 B2B Sales KPIs & Metrics Every Organization Should ...",
+      "url": "https://www.default.com/post/b2b-sales-kpis",
+      "snippet": "How it's calculated: Percentage of reps who meet or exceed their sales quota within a defined time period. What success looks like: 70\u201380%+ of ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "Capacity Planning for Customer Success",
+      "url": "https://www.insightpartners.com/ideas/capacity-planning-for-customer-success/",
+      "snippet": "This article is intended to help customer success leaders accurately forecast headcount for the next twelve months to drive strong customer and employee ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "6 Ways to Improve Your B2B SaaS Customer Success Efforts",
+      "url": "https://www.salesassembly.com/blog/playbooks/6-ways-to-improve-your-b2b-saas-customer-success-efforts/",
+      "snippet": "Here are six best practices every B2B SaaS customer success team should adhere to and how they can better align with sales teams.",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "2025 Customer Success Industry Market Statistics, Salaries ...",
+      "url": "https://www.custify.com/blog/customer-success-statistics/",
+      "snippet": "General Customer Success Stats \u00b7 In 2020 more than 90% of organizations stated they have a dedicated customer success role in their company.",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "B2B Benchmarks for SaaS Sales: What to Measure and How",
+      "url": "https://www.walnut.io/blog/sales-tips/saas-and-b2b-sales-benchmarks-what-to-measure-and-how/",
+      "snippet": "If your rep has 100 conversations per week, leading to 25 appointments, your average conversation to appointment ratio is 25%. If you find that this ratio falls ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "How to approach your customer success comp plans",
+      "url": "https://www.quotapath.com/blog/customer-success-comp-plans/",
+      "snippet": "Pay mix: 80% base and 20% variable \u00b7 10% of variable pay is based on a 90% customer retention goal \u00b7 Other 10% is earned from commissions on ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "How to Build a Scalable B2B SaaS Sales Team (A Step-by- ...",
+      "url": "https://demandzen.com/how-to-build-scalable-b2b-saas-sales-team/",
+      "snippet": "Learn how to build a high-performing B2B SaaS sales team from scratch. This guide covers team structure, key roles, sales processes, ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "The Best Sales Team Structure for Startups and Growth- ...",
+      "url": "https://www.sloane-staffing.com/insights/the-best-sales-team-structure-for-startups-and-growth-stage-companies",
+      "snippet": "Seed to Series A Stage ($1M - $5M in ARR)\u200b\u200b Primary Goals: Establish repeatable processes, expand customer base, and start to scale. Team ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "A Complete Guide to Ideal Startup Marketing Team Structure",
+      "url": "https://technext.it/startup-marketing-team-structure/",
+      "snippet": "This article gives you a basic guideline on the ideal startup marketing team structure at a different stage of your venture.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "The Ultimate Guide to Startup Funding Stages",
+      "url": "https://visible.vc/blog/startup-funding-stages/",
+      "snippet": "A pre-seed round generally allows a founding team to find product-market fit, hire early employees, and test go-to-market models. As a general ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Is There an Ideal Team Structure in A Startup?",
+      "url": "https://storm2.com/resources/startup/is-there-an-ideal-team-structure-in-a-startup/",
+      "snippet": "The ideal team structure is driven by your priorities. Building the right set of C-Suite matrix is the fundamental step to success.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Startup Funding Stages: A Complete Guide for 2026",
+      "url": "https://growthlist.co/startup-funding-stages/",
+      "snippet": "Learn the 7 startup funding stages from pre-seed to IPO. Understand what each funding round means for sales teams targeting growing ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "GTM to Engineering Ratio: How Startups Build for Growth",
+      "url": "https://zelt.app/blog/the-gtm-to-engineering-ratio-how-early-stage-startups-build-for-growth/",
+      "snippet": "Learn how early-stage startups balance Go-to-Market and engineering teams to scale effectively, with insights on team ratios and growth ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Stages of startups : YC Startup Job Guide",
+      "url": "https://www.ycombinator.com/library/Ek-stages-of-startups",
+      "snippet": "Seed stage startups are the riskiest and most dynamic. They're the youngest and the least established, typically with teams of 2-10 people (sometimes just the ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Startup Funding Stages - SaaSLabs",
+      "url": "https://saaslabs.com.au/2024/06/22/startup-funding-stages/",
+      "snippet": "Hiring: Expanding the team by hiring additional talent, especially in critical areas such as sales, marketing, engineering, and operations.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Seed Funding for Startups: How to Raise a Seed Round",
+      "url": "https://carta.com/learn/startups/fundraising/seed-funding/",
+      "snippet": "Conduct market research and validation. Launch initial marketing initiatives and sales motions. Secure early-adopters and develop partnerships.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "A Guide to Raising a Series A Round in 2025",
+      "url": "https://www.failory.com/blog/series-a-funding",
+      "snippet": "The typical Series A startup's optional pool ranges from 10% to 20%, with later stages startups having smaller option pools (1-10%).",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    }
+  ]
+}

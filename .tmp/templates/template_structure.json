@@ -1,0 +1,3760 @@
+{
+  "sheets": [
+    {
+      "name": "Assumptions",
+      "max_row": 15,
+      "max_col": 12,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Parameter",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "Year 0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "Year 1",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "Year 2",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "Year 3",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "Year 4",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "Year 5",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "Year 6",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "Year 7",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "Year 8",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "Year 9",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "Year 10",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Price per Unit",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Volume (Customers / Units)",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Revenue Growth %",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Variable Cost % of Revenue",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Fixed Costs",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Tax Rate",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Capex",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Depreciation (Years)",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Debtor Days",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Creditor Days",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Inventory Days",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Interest Rate on Debt",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Equity Infusion",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Debt Drawdown",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Revenue",
+      "max_row": 2,
+      "max_col": 12,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "Year 0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "Year 1",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "Year 2",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "Year 3",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "Year 4",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "Year 5",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "Year 6",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "Year 7",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "Year 8",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "Year 9",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "Year 10",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Revenue",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B2*Assumptions!B3",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Revenue!B2*(1+Assumptions!C3)",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Revenue!C2*(1+Assumptions!D3)",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Revenue!D2*(1+Assumptions!E3)",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Revenue!E2*(1+Assumptions!F3)",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Revenue!F2*(1+Assumptions!G3)",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Revenue!G2*(1+Assumptions!H3)",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Revenue!H2*(1+Assumptions!I3)",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Revenue!I2*(1+Assumptions!J3)",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Revenue!J2*(1+Assumptions!K3)",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Revenue!K2*(1+Assumptions!L3)",
+              "is_formula": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Operating Costs",
+      "max_row": 3,
+      "max_col": 12,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "Year 0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "Year 1",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "Year 2",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "Year 3",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "Year 4",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "Year 5",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "Year 6",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "Year 7",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "Year 8",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "Year 9",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "Year 10",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Variable Costs",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Revenue!B2*Assumptions!B4",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Revenue!C2*Assumptions!C4",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Revenue!D2*Assumptions!D4",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Revenue!E2*Assumptions!E4",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Revenue!F2*Assumptions!F4",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Revenue!G2*Assumptions!G4",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Revenue!H2*Assumptions!H4",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Revenue!I2*Assumptions!I4",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Revenue!J2*Assumptions!J4",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Revenue!K2*Assumptions!K4",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Revenue!L2*Assumptions!L4",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Fixed Costs",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B5",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Assumptions!C5",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Assumptions!D5",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Assumptions!E5",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Assumptions!F5",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Assumptions!G5",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Assumptions!H5",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Assumptions!I5",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Assumptions!J5",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Assumptions!K5",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Assumptions!L5",
+              "is_formula": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "P&L",
+      "max_row": 10,
+      "max_col": 12,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "Year 0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "Year 1",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "Year 2",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "Year 3",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "Year 4",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "Year 5",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "Year 6",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "Year 7",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "Year 8",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "Year 9",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "Year 10",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Revenue",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Revenue!B2",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Revenue!C2",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Revenue!D2",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Revenue!E2",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Revenue!F2",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Revenue!G2",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Revenue!H2",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Revenue!I2",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Revenue!J2",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Revenue!K2",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Revenue!L2",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Total Costs",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=SUM('Operating Costs'!B2:B3)",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=SUM('Operating Costs'!C2:C3)",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=SUM('Operating Costs'!D2:D3)",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=SUM('Operating Costs'!E2:E3)",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=SUM('Operating Costs'!F2:F3)",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=SUM('Operating Costs'!G2:G3)",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=SUM('Operating Costs'!H2:H3)",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=SUM('Operating Costs'!I2:I3)",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=SUM('Operating Costs'!J2:J3)",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=SUM('Operating Costs'!K2:K3)",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=SUM('Operating Costs'!L2:L3)",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "EBITDA",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=B2-B3",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=C2-C3",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=D2-D3",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=E2-E3",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=F2-F3",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=G2-G3",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=H2-H3",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=I2-I3",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=J2-J3",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=K2-K3",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=L2-L3",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Depreciation",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B7/Assumptions!B8",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Assumptions!C7/Assumptions!C8",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Assumptions!D7/Assumptions!D8",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Assumptions!E7/Assumptions!E8",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Assumptions!F7/Assumptions!F8",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Assumptions!G7/Assumptions!G8",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Assumptions!H7/Assumptions!H8",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Assumptions!I7/Assumptions!I8",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Assumptions!J7/Assumptions!J8",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Assumptions!K7/Assumptions!K8",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Assumptions!L7/Assumptions!L8",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "EBIT",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=B4-B5",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=C4-C5",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=D4-D5",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=E4-E5",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=F4-F5",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=G4-G5",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=H4-H5",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=I4-I5",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=J4-J5",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=K4-K5",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=L4-L5",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Interest",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=[1]Debt!B3*Assumptions!B12",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=[1]Debt!C3*Assumptions!C12",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=[1]Debt!D3*Assumptions!D12",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=[1]Debt!E3*Assumptions!E12",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=[1]Debt!F3*Assumptions!F12",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=[1]Debt!G3*Assumptions!G12",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=[1]Debt!H3*Assumptions!H12",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=[1]Debt!I3*Assumptions!I12",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=[1]Debt!J3*Assumptions!J12",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=[1]Debt!K3*Assumptions!K12",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=[1]Debt!L3*Assumptions!L12",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "PBT",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=B6-B7",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=C6-C7",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=D6-D7",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=E6-E7",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=F6-F7",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=G6-G7",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=H6-H7",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=I6-I7",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=J6-J7",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=K6-K7",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=L6-L7",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Tax",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=B8*Assumptions!B6",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=C8*Assumptions!C6",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=D8*Assumptions!D6",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=E8*Assumptions!E6",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=F8*Assumptions!F6",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=G8*Assumptions!G6",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=H8*Assumptions!H6",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=I8*Assumptions!I6",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=J8*Assumptions!J6",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=K8*Assumptions!K6",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=L8*Assumptions!L6",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "PAT",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=B8-B9",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=C8-C9",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=D8-D9",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=E8-E9",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=F8-F9",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=G8-G9",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=H8-H9",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=I8-I9",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=J8-J9",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=K8-K9",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=L8-L9",
+              "is_formula": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Balance Sheet",
+      "max_row": 9,
+      "max_col": 12,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "Year 0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "Year 1",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "Year 2",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "Year 3",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "Year 4",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "Year 5",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "Year 6",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "Year 7",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "Year 8",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "Year 9",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "Year 10",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Fixed Assets",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=SUM('Cash Flow'!B6)",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=SUM('Cash Flow'!C6)",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=SUM('Cash Flow'!D6)",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=SUM('Cash Flow'!E6)",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=SUM('Cash Flow'!F6)",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=SUM('Cash Flow'!G6)",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=SUM('Cash Flow'!H6)",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=SUM('Cash Flow'!I6)",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=SUM('Cash Flow'!J6)",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=SUM('Cash Flow'!K6)",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=SUM('Cash Flow'!L6)",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Working Capital",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "0",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "0",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Cash",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "='Cash Flow'!B9",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "='Cash Flow'!C9",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "='Cash Flow'!D9",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "='Cash Flow'!E9",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "='Cash Flow'!F9",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "='Cash Flow'!G9",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "='Cash Flow'!H9",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "='Cash Flow'!I9",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "='Cash Flow'!J9",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "='Cash Flow'!K9",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "='Cash Flow'!L9",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Total Assets",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=SUM(B2:B4)",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=SUM(C2:C4)",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=SUM(D2:D4)",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=SUM(E2:E4)",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=SUM(F2:F4)",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=SUM(G2:G4)",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=SUM(H2:H4)",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=SUM(I2:I4)",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=SUM(J2:J4)",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=SUM(K2:K4)",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=SUM(L2:L4)",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Equity",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B13",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Assumptions!C13",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Assumptions!D13",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Assumptions!E13",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Assumptions!F13",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Assumptions!G13",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Assumptions!H13",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Assumptions!I13",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Assumptions!J13",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Assumptions!K13",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Assumptions!L13",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Debt",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B14",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Assumptions!C14",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Assumptions!D14",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Assumptions!E14",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Assumptions!F14",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Assumptions!G14",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Assumptions!H14",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Assumptions!I14",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Assumptions!J14",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Assumptions!K14",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Assumptions!L14",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Retained Earnings",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "='P&L'!B10",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "='P&L'!C10",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "='P&L'!D10",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "='P&L'!E10",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "='P&L'!F10",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "='P&L'!G10",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "='P&L'!H10",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "='P&L'!I10",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "='P&L'!J10",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "='P&L'!K10",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "='P&L'!L10",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Total Liabilities",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=SUM(B6:B8)",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=SUM(C6:C8)",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=SUM(D6:D8)",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=SUM(E6:E8)",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=SUM(F6:F8)",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=SUM(G6:G8)",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=SUM(H6:H8)",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=SUM(I6:I8)",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=SUM(J6:J8)",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=SUM(K6:K8)",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=SUM(L6:L8)",
+              "is_formula": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cash Flow",
+      "max_row": 9,
+      "max_col": 12,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "Year 0",
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "Year 1",
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "Year 2",
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "Year 3",
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "Year 4",
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "Year 5",
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "Year 6",
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "Year 7",
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "Year 8",
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "Year 9",
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "Year 10",
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "PAT",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "='P&L'!B10",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "='P&L'!C10",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "='P&L'!D10",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "='P&L'!E10",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "='P&L'!F10",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "='P&L'!G10",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "='P&L'!H10",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "='P&L'!I10",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "='P&L'!J10",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "='P&L'!K10",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "='P&L'!L10",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Depreciation",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "='P&L'!B5",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "='P&L'!C5",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "='P&L'!D5",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "='P&L'!E5",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "='P&L'!F5",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "='P&L'!G5",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "='P&L'!H5",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "='P&L'!I5",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "='P&L'!J5",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "='P&L'!K5",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "='P&L'!L5",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Change in WC",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": null,
+              "is_formula": false
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": null,
+              "is_formula": false
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Operating CF",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=B2+B3-B4",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=C2+C3-C4",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=D2+D3-D4",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=E2+E3-E4",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=F2+F3-F4",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=G2+G3-G4",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=H2+H3-H4",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=I2+I3-I4",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=J2+J3-J4",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=K2+K3-K4",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=L2+L3-L4",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Capex",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=-Assumptions!B7",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=-Assumptions!C7",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=-Assumptions!D7",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=-Assumptions!E7",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=-Assumptions!F7",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=-Assumptions!G7",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=-Assumptions!H7",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=-Assumptions!I7",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=-Assumptions!J7",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=-Assumptions!K7",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=-Assumptions!L7",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Equity",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B13",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Assumptions!C13",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Assumptions!D13",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Assumptions!E13",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Assumptions!F13",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Assumptions!G13",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Assumptions!H13",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Assumptions!I13",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Assumptions!J13",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Assumptions!K13",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Assumptions!L13",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Debt",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=Assumptions!B14",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=Assumptions!C14",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=Assumptions!D14",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=Assumptions!E14",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=Assumptions!F14",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=Assumptions!G14",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=Assumptions!H14",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=Assumptions!I14",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=Assumptions!J14",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=Assumptions!K14",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=Assumptions!L14",
+              "is_formula": true
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "col": 1,
+              "col_letter": "A",
+              "value": "Net Cash Flow",
+              "is_formula": false
+            },
+            {
+              "col": 2,
+              "col_letter": "B",
+              "value": "=SUM(B5:B8)",
+              "is_formula": true
+            },
+            {
+              "col": 3,
+              "col_letter": "C",
+              "value": "=SUM(C5:C8)",
+              "is_formula": true
+            },
+            {
+              "col": 4,
+              "col_letter": "D",
+              "value": "=SUM(D5:D8)",
+              "is_formula": true
+            },
+            {
+              "col": 5,
+              "col_letter": "E",
+              "value": "=SUM(E5:E8)",
+              "is_formula": true
+            },
+            {
+              "col": 6,
+              "col_letter": "F",
+              "value": "=SUM(F5:F8)",
+              "is_formula": true
+            },
+            {
+              "col": 7,
+              "col_letter": "G",
+              "value": "=SUM(G5:G8)",
+              "is_formula": true
+            },
+            {
+              "col": 8,
+              "col_letter": "H",
+              "value": "=SUM(H5:H8)",
+              "is_formula": true
+            },
+            {
+              "col": 9,
+              "col_letter": "I",
+              "value": "=SUM(I5:I8)",
+              "is_formula": true
+            },
+            {
+              "col": 10,
+              "col_letter": "J",
+              "value": "=SUM(J5:J8)",
+              "is_formula": true
+            },
+            {
+              "col": 11,
+              "col_letter": "K",
+              "value": "=SUM(K5:K8)",
+              "is_formula": true
+            },
+            {
+              "col": 12,
+              "col_letter": "L",
+              "value": "=SUM(L5:L8)",
+              "is_formula": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "total_sheets": 6,
+    "years": 11,
+    "columns": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L"
+    ]
+  }
+}

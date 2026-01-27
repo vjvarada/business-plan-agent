@@ -1,0 +1,281 @@
+﻿====================================================================================
+PROPOSAL: LOCAL-FIRST FINANCIAL MODEL WORKFLOW
+====================================================================================
+
+CORE PRINCIPLE: "Edit locally with full visibility, sync to cloud atomically"
+
+====================================================================================
+1. NEW UTILITY: download_model_snapshot.py
+====================================================================================
+
+PURPOSE: Download entire financial model to structured local format
+
+OUTPUT STRUCTURE:
+  .tmp/model_snapshots/
+     [timestamp]_snapshot.json          # Full model metadata
+     sheets/
+        assumptions.csv               # Values
+        assumptions_formulas.csv      # Formulas
+        cash_flow.csv
+        cash_flow_formulas.csv
+        funding_cap_table.csv
+        funding_cap_table_formulas.csv
+        ... (all 14 sheets)
+     model_structure.json              # Sheet linkages, cell types, formatting
+
+BENEFITS:
+   Full visibility - see values AND formulas side-by-side
+   Version control - git diff shows exactly what changed
+   Offline editing - work without API calls
+   Searchable - grep for formulas, find all references to a cell
+
+USAGE:
+  python execution/download_model_snapshot.py --sheet-id <ID> --output .tmp/snapshot
+
+====================================================================================
+2. NEW UTILITY: validate_model_snapshot.py
+====================================================================================
+
+PURPOSE: Pre-flight validation before syncing to Google Sheets
+
+CHECKS:
+   Formula syntax (no broken references like #REF!, #VALUE!)
+   Balance sheet equation (Assets = Liabilities + Equity)
+   Cross-sheet linkages (all ='SheetName'!Cell references exist)
+   No hard-coded values where formulas expected
+   Circular reference detection
+   Cash flow continuity (ending cash = beginning + net cash flow)
+   Data types (numbers in number columns, percents formatted correctly)
+
+OUTPUT:
+  - PASS/FAIL with specific errors
+  - Warnings for suspicious patterns (e.g., revenue decreasing year-over-year)
+  - Diff report showing what changed vs last snapshot
+
+USAGE:
+  python execution/validate_model_snapshot.py --snapshot .tmp/snapshot
+
+====================================================================================
+3. NEW UTILITY: sync_snapshot_to_sheets.py
+====================================================================================
+
+PURPOSE: Atomic sync from local snapshot to Google Sheets
+
+FEATURES:
+   Batch updates (50-100 operations per request)
+   Preserve formulas (distinguish between =B5*C5 and 12345)
+   Preserve formatting (colors, fonts, number formats)
+   Rollback on error (all-or-nothing updates)
+   Dry-run mode (preview changes without applying)
+
+SMART SYNCING:
+  - Only update cells that changed (diff against last snapshot)
+  - Update in dependency order (Assumptions  Revenue  P&L  Cash Flow)
+  - Wait for formulas to recalculate between dependent sheets
+
+USAGE:
+  python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --sheet-id <ID> --dry-run
+  python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --sheet-id <ID> --apply
+
+====================================================================================
+4. ENHANCED: analyze_sheet_linkages.py (already exists!)
+====================================================================================
+
+CURRENT STATE: Already created in execution/
+ENHANCEMENTS NEEDED:
+   Add "expected linkages" validation (e.g., Valuation should link to Cap Table)
+   Detect hard-coded values in cells that should have formulas
+   Generate linkage map visualization
+
+====================================================================================
+5. NEW PATTERN: Edit Scripts (Not Inline Commands)
+====================================================================================
+
+BEFORE (Current - BAD):
+  python -c "
+  import gspread
+  sheet = gc.open(...)
+  worksheet.update('B5', 1600000)  # Easy to break formulas!
+  "
+
+AFTER (Proposed - GOOD):
+  # 1. Download snapshot
+  python execution/download_model_snapshot.py --sheet-id <ID>
+  
+  # 2. Edit CSV files directly (full visibility)
+  # Edit .tmp/snapshot/sheets/funding_cap_table.csv
+  # Row 4, Col C: 1600000
+  
+  # 3. Validate changes
+  python execution/validate_model_snapshot.py --snapshot .tmp/snapshot
+  
+  # 4. Dry-run sync
+  python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --dry-run
+  
+  # 5. Apply if validation passes
+  python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --apply
+
+====================================================================================
+6. WORKFLOW FOR SPECIFIC TASKS
+====================================================================================
+
+TASK: Update funding amounts
+-----------------------------------------------------
+OLD WAY (what I did today):
+  - Multiple inline gspread commands
+  - Updated Cash Flow row 12
+  - Updated Cap Table rows 4, 10
+  - Ran repair script to fix balance sheet
+  - Manually verified with export_model_summary
+
+NEW WAY (proposed):
+  1. Download: python download_model_snapshot.py --sheet-id <ID>
+  2. Edit: Modify .tmp/snapshot/sheets/cash_flow.csv (row 12, cols B & D)
+  3. Edit: Modify .tmp/snapshot/sheets/funding_cap_table.csv (rows 4 & 10)
+  4. Validate: python validate_model_snapshot.py --snapshot .tmp/snapshot
+      Checks balance sheet will remain balanced
+      Validates no formulas broken
+  5. Sync: python sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --apply
+  6. Verify: python export_model_summary.py (quick check)
+
+TASK: Add new revenue stream
+-----------------------------------------------------
+  1. Download snapshot
+  2. Edit assumptions.csv: Add new row with revenue stream parameters
+  3. Edit revenue.csv: Add formula =Assumptions!B45*Volume for new stream
+  4. Validate: Checks formula references exist
+  5. Sync with --dry-run to preview
+  6. Apply if looks good
+
+TASK: Fix hard-coded values
+-----------------------------------------------------
+  1. Download snapshot
+  2. Run: python analyze_sheet_linkages.py --snapshot .tmp/snapshot --find-hardcoded
+      Reports: "Valuation B35: Hard-coded 0.554, should link to 'Funding Cap Table'!G15"
+  3. Edit valuation_formulas.csv: Replace value with formula
+  4. Validate: Checks formula syntax
+  5. Sync
+
+====================================================================================
+7. DATA FORMAT DETAILS
+====================================================================================
+
+CSV FORMAT (assumptions.csv):
+  Row,A,B,C,D,E,F,G,H
+  1,ASSUMPTIONS,,,,,,
+  2,,,,,,,
+  3,General Parameters,Value,Unit,,,,
+  4,Planning Horizon (Years),10,years,,,,
+  5,Base Year,2026,,,,,
+  ...
+
+FORMULA CSV (assumptions_formulas.csv):
+  Row,A,B,C,D,E,F,G,H
+  1,ASSUMPTIONS,,,,,,
+  2,,,,,,,
+  3,General Parameters,Value,Unit,,,,
+  4,Planning Horizon (Years),10,years,,,,
+  5,Base Year,2026,,,,,
+  10,Total SAM,=B7+B8+B9,dollars,,,,  # <-- FORMULA PRESERVED
+  ...
+
+METADATA JSON (model_structure.json):
+  {
+    "spreadsheet_id": "1-Ss62...",
+    "snapshot_date": "2026-01-22T03:15:00",
+    "sheets": [
+      {
+        "name": "Assumptions",
+        "index": 0,
+        "rows": 100,
+        "cols": 8,
+        "linkages": {
+          "B10": {"formula": "=B7+B8+B9", "references": ["B7", "B8", "B9"]},
+          "B15": {"formula": "='Sources & References'!B43", "external_ref": "Sources & References!B43"}
+        },
+        "formatting": {
+          "A1": {"bgColor": {"red": 0.2, "green": 0.4, "blue": 0.6}, "bold": true}
+        }
+      }
+    ]
+  }
+
+====================================================================================
+8. BENEFITS SUMMARY
+====================================================================================
+
+SPEED:
+  - Download once, edit multiple sheets locally, sync once
+  - No waiting for API calls during editing
+  - Batch operations 10x faster than individual updates
+
+RELIABILITY:
+  - Pre-flight validation catches errors before they break the model
+  - Rollback capability if sync fails
+  - Atomic updates (all-or-nothing)
+
+VISIBILITY:
+  - See formulas and values side-by-side
+  - Git diff shows exactly what changed
+  - Easy to review before applying
+
+AUDITABILITY:
+  - Version history in git
+  - Timestamped snapshots
+  - Clear record of who changed what when
+
+REUSABILITY:
+  - Scripts work for ANY financial model, not just this one
+  - Patterns established in directives/LOCAL_FIRST_IMPLEMENTATION.md
+  - Other agents can use same workflow
+
+====================================================================================
+9. IMPLEMENTATION PRIORITY
+====================================================================================
+
+PHASE 1 (Essential - Build Now):
+  1. download_model_snapshot.py      [2-3 hours]
+  2. validate_model_snapshot.py      [2-3 hours]
+  3. sync_snapshot_to_sheets.py      [3-4 hours]
+
+PHASE 2 (Enhancement - Build Next):
+  4. Enhanced analyze_sheet_linkages.py [1-2 hours]
+  5. Directive: LOCAL_FIRST_IMPLEMENTATION.md [1 hour]
+  6. Integration with existing tools [1 hour]
+
+TOTAL: ~10-15 hours of development for massive workflow improvement
+
+====================================================================================
+10. COMPARISON TO CURRENT WORKFLOW
+====================================================================================
+
+TODAY'S SESSION (What Actually Happened):
+  1. Inline Python command to update Cash Flow  Syntax error
+  2. Fixed syntax error
+  3. Another inline command to update Cap Table  Partial success
+  4. Discovered Valuation had hard-coded values
+  5. Multiple commands to fix Valuation linkages
+  6. Discovered balance sheet imbalanced
+  7. Ran repair script
+  8. Verified with export_model_summary
+  9. Discovered Cap Table still had old amounts
+  10. Fixed Cap Table amounts and valuations
+  11. Re-verified balance sheet
+
+  RESULT: ~20 terminal commands, multiple errors, 30+ minutes
+
+WITH LOCAL-FIRST WORKFLOW:
+  1. Download snapshot
+  2. Edit 3 CSV files (Cash Flow, Cap Table, Valuation)
+  3. Run validator  Shows what will break before applying
+  4. Fix issues in CSV
+  5. Sync to Sheets
+
+  RESULT: 5 commands, no errors, 5-10 minutes
+
+====================================================================================
+
+RECOMMENDATION: Implement Phase 1 immediately. This pattern aligns perfectly with
+the DOE framework's principle of "deterministic execution" and will prevent the
+kinds of errors we encountered today.
+

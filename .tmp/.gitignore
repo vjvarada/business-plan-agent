@@ -1,0 +1,32 @@
+﻿# .tmp folder - Track business plans and deliverables
+# Ignore only truly temporary/intermediate files
+
+# Keep all markdown files (business plans, documentation)
+!**/*.md
+
+# Keep JSON configs and data
+!**/*.json
+
+# Keep project folders and their contents
+!rapidtools/
+!rapidtools/**
+
+# Ignore these temporary items
+**/snapshot*/
+**/research_archive/
+**/__pycache__/
+**/*.pyc
+**/*.tmp
+**/*.temp
+
+# Ignore working scripts (execution/ has the main copies)
+*.py
+
+# Ignore binary/compiled files
+*.xlsx
+*.docx
+*.csv
+
+# Ignore archive folder
+_archive/
+

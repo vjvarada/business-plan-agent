@@ -7,10 +7,16 @@
 credentials.json
 token.json
 
-# Temporary files
-.tmp/
-*.tmp
-*.temp
+# Temporary file extensions (NOT the .tmp/ folder - we track business plans there)
+**/*.tmp
+**/*.temp
+!.tmp/
+
+# Within .tmp, ignore only truly temporary files
+.tmp/**/snapshot*/
+.tmp/**/research_archive/
+.tmp/**/*.pyc
+.tmp/**/__pycache__/
 
 # Python
 __pycache__/

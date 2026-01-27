@@ -237,10 +237,146 @@ def search_news(query, num_results=10):
     }
 
 
+def extract_market_sources(industry: str, num_results: int = 5) -> dict:
+    """
+    Extract and format market data sources for financial model.
+    Performs multiple searches to gather TAM/SAM/SOM and industry metrics.
+    
+    Args:
+        industry: Industry name/description
+        num_results: Number of results per search
+        
+    Returns:
+        Dictionary formatted for financial model Sources sheet
+    """
+    sources = {
+        'retrieval_date': datetime.now().strftime('%Y-%m-%d')
+    }
+    
+    # Search for TAM
+    try:
+        tam_results = search_market(f"{industry} market size TAM total addressable market", num_results)
+        if tam_results.get('organic_results'):
+            top = tam_results['organic_results'][0]
+            sources['tam_source'] = top.get('title', '')
+            sources['tam_url'] = top.get('link', '')
+            sources['tam_value'] = top.get('snippet', '')[:200] if top.get('snippet') else ''
+    except Exception as e:
+        print(f"Warning: TAM search failed: {e}")
+    
+    # Search for industry growth rate
+    try:
+        growth_results = search_market(f"{industry} industry growth rate CAGR forecast", num_results)
+        if growth_results.get('organic_results'):
+            top = growth_results['organic_results'][0]
+            sources['growth_rate_source'] = top.get('title', '')
+            sources['growth_rate_url'] = top.get('link', '')
+            sources['growth_rate_value'] = top.get('snippet', '')[:200] if top.get('snippet') else ''
+    except Exception as e:
+        print(f"Warning: Growth rate search failed: {e}")
+    
+    # Search for CAC benchmarks
+    try:
+        cac_results = search_market(f"{industry} customer acquisition cost CAC benchmark average", num_results)
+        if cac_results.get('organic_results'):
+            top = cac_results['organic_results'][0]
+            sources['cac_benchmark_source'] = top.get('title', '')
+            sources['cac_benchmark_url'] = top.get('link', '')
+            sources['cac_benchmark_value'] = top.get('snippet', '')[:200] if top.get('snippet') else ''
+    except Exception as e:
+        print(f"Warning: CAC benchmark search failed: {e}")
+    
+    # Search for pricing benchmarks
+    try:
+        pricing_results = search_market(f"{industry} pricing benchmark average price", num_results)
+        if pricing_results.get('organic_results'):
+            top = pricing_results['organic_results'][0]
+            sources['price_source'] = top.get('title', '')
+            sources['price_url'] = top.get('link', '')
+            sources['price_value'] = top.get('snippet', '')[:200] if top.get('snippet') else ''
+    except Exception as e:
+        print(f"Warning: Pricing search failed: {e}")
+    
+    # Search for LTV:CAC benchmarks
+    try:
+        ltv_results = search_market(f"{industry} LTV CAC ratio benchmark unit economics", num_results)
+        if ltv_results.get('organic_results'):
+            top = ltv_results['organic_results'][0]
+            sources['ltv_cac_benchmark_source'] = top.get('title', '')
+            sources['ltv_cac_benchmark_url'] = top.get('link', '')
+            sources['ltv_cac_benchmark_value'] = top.get('snippet', '')[:200] if top.get('snippet') else ''
+    except Exception as e:
+        print(f"Warning: LTV:CAC search failed: {e}")
+    
+    # Get industry news
+    try:
+        news_results = search_news(f"{industry} industry news", num_results=3)
+        if news_results.get('news_results'):
+            for i, article in enumerate(news_results['news_results'][:2], 1):
+                sources[f'news{i}_title'] = article.get('title', '')
+                sources[f'news{i}_source'] = article.get('source', '')
+                sources[f'news{i}_url'] = article.get('link', '')
+    except Exception as e:
+        print(f"Warning: News search failed: {e}")
+    
+    return sources
+
+
+def compile_research_report(industry: str, company_name: str | None = None) -> dict:
+    """
+    Compile a comprehensive research report with all sources.
+    
+    Args:
+        industry: Industry name/description
+        company_name: Optional company name for competitor analysis
+        
+    Returns:
+        Dictionary with full research report and sources
+    """
+    report = {
+        'industry': industry,
+        'company_name': company_name,
+        'timestamp': datetime.now().isoformat(),
+        'sources': extract_market_sources(industry),
+        'research': {}
+    }
+    
+    # Get market overview
+    try:
+        market_research = search_market(f"{industry} market overview size trends", 10)
+        report['research']['market_overview'] = market_research
+    except Exception as e:
+        print(f"Warning: Market overview search failed: {e}")
+    
+    # Get competitor analysis if company name provided
+    if company_name:
+        try:
+            competitors = analyze_competitors(company_name, industry, 10)
+            report['research']['competitors'] = competitors
+            
+            # Add competitor sources
+            if competitors.get('top_competitors'):
+                for i, comp in enumerate(competitors['top_competitors'][:3], 1):
+                    report['sources'][f'competitor{i}_name'] = comp.get('name', '')
+                    report['sources'][f'competitor{i}_info'] = comp.get('description', '')[:200] if comp.get('description') else ''
+                    report['sources'][f'competitor{i}_url'] = comp.get('link', '')
+        except Exception as e:
+            print(f"Warning: Competitor analysis failed: {e}")
+    
+    # Get industry trends
+    try:
+        trends = get_industry_trends(industry, 'today 12-m')
+        report['research']['trends'] = trends
+    except Exception as e:
+        print(f"Warning: Trends search failed: {e}")
+    
+    return report
+
+
 def main():
     parser = argparse.ArgumentParser(description='Market Research with SerpAPI')
     parser.add_argument('--mode', required=True,
-                        choices=['search', 'competitors', 'trends', 'news'],
+                        choices=['search', 'competitors', 'trends', 'news', 'sources', 'full-report'],
                         help='Research mode')
     parser.add_argument('--query', required=True, help='Search query or company name')
     parser.add_argument('--industry', help='Industry context (for competitor analysis)')
@@ -274,6 +410,18 @@ def main():
             result = search_news(
                 query=args.query,
                 num_results=args.num_results
+            )
+        elif args.mode == 'sources':
+            # Extract sources for financial model
+            result = extract_market_sources(
+                industry=args.query,
+                num_results=args.num_results
+            )
+        elif args.mode == 'full-report':
+            # Full research report with all sources
+            result = compile_research_report(
+                industry=args.query,
+                company_name=args.industry  # Use industry arg as company name
             )
 
         print(json.dumps(result, indent=2))

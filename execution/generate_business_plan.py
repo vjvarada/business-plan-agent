@@ -205,17 +205,30 @@ Provide projections in the following JSON format:
         "net_margin_year_5": "X%",
         "break_even_month": 0
     }},
-    "key_metrics": {{
+    "unit_economics": {{
         "customer_acquisition_cost": 0,
         "lifetime_value": 0,
-        "ltv_cac_ratio": 0
+        "ltv_cac_ratio": 0,
+        "cac_payback_months": 0,
+        "gross_margin_per_customer": "X%",
+        "churn_rate": "X%"
+    }},
+    "key_metrics": {{
+        "total_customers_year_1": 0,
+        "total_customers_year_5": 0,
+        "revenue_per_customer": 0
     }},
     "assumptions": ["assumption 1", ...],
+    "data_sources": ["source 1 with URL", ...],
     "risks": ["risk 1", ...],
     "summary": "Executive summary of financial outlook"
 }}
 
-Use realistic industry benchmarks. Return ONLY the JSON object.
+Use realistic industry benchmarks. Include data sources for key assumptions.
+IMPORTANT: Unit economics (CAC, LTV, LTV:CAC ratio) are critical metrics.
+- LTV:CAC ratio should be >3:1 for healthy business
+- CAC payback should be <12 months
+Return ONLY the JSON object.
 """
     
     system_prompt = "You are a financial analyst specializing in startup and business projections. Provide realistic, data-driven projections."
@@ -379,7 +392,15 @@ Create a professional business plan with the following sections:
 6. Marketing & Sales Strategy
 7. Financial Projections
 8. Funding Requirements (if applicable)
-9. Appendix (key data points)
+9. References & Sources (list all market data sources with URLs)
+10. Appendix (key data points)
+
+IMPORTANT: Section 9 (References & Sources) must include:
+- All market research sources with URLs
+- TAM/SAM/SOM data sources
+- Industry growth rate sources
+- Competitor information sources
+- Any other external data sources used
 
 Format the output as a well-structured document that can be directly used in a Google Doc.
 Use clear headings and bullet points where appropriate.

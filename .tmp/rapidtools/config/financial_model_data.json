@@ -1,0 +1,1167 @@
+{
+  "summary": [
+    [
+      "KEY METRICS SUMMARY",
+      "",
+      "Year 0",
+      "Year 1",
+      "Year 2",
+      "Year 3",
+      "Year 4",
+      "Year 5"
+    ],
+    [
+      "",
+      "Unit",
+      "Y0",
+      "Y1",
+      "Y2",
+      "Y3",
+      "Y4",
+      "Y5"
+    ],
+    [
+      "REVENUE"
+    ],
+    [
+      "Total Revenue",
+      "$",
+      "$194,400",
+      "$1,185,500",
+      "$3,482,100",
+      "$7,974,700",
+      "$13,001,500",
+      "$20,658,800"
+    ],
+    [
+      "Revenue Growth",
+      "%",
+      "",
+      "509.8%",
+      "193.7%",
+      "129.0%",
+      "63.0%",
+      "58.9%"
+    ],
+    [],
+    [
+      "PROFITABILITY"
+    ],
+    [
+      "Gross Profit",
+      "$",
+      "$102,450",
+      "$704,345",
+      "$2,087,935",
+      "$5,176,645",
+      "$8,515,265",
+      "$13,564,950"
+    ],
+    [
+      "Gross Margin %",
+      "%",
+      "52.7%",
+      "59.4%",
+      "60.0%",
+      "64.9%",
+      "65.5%",
+      "65.7%"
+    ],
+    [
+      "EBITDA",
+      "$",
+      "-$315,550",
+      "-$76,805",
+      "$466,385",
+      "$2,316,316",
+      "$4,195,313",
+      "$6,848,048"
+    ],
+    [
+      "EBITDA Margin %",
+      "%",
+      "-162.3%",
+      "-6.5%",
+      "13.4%",
+      "29.0%",
+      "32.3%",
+      "33.1%"
+    ],
+    [
+      "Net Income",
+      "$",
+      "-$330,550",
+      "-$86,805",
+      "$334,788",
+      "$1,725,987",
+      "$3,135,235",
+      "$5,124,786"
+    ],
+    [
+      "Net Profit Margin %",
+      "%",
+      "-170.0%",
+      "-7.3%",
+      "9.6%",
+      "21.6%",
+      "24.1%",
+      "24.8%"
+    ],
+    [
+      "CASH & FUNDING"
+    ],
+    [
+      "Cash Balance",
+      "$",
+      "$593,040",
+      "$376,034",
+      "$2,922,722",
+      "$4,150,216",
+      "$6,744,462",
+      "$11,079,523"
+    ],
+    [
+      "Cash from Operations",
+      "$",
+      "-$331,960",
+      "-$167,006",
+      "$146,688",
+      "$1,302,493",
+      "$2,669,247",
+      "$4,410,060"
+    ],
+    [],
+    [
+      "CUSTOMERS"
+    ],
+    [
+      "Total Customers",
+      "#",
+      "29",
+      "147",
+      "442",
+      "884",
+      "1,474",
+      "2,358"
+    ],
+    [
+      "New Customers",
+      "#",
+      "10",
+      "76",
+      "156",
+      "244",
+      "422",
+      "561"
+    ],
+    [
+      "Churned Customers",
+      "#",
+      "0",
+      "1",
+      "8",
+      "23",
+      "45",
+      "83"
+    ],
+    [
+      "Customer Growth Rate",
+      "%",
+      "0.0%",
+      "750.0%",
+      "173.0%",
+      "95.0%",
+      "83.0%",
+      "57.0%"
+    ],
+    [],
+    [
+      "UNIT ECONOMICS"
+    ],
+    [
+      "CAC (per customer)",
+      "$",
+      "$2,000",
+      "$2,100",
+      "$2,200",
+      "$2,300",
+      "$2,400",
+      "$2,500"
+    ],
+    [
+      "Total CAC Spend",
+      "$",
+      "$20,000",
+      "$159,600",
+      "$343,200",
+      "$561,200",
+      "$1,012,800",
+      "$1,402,500"
+    ],
+    [
+      "ARPU (Annual)",
+      "$",
+      "$6,703",
+      "$8,065",
+      "$7,878",
+      "$9,021",
+      "$8,821",
+      "$8,761"
+    ],
+    [
+      "ARPU (Monthly)",
+      "$",
+      "$559",
+      "$672",
+      "$657",
+      "$752",
+      "$735",
+      "$730"
+    ],
+    [
+      "Churn Rate",
+      "%",
+      "10.0%",
+      "10.0%",
+      "10.0%",
+      "10.0%",
+      "10.0%",
+      "10.0%"
+    ],
+    [
+      "Avg Customer Lifetime",
+      "yrs",
+      "10.0",
+      "10.0",
+      "10.0",
+      "10.0",
+      "10.0",
+      "10.0"
+    ],
+    [
+      "LTV (Gross)",
+      "$",
+      "$67,034",
+      "$80,646",
+      "$78,781",
+      "$90,212",
+      "$88,206",
+      "$87,612"
+    ],
+    [
+      "LTV (Net of COGS)",
+      "$",
+      "$35,328",
+      "$47,915",
+      "$47,238",
+      "$58,559",
+      "$57,770",
+      "$57,527"
+    ],
+    [
+      "LTV:CAC Ratio",
+      "x",
+      "17.7",
+      "22.8",
+      "21.5",
+      "25.5",
+      "24.1",
+      "23.0"
+    ],
+    [
+      "CAC Payback (months)",
+      "#",
+      "6.8",
+      "5.3",
+      "5.6",
+      "4.7",
+      "5.0",
+      "5.2"
+    ]
+  ],
+  "sources": [
+    [
+      "Sources & References - RapidTools Financial Model"
+    ],
+    [],
+    [
+      "SECTION A: KEY METRICS (Linkable Values)"
+    ],
+    [],
+    [
+      "TAM - Total Addressable Market"
+    ],
+    [
+      "Metric",
+      "Value",
+      "Unit",
+      "Source",
+      "Notes"
+    ],
+    [
+      "Dies, Jigs & Tools Market 2024",
+      "$60,180 M",
+      "$",
+      "Business Research Co",
+      "Growing to $63.35B in 2025"
+    ],
+    [
+      "EOAT Market 2024",
+      "$2,600 M",
+      "$",
+      "IMARC Group",
+      "4.64% CAGR"
+    ],
+    [
+      "Industrial 3D Printing 2024",
+      "$3,560 M",
+      "$",
+      "Precedence Research",
+      "Growing to $24B by 2034"
+    ],
+    [
+      "3D Printing Services 2024",
+      "$9,830 M",
+      "$",
+      "Fact.MR",
+      "18.2% CAGR"
+    ],
+    [
+      "Sand Casting Market 2024",
+      "$345,500 M",
+      "$",
+      "Verified Market Research",
+      "7.8% CAGR"
+    ],
+    [
+      "Vacuum Casting Market 2024",
+      "$2,560 M",
+      "$",
+      "Straits Research",
+      "5.3% CAGR"
+    ],
+    [
+      "Palletizing Equipment 2024",
+      "$2,900 M",
+      "$",
+      "PS Market Research",
+      "5.6% CAGR"
+    ],
+    [
+      "Workholding Devices 2024",
+      "$4,440 M",
+      "$",
+      "Market Data Forecast",
+      "5.1% CAGR"
+    ],
+    [
+      "Global Tooling Market 2024",
+      "$273,890 M",
+      "$",
+      "Precedence Research",
+      "6.9% CAGR"
+    ],
+    [],
+    [
+      "Design Automation Software TAM (10 Modules)"
+    ],
+    [
+      "Module",
+      "Software TAM ($M)",
+      "Base Market",
+      "Share % of Base Market",
+      "Source"
+    ],
+    [
+      "1. Jigs & Fixtures",
+      "$181 M",
+      "Dies, Jigs & Tools",
+      "0.30%",
+      "Business Research Co"
+    ],
+    [
+      "2. Assembly Guides",
+      "$60 M",
+      "Dies, Jigs & Tools",
+      "0.10%",
+      "Business Research Co"
+    ],
+    [
+      "3. Drilling Guides",
+      "$48 M",
+      "Dies, Jigs & Tools",
+      "0.08%",
+      "Business Research Co"
+    ],
+    [
+      "4. Alignment Tools",
+      "$30 M",
+      "Dies, Jigs & Tools",
+      "0.05%",
+      "Business Research Co"
+    ],
+    [
+      "5. Shadow Boxes",
+      "$18 M",
+      "Dies, Jigs & Tools",
+      "0.03%",
+      "Business Research Co"
+    ],
+    [
+      "6. Custom Palletizing",
+      "$44 M",
+      "Palletizing Equipment",
+      "1.50%",
+      "PS Market Research"
+    ],
+    [
+      "7. Sand Casting Tools",
+      "$69 M",
+      "Sand Casting Market",
+      "0.02%",
+      "Verified Market Research"
+    ],
+    [
+      "8. Vacuum Casting Tools",
+      "$51 M",
+      "Vacuum Casting",
+      "2.00%",
+      "Straits Research"
+    ],
+    [
+      "9. Soft Jaws",
+      "$9 M",
+      "Workholding Devices",
+      "0.20%",
+      "Market Data Forecast"
+    ],
+    [
+      "10. EOAT",
+      "$52 M",
+      "EOAT Market",
+      "2.00%",
+      "IMARC Group"
+    ],
+    [
+      "SOFTWARE TAM TOTAL",
+      "$562 M",
+      "$M",
+      "",
+      "Sum of 10 modules"
+    ],
+    [],
+    [
+      "Hardware & Services TAM"
+    ],
+    [
+      "Revenue Stream",
+      "TAM ($M)",
+      "Market",
+      "Share % of Base Market",
+      "Source"
+    ],
+    [
+      "3D Printers (Hardware)",
+      "$534 M",
+      "Industrial 3D Printing",
+      "15.00%",
+      "Precedence Research"
+    ],
+    [
+      "Consumables",
+      "$313 M",
+      "3D Printing Materials",
+      "8.80%",
+      "Data Bridge MR"
+    ],
+    [
+      "Job Work Services",
+      "$492 M",
+      "3D Printing Services",
+      "5.00%",
+      "Fact.MR"
+    ],
+    [
+      "Managed Services",
+      "$197 M",
+      "3D Printing Services",
+      "2.00%",
+      "Fact.MR"
+    ],
+    [
+      "HARDWARE & SERVICES TAM",
+      "$1,535 M",
+      "$M",
+      "",
+      "Sum of 4 streams"
+    ],
+    [],
+    [
+      "TOTAL RapidTools TAM",
+      "$2,097 M",
+      "$M",
+      "",
+      "All 5 revenue streams"
+    ],
+    [],
+    [
+      "TAM - Companies Derivation"
+    ],
+    [
+      "Metric",
+      "Value",
+      "Unit",
+      "Source"
+    ],
+    [
+      "Global Manufacturing Companies",
+      "2,500,000",
+      "#",
+      "UNIDO Global Manufacturing Statistics 2024"
+    ],
+    [
+      "Target Segment %",
+      "15%",
+      "%",
+      "Auto 8% + Aerospace 2% + Precision 5%"
+    ],
+    [
+      "Companies in Target Segments",
+      "375,000",
+      "#",
+      "Calculated"
+    ],
+    [
+      "With Tooling Needs %",
+      "80%",
+      "%",
+      "IBISWorld Manufacturing Analysis"
+    ],
+    [
+      "TAM Companies (Global)",
+      "300,000",
+      "#",
+      "Companies addressable by RapidTools"
+    ],
+    [
+      "Avg Spend per Company",
+      "$7,000",
+      "$/yr",
+      "Calculated: TAM / Companies"
+    ],
+    [
+      "TAM Verification (Companies x Spend)",
+      "$2,100 M",
+      "$M",
+      "Should be close to Total TAM B39"
+    ],
+    [],
+    [
+      "SAM - Regional Breakdown (Formula-Driven)"
+    ],
+    [
+      "Region",
+      "Total Mfg",
+      "Target Seg",
+      "CAD-Ready %"
+    ],
+    [
+      "INDIA - Total Manufacturing",
+      "680,000",
+      "#",
+      "IBEF Manufacturing Report 2024"
+    ],
+    [
+      "India Target Segments",
+      "58,500",
+      "#",
+      "Auto(35K)+Aero(2K)+Precision(21.5K)"
+    ],
+    [
+      "India CAD Adoption Rate",
+      "10%",
+      "%",
+      "McKinsey Digital Manufacturing India"
+    ],
+    [
+      "INDIA SAM",
+      "5,850",
+      "#",
+      "Calculated: Target x CAD%"
+    ],
+    [],
+    [
+      "SE ASIA - Total Manufacturing",
+      "250,000",
+      "#",
+      "Source of Asia Report"
+    ],
+    [
+      "SE Asia Target Segments",
+      "24,200",
+      "#",
+      "9.7% of total in target industries"
+    ],
+    [
+      "SE Asia Digital Adoption",
+      "12%",
+      "%",
+      "McKinsey ASEAN Digital"
+    ],
+    [
+      "SE ASIA SAM",
+      "2,904",
+      "#",
+      "Calculated: Target x Digital%"
+    ],
+    [],
+    [
+      "JAPAN - Total Manufacturing",
+      "180,000",
+      "#",
+      "Safeguard Global Japan Report"
+    ],
+    [
+      "Japan Target Segments",
+      "26,400",
+      "#",
+      "Auto+Electronics+Precision Eng"
+    ],
+    [
+      "Japan High-Tech Adoption",
+      "25%",
+      "%",
+      "Industry 4.0 Leaders"
+    ],
+    [
+      "JAPAN SAM",
+      "6,600",
+      "#",
+      "Calculated: Target x Tech%"
+    ],
+    [],
+    [
+      "GERMANY/EU - Total Manufacturing",
+      "200,000",
+      "#",
+      "Trade.gov Germany Manufacturing"
+    ],
+    [
+      "Germany/EU Target Segments",
+      "30,600",
+      "#",
+      "Auto suppliers(18K)+Precision(12.6K)"
+    ],
+    [
+      "Germany Industry 4.0 Adoption",
+      "20%",
+      "%",
+      "Fraunhofer Industry 4.0 Report"
+    ],
+    [
+      "GERMANY/EU SAM",
+      "6,120",
+      "#",
+      "Calculated: Target x I4.0%"
+    ],
+    [],
+    [
+      "OTHERS (UK, Canada, Australia, MENA)",
+      "8,000",
+      "#",
+      "Estimate based on market size ratios"
+    ],
+    [
+      "TOTAL SAM Companies",
+      "29,474",
+      "#",
+      "Sum of all regional SAMs"
+    ],
+    [],
+    [
+      "Blended ARPU (Full Adoption)",
+      "7,000",
+      "$/yr",
+      "Software+Hardware+Services per customer"
+    ],
+    [
+      "SAM Value",
+      "$206.3 M",
+      "$",
+      "SAM Companies x ARPU"
+    ],
+    [
+      "SAM/TAM Ratio",
+      "9.84%",
+      "%",
+      "Should be 5-10% for focused market"
+    ],
+    [],
+    [
+      "SOM - Customer Projections (Formula-Driven)"
+    ],
+    [
+      "Y0 SAM Penetration Target",
+      "0.10%",
+      "%",
+      "Pilot phase, India focus"
+    ],
+    [
+      "Y1 SAM Penetration Target",
+      "0.50%",
+      "%",
+      "Early adopter phase"
+    ],
+    [
+      "Y2 SAM Penetration Target",
+      "1.50%",
+      "%",
+      "Product-market fit, SE Asia entry"
+    ],
+    [
+      "Y3 SAM Penetration Target",
+      "3.00%",
+      "%",
+      "Growth phase, Japan entry"
+    ],
+    [
+      "Y4 SAM Penetration Target",
+      "5.00%",
+      "%",
+      "Scaling, EU entry"
+    ],
+    [
+      "Y5 SAM Penetration Target",
+      "8.00%",
+      "%",
+      "Market expansion, global"
+    ],
+    [],
+    [
+      "Y0 Customers",
+      "29",
+      "#",
+      "SAM x Penetration"
+    ],
+    [
+      "Y1 Customers",
+      "147",
+      "#",
+      "SAM x Penetration"
+    ],
+    [
+      "Y2 Customers",
+      "442",
+      "#",
+      "SAM x Penetration"
+    ],
+    [
+      "Y3 Customers",
+      "884",
+      "#",
+      "SAM x Penetration"
+    ],
+    [
+      "Y4 Customers",
+      "1,474",
+      "#",
+      "SAM x Penetration"
+    ],
+    [
+      "Y5 Customers",
+      "2,358",
+      "#",
+      "SAM x Penetration"
+    ],
+    [],
+    [
+      "Y5 SAM Penetration (Actual)",
+      "8.00%",
+      "%",
+      "Verification"
+    ],
+    [],
+    [
+      "Seats Expansion Model (LINKED TO ASSUMPTIONS)"
+    ],
+    [
+      "Y0 Seats/Customer",
+      "1",
+      "#",
+      "OpenView Product Benchmarks"
+    ],
+    [
+      "Y1 Seats/Customer",
+      "2",
+      "#",
+      "OpenView Product Benchmarks"
+    ],
+    [
+      "Y2 Seats/Customer",
+      "2",
+      "#",
+      "OpenView Product Benchmarks"
+    ]
+  ],
+  "funding": [
+    [
+      "FUNDING & CAP TABLE",
+      "",
+      "Year 0",
+      "Year 1",
+      "Year 2",
+      "Year 3",
+      "Year 4",
+      "Year 5"
+    ],
+    [
+      "",
+      "",
+      "Y0",
+      "Y1",
+      "Y2",
+      "Y3",
+      "Y4",
+      "Y5"
+    ],
+    [
+      "FUNDING ROUNDS"
+    ],
+    [
+      "Equity Raised",
+      "$",
+      "$1,000K",
+      "$0K",
+      "$2,500K",
+      "$0K",
+      "$0K",
+      "$0K"
+    ],
+    [
+      "Cumulative Equity",
+      "$",
+      "$1,000K",
+      "$1,000K",
+      "$3,500K",
+      "$3,500K",
+      "$3,500K",
+      "$3,500K"
+    ],
+    [
+      "Debt Raised",
+      "$",
+      "$0K",
+      "$0K",
+      "$0K",
+      "$0K",
+      "$0K",
+      "$0K"
+    ],
+    [
+      "Cumulative Debt",
+      "$",
+      "$0K",
+      "$0K",
+      "$0K",
+      "$0K",
+      "$0K",
+      "$0K"
+    ],
+    [],
+    [
+      "ROUND DETAILS"
+    ],
+    [
+      "Pre-money Valuation",
+      "$",
+      "$2,000K",
+      "",
+      "$8,000K"
+    ],
+    [
+      "Post-money Valuation",
+      "$",
+      "$3,000K",
+      "",
+      "$10,500K"
+    ],
+    [
+      "Round Ownership %",
+      "%",
+      "33.3%",
+      "",
+      "23.8%"
+    ],
+    [],
+    [
+      "CAP TABLE (Ownership %)"
+    ],
+    [
+      "Founders",
+      "%",
+      "66.7%",
+      "66.7%",
+      "50.8%",
+      "50.8%",
+      "50.8%",
+      "50.8%"
+    ],
+    [
+      "Seed Investors",
+      "%",
+      "33.3%",
+      "33.3%",
+      "25.4%",
+      "25.4%",
+      "25.4%",
+      "25.4%"
+    ],
+    [
+      "Series A Investors",
+      "%",
+      "0.0%",
+      "0.0%",
+      "23.8%",
+      "23.8%",
+      "23.8%",
+      "23.8%"
+    ],
+    [
+      "Series B Investors",
+      "%",
+      "0.0%",
+      "0.0%",
+      "0.0%",
+      "0.0%",
+      "0.0%",
+      "0.0%"
+    ],
+    [
+      "Total",
+      "%",
+      "100.0%",
+      "100.0%",
+      "100.0%",
+      "100.0%",
+      "100.0%",
+      "100.0%"
+    ],
+    [],
+    [
+      "INVESTOR RETURNS"
+    ],
+    [
+      "Exit Valuation (5x Rev)",
+      "$",
+      "$42,657K",
+      "$42,657K",
+      "$42,657K",
+      "$42,657K",
+      "$42,657K",
+      "$103,294K"
+    ],
+    [
+      "Seed Investor Return",
+      "$",
+      "$14,219K",
+      "$14,219K",
+      "$10,834K",
+      "$10,834K",
+      "$10,834K",
+      "$26,233K"
+    ],
+    [
+      "Seed Multiple (MOIC)",
+      "x",
+      "14.2x",
+      "14.2x",
+      "10.8x",
+      "10.8x",
+      "10.8x",
+      "26.2x"
+    ],
+    [
+      "Series A Return",
+      "$",
+      "$0K",
+      "$0K",
+      "$10,156K",
+      "$10,156K",
+      "$10,156K",
+      "$24,594K"
+    ]
+  ],
+  "valuation": [
+    [
+      "COMPANY VALUATION",
+      "",
+      "Value"
+    ],
+    [],
+    [
+      "DCF VALUATION"
+    ],
+    [
+      "Year 5 Revenue",
+      "$",
+      "$20,659K"
+    ],
+    [
+      "Exit Multiple",
+      "x",
+      "5.0x"
+    ],
+    [
+      "Terminal Value (5x Revenue)",
+      "$",
+      "$103,294K"
+    ],
+    [
+      "Discount Rate",
+      "%",
+      "20.0%"
+    ],
+    [
+      "Discount Factor (Year 5)",
+      "x",
+      "0.4x"
+    ],
+    [
+      "PV of Terminal Value",
+      "$",
+      "$41,512K"
+    ],
+    [],
+    [
+      "Year 5 Free Cash Flow",
+      "$",
+      "$4,410K"
+    ],
+    [
+      "PV of Year 5 FCF",
+      "$",
+      "$1,772K"
+    ],
+    [
+      "Enterprise Value (DCF)",
+      "$",
+      "$41,512K"
+    ],
+    [],
+    [
+      "COMPARABLES VALUATION",
+      "",
+      "Low",
+      "Base",
+      "High"
+    ],
+    [],
+    [
+      "Revenue Multiple Method"
+    ],
+    [
+      "Year 5 Revenue",
+      "$",
+      "$20,659K",
+      "$20,659K",
+      "$20,659K"
+    ],
+    [
+      "EV/Revenue Multiple",
+      "x",
+      "3.0x",
+      "5.0x",
+      "7.0x"
+    ],
+    [
+      "Implied Valuation",
+      "$",
+      "$61,976K",
+      "$103,294K",
+      "$144,612K"
+    ],
+    [],
+    [
+      "EBITDA Multiple Method"
+    ],
+    [
+      "Year 5 EBITDA",
+      "$",
+      "$6,848K",
+      "$6,848K",
+      "$6,848K"
+    ],
+    [
+      "EV/EBITDA Multiple",
+      "x",
+      "6.0x",
+      "10.0x",
+      "12.0x"
+    ],
+    [
+      "Implied Valuation",
+      "$",
+      "$41,088K",
+      "$68,480K",
+      "$82,177K"
+    ],
+    [],
+    [
+      "VALUATION SUMMARY",
+      "",
+      "Conservative",
+      "Base Case",
+      "Upside"
+    ],
+    [
+      "DCF (Terminal Value)",
+      "$",
+      "$24,907K",
+      "$41,512K",
+      "$58,116K"
+    ],
+    [
+      "Revenue Multiple",
+      "$",
+      "$61,976K",
+      "$103,294K",
+      "$144,612K"
+    ],
+    [
+      "EBITDA Multiple",
+      "$",
+      "$41,088K",
+      "$68,480K",
+      "$82,177K"
+    ],
+    [
+      "Average Valuation",
+      "$",
+      "$42,657K",
+      "$71,095K",
+      "$94,968K"
+    ],
+    [],
+    [
+      "INVESTOR RETURNS AT EXIT",
+      "",
+      "Conservative",
+      "Base Case",
+      "Upside"
+    ],
+    [
+      "Exit Valuation",
+      "$",
+      "$42,657K",
+      "$71,095K",
+      "$94,968K"
+    ],
+    [
+      "Founder Ownership",
+      "%",
+      "55.4%",
+      "55.4%",
+      "55.4%"
+    ]
+  ]
+}

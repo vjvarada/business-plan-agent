@@ -1,0 +1,77 @@
+{
+    "company": "RapidTools",
+    "description": "Automated Jigs & Fixtures for Modern Manufacturing using UI and computational geometry driven design automation software workflows and 3D Printing",
+    "general": {
+        "tax_rate": 0.25,
+        "capex_y0": 150000,
+        "capex_annual": 75000,
+        "depreciation_years": 5,
+        "debtor_days": 45,
+        "creditor_days": 30,
+        "interest_rate": 0.10,
+        "equity_y0": 500000,
+        "debt_y0": 0,
+        "cost_inflation": 0.05
+    },
+    "revenue_streams": [
+        {
+            "name": "Software Subscription",
+            "description": "Per-download tiered pricing ($500-$8000/year)",
+            "price": 2500,
+            "volume": 25,
+            "growth": 0.60,
+            "cogs_pct": 0.15
+        },
+        {
+            "name": "3D Printer Sales",
+            "description": "Industrial 3D printers from Fracktal Works",
+            "price": 5000,
+            "volume": 15,
+            "growth": 0.40,
+            "cogs_pct": 0.40
+        },
+        {
+            "name": "Consumables Materials",
+            "description": "Rebranded filaments and resins (0.5-2kg per fixture)",
+            "price": 800,
+            "volume": 180,
+            "growth": 0.50,
+            "cogs_pct": 0.65
+        },
+        {
+            "name": "AMC Spares",
+            "description": "Annual Maintenance Contracts (10% of hardware)",
+            "price": 500,
+            "volume": 15,
+            "growth": 0.45,
+            "cogs_pct": 0.30
+        },
+        {
+            "name": "Managed Services",
+            "description": "Fixed retainer plus per-fixture variable",
+            "price": 36000,
+            "volume": 3,
+            "growth": 0.35,
+            "cogs_pct": 0.55
+        }
+    ],
+    "fixed_costs": [
+        {"name": "Salaries and Benefits", "value": 216000},
+        {"name": "Office and Coworking", "value": 18000},
+        {"name": "Warehouse and Depot", "value": 12000},
+        {"name": "Utilities", "value": 6000},
+        {"name": "Software Cloud Internal", "value": 24000},
+        {"name": "RD Product Development", "value": 36000},
+        {"name": "Legal and Compliance", "value": 12000},
+        {"name": "Insurance", "value": 6000},
+        {"name": "Travel Trade Shows", "value": 30000},
+        {"name": "Marketing Content", "value": 24000}
+    ],
+    "customer_acquisition": {
+        "cac": 500,
+        "new_customers_y0": 25,
+        "customer_growth": 0.40,
+        "churn_rate": 0.08,
+        "customer_lifetime": 6
+    }
+}

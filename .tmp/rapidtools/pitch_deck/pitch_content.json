@@ -1,0 +1,139 @@
+{
+  "company_name": "RapidTools",
+  "tagline": "Making Tooling Engineers Obsolete",
+  "contact_email": "vijay@rapidtools.co",
+  "problem_title": "The Problem That Blocks Manufacturing",
+  "problems": [
+    "A typical automotive assembly line requires 500-2,000 unique fixtures",
+    "Each fixture takes 2-4 weeks to design",
+    "80% of manufacturers lack CAD expertise for tooling",
+    "Product launches delayed by tooling readiness",
+    "Tooling engineer shortage cannot be solved through hiring"
+  ],
+  "solution_title": "Our Solution",
+  "solution_description": "RapidTools encodes tooling engineering expertise into AI-powered software that makes any engineer capable of designing production tooling.",
+  "solution_points": [
+    "AI generates designs automatically",
+    "Production-ready designs in hours vs weeks",
+    "Any engineer can use it - no CAD expertise required",
+    "Tooling capacity becomes unlimited"
+  ],
+  "product_name": "RapidTools AI Platform",
+  "features": [
+    "10 tooling module categories encoded",
+    "Jig design automation",
+    "Fixture generation",
+    "Assembly guide creation",
+    "DfAM (Design for Additive Manufacturing) optimization",
+    "Tool-specific workflows for drill jigs, welding fixtures, assembly guides, etc."
+  ],
+  "traction_metrics": [
+    {
+      "value": "Honda",
+      "label": "Enterprise Pilot"
+    },
+    {
+      "value": "TVS Motors",
+      "label": "Active Deployment"
+    },
+    {
+      "value": "Toyota",
+      "label": "Evaluation"
+    }
+  ],
+  "milestones": [
+    "Honda and TVS Motors pilots active",
+    "Toyota evaluation underway",
+    "TRL 6-7 achieved (demonstration in relevant environment)",
+    "Targeting TRL 9 (actual system proven) by March 2026"
+  ],
+  "tam": "$60.18B",
+  "sam": "$24.21B",
+  "som": "$500M",
+  "market_description": "Global tooling market driven by automotive, aerospace, electronics manufacturing sectors",
+  "team": [
+    {
+      "name": "Vijay Raghav Varada",
+      "role": "Founder and CEO",
+      "background": "14+ years at Ford, Harley-Davidson, Polaris"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Manual CAD Engineers",
+      "weakness": "Cannot scale, 2-4 weeks per fixture"
+    },
+    {
+      "name": "Generative AI Tools",
+      "weakness": "Generic outputs, no manufacturing constraints"
+    },
+    {
+      "name": "Traditional PDM/PLM",
+      "weakness": "No automation, just file management"
+    }
+  ],
+  "differentiators": [
+    "Only solution encoding tooling engineering expertise",
+    "Production-ready designs in hours vs weeks",
+    "No CAD expertise required",
+    "Unlocks $3.6B in underutilized 3D printing capacity"
+  ],
+  "revenue_model": "Multi-stream SaaS + Services",
+  "pricing": "$25,000-$50,000 per seat annually",
+  "revenue_streams": [
+    "SaaS licensing (recurring revenue)",
+    "Consulting services",
+    "Design-as-a-Service",
+    "Engineering partnerships"
+  ],
+  "roadmap": [
+    {
+      "phase": "Q1-Q2 2026",
+      "milestone": "Reach TRL 9, expand Honda/TVS pilots"
+    },
+    {
+      "phase": "Q3-Q4 2026",
+      "milestone": "Scale to 5-10 enterprise customers"
+    },
+    {
+      "phase": "2027",
+      "milestone": "Geographic expansion to SE Asia and India"
+    },
+    {
+      "phase": "2028+",
+      "milestone": "Industry segment expansion, Series A"
+    }
+  ],
+  "ask_amount": "$1M",
+  "use_of_funds": [
+    {
+      "category": "Product Development",
+      "percentage": "40%"
+    },
+    {
+      "category": "Sales and Marketing",
+      "percentage": "35%"
+    },
+    {
+      "category": "Operations and Hiring",
+      "percentage": "25%"
+    }
+  ],
+  "references": [
+    {
+      "category": "Market Size",
+      "source": "Allied Market Research - Jigs and Fixtures Market Report 2024",
+      "url": "https://www.alliedmarketresearch.com/jigs-and-fixtures-market"
+    },
+    {
+      "category": "Tooling Engineer Shortage",
+      "source": "Tim Cook, Fortune Global Forum 2017",
+      "url": "https://fortune.com/2017/11/16/tim-cook-manufacturing-us-china/"
+    },
+    {
+      "category": "3D Printing Utilization",
+      "source": "$3.6B underutilized capacity analysis",
+      "url": "Financial Model: Sources and References sheet"
+    }
+  ]
+}

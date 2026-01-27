@@ -14,7 +14,7 @@ if ($LASTEXITCODE -ne 0) {
     Write-Host "Please install Python 3.10+ from https://www.python.org/downloads/" -ForegroundColor Yellow
     exit 1
 }
-Write-Host "✓ Found $pythonVersion" -ForegroundColor Green
+Write-Host "[OK] Found $pythonVersion" -ForegroundColor Green
 
 # Create virtual environment if it doesn't exist
 if (-not (Test-Path ".venv")) {
@@ -24,9 +24,9 @@ if (-not (Test-Path ".venv")) {
         Write-Host "ERROR: Failed to create virtual environment" -ForegroundColor Red
         exit 1
     }
-    Write-Host "✓ Virtual environment created" -ForegroundColor Green
+    Write-Host "[OK] Virtual environment created" -ForegroundColor Green
 } else {
-    Write-Host "✓ Virtual environment already exists" -ForegroundColor Green
+    Write-Host "[OK] Virtual environment already exists" -ForegroundColor Green
 }
 
 # Activate virtual environment
@@ -45,7 +45,7 @@ if (Test-Path "requirements.txt") {
         Write-Host "ERROR: Failed to install requirements" -ForegroundColor Red
         exit 1
     }
-    Write-Host "✓ Dependencies installed" -ForegroundColor Green
+    Write-Host "[OK] Dependencies installed" -ForegroundColor Green
 } else {
     Write-Host "WARNING: requirements.txt not found" -ForegroundColor Yellow
 }
@@ -54,22 +54,22 @@ if (Test-Path "requirements.txt") {
 if (-not (Test-Path ".env")) {
     if (Test-Path ".env.example") {
         Copy-Item ".env.example" ".env"
-        Write-Host "✓ Created .env from .env.example" -ForegroundColor Green
+        Write-Host "[OK] Created .env from .env.example" -ForegroundColor Green
         Write-Host "  IMPORTANT: Edit .env with your API keys!" -ForegroundColor Yellow
     }
 } else {
-    Write-Host "✓ .env file already exists" -ForegroundColor Green
+    Write-Host "[OK] .env file already exists" -ForegroundColor Green
 }
 
 # Create .tmp directory if it doesn't exist
 if (-not (Test-Path ".tmp")) {
     New-Item -ItemType Directory -Path ".tmp" | Out-Null
-    Write-Host "✓ Created .tmp directory" -ForegroundColor Green
+    Write-Host "[OK] Created .tmp directory" -ForegroundColor Green
 }
 
 Write-Host ""
 Write-Host "============================================" -ForegroundColor Cyan
-Write-Host "✓ SETUP COMPLETE!" -ForegroundColor Green
+Write-Host "[OK] SETUP COMPLETE!" -ForegroundColor Green
 Write-Host "============================================" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Next steps:" -ForegroundColor White
