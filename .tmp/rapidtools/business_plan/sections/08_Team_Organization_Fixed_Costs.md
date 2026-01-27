@@ -31,7 +31,7 @@
 | **CEO / Founder**    | Vijay Raghav Varada      | 15 years building Fracktal Works (3D printer OEM); **developed computational geometry engine** (3D printing slicer, mesh algorithms, B-spline operations); built **working demos**—Fixture Automation, Vacuum Casting Tool Automation; deep automotive tooling relationships (Honda, TVS, Toyota) |
 | **CTO**              | Hiring (Seed Stage)      | Senior engineering leader to scale the team and accelerate product velocity; target start Q2 2026                                                           |
 
-**Note on Leadership:** Unlike typical solo founders, Vijay combines rare **dual expertise**: (1) deep manufacturing domain knowledge from 15 years building Fracktal Works, AND (2) hands-on computational geometry and software development—having personally built the 3D printing slicer, embedded firmware, and working demos (Fixture Automation, Vacuum Casting Tool Automation). The CEO can independently execute the core product roadmap. A CTO hire will accelerate development velocity and help scale the engineering team, but is not a blocking dependency for product delivery.
+**Note on Leadership:** Unlike typical solo founders, Vijay combines rare **dual expertise**: (1) deep manufacturing domain knowledge from 15 years building Fracktal Works, AND (2) hands-on computational geometry and software development—having personally built the 3D printing slicer and working demos (Fixture Automation, Vacuum Casting Tool Automation). The CEO can independently execute the core product roadmap. A CTO hire will accelerate development velocity and help scale the engineering team, but is not a blocking dependency for product delivery.
 
 ### Active Co-Founder & Advisor Search
 

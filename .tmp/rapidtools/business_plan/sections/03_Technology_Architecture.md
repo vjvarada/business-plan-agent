@@ -11,7 +11,6 @@
 | **3D Printing Slicer** | Mesh algorithms, toolpath generation, G-code optimization | Production (Fracktal Works printers) |
 | **Fixture Automation** | B-spline operations, Boolean geometry, GD&T validation | **Working Demo** |
 | **Vacuum Casting Tool Automation** | Surface continuity, mold parting algorithms | **Working Demo** |
-| **Embedded Firmware** | Real-time motion control, sensor integration | Production |
 
 This rare combination of **computational geometry expertise + manufacturing domain knowledge** means RapidTools isn't starting from zero—we're productizing proven algorithms.
 
