@@ -1,12 +1,14 @@
 ﻿# Executive Summary - RapidTools
 
-> **AI-Powered Tooling Design Automation for Manufacturing**
+> **We democratize manufacturing tooling design—enabling any shop floor operator to create production-ready fixtures in hours, not weeks.**
 
 ---
 
 ## The Opportunity
 
-**RapidTools transforms how manufacturers design production tooling**—jigs, fixtures, molds, and assembly guides—by encoding 15+ years of tooling expertise into software that anyone can use.
+**$42 billion is spent annually on manufacturing tooling design.** Most of it goes to scarce, expensive CAD engineers who take 2-4 months to deliver what RapidTools generates in hours.
+
+We're building the **Canva for manufacturing tooling**—encoding hard-won, expensive-to-acquire tooling expertise into software that anyone can use. No CAD skills required. No engineering degree needed.
 
 | Metric | Value |
 |--------|-------|
@@ -16,9 +18,34 @@
 | **Gross Margin** | 65% |
 | **EBITDA Margin (Y8)** | 24% |
 
-**The Core Problem:** Manufacturing companies worldwide face a critical bottleneck—**tooling design backlogs of 2-4 months** while their $50K-$200K 3D printers sit idle. Traditional CAD software requires 6-12 months of training and $150K/year engineers.
+---
 
-**Our Solution:** RapidTools enables shop floor operators to design manufacturing-ready fixtures in **hours instead of weeks**, with zero CAD expertise required.
+## The Problem
+
+Manufacturing companies worldwide face a critical bottleneck:
+
+- **2-4 month tooling design backlogs** while $50K-$200K 3D printers sit idle
+- **$150K/year CAD engineers** are scarce—2.1M unfilled manufacturing jobs in US alone
+- **6-12 months of training** required to use traditional CAD software
+- **60% of tooling engineers** in India retiring within 10 years
+
+**The result:** Factories can't scale production because they can't design fixtures fast enough.
+
+---
+
+## The Solution
+
+RapidTools enables shop floor operators to design manufacturing-ready fixtures in **hours instead of weeks**, with zero CAD expertise required.
+
+**How it works:**
+1. Upload your part (CAD file, photo, or describe it)
+2. Answer 5 simple questions about your operation
+3. Get a validated, 3D-printable fixture—ready for production
+
+**What makes us different:**
+- **Multi-modal input:** CAD upload + natural language + intuitive UX
+- **Manufacturing validation built-in:** GD&T compliance, DfAM rules, tolerance analysis
+- **Hardware integration:** Bundled Fracktal 3D printers—intent to printed part in one click
 
 ---
 
