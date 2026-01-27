@@ -170,7 +170,7 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 | ARR achieved  | $104M                                             | Y8       |
 | Team scale    | 380 FTEs globally                                 | Y8       |
 | VAR network   | 75-95 VARs across 4 continents (30 customers/VAR) | Y8       |
-| EBITDA margin | 42%                                               | Y5+      |
+| EBITDA margin | 27%                                               | Y5+      |
 | Customer base | 5,500 customers, <10% logo churn                  | Y8       |
 | Exit-ready    | Strategic acquisition or IPO path                 | Y6-Y8    |
 
@@ -182,34 +182,36 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 
 | Year | Opening Cash | + Funding | + Operating CF | - CapEx | = Closing Cash |
 | ---- | ------------ | --------- | -------------- | ------- | -------------- |
-| Y1   | $0           | $3.0M     | -$0.8M         | $0.1M   | $2.1M          |
-| Y2   | $2.1M        | $0        | +$0.2M         | $0.2M   | $2.1M          |
-| Y3   | $2.1M        | $10.0M    | +$1.5M         | $0.3M   | $13.3M         |
-| Y4   | $13.3M       | $0        | +$4.0M         | $0.4M   | $16.9M         |
-| Y5   | $16.9M       | $25.0M    | +$8.0M         | $0.6M   | $49.3M         |
-| Y6   | $49.3M       | $0        | +$16.0M        | $0.8M   | $64.5M         |
-| Y7   | $64.5M       | $0        | +$26.0M        | $1.0M   | $89.5M         |
-| Y8   | $89.5M       | $0        | +$38.0M        | $1.2M   | $126.3M        |
+| Y1   | $0           | $3.0M     | -$1.2M         | $0.1M   | $1.7M          |
+| Y2   | $1.7M        | $0        | -$0.4M         | $0.2M   | $1.1M          |
+| Y3   | $1.1M        | $10.0M    | +$0.6M         | $0.3M   | $11.4M         |
+| Y4   | $11.4M       | $0        | +$1.8M         | $0.4M   | $12.8M         |
+| Y5   | $12.8M       | $25.0M    | +$4.2M         | $0.6M   | $41.4M         |
+| Y6   | $41.4M       | $0        | +$9.0M         | $0.8M   | $49.6M         |
+| Y7   | $49.6M       | $0        | +$15.6M        | $1.0M   | $64.2M         |
+| Y8   | $64.2M       | $0        | +$22.8M        | $1.2M   | $85.8M         |
 
 **Key Insights:**
 
-- Operating cash flow turns positive in Y2 (SaaS prepayments + services margin)
-- **Series A in Y3 Q2** after demonstrating PMF and $5M ARR run rate—this capital-efficient approach extends Seed runway to 30+ months
+- Operating cash flow turns positive in Y3 (after initial marketing investment ramp-up)
+- **Series A in Y3 Q2** after demonstrating PMF and $5M ARR run rate—this capital-efficient approach extends Seed runway to 24+ months
 - **Series B in Y5 Q2** after proving SE Asia expansion and $15M+ ARR
 - Self-funding by Y6—no additional raises needed after Series B
-- $126M cash by Y8 enables M&A or special dividends
+- $86M cash by Y8 enables M&A or special dividends
+
+**Note on Operating CF:** Reflects industry-standard investments in marketing programs (4.8% of revenue), trade shows ($800K/year), compliance (SOC2/ISO $100K/year), and analyst relations ($150K/year). These costs reduce Operating CF vs. prior projections but build a more defensible, sustainable business.
 
 **EBITDA vs Operating Cash Flow Reconciliation:**
 
-The Rule of 40 table shows EBITDA margins of 40-42%, while Operating CF margins are 27-37%. The ~5-10% gap is explained by:
+The Rule of 40 table shows EBITDA margins of 7-27% (Y4-Y8), while Operating CF margins are 3-22%. The ~4-5% gap is explained by:
 
 | Factor                         | Impact on Cash Flow | Notes                                                                      |
 | ------------------------------ | ------------------- | -------------------------------------------------------------------------- |
 | **Working Capital Investment** | -3-5%               | AR growth as revenue scales; services require inventory                    |
 | **Deferred Revenue Timing**    | -2-3%               | Annual prepay recognized over 12 months (EBITDA) vs. cash received upfront |
 | **CapEx (not in EBITDA)**      | -1-2%               | IT, office, demo equipment investments                                     |
-| **Non-Cash Items**             | +1%                 | Stock comp, depreciation add-backs                                         |
-| **Net Gap**                    | **-5-10%**          | EBITDA margin minus Operating CF margin                                    |
+| **Non-Cash Items**             | +1-2%               | Stock comp, depreciation add-backs                                         |
+| **Net Gap**                    | **-4-5%**           | EBITDA margin minus Operating CF margin                                    |
 
 ---
 
@@ -285,13 +287,23 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 
 | Year | Growth Rate | EBITDA Margin | Rule of 40 | Assessment  |
 | ---- | ----------- | ------------- | ---------- | ----------- |
-| Y2   | 400%        | 16%           | **416%**   | Exceptional |
-| Y3   | 180%        | 27%           | **207%**   | Exceptional |
-| Y4   | 114%        | 34%           | **148%**   | Exceptional |
-| Y5   | 100%        | 40%           | **140%**   | Exceptional |
-| Y6   | 67%         | 41%           | **108%**   | Exceptional |
-| Y7   | 54%         | 41%           | **95%**    | Excellent   |
-| Y8   | 35%         | 42%           | **77%**    | Strong      |
+| Y2   | 400%        | -26%          | **374%**   | Exceptional (growth-mode) |
+| Y3   | 180%        | -2%           | **178%**   | Exceptional (near breakeven) |
+| Y4   | 114%        | 7%            | **121%**   | Exceptional |
+| Y5   | 100%        | 16%           | **116%**   | Exceptional |
+| Y6   | 67%         | 20%           | **87%**    | Excellent   |
+| Y7   | 54%         | 23%           | **77%**    | Strong      |
+| Y8   | 35%         | 27%           | **62%**    | Strong      |
+
+**Note on Revised EBITDA Margins:** These margins reflect industry-standard investments in:
+- **Marketing Programs** at 4.8% of revenue (vs 2.1% previously) — Meets manufacturing software benchmark of 5-7%
+- **Trade Shows & Events** at 0.8% ($800K/year) — Proper presence at IMTS, Fabtech, Formnext, ACMA, TCT
+- **SOC2/ISO Compliance** at $100K/year — Required for enterprise sales (vs $24K previously)
+- **Analyst Relations** at $150K/year — Gartner/Forrester coverage for enterprise credibility
+- **Product Localization** at $150K/year — Multi-language support for EU/Americas expansion
+- **Bad Debt Reserve** at 1.5% of AR — Prudent financial practice
+
+The revised 27% EBITDA margin (vs 42% previously) is **more defensible** and still exceeds Rule of 40 benchmark.
 
 ---
 
@@ -364,7 +376,7 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 
 **Attractive to PE:**
 
-- Strong EBITDA margin (42%)
+- Strong EBITDA margin (27%)
 - Recurring revenue (65% software)
 - Low CapEx requirements
 - India cost arbitrage opportunity

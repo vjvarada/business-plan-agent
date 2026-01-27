@@ -431,17 +431,20 @@ A **Value-Added Reseller** is an independent company that:
 - Co-hosted with VARs (VAR presents local customer win)
 - 20-25% attendee-to-SQL conversion rate
 
-### Trade Shows & Events ($300K/year by Year 8)
+### Trade Shows & Events ($800K/year by Year 8)
 
 **Industry Events:**
 
-| **Event**                                              | **Location**       | **Attendees** | **RapidTools Booth Cost** | **VAR Co-Exhibitors** |
-| ------------------------------------------------------ | ------------------ | ------------- | ------------------------- | --------------------- |
-| **IMTS** (International Manufacturing Technology Show) | Chicago, USA       | 130,000+      | $75K                      | 5-10 VARs             |
-| **Fabtech** (Metal forming, fabricating, finishing)    | Multiple US cities | 40,000+       | $50K                      | 3-5 VARs              |
-| **ACMA Expo** (Auto Component Manufacturers)           | Delhi, India       | 10,000+       | $20K                      | 3-5 VARs              |
-| **Formnext** (Additive manufacturing)                  | Frankfurt, Germany | 35,000+       | $40K                      | 2-3 VARs              |
-| **TCT Asia** (3D printing)                             | Shanghai, China    | 25,000+       | $30K                      | 2-3 VARs              |
+| **Event**                                              | **Location**       | **Attendees** | **RapidTools Booth Cost** | **VAR Co-Exhibitors** | **Sponsorship Add-ons** |
+| ------------------------------------------------------ | ------------------ | ------------- | ------------------------- | --------------------- | ----------------------- |
+| **IMTS** (International Manufacturing Technology Show) | Chicago, USA       | 130,000+      | $100K                     | 5-10 VARs             | $50K keynote/speaking   |
+| **Fabtech** (Metal forming, fabricating, finishing)    | Multiple US cities | 40,000+       | $75K                      | 3-5 VARs              | $25K workshop           |
+| **ACMA Expo** (Auto Component Manufacturers)           | Delhi, India       | 10,000+       | $40K                      | 3-5 VARs              | $15K panel              |
+| **Formnext** (Additive manufacturing)                  | Frankfurt, Germany | 35,000+       | $60K                      | 2-3 VARs              | $20K demo zone          |
+| **TCT Asia** (3D printing)                             | Shanghai, China    | 25,000+       | $50K                      | 2-3 VARs              | $15K workshop           |
+| **Regional tier-2 events** (6-8 events)                | Various            | 5,000-15,000  | $25K avg                  | 1-2 VARs              | Included                |
+
+**Note:** Budget increased from $300K to $800K to meet industry benchmarks for 5 global shows + 6-8 regional events [[6]](#ref-6). Premium booth space and speaking sponsorships drive 2-3× qualified lead flow vs. standard booths.
 
 **Trade Show Strategy:**
 

@@ -972,12 +972,34 @@ As customers progress through expansion paths, their switching costs accumulate:
 
 ### Variable Costs (Sales & Marketing)
 
-| Cost Type              | % of Revenue | Y8 Amount  | Description                            |
-| ---------------------- | ------------ | ---------- | -------------------------------------- |
-| **VAR Incentives**     | 4-5%         | $5.0M      | SPIFs, MDF, bonuses (on top of margin) |
-| **Sales Commissions**  | 3-5%         | $3.6M      | 15-20% of direct sales revenue         |
-| **Marketing Programs** | 2-3%         | $2.2M      | Events, content, campaigns             |
-| **TOTAL S&M Variable** | **9-13%**    | **$10.8M** |                                        |
+| Cost Type                  | % of Revenue | Y8 Amount  | Description                                          |
+| -------------------------- | ------------ | ---------- | ---------------------------------------------------- |
+| **VAR Incentives**         | 4-5%         | $5.0M      | SPIFs, MDF, bonuses (on top of margin)               |
+| **Sales Commissions**      | 3-5%         | $3.6M      | 15-20% of direct sales revenue                       |
+| **Marketing Programs**     | 4-5%         | $5.0M      | Content, digital campaigns, webinars, demand gen     |
+| **Trade Shows & Events**   | 0.8%         | $0.8M      | IMTS, Fabtech, Formnext, ACMA, TCT + regional events |
+| **TOTAL S&M Variable**     | **13-16%**   | **$14.4M** |                                                      |
+
+**Marketing Programs Breakdown ($5.0M by Year 8):**
+
+| Category                 | Budget   | % of Marketing | Description                                        |
+| ------------------------ | -------- | -------------- | -------------------------------------------------- |
+| **Digital Marketing**    | $1.5M    | 30%            | SEO, paid search, LinkedIn, content marketing      |
+| **Partner Co-Marketing** | $1.5M    | 30%            | MDF programs, joint campaigns, VAR enablement      |
+| **Product Marketing**    | $0.8M    | 16%            | Positioning, competitive intel, launches, collateral |
+| **Demand Generation**    | $0.7M    | 14%            | Webinars, ABM, lead nurturing, marketing automation |
+| **Brand & PR**           | $0.5M    | 10%            | PR, analyst relations, brand campaigns             |
+| **TOTAL**                | **$5.0M**| **100%**       |                                                    |
+
+**Trade Shows & Events Breakdown ($0.8M by Year 8):**
+
+| Event Category           | Budget   | Events/Year | Avg Cost | Description                          |
+| ------------------------ | -------- | ----------- | -------- | ------------------------------------ |
+| **Major Trade Shows**    | $400K    | 5           | $80K     | IMTS, Fabtech, Formnext, ACMA, TCT   |
+| **Regional Events**      | $200K    | 10          | $20K     | India/SEA industry conferences       |
+| **User Conferences**     | $100K    | 2           | $50K     | RapidTools Connect (customer events) |
+| **Sponsorships**         | $100K    | —           | —        | Industry publications, webinars      |
+| **TOTAL**                | **$0.8M**| —           | —        |                                      |
 
 **Note on VAR Compensation:** VARs earn money two ways:
 
