@@ -4,6 +4,7 @@
 
 ## Section Files Created
 
+0.  **00_Executive_Summary.md** - ⭐ **START HERE** - Comprehensive overview synthesizing all sections
 1.  **01_Market_Drivers.md** - Why Now? (Government investment, robotics, talent crisis, DfAM)
 2.  **02_TAM_SAM_SOM_Calculation.md** - Detailed market sizing methodology
 3.  **03_Technology_Architecture.md** - Multi-modal AI + Computational Geometry
@@ -18,6 +19,7 @@
 
 10. **10_Financial_Projections.md** - 8-year P&L, cash flow, balance sheet, key metrics
 11. **11_Risk_Analysis.md** - Market, execution, competitive risks + mitigations
+12. **12_Sensitivity_Analysis.md** - Scenario modeling (Base/Upside/Downside)
 
 ## Key Financial Summary (Year 8)
 
