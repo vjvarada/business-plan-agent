@@ -1,14 +1,19 @@
 ﻿# Executive Summary - RapidTools
 
-> **We democratize manufacturing tooling design—enabling any shop floor operator to create production-ready fixtures in hours, not weeks.**
+> _"In the U.S., you could have a meeting of tooling engineers, and I'm not sure we could fill the room. In China, you could fill multiple football fields."_
+> — **Tim Cook**, CEO of Apple, Fortune Global Forum 2017
+
+This single quote explains why manufacturing reshoring keeps failing, why new factories are delayed for years, and why **$60+ billion** in tooling work remains bottlenecked by a talent shortage that cannot be solved through hiring.
 
 ---
 
-## The Opportunity
+## The Company
 
-**$42 billion is spent annually on manufacturing tooling design.** Most of it goes to scarce, expensive CAD engineers who take 2-4 months to deliver what RapidTools generates in hours.
+**RapidTools is an intent-to-design platform** that converts a shop floor engineer's operational knowledge into manufacturing-ready tooling—without requiring CAD expertise.
 
-We're building the **Canva for manufacturing tooling**—encoding hard-won, expensive-to-acquire tooling expertise into software that anyone can use. No CAD skills required. No engineering degree needed.
+**The Core Insight:** A production engineer knows exactly what operations need to happen at a work cell ("clamp this part, drill two holes at 45°, flip, repeat"). But converting that intent into a fixture design requires weeks of CAD work by specialized tooling engineers who don't exist in sufficient numbers. **We make that conversion instant and intuitive.**
+
+We're building the **Canva for manufacturing tooling**—encoding hard-won, expensive-to-acquire tooling expertise into software that anyone can use.
 
 | Metric | Value |
 |--------|-------|
@@ -22,14 +27,16 @@ We're building the **Canva for manufacturing tooling**—encoding hard-won, expe
 
 ## The Problem
 
-Manufacturing companies worldwide face a critical bottleneck:
+**$2.14 trillion in government manufacturing investment** (CHIPS Act, IRA, India PLI, EU Green Deal) is creating unprecedented demand for production tooling. But there's no one to design it.
 
 - **2-4 month tooling design backlogs** while $50K-$200K 3D printers sit idle
 - **$150K/year CAD engineers** are scarce—2.1M unfilled manufacturing jobs in US alone
 - **6-12 months of training** required to use traditional CAD software
 - **60% of tooling engineers** in India retiring within 10 years
 
-**The result:** Factories can't scale production because they can't design fixtures fast enough.
+**The math doesn't work:** Every new semiconductor fab needs 500-1,000 custom fixtures. Every robot needs 5-15 work-holding jigs. By 2030, robotics alone will require **16 million fixtures/year** (up from 2.5M today).
+
+Factories can't scale production because they can't design fixtures fast enough. **This is the hidden bottleneck blocking the manufacturing renaissance.**
 
 ---
 
@@ -43,8 +50,8 @@ RapidTools enables shop floor operators to design manufacturing-ready fixtures i
 3. Get a validated, 3D-printable fixture—ready for production
 
 **What makes us different:**
-- **Multi-modal input:** CAD upload + natural language + intuitive UX
-- **Manufacturing validation built-in:** GD&T compliance, DfAM rules, tolerance analysis
+- **Multi-modal input:** CAD upload + natural language + intuitive UX—the platform adapts to how the engineer thinks
+- **Manufacturing validation built-in:** GD&T compliance, DfAM rules, tolerance analysis—100% deterministic, zero hallucinations
 - **Hardware integration:** Bundled Fracktal 3D printers—intent to printed part in one click
 
 ---
