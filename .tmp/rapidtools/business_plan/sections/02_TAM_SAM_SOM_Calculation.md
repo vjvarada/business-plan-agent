@@ -495,7 +495,7 @@ Based on first-hand plant visits (see Market Drivers document for methodology):
 
 ---
 
-## SOM Calculation: $90 Million (Year 8)
+## SOM Calculation: $104 Million (Year 8)
 
 ### Market Penetration Strategy
 
