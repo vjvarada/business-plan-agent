@@ -1,14 +1,14 @@
 {
-  "consolidated_at": "2026-01-26T19:58:29.111549",
-  "total_files": 12,
-  "total_sources": 109,
-  "unique_sources": 68,
-  "duplicates_removed": 51,
-  "new_sources": 68,
+  "consolidated_at": "2026-01-27T14:19:33.587015",
+  "total_files": 26,
+  "total_sources": 198,
+  "unique_sources": 126,
+  "duplicates_removed": 122,
+  "new_sources": 121,
   "mode": "incremental",
   "merge_stats": {
-    "new_sources_added": 58,
-    "existing_sources_preserved": 441,
+    "new_sources_added": 76,
+    "existing_sources_preserved": 499,
     "by_category": {
       "market": {
         "added": 0,
@@ -16,17 +16,17 @@
         "total": 206
       },
       "headcount": {
-        "added": 0,
+        "added": 5,
         "duplicates": 0,
-        "total": 30
+        "total": 35
       },
       "geographic": {
-        "added": 0,
+        "added": 44,
         "duplicates": 0,
-        "total": 65
+        "total": 109
       },
       "business_model": {
-        "added": 58,
+        "added": 0,
         "duplicates": 0,
         "total": 86
       },
@@ -36,9 +36,9 @@
         "total": 0
       },
       "benchmarks": {
-        "added": 0,
+        "added": 27,
         "duplicates": 0,
-        "total": 82
+        "total": 109
       },
       "general": {
         "added": 0,

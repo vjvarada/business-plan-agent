@@ -1,9 +1,14 @@
 {
   "category": "General Research",
   "description": "Uncategorized research data",
-  "consolidated_at": "2026-01-26T19:58:29.111549",
+  "consolidated_at": "2026-01-27T14:23:24.138827",
   "source_files": [
-    "daas_hourly_rates.json"
+    "bangalore_office_costs.json",
+    "daas_hourly_rates.json",
+    "trinckle_audi_research.json",
+    "trinckle_ford_vw_research.json",
+    "trinckle_stratasys_research.json",
+    "trinckle_validation_research.json"
   ],
   "sources": [
     {

@@ -8,12 +8,12 @@
 
 | Revenue Stream                  | Description                                          | Year 8 Mix   | Gross Margin | Key Driver                              |
 | ------------------------------- | ---------------------------------------------------- | ------------ | ------------ | --------------------------------------- |
-| **Software Subscriptions**      | SaaS licenses for tooling design automation          | 62% ($64.8M) | 80-85%       | Seat expansion, multi-tool adoption     |
+| **Software Subscriptions**      | SaaS licenses for tooling design automation          | 62% ($64.0M) | 80-85%       | Seat expansion, multi-tool adoption     |
 | **Tooling Services**            | Design + Print bundles, Print-only, Managed programs | 23% ($24.2M) | 44% blended  | Software automation + Fracktal capacity |
 | **Enterprise Managed Services** | Full outsourced tooling operations                   | 7% ($7.4M)   | 28%          | Dedicated staff + equipment             |
 | **Hardware Sales**              | 3D printers (Fracktal 30%, Partners 15-20%)          | 7% ($7.4M)   | 26% blended  | Fracktal vertical integration           |
 | **Consumables**                 | 3D printing materials (filament, resin)              | 1% ($1.1M)   | 30-35%       | Recurring from hardware users           |
-| **TOTAL**                       |                                                      | **$105M**    | **65%**      | Blended gross margin                    |
+| **TOTAL**                       |                                                      | **$104M**    | **65%**      | Blended gross margin                    |
 
 ### Unit Economics Summary (Year 8 - Mature State)
 
@@ -208,15 +208,15 @@ Each revenue stream reinforces the others:
 
 ### Software Revenue Build-Up
 
-**Year 8 Software Revenue: $64.8M**
+**Year 8 Software Revenue: $64.0M**
 
 | Segment             | Customers | Avg Seats | Price/Seat | Software Revenue |
 | ------------------- | --------- | --------- | ---------- | ---------------- |
 | **SMB**             | 3,850     | 2.0       | $2,400     | $18.5M           |
 | **Mid-Market**      | 1,375     | 8.0       | $2,160     | $23.8M           |
 | **Enterprise**      | 275       | 25.0      | $1,920     | $13.2M           |
-| **Expansion (NRR)** | -         | -         | -          | $9.3M            |
-| **TOTAL**           | 5,500     | -         | -          | **$64.8M**       |
+| **Expansion (NRR)** | -         | -         | -          | $8.5M            |
+| **TOTAL**           | 5,500     | -         | -          | **$64.0M**       |
 
 _Note: Expansion revenue ($9.3M) represents upsells and seat expansion from existing customers (NRR of 108% blended across segments), calculated on top of base new customer revenue._
 

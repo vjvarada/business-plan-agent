@@ -1,7 +1,7 @@
 {
   "category": "Business Model",
   "description": "Revenue models, pricing, unit economics",
-  "consolidated_at": "2026-01-26T19:58:29.111549",
+  "consolidated_at": "2026-01-27T14:23:24.135733",
   "source_files": [
     "3d_printing_service_pricing.json",
     "cad_software_pricing.json",
@@ -10,7 +10,8 @@
     "daas_pricing_research.json",
     "fracktal_pricing.json",
     "industrial_printer_pricing.json",
-    "managed_services_pricing.json"
+    "managed_services_pricing.json",
+    "daas_hourly_rates.json"
   ],
   "sources": [
     {
@@ -528,6 +529,66 @@
       "url": "https://www.microtechboise.com/blog/should-you-outsource-it-in-2025-real-cost-of-in-house-vs-managed-services",
       "snippet": "MSP: Typically, MSPs operate on a predictable monthly retainer, which can be more cost-effective, especially for small to medium-sized ...",
       "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "How Much Do Engineering Design Services Cost for ...",
+      "url": "https://www.cadcrowd.com/blog/how-much-do-engineering-design-services-cost/",
+      "snippet": "You can expect an engineer's hourly fee to be somewhere between $100 and $120 per hour, with the price of your project varying on how many hours the engineer ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "How Much Do CAD Drafting Services Cost? Real Pricing ...",
+      "url": "https://caddrafter.us/how-much-do-cad-drafting-services-cost/",
+      "snippet": "For entry-level or straightforward 2D work, expect something near $25\u2013$60/hour. Mid-tier drafting runs closer to $70\u2013$120, and advanced BIM or ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "How Much Does a CAD Design Cost?",
+      "url": "https://cadmore.com/blog/cad-design-cost",
+      "snippet": "Beginner CAD Designers: $20 - $40 per hour. \u00b7 Intermediate CAD Designers: $40 - $60 per hour. \u00b7 Experienced CAD Designers: $60 - $100+ per hour.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Hire 3D CAD Designer in 2025 | Rates & Pricing Guide",
+      "url": "https://shalindesigns.com/blog/how-much-does-it-cost-to-hire-3d-cad-designers/",
+      "snippet": "Beginner CAD Designers: $20 \u2013 $40 per hour ; Intermediate CAD Designers: $40 \u2013 $60 per hour ; Experienced CAD Designers: $60 \u2013 $100+ per hour.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Mechanical Engineering Professionals' Rates and Fees",
+      "url": "https://mechanicalengineeringpros.com/mechanical_engineering_rates_and_fees.php",
+      "snippet": "can be estimated at the rate of $140 per hour for a senior engineer and $90 per hour for a junior engineer. Below is a link to a document about the overhead of ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Learn All You Need To Know About Machine Design Costs ...",
+      "url": "https://www.cadcrowd.com/blog/learn-about-machine-design-costs-engineering-services-rates-pricing-for-companies/",
+      "snippet": "The average cost to hire a mechanical engineer is around $46 per hour. Depending on experience, the rate ranges from $30 to $65 per hour.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Salary: Mechanical Cad Designer (Jan, 2026) United States",
+      "url": "https://www.ziprecruiter.com/Salaries/Mechanical-Cad-Designer-Salary",
+      "snippet": "The average MECHANICAL CAD DESIGNER SALARY in the United States as of January 2026 is $34.65 an hour or $72067 per year. Get paid what you're worth!",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "How Much Do Product Design Firms Charge?",
+      "url": "https://design1st.com/how-product-design-firms-charge/",
+      "snippet": "Rates for full-service design plus engineering companies are similar to model 1 and will range from ($100 USD up to $450 USD per hour) depending on who you ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Outsourced Mechanical Design Cost for U.S. & EU SMEs",
+      "url": "https://engontechnologies.com/outsourced-mechanical-design-cost-breakdown/",
+      "snippet": "Cut outsourced mechanical design cost and speed up engineering. Save 60%+ with expert CAD and simulation support.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Hourly Rate for Skill: Engineering Design",
+      "url": "https://www.payscale.com/research/US/Skill=Engineering_Design/Hourly_Rate",
+      "snippet": "Engineering Design Jobs by Hourly Rate ; Job Title:Mechanical Engineer, Range:$21 - $49, Average:$33 ; Job Title:Civil Engineer, Range:$27 - $47, Average:$35 ; Job ...",
+      "file_source": "daas_hourly_rates.json"
     }
   ]
 }

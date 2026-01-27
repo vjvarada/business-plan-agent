@@ -30,7 +30,7 @@ Like Autodesk, SolidWorks, and PTC, RapidTools uses a **channel-based go-to-mark
 
 **Revenue Mix (Year 8):**
 
-- Software Subscription: 62% ($64.8M)
+- Software Subscription: 62% ($64.0M)
 - Services (Tooling Services + EMS): 30% ($31.6M)
 - Hardware Sales: 7% ($7.4M)
 - Consumables: 1% ($1.1M)
