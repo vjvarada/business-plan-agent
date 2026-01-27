@@ -110,10 +110,11 @@ Four macro forces are converging to create unprecedented demand for tooling auto
 | Factor | Trinckle | RapidTools | Our Advantage |
 |--------|----------|------------|---------------|
 | **Years in Market** | 12+ years | <1 year | They validated market; we leapfrog |
-| **Production Tools** | 10+ | 2 | Focus depth before breadth |
+| **Production Tools** | 10+ | 10 (all by Y1) | Full suite match + casting tools |
 | **OEM Customers** | Audi, Ford, VW, Airbus | Honda pilot | India/SEA market entry |
 | **Geography** | Europe-centric | India/SEA focus | Untapped $2.88B SAM |
-| **Input Modality** | CAD file upload | LLM + natural language | Lower barrier to entry |
+| **Input Modality** | CAD file upload + parameters | Multi-modal: CAD upload + LLM + intuitive UX | Faster workflows, lower barrier |
+| **Hardware Integration** | Software-only | Bundled 3D printers (Fracktal) | Intent → printed part in one click |
 | **Casting Tools** | ❌ No | ✅ Yes | Differentiated product suite |
 
 ### Competitive Moats (Ranked by Defensibility)
