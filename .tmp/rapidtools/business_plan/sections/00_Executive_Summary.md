@@ -192,6 +192,16 @@ Four forces are converging simultaneously—this window won't last forever:
 | **Hardware Integration** | Software-only                | Bundled 3D printers (Fracktal)               | Intent → printed part in one click |
 | **Casting Tools**        | ❌ No                        | ✅ Yes                                       | Differentiated product suite       |
 
+**First-Hand Competitive Intelligence (Early 2024):**
+
+In early 2024, we attempted to partner with Trinckle to bring FixtureMate to India, bundling it with Fracktal Works 3D printers. The partnership failed because:
+
+1. **Feature Inflexibility:** When demoing to Honda, they requested specific features that Trinckle's team could not accommodate—exposing slow iteration cycles
+2. **Prohibitive Pricing:** Trinckle's $6,000/year per-seat license was too expensive for Honda's multi-seat deployment
+3. **Stratasys Lock-In:** Trinckle has since partnered exclusively with Stratasys, bundling with printers costing $50K-200K—far above India price points
+
+**RapidTools' Response:** We're building what Trinckle couldn't deliver—faster iterations, India-appropriate pricing ($2,400/year), affordable hardware bundling (Fracktal Works), plus casting tools (vacuum casting, sand casting) that Trinckle doesn't offer.
+
 ### Competitive Moats (Ranked by Defensibility)
 
 1. **Founder Technical + Domain Expertise (10+ Year Lead):** CEO built Fracktal Works (3D printer OEM) AND developed the computational geometry engine powering it—3D printing slicer, mesh algorithms, CAD operations. Already built working demos: Fixture Automation and Vacuum Casting Tool Automation. This rare combination of deep software engineering + manufacturing domain expertise cannot be hired.

@@ -923,6 +923,19 @@
 7. **Founder Domain Expertise**: 15 years Fracktal Works experience in tooling applications + hardware manufacturing via Fracktal Works
 8. **Automotive Compliance Path**: Honda IATF 16949 validation (if completed)
 
+**First-Hand Competitive Intelligence: The 2024 Trinckle Partnership Attempt**
+
+In early 2024, Fracktal Works attempted to partner with Trinckle to bring FixtureMate to India, bundling their software with Fracktal 3D printers. **The partnership failed, revealing critical weaknesses:**
+
+| Issue | What Happened | RapidTools Advantage |
+|-------|---------------|---------------------|
+| **Feature Inflexibility** | Honda requested specific fixture features during a demo; Trinckle's team could not accommodate them | RapidTools' founder-led development enables rapid feature iteration |
+| **Prohibitive Pricing** | $6,000/year per-seat license was too expensive for Honda's planned multi-seat deployment | RapidTools at $2,400/year is 60% cheaper |
+| **Stratasys Lock-In** | Trinckle now bundles exclusively with Stratasys printers ($50K-$200K+) | Fracktal Works printers ($5K-$50K) serve India price points |
+| **No Casting Tools** | Honda also needed vacuum casting mold automation—Trinckle has no offering | RapidTools has working Vacuum Casting demo; Sand Casting by Y1 |
+
+**Strategic Implication:** This failed partnership validates both (a) the market demand in India, and (b) the gap that RapidTools is designed to fill.
+
 **End-to-End Platform Advantage (vs. Trinckle's Software-Only Model):**
 
 | **Capability** | **RapidTools** | **Trinckle FixtureMate** | **Strategic Impact** |
