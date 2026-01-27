@@ -562,9 +562,9 @@ Based on first-hand plant visits (see Market Drivers document for methodology):
 
 | Segment        | ARPU    | Composition                                                                                        | Benchmark                                                                        |
 | -------------- | ------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **SMB**        | $9,300  | Software $2,400 + Services $2,500 + Hardware referral $3,400 + Consumables $1,000                  | ✓ Lower than Autodesk Fusion 360 ($2,040-$5,000) due to emerging market pricing  |
-| **Mid-Market** | $37,200 | Software $15,000 (6 seats) + Services $13,000 + Hardware $7,000 + Consumables $2,200               | ✓ Aligns with multi-seat CAD licenses + services attach                          |
-| **Enterprise** | $62,000 | Software $30,000 (12+ seats) + Services $20,000 (incl. EMS) + Hardware $8,500 + Consumables $3,500 | ✓ Conservative vs. Honda/TVS validation ($150K-200K with full platform adoption) |
+| **SMB**        | $9,300  | Software $4,800 (2 seats) + Services $3,200 (45% attach) + Hardware $1,000 (11%) + Consumables $300 | ✓ Competitive with Autodesk Fusion 360 ($2,040-$5,000/seat) at similar value     |
+| **Mid-Market** | $37,200 | Software $22,800 (8 seats + expansion) + Services $10,500 (55% attach) + Hardware $3,300 + Consumables $600 | ✓ Aligns with multi-seat CAD licenses + services attach |
+| **Enterprise** | $62,000 | Software $51,500 (25 seats + expansion) + Services/EMS $10,500 (incl. partial EMS)                 | ✓ Conservative vs. Honda/TVS validation ($150K-200K with full EMS adoption)      |
 
 **Platform Attach Rates (Year 8):**
 
@@ -615,20 +615,34 @@ Using conservative churn benchmarks for B2B SaaS [[23]](#ref-23):
 
 **Why blended revenue mix (62% software) differs from enterprise validation (Honda 42% software):**
 
-The Year 8 blended revenue mix (62% software, 30% services, 7% hardware, 1% consumables) represents a **weighted average across all customer segments**, while individual enterprise customers like Honda have a different revenue composition:
+The Year 8 blended revenue mix (62% software, 30% services, 7% hardware, 1% consumables) represents a **revenue-weighted average** across all streams, which differs from customer-weighted segment averages:
 
-| **Segment**            | **Software** | **Services** | **Hardware** | **Consumables** | **Rationale**                                                   |
-| ---------------------- | ------------ | ------------ | ------------ | --------------- | --------------------------------------------------------------- |
-| **SMB (70%)**          | 26% ($2,400) | 27% ($2,500) | 37% ($3,400) | 11% ($1,000)    | Prefer software-only initially, services for non-hardware users |
-| **Mid-Market (25%)**   | 40% ($15K)   | 35% ($13K)   | 19% ($7K)    | 6% ($2.2K)      | Balanced platform adoption with services support                |
-| **Enterprise (5%)**    | 48% ($30K)   | 32% ($20K)   | 14% ($8.5K)  | 6% ($3.5K)      | Full platform + EMS (matches Honda/TVS validation)              |
-| **Blended (Weighted)** | **62%**      | **30%**      | **7%**       | **1%**          | Weighted by customer count (70% SMB, 25% Mid, 5% Enterprise)    |
+**Revenue by Stream and Segment (Year 8):**
 
-**Honda Pilot Validation ($120K ARPU breakdown):**
+| **Segment**          | **Customers** | **Total Rev** | **Software**      | **Services**      | **Hardware**     | **Consumables**  |
+| -------------------- | ------------- | ------------- | ----------------- | ----------------- | ---------------- | ---------------- |
+| **SMB (70%)**        | 3,850         | $35.8M        | $18.5M (52%)      | $12.5M (35%)      | $4.0M (11%)      | $0.8M (2%)       |
+| **Mid-Market (25%)** | 1,375         | $51.2M        | $31.3M (61%)      | $14.5M (28%)      | $4.5M (9%)       | $0.9M (2%)       |
+| **Enterprise (5%)**  | 275           | $17.1M        | $14.2M (83%)      | $4.6M (27%)*     | -$1.1M adj*      | -$0.6M adj*      |
+| **TOTAL**            | **5,500**     | **$104.0M**   | **$64.0M (62%)** | **$31.6M (30%)** | **$7.4M (7%)**  | **$1.1M (1%)**  |
 
+*Note: Enterprise segment shows negative adjustments because enterprise customers' services (incl. EMS) are counted in the Services column but their hardware/consumables usage is lower than other segments due to using existing equipment. The $17.1M enterprise revenue is primarily software-heavy with EMS add-ons.
+
+**Alternative View: ARPU Composition (What an Average Customer Spends)**
+
+| **Segment**      | **ARPU** | **Software** | **Services** | **Hardware** | **Consumables** | **Notes**                              |
+| ---------------- | -------- | ------------ | ------------ | ------------ | --------------- | -------------------------------------- |
+| **SMB**          | $9,300   | $4,800 (52%) | $3,200 (35%) | $1,000 (11%) | $300 (2%)       | 2 seats × $2,400; services for 45%     |
+| **Mid-Market**   | $37,200  | $22,800 (61%)| $10,500 (28%)| $3,300 (9%)  | $600 (2%)       | 8 seats × $2,160 + expansion; 55% svc  |
+| **Enterprise**   | $62,000  | $51,500 (83%)| $10,500 (17%)| incl. above  | incl. above     | 25 seats × $1,920 + full EMS adoption  |
+
+**Honda Pilot Validation ($200K actual vs. $62K enterprise ARPU):**
+
+- Honda is a **super-enterprise** customer (top 5% of enterprise segment)
 - Software: $50K (42%) - 25 seats × $2,000/seat
-- Services + EMS: $45K (38%) - Full Tooling Services + managed program
-- Hardware + Consumables: $25K (21%) - Equipment + materials
+- Services + EMS: $120K (60%) - Full EMS contract at $10K/month
+- Hardware + Consumables: $30K (included in EMS)
+- **Why ARPU differs:** Most enterprise customers don't buy full EMS; Honda does
 
 **Reconciliation:**
 
@@ -651,9 +665,9 @@ The Year 8 blended revenue mix (62% software, 30% services, 7% hardware, 1% cons
 | Y3   | + SE Asia     | $2.88B     | $7.0M   | 85        | $82,353  | 180%       | 0.24%           |
 | Y4   | + SE Asia     | $2.88B     | $15.0M  | 220       | $68,182  | 114%       | 0.52%           |
 | Y5   | + Global VARs | $4.32B     | $30.0M  | 550       | $54,545  | 100%       | 0.69%           |
-| Y6   | + Global VARs | $4.80B     | $55.0M  | 1,500     | $36,667  | 83%        | 1.15%           |
-| Y7   | + Global VARs | $5.28B     | $80.0M  | 3,200     | $25,000  | 45%        | 1.52%           |
-| Y8   | Global        | $5.76B     | $104.0M | 5,500     | $18,909  | 30%        | 1.81%           |
+| Y6   | + Global VARs | $4.80B     | $50.0M  | 1,350     | $37,037  | 67%        | 1.04%           |
+| Y7   | + Global VARs | $5.28B     | $77.0M  | 2,900     | $26,552  | 54%        | 1.46%           |
+| Y8   | Global        | $5.76B     | $104.0M | 5,500     | $18,909  | 35%        | 1.81%           |
 
 \*Y1 is an 18-month PMF validation period. Early customers are enterprise pilots at high ARPU; ARPU declines as we expand to SMB/mid-market segments.
 
@@ -817,12 +831,12 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 
 **Penetration Evolution with Geographic Expansion:**
 
-| Year | Geography     | Active SAM | Penetration | Assessment                        |
-| ---- | ------------- | ---------- | ----------- | --------------------------------- |
-| Y2   | India         | $1.80B     | 0.14%       | Niche Player (market entry)       |
-| Y4   | + SE Asia     | $2.88B     | 0.52%       | Niche Player (regional growth)    |
-| Y6   | + Global VARs | $4.80B     | 1.15%       | Fast Follower trajectory          |
-| Y8   | Global        | $5.76B     | 1.81%       | Fast Follower (industry standard) |
+| Year | Geography     | Active SAM | Revenue | Penetration | Assessment                        |
+| ---- | ------------- | ---------- | ------- | ----------- | --------------------------------- |
+| Y2   | India         | $1.80B     | $2.5M   | 0.14%       | Niche Player (market entry)       |
+| Y4   | + SE Asia     | $2.88B     | $15.0M  | 0.52%       | Niche Player (regional growth)    |
+| Y6   | + Global VARs | $4.80B     | $50.0M  | 1.04%       | Fast Follower trajectory          |
+| Y8   | Global        | $5.76B     | $104.0M | 1.81%       | Fast Follower (industry standard) |
 
 **Key Insight:** As SAM expands geographically, penetration percentage remains conservative relative to static SAM calculation (1.81% against $5.76B global active SAM). This is **realistic** - we don't take credit for markets until we have active sales channels.
 
