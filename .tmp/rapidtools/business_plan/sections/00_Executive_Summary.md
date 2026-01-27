@@ -52,20 +52,20 @@ Four macro forces are converging to create unprecedented demand for tooling auto
 
 **RapidTools is a multi-modal AI platform** that combines four technologies—Intuitive UX, LLMs, Generative AI, and Computational Geometry (CAD Kernels)—in different proportions depending on the tooling type:
 
-### 10 Design Automation Tools (2 Production-Ready, 8 Roadmap)
+### 10 Design Automation Tools (All Production-Ready by End of Y1)
 
 | Tool Type | Status | Primary Technology Mix |
 |-----------|--------|------------------------|
 | **Jigs & Fixtures** | ✅ Production | UX (40%) + CAD Kernels (40%) + LLM (20%) |
 | **Vacuum Casting Molds** | ✅ Production | CAD Kernels (50%) + Gen AI (30%) + UX (20%) |
-| Drilling Guides | 🔄 Y1-Y2 | CAD Kernels (60%) + UX (30%) + LLM (10%) |
-| Assembly Guides | 🔄 Y1-Y2 | UX (50%) + Gen AI (30%) + CAD Kernels (20%) |
-| Shadow Boxes | 🔄 Y2-Y3 | Gen AI (50%) + UX (30%) + CAD Kernels (20%) |
-| Alignment Tools | 🔄 Y2-Y3 | CAD Kernels (50%) + UX (40%) + LLM (10%) |
-| Custom Palletizing | 🔄 Y3-Y4 | LLM (40%) + UX (40%) + CAD Kernels (20%) |
-| Sand Casting Tools | 🔄 Y3-Y4 | Gen AI (40%) + CAD Kernels (40%) + UX (20%) |
-| Soft Jaws | 🔄 Y4+ | UX (50%) + CAD Kernels (40%) + LLM (10%) |
-| EOAT (End of Arm Tooling) | 🔄 Y4+ | LLM (30%) + Gen AI (30%) + CAD Kernels (30%) |
+| Drilling Guides | 🔄 Y1 | CAD Kernels (60%) + UX (30%) + LLM (10%) |
+| Assembly Guides | 🔄 Y1 | UX (50%) + Gen AI (30%) + CAD Kernels (20%) |
+| Shadow Boxes | 🔄 Y1 | Gen AI (50%) + UX (30%) + CAD Kernels (20%) |
+| Alignment Tools | 🔄 Y1 | CAD Kernels (50%) + UX (40%) + LLM (10%) |
+| Custom Palletizing | 🔄 Y1 | LLM (40%) + UX (40%) + CAD Kernels (20%) |
+| Sand Casting Tools | 🔄 Y1 | Gen AI (40%) + CAD Kernels (40%) + UX (20%) |
+| Soft Jaws | 🔄 Y1 | UX (50%) + CAD Kernels (40%) + LLM (10%) |
+| EOAT (End of Arm Tooling) | 🔄 Y1 | LLM (30%) + Gen AI (30%) + CAD Kernels (30%) |
 
 ### Key Differentiators
 
@@ -119,7 +119,7 @@ Four macro forces are converging to create unprecedented demand for tooling auto
 ### Competitive Moats (Ranked by Defensibility)
 
 1. **Founder Domain Expertise (10+ Year Lead):** CEO built Fracktal Works (3D printer OEM)—DfAM rules, material science, OEM relationships cannot be hired
-2. **Production-Ready Tools (2):** 12+ months of customer iteration on Fixtures + Vacuum Casting
+2. **Full Product Suite (10 Tools by Y1):** All design automation tools production-ready by end of Year 1—complete platform from day one
 3. **Automotive OEM Validation:** Active Honda pilot for IATF 16949 compliance
 4. **Multi-Dependency Platform (Building):** Software + Services + Hardware + Consumables creates 5× switching costs vs. software-only competitors
 
@@ -351,7 +351,7 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 ### Seed Round: $3M
 
 **We are raising $3M to:**
-1. Complete MVP with 4 additional tool types (Drilling, Assembly, Alignment, Shadow Box)
+1. Complete all 10 design automation tools (full product suite by end of Y1)
 2. Convert Honda beta to paid license ($24K+/year)
 3. Close TVS and Toyota pilots
 4. Build initial VAR network (10-15 partners)

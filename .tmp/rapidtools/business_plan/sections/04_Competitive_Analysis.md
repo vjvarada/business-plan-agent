@@ -28,19 +28,18 @@
 
 **Competitive Moats (Current State — Strongest: 10+ Year Founder Expertise):**
 
-> **Reality Check:** RapidTools has 2 production-ready tools (Fixtures, Vacuum Casting Molds) and is actively working with Honda on automotive compliance. Moats below reflect current defensibility, not future aspirations.
+> **Reality Check:** RapidTools has 2 production-ready tools today (Fixtures, Vacuum Casting Molds) with all 10 tools planned for production by end of Y1. We are actively working with Honda on automotive compliance. Moats below reflect current defensibility, not future aspirations.
 
 1. **Founder Domain Expertise (10+ Year Lead)**: CEO brings 15 years of 3D printing manufacturing experience through Fracktal Works (3D printer manufacturer + services + OEM customers). DfAM rules, material expertise, and OEM relationships cannot be hired or acquired.
-2. **Production-Ready Tools (2)**: Fixtures + Vacuum Casting Molds with 12+ months of customer iteration and validation
+2. **Full Product Suite (10 Tools by Y1)**: All design automation tools production-ready by end of Year 1—complete platform from day one
 3. **Automotive OEM Validation**: Active Honda pilot for IATF 16949 / ASME Y14.5 compliance (in progress)
-4. **Hybrid Technology Architecture**: UX + LLMs + Generative AI + CAD Kernels—proven for 2 tool types
+4. **Hybrid Technology Architecture**: UX + LLMs + Generative AI + CAD Kernels—proven for 2 tool types, scaling to 10
 5. **Dual-Space CAD Kernels**: B-spline (precision) + mesh (speed) architecture in production
 6. **Operations Buyer Positioning**: Manufacturing/operations decision-maker vs traditional engineering buyer
 7. **Multi-Dependency Platform (Building)**: Integrated software + services + hardware + consumables creates layered switching costs that no competitor can replicate—customers using 3+ revenue streams have 4× longer lifetimes
 
 **Future Moats (Building):**
 
-- 8 additional tool types (roadmap)
 - Data flywheel (need 5,000+ designs for defensibility)
 - Multi-OEM validation (Honda first, Toyota/TVS next)
 
@@ -896,7 +895,7 @@
 | ------------------------- | ----------------------------------------- | ----------------------------------------- |
 | **Founded**               | 2024 (spin-out from Fracktal Works)       | 2013 (12+ years in market)                |
 | **Funding**               | Raising Seed ($3M target)                 | €3M Series A (2022)                       |
-| **Tool Types**            | 2 production, 8 roadmap                   | **10+ production**                        |
+| **Tool Types**            | 10 tools (all production by end of Y1)   | **10+ production**                        |
 | **OEM Customers**         | Honda (pilot)                             | **Audi, Ford, VW, Airbus** (production)   |
 | **Technology**            | Hybrid (UX + LLM + Gen AI + CAD Kernels)  | paramate + trCAD (own kernel)             |
 | **Input Modality**        | Multi-modal (UX, LLM, CAD import, sketch) | CAD file upload + parameter configuration |
@@ -904,15 +903,14 @@
 | **Pricing**               | $2,400/year                               | Freemium + Enterprise                     |
 | **Stratasys Partnership** | None                                      | **Exclusive GrabCAD integration (2025)**  |
 | **Vacuum Casting Molds**  | ✅ Production-ready                       | ❌ Not offered                            |
-| **Sand Casting Tools**    | 🔄 Roadmap                                | ❌ Not offered                            |
+| **Sand Casting Tools**    | ✅ Production by Y1                       | ❌ Not offered                            |
 
 **Where Trinckle is Ahead:**
 
-1. **Production tool breadth**: 10+ tools in production vs. RapidTools' 2
+1. **Time in market**: 12+ years vs. RapidTools' <1 year
 2. **OEM validation**: Audi Sport, Ford, VW, Airbus in production (not pilots)
-3. **Time in market**: 12+ years vs. RapidTools' <1 year
-4. **Stratasys partnership**: Exclusive GrabCAD Print Pro integration
-5. **Freemium model**: Lower barrier to entry for SMBs
+3. **Stratasys partnership**: Exclusive GrabCAD Print Pro integration
+4. **Freemium model**: Lower barrier to entry for SMBs
 
 **Where RapidTools Can Differentiate:**
 
@@ -1594,32 +1592,33 @@ These are **complementary stages**, not competing products.
 
 ## Competitive Moats & Defensibility
 
-> **Current Reality Check:** RapidTools has **2 production-ready tools** (Fixtures, Vacuum Casting Molds) and is actively working with **Honda on automotive compliance validation**. The remaining 8 tool types are on the roadmap. Moats are assessed based on what we have TODAY, not future aspirations.
+> **Current Reality Check:** RapidTools has **2 production-ready tools** today (Fixtures, Vacuum Casting Molds) with **all 10 tools planned for production by end of Y1**. We are actively working with **Honda on automotive compliance validation**. Moats are assessed based on what we have TODAY plus our accelerated roadmap.
 
-### Moat 1: Production-Ready Tool Expertise (12-18 Month Lead)
+### Moat 1: Full Product Suite (10 Tools by End of Y1)
 
-**What We Have Today:**
+**Tool Roadmap — All Production by End of Year 1:**
 
-| Tool Type                | Status            | Tech Mix                                    | Validation Level                               |
-| ------------------------ | ----------------- | ------------------------------------------- | ---------------------------------------------- |
-| **Jigs & Fixtures**      | ✅ **Production** | UX (40%) + CAD Kernels (40%) + LLM (20%)    | Honda pilot, automotive compliance in progress |
-| **Vacuum Casting Molds** | ✅ **Production** | CAD Kernels (50%) + Gen AI (30%) + UX (20%) | Production-validated, customer deployments     |
-| Assembly Guides          | 🔄 Roadmap (Q2)   | —                                           | —                                              |
-| Drilling Guides          | 🔄 Roadmap (Q2)   | —                                           | —                                              |
-| Alignment Tools          | 🔄 Roadmap (Q3)   | —                                           | —                                              |
-| Shadow Boxes             | 🔄 Roadmap (Q3)   | —                                           | —                                              |
-| Custom Palletizing       | 🔄 Roadmap (Q4)   | —                                           | —                                              |
-| Sand Casting Tools       | 🔄 Roadmap (Q4)   | —                                           | —                                              |
-| Soft Jaws                | 🔄 Roadmap (Y2)   | —                                           | —                                              |
-| EOAT                     | 🔄 Roadmap (Y2)   | —                                           | —                                              |
+| Tool Type                | Status            | Tech Mix                                    | Timeline   |
+| ------------------------ | ----------------- | ------------------------------------------- | ---------- |
+| **Jigs & Fixtures**      | ✅ **Production** | UX (40%) + CAD Kernels (40%) + LLM (20%)    | Now        |
+| **Vacuum Casting Molds** | ✅ **Production** | CAD Kernels (50%) + Gen AI (30%) + UX (20%) | Now        |
+| Assembly Guides          | 🔄 In Development | UX (50%) + Gen AI (30%) + CAD (20%)         | Y1 Q2      |
+| Drilling Guides          | 🔄 In Development | CAD Kernels (60%) + UX (30%) + LLM (10%)    | Y1 Q2      |
+| Alignment Tools          | 🔄 In Development | CAD Kernels (50%) + UX (40%) + LLM (10%)    | Y1 Q3      |
+| Shadow Boxes             | 🔄 In Development | Gen AI (50%) + UX (30%) + CAD (20%)         | Y1 Q3      |
+| Custom Palletizing       | 🔄 In Development | LLM (40%) + UX (40%) + CAD Kernels (20%)    | Y1 Q3      |
+| Sand Casting Tools       | 🔄 In Development | Gen AI (40%) + CAD Kernels (40%) + UX (20%) | Y1 Q4      |
+| Soft Jaws                | 🔄 In Development | UX (50%) + CAD Kernels (40%) + LLM (10%)    | Y1 Q4      |
+| EOAT                     | 🔄 In Development | LLM (30%) + Gen AI (30%) + CAD (30%)        | Y1 Q4      |
 
-**Why 2 Tools is Still a Moat:**
+**Why Complete Suite by Y1 is Achievable:**
 
-- **Deep expertise > Broad coverage**: Our 2 tools have 12+ months of customer iteration, edge case handling, and real-world validation
-- **Honda automotive compliance**: Working with Honda to align fixture outputs to automotive quality standards (IATF 16949, GD&T per ASME Y14.5)—this compliance work transfers to all future tools
-- **Foundation for expansion**: CAD kernel architecture, UX patterns, and validation pipelines built for fixtures apply to 8 additional tool types
+- **Shared architecture**: CAD kernel, UX patterns, and validation pipelines built for fixtures apply to all 10 tool types
+- **Honda automotive compliance**: Compliance work (IATF 16949, GD&T per ASME Y14.5) transfers to all future tools
+- **Founder expertise**: 15 years of tooling experience means we know exactly what each tool type needs
+- **Aggressive but focused**: Full engineering investment in product completeness before scaling
 
-**Competitor's Challenge to Match Our 2 Tools:**
+**Competitor's Challenge to Match:
 
 - Hire tooling domain experts: 6-12 months
 - Build fixture-specific workflows + validation: 12-18 months
@@ -1903,11 +1902,10 @@ Unlike Trinckle (software-only) or Protolabs (services-only), RapidTools is buil
 
 ### Future Moats (Building Now)
 
-**These moats are NOT yet established but are in development:**
+**These moats are in active development:**
 
 | **Future Moat**                  | **Current Status**                      | **Timeline to Defensibility**   |
 | -------------------------------- | --------------------------------------- | ------------------------------- |
-| **10 Tool Types**                | 2 production, 8 roadmap                 | 18-24 months (full suite)       |
 | **Data Flywheel**                | ~200 fixtures, ~50 molds to date        | 24-36 months (10K+ designs)     |
 | **Multi-Modal Input**            | UX + LLM proven; CAD import, sketch TBD | 12-18 months (all 4 modalities) |
 | **Industry-Specific Compliance** | Honda automotive in progress            | 12-18 months (additional OEMs)  |
@@ -1928,7 +1926,7 @@ Unlike Trinckle (software-only) or Protolabs (services-only), RapidTools is buil
 | **Moat**                       | **Current Strength** | **Defensibility** | **Notes**                                          |
 | ------------------------------ | -------------------- | ----------------- | -------------------------------------------------- |
 | **Founder Domain Expertise**   | ✅ Strong            | 10+ years         | 15 years Fracktal Works, TVS/OEM relationships     |
-| **Production-Ready Tools (2)** | ⚠️ Medium            | 12-18 months      | Fixtures + Vacuum Casting production-proven        |
+| **Full Product Suite (10 Tools)** | ✅ Strong (by Y1 end) | 12-18 months   | All tools production-ready by end of Year 1        |
 | **Automotive OEM Validation**  | ⚠️ Medium            | 18-24 months      | Honda engagement active, not yet complete          |
 | **Hybrid Tech Architecture**   | ✅ Strong            | 12-18 months      | Proven for 2 tools, transferable to others         |
 | **Dual-Space CAD Kernels**     | ✅ Strong            | 18-24 months      | B-spline + mesh integration production-ready       |
@@ -1956,9 +1954,9 @@ Unlike Trinckle (software-only) or Protolabs (services-only), RapidTools is buil
 - ✅ Operations buyer positioning and early customer traction
 - ✅ DfAM expertise embedded in software (from 15 years of manufacturing failures/successes)
 
-**What We're Building:**
+**What We're Building (All by End of Y1):**
 
-- 🔄 8 additional tool types (12-24 month roadmap)
+- 🔄 8 additional tool types → All 10 tools production-ready by end of Y1
 - 🔄 Honda validation completion (6-12 months)
 - 🔄 Data flywheel (need 5,000+ designs for defensibility)
 - 🔄 Additional OEM relationships (Toyota, TVS conversations)

@@ -61,7 +61,7 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 
 | Milestone            | Target                                    | Timeline            |
 | -------------------- | ----------------------------------------- | ------------------- |
-| MVP launched         | Fixtures tool (core product)              | Q2 Y1               |
+| MVP launched         | All 10 design automation tools            | Q4 Y1               |
 | Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota) | Q2 Y1               |
 | Paying customers     | 8 paying pilots/customers                 | Q4 Y1               |
 | ARR achieved         | $500K                                     | Q4 Y1 (18-month Y1) |
@@ -71,7 +71,7 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 | ARR run rate         | $5M+                                      | Q2 Y3               |
 | VAR channel launched | 5-8 active VARs                           | Q1 Y3               |
 
-**Note:** Year 1 is an 18-month PMF validation period. $500K from 8 customers = $62.5K average deal size. Series A raised at $5M ARR run rate in Y3 Q2 (achievable: Y3 annual revenue target is $7M, implying $5M+ ARR by mid-year).
+**Note:** Year 1 is an 18-month PMF validation period. All 10 design automation tools will be production-ready by end of Y1. $500K from 8 customers = $62.5K average deal size. Series A raised at $5M ARR run rate in Y3 Q2 (achievable: Y3 annual revenue target is $7M, implying $5M+ ARR by mid-year).
 
 ### Runway Analysis
 
