@@ -19,7 +19,10 @@
 
 10. **10_Financial_Projections.md** - 8-year P&L, cash flow, balance sheet, key metrics
 11. **11_Risk_Analysis.md** - Market, execution, competitive risks + mitigations
-12. **12_Sensitivity_Analysis.md** - Scenario modeling (Base/Upside/Downside)
+
+### Platform Vision Section
+
+12. **12_Adjacent_Markets_Expansion.md** - ⭐ **NEW** - Platform expansion into Medical, Consumer, Architecture markets ($65B+ TAM → $140B+ by 2030)
 
 ## Key Financial Summary (Year 8)
 

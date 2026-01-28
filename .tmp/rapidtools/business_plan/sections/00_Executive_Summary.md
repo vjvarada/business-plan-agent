@@ -108,6 +108,38 @@ This is what RapidTools does.
 
 ---
 
+## Platform Vision: $65B+ TAM with Adjacent Markets
+
+**RapidTools' core technology—AI-driven intent-to-CAD automation with computational geometry validation—is horizontally applicable across multiple industries.** The same platform that converts a production engineer's intent into a fixture can convert:
+
+- A **surgeon's CT scan** into a patient-specific implant
+- A **jeweler's sketch** into a castable ring design
+- An **architect's 2D floor plan** into a 3D-printable model
+
+| Market | 2025 Size | 2030 Projection | CAGR | Technology Fit |
+|--------|-----------|-----------------|------|----------------|
+| **Manufacturing Tooling (Core)** | $42.0B | $65B+ | 9%+ | **Core focus** |
+| **Medical & Healthcare** | $15.0B | $45B+ | 18-20% | HIGH |
+| **Consumer Products & Fashion** | $6.0B | $18B+ | 18-20% | HIGH |
+| **Architecture & Construction** | $2.5B | $12B+ | 37% | MEDIUM-HIGH |
+| **Combined TAM** | **$65.5B** | **$140B+** | 15%+ | — |
+
+**The key insight:** Each adjacent market has the same fundamental problem—**domain experts who know what they need but can't express it in CAD**. Our platform bridges that gap.
+
+**Phased Expansion Strategy:**
+- **Phase 1 (Y1-Y4):** Manufacturing Tooling—validate core technology with Honda, TVS, Toyota
+- **Phase 2 (Y4-Y6):** Dental + Jewelry—highest technology overlap (80% reuse), lower regulatory burden
+- **Phase 3 (Y6-Y8):** Medical Implants + Eyewear + Footwear—premium pricing, partnership model
+
+**Why This Matters for Investors:**
+- Manufacturing tooling alone supports a **$500M-$1B exit**
+- Adjacent markets expand the opportunity to a **$3B+ platform** outcome
+- Each vertical adds domain-specific training data, compounding our AI advantage
+
+> **See [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md)** for detailed market sizing and expansion roadmap.
+
+---
+
 ## Why Now? — The Perfect Storm
 
 Four forces are converging simultaneously—this window won't last forever:
@@ -530,6 +562,7 @@ For deeper analysis, see the following sections:
 | [07_Revenue_Model.md](07_Revenue_Model.md)                                 | Unit Economics    | 5 revenue streams, 11.7:1 LTV:CAC, working capital    |
 | [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) | Team & Costs      | 380 FTEs, $274K/employee, 24% S&M                     |
 | [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md)                   | Capital Plan      | $38M total raise, 48% founder ownership at exit       |
+| [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md)       | Platform Vision   | $65B TAM → $140B by 2030 with Medical, Consumer, Architecture |
 
 ### Planned Sections (To Be Created)
 
@@ -537,7 +570,6 @@ For deeper analysis, see the following sections:
 | --------------------------- | ---------------------------------------- |
 | 10_Financial_Projections.md | 8-year P&L, Cash Flow, Balance Sheet     |
 | 11_Risk_Analysis.md         | Comprehensive risk matrix + mitigations  |
-| 12_Sensitivity_Analysis.md  | Scenario modeling (Base/Upside/Downside) |
 
 ---
 
