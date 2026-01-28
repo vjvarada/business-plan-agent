@@ -1,6 +1,8 @@
 ﻿# Technology Architecture
 
-> **The Core Insight:** RapidTools encodes 10+ years of manufacturing tooling expertise into software—using the right mix of **computational geometry algorithms & CAD kernels**, **generative AI**, **LLMs**, and **intuitive UX** depending on what's being designed.
+> **The Core Insight:** Applied Additive's RapidTools platform encodes 10+ years of manufacturing tooling expertise into software—using the right mix of **computational geometry algorithms & CAD kernels**, **generative AI**, **LLMs**, and **intuitive UX** depending on what's being designed.
+
+> **Why This Architecture Matters Beyond Tooling:** The same four-technology stack (UX + LLM + Gen AI + CAD Kernels) that converts a production engineer's intent into a fixture can convert a surgeon's CT scan into an implant, a jeweler's sketch into a castable ring, or an architect's floor plan into a 3D model. Manufacturing tooling is the hardest domain—strictest tolerances, highest liability. By building for Honda's standards, we automatically exceed what dental labs and jewelry workshops need. This is why Applied Additive is a **platform company**, not a fixture tool. See [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md) for expansion roadmap.
 
 ### Founder's Technical Foundation
 
@@ -12,7 +14,7 @@
 | **Fixture Automation**             | B-spline operations, Boolean geometry, GD&T validation    | **Working Demo**                     |
 | **Vacuum Casting Tool Automation** | Surface continuity, mold parting algorithms               | **Working Demo**                     |
 
-This rare combination of **computational geometry expertise + manufacturing domain knowledge** means RapidTools isn't starting from zero—we're productizing proven algorithms.
+This rare combination of **computational geometry expertise + manufacturing domain knowledge** means Applied Additive isn't starting from zero—we're productizing proven algorithms into RapidTools.
 
 ### Founder-Market Fit
 
@@ -36,7 +38,7 @@ Vijay isn't a software engineer who read about manufacturing—he built a 3D pri
 
 ## The Technology Mix
 
-RapidTools isn't a single technology—it's a **platform that combines four technologies** in different proportions depending on the design task:
+Applied Additive's RapidTools isn't a single technology—it's a **platform that combines four technologies** in different proportions depending on the design task:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -147,12 +149,14 @@ These tools share maximum foundation overlap with existing demos and address hig
 | **3**        | **Drilling Guides**      | 90% (fixture + hole geometry)    | Bushing library, tolerance UI  | TVS pipeline               |
 | **4**        | **Soft Jaws**            | 85% (fixture + surface matching) | Chuck database, CNC export     | Manufacturing belt demand  |
 | **5**        | **Alignment Tools**      | 85% (fixture + datum surfaces)   | Datum selection UX             | Honda/TVS secondary need   |
+| **6**        | **Shadow Boxes**         | 70% (mesh Booleans)              | Negative space Gen AI, foam export | Fracktal services demand   |
 
-**Why these 5 first:**
+**Why these 6 first:**
 
 - Direct extensions of working demos (fixtures, vacuum casting)
 - Highest demand from Honda pilot + discovery calls
-- Share >85% foundation code — truly incremental work
+- Shadow Boxes actively co-developed with Fracktal team
+- Share >70% foundation code — truly incremental work
 
 **Tier 2: Production-Ready by Month 12 (Q4 2026)**
 
@@ -160,7 +164,6 @@ These tools require more generative AI work but build on Tier 1 patterns:
 
 | **Priority** | **Tool**               | **Foundation Reuse**      | **New Development**                  | **Dependency**           |
 | ------------ | ---------------------- | ------------------------- | ------------------------------------ | ------------------------ |
-| **6**        | **Shadow Boxes**       | 70% (mesh Booleans)       | Negative space Gen AI, foam export   | Tier 1 mesh tools        |
 | **7**        | **Assembly Guides**    | 75% (UX + 3D viewer)      | Step sequencing, visual annotations  | Tier 1 UX patterns       |
 | **8**        | **Sand Casting Tools** | 70% (vacuum casting base) | Gating system Gen AI, shrinkage calc | Tool #2 (vacuum casting) |
 
@@ -195,13 +198,13 @@ Q1 2026 (M1-M3)         Q2 2026 (M4-M6)         Q3 2026 (M7-M9)         Q4 2026 
 │                       ├─ Drilling Guides ──────┼─ ✓ SHIPPED            │                       │
 │                       ├─ Soft Jaws ────────────┼─ ✓ SHIPPED            │                       │
 │                       ├─ Alignment Tools ──────┼─ ✓ SHIPPED            │                       │
-│                       │                        ├─ Shadow Boxes ────────┼─ ✓ SHIPPED            │
+│                       ├─ Shadow Boxes ─────────┼─ ✓ SHIPPED            │                       │
 │                       │                        ├─ Assembly Guides ─────┼─ ✓ SHIPPED            │
 │                       │                        ├─ Sand Casting ────────┼─ ✓ SHIPPED            │
 │                       │                        │                       ├─ Palletizing ─────────┼─ ✓ SHIPPED
 │                       │                        │                       ├─ EOAT ────────────────┼─ ✓ SHIPPED
 │                       │                        │                       │                       │
-[====== TIER 1: 5 TOOLS ======]   [====== TIER 2: 3 TOOLS ======]   [==== TIER 3: 2 TOOLS ====]
+[====== TIER 1: 6 TOOLS ======]   [=== TIER 2: 2 TOOLS ===]   [==== TIER 3: 2 TOOLS ====]
 ```
 
 ### Risk Mitigation
@@ -222,7 +225,7 @@ Q1 2026 (M1-M3)         Q2 2026 (M4-M6)         Q3 2026 (M7-M9)         Q4 2026 
 5. **Customer-driven prioritization:** Building what Honda/TVS need first ensures validation
 6. **Founder capability:** CEO can personally ship Tier 1 tools; CTO accelerates Tier 2-3
 
-**Conservative commitment:** 5 tools production-ready by Month 6, 8 tools by Month 12, 10 tools by Month 18.
+**Conservative commitment:** 6 tools production-ready by Month 6, 8 tools by Month 12, 10 tools by Month 18.
 
 **Aggressive target:** All 10 tools by Month 12 (achievable with CTO hire + AI acceleration).
 
@@ -544,7 +547,7 @@ Time: 30 seconds (vs. 4+ hours manual CAD)
 
 ## The Moat: Encoded Expertise
 
-**What makes RapidTools hard to replicate:**
+**What makes Applied Additive's RapidTools hard to replicate:**
 
 1. **Domain expertise encoded:** 10+ years of tooling engineering knowledge in validation rules
 2. **Tool-specific workflows:** Each of the 10 tools has a tailored UX + validation pipeline
@@ -564,7 +567,7 @@ Time: 30 seconds (vs. 4+ hours manual CAD)
 
 **The pitch in 30 seconds:**
 
-> RapidTools is Canva for manufacturing tooling. We encode expert knowledge into software, using the right mix of AI + computational geometry + UX for each tool type. A shop floor technician can now design a drilling fixture in 2 hours instead of waiting 2 weeks for a CAD engineer. We're starting with 10 tool types and $650M SAM in India/SE Asia.
+> Applied Additive's RapidTools is the Canva for manufacturing tooling. We encode expert knowledge into software, using the right mix of AI + computational geometry + UX for each tool type. A shop floor technician can now design a drilling fixture in 2 hours instead of waiting 2 weeks for a CAD engineer. We're starting with 10 tool types and $650M SAM in India/SE Asia.
 
 **The technology advantage:**
 
@@ -576,4 +579,4 @@ Time: 30 seconds (vs. 4+ hours manual CAD)
 
 _Last Updated: January 26, 2026_  
 _Purpose: Technology Overview for Sequoia Investment Evaluation_  
-_Author: RapidTools Technical Team_
+_Author: Applied Additive Technical Team_

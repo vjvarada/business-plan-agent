@@ -1,8 +1,8 @@
-﻿# Revenue Model & Unit Economics - RapidTools Platform
+﻿# Revenue Model & Unit Economics - Applied Additive's RapidTools Platform
 
 ## Executive Summary
 
-**RapidTools operates a multi-stream revenue model** designed for high gross margins on software (80%+) while capturing additional value through services, hardware referrals, and consumables. This creates a "land and expand" dynamic where software acquisition leads to higher-value service relationships.
+**Applied Additive's RapidTools operates a multi-stream revenue model** designed for high gross margins on software (80%+) while capturing additional value through services, hardware referrals, and consumables. This creates a "land and expand" dynamic where software acquisition leads to higher-value service relationships.
 
 ### Revenue Streams Overview
 
@@ -39,23 +39,23 @@ As we expand to US/Europe (Years 5-8), we expect CAC to increase 2-3× and ratio
 
 **India vs. US Cost Structure:**
 
-| Cost Component | India (RapidTools Y1-4) | US Equivalent | Ratio |
-|----------------|------------------------|---------------|-------|
-| **Sales Rep (fully loaded)** | $25,000/year | $80,000/year | 3.2× |
-| **Sales Engineer** | $18,000/year | $65,000/year | 3.6× |
-| **Marketing Manager** | $15,000/year | $55,000/year | 3.7× |
-| **Customer Success** | $12,000/year | $45,000/year | 3.8× |
-| **Travel per enterprise deal** | $5,000 | $15,000 | 3.0× |
-| **Trade show/event** | $8,000 | $25,000 | 3.1× |
+| Cost Component                 | India (Applied Additive Y1-4) | US Equivalent | Ratio |
+| ------------------------------ | ----------------------------- | ------------- | ----- |
+| **Sales Rep (fully loaded)**   | $25,000/year                  | $80,000/year  | 3.2×  |
+| **Sales Engineer**             | $18,000/year                  | $65,000/year  | 3.6×  |
+| **Marketing Manager**          | $15,000/year                  | $55,000/year  | 3.7×  |
+| **Customer Success**           | $12,000/year                  | $45,000/year  | 3.8×  |
+| **Travel per enterprise deal** | $5,000                        | $15,000       | 3.0×  |
+| **Trade show/event**           | $8,000                        | $25,000       | 3.1×  |
 
 **How This Translates to CAC:**
 
-| Segment | India CAC | US Equivalent CAC | If RapidTools Were US-Based |
-|---------|-----------|-------------------|----------------------------|
-| **SMB** | $2,500 | $7,500 | LTV:CAC = 5.1:1 |
-| **Mid-Market** | $12,000 | $32,000 | LTV:CAC = 6.9:1 |
-| **Enterprise** | $45,000 | $110,000 | LTV:CAC = 5.6:1 |
-| **Blended** | $7,000 | $18,000 | **LTV:CAC = 4.6:1** |
+| Segment        | India CAC | US Equivalent CAC | If RapidTools Were US-Based |
+| -------------- | --------- | ----------------- | --------------------------- |
+| **SMB**        | $2,500    | $7,500            | LTV:CAC = 5.1:1             |
+| **Mid-Market** | $12,000   | $32,000           | LTV:CAC = 6.9:1             |
+| **Enterprise** | $45,000   | $110,000          | LTV:CAC = 5.6:1             |
+| **Blended**    | $7,000    | $18,000           | **LTV:CAC = 4.6:1**         |
 
 Even at US cost structures, our LTV:CAC would be 4.6:1—well above the 3:1 minimum for healthy SaaS. The India advantage gives us margin to invest in growth while maintaining profitability.
 
@@ -65,30 +65,31 @@ Even at US cost structures, our LTV:CAC would be 4.6:1—well above the 3:1 mini
 
 As RapidTools expands to US/Europe via VAR partnerships, costs will increase:
 
-| Metric | India-Only (Y1-4) | Global Mix (Y5-8) | Change |
-|--------|-------------------|-------------------|--------|
-| **Revenue Mix** | 100% India/SEA | 60% India, 40% US/EU | — |
-| **Blended CAC** | $7,000 | $12,000 | +71% |
-| **Blended ARPU** | $18,909 | $22,000 | +16% (higher pricing in US/EU) |
-| **Blended Churn** | 15% | 13% | -13% (enterprise mix increases) |
-| **Blended LTV** | $82,000 | $110,000 | +34% |
-| **LTV:CAC** | 11.7:1 | **9.2:1** | -21% |
-| **Payback Period** | 6 months | 9 months | +50% |
+| Metric             | India-Only (Y1-4) | Global Mix (Y5-8)    | Change                          |
+| ------------------ | ----------------- | -------------------- | ------------------------------- |
+| **Revenue Mix**    | 100% India/SEA    | 60% India, 40% US/EU | —                               |
+| **Blended CAC**    | $7,000            | $12,000              | +71%                            |
+| **Blended ARPU**   | $18,909           | $22,000              | +16% (higher pricing in US/EU)  |
+| **Blended Churn**  | 15%               | 13%                  | -13% (enterprise mix increases) |
+| **Blended LTV**    | $82,000           | $110,000             | +34%                            |
+| **LTV:CAC**        | 11.7:1            | **9.2:1**            | -21%                            |
+| **Payback Period** | 6 months          | 9 months             | +50%                            |
 
 **The business improves with global expansion** because:
+
 1. Higher ARPU in US/EU markets ($3,600/seat vs. $2,400 in India)
 2. Lower churn as enterprise mix increases
 3. VAR channel absorbs customer acquisition costs (we pay 25-30% commission vs. building US sales team)
 
 **Stress Test: What If CAC Doubles and Churn Increases?**
 
-| Scenario | CAC | Churn | LTV:CAC | Verdict |
-|----------|-----|-------|---------|--------|
-| **Base Case** | $7,000 | 15% | 11.7:1 | ✅ Excellent |
-| **CAC +50%** | $10,500 | 15% | 7.8:1 | ✅ Very Good |
-| **CAC +100%** | $14,000 | 15% | 5.9:1 | ✅ Good |
-| **CAC +100%, Churn +5%** | $14,000 | 20% | 4.1:1 | ✅ Acceptable |
-| **Worst Case** | $18,000 | 22% | 2.8:1 | ⚠️ Below threshold |
+| Scenario                 | CAC     | Churn | LTV:CAC | Verdict            |
+| ------------------------ | ------- | ----- | ------- | ------------------ |
+| **Base Case**            | $7,000  | 15%   | 11.7:1  | ✅ Excellent       |
+| **CAC +50%**             | $10,500 | 15%   | 7.8:1   | ✅ Very Good       |
+| **CAC +100%**            | $14,000 | 15%   | 5.9:1   | ✅ Good            |
+| **CAC +100%, Churn +5%** | $14,000 | 20%   | 4.1:1   | ✅ Acceptable      |
+| **Worst Case**           | $18,000 | 22%   | 2.8:1   | ⚠️ Below threshold |
 
 **Conclusion:** The business remains healthy even with 100% CAC increase and 33% churn increase. Only a "worst case" scenario (2.5× CAC + 47% churn increase) breaks the 3:1 threshold—and that scenario is implausible given our multi-product switching costs.
 
@@ -410,15 +411,16 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 **EMS Revenue Build-Up (Year 8: $7.4M):**
 
-| Tier | Customers | Avg Annual Contract | Revenue | Notes |
-| --- | --- | --- | --- | --- |
-| **EMS Lite** | 15 | $96,000 | $1.44M | Remote design support |
-| **EMS Standard** | 18 | $216,000 | $3.89M | On-site designer + operator |
-| **EMS Professional** | 5 | $336,000 | $1.68M | Multi-shift support |
-| **EMS Enterprise** | 0.6 | $650,000 | $0.39M | Full dept outsource (Honda-scale) |
-| **TOTAL** | **~39** | **$190K avg** | **$7.4M** | |
+| Tier                 | Customers | Avg Annual Contract | Revenue   | Notes                             |
+| -------------------- | --------- | ------------------- | --------- | --------------------------------- |
+| **EMS Lite**         | 15        | $96,000             | $1.44M    | Remote design support             |
+| **EMS Standard**     | 18        | $216,000            | $3.89M    | On-site designer + operator       |
+| **EMS Professional** | 5         | $336,000            | $1.68M    | Multi-shift support               |
+| **EMS Enterprise**   | 0.6       | $650,000            | $0.39M    | Full dept outsource (Honda-scale) |
+| **TOTAL**            | **~39**   | **$190K avg**       | **$7.4M** |                                   |
 
 **Validation:**
+
 - 39 EMS customers = 0.7% of total customer base (5,500) ← Enterprise segment focus
 - All EMS customers are also software subscribers (counted in 275 Enterprise customers)
 - EMS is an upsell from Enterprise software, not a separate acquisition
@@ -821,15 +823,16 @@ Industry benchmark: LTV:CAC >3:1 is healthy; 5-10:1 indicates strong unit econom
 
 **Why Our Ratios Are High (11-18:1) vs. Industry Median (3-5:1):**
 
-| Factor | US SaaS Benchmark | RapidTools (India) | Impact on LTV:CAC |
-| --- | --- | --- | --- |
-| **Sales Rep OTE** | $150K-250K | $40K-60K | CAC 60-70% lower |
-| **Marketing Cost/Lead** | $150-400 | $50-120 | CAC 65-75% lower |
-| **Implementation** | $10K-50K | $3K-15K | CAC 60-70% lower |
-| **Manufacturing Churn** | 8-15% | 6-17% | LTV similar |
-| **ARPU** | $15K-50K | $9K-62K | LTV comparable |
+| Factor                  | US SaaS Benchmark | RapidTools (India) | Impact on LTV:CAC |
+| ----------------------- | ----------------- | ------------------ | ----------------- |
+| **Sales Rep OTE**       | $150K-250K        | $40K-60K           | CAC 60-70% lower  |
+| **Marketing Cost/Lead** | $150-400          | $50-120            | CAC 65-75% lower  |
+| **Implementation**      | $10K-50K          | $3K-15K            | CAC 60-70% lower  |
+| **Manufacturing Churn** | 8-15%             | 6-17%              | LTV similar       |
+| **ARPU**                | $15K-50K          | $9K-62K            | LTV comparable    |
 
 **Detailed SMB LTV:CAC (15.4:1) Calculation:**
+
 ```
 LTV = ARPU × Gross Margin / Churn = $9,300 × 70% / 17% = $38,400
 CAC = PLG acquisition ($500) + Onboarding ($800) + First-year support ($600) + Overhead ($600) = $2,500
@@ -837,6 +840,7 @@ LTV:CAC = $38,400 / $2,500 = 15.4:1
 ```
 
 **Detailed Enterprise LTV:CAC (13.8:1) Calculation:**
+
 ```
 LTV = ARPU × Gross Margin / Churn = $62,000 × 60% / 6% = $621,000
 CAC = Field sales ($15K) + 6-month pilot ($12K) + SE time ($8K) + Travel ($5K) + Exec sponsorship ($5K) = $45,000
@@ -845,12 +849,12 @@ LTV:CAC = $621,000 / $45,000 = 13.8:1
 
 **Global Expansion Normalization (Years 5-8):**
 
-| Region | CAC Multiplier | Expected LTV:CAC | Rationale |
-| --- | --- | --- | --- |
-| **India (Y1-Y4)** | 1.0× | 11-18:1 | Beachhead, full cost advantage |
-| **SE Asia (Y3-Y5)** | 1.3-1.5× | 8-12:1 | Similar cost structure |
-| **EU/Americas via VARs (Y5-Y8)** | 2.0-2.5× | 5-8:1 | Partners absorb some CAC |
-| **Direct US/EU (Future)** | 3.0× | 3-5:1 | Full market rates |
+| Region                           | CAC Multiplier | Expected LTV:CAC | Rationale                      |
+| -------------------------------- | -------------- | ---------------- | ------------------------------ |
+| **India (Y1-Y4)**                | 1.0×           | 11-18:1          | Beachhead, full cost advantage |
+| **SE Asia (Y3-Y5)**              | 1.3-1.5×       | 8-12:1           | Similar cost structure         |
+| **EU/Americas via VARs (Y5-Y8)** | 2.0-2.5×       | 5-8:1            | Partners absorb some CAC       |
+| **Direct US/EU (Future)**        | 3.0×           | 3-5:1            | Full market rates              |
 
 **Investor Interpretation:** High current LTV:CAC is NOT a red flag—it's a sustainable India beachhead advantage. We budget for 5-8:1 ratios in our global expansion P&L assumptions [[21]](#ref-21).
 
@@ -1093,34 +1097,34 @@ Customers using 3+ revenue streams have **4× longer lifetimes** than software-o
 
 ### Variable Costs (Sales & Marketing)
 
-| Cost Type                  | % of Revenue | Y8 Amount  | Description                                          |
-| -------------------------- | ------------ | ---------- | ---------------------------------------------------- |
-| **VAR Incentives**         | 4-5%         | $5.0M      | SPIFs, MDF, bonuses (on top of margin)               |
-| **Sales Commissions**      | 3-5%         | $3.6M      | 15-20% of direct sales revenue                       |
-| **Marketing Programs**     | 4-5%         | $5.0M      | Content, digital campaigns, webinars, demand gen     |
-| **Trade Shows & Events**   | 0.8%         | $0.8M      | IMTS, Fabtech, Formnext, ACMA, TCT + regional events |
-| **TOTAL S&M Variable**     | **13-16%**   | **$14.4M** |                                                      |
+| Cost Type                | % of Revenue | Y8 Amount  | Description                                          |
+| ------------------------ | ------------ | ---------- | ---------------------------------------------------- |
+| **VAR Incentives**       | 4-5%         | $5.0M      | SPIFs, MDF, bonuses (on top of margin)               |
+| **Sales Commissions**    | 3-5%         | $3.6M      | 15-20% of direct sales revenue                       |
+| **Marketing Programs**   | 4-5%         | $5.0M      | Content, digital campaigns, webinars, demand gen     |
+| **Trade Shows & Events** | 0.8%         | $0.8M      | IMTS, Fabtech, Formnext, ACMA, TCT + regional events |
+| **TOTAL S&M Variable**   | **13-16%**   | **$14.4M** |                                                      |
 
 **Marketing Programs Breakdown ($5.0M by Year 8):**
 
-| Category                 | Budget   | % of Marketing | Description                                        |
-| ------------------------ | -------- | -------------- | -------------------------------------------------- |
-| **Digital Marketing**    | $1.5M    | 30%            | SEO, paid search, LinkedIn, content marketing      |
-| **Partner Co-Marketing** | $1.5M    | 30%            | MDF programs, joint campaigns, VAR enablement      |
-| **Product Marketing**    | $0.8M    | 16%            | Positioning, competitive intel, launches, collateral |
-| **Demand Generation**    | $0.7M    | 14%            | Webinars, ABM, lead nurturing, marketing automation |
-| **Brand & PR**           | $0.5M    | 10%            | PR, analyst relations, brand campaigns             |
-| **TOTAL**                | **$5.0M**| **100%**       |                                                    |
+| Category                 | Budget    | % of Marketing | Description                                          |
+| ------------------------ | --------- | -------------- | ---------------------------------------------------- |
+| **Digital Marketing**    | $1.5M     | 30%            | SEO, paid search, LinkedIn, content marketing        |
+| **Partner Co-Marketing** | $1.5M     | 30%            | MDF programs, joint campaigns, VAR enablement        |
+| **Product Marketing**    | $0.8M     | 16%            | Positioning, competitive intel, launches, collateral |
+| **Demand Generation**    | $0.7M     | 14%            | Webinars, ABM, lead nurturing, marketing automation  |
+| **Brand & PR**           | $0.5M     | 10%            | PR, analyst relations, brand campaigns               |
+| **TOTAL**                | **$5.0M** | **100%**       |                                                      |
 
 **Trade Shows & Events Breakdown ($0.8M by Year 8):**
 
-| Event Category           | Budget   | Events/Year | Avg Cost | Description                          |
-| ------------------------ | -------- | ----------- | -------- | ------------------------------------ |
-| **Major Trade Shows**    | $400K    | 5           | $80K     | IMTS, Fabtech, Formnext, ACMA, TCT   |
-| **Regional Events**      | $200K    | 10          | $20K     | India/SEA industry conferences       |
-| **User Conferences**     | $100K    | 2           | $50K     | RapidTools Connect (customer events) |
-| **Sponsorships**         | $100K    | —           | —        | Industry publications, webinars      |
-| **TOTAL**                | **$0.8M**| —           | —        |                                      |
+| Event Category        | Budget    | Events/Year | Avg Cost | Description                          |
+| --------------------- | --------- | ----------- | -------- | ------------------------------------ |
+| **Major Trade Shows** | $400K     | 5           | $80K     | IMTS, Fabtech, Formnext, ACMA, TCT   |
+| **Regional Events**   | $200K     | 10          | $20K     | India/SEA industry conferences       |
+| **User Conferences**  | $100K     | 2           | $50K     | RapidTools Connect (customer events) |
+| **Sponsorships**      | $100K     | —           | —        | Industry publications, webinars      |
+| **TOTAL**             | **$0.8M** | —           | —        |                                      |
 
 **Note on VAR Compensation:** VARs earn money two ways:
 

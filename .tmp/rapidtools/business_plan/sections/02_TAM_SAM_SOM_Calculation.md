@@ -1,4 +1,4 @@
-﻿# TAM/SAM/SOM Analysis - RapidTools Platform
+﻿# TAM/SAM/SOM Analysis - Applied Additive's RapidTools Platform
 
 ## Executive Summary
 
@@ -8,6 +8,8 @@
 - Hardware (3D Printing for Tooling): $4.0B
 - Consumables (Materials): $8.0B
 - Services (Design & Job Work): $20.0B
+
+> **Platform Expansion Optionality:** Manufacturing tooling is Applied Additive's beachhead. The same core technology—AI-driven intent-to-CAD automation with computational geometry validation—addresses **$65.5B (2025) → $140B+ (2030)** in combined TAM when expanded to Medical ($15B), Consumer Products ($6B), and Architecture ($2.5B) markets. See [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md) for detailed expansion roadmap. This analysis focuses on the manufacturing tooling market that funds our Seed round.
 
 **Serviceable Addressable Market (SAM): $2.88 Billion → $5.76B (Phased Geographic Expansion)**
 
@@ -560,11 +562,11 @@ Based on first-hand plant visits (see Market Drivers document for methodology):
 
 **Average Revenue Per User (ARPU) Validation:**
 
-| Segment        | ARPU    | Composition                                                                                        | Benchmark                                                                        |
-| -------------- | ------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **SMB**        | $9,300  | Software $4,800 (2 seats) + Services $3,200 (45% attach) + Hardware $1,000 (11%) + Consumables $300 | ✓ Competitive with Autodesk Fusion 360 ($2,040-$5,000/seat) at similar value     |
-| **Mid-Market** | $37,200 | Software $22,800 (8 seats + expansion) + Services $10,500 (55% attach) + Hardware $3,300 + Consumables $600 | ✓ Aligns with multi-seat CAD licenses + services attach |
-| **Enterprise** | $62,000 | Software $51,500 (25 seats + expansion) + Services/EMS $10,500 (incl. partial EMS)                 | ✓ Conservative vs. Honda/TVS validation ($150K-200K with full EMS adoption)      |
+| Segment        | ARPU    | Composition                                                                                                 | Benchmark                                                                    |
+| -------------- | ------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **SMB**        | $9,300  | Software $4,800 (2 seats) + Services $3,200 (45% attach) + Hardware $1,000 (11%) + Consumables $300         | ✓ Competitive with Autodesk Fusion 360 ($2,040-$5,000/seat) at similar value |
+| **Mid-Market** | $37,200 | Software $22,800 (8 seats + expansion) + Services $10,500 (55% attach) + Hardware $3,300 + Consumables $600 | ✓ Aligns with multi-seat CAD licenses + services attach                      |
+| **Enterprise** | $62,000 | Software $51,500 (25 seats + expansion) + Services/EMS $10,500 (incl. partial EMS)                          | ✓ Conservative vs. Honda/TVS validation ($150K-200K with full EMS adoption)  |
 
 **Platform Attach Rates (Year 8):**
 
@@ -619,22 +621,22 @@ The Year 8 blended revenue mix (62% software, 30% services, 7% hardware, 1% cons
 
 **Revenue by Stream and Segment (Year 8):**
 
-| **Segment**          | **Customers** | **Total Rev** | **Software**      | **Services**      | **Hardware**     | **Consumables**  |
-| -------------------- | ------------- | ------------- | ----------------- | ----------------- | ---------------- | ---------------- |
-| **SMB (70%)**        | 3,850         | $35.8M        | $18.5M (52%)      | $12.5M (35%)      | $4.0M (11%)      | $0.8M (2%)       |
-| **Mid-Market (25%)** | 1,375         | $51.2M        | $31.3M (61%)      | $14.5M (28%)      | $4.5M (9%)       | $0.9M (2%)       |
-| **Enterprise (5%)**  | 275           | $17.1M        | $14.2M (83%)      | $4.6M (27%)*     | -$1.1M adj*      | -$0.6M adj*      |
-| **TOTAL**            | **5,500**     | **$104.0M**   | **$64.0M (62%)** | **$31.6M (30%)** | **$7.4M (7%)**  | **$1.1M (1%)**  |
+| **Segment**          | **Customers** | **Total Rev** | **Software**     | **Services**     | **Hardware**   | **Consumables** |
+| -------------------- | ------------- | ------------- | ---------------- | ---------------- | -------------- | --------------- |
+| **SMB (70%)**        | 3,850         | $35.8M        | $18.5M (52%)     | $12.5M (35%)     | $4.0M (11%)    | $0.8M (2%)      |
+| **Mid-Market (25%)** | 1,375         | $51.2M        | $31.3M (61%)     | $14.5M (28%)     | $4.5M (9%)     | $0.9M (2%)      |
+| **Enterprise (5%)**  | 275           | $17.1M        | $14.2M (83%)     | $4.6M (27%)\*    | -$1.1M adj\*   | -$0.6M adj\*    |
+| **TOTAL**            | **5,500**     | **$104.0M**   | **$64.0M (62%)** | **$31.6M (30%)** | **$7.4M (7%)** | **$1.1M (1%)**  |
 
-*Note: Enterprise segment shows negative adjustments because enterprise customers' services (incl. EMS) are counted in the Services column but their hardware/consumables usage is lower than other segments due to using existing equipment. The $17.1M enterprise revenue is primarily software-heavy with EMS add-ons.
+\*Note: Enterprise segment shows negative adjustments because enterprise customers' services (incl. EMS) are counted in the Services column but their hardware/consumables usage is lower than other segments due to using existing equipment. The $17.1M enterprise revenue is primarily software-heavy with EMS add-ons.
 
 **Alternative View: ARPU Composition (What an Average Customer Spends)**
 
-| **Segment**      | **ARPU** | **Software** | **Services** | **Hardware** | **Consumables** | **Notes**                              |
-| ---------------- | -------- | ------------ | ------------ | ------------ | --------------- | -------------------------------------- |
-| **SMB**          | $9,300   | $4,800 (52%) | $3,200 (35%) | $1,000 (11%) | $300 (2%)       | 2 seats × $2,400; services for 45%     |
-| **Mid-Market**   | $37,200  | $22,800 (61%)| $10,500 (28%)| $3,300 (9%)  | $600 (2%)       | 8 seats × $2,160 + expansion; 55% svc  |
-| **Enterprise**   | $62,000  | $51,500 (83%)| $10,500 (17%)| incl. above  | incl. above     | 25 seats × $1,920 + full EMS adoption  |
+| **Segment**    | **ARPU** | **Software**  | **Services**  | **Hardware** | **Consumables** | **Notes**                             |
+| -------------- | -------- | ------------- | ------------- | ------------ | --------------- | ------------------------------------- |
+| **SMB**        | $9,300   | $4,800 (52%)  | $3,200 (35%)  | $1,000 (11%) | $300 (2%)       | 2 seats × $2,400; services for 45%    |
+| **Mid-Market** | $37,200  | $22,800 (61%) | $10,500 (28%) | $3,300 (9%)  | $600 (2%)       | 8 seats × $2,160 + expansion; 55% svc |
+| **Enterprise** | $62,000  | $51,500 (83%) | $10,500 (17%) | incl. above  | incl. above     | 25 seats × $1,920 + full EMS adoption |
 
 **Honda Pilot Validation ($200K actual vs. $62K enterprise ARPU):**
 
@@ -898,12 +900,12 @@ As SAM expands geographically, penetration percentage remains conservative relat
 
 ### Sensitivity Analysis
 
-| Scenario              | TAM Assumption                               | Active SAM (Y8)             | SOM (Year 8) | Penetration | Assessment                                           |
-| --------------------- | -------------------------------------------- | --------------------------- | ------------ | ----------- | ---------------------------------------------------- |
-| **Base Case**         | $42B (all streams validated)                 | $5.76B (global expansion)   | $104M        | 1.81%       | Realistic-ambitious                                  |
-| **Conservative**      | $32B (Services at $10B instead of $20B)      | $4.32B (50% global reach)   | $52M         | 1.20%       | Niche player                                         |
-| **Aggressive**        | $42B                                         | $5.76B                      | $210M        | 3.65%       | Requires market leader positioning                   |
-| **Services Downside** | $37B (Services $15B if tooling % overstated) | $5.04B (reduced services)   | $104M        | 2.06%       | Still defensible (all other streams HIGH confidence) |
+| Scenario              | TAM Assumption                               | Active SAM (Y8)           | SOM (Year 8) | Penetration | Assessment                                           |
+| --------------------- | -------------------------------------------- | ------------------------- | ------------ | ----------- | ---------------------------------------------------- |
+| **Base Case**         | $42B (all streams validated)                 | $5.76B (global expansion) | $104M        | 1.81%       | Realistic-ambitious                                  |
+| **Conservative**      | $32B (Services at $10B instead of $20B)      | $4.32B (50% global reach) | $52M         | 1.20%       | Niche player                                         |
+| **Aggressive**        | $42B                                         | $5.76B                    | $210M        | 3.65%       | Requires market leader positioning                   |
+| **Services Downside** | $37B (Services $15B if tooling % overstated) | $5.04B (reduced services) | $104M        | 2.06%       | Still defensible (all other streams HIGH confidence) |
 
 **Recommended Investor Framing:**
 

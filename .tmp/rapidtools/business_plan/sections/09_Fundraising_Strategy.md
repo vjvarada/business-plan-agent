@@ -1,11 +1,25 @@
 ﻿# Fundraising Strategy & Capital Plan
 
-> **Last Updated:** January 27, 2026  
+> **Last Updated:** January 28, 2026  
 > **Status:** Draft
+
+---
+
+### What You're Investing In
+
+| Entity | Role | This Round |
+|--------|------|------------|
+| **Applied Additive** | Platform company (AI intent-to-CAD) | **← The investment** |
+| **RapidTools** | First product vertical (manufacturing tooling) | Funded by this round |
+| Medical, Consumer, Architecture | Future verticals | Enabled by platform |
+
+---
 
 ## Executive Summary
 
-RapidTools plans a **capital-efficient fundraising path** aligned with key business milestones. Leveraging India's cost advantage, we require **60-70% less capital** than a comparable US-based startup to reach the same scale while maintaining adequate safety margins for market uncertainty.
+**Applied Additive** is raising funds to build the platform that bridges design automation and 3D printing. Our first product vertical—**RapidTools**—targets manufacturing tooling and proves the core technology in the most demanding environment.
+
+Applied Additive plans a **capital-efficient fundraising path** aligned with key business milestones. Leveraging India's cost advantage, we require **60-70% less capital** than a comparable US-based startup to reach the same scale while maintaining adequate safety margins for market uncertainty.
 
 **Total Raise:** **$38M** across three rounds → Path to **$104M ARR** by Year 8
 
@@ -17,13 +31,13 @@ RapidTools plans a **capital-efficient fundraising path** aligned with key busin
 
 ### Capital Efficiency at a Glance
 
-| Metric                     | RapidTools | US Comparable | Source                 |
-| -------------------------- | ---------- | ------------- | ---------------------- |
-| Total capital to $100M ARR | $38M       | $80-120M      | Bessemer [[1]](#ref-1) |
-| Burn multiple (Y1-Y4)      | 0.8x       | 1.5-2.5x      | Bessemer [[1]](#ref-1) |
-| ARR per dollar raised      | $2.74      | $1.00-1.50    | Portfolio analysis     |
-| Time to profitability      | Year 4     | Year 8-10     | Bessemer [[1]](#ref-1) |
-| Founder ownership at exit  | ~48%       | ~15-25%       | Carta [[9]](#ref-9)    |
+| Metric                     | Applied Additive | US Comparable | Source                 |
+| -------------------------- | ---------------- | ------------- | ---------------------- |
+| Total capital to $100M ARR | $38M             | $80-120M      | Bessemer [[1]](#ref-1) |
+| Burn multiple (Y1-Y4)      | 0.8x             | 1.5-2.5x      | Bessemer [[1]](#ref-1) |
+| ARR per dollar raised      | $2.74            | $1.00-1.50    | Portfolio analysis     |
+| Time to profitability      | Year 4           | Year 8-10     | Bessemer [[1]](#ref-1) |
+| Founder ownership at exit  | ~48%             | ~15-25%       | Carta [[9]](#ref-9)    |
 
 **Growth Endurance:** ~70% YoY (aligned with Bessemer benchmarks for private cloud companies)
 
@@ -63,41 +77,44 @@ The $1.2M engineering budget delivers 10 production tools because we're not buil
 
 **What the $1.2M Funds (18 Months):**
 
-| Line Item | Monthly | 18-Month Total | Notes |
-|-----------|---------|----------------|-------|
-| **Core Team (6-8 engineers)** | $50K | $900K | India: $6-8K/engineer avg loaded cost |
-| **CTO Hire (M6+)** | $12K | $144K | 12 months at senior India rate |
-| **Cloud/Tools** | $5K | $90K | AWS, GitHub, Figma, AI APIs |
-| **Contractor Burst** | $3K | $54K | Specialist help (Gen AI, UX) |
-| **Buffer** | — | $12K | Unexpected costs |
-| **TOTAL** | | **$1.2M** | |
+| Line Item                     | Monthly | 18-Month Total | Notes                                 |
+| ----------------------------- | ------- | -------------- | ------------------------------------- |
+| **Core Team (6-8 engineers)** | $50K    | $900K          | India: $6-8K/engineer avg loaded cost |
+| **CTO Hire (M6+)**            | $12K    | $144K          | 12 months at senior India rate        |
+| **Cloud/Tools**               | $5K     | $90K           | AWS, GitHub, Figma, AI APIs           |
+| **Contractor Burst**          | $3K     | $54K           | Specialist help (Gen AI, UX)          |
+| **Buffer**                    | —       | $12K           | Unexpected costs                      |
+| **TOTAL**                     |         | **$1.2M**      |                                       |
 
 **Development Hours Available:**
+
 - 8 engineers × 1,700 productive hours/year × 1.5 years = **20,400 hours**
 - CTO (12 months) × 1,700 hours = **1,700 hours**
 - **Total: 22,100 engineering hours**
 
 **Development Hours Required (AI-Assisted):**
 
-| Component | Hours | Notes |
-|-----------|-------|-------|
-| **Platform Foundation** | 0 | Already built (working demos) |
-| **Tier 1: 5 Tools** | 375 hrs | 75 hrs/tool (85-95% reuse) |
-| **Tier 2: 3 Tools** | 300 hrs | 100 hrs/tool (70-75% reuse) |
-| **Tier 3: 2 Tools** | 300 hrs | 150 hrs/tool (55-60% reuse) |
-| **Platform Hardening** | 2,000 hrs | Security, scale, enterprise features |
-| **Customer Integration** | 1,500 hrs | Honda/TVS/Toyota customizations |
-| **QA & Testing** | 2,000 hrs | Automated + manual testing |
-| **DevOps & Infrastructure** | 1,000 hrs | CI/CD, monitoring, deployment |
-| **Documentation & Training** | 500 hrs | User guides, API docs |
-| **TOTAL REQUIRED** | **7,975 hrs** | |
+| Component                    | Hours         | Notes                                |
+| ---------------------------- | ------------- | ------------------------------------ |
+| **Platform Foundation**      | 0             | Already built (working demos)        |
+| **Tier 1: 6 Tools**          | 450 hrs       | 75 hrs/tool (70-95% reuse)           |
+| **Tier 2: 2 Tools**          | 200 hrs       | 100 hrs/tool (70-75% reuse)          |
+| **Tier 3: 2 Tools**          | 300 hrs       | 150 hrs/tool (55-60% reuse)          |
+| **Platform Hardening**       | 2,000 hrs     | Security, scale, enterprise features |
+| **Customer Integration**     | 1,500 hrs     | Honda/TVS/Toyota customizations      |
+| **QA & Testing**             | 2,000 hrs     | Automated + manual testing           |
+| **DevOps & Infrastructure**  | 1,000 hrs     | CI/CD, monitoring, deployment        |
+| **Documentation & Training** | 500 hrs       | User guides, API docs                |
+| **TOTAL REQUIRED**           | **7,975 hrs** |                                      |
 
 **Margin of Safety:**
+
 - Hours available: 22,100
 - Hours required: 7,975
 - **Buffer: 14,125 hours (64% margin)**
 
 This buffer absorbs:
+
 - Scope creep and iteration cycles
 - Customer-driven feature requests
 - Unexpected technical challenges
@@ -112,12 +129,12 @@ This buffer absorbs:
 
 ### Milestones to Series A
 
-| Milestone            | Target                                                                      | Timeline            |
-| -------------------- | --------------------------------------------------------------------------- | ------------------- |
-| **Tier 1 tools**     | 5 tools production-ready (Fixtures, Vacuum, Drilling, Soft Jaws, Alignment) | Q2 Y1 (M6)          |
-| Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota)                                   | Q2 Y1               |
-| Paying customers     | 8 paying pilots/customers                                                   | Q4 Y1               |
-| **Tier 2 tools**     | 8 tools production-ready (+Shadow Boxes, Assembly, Sand Casting)            | Q4 Y1 (M12)         |
+| Milestone            | Target                                                                                    | Timeline            |
+| -------------------- | ----------------------------------------------------------------------------------------- | ------------------- |
+| **Tier 1 tools**     | 6 tools production-ready (Fixtures, Vacuum, Drilling, Soft Jaws, Alignment, Shadow Boxes) | Q2 Y1 (M6)          |
+| Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota)                                                 | Q2 Y1               |
+| Paying customers     | 8 paying pilots/customers                                                                 | Q4 Y1               |
+| **Tier 2 tools**     | 8 tools production-ready (+Assembly, Sand Casting)                                        | Q4 Y1 (M12)         |
 | ARR achieved         | $500K                                                                       | Q4 Y1 (18-month Y1) |
 | Team built           | 16 FTEs (CTO to accelerate velocity)                                        | Q4 Y1               |
 | **Tier 3 tools**     | 10 tools production-ready (+Palletizing, EOAT)                              | Q2 Y2 (M18)         |
@@ -128,8 +145,8 @@ This buffer absorbs:
 
 **Note on Product Roadmap:** The 10 tools are prioritized into 3 tiers based on foundation reuse and customer demand:
 
-- **Tier 1 (M1-M6):** 5 tools with 85-95% foundation reuse from existing demos — lowest risk
-- **Tier 2 (M7-M12):** 3 tools requiring Gen AI work — parallel development with Tier 1 hardening
+- **Tier 1 (M1-M6):** 6 tools with 70-95% foundation reuse from existing demos — lowest risk (includes Shadow Boxes)
+- **Tier 2 (M7-M12):** 2 tools requiring more Gen AI work — parallel development with Tier 1 hardening
 - **Tier 3 (M13-M18):** 2 complex tools — lower immediate demand, can slip without affecting Y1 revenue
 
 AI-native development (Claude Opus 4.5 + coding agents) reduces per-tool development time by 50-65%, making this timeline achievable.
@@ -448,6 +465,15 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 | **Strategic Acquisition** | Y6-Y8  | $400-600M  | 4-6x ARR  | **60%**     |
 | **Private Equity Buyout** | Y7-Y8  | $500-800M  | 5-8x ARR  | **24%**     |
 | **IPO (India/US)**        | Y8-Y10 | $800M-1.2B | 8-12x ARR | **15%**     |
+
+> **Platform Expansion Upside (Not in Base Case):** These exit valuations are based on RapidTools (manufacturing tooling) alone. Applied Additive's platform architecture enables expansion into adjacent markets—Medical ($15B), Consumer Products ($6B), Architecture ($2.5B)—representing **$140B+ combined TAM by 2030**. If Phase 2 expansion succeeds (Dental + Jewelry by Y6), exit multiples could command a **platform premium** of 1.5-2×:
+>
+> | Scenario                      | Base Case (Tooling Only) | Platform Premium (Adjacent Markets) |
+> | ----------------------------- | ------------------------ | ----------------------------------- |
+> | Strategic Acquisition         | $400-600M                | **$600M-1B**                        |
+> | IPO                           | $800M-1.2B               | **$1.5-3B**                         |
+>
+> This optionality is **free to Seed investors**—we're not raising capital for adjacent markets, but the platform architecture enables them. See [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md) for detailed expansion roadmap.
 
 ### Strategic Acquisition (Most Likely)
 
