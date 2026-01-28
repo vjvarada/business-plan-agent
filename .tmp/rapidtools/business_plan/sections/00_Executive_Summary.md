@@ -292,22 +292,26 @@ In early 2024, we attempted to partner with Trinckle to bring FixtureMate to Ind
 
 ## Customer Validation & Traction
 
-### Honda Manufacturing (Kolar, India) — First Enterprise Validation
+### Honda Manufacturing (Kolar, India) — Design Partnership
 
 | Component               | Details                                                |
 | ----------------------- | ------------------------------------------------------ |
 | **Hardware Investment** | ₹10 lakh (~$12K) Fracktal 3D printer **PAID** by Honda |
-| **Software Beta**       | RapidTools Fixtures deployed—free evaluation           |
-| **Status**              | Active usage; paid conversion expected **Q2 2026**     |
-| **Scope**               | Fixture design for motorcycle assembly operations      |
+| **Partnership Type**    | Co-development partnership (not just beta testing)     |
+| **Status**              | Active collaboration on certification requirements     |
+| **Scope**               | Fixture design + IATF 16949 compliance integration     |
 
-**Why This Matters:** Honda invested ₹10L in hardware BEFORE software is proven—demonstrates genuine pain point and budget authority.
+**Why This Is More Than a Beta:**
+- Honda isn't just testing our software—they're **co-developing requirements** for automotive-grade fixtures
+- We're integrating Honda's certification standards (IATF 16949, ASME Y14.5) directly into the validation engine
+- Their tooling requirements become our product specification—built once, applicable to all automotive OEMs
+- Hardware commitment (₹10L) + requirements collaboration = **design partner, not trial customer**
 
 ### Pipeline
 
 | Customer                    | Status                     | Deal Size                | Timeline   |
 | --------------------------- | -------------------------- | ------------------------ | ---------- |
-| **Honda**                   | Beta active, hardware PAID | $24K+/year               | Q2 2026    |
+| **Honda**                   | Design partner, hardware PAID | $24K+/year            | Q2 2026    |
 | **TVS Motors**              | Discovery conversations    | $15-30K/year             | Q3 2026    |
 | **Toyota Supplier Network** | POC discussions            | $20K pilot → $100K+/year | Q3-Q4 2026 |
 

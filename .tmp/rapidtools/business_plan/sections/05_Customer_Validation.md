@@ -62,7 +62,7 @@ The automated 3D printed tooling market has already been validated in Europe and
 
 ---
 
-## Honda Manufacturing - Beta Deployment (Active)
+## Honda Manufacturing — Design Partnership (Active)
 
 ### Company Profile
 
@@ -73,42 +73,79 @@ The automated 3D printed tooling market has already been validated in Europe and
 - **Size**: 2.4M+ units/year production capacity
 - **Tooling context**: Estimated 2,000-4,000 fixtures across 10-15 assembly lines
 
-### Beta Deployment Details
+### Partnership Details (Not Just a Beta)
 
 **What's Installed (January 2026):**
 
 | Component    | Details                                                                 |
 | ------------ | ----------------------------------------------------------------------- |
 | **Hardware** | Fracktal Works 3D printer — **₹10 lakh (~$12K) PAID by Honda**          |
-| **Software** | RapidTools Fixtures (beta version) — **Free evaluation, conversion Q2** |
+| **Software** | RapidTools Fixtures — deployed for co-development                      |
 | **Location** | Honda HMSI plant, Kolar, Karnataka                                      |
 | **Users**    | Manufacturing operations team                                           |
-| **Status**   | Live — actively using software; paid conversion expected Q2 2026        |
+| **Status**   | Active design partnership; paid license expected Q2 2026                |
 
-**Why This Matters:**
+**Why This Is a Design Partnership, Not a Trial:**
 
-Honda's willingness to invest ₹10 lakh in a 3D printer specifically for manufacturing tooling — before the software is even proven — demonstrates:
+Honda isn't just evaluating our software—they're actively shaping it:
 
-1. **Genuine pain point**: They're not experimenting; they need a solution for fixture design bottlenecks
-2. **Budget authority**: Operations team has discretionary budget for tooling innovation
-3. **Fracktal relationship**: The printer purchase came through Vijay Varada's existing Fracktal Works relationship, validating the distribution channel
-4. **Low conversion risk**: Hardware investment creates natural momentum toward software subscription
+1. **Co-developing certification requirements**: Honda's IATF 16949 quality standards and fixture certification requirements are being integrated directly into RapidTools' validation engine
+2. **Requirements collaboration**: Their tooling specifications become our product requirements—built once for Honda, applicable to all automotive OEMs
+3. **Hardware commitment first**: ₹10 lakh investment in 3D printing hardware demonstrates this isn't a "see if it works" trial—they need to solve the tooling bottleneck
+4. **Joint problem-solving**: Weekly collaboration sessions to ensure fixtures meet production line requirements
 
-**Deployment Timeline:**
+**What Honda Brings to the Partnership:**
+
+| Honda Contribution | Value to RapidTools |
+|-------------------|--------------------|
+| IATF 16949 certification requirements | Automotive-grade validation rules (reusable for TVS, Toyota, etc.) |
+| ASME Y14.5 GD&T specifications | Tolerance validation standards |
+| Production line fixture requirements | Real-world design constraints |
+| Operator feedback | UX improvements from non-CAD users |
+| Expansion pathway | 4 India plants, 12 global facilities |
+
+**What RapidTools Delivers:**
+
+| RapidTools Deliverable | Status |
+|-----------------------|--------|
+| Fixture design automation | ✅ Deployed |
+| GD&T validation (ASME Y14.5) | 🔄 In development with Honda input |
+| IATF 16949 documentation export | 🔄 In development with Honda input |
+| DfAM rules for Fracktal printers | ✅ Complete |
+| Operator-friendly UX | 🔄 Iterating based on feedback |
+
+**The Partnership Value Exchange:**
+
+This isn't a free trial—it's a **value-for-value exchange**:
+
+| What Honda Gets | What RapidTools Gets |
+|----------------|---------------------|
+| Faster fixture development | Automotive certification requirements |
+| Lower tooling costs | IATF 16949 validation logic |
+| Operator-friendly design tool | Real production line validation |
+| On-site 3D printing capability | Reference customer for automotive vertical |
+
+**Why This De-Risks the Business:**
+
+1. **Requirements are automotive-grade**: If it works for Honda, it works for any manufacturer
+2. **Certification is built-in**: IATF 16949 compliance from Day 1—not bolted on later
+3. **Expansion pathway clear**: Honda has 4 India plants, 12 global—success here opens doors
+4. **Reference customer locked**: Honda logo + case study is worth more than early license revenue
+
+**Partnership Timeline:**
 
 | Phase                              | Date            | Status      | Notes                                 |
 | ---------------------------------- | --------------- | ----------- | ------------------------------------- |
 | Initial discussions                | Q2 2025         | ✅ Complete | Via existing Fracktal relationship    |
 | Technical evaluation               | Q3 2025         | ✅ Complete | Pain point validated, solution fit    |
-| **3D printer purchase (₹10L)**     | Q4 2025         | ✅ Complete | **PAID** — Fracktal Works unit        |
-| Beta software installation         | Q4 2025         | ✅ Complete | Free evaluation period                |
+| **3D printer purchase (₹10L)**     | Q4 2025         | ✅ Complete | **PAID** — Hardware commitment         |
+| Software deployment                | Q4 2025         | ✅ Complete | Design partnership begins             |
 | User training                      | Q4 2025-Q1 2026 | ✅ Complete | Operations team trained               |
-| Active usage period                | Q1 2026         | 🔄 Active   | Collecting usage data                 |
-| Feedback collection                | Q1-Q2 2026      | 🔄 Active   | ROI metrics being measured            |
-| **Software license conversion**    | Q2 2026         | ⏳ Pending  | Target: $24K+/year (5-10 seats)       |
-| Production validation              | Q2-Q3 2026      | ⏳ Pending  | First production fixtures on the line |
+| **Certification requirements**     | Q1 2026         | 🔄 Active   | IATF 16949 integration in progress    |
+| **Joint fixture development**      | Q1-Q2 2026      | 🔄 Active   | Building to Honda's specifications    |
+| **Paid license conversion**        | Q2 2026         | ⏳ Pending  | Target: $24K+/year (5-10 seats)       |
+| Production line deployment         | Q2-Q3 2026      | ⏳ Pending  | First certified fixtures on the line  |
 | Expansion to additional facilities | Q4 2026+        | 📋 Planned  | Honda has 4 India plants, 12 global   |
-| Production validation              | Q2 2026         | Pending     |
 
 ### What We're Measuring
 
