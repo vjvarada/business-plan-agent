@@ -14,6 +14,8 @@ pandas
 openpyxl  # Excel file parsing and creation
 xlsxwriter  # Advanced Excel formatting
 python-docx  # Word document creation
+formulas  # Excel formula computation for validation
+numpy  # Numeric operations, NaN/Inf detection
 
 # Formatting utilities
 gspread-formatting  # Google Sheets formatting

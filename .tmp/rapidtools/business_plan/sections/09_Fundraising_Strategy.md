@@ -59,19 +59,29 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 
 ### Milestones to Series A
 
-| Milestone            | Target                                    | Timeline            |
-| -------------------- | ----------------------------------------- | ------------------- |
-| MVP launched         | All 10 design automation tools            | Q4 Y1               |
-| Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota) | Q2 Y1               |
-| Paying customers     | 8 paying pilots/customers                 | Q4 Y1               |
-| ARR achieved         | $500K                                     | Q4 Y1 (18-month Y1) |
-| Team built           | 16 FTEs (CTO to accelerate velocity)      | Q4 Y1               |
-| Product-market fit   | NPS >40, <15% logo churn                  | Q4 Y2               |
-| Y2 revenue target    | $2.5M                                     | Q4 Y2               |
-| ARR run rate         | $5M+                                      | Q2 Y3               |
-| VAR channel launched | 5-8 active VARs                           | Q1 Y3               |
+| Milestone            | Target                                                                      | Timeline            |
+| -------------------- | --------------------------------------------------------------------------- | ------------------- |
+| **Tier 1 tools**     | 5 tools production-ready (Fixtures, Vacuum, Drilling, Soft Jaws, Alignment) | Q2 Y1 (M6)          |
+| Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota)                                   | Q2 Y1               |
+| Paying customers     | 8 paying pilots/customers                                                   | Q4 Y1               |
+| **Tier 2 tools**     | 8 tools production-ready (+Shadow Boxes, Assembly, Sand Casting)            | Q4 Y1 (M12)         |
+| ARR achieved         | $500K                                                                       | Q4 Y1 (18-month Y1) |
+| Team built           | 16 FTEs (CTO to accelerate velocity)                                        | Q4 Y1               |
+| **Tier 3 tools**     | 10 tools production-ready (+Palletizing, EOAT)                              | Q2 Y2 (M18)         |
+| Product-market fit   | NPS >40, <15% logo churn                                                    | Q4 Y2               |
+| Y2 revenue target    | $2.5M                                                                       | Q4 Y2               |
+| ARR run rate         | $5M+                                                                        | Q2 Y3               |
+| VAR channel launched | 5-8 active VARs                                                             | Q1 Y3               |
 
-**Note:** Year 1 is an 18-month PMF validation period. All 10 design automation tools will be production-ready by end of Y1. $500K from 8 customers = $62.5K average deal size. Series A raised at $5M ARR run rate in Y3 Q2 (achievable: Y3 annual revenue target is $7M, implying $5M+ ARR by mid-year).
+**Note on Product Roadmap:** The 10 tools are prioritized into 3 tiers based on foundation reuse and customer demand:
+
+- **Tier 1 (M1-M6):** 5 tools with 85-95% foundation reuse from existing demos — lowest risk
+- **Tier 2 (M7-M12):** 3 tools requiring Gen AI work — parallel development with Tier 1 hardening
+- **Tier 3 (M13-M18):** 2 complex tools — lower immediate demand, can slip without affecting Y1 revenue
+
+AI-native development (Claude Opus 4.5 + coding agents) reduces per-tool development time by 50-65%, making this timeline achievable.
+
+**Year 1 Definition:** Year 1 is an 18-month PMF validation period. Conservative commitment: 8 tools by M12. Aggressive target: 10 tools by M12 with CTO hire.
 
 ### Runway Analysis
 
@@ -165,14 +175,14 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 
 ### Milestones to Exit
 
-| Milestone     | Target                                            | Timeline |
-| ------------- | ------------------------------------------------- | -------- |
-| ARR achieved  | $104M                                             | Y8       |
-| Team scale    | 380 FTEs globally                                 | Y8       |
+| Milestone     | Target                                                                          | Timeline |
+| ------------- | ------------------------------------------------------------------------------- | -------- |
+| ARR achieved  | $104M                                                                           | Y8       |
+| Team scale    | 380 FTEs globally                                                               | Y8       |
 | VAR network   | 85 VARs × 55 customers avg = 4,675 VAR customers (85% of count, 65% of revenue) | Y8       |
-| EBITDA margin | 24%                                               | Y5+      |
-| Customer base | 5,500 customers, <15% blended logo churn (~12% revenue-weighted) | Y8       |
-| Exit-ready    | Strategic acquisition or IPO path                 | Y6-Y8    |
+| EBITDA margin | 24%                                                                             | Y5+      |
+| Customer base | 5,500 customers, <15% blended logo churn (~12% revenue-weighted)                | Y8       |
+| Exit-ready    | Strategic acquisition or IPO path                                               | Y6-Y8    |
 
 ---
 
@@ -200,6 +210,7 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 - $82M cash by Y8 enables M&A or special dividends
 
 **Note on Operating CF:** Reflects comprehensive cost investments:
+
 - R&D infrastructure (CAD licenses, ML compute, data platform) → $650K/year by Y8
 - R&D partnerships & IP (university research, patents, prototypes) → $400K/year by Y8
 - Marketing programs (4.8% of revenue) + Trade shows ($800K/year)
@@ -293,19 +304,20 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 
 ### Rule of 40 Performance
 
-| Year | Growth Rate | EBITDA Margin | Rule of 40 | Assessment  |
-| ---- | ----------- | ------------- | ---------- | ----------- |
-| Y2   | 400%        | -27%          | **373%**   | Exceptional (growth-mode) |
+| Year | Growth Rate | EBITDA Margin | Rule of 40 | Assessment                   |
+| ---- | ----------- | ------------- | ---------- | ---------------------------- |
+| Y2   | 400%        | -27%          | **373%**   | Exceptional (growth-mode)    |
 | Y3   | 180%        | -3%           | **177%**   | Exceptional (near breakeven) |
-| Y4   | 114%        | 4%            | **118%**   | Exceptional |
-| Y5   | 100%        | 14%           | **114%**   | Exceptional |
-| Y6   | 67%         | 18%           | **85%**    | Excellent   |
-| Y7   | 54%         | 22%           | **76%**    | Strong      |
-| Y8   | 35%         | 24%           | **59%**    | Strong      |
+| Y4   | 114%        | 4%            | **118%**   | Exceptional                  |
+| Y5   | 100%        | 14%           | **114%**   | Exceptional                  |
+| Y6   | 67%         | 18%           | **85%**    | Excellent                    |
+| Y7   | 54%         | 22%           | **76%**    | Strong                       |
+| Y8   | 35%         | 24%           | **59%**    | Strong                       |
 
 **Note on EBITDA Margins:** These margins reflect comprehensive, industry-standard cost investments:
 
 **R&D Infrastructure & IP (1.0% of Y8 revenue):**
+
 - CAD/CAM software licenses ($150K) — Autodesk, SolidWorks, Siemens NX for development
 - ML/AI compute ($100K) — GPU clusters for generative design model training
 - University research partnerships ($75K) — IISc, IIT Madras collaborations
@@ -313,12 +325,14 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 - Prototypes & testing ($40K) — Physical validation of generated designs
 
 **S&M Variable Costs (14% of Y8 revenue):**
+
 - Marketing Programs at 4.8% of revenue — Meets manufacturing software benchmark of 5-7%
 - Trade Shows & Events at 0.8% ($800K/year) — IMTS, Fabtech, Formnext, ACMA, TCT + regionals
 - VAR Incentives at 4.8% — SPIFs, MDF, volume bonuses
 - Sales Commissions at 3.5% — 15-20% of direct sales
 
 **Fixed Costs/G&A (6.8% of Y8 revenue):**
+
 - SOC2/ISO Compliance at $100K/year — Required for enterprise sales
 - Analyst Relations at $150K/year — Gartner/Forrester coverage for credibility
 - Product Localization at $150K/year — Multi-language support for EU/Americas
@@ -328,6 +342,7 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 - Bad Debt Reserve at 1.5% of AR — Industry standard for B2B SaaS
 
 **Stock-Based Compensation ($2.08M Y8, 2% of revenue):**
+
 - Non-cash expense excluded from EBITDA (industry standard)
 - GAAP Operating Income = EBITDA - SBC = 22% margin
 - Conservative vs. 5-15% industry norm for VC-backed startups
@@ -474,12 +489,12 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 
 ### Execution Risks Affecting Fundraising
 
-| Risk                      | Mitigation                                                |
-| ------------------------- | --------------------------------------------------------- |
-| Miss ARR targets          | Conservative projections; services revenue provides floor |
+| Risk                      | Mitigation                                                                                         |
+| ------------------------- | -------------------------------------------------------------------------------------------------- |
+| Miss ARR targets          | Conservative projections; services revenue provides floor                                          |
 | Key person risk           | CEO has dual technical + domain expertise (built slicer, demos); CTO accelerates but doesn't block |
-| Customer concentration    | Structured diversification plan (see below)               |
-| Competition from Autodesk | Focus on vertical (tooling) vs. horizontal; services moat |
+| Customer concentration    | Structured diversification plan (see below)                                                        |
+| Competition from Autodesk | Focus on vertical (tooling) vs. horizontal; services moat                                          |
 
 ### Customer Concentration Risk Analysis
 
@@ -504,12 +519,12 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 
 **Structural Mitigations:**
 
-| Mitigation                       | Mechanism                                          | Impact                                |
-| -------------------------------- | -------------------------------------------------- | ------------------------------------- |
+| Mitigation                       | Mechanism                                                            | Impact                                |
+| -------------------------------- | -------------------------------------------------------------------- | ------------------------------------- |
 | **VAR Channel (65% of revenue)** | 85 VARs × 55 customers avg = 4,675 (85% of count); no single VAR >3% | Eliminates single-customer dependency |
-| **Geographic Diversification**   | India (40%) → SE Asia (25%) → EU/Americas (35%)   | No single-market dependency           |
-| **Multi-Product**                | Software, services, hardware, consumables         | No single-product dependency          |
-| **Segment Mix**                  | SMB 70%, Mid 25%, Enterprise 5% (by count)        | Broad base vs. whale hunting          |
+| **Geographic Diversification**   | India (40%) → SE Asia (25%) → EU/Americas (35%)                      | No single-market dependency           |
+| **Multi-Product**                | Software, services, hardware, consumables                            | No single-product dependency          |
+| **Segment Mix**                  | SMB 70%, Mid 25%, Enterprise 5% (by count)                           | Broad base vs. whale hunting          |
 
 **Milestone Triggers for Investor Comfort:**
 

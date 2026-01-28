@@ -384,20 +384,139 @@ The Market Drivers document (`01_Market_Drivers.md`) serves as the reference sta
 - Financial Assumptions sections
 - Geographic Expansion sections
 
-## Financial Model Editing Strategy (CRITICAL)
+## Financial Model Strategy (CRITICAL)
 
-**⚠️ BEFORE ANY EDIT: Consult `directives/DECISION_TREE.md` to choose the right approach**
+**⚠️ BEFORE ANY WORK: Determine if you're CREATING or EDITING**
 
-### Two Complementary Approaches:
+### Three Workflows:
 
-1. **Local-First Workflow** - For value updates, formula fixes (NO structure changes)
-2. **Config-Based Rebuild** - For adding/removing revenue streams, restructuring (WITH structure changes)
+| Workflow | When to Use | Tools |
+|----------|-------------|-------|
+| **1. Local-First Creation** | Building a NEW financial model from scratch | `openpyxl` + `formulas` + `sync_to_cloud.py` |
+| **2. Local-First Editing** | Value updates, formula fixes (NO structure changes) | `download_model_snapshot.py` + CSV edits + `sync_snapshot_to_sheets.py` |
+| **3. Config-Based Rebuild** | Adding/removing revenue streams, restructuring | `create_financial_model.py` with updated config |
 
-**Quick Rule:** If it adds/removes rows or changes business model → Config Rebuild. Otherwise → Local-First.
+**Quick Rules:**
+- **Creating from scratch?** → Local-First Creation (openpyxl)
+- **Updating values?** → Local-First Editing (CSV snapshots)
+- **Changing structure?** → Config-Based Rebuild
+
+---
+
+## Local-First Creation Workflow (NEW MODELS)
+
+**Use this for:** Creating new financial models from scratch
+
+**Why Local-First Creation?**
+
+| Google Sheets API (Old Way) | Local-First (New Way) |
+| --------------------------- | --------------------- |
+| 100+ API calls, rate limits | Single file write |
+| Hard to debug (need API to inspect) | Open in Excel to verify |
+| Can't see computed values | `formulas` library computes all formulas |
+| Slow (429 errors) | Fast (no network) |
+| Formula errors discovered late | Errors caught before upload |
+
+### The 3-Step Creation Workflow
+
+**Reference:** `execution/create_financial_model_local.py`, `execution/validate_excel_model.py`
+
+#### 1. Create Excel File (openpyxl)
+
+```bash
+python execution/create_financial_model_local.py \
+  --company "RapidTools" \
+  --rapidtools
+```
+
+**What it does:**
+- Creates `.xlsx` file with all formulas, formatting, cross-sheet references
+- Uses `openpyxl` library (no Excel or Google Sheets needed)
+- Applies standard color palette and number formats
+- Saves to `.tmp/<company>_financial_model.xlsx`
+
+#### 2. Validate Formulas (formulas library)
+
+```bash
+python execution/validate_excel_model.py \
+  --file .tmp/RapidTools_financial_model.xlsx \
+  --verbose
+```
+
+**What it does:**
+- Computes ALL formulas without opening Excel
+- Detects errors: `#REF!`, `#VALUE!`, `#DIV/0!`, `#NAME?`, `#N/A`
+- Detects numeric errors: `NaN`, `Infinity`
+- Reports computed values for verification
+
+**Example output:**
+```
+======================================================================
+EXCEL MODEL VALIDATION: RapidTools_financial_model.xlsx
+======================================================================
+
+✓ Loaded successfully
+  Total computed cells: 245
+
+Sheets found:
+  • ASSUMPTIONS: 89 cells
+  • REVENUE: 56 cells
+  • P&L: 78 cells
+  • SOURCES & REFERENCES: 22 cells
+
+Checking formulas...
+✓ No formula errors detected
+
+======================================================================
+✅ VALIDATION PASSED
+   Model is ready for upload to Google Sheets
+======================================================================
+```
+
+#### 3. Upload to Google Sheets
+
+```bash
+python execution/sync_to_cloud.py \
+  --file .tmp/RapidTools_financial_model.xlsx
+```
+
+**What it does:**
+- Uploads `.xlsx` to Google Drive
+- Converts to Google Sheets format automatically
+- Returns the Google Sheets URL
+
+### Key Libraries
+
+| Library | Purpose | Install |
+|---------|---------|---------|
+| `openpyxl` | Create/read Excel files (.xlsx) | `pip install openpyxl` |
+| `formulas` | Compute Excel formulas in Python | `pip install formulas` |
+| `numpy` | Detect NaN/Infinity errors | `pip install numpy` |
+
+### Validation Capabilities
+
+The `formulas` library can detect:
+
+| Error | Meaning | Example |
+|-------|---------|---------|
+| `#REF!` | Broken cell reference | `=Sheet1!A999` (row doesn't exist) |
+| `#VALUE!` | Wrong value type | `="text"+5` |
+| `#DIV/0!` | Division by zero | `=A1/0` |
+| `#NAME?` | Unknown function/name | `=UNKNOWNFUNC()` |
+| `#N/A` | Value not available | `=VLOOKUP(999,A:B,2,FALSE)` |
+| `NaN` | Not a number | Result of invalid math |
+| `Infinity` | Division by zero (numeric) | Large number / 0 |
+
+### When NOT to Use Local-First Creation
+
+- **Updating existing Google Sheet** → Use Local-First Editing (CSV snapshots)
+- **Making structural changes to existing model** → Use Config-Based Rebuild
+- **Quick single-cell fix** → Direct API (exception only)
 
 ---
 
 ## Local-First Editing Workflow
+
 
 **Use this for:** Value updates, formula fixes, bulk edits (when structure stays the same)
 
@@ -648,19 +767,31 @@ You specialize in comprehensive business planning with full financial modeling. 
 
 **Tools:**
 
-- `serp_market_research.py` - Market intelligence (modes: search, competitors, trends, news, sources)
-- `generate_business_plan.py` - Business analysis (modes: swot, financials, canvas, compile) - use --copilot flag
+**Local-First Creation (NEW - Recommended for new models):**
+- `create_financial_model_local.py` - **Creates Excel file locally** using openpyxl (no API calls, full formula visibility)
+- `validate_excel_model.py` - **Validates all formulas** using `formulas` library (detects #REF!, #DIV/0!, etc. without opening Excel)
+- `sync_to_cloud.py` - **Uploads Excel to Google Sheets** (converts .xlsx → Google Sheets)
+
+**Google Sheets API (Legacy - for editing existing sheets):**
 - `create_financial_model.py` - Creates 14-sheet Google Sheets financial model with full investor analytics
 - `update_financial_model.py` - Updates existing models (add sheets, fix formatting, update growth rates)
+- `download_model_snapshot.py` - Downloads sheet to CSV for local editing
+- `sync_snapshot_to_sheets.py` - Syncs CSV edits back to Google Sheets
+
+**Analysis & Validation:**
 - `format_sheets.py` - **Reusable formatting utility** with standardized colors, fonts, and layouts for all sheets
 - `audit_financial_model.py` - **Comprehensive model validation** (modes: balance, runway, valuation, metrics, comprehensive)
 - `analyze_benchmarks.py` - **Industry benchmark research** (modes: sm, cac, valuation, margins, comprehensive)
 - `repair_financial_model.py` - **Fix common model issues** (modes: fix-formulas, fix-formatting, fix-balance-sheet, fix-cash-flow, fix-funding, trim-years, rebalance-sm, verify-links, all)
 - `export_model_summary.py` - **Quick model overview** (formats: text, json, markdown) - key metrics, funding, balance check
+- `validate_financial_model.py` - Validate financial model integrity
+
+**Business Planning:**
+- `serp_market_research.py` - Market intelligence (modes: search, competitors, trends, news, sources)
+- `generate_business_plan.py` - Business analysis (modes: swot, financials, canvas, compile) - use --copilot flag
 - `create_pitch_deck.py` - Creates professional pitch decks with References slide
 - `create_google_doc.py` / `update_google_doc.py` - Document management
 - `sheets_utils.py` - Read, write, append to Google Sheets
-- `validate_financial_model.py` - Validate financial model integrity
 
 **Output:** Google Docs business plan + Google Sheets 10-year financial model with 14 interconnected sheets:
 

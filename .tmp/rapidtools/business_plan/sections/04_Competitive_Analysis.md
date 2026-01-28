@@ -8,15 +8,15 @@
 
 **Competitive Landscape (7 Categories):**
 
-| **Category**                         | **Competitors**                              | **Threat Level** | **RapidTools Advantage**                          |
-| ------------------------------------ | -------------------------------------------- | ---------------- | ------------------------------------------------- |
-| **1. AI 3D Generation**              | TRELLIS, Meta SAM3D Gen, Tripo3D, Meshy, Zoo | LOW              | Manufacturing validation vs visual fidelity       |
-| **2. Traditional CAD/CAM**           | Autodesk, Dassault, Siemens                  | MEDIUM           | 100× faster, no CAD expertise required            |
-| **3. Generative Design AI**          | nTop, Autodesk GD, Ansys, PTC                | LOW              | Intent-capture vs optimization; operations buyer  |
-| **4. 3D Printing Services**          | Xometry, Protolabs, Shapeways                | PARTNER          | Software platform vs services; complementary      |
-| **5. Fixture-Specific Software**     | **Trinckle**, Renishaw, CATIA Fixture Expert | **MEDIUM**       | Platform moat, casting tools, LLM input, India/SEA|
-| **6. Low-Code CAD**                  | Onshape, Tinkercad, Shapr3D                  | LOW              | Intent-to-design vs simplified parametric         |
-| **7. AM Build Preparation Software** | Materialise, Autodesk Netfabb, 3D Systems    | LOW (PARTNER)    | Pre-design vs post-design; complementary workflow |
+| **Category**                         | **Competitors**                              | **Threat Level** | **RapidTools Advantage**                           |
+| ------------------------------------ | -------------------------------------------- | ---------------- | -------------------------------------------------- |
+| **1. AI 3D Generation**              | TRELLIS, Meta SAM3D Gen, Tripo3D, Meshy, Zoo | LOW              | Manufacturing validation vs visual fidelity        |
+| **2. Traditional CAD/CAM**           | Autodesk, Dassault, Siemens                  | MEDIUM           | 100× faster, no CAD expertise required             |
+| **3. Generative Design AI**          | nTop, Autodesk GD, Ansys, PTC                | LOW              | Intent-capture vs optimization; operations buyer   |
+| **4. 3D Printing Services**          | Xometry, Protolabs, Shapeways                | PARTNER          | Software platform vs services; complementary       |
+| **5. Fixture-Specific Software**     | **Trinckle**, Renishaw, CATIA Fixture Expert | **MEDIUM**       | Platform moat, casting tools, LLM input, India/SEA |
+| **6. Low-Code CAD**                  | Onshape, Tinkercad, Shapr3D                  | LOW              | Intent-to-design vs simplified parametric          |
+| **7. AM Build Preparation Software** | Materialise, Autodesk Netfabb, 3D Systems    | LOW (PARTNER)    | Pre-design vs post-design; complementary workflow  |
 
 **⚠️ Key Competitive Risk: Trinckle FixtureMate**
 
@@ -895,7 +895,7 @@
 | ------------------------- | ----------------------------------------- | ----------------------------------------- |
 | **Founded**               | 2024 (spin-out from Fracktal Works)       | 2013 (12+ years in market)                |
 | **Funding**               | Raising Seed ($3M target)                 | €3M Series A (2022)                       |
-| **Tool Types**            | 10 tools (all production by end of Y1)   | **10+ production**                        |
+| **Tool Types**            | 10 tools (all production by end of Y1)    | **10+ production**                        |
 | **OEM Customers**         | Honda (pilot)                             | **Audi, Ford, VW, Airbus** (production)   |
 | **Technology**            | Hybrid (UX + LLM + Gen AI + CAD Kernels)  | paramate + trCAD (own kernel)             |
 | **Input Modality**        | Multi-modal (UX, LLM, CAD import, sketch) | CAD file upload + parameter configuration |
@@ -927,25 +927,25 @@
 
 In early 2024, Fracktal Works attempted to partner with Trinckle to bring FixtureMate to India, bundling their software with Fracktal 3D printers. **The partnership failed, revealing critical weaknesses:**
 
-| Issue | What Happened | RapidTools Advantage |
-|-------|---------------|---------------------|
+| Issue                     | What Happened                                                                                       | RapidTools Advantage                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | **Feature Inflexibility** | Honda requested specific fixture features during a demo; Trinckle's team could not accommodate them | RapidTools' founder-led development enables rapid feature iteration |
-| **Prohibitive Pricing** | $6,000/year per-seat license was too expensive for Honda's planned multi-seat deployment | RapidTools at $2,400/year is 60% cheaper |
-| **Stratasys Lock-In** | Trinckle now bundles exclusively with Stratasys printers ($50K-$200K+) | Fracktal Works printers ($5K-$50K) serve India price points |
-| **No Casting Tools** | Honda also needed vacuum casting mold automation—Trinckle has no offering | RapidTools has working Vacuum Casting demo; Sand Casting by Y1 |
+| **Prohibitive Pricing**   | $6,000/year per-seat license was too expensive for Honda's planned multi-seat deployment            | RapidTools at $2,400/year is 60% cheaper                            |
+| **Stratasys Lock-In**     | Trinckle now bundles exclusively with Stratasys printers ($50K-$200K+)                              | Fracktal Works printers ($5K-$50K) serve India price points         |
+| **No Casting Tools**      | Honda also needed vacuum casting mold automation—Trinckle has no offering                           | RapidTools has working Vacuum Casting demo; Sand Casting by Y1      |
 
 **Strategic Implication:** This failed partnership validates both (a) the market demand in India, and (b) the gap that RapidTools is designed to fill.
 
 **End-to-End Platform Advantage (vs. Trinckle's Software-Only Model):**
 
-| **Capability** | **RapidTools** | **Trinckle FixtureMate** | **Strategic Impact** |
-| -------------- | -------------- | ------------------------ | -------------------- |
-| **Design Software** | ✅ AI-powered design automation | ✅ paramate + trCAD | Parity (RapidTools has LLM advantage) |
-| **3D Printers** | ✅ Fracktal Works hardware (FDM, SLA) | ❌ No hardware offering | Customer buys printer from RapidTools, not third party |
-| **Consumables** | ✅ Materials, filaments, resins | ❌ Not offered | Recurring revenue stream Trinckle lacks |
-| **Print Services** | ✅ Job work for non-hardware customers | ❌ Not offered | Captures customers not ready to buy printers |
-| **Managed Services** | ✅ Enterprise "tooling-as-a-service" | ❌ Not offered | High-margin enterprise contracts |
-| **Support & Training** | ✅ End-to-end implementation | ⚠️ Limited (software only) | Full accountability for outcomes |
+| **Capability**         | **RapidTools**                         | **Trinckle FixtureMate**   | **Strategic Impact**                                   |
+| ---------------------- | -------------------------------------- | -------------------------- | ------------------------------------------------------ |
+| **Design Software**    | ✅ AI-powered design automation        | ✅ paramate + trCAD        | Parity (RapidTools has LLM advantage)                  |
+| **3D Printers**        | ✅ Fracktal Works hardware (FDM, SLA)  | ❌ No hardware offering    | Customer buys printer from RapidTools, not third party |
+| **Consumables**        | ✅ Materials, filaments, resins        | ❌ Not offered             | Recurring revenue stream Trinckle lacks                |
+| **Print Services**     | ✅ Job work for non-hardware customers | ❌ Not offered             | Captures customers not ready to buy printers           |
+| **Managed Services**   | ✅ Enterprise "tooling-as-a-service"   | ❌ Not offered             | High-margin enterprise contracts                       |
+| **Support & Training** | ✅ End-to-end implementation           | ⚠️ Limited (software only) | Full accountability for outcomes                       |
 
 **Why Multi-Prong Revenue Overcomes Trinckle Threat:**
 
@@ -1611,18 +1611,18 @@ These are **complementary stages**, not competing products.
 
 **Tool Roadmap — All Production by End of Year 1:**
 
-| Tool Type                | Status            | Tech Mix                                    | Timeline   |
-| ------------------------ | ----------------- | ------------------------------------------- | ---------- |
-| **Jigs & Fixtures**      | ✅ **Production** | UX (40%) + CAD Kernels (40%) + LLM (20%)    | Now        |
-| **Vacuum Casting Molds** | ✅ **Production** | CAD Kernels (50%) + Gen AI (30%) + UX (20%) | Now        |
-| Assembly Guides          | 🔄 In Development | UX (50%) + Gen AI (30%) + CAD (20%)         | Y1 Q2      |
-| Drilling Guides          | 🔄 In Development | CAD Kernels (60%) + UX (30%) + LLM (10%)    | Y1 Q2      |
-| Alignment Tools          | 🔄 In Development | CAD Kernels (50%) + UX (40%) + LLM (10%)    | Y1 Q3      |
-| Shadow Boxes             | 🔄 In Development | Gen AI (50%) + UX (30%) + CAD (20%)         | Y1 Q3      |
-| Custom Palletizing       | 🔄 In Development | LLM (40%) + UX (40%) + CAD Kernels (20%)    | Y1 Q3      |
-| Sand Casting Tools       | 🔄 In Development | Gen AI (40%) + CAD Kernels (40%) + UX (20%) | Y1 Q4      |
-| Soft Jaws                | 🔄 In Development | UX (50%) + CAD Kernels (40%) + LLM (10%)    | Y1 Q4      |
-| EOAT                     | 🔄 In Development | LLM (30%) + Gen AI (30%) + CAD (30%)        | Y1 Q4      |
+| Tool Type                | Status            | Tech Mix                                    | Timeline |
+| ------------------------ | ----------------- | ------------------------------------------- | -------- |
+| **Jigs & Fixtures**      | ✅ **Production** | UX (40%) + CAD Kernels (40%) + LLM (20%)    | Now      |
+| **Vacuum Casting Molds** | ✅ **Production** | CAD Kernels (50%) + Gen AI (30%) + UX (20%) | Now      |
+| Assembly Guides          | 🔄 In Development | UX (50%) + Gen AI (30%) + CAD (20%)         | Y1 Q2    |
+| Drilling Guides          | 🔄 In Development | CAD Kernels (60%) + UX (30%) + LLM (10%)    | Y1 Q2    |
+| Alignment Tools          | 🔄 In Development | CAD Kernels (50%) + UX (40%) + LLM (10%)    | Y1 Q3    |
+| Shadow Boxes             | 🔄 In Development | Gen AI (50%) + UX (30%) + CAD (20%)         | Y1 Q3    |
+| Custom Palletizing       | 🔄 In Development | LLM (40%) + UX (40%) + CAD Kernels (20%)    | Y1 Q3    |
+| Sand Casting Tools       | 🔄 In Development | Gen AI (40%) + CAD Kernels (40%) + UX (20%) | Y1 Q4    |
+| Soft Jaws                | 🔄 In Development | UX (50%) + CAD Kernels (40%) + LLM (10%)    | Y1 Q4    |
+| EOAT                     | 🔄 In Development | LLM (30%) + Gen AI (30%) + CAD (30%)        | Y1 Q4    |
 
 **Why Complete Suite by Y1 is Achievable:**
 
@@ -1631,7 +1631,7 @@ These are **complementary stages**, not competing products.
 - **Founder expertise**: 15 years of tooling experience means we know exactly what each tool type needs
 - **Aggressive but focused**: Full engineering investment in product completeness before scaling
 
-**Competitor's Challenge to Match:
+\*\*Competitor's Challenge to Match:
 
 - Hire tooling domain experts: 6-12 months
 - Build fixture-specific workflows + validation: 12-18 months
@@ -1936,17 +1936,17 @@ Unlike Trinckle (software-only) or Protolabs (services-only), RapidTools is buil
 
 ## Competitive Moats Summary
 
-| **Moat**                       | **Current Strength** | **Defensibility** | **Notes**                                          |
-| ------------------------------ | -------------------- | ----------------- | -------------------------------------------------- |
-| **Founder Domain Expertise**   | ✅ Strong            | 10+ years         | 15 years Fracktal Works, TVS/OEM relationships     |
-| **Full Product Suite (10 Tools)** | ✅ Strong (by Y1 end) | 12-18 months   | All tools production-ready by end of Year 1        |
-| **Automotive OEM Validation**  | ⚠️ Medium            | 18-24 months      | Honda engagement active, not yet complete          |
-| **Hybrid Tech Architecture**   | ✅ Strong            | 12-18 months      | Proven for 2 tools, transferable to others         |
-| **Dual-Space CAD Kernels**     | ✅ Strong            | 18-24 months      | B-spline + mesh integration production-ready       |
-| **Operations Buyer Position**  | ⚠️ Medium            | 12-18 months      | Early traction, not yet dominant                   |
-| **Multi-Dependency Platform**  | 🚧 Building          | 24-36 months      | Software + Services + Hardware + Consumables + EMS |
-| **10 Tool Types**              | ❌ Future            | 18-24 months      | 8 tools on roadmap                                 |
-| **Data Flywheel**              | ❌ Future            | 24-36 months      | ~250 designs today, need 10K+                      |
+| **Moat**                          | **Current Strength**  | **Defensibility** | **Notes**                                          |
+| --------------------------------- | --------------------- | ----------------- | -------------------------------------------------- |
+| **Founder Domain Expertise**      | ✅ Strong             | 10+ years         | 15 years Fracktal Works, TVS/OEM relationships     |
+| **Full Product Suite (10 Tools)** | ✅ Strong (by Y1 end) | 12-18 months      | All tools production-ready by end of Year 1        |
+| **Automotive OEM Validation**     | ⚠️ Medium             | 18-24 months      | Honda engagement active, not yet complete          |
+| **Hybrid Tech Architecture**      | ✅ Strong             | 12-18 months      | Proven for 2 tools, transferable to others         |
+| **Dual-Space CAD Kernels**        | ✅ Strong             | 18-24 months      | B-spline + mesh integration production-ready       |
+| **Operations Buyer Position**     | ⚠️ Medium             | 12-18 months      | Early traction, not yet dominant                   |
+| **Multi-Dependency Platform**     | 🚧 Building           | 24-36 months      | Software + Services + Hardware + Consumables + EMS |
+| **10 Tool Types**                 | ❌ Future             | 18-24 months      | 8 tools on roadmap                                 |
+| **Data Flywheel**                 | ❌ Future             | 24-36 months      | ~250 designs today, need 10K+                      |
 
 **Honest Assessment:** RapidTools has a **10+ year founder expertise moat** combined with **12-18 month technical leads** and a **building multi-dependency platform moat** (24-36 months). The multi-dependency platform—software + services + hardware + consumables—creates layered switching costs that no competitor can currently replicate.
 

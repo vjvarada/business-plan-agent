@@ -8,9 +8,9 @@
 
 Two design automation tools are already functional, built by CEO Vijay Raghav Varada using his computational geometry expertise:
 
-| Demo | Capability | Status |
-|------|-----------|--------|
-| **Fixture Automation** | Upload part → automated fixture design with GD&T validation | **Working Demo** |
+| Demo                               | Capability                                                   | Status           |
+| ---------------------------------- | ------------------------------------------------------------ | ---------------- |
+| **Fixture Automation**             | Upload part → automated fixture design with GD&T validation  | **Working Demo** |
 | **Vacuum Casting Tool Automation** | Upload part → mold design with parting lines, runners, vents | **Working Demo** |
 
 These demos prove the core technology works—we're not starting from a blank slate.

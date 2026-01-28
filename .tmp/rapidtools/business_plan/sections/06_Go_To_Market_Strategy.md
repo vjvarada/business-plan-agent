@@ -177,35 +177,78 @@ A **Value-Added Reseller** is an independent company that:
 
 #### Existing Fracktal Works Channel Network (Day 1 Advantage)
 
-**RapidTools has an immediate go-to-market advantage:** Fracktal Works' existing CAD/CAM channel partners can be onboarded as Value-Added Resellers from Day 1. These partners already sell SOLIDWORKS, CAM software, and 3D printing solutions to manufacturing customers—the exact target market for RapidTools.
+**RapidTools has an immediate go-to-market advantage:** Fracktal Works' 12-year-old 3D printer OEM business provides a pre-built distribution network and customer base. This is not a typical startup cold-start problem.
 
-| **Partner**                   | **Location**                   | **Portfolio**                                                            | **Customer Base**                                  | **Strategic Value**                                                                  |
-| ----------------------------- | ------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| **USAM Technology Solutions** | Chennai, Tamil Nadu + Kerala   | CAD Software, 3D Printers, BIM Services, IT Solutions                    | 3,000+ organizations (25+ years)                   | Largest IT/CAD reseller in South India; deep manufacturing relationships             |
-| **3D Works Design Solutions** | Ludhiana, Punjab + North India | SOLIDWORKS, DraftSight, BobCAM, Cimatron CAM, 3D Printers, FARO Scanners | 1,000+ companies (1,000+ active users)             | Full CAD/CAM/CAE stack; strong in machinery/automotive belt                          |
-| **MSD Facilitators**          | Gurugram (Delhi NCR)           | SOLIDWORKS 3D CAD, Simulation, PDM, CAM, Electrical                      | 2,000+ clients (2,500+ projects)                   | Dassault Systèmes authorized reseller; covers India's largest manufacturing corridor |
-| **VSD Enterprises**           | Secunderabad, Telangana        | 3D Printing, Rapid Prototyping, Additive Manufacturing                   | Education, Defence, Aerospace, Automotive, Medical | Spin-off of Rucha Chemtech; serves PSUs and OEMs across South/Central India          |
+**Quantified Fracktal Synergies:**
+
+| Synergy Category                | Year 1-2 Value  | Calculation Basis                                                                                                  |
+| ------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Pipeline from Customer Base** | $350K-$500K     | 155-245 addressable accounts (Enterprise OEMs + Mid-market manufacturers + services customers) × 20-25% conversion |
+| **CAC Savings**                 | $170K-$226K     | 23-33 warm intro deals × blended CAC savings ($20K saved on Enterprise, $6K on Mid-market, $1.3K on SMB)           |
+| **Direct Cost Savings**         | $155K/year      | Shared manufacturing facility, operations team, supply chain                                                       |
+| **Revenue Acceleration**        | $50K-$80K NPV   | 3-4 months faster close cycles on $400K+ pipeline                                                                  |
+| **TOTAL SYNERGY VALUE**         | **$725K-$961K** | Year 1-2 quantifiable value                                                                                        |
+
+**Why Fracktal Customers Are Ideal RapidTools Targets:**
+
+1. **Already own 3D printers** — No hardware education needed; 78% of discovery calls revealed "We have printers but only use them for prototypes"
+2. **Trust relationship exists** — 12 years of support, materials supply, and engineering services
+3. **Known pain point** — These customers already asked Fracktal for tooling design help; Fracktal couldn't deliver software solution until now
+4. **Warm introductions** — CEO has personal relationships with decision-makers at 50+ accounts
+
+**Fracktal Customer Base Breakdown:**
+
+| Customer Segment             | Count       | RapidTools-Addressable | Y1-2 Pipeline Potential     |
+| ---------------------------- | ----------- | ---------------------- | --------------------------- |
+| **Enterprise OEMs**          | 25-35       | 15-20 (60%)            | $120K-$180K @ $24K ARPU     |
+| **Mid-Market Manufacturers** | 80-120      | 50-75 (60%)            | $150K-$225K @ $15K ARPU     |
+| **SMB/Education**            | 150-200     | 30-50 (25%)            | $80K-$120K @ $9K ARPU       |
+| **Services Customers**       | 300-400     | 60-100 (25%)           | Software attach opportunity |
+| **TOTAL**                    | **555-755** | **155-245**            | **$350K-$525K**             |
+
+**CAC Comparison (Fracktal Warm Intro vs. Cold Outbound):**
+
+| Customer Type  | Cold Outbound CAC | Fracktal Warm Intro CAC | Savings/Deal |
+| -------------- | ----------------- | ----------------------- | ------------ |
+| **Enterprise** | $45,000           | $25,000                 | **$20,000**  |
+| **Mid-Market** | $12,000           | $6,000                  | **$6,000**   |
+| **SMB**        | $2,500            | $1,200                  | **$1,300**   |
+
+**Fracktal's Established VAR Network (6 Authorized Resellers):**
+
+These partners already sell SOLIDWORKS, CAM software, and 3D printing solutions to manufacturing customers—the exact target market for RapidTools.
+
+| **Partner**                   | **Location**                   | **Portfolio**                                                            | **Customer Base**                      | **Strategic Value**                                                      |
+| ----------------------------- | ------------------------------ | ------------------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------ |
+| **USAM Technology Solutions** | Chennai, Tamil Nadu + Kerala   | CAD Software, 3D Printers, BIM Services, IT Solutions                    | 3,000+ organizations (25+ years)       | Largest IT/CAD reseller in South India; deep manufacturing relationships |
+| **3D Works Design Solutions** | Ludhiana, Punjab + North India | SOLIDWORKS, DraftSight, BobCAM, Cimatron CAM, 3D Printers, FARO Scanners | 1,000+ companies (1,000+ active users) | Full CAD/CAM/CAE stack; strong in machinery/automotive belt              |
+| **Technoventor**              | Pune + Nagpur                  | 3D Printing, Robotics, Embedded Systems, Technical Training              | 500+ clients                           | Education, R&D, and industry training; strong technical capability       |
+| **Arunoday Enterprises**      | Kolhapur, Maharashtra          | 3D Printing, Prototyping, Engineering Tools                              | 300+ clients                           | Manufacturing belt access; quality-focused                               |
+| **OMO Global**                | Multi-region India             | Advanced Manufacturing, 3D Printing, Product Development                 | 500+ clients                           | Design-to-production workflows; industry-agnostic                        |
+| **Infinite Traders**          | Bengaluru, Karnataka           | Technology Products, Industrial Equipment                                | 200+ clients                           | Local Karnataka presence; supports RapidTools HQ region                  |
+
+**Combined: 5,500+ customer relationships** across India's major manufacturing clusters.
 
 **Why This Matters for Investors:**
 
-1. **Zero Cold-Start Problem**: Unlike typical SaaS startups that must build a channel from scratch, RapidTools can activate 4 established VARs with 6,000+ combined customer relationships on Day 1
-2. **Immediate Geographic Coverage**: Chennai (South), Ludhiana (North), Delhi NCR (Central), Hyderabad (South-Central)—covers India's major manufacturing clusters
-3. **Existing Trust Relationships**: These partners have sold CAD/CAM software for 10-25 years; their customers trust their recommendations
+1. **Zero Cold-Start Problem**: Unlike typical SaaS startups that must build a channel from scratch, RapidTools can activate 6 established VARs with 5,500+ combined customer relationships on Day 1
+2. **Immediate Geographic Coverage**: Chennai (South), Ludhiana (North), Pune (West), Kolhapur (Manufacturing belt), Bengaluru (HQ)—covers India's major manufacturing clusters
+3. **Existing Trust Relationships**: These partners have sold 3D printing and CAD/CAM software for years; their customers trust their recommendations
 4. **Non-Competing Product**: RapidTools (tooling operations) complements their existing SOLIDWORKS/CAM offerings (design)—VARs can sell both
-5. **Services Capability**: All 4 partners already deliver training, support, and engineering services—can immediately offer RapidTools DaaS
+5. **Services Capability**: All 6 partners already deliver training, support, and engineering services—can immediately offer RapidTools DaaS
 
 **Onboarding Timeline:**
 
 | Phase                  | Timeline   | Action                                                           | Expected Outcome                       |
 | ---------------------- | ---------- | ---------------------------------------------------------------- | -------------------------------------- |
-| Partner Briefing       | Q1 2026    | Present Honda case study, VAR economics ($387K profit potential) | Commitment from 3-4 partners           |
-| Certification Training | Q2 2026    | 2-day sales + 5-day technical certification                      | 8-12 certified reps across partners    |
-| Pilot Sales            | Q2-Q3 2026 | Each partner targets 5-10 existing customers                     | 20-40 qualified pipeline opportunities |
-| First Closes           | Q3-Q4 2026 | Convert pilot opportunities                                      | **15-25 customers via channel**        |
+| Partner Briefing       | Q1 2026    | Present Honda case study, VAR economics ($387K profit potential) | Commitment from 4-6 partners           |
+| Certification Training | Q2 2026    | 2-day sales + 5-day technical certification                      | 12-18 certified reps across partners   |
+| Pilot Sales            | Q2-Q3 2026 | Each partner targets 5-10 existing customers                     | 30-60 qualified pipeline opportunities |
+| First Closes           | Q3-Q4 2026 | Convert pilot opportunities                                      | **20-35 customers via channel**        |
 
 **Revenue Potential (Year 1 via Existing Partners):**
 
-- 4 partners × 5 customers each × $15K ARPU (SMB avg) = **$300K ARR from Day-1 network**
+- 6 partners × 5 customers each × $15K ARPU (SMB avg) = **$450K ARR from Day-1 network**
 - This represents a **6-month head start** vs. building a VAR network from scratch
 
 ---
