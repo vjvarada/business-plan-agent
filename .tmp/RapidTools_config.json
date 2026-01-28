@@ -1,0 +1,77 @@
+{
+  "company": "RapidTools",
+  "general": {
+    "tax_rate": 0.25,
+    "capex_y0": 150000,
+    "capex_annual": 50000,
+    "depreciation_years": 5,
+    "debtor_days": 45,
+    "creditor_days": 30,
+    "interest_rate": 0.1,
+    "cost_inflation": 0.05
+  },
+  "revenue_streams": [
+    {
+      "name": "Software",
+      "price": 2500,
+      "volume": 25,
+      "growth": 0.5,
+      "cogs_pct": 0.15
+    },
+    {
+      "name": "Hardware",
+      "price": 5000,
+      "volume": 15,
+      "growth": 0.35,
+      "cogs_pct": 0.6
+    },
+    {
+      "name": "Services",
+      "price": 10000,
+      "volume": 5,
+      "growth": 0.4,
+      "cogs_pct": 0.45
+    }
+  ],
+  "fixed_costs": {
+    "Office & Utilities": 36000,
+    "Marketing": 60000,
+    "R&D": 72000,
+    "Legal & Compliance": 24000,
+    "Insurance": 12000
+  },
+  "headcount": {
+    "engineering_salary": 80000,
+    "engineering_y0": 5,
+    "sales_salary": 60000,
+    "sales_y0": 3,
+    "ops_salary": 50000,
+    "ops_y0": 2,
+    "ga_salary": 70000,
+    "ga_y0": 2
+  },
+  "funding": {
+    "seed": 3000000,
+    "seed_year": 0,
+    "seed_pre": 10000000,
+    "series_a": 10000000,
+    "series_a_year": 2,
+    "series_a_pre": 30000000,
+    "series_b": 25000000,
+    "series_b_year": 4,
+    "series_b_pre": 75000000
+  },
+  "tam": {
+    "software": 10000,
+    "hardware": 4000,
+    "consumables": 8000,
+    "services": 20000
+  },
+  "sam": {
+    "india": 1800,
+    "se_asia": 1080
+  },
+  "som": {
+    "year8_revenue": 104
+  }
+}
