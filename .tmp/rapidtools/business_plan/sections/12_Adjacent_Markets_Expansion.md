@@ -269,6 +269,39 @@ RapidTools isn't a "fixture design tool"—it's a **platform for converting huma
 
 ---
 
+## Why Manufacturing Tooling First?
+
+### The Hardest Domain Validates the Platform
+
+Manufacturing tooling has the **strictest technical requirements** of any adjacent market. By building for Honda's automotive standards, we automatically exceed requirements for every other vertical:
+
+| Requirement | Manufacturing Tooling | Dental | Jewelry | Medical Implants |
+|-------------|----------------------|--------|---------|------------------|
+| **Dimensional Tolerance** | ±0.05-0.1mm | ±0.1-0.2mm | ±0.2-0.5mm | ±0.1mm |
+| **Surface Finish** | Ra 1.6-3.2μm | Ra 3.2-6.3μm | Visual only | Ra 0.8-1.6μm |
+| **GD&T Compliance** | ASME Y14.5 (mandatory) | Optional | Not required | ISO 1101 |
+| **Quality System** | IATF 16949 | ISO 13485 (dental devices) | None | ISO 13485 |
+| **Material Validation** | 50+ industrial polymers | 10-15 dental resins | 5-10 casting waxes | 20-30 biocompatible |
+| **Liability Exposure** | Production line downtime | Patient discomfort | Aesthetic defects | Patient safety |
+
+**The insight:** A CAD kernel that achieves ±0.05mm tolerances for Honda fixtures handles dental crowns (±0.1mm) with margin to spare. A validation engine that passes IATF 16949 audits exceeds dental lab requirements.
+
+### What Honda Validation Proves for Adjacent Markets
+
+Our Honda pilot is validating more than just fixture design—it's validating the **entire platform architecture**:
+
+| Honda Validation | What It Proves for Adjacent Markets |
+|-----------------|------------------------------------|
+| ±0.1mm fixture tolerances achieved | Dental crown fit (same tolerance) ✓ |
+| IATF 16949 quality documentation | ISO 13485 pathway for medical ✓ |
+| 50+ material DfAM rules working | Resin/wax rules are subset ✓ |
+| Production line deployment | Dental lab workflow is simpler ✓ |
+| Non-CAD users designing fixtures | Jewelers designing rings is easier ✓ |
+
+**This is not speculation.** When we ship fixtures to Honda's production line, we've proven the hardest technical challenge. Adjacent markets become execution problems, not technology risks.
+
+---
+
 ## Investor Implications
 
 ### Why Adjacent Markets Matter for This Raise
@@ -281,18 +314,29 @@ RapidTools isn't a "fixture design tool"—it's a **platform for converting huma
 
 4. **Defensible Moat:** Each vertical we enter adds domain-specific training data to our AI models, compounding our advantage.
 
-### What We're NOT Doing Today
+### Platform Architecture Being Built Today
 
-- Building for medical/dental/jewelry today
-- Raising money for adjacent market development
-- Diverting engineering resources from manufacturing tooling
+Every engineering decision we make is **platform-first**. The Seed round funds manufacturing tooling, but the architecture we're building directly enables adjacent markets:
 
-### What We ARE Doing
+| Component Built for Manufacturing | How It Enables Adjacent Markets |
+|----------------------------------|--------------------------------|
+| **B-spline CAD Kernel** | Same algorithms handle organic dental/jewelry geometry |
+| **Mesh Boolean Operations** | Same cavity-carving for implant pockets, ring settings |
+| **GD&T Validation Engine** | Exceeds requirements for dental (less strict than automotive) |
+| **DfAM Rule Library** | Expandable to resin (dental), metal (jewelry), biocompatible |
+| **LLM Intent Capture** | "Design a crown" uses same pipeline as "Design a fixture" |
+| **Modular UX Framework** | New vertical = new question flow, not new platform |
 
-- Building a **platform architecture** that enables future expansion
-- Validating core technology in manufacturing (hardest domain)
-- Documenting technology transferability for future product planning
-- Positioning for Series B+ expansion into adjacencies
+**The math:** Manufacturing tooling requires 6-12 months of development per tool type. Adjacent markets require **only the UX layer**—the core platform is shared. Dental entry (Phase 2) is a 6-month sprint, not a 2-year rebuild.
+
+### Why We're NOT Raising for Adjacent Markets Today
+
+We're raising $3M to dominate manufacturing tooling—not to boil the ocean. But investors should understand:
+
+1. **Architecture is platform-first:** No refactoring needed to enter dental/jewelry
+2. **Manufacturing is the hardest validation:** If we pass Honda's IATF 16949 requirements, we can handle dental labs
+3. **Adjacent markets are Series B+ expansion:** We'll have $15M+ ARR and proven unit economics before entering
+4. **This is a "when" not "if":** The technology transferability is engineering fact, not speculation
 
 ---
 

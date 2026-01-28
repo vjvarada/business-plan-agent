@@ -126,12 +126,27 @@ This is what RapidTools does.
 
 **The key insight:** Each adjacent market has the same fundamental problem—**domain experts who know what they need but can't express it in CAD**. Our platform bridges that gap.
 
+**Why Manufacturing First Enables Everything Else:**
+
+Manufacturing tooling is the **hardest** domain—strictest tolerances (±0.05mm), most demanding quality standards (IATF 16949), highest liability (production line downtime). By building for Honda's requirements, we automatically exceed what dental labs and jewelry workshops need:
+
+| What We Build for Honda | What It Enables for Adjacent Markets |
+|------------------------|-------------------------------------|
+| B-spline CAD kernel (±0.05mm) | Dental crowns need only ±0.1mm |
+| ASME Y14.5 GD&T validation | Exceeds dental/jewelry requirements |
+| 50+ material DfAM rules | Dental resins are a strict subset |
+| Non-CAD user workflows | Jewelers have even less CAD training |
+
+**The architecture is platform-first from Day 1.** Adjacent market entry requires new UX flows (6 months each), not new core technology. This is engineering fact, not future speculation.
+
 **Phased Expansion Strategy:**
-- **Phase 1 (Y1-Y4):** Manufacturing Tooling—validate core technology with Honda, TVS, Toyota
-- **Phase 2 (Y4-Y6):** Dental + Jewelry—highest technology overlap (80% reuse), lower regulatory burden
+- **Phase 1 (Y1-Y4):** Manufacturing Tooling—validate platform with Honda, TVS, Toyota (hardest case)
+- **Phase 2 (Y4-Y6):** Dental + Jewelry—80% technology reuse, 6-month development cycles
 - **Phase 3 (Y6-Y8):** Medical Implants + Eyewear + Footwear—premium pricing, partnership model
 
 **Why This Matters for Investors:**
+- **Not raising for adjacent markets today**—Seed funds manufacturing dominance
+- **Platform architecture is being built now**—no refactoring needed for expansion
 - Manufacturing tooling alone supports a **$500M-$1B exit**
 - Adjacent markets expand the opportunity to a **$3B+ platform** outcome
 - Each vertical adds domain-specific training data, compounding our AI advantage
