@@ -6,6 +6,30 @@
 
 ---
 
+## Investment Highlights
+
+| Metric | Value | Details |
+|--------|-------|---------|
+| **The Ask** | $3M Seed @ $10M pre | 30-36 months runway to Series A |
+| **Market** | $42B TAM → $65B+ by 2030 | Manufacturing tooling; 540% fixture demand growth |
+| **Traction** | Honda ₹10L ($12K) hardware PAID | Active co-development partnership; TVS, Toyota in pipeline |
+| **Revenue Target** | $104M ARR (Year 8) | 5,500 customers; 65% gross margin; 24% EBITDA |
+| **Team** | 15 years + CMU robotics | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum |
+| **Exit Path** | $500M–$1B (5-8× ARR) | Strategic: Autodesk, Siemens, Dassault, Stratasys |
+
+### Why Invest Now?
+
+- ✅ **$2.14T government investment** creating immediate tooling demand (CHIPS Act, India PLI, EU Green Deal)
+- ✅ **Working technology** — Fixture and Vacuum Casting automation demos already built
+- ✅ **Paying customer** — Honda invested ₹10L in hardware and is actively using software beta
+- ✅ **15-year relationship network** — Honda, TVS, Toyota, ISRO, Indian Navy are existing relationships
+- ✅ **Platform optionality** — OsteoForge partnership validates $134B+ adjacent market expansion (Medical, Dental, Jewelry)
+- ✅ **India cost advantage** — 60-70% lower CAC, 3× faster iteration than US competitors
+
+> **📖 Deep Dive:** [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md) for detailed capital plan and exit scenarios
+
+---
+
 ## The $50,000 Robot Waiting for a $500 Jig
 
 This story happened last year. The founding team was at the Toyoda Gosei factory in South Bangalore—a company they'd been working with for years.
@@ -56,6 +80,8 @@ But here's the math problem: **there aren't enough tooling engineers on the plan
 
 **This isn't a hiring problem. It's a category-creation opportunity.** The manufacturing renaissance is being held hostage by a talent shortage that software must solve.
 
+> **📖 Deep Dive:** [01_Market_Drivers.md](01_Market_Drivers.md) for $2.14T policy analysis, robotics multiplier, and talent crisis data
+
 ---
 
 ## The Unlock
@@ -98,6 +124,8 @@ Our first product, **RapidTools**, is the Canva for manufacturing tooling. A pro
 - **Manufacturing validation built-in:** GD&T compliance, DfAM rules, tolerance analysis—100% deterministic, zero AI hallucinations
 - **Hardware integration:** Bundled 3D printers create an end-to-end solution from intent to printed part
 
+> **📖 Deep Dive:** [03_Technology_Architecture.md](03_Technology_Architecture.md) for multi-modal AI architecture and product roadmap
+
 ---
 
 ## Why Us: 15 Years Building Toward This Moment
@@ -131,6 +159,8 @@ Over 15 years, the CEO built the computational geometry engine that powers 3D pr
 
 Honda isn't running a trial—they **paid ₹10 lakh ($12K) for hardware** and are co-developing automotive certification requirements (IATF 16949, ASME Y14.5) directly with the team. These standards become product specifications applicable to every automotive OEM.
 
+> **📖 Deep Dive:** [05_Customer_Validation.md](05_Customer_Validation.md) for Honda partnership details and customer pipeline
+
 ---
 
 ## The Market: $42 Billion—And Growing
@@ -158,6 +188,8 @@ Honda isn't running a trial—they **paid ₹10 lakh ($12K) for hardware** and a
 2. **India-first economics.** $2,400/year vs Trinckle's $6,000/year. 60% lower CAC. 3× faster iteration.
 3. **Full-stack offering.** Software + Hardware + Services creates switching costs competitors can't match.
 4. **Casting tools differentiation.** Vacuum casting and sand casting tools that Trinckle doesn't offer—and can't build quickly.
+
+> **📖 Deep Dive:** [02_TAM_SAM_SOM_Calculation.md](02_TAM_SAM_SOM_Calculation.md) for detailed market sizing methodology
 
 ---
 
@@ -208,6 +240,8 @@ Four forces are converging simultaneously—this window won't last forever:
 | **Stranded 3D Printers**  | 78% have printers, use for prototypes only   | $50K-$200K machines waiting for software |
 
 **Timing:** Companies that solve this in the next 3 years will own the market. The manufacturing buildout is happening now—those factories will lock in their tooling workflows for the next 20 years.
+
+> **📖 Deep Dive:** [01_Market_Drivers.md](01_Market_Drivers.md) for detailed timing analysis
 
 ---
 
@@ -279,6 +313,8 @@ Applied Additive is building an AI-native company from Day 1, using Claude Opus 
 | A generative design optimizer (nTop, Autodesk GD) | Those optimize existing designs for weight/strength. We create designs from intent.                        |
 | Competing with Autodesk/Siemens                   | They sell to engineers. We sell to operations. Different buyer = coexistence, not competition.             |
 
+> **📖 Deep Dive:** [03_Technology_Architecture.md](03_Technology_Architecture.md) for technical differentiation
+
 ---
 
 ## Market Sizing
@@ -305,6 +341,8 @@ Applied Additive is building an AI-native company from Day 1, using Claude Opus 
 - **Market Penetration:** 1.81% of $5.76B active SAM
 - **Customer Base:** 5,500 customers
 - **Revenue Mix:** Software 62% ($64M) + Services 30% ($31.6M) + Hardware 7% ($7.4M) + Consumables 1% ($1.1M)
+
+> **📖 Deep Dive:** [02_TAM_SAM_SOM_Calculation.md](02_TAM_SAM_SOM_Calculation.md) for detailed bottom-up methodology
 
 ---
 
@@ -355,6 +393,8 @@ In early 2024, we attempted to partner with Trinckle to bring FixtureMate to Ind
 
 Trinckle is structurally trapped by their own success. Their Stratasys partnership, software-only model, and fixture-focused architecture prevent them from pursuing Applied Additive's platform strategy. By the time they could pivot (3-5 years), RapidTools will have insurmountable market share in India/SEA and Applied Additive will own adjacent markets they cannot enter.
 
+> **📖 Deep Dive:** [04_Competitive_Analysis.md](04_Competitive_Analysis.md) for detailed Trinckle comparison and 7 competitive moats
+
 ---
 
 ## Customer Validation & Traction
@@ -385,6 +425,8 @@ Trinckle's European deployments prove the model:
 - **Audi Sport:** "2-4 hours CAD → minutes with fixturemate"
 - **Ford:** "Shop floor employees take on more responsibility"
 - **VW, Airbus, Deutsche Bahn:** Production deployments
+
+> **📖 Deep Dive:** [05_Customer_Validation.md](05_Customer_Validation.md) for Honda partnership details and customer pipeline
 
 ---
 
@@ -451,6 +493,8 @@ Unlike software-only competitors, Applied Additive creates **5 switching cost la
 | Material requalification | $10,000         | 4-8 weeks       |
 | **TOTAL**                | **$75K-$200K+** | **6-12 months** |
 
+> **📖 Deep Dive:** [07_Revenue_Model.md](07_Revenue_Model.md) for detailed unit economics and pricing strategy
+
 ---
 
 ## Go-To-Market Strategy
@@ -509,6 +553,8 @@ Unlike software-only competitors, Applied Additive creates **5 switching cost la
 - **Y3-Y4:** + Southeast Asia (Thailand, Vietnam, Malaysia)—25-40 VARs
 - **Y5-Y8:** + Global VAR network (EU, Americas)—85 VARs globally
 
+> **📖 Deep Dive:** [06_Go_To_Market_Strategy.md](06_Go_To_Market_Strategy.md) for Autodesk VAR playbook and defense sector opportunity
+
 ---
 
 ## Financial Summary
@@ -560,6 +606,8 @@ Unlike software-only competitors, Applied Additive creates **5 switching cost la
 | **GAAP Operating Income** | $22.7M  | **22%**      |
 
 ### Rule of 40: **59** (35% Growth + 24% EBITDA) ✓
+
+> **📖 Deep Dive:** [07_Revenue_Model.md](07_Revenue_Model.md) for 8-year P&L, working capital, and sensitivity analysis
 
 ---
 
@@ -618,6 +666,8 @@ Applied Additive has both capabilities in the founding team—a **globally-recog
 - Revenue/Employee: $274K (benchmark: $200-300K)
 - Customers/Employee: 14.5 (healthy for B2B SaaS with services)
 
+> **📖 Deep Dive:** [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) for full org chart and compensation structure
+
 ---
 
 ## Fundraising Strategy
@@ -659,6 +709,8 @@ Applied Additive has both capabilities in the founding team—a **globally-recog
 | **Secondary/Continuation** | Y6+    | Market    | —         | 15%         |
 
 **Strategic Acquirers:** Autodesk, Siemens, Dassault, PTC, Stratasys, 3D Systems, HP
+
+> **📖 Deep Dive:** [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md) for cap table evolution, exit scenarios, and investor targeting
 
 ---
 
@@ -711,29 +763,20 @@ You're not just funding a tooling software company. You're investing in **Applie
 
 ---
 
-## Detailed Section References
+## Quick Navigation
 
-For deeper analysis, see the following sections:
-
-| Section                                                                    | Focus             | Key Insight                                           |
-| -------------------------------------------------------------------------- | ----------------- | ----------------------------------------------------- |
-| [01_Market_Drivers.md](01_Market_Drivers.md)                               | Why Now?          | $2.14T government investment creating 76% of TAM      |
-| [02_TAM_SAM_SOM_Calculation.md](02_TAM_SAM_SOM_Calculation.md)             | Market Sizing     | $42B TAM → $5.76B SAM → $104M SOM (1.81% penetration) |
-| [03_Technology_Architecture.md](03_Technology_Architecture.md)             | Product Deep-Dive | Multi-modal AI + CAD Kernels hybrid architecture      |
-| [04_Competitive_Analysis.md](04_Competitive_Analysis.md)                   | Competition       | Trinckle analysis + 7 competitive moats               |
-| [05_Customer_Validation.md](05_Customer_Validation.md)                     | Traction          | Honda ₹10L hardware investment + beta deployment      |
-| [06_Go_To_Market_Strategy.md](06_Go_To_Market_Strategy.md)                 | GTM               | Autodesk VAR playbook: 85 VARs → 65% of revenue       |
-| [07_Revenue_Model.md](07_Revenue_Model.md)                                 | Unit Economics    | 5 revenue streams, 11.7:1 LTV:CAC, working capital    |
-| [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) | Team & Costs      | 380 FTEs, $274K/employee, 24% S&M                     |
-| [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md)                   | Capital Plan      | $38M total raise, 48% founder ownership at exit       |
-| [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md)       | Platform Vision   | $42B TAM → $134B+ with Medical, Consumer, Dental      |
-
-### Planned Sections (To Be Created)
-
-| Section                     | Focus                                   |
-| --------------------------- | --------------------------------------- |
-| 10_Financial_Projections.md | 8-year P&L, Cash Flow, Balance Sheet    |
-| 11_Risk_Analysis.md         | Comprehensive risk matrix + mitigations |
+| Section | Focus | Key Insight |
+|---------|-------|-------------|
+| [01_Market_Drivers.md](01_Market_Drivers.md) | Why Now? | $2.14T government investment creating 76% of TAM |
+| [02_TAM_SAM_SOM_Calculation.md](02_TAM_SAM_SOM_Calculation.md) | Market Sizing | $42B TAM → $5.76B SAM → $104M SOM |
+| [03_Technology_Architecture.md](03_Technology_Architecture.md) | Product | Multi-modal AI + CAD Kernels hybrid |
+| [04_Competitive_Analysis.md](04_Competitive_Analysis.md) | Competition | Trinckle analysis + 7 moats |
+| [05_Customer_Validation.md](05_Customer_Validation.md) | Traction | Honda ₹10L hardware + beta |
+| [06_Go_To_Market_Strategy.md](06_Go_To_Market_Strategy.md) | GTM | Autodesk VAR playbook: 85 VARs |
+| [07_Revenue_Model.md](07_Revenue_Model.md) | Unit Economics | 5 streams, 11.7:1 LTV:CAC |
+| [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) | Team & Costs | 380 FTEs, $274K/employee |
+| [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md) | Capital Plan | $38M total, 48% founder ownership |
+| [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md) | Platform Vision | $42B → $134B+ TAM expansion |
 
 ---
 
