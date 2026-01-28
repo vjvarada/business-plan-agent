@@ -58,7 +58,7 @@ The automated 3D printed tooling market has already been validated in Europe and
 | "We outsource fixtures because it's faster"            | 67%           | Current solution is expensive ($2-8K per fixture) |
 | "Operations staff can't use CAD software"              | 89%           | UX must be radically simpler than CAD             |
 
-**Key Insight:** The pain exists, but customers don't know a solution is possible. RapidTools must simultaneously validate product-market fit AND educate the ecosystem.
+The pain exists, but customers don't know a solution is possible. RapidTools must simultaneously validate product-market fit and educate the ecosystem.
 
 ---
 

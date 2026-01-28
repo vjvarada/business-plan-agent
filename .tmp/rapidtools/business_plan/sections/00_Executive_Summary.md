@@ -124,7 +124,7 @@ This is what RapidTools does.
 | **Architecture & Construction** | $2.5B | $12B+ | 37% | MEDIUM-HIGH |
 | **Combined TAM** | **$65.5B** | **$140B+** | 15%+ | — |
 
-**The key insight:** Each adjacent market has the same fundamental problem—**domain experts who know what they need but can't express it in CAD**. Our platform bridges that gap.
+Each adjacent market has the same fundamental problem—**domain experts who know what they need but can't express it in CAD**. The platform bridges that gap.
 
 **Why Manufacturing First Enables Everything Else:**
 
@@ -144,12 +144,7 @@ Manufacturing tooling is the **hardest** domain—strictest tolerances (±0.05mm
 - **Phase 2 (Y4-Y6):** Dental + Jewelry—80% technology reuse, 6-month development cycles
 - **Phase 3 (Y6-Y8):** Medical Implants + Eyewear + Footwear—premium pricing, partnership model
 
-**Why This Matters for Investors:**
-- **Not raising for adjacent markets today**—Seed funds manufacturing dominance
-- **Platform architecture is being built now**—no refactoring needed for expansion
-- Manufacturing tooling alone supports a **$500M-$1B exit**
-- Adjacent markets expand the opportunity to a **$3B+ platform** outcome
-- Each vertical adds domain-specific training data, compounding our AI advantage
+The Seed round funds manufacturing dominance—not adjacent markets. But the platform architecture being built today requires no refactoring for expansion. Manufacturing tooling alone supports a **$500M-$1B exit**; adjacent markets expand the opportunity to a **$3B+ platform** outcome. Each vertical adds domain-specific training data, compounding the AI advantage.
 
 > **See [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md)** for detailed market sizing and expansion roadmap.
 
@@ -176,7 +171,7 @@ Four forces are converging simultaneously—this window won't last forever:
 
 ### 10 Design Automation Tools — Prioritized Roadmap
 
-> **Foundation Already Built:** The Fixture and Vacuum Casting demos represent 80% of the core platform (UX framework, CAD kernels, 3D viewer, file import/export, validation pipeline). Additional tools are incremental extensions, not greenfield development.
+The Fixture and Vacuum Casting demos represent 80% of the core platform (UX framework, CAD kernels, 3D viewer, file import/export, validation pipeline). Additional tools are incremental extensions, not greenfield development.
 
 **Tier 1: Production by Month 6 (Q2 2026)** — Highest foundation reuse, highest customer demand:
 
@@ -206,7 +201,7 @@ Four forces are converging simultaneously—this window won't last forever:
 **Conservative commitment:** 5 tools by M6, 8 tools by M12, 10 tools by M18.
 **Aggressive target:** All 10 tools by M12 (achievable with CTO hire + AI-native development).
 
-> **Budget Proof:** $1.2M engineering budget provides 22,100 developer hours (8 engineers + CTO, 18 months, India costs). Tools require only 7,975 hours total (975 hours for 10 tools + 7,000 hours for platform hardening/QA/DevOps). That's a **64% buffer** for iteration and customer requests. See [Fundraising Strategy](09_Fundraising_Strategy.md) for detailed math.
+The $1.2M engineering budget provides 22,100 developer hours (8 engineers + CTO, 18 months, India costs). Tools require only 7,975 hours total (975 hours for 10 tools + 7,000 hours for platform hardening/QA/DevOps)—a **64% buffer** for iteration and customer requests. See [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md) for detailed math.
 
 ### AI-Native Development Acceleration
 
@@ -300,7 +295,7 @@ In early 2024, we attempted to partner with Trinckle to bring FixtureMate to Ind
 | **4. India Economics** | €6,000/year pricing, no local presence, Euro invoicing | $2,400/year, Bangalore team, INR/UPI payments |
 | **5. Casting Gap** | Zero capability, 2-3 years to develop | Production-ready vacuum casting; sand casting by Y1 |
 
-**The strategic insight:** Trinckle is structurally trapped by their own success. Their Stratasys partnership, software-only model, and fixture-focused architecture prevent them from pursuing RapidTools' platform strategy. By the time they could pivot (3-5 years), RapidTools will have insurmountable market share in India/SEA and adjacent markets they cannot enter.
+Trinckle is structurally trapped by their own success. Their Stratasys partnership, software-only model, and fixture-focused architecture prevent them from pursuing RapidTools' platform strategy. By the time they could pivot (3-5 years), RapidTools will have insurmountable market share in India/SEA and adjacent markets they cannot enter.
 
 ---
 
@@ -315,11 +310,7 @@ In early 2024, we attempted to partner with Trinckle to bring FixtureMate to Ind
 | **Status**              | Active collaboration on certification requirements     |
 | **Scope**               | Fixture design + IATF 16949 compliance integration     |
 
-**Why This Is More Than a Beta:**
-- Honda isn't just testing our software—they're **co-developing requirements** for automotive-grade fixtures
-- We're integrating Honda's certification standards (IATF 16949, ASME Y14.5) directly into the validation engine
-- Their tooling requirements become our product specification—built once, applicable to all automotive OEMs
-- Hardware commitment (₹10L) + requirements collaboration = **design partner, not trial customer**
+Honda isn't just testing software—they're **co-developing requirements** for automotive-grade fixtures. Their certification standards (IATF 16949, ASME Y14.5) are being integrated directly into the validation engine. These requirements become product specifications applicable to all automotive OEMs. Hardware commitment (₹10L) plus requirements collaboration makes this a **design partnership, not a trial**.
 
 ### Pipeline
 

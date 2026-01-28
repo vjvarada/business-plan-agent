@@ -652,7 +652,7 @@ The Year 8 blended revenue mix (62% software, 30% services, 7% hardware, 1% cons
   - Tooling Services ($24.2M): Design+Print bundles for customers without 3D printers
   - Enterprise Managed Services ($7.4M): Full outsourced tooling operations for large manufacturers
 
-**Key Insight:** Services revenue of $31.6M (30% of total) reflects the land-and-expand model where customers start with services (design+print) and graduate to software+hardware purchases.
+Services revenue of $31.6M (30% of total) reflects the land-and-expand model where customers start with services (design+print) and graduate to software+hardware purchases.
 
 ---
 
@@ -707,7 +707,7 @@ This is **intentional and healthy**—it reflects the classic SaaS "land with en
 | Enterprise (5%)  | 275          | $62,000     | $17.1M    | $45,000    | 13.8:1     |
 | **Blended**      | **5,500**    | **$18,909** | **$104M** | **$7,000** | **11.7:1** |
 
-**Key Insight:** The "declining ARPU" narrative is actually a **scaling success story**—we're democratizing tooling automation beyond just enterprise customers while maintaining healthy unit economics (12-18:1 LTV:CAC) across all segments with conservative assumptions.
+The "declining ARPU" narrative is actually a **scaling success story**—we're democratizing tooling automation beyond just enterprise customers while maintaining healthy unit economics (12-18:1 LTV:CAC) across all segments with conservative assumptions.
 
 ---
 
@@ -719,7 +719,7 @@ This is **intentional and healthy**—it reflects the classic SaaS "land with en
 | $10-50M ARR   | 80%             | Y4-Y5: 100-114% | ✓ Above benchmark  |
 | $50-100M ARR  | 60%             | Y6-Y8: 30-83%   | ✓ Within benchmark |
 
-**Key Insight:** RapidTools growth rates decline from 400% (Y2) to 30% (Y8), which mirrors the natural deceleration pattern of successful SaaS companies as they scale. The trajectory aligns with Bessemer benchmarks at each revenue stage.
+RapidTools growth rates decline from 400% (Y2) to 30% (Y8), mirroring the natural deceleration pattern of successful SaaS companies as they scale. The trajectory aligns with Bessemer benchmarks at each revenue stage.
 
 **Geographic Expansion Logic:**
 
@@ -838,7 +838,7 @@ We validated our SAM assumptions through first-hand plant visits to major automo
 | Y6   | + Global VARs | $4.80B     | $50.0M  | 1.04%       | Fast Follower trajectory          |
 | Y8   | Global        | $5.76B     | $104.0M | 1.81%       | Fast Follower (industry standard) |
 
-**Key Insight:** As SAM expands geographically, penetration percentage remains conservative relative to static SAM calculation (1.81% against $5.76B global active SAM). This is **realistic** - we don't take credit for markets until we have active sales channels.
+As SAM expands geographically, penetration percentage remains conservative relative to static SAM calculation (1.81% against $5.76B global active SAM). We don't take credit for markets until we have active sales channels.
 
 **Penetration by Revenue Stream (Y8 against Global Active SAM $5.76B):**
 

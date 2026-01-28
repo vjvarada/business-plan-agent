@@ -14,11 +14,9 @@
 
 This rare combination of **computational geometry expertise + manufacturing domain knowledge** means RapidTools isn't starting from zero—we're productizing proven algorithms.
 
-### Why Founder-Market Fit is Exceptional
+### Founder-Market Fit
 
-> **Vijay isn't a software engineer who read about manufacturing—he built a 3D printer company (Fracktal Works) for 15 years.** He personally wrote the slicer, mesh algorithms, and has working demos today. This is the rarest combination: **domain expertise + technical chops + customer relationships (Honda, TVS, Toyota, Toyoda, Continental, Bosch, ISRO, Indian Navy and many more.).**
->
-> **Why this matters:** Most AI-for-manufacturing startups are founded by ML engineers who underestimate manufacturing constraints. Vijay won't make that mistake.
+Vijay isn't a software engineer who read about manufacturing—he built a 3D printer company (Fracktal Works) for 15 years. He personally wrote the slicer, mesh algorithms, and has working demos today. This is the rarest combination: **domain expertise + technical chops + customer relationships** (Honda, TVS, Toyota, Toyoda, Continental, Bosch, ISRO, Indian Navy and many more). Most AI-for-manufacturing startups are founded by ML engineers who underestimate manufacturing constraints. Vijay won't make that mistake.
 
 ---
 
@@ -64,7 +62,7 @@ RapidTools isn't a single technology—it's a **platform that combines four tech
                     └───────────────────────────────┘
 ```
 
-**The key insight:** Different tool types need different mixes of these technologies.
+Different tool types need different mixes of these technologies:
 
 ---
 

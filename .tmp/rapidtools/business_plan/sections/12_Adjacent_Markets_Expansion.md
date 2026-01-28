@@ -40,7 +40,7 @@ RapidTools isn't a "fixture design tool"—it's a **platform for converting huma
 | **Generative AI** | Fixture geometry | Implant/prosthetic form | Jewelry/accessory design | Architectural details |
 | **CAD Kernel Validation** | GD&T, DfAM, tolerances | Biocompatibility, fit | Castability, printability | Scale accuracy, structural |
 
-**The key insight:** Each adjacent market has the same fundamental problem—**domain experts who know what they need but can't express it in CAD**. Our platform bridges that gap.
+Each adjacent market has the same fundamental problem—**domain experts who know what they need but can't express it in CAD**. The platform bridges that gap.
 
 ---
 

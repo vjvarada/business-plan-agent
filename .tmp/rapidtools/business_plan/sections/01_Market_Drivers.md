@@ -127,8 +127,6 @@ Every industrial robot needs custom tooling for:
 > _"In the U.S., you could have a meeting of tooling engineers, and I'm not sure we could fill the room. In China, you could fill multiple football fields."_  
 > **Tim Cook**, CEO of Apple, Fortune Global Forum 2017
 
-**Why This Quote Matters:**
-
 Tim Cook's observation highlights an **unsolvable structural problem**:
 
 - The U.S. (and India, Europe) wants to reshore manufacturing
@@ -614,8 +612,6 @@ The bottom-up estimate of $9M from 50 major plants is **directionally consistent
 ---
 
 ## The Investment Thesis: A Once-in-a-Decade Opportunity
-
-**Why This Matters NOW:**
 
 Four independent macro forces—each powerful enough to create a billion-dollar company on its own—are converging **simultaneously** in the 2025-2027 window:
 

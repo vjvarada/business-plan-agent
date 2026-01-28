@@ -45,9 +45,9 @@
 
 ---
 
-## Category 1: AI 3D Generation Models (NEW COMPETITIVE THREAT)
+## Category 1: AI 3D Generation Models
 
-> **Key Insight:** AI 3D generation has exploded in 2024-2026, but NONE of these models can produce manufacturing-compliant tooling.
+AI 3D generation has exploded in 2024-2026, but none of these models can produce manufacturing-compliant tooling.
 
 ### Why AI 3D Generation ≠ Manufacturing-Ready Tooling
 
@@ -274,7 +274,7 @@
 | **Kaedim**      | Production mesh | ❌ None                              | Game studios          | Enterprise     | ✅ Low        |
 | **RapidTools**  | **B-rep CAD**   | ✅ **Full (GD&T, DfAM, tolerances)** | **Manufacturing ops** | **$2,400/yr**  | —             |
 
-**Key Insight:** Only Zoo produces B-rep geometry like RapidTools, but Zoo lacks:
+Only Zoo produces B-rep geometry like RapidTools, but Zoo lacks:
 
 1. Manufacturing-specific validation (GD&T, DfAM, tolerance stack-up)
 2. Tool-specific workflows (10 types vs general-purpose)
@@ -284,7 +284,7 @@
 
 ## Category 2: Traditional CAD/CAM Incumbents
 
-> **Key Insight:** Traditional CAD/CAM tools are optimized for PRODUCT DESIGN by trained engineers—not tooling design by operations users. They require 3-7 years of training and cost $5K-$25K/year.
+Traditional CAD/CAM tools are optimized for product design by trained engineers—not tooling design by operations users. They require 3-7 years of training and cost $5K-$25K/year.
 
 ### Why Traditional CAD ≠ Intent-to-Design for Tooling
 
@@ -446,7 +446,7 @@
 | **Siemens**    | $5K-$15K/year   | 10+ years          | ❌ Product/PLM       | ❌ Enterprise IT     | ✅ Negligible |
 | **RapidTools** | **$2,400/year** | **3 minutes**      | ✅ **10 tool types** | ✅ **Operations**    | —             |
 
-**Key Insight:** Traditional CAD vendors are trapped by:
+Traditional CAD vendors are trapped by:
 
 1. **Cannibalization risk**: Can't offer $2K "lite" version without destroying $5K+ seat revenue
 2. **Organizational inertia**: 10K+ employees trained for enterprise engineering sales
@@ -457,7 +457,7 @@
 
 ## Category 3: Generative Design & AI-Powered CAD
 
-> **Key Insight:** Generative design tools OPTIMIZE existing designs—they don't GENERATE new designs from intent. They still require CAD expertise to define the design space, and they target engineering buyers, not operations.
+Generative design tools optimize existing designs—they don't generate new designs from intent. They still require CAD expertise to define the design space, and they target engineering buyers, not operations.
 
 ### Why Generative Design ≠ Intent-to-Design
 
@@ -649,7 +649,7 @@
 | **PTC Creo GD**     | $5K-$12K/year   | Creo proficiency          | ❌ General-purpose   | ❌ Engineering       | ✅ Negligible |
 | **RapidTools**      | **$2,400/year** | **Intent (any modality)** | ✅ **10 tool types** | ✅ **Operations**    | —             |
 
-**Key Insight:** Generative design tools are trapped by:
+Generative design tools are trapped by:
 
 1. **Optimization vs generation**: They optimize existing designs, not generate from intent
 2. **CAD prerequisite**: User must define design space in CAD software
@@ -660,7 +660,7 @@
 
 ## Category 4: 3D Printing Services & Job Work
 
-> **Key Insight:** 3D printing services are MANUFACTURING partners, not design software competitors. They require customers to provide CAD files—they don't generate designs. RapidTools + 3D printing services = powerful partnership.
+3D printing services are manufacturing partners, not design software competitors. They require customers to provide CAD files—they don't generate designs. RapidTools + 3D printing services = powerful partnership.
 
 ### Why 3D Printing Services ≠ Design Software
 
@@ -819,7 +819,7 @@
 | **3D Hubs**    | Manufacturing        | ❌ None                 | 🤝 **Partnership** | ✅ None (partner) |
 | **RapidTools** | **Software (90%+)**  | ✅ **Intent-to-design** | —                  | —                 |
 
-**Key Insight:** 3D printing services are PARTNERS, not competitors:
+3D printing services are partners, not competitors:
 
 1. **They need designs**: Customer must provide CAD—RapidTools generates it
 2. **Different margins**: Services (20-30%) vs software (90%+)
@@ -830,7 +830,7 @@
 
 ## Category 5: Fixture-Specific Design Software
 
-> **Key Insight:** Fixture-specific software uses MODULAR LIBRARIES of pre-built components—not AI-generated custom designs. They require fixturing expertise and serve CNC machinists, not operations users.
+Fixture-specific software uses modular libraries of pre-built components—not AI-generated custom designs. They require fixturing expertise and serve CNC machinists, not operations users.
 
 ### Why Modular Fixture Libraries ≠ Intent-to-Design
 
@@ -846,7 +846,7 @@
 
 ### Trinckle FixtureMate (Most Direct Competitor)
 
-> **⚠️ CRITICAL: Trinckle is RapidTools' most direct competitor.** Both companies focus on automated design for 3D printed manufacturing tooling.
+**Trinckle is RapidTools' most direct competitor.** Both companies focus on automated design for 3D printed manufacturing tooling.
 
 **What it is:** Cloud-based design automation platform specifically for 3D printed jigs, fixtures, and production aids. Part of the "Additive App Suite" with 10+ tooling applications.
 
@@ -977,11 +977,9 @@ In early 2024, Fracktal Works attempted to partner with Trinckle to bring Fixtur
 
 ---
 
-### Why Trinckle Cannot Follow RapidTools (Structural Barriers)
+### Why Trinckle Cannot Follow RapidTools
 
-> **VC Question:** "What stops Trinckle from entering India or copying your platform approach?"
-
-**Answer: Five structural barriers make it economically irrational for Trinckle to pursue RapidTools' strategy.**
+Five structural barriers make it economically irrational for Trinckle to pursue RapidTools' strategy.
 
 #### Barrier 1: Stratasys Partnership Lock-In (The Golden Handcuffs)
 
@@ -1279,7 +1277,7 @@ Trinckle is a credible competitor on the software dimension in Europe. They have
 | **Schunk**        | Hardware + CAD library       | Hardware sales      | Engineers         | CNC components    | ✅ Negligible      |
 | **RapidTools**    | **AI generative**            | **$2,400/year**     | **Operations**    | **Multi-method**  | —                  |
 
-**Key Insight:** The fixture software market is bifurcating:
+The fixture software market is bifurcating:
 
 1. **CNC/traditional tooling**: Renishaw, CATIA, Fixture Works, Schunk — serve engineers, CNC-focused
 2. **3D printed tooling**: **Trinckle and RapidTools** — serve operations, AM-focused
@@ -1295,7 +1293,7 @@ Trinckle is a credible competitor on the software dimension in Europe. They have
 
 ## Category 6: Low-Code / No-Code CAD
 
-> **Key Insight:** Low-code CAD tools simplify traditional parametric modeling—but they still require CAD thinking. They're "easier SolidWorks," not "no CAD knowledge required."
+Low-code CAD tools simplify traditional parametric modeling—but they still require CAD thinking. They're "easier SolidWorks," not "no CAD knowledge required."
 
 ### Why Low-Code CAD ≠ Intent-to-Design
 
@@ -1472,7 +1470,7 @@ Trinckle is a credible competitor on the software dimension in Europe. They have
 | **Vectary**    | Web visualization    | $12-29/month    | ⚠️ Basic         | ❌ Visualization     | ✅ Negligible |
 | **RapidTools** | **Intent-to-design** | **$2,400/year** | ❌ **No**        | ✅ **10 tool types** | —             |
 
-**Key Insight:** Low-code CAD tools are still trapped in the parametric modeling paradigm:
+Low-code CAD tools are still trapped in the parametric modeling paradigm:
 
 1. **Simpler ≠ intent-based**: Easier Sketch → Extrude is still Sketch → Extrude
 2. **Engineering buyer**: Product, sales, marketing optimized for engineers
@@ -1482,7 +1480,7 @@ Trinckle is a credible competitor on the software dimension in Europe. They have
 
 ## Category 7: AM Build Preparation & Workflow Software
 
-> **Key Insight:** AM build preparation software operates **POST-DESIGN**—preparing existing CAD files for 3D printing. RapidTools operates **PRE-DESIGN**—generating designs from intent. These are SEQUENTIAL workflow stages, making this category a natural **PARTNERSHIP OPPORTUNITY** rather than a competitive threat.
+AM build preparation software operates post-design—preparing existing CAD files for 3D printing. RapidTools operates pre-design—generating designs from intent. These are sequential workflow stages, making this category a natural partnership opportunity rather than a competitive threat.
 
 ### Why Build Preparation ≠ Intent-to-Design
 
@@ -1689,7 +1687,7 @@ These are **complementary stages**, not competing products.
 | **3D Systems 3DXpert** | Metal AM focused      | $10K-20K/year   | POST-design        | ⚠️ Limited     | ✅ Negligible    |
 | **RapidTools**         | **Intent-to-design**  | **$2,400/year** | **PRE-design**     | ✅ **Full**    | —                |
 
-**Key Insight:** AM build preparation software represents a **partnership opportunity**, not a competitive threat:
+AM build preparation software represents a partnership opportunity, not a competitive threat:
 
 1. **Sequential workflow**: RapidTools (generate design) → Materialise (prepare for print)
 2. **No overlap**: They need existing CAD; RapidTools creates it
@@ -1747,13 +1745,13 @@ These are **complementary stages**, not competing products.
 | **Relationship**             | —                     | 🤝 **Partnership**    | 🤝 Partnership   | 🤝 Partnership     |
 | **Threat Level**             | —                     | ✅ Low                | ✅ Low           | ✅ Negligible      |
 
-**Key Insight:** AM Build Preparation tools (Materialise, Netfabb, 3DXpert) are **downstream partners**, not upstream competitors. They require existing CAD files—which RapidTools generates.
+AM Build Preparation tools (Materialise, Netfabb, 3DXpert) are downstream partners, not upstream competitors. They require existing CAD files—which RapidTools generates.
 
 ---
 
 ## Competitive Moats & Defensibility
 
-> **Current Reality Check:** RapidTools has **2 production-ready tools** today (Fixtures, Vacuum Casting Molds) with **all 10 tools planned for production by end of Y1**. We are actively working with **Honda on automotive compliance validation**. Moats are assessed based on what we have TODAY plus our accelerated roadmap.
+RapidTools has **2 production-ready tools** today (Fixtures, Vacuum Casting Molds) with **all 10 tools planned for production by end of Y1**. We are actively working with **Honda on automotive compliance validation**. Moats are assessed based on current capabilities plus our accelerated roadmap.
 
 ### Moat 1: Full Product Suite (10 Tools by End of Y1)
 
@@ -1800,8 +1798,6 @@ RapidTools is actively working with **Honda** to:
 2. **Align GD&T outputs** to ASME Y14.5 and Honda internal standards
 3. **Test fixtures** in actual production line environments
 4. **Document compliance** for IATF 16949 quality management systems
-
-**Why This Matters:**
 
 | **Without OEM Validation**             | **With Honda Validation**                     |
 | -------------------------------------- | --------------------------------------------- |

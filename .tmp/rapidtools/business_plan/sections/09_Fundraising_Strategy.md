@@ -59,9 +59,7 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 
 ### Engineering Budget Math: Why $1.2M Delivers 10 Tools
 
-> **The concern:** "Can you really deliver 10 production tools with $1.2M in engineering spend?"
->
-> **The answer:** Yes—because we're not building 10 tools from scratch. We're building **one platform** with **10 UX flows**.
+The $1.2M engineering budget delivers 10 production tools because we're not building 10 tools from scratch—we're building **one platform** with **10 UX flows**.
 
 **What the $1.2M Funds (18 Months):**
 

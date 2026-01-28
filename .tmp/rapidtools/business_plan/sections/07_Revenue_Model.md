@@ -57,7 +57,7 @@ As we expand to US/Europe (Years 5-8), we expect CAC to increase 2-3× and ratio
 | **Enterprise** | $45,000 | $110,000 | LTV:CAC = 5.6:1 |
 | **Blended** | $7,000 | $18,000 | **LTV:CAC = 4.6:1** |
 
-**Key Insight:** Even at US cost structures, our LTV:CAC would be 4.6:1—well above the 3:1 minimum for healthy SaaS. The India advantage gives us margin to invest in growth while maintaining profitability.
+Even at US cost structures, our LTV:CAC would be 4.6:1—well above the 3:1 minimum for healthy SaaS. The India advantage gives us margin to invest in growth while maintaining profitability.
 
 ### Scenario Analysis: What Happens When Ratios Normalize?
 
@@ -961,7 +961,7 @@ As customers progress through expansion paths, their switching costs accumulate:
 | Software + Services + Hardware | 4%                    | 25 years                        |
 | Full platform (incl. EMS)      | 2%                    | 50 years                        |
 
-**Key Insight:** Customers using 3+ revenue streams have **4× longer lifetimes** than software-only customers. This is the multi-dependency moat in action.
+Customers using 3+ revenue streams have **4× longer lifetimes** than software-only customers—the multi-dependency moat in action.
 
 ### Net Revenue Retention (NRR)
 
