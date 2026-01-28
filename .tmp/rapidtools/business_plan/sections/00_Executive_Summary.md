@@ -343,6 +343,10 @@ Trinckle's European deployments prove the model:
 | **Consumables**                 | $1.1M      | 1%       | 30-35%       | 3D printing materials         |
 | **TOTAL**                       | **$104M**  | **100%** | **65%**      | Blended gross margin          |
 
+**Services as Customer Acquisition, Not Margin Drag:**
+
+The 30% services revenue (Tooling Services + EMS) at lower margins is a deliberate strategic choice, not a structural weakness. Traditional design service bureaus earn 15-25% gross margins because they employ expensive CAD engineers. RapidTools services earn 28-44% margins because our software automates 80-90% of design work—trained operators ($25/hr) replace mechanical engineers ($80/hr). More importantly, services function as a customer acquisition funnel: 40% of services customers convert to software licenses within 18 months, and 25% eventually purchase hardware. The "lower margin" revenue is actually subsidized customer acquisition with higher conversion rates than traditional marketing.
+
 ### Unit Economics (Year 8 - Mature State)
 
 | Metric       | SMB     | Mid-Market | Enterprise | Blended     |
@@ -567,7 +571,7 @@ Unlike software-only competitors, RapidTools creates **5 switching cost layers**
 | **Team execution**           | Low      | Two co-founders with complementary expertise (CEO: CAD/manufacturing domain; CTO: robotics systems/Dassault); advisors formalizing Q2 2026                                |
 | **Trinckle competition**     | Medium   | India/SEA focus (untapped); casting tools (differentiated); LLM input (lower barrier)                                                                                     |
 | **Enterprise sales cycles**  | Medium   | VAR channel (65% of revenue) reduces dependency on direct deals                                                                                                           |
-| **Services margin pressure** | Low      | Software automation increases Tooling Services margin from 30% → 50%+                                                                                                     |
+| **Services margin pressure** | Low      | Services earn 28-44% gross margins (vs. industry 15-25%) due to software automation; 40% of services customers convert to software, functioning as profitable customer acquisition |
 | **Automotive concentration** | Low      | SMB 70% of customer count diversifies risk                                                                                                                                |
 
 ---

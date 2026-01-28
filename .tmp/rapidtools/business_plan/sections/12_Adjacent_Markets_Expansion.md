@@ -220,16 +220,16 @@ Each adjacent market has the same fundamental problem—**domain experts who kno
 
 | Core Component | Manufacturing | Dental | Jewelry | Medical | Eyewear | Footwear | Architecture |
 |----------------|---------------|--------|---------|---------|---------|----------|--------------|
-| **LLM Intent Capture** | | | | | | | |
-| **B-spline CAD Kernel** | | | | | | | |
-| **Mesh Boolean Ops** | | | | | | | |
-| **Generative AI (Form)** | | | | | | | |
-| **DfAM Validation** | | | | | | | |
-| **Tolerance/GD&T** | | | | | | | |
-| **Material Library** | | | | | | | |
-| **Printer Integration** | | | | | | | |
+| **LLM Intent Capture** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **B-spline CAD Kernel** | ✅ | ✅ | ✅ | ✅ | ✅ | ⚡ | ⚡ |
+| **Mesh Boolean Ops** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Generative AI (Form)** | ✅ | ⚡ | ⚡ | ⚡ | ⚡ | 🔧 | 🔧 |
+| **DfAM Validation** | ✅ | ✅ | ✅ | ⚡ | ✅ | ⚡ | ⚡ |
+| **Tolerance/GD&T** | ✅ | ⚡ | ⚡ | ✅ | ⚡ | ⚡ | 🔧 |
+| **Material Library** | ✅ | ⚡ | ⚡ | 🔧 | ⚡ | 🔧 | ⚡ |
+| **Printer Integration** | ✅ | ✅ | ⚡ | ⚡ | ✅ | ⚡ | ⚡ |
 
-**Legend:** = Fully reusable | = Partially reusable | = Requires new development
+**Legend:** ✅ = Fully reusable | ⚡ = Partially reusable | 🔧 = Requires new development
 
 **Estimated Technology Reuse:**
 - **Dental:** 80% reuse 6-month development cycle

@@ -15,10 +15,16 @@
 8.  **08_Team_Organization_Fixed_Costs.md** - Headcount plan, compensation, **R&D infrastructure & IP**, fixed costs by year
 9.  **09_Fundraising_Strategy.md** - Seed/A/B rounds, cap table, investor targeting, exit scenarios, **24% EBITDA**
 
-### Planned Sections (To Be Created)
+### Content Consolidated Into Other Sections
 
-10. **10_Financial_Projections.md** - 8-year P&L, cash flow, balance sheet, key metrics
-11. **11_Risk_Analysis.md** - Market, execution, competitive risks + mitigations
+10. **Financial Projections** - 8-year P&L, cash flow, balance sheet covered in:
+    - [07_Revenue_Model.md](07_Revenue_Model.md) - Revenue build-up, working capital
+    - [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) - Cost structure, headcount
+    - [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md) - EBITDA, cash flow, funding runway
+
+11. **Risk Analysis** - Market, execution, competitive risks covered in:
+    - [00_Executive_Summary.md](00_Executive_Summary.md#key-risks--mitigations) - Key Risks & Mitigations table
+    - [04_Competitive_Analysis.md](04_Competitive_Analysis.md) - Competitive moats and Trinckle defense
 
 ### Platform Vision Section
 
@@ -45,4 +51,4 @@
 
 ---
 
-_Last Updated: January 27, 2026_
+_Last Updated: January 28, 2026_
