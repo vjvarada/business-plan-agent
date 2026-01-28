@@ -255,17 +255,31 @@ RapidTools isn't a "fixture design tool"—it's a **platform for converting huma
 
 ### Long-Term Revenue Potential
 
-**Conservative Scenario (Manufacturing Focus + 1 Adjacent):**
-- Year 8: $104M (manufacturing) + $20M (dental/jewelry) = **$124M ARR**
-- Market penetration: 0.16% of combined TAM
+> **Note on Financial Projections:** All fundraising materials and financial models use the **Base Case ($104M Y8)** below. Platform scenarios are presented as **upside optionality**, not assumptions baked into our valuation or capital requirements.
 
-**Aggressive Scenario (Full Platform):**
+**Base Case — Manufacturing Tooling Only (Used in All Financials):**
+- Year 8: **$104M ARR** from manufacturing tooling
+- Market penetration: 1.81% of $5.76B manufacturing SAM
+- This is the scenario in our P&L, Cash Flow, and fundraising projections
+- No adjacent market revenue assumed
+
+**Upside Scenario A — Manufacturing + First Adjacent (Dental/Jewelry):**
+- Year 8: $104M (manufacturing) + $20M (dental/jewelry) = **$124M ARR**
+- Assumes Phase 2 expansion begins Y4, reaches scale by Y8
+- Market penetration: 0.16% of combined TAM
+- **Not in current financial model**—represents Series B+ optionality
+
+**Upside Scenario B — Full Platform (Multiple Verticals):**
 - Year 10: $150M (manufacturing) + $100M (medical) + $50M (consumer) = **$300M ARR**
+- Assumes successful execution across 3+ verticals
 - Market penetration: 0.32% of combined TAM
+- **Long-term vision**, not near-term projection
 
 **Venture-Scale Outcome:**
-- At 10× revenue multiple: $3B valuation potential
-- Comparable to: Autodesk trajectory, nTopology trajectory, Formlabs trajectory
+- Base Case ($104M): 6-8× revenue = **$600M-$800M** valuation (manufacturing vertical)
+- Upside Scenario A ($124M): 8× revenue = **$1B** valuation (platform premium)
+- Upside Scenario B ($300M): 10× revenue = **$3B** valuation (multi-vertical platform)
+- Comparable trajectories: Autodesk, nTopology, Formlabs
 
 ---
 
