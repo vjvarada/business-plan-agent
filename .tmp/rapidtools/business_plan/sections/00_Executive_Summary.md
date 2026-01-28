@@ -8,14 +8,14 @@
 
 ## Investment Highlights
 
-| Metric | Value | Details |
-|--------|-------|---------|
-| **The Ask** | $3M Seed @ $10M pre | 30-36 months runway to Series A |
-| **Market** | $42B TAM → $65B+ by 2030 | Manufacturing tooling; 540% fixture demand growth |
-| **Traction** | Honda ₹10L ($12K) hardware PAID | Active co-development partnership; TVS, Toyota in pipeline |
-| **Revenue Target** | $104M ARR (Year 8) | 5,500 customers; 65% gross margin; 24% EBITDA |
-| **Team** | 15 years + CMU robotics | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum |
-| **Exit Path** | $500M–$1B (5-8× ARR) | Strategic: Autodesk, Siemens, Dassault, Stratasys |
+| Metric             | Value                           | Details                                                    |
+| ------------------ | ------------------------------- | ---------------------------------------------------------- |
+| **The Ask**        | $3M Seed @ $10M pre             | 30-36 months runway to Series A                            |
+| **Market**         | $42B TAM → $65B+ by 2030        | Manufacturing tooling; 540% fixture demand growth          |
+| **Traction**       | Honda ₹10L ($12K) hardware PAID | Active co-development partnership; TVS, Toyota in pipeline |
+| **Revenue Target** | $104M ARR (Year 8)              | 5,500 customers; 65% gross margin; 24% EBITDA              |
+| **Team**           | 15 years + CMU robotics         | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum |
+| **Exit Path**      | $500M–$1B (5-8× ARR)            | Strategic: Autodesk, Siemens, Dassault, Stratasys          |
 
 ### Why Invest Now?
 
@@ -113,7 +113,7 @@ Our first product, **RapidTools**, is the Canva for manufacturing tooling. A pro
 
 **How it works:**
 
-1. Upload your part (CAD file, photo, or describe it)
+1. Upload your part (3D Scan, CAD file, photo, or describe it)
 2. Answer simple questions about your operation using our intuitive UI
 3. Get a validated, 3D-printable fixture—ready for production
 4. Print on-site or order through our integrated hardware partners
@@ -765,18 +765,18 @@ You're not just funding a tooling software company. You're investing in **Applie
 
 ## Quick Navigation
 
-| Section | Focus | Key Insight |
-|---------|-------|-------------|
-| [01_Market_Drivers.md](01_Market_Drivers.md) | Why Now? | $2.14T government investment creating 76% of TAM |
-| [02_TAM_SAM_SOM_Calculation.md](02_TAM_SAM_SOM_Calculation.md) | Market Sizing | $42B TAM → $5.76B SAM → $104M SOM |
-| [03_Technology_Architecture.md](03_Technology_Architecture.md) | Product | Multi-modal AI + CAD Kernels hybrid |
-| [04_Competitive_Analysis.md](04_Competitive_Analysis.md) | Competition | Trinckle analysis + 7 moats |
-| [05_Customer_Validation.md](05_Customer_Validation.md) | Traction | Honda ₹10L hardware + beta |
-| [06_Go_To_Market_Strategy.md](06_Go_To_Market_Strategy.md) | GTM | Autodesk VAR playbook: 85 VARs |
-| [07_Revenue_Model.md](07_Revenue_Model.md) | Unit Economics | 5 streams, 11.7:1 LTV:CAC |
-| [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) | Team & Costs | 380 FTEs, $274K/employee |
-| [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md) | Capital Plan | $38M total, 48% founder ownership |
-| [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md) | Platform Vision | $42B → $134B+ TAM expansion |
+| Section                                                                    | Focus           | Key Insight                                      |
+| -------------------------------------------------------------------------- | --------------- | ------------------------------------------------ |
+| [01_Market_Drivers.md](01_Market_Drivers.md)                               | Why Now?        | $2.14T government investment creating 76% of TAM |
+| [02_TAM_SAM_SOM_Calculation.md](02_TAM_SAM_SOM_Calculation.md)             | Market Sizing   | $42B TAM → $5.76B SAM → $104M SOM                |
+| [03_Technology_Architecture.md](03_Technology_Architecture.md)             | Product         | Multi-modal AI + CAD Kernels hybrid              |
+| [04_Competitive_Analysis.md](04_Competitive_Analysis.md)                   | Competition     | Trinckle analysis + 7 moats                      |
+| [05_Customer_Validation.md](05_Customer_Validation.md)                     | Traction        | Honda ₹10L hardware + beta                       |
+| [06_Go_To_Market_Strategy.md](06_Go_To_Market_Strategy.md)                 | GTM             | Autodesk VAR playbook: 85 VARs                   |
+| [07_Revenue_Model.md](07_Revenue_Model.md)                                 | Unit Economics  | 5 streams, 11.7:1 LTV:CAC                        |
+| [08_Team_Organization_Fixed_Costs.md](08_Team_Organization_Fixed_Costs.md) | Team & Costs    | 380 FTEs, $274K/employee                         |
+| [09_Fundraising_Strategy.md](09_Fundraising_Strategy.md)                   | Capital Plan    | $38M total, 48% founder ownership                |
+| [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md)       | Platform Vision | $42B → $134B+ TAM expansion                      |
 
 ---
 

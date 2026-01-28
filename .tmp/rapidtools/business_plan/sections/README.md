@@ -30,9 +30,9 @@
 
 **Why Now:** $2.14T government investment is building new factories that need 16 million fixtures/year by 2030 (540% growth). There aren't enough tooling engineers on the planet.
 
-**Traction:** Honda paid ₹10 lakh ($12K) for 3D printing hardware and is actively using our software beta. TVS and Toyota in pipeline.
+**Traction:** Honda invested ₹10 lakh ($12K) in 3D printing hardware and is actively using our software beta. TVS and Toyota in pipeline. Indian Navy exploring indigenization.
 
-**The Ask:** $3M Seed for 30-36 months runway. Path to $104M ARR by Year 8.
+**The Ask:** $3M Seed @ $10M pre-money for 30-36 months runway. Path to $104M ARR by Year 8 with $500M-$1B exit.
 
 ---
 
@@ -46,24 +46,29 @@
 
 **START HERE:**
 
-1. **00_Executive_Summary.md** - Complete overview with investment thesis
+1. **00_Executive_Summary.md** - Complete overview with Investment Highlights table, "Why Invest Now?" bullets, and deep-dive links to all sections
 2. **12_Adjacent_Markets_Expansion.md** - Platform vision and $140B+ TAM expansion
-3. **09_Fundraising_Strategy.md** - The ask: $3M Seed, exit scenarios, returns analysis
+3. **09_Fundraising_Strategy.md** - The ask: $3M Seed @ $10M pre, exit scenarios, returns analysis
 
-**Deep Dives (as needed):** 4. **01_Market_Drivers.md** - Why Now? ($2.14T government investment + robotics explosion) 5. **04_Competitive_Analysis.md** - Trinckle comparison + 7 competitive moats 6. **05_Customer_Validation.md** - Honda pilot + defense sector traction 7. **07_Revenue_Model.md** - Multi-dependency moat architecture
+**Deep Dives (as needed):**
+
+4. **01_Market_Drivers.md** - Why Now? ($2.14T government investment + robotics explosion)
+5. **04_Competitive_Analysis.md** - Trinckle comparison + 7 competitive moats
+6. **05_Customer_Validation.md** - Honda design partnership + defense sector traction
+7. **07_Revenue_Model.md** - Multi-dependency moat architecture
 
 ## Section Files Created
 
-0.  **00_Executive_Summary.md** - ⭐ **START HERE** - Comprehensive overview synthesizing all sections
+0.  **00_Executive_Summary.md** - ⭐ **START HERE** - Investment Highlights, "Why Invest Now?" bullets, deep-dive links throughout
 1.  **01_Market_Drivers.md** - Why Now? (Government investment, robotics, talent crisis, DfAM)
 2.  **02_TAM_SAM_SOM_Calculation.md** - Detailed market sizing methodology
 3.  **03_Technology_Architecture.md** - Multi-modal AI + Computational Geometry (platform-first architecture)
 4.  **04_Competitive_Analysis.md** - RapidTools vs Autodesk/Siemens + 7 Competitive Moats
-5.  **05_Customer_Validation.md** - Honda/TVS/Toyota pilots + **Indian Navy indigenization traction**
-6.  **06_Go_To_Market_Strategy.md** - Dual GTM (Enterprise + SMB/PLG) + **Defense Sector Opportunity**
-7.  **07_Revenue_Model.md** - 5 revenue streams, $104M Y8, unit economics, pricing, **multi-dependency moat**
-8.  **08_Team_Organization_Fixed_Costs.md** - Headcount plan, compensation, **defense sector access via CTO**
-9.  **09_Fundraising_Strategy.md** - Seed/A/B rounds, cap table, investor targeting, exit scenarios, **platform expansion upside**
+5.  **05_Customer_Validation.md** - Honda design partnership (₹10L hardware PAID) + Indian Navy indigenization
+6.  **06_Go_To_Market_Strategy.md** - Dual GTM (Enterprise + SMB/PLG) + Defense Sector Opportunity
+7.  **07_Revenue_Model.md** - 5 revenue streams, $104M Y8, unit economics, **multi-dependency moat**
+8.  **08_Team_Organization_Fixed_Costs.md** - Headcount plan, compensation, **Debesh Sharma defense advisor**
+9.  **09_Fundraising_Strategy.md** - Seed/A/B rounds, cap table, exit scenarios ($500M-$1B), **platform expansion upside**
 
 ### Platform Vision Section
 
@@ -82,24 +87,24 @@
 
 ## Key Investment Thesis
 
-| Why Now?                                        | Why Applied Additive?                     | Why This Team?                                           |
-| ----------------------------------------------- | ----------------------------------------- | -------------------------------------------------------- |
-| $2.14T manufacturing investment creating demand | Platform company, not point solution      | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO) |
-| 540% growth in fixture demand by 2030           | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner                        |
-| 60% of tooling engineers retiring               | India/SEA beachhead ($2.88B untapped SAM) | Defense family backgrounds + active Army/Navy sales      |
-| 78% of 3D printers underutilized                | $140B+ TAM with adjacent markets          | Working demos already built                              |
+| Why Now?                                        | Why Applied Additive?                     | Why This Team?                                              |
+| ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------- |
+| $2.14T manufacturing investment creating demand | Platform company, not point solution      | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO)    |
+| 540% growth in fixture demand by 2030           | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum  |
+| 60% of tooling engineers retiring               | India/SEA beachhead ($2.88B untapped SAM) | Honda/TVS/Toyota/ISRO/Navy = 15-year relationship network   |
+| 78% of 3D printers underutilized                | $140B+ TAM with adjacent markets          | **Debesh Sharma**: Defense advisor (17yr Navy, VC, Fortune 100) |
 
 ## Key Financial Summary (Year 8)
 
-| Metric                | Value          |
-| --------------------- | -------------- |
-| Revenue               | $104M          |
-| Gross Margin          | 65%            |
-| R&D Investment        | $7.43M (7.1%)  |
-| Fixed Costs (G&A)     | $7.10M (6.8%)  |
-| EBITDA                | $24.82M (24%)  |
-| GAAP Operating Income | $22.74M (22%)  |
-| Rule of 40            | 59 (35% + 24%) |
+| Metric                | Value                   |
+| --------------------- | ----------------------- |
+| Revenue               | $104M ARR               |
+| Customers             | 5,500                   |
+| Gross Margin          | 65%                     |
+| EBITDA                | $24.82M (24%)           |
+| Rule of 40            | 59 (35% growth + 24%)   |
+| Exit Valuation        | $500M–$1B (5-8× ARR)    |
+| Total Funding         | $38M ($3M + $10M + $25M)|
 
 ## How to Use
 
@@ -111,3 +116,5 @@
 ---
 
 _Last Updated: January 28, 2026_
+
+_Commit: Executive Summary enhanced with Investment Highlights and deep-dive links_
