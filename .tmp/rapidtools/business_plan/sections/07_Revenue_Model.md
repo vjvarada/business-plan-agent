@@ -35,6 +35,63 @@
 
 As we expand to US/Europe (Years 5-8), we expect CAC to increase 2-3× and ratios to normalize toward 5-8:1. The current ratios represent our India beachhead economics, not mature-state global economics [[21]](#ref-21).
 
+### Why These Ratios Are Credible (Detailed Cost Comparison)
+
+**India vs. US Cost Structure:**
+
+| Cost Component | India (RapidTools Y1-4) | US Equivalent | Ratio |
+|----------------|------------------------|---------------|-------|
+| **Sales Rep (fully loaded)** | $25,000/year | $80,000/year | 3.2× |
+| **Sales Engineer** | $18,000/year | $65,000/year | 3.6× |
+| **Marketing Manager** | $15,000/year | $55,000/year | 3.7× |
+| **Customer Success** | $12,000/year | $45,000/year | 3.8× |
+| **Travel per enterprise deal** | $5,000 | $15,000 | 3.0× |
+| **Trade show/event** | $8,000 | $25,000 | 3.1× |
+
+**How This Translates to CAC:**
+
+| Segment | India CAC | US Equivalent CAC | If RapidTools Were US-Based |
+|---------|-----------|-------------------|----------------------------|
+| **SMB** | $2,500 | $7,500 | LTV:CAC = 5.1:1 |
+| **Mid-Market** | $12,000 | $32,000 | LTV:CAC = 6.9:1 |
+| **Enterprise** | $45,000 | $110,000 | LTV:CAC = 5.6:1 |
+| **Blended** | $7,000 | $18,000 | **LTV:CAC = 4.6:1** |
+
+**Key Insight:** Even at US cost structures, our LTV:CAC would be 4.6:1—well above the 3:1 minimum for healthy SaaS. The India advantage gives us margin to invest in growth while maintaining profitability.
+
+### Scenario Analysis: What Happens When Ratios Normalize?
+
+**Years 5-8: Global Expansion Economics**
+
+As RapidTools expands to US/Europe via VAR partnerships, costs will increase:
+
+| Metric | India-Only (Y1-4) | Global Mix (Y5-8) | Change |
+|--------|-------------------|-------------------|--------|
+| **Revenue Mix** | 100% India/SEA | 60% India, 40% US/EU | — |
+| **Blended CAC** | $7,000 | $12,000 | +71% |
+| **Blended ARPU** | $18,909 | $22,000 | +16% (higher pricing in US/EU) |
+| **Blended Churn** | 15% | 13% | -13% (enterprise mix increases) |
+| **Blended LTV** | $82,000 | $110,000 | +34% |
+| **LTV:CAC** | 11.7:1 | **9.2:1** | -21% |
+| **Payback Period** | 6 months | 9 months | +50% |
+
+**The business improves with global expansion** because:
+1. Higher ARPU in US/EU markets ($3,600/seat vs. $2,400 in India)
+2. Lower churn as enterprise mix increases
+3. VAR channel absorbs customer acquisition costs (we pay 25-30% commission vs. building US sales team)
+
+**Stress Test: What If CAC Doubles and Churn Increases?**
+
+| Scenario | CAC | Churn | LTV:CAC | Verdict |
+|----------|-----|-------|---------|--------|
+| **Base Case** | $7,000 | 15% | 11.7:1 | ✅ Excellent |
+| **CAC +50%** | $10,500 | 15% | 7.8:1 | ✅ Very Good |
+| **CAC +100%** | $14,000 | 15% | 5.9:1 | ✅ Good |
+| **CAC +100%, Churn +5%** | $14,000 | 20% | 4.1:1 | ✅ Acceptable |
+| **Worst Case** | $18,000 | 22% | 2.8:1 | ⚠️ Below threshold |
+
+**Conclusion:** The business remains healthy even with 100% CAC increase and 33% churn increase. Only a "worst case" scenario (2.5× CAC + 47% churn increase) breaks the 3:1 threshold—and that scenario is implausible given our multi-product switching costs.
+
 **Note on Conservative Assumptions:** We use industry-realistic churn rates (Enterprise 6%, Mid-Market 11%, SMB 17%) and CAC that accounts for pilot costs, travel, and multi-stakeholder sales cycles. These assumptions have been stress-tested against Bessemer, ChartMogul, and ChurnFree benchmarks.
 
 **Note on Segment Gross Margins:** Enterprise has lower gross margin (60%) than SMB (70%) because enterprise deals include more services and EMS (lower margin) alongside software. The 65% blended margin matches company-level financials.

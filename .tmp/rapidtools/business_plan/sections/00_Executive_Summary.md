@@ -351,6 +351,26 @@ Trinckle's European deployments prove the model:
 
 **Note on LTV:CAC:** Ratios of 12-18:1 reflect India cost advantage (CAC 60-70% lower than US) and multi-product stickiness. Expect normalization to 5-8:1 as we expand globally.
 
+**Why These Ratios Are Credible (Not Too Good to Be True):**
+
+| Factor | India Economics | US Equivalent | Impact |
+|--------|-----------------|---------------|--------|
+| **Sales rep cost** | $25K/year | $80K/year | 3.2× lower CAC |
+| **Marketing cost** | $15K/year | $50K/year | 3.3× lower CAC |
+| **Travel/events** | $5K/deal | $15K/deal | 3× lower CAC |
+| **Support staff** | $12K/year | $45K/year | 3.8× lower cost-to-serve |
+
+**Scenario: Global Expansion (Years 5-8)**
+
+| Metric | India-Only (Y1-4) | Global (Y5-8) | Still Healthy? |
+|--------|-------------------|---------------|----------------|
+| **Blended CAC** | $7,000 | $15,000 | — |
+| **Blended LTV** | $82,000 | $82,000 | (ARPU same) |
+| **LTV:CAC** | 11.7:1 | **5.5:1** | ✅ Above 3:1 minimum |
+| **Payback** | 6 months | 13 months | ✅ Under 18-month threshold |
+
+**The business works at 5-8:1 LTV:CAC.** Current ratios reflect where we're starting (India), not where we'll end up.
+
 ### The Multi-Dependency Moat
 
 Unlike software-only competitors, RapidTools creates **5 switching cost layers**:
