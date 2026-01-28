@@ -52,11 +52,7 @@
 - **Ola Electric Gigafactory (Krishnagiri)**: World's largest EV battery plant (50 GWh capacity), 800-1,000 fixtures for cell assembly [[12]](#ref-12)
 - **HAL Tejas Fighter Production**: Indigenous production scaling to 24 aircraft/year, 5,000+ aerospace-grade jigs [[13]](#ref-13)
 
-> **Applied Additive's Defense Sector Access:** CTO Atirav Seth's father, **Rear Admiral Ravnish Seth (Indian Navy)**, provides strategic relationships across the Indian defense manufacturing ecosystem—including HAL, DRDO, naval shipyards, and defense PSUs. This relationship-driven access is critical in defense procurement where cold outreach takes 12-18 months versus warm introductions.
-
-> **🚢 Active Engagement: Indian Navy Indigenization**
->
-> Leveraging these defense connections, **Fracktal Works is already working with the Indian Navy's indigenization unit** to help replace aging parts on Russian-origin vessels. India operates 50+ Russian-built warships and submarines with obsolete components that are difficult to source. This creates a significant dockyard modernization opportunity—RapidTools + 3D printing can rapidly digitize and reproduce legacy components, positioning Applied Additive for **$5-15M in Navy + defense dockyard programs over 5 years**.
+> **Applied Additive's Defense Access:** Both founders come from defense families, and Vijay has **active defense sales experience**—selling 3D printers to the Indian Army and currently leading Navy indigenization projects through Fracktal Works. Defense GTM Advisor Debesh Sharma (17 years Navy; Silicon Valley VC) provides strategic relationships across HAL, DRDO, Naval Shipyards, and Defense PSUs—positioning Applied Additive for **$5-15M in defense programs over 5 years**.
 
 **Europe:**
 

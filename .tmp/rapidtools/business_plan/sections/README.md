@@ -89,7 +89,7 @@
 |----------|----------------------|----------------|
 | $2.14T manufacturing investment creating demand | Platform company, not point solution | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO) |
 | 540% growth in fixture demand by 2030 | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner |
-| 60% of tooling engineers retiring | India/SEA beachhead ($2.88B untapped SAM) | Defense sector access (Rear Admiral connection) |
+| 60% of tooling engineers retiring | India/SEA beachhead ($2.88B untapped SAM) | Defense family backgrounds + active Army/Navy sales |
 | 78% of 3D printers underutilized | $140B+ TAM with adjacent markets | Working demos already built |
 
 ## Key Financial Summary (Year 8)

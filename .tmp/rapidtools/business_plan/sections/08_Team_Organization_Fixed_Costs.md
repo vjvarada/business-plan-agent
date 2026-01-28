@@ -29,14 +29,14 @@
 | Role                 | Name                | Background                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | -------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **CEO / Co-founder** | Vijay Raghav Varada | **2023 Hackaday Prize Grand Prize Winner** (Refreshable Braille Display, $50K prize); 3× Hackaday Prize finalist; deployed **world’s first 3D-printed wind turbine in Antarctica** (Robert Swan expedition); **published author** (Arduino for Kids, multiple languages); 15 years building Fracktal Works (3D printer OEM); developed **computational geometry engine** (slicer, mesh algorithms, B-spline operations); built working demos—Fixture Automation, Vacuum Casting Tool Automation; deep automotive relationships (Honda, TVS, Toyota) |
-| **CTO / Co-founder** | Atirav Seth         | **Carnegie Mellon University** (Robotics MS); **Twara Robotics/ARTPARK IISc**—led design-to-production of 3 catalog products (AMR-75, TGrip-1, TGrip-2), implemented 5 robotic POCs; **Dassault Systèmes**—Multiphysics modeling (Simulink/Dymola) for automotive OEMs; **Universal Robots** certified products; Keynote speaker UR APAC 2024; 2 peer-reviewed publications on robotic manipulators; **son of Rear Admiral Ravnish Seth (Indian Navy)**—strategic access to defense manufacturing sector                                            |
+| **CTO / Co-founder** | Atirav Seth         | **Carnegie Mellon University** (Robotics MS); **Twara Robotics/ARTPARK IISc**—led design-to-production of 3 catalog products (AMR-75, TGrip-1, TGrip-2), implemented 5 robotic POCs; **Dassault Systèmes**—Multiphysics modeling (Simulink/Dymola) for automotive OEMs; **Universal Robots** certified products; Keynote speaker UR APAC 2024; 2 peer-reviewed publications on robotic manipulators |
 
-**Note on Leadership:** RapidTools has a **complementary founding team** with combined 20+ years of domain expertise:
+**Note on Leadership:** RapidTools has a **complementary founding team** with combined 20+ years of domain expertise. **Both founders come from defense families**, providing natural familiarity with defense procurement and culture—a significant advantage in navigating India's ₹1.75 lakh crore Atmanirbhar Bharat defense ecosystem.
 
-- **Vijay (CEO):** Serial hardware entrepreneur with global recognition—2023 Hackaday Prize Grand Prize Winner (Refreshable Braille Display—assistive tech for the visually impaired), and deployed the world’s first 3D-printed wind turbine in Antarctica during the Robert Swan polar expedition. Built Fracktal Works over 15 years, personally developing the computational geometry engine (3D printing slicer, mesh algorithms, CAD operations). Published author (Arduino for Kids, translated to multiple languages). Built the working demos powering RapidTools. **Critically, Vijay has spent 15 years cultivating relationships with CAD software VARs (SOLIDWORKS, Autodesk, Cimatron resellers)—these partners are ready to sell RapidTools to their 5,500+ combined customer base on Day 1. This is a unique distribution asset that eliminates the typical SaaS cold-start problem.**
-- **Atirav (CTO):** Robotics systems engineering from CMU + IISc, with rare end-to-end product experience (design → prototype → production → deployment). Dassault Systèmes CAD/multiphysics background bridges software engineering and manufacturing automation. **Son of Rear Admiral Ravnish Seth (Indian Navy)**—providing strategic access to India's ₹1.75 lakh crore (~$21B) defense manufacturing ecosystem under Atmanirbhar Bharat, including HAL, DRDO, and defense PSUs.
+- **Vijay (CEO):** Serial hardware entrepreneur with global recognition—2023 Hackaday Prize Grand Prize Winner (Refreshable Braille Display—assistive tech for the visually impaired), and deployed the world's first 3D-printed wind turbine in Antarctica during the Robert Swan polar expedition. Built Fracktal Works over 15 years, personally developing the computational geometry engine (3D printing slicer, mesh algorithms, CAD operations). Published author (Arduino for Kids, translated to multiple languages). Built the working demos powering RapidTools. **Critically, Vijay has spent 15 years cultivating relationships with CAD software VARs (SOLIDWORKS, Autodesk, Cimatron resellers)—these partners are ready to sell RapidTools to their 5,500+ combined customer base on Day 1. This is a unique distribution asset that eliminates the typical SaaS cold-start problem.** Vijay also has **active defense sales experience**—selling 3D printers to the Indian Army and currently leading Navy indigenization projects through Fracktal Works.
+- **Atirav (CTO):** Robotics systems engineering from CMU + IISc, with rare end-to-end product experience (design → prototype → production → deployment). Dassault Systèmes CAD/multiphysics background bridges software engineering and manufacturing automation.
 
-This combination—a globally-recognized hardware entrepreneur who's shipped products to Antarctica and won top hardware prizes, paired with a CMU robotics engineer with defense sector relationships—creates a uniquely capable team for manufacturing tooling automation.
+This combination—a globally-recognized hardware entrepreneur who's shipped products to Antarctica and won top hardware prizes, paired with a CMU robotics engineer—creates a uniquely capable team for manufacturing tooling automation.
 
 ### Founder Highlights
 
@@ -70,27 +70,28 @@ This combination—a globally-recognized hardware entrepreneur who's shipped pro
 | **Dassault Systèmes**             | Model-Based Systems Engineer; developed multiphysics models (Simulink/Dymola) for major automotive OEMs                                                                                                                                                                                                                |
 | **Keynote Speaker**               | Universal Robots APAC Conference 2024 (Pune, India); Ministry of Heavy Industries presentation                                                                                                                                                                                                                         |
 | **Publications**                  | 2 peer-reviewed papers on robotic manipulators (FEA analysis, structural design)                                                                                                                                                                                                                                       |
-| **Defense Sector Access**         | Son of **Rear Admiral Ravnish Seth (Indian Navy)**—strategic relationships across Indian defense ecosystem including HAL, DRDO, naval shipyards, and defense PSUs. Opens access to ₹1.75 lakh crore Atmanirbhar Bharat defense manufacturing initiative requiring 15,000-25,000 precision aerospace jigs and fixtures. |
-| **Navy Indigenization (Active)**  | Leveraging these connections, **Fracktal Works is already working with the Indian Navy's indigenization unit** to help replace aging parts on Russian-origin vessels. Validates defense go-to-market strategy and positions RapidTools for $5-15M dockyard modernization opportunity.                                  |
 
 **Why Defense Access Matters for Investors:**
+
+Both founders come from defense families, and Vijay has **active defense sales experience**—selling 3D printers to the Indian Army and currently leading Navy indigenization projects through Fracktal Works. This positions Applied Additive for:
 
 1. **₹1.75 lakh crore (~$21B) addressable market** under Atmanirbhar Bharat defense indigenous manufacturing
 2. **HAL Tejas fighter production** (24 aircraft/year) requires 5,000+ aerospace-grade jigs—same tooling automation problem RapidTools solves
 3. **Naval shipyards** (Mazagon Dock, Garden Reach, Cochin Shipyard) need rapid fixture prototyping for indigenous warship programs
 4. **Dockyard Modernization**: Indian Navy operates 50+ Russian-origin warships/submarines with obsolete components—3D printing + RapidTools offers the fastest indigenization path
-5. **Relationship-driven procurement** in defense sector—Rear Admiral connections + active indigenization work provide warm introductions impossible for competitors
 
-### Advisor Network (In Development)
+### Advisory Board
 
-Applied Additive is actively building its advisory board:
+| Advisor | Role | Background | Strategic Value |
+| ------- | ---- | ---------- | --------------- |
+| **Debesh Sharma** | **Defense & GTM Advisor** | 17 years Indian Navy (Commanding Officer, missile corvette; Fleet Navigating Officer, Western Fleet—21 ships, 6,000 personnel); Silicon Valley VC ($1B+ AUM); Board member, Indian deep tech startups; British management consultancy (Fortune 100/500 clients); MBA (top of cohort) NUS Singapore | Defense ecosystem navigation: HAL, DRDO, Naval Shipyards, Defense PSUs; complements founders' defense family backgrounds with operational experience; opens ₹1.75L cr Atmanirbhar Bharat programs |
+
+#### Advisors In Discussion
 
 | Role Sought          | Ideal Profile                                                                                | Status         |
 | -------------------- | -------------------------------------------------------------------------------------------- | -------------- |
 | **Industry Advisor** | Senior automotive manufacturing executive; tooling/die design domain expertise               | In discussions |
 | **Technical Mentor** | Deep learning for 3D geometry; experience at Autodesk, Siemens, or similar CAD/CAM companies | In discussions |
-
-**Timeline:** Advisors/mentors expected to formalize Q2-Q3 2026.
 
 ### Fracktal Works Leverage
 

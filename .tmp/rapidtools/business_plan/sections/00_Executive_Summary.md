@@ -2,7 +2,7 @@
 
 ## _From Intent to Object_
 
-**Encoding decades of manufacturing and design expertise into software anyone can use to build objects.**
+**Encoding decades of manufacturing and design expertise into software that anyone can use to build objects.**
 
 ---
 
@@ -470,15 +470,15 @@ Unlike software-only competitors, Applied Additive creates **5 switching cost la
 
 **Existing Customer Relationships (Quantified Synergies):**
 
-| Asset                            | Value            | Strategic Impact                                                                                     |
-| -------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------- |
-| **Enterprise OEM Relationships** | 25-35 accounts   | Honda, TVS, Toyota, Toyoda Gosei, Continental, Bosch, ISRO, Indian Navy—direct CEO relationships     |
-| **Defense Sector Access**        | ₹1.75L cr market | CTO's father (Rear Admiral Ravnish Seth) + **active Navy indigenization work** validates defense GTM |
-| **Mid-Market Manufacturers**     | 80-120 accounts  | Companies the founding team has worked with for 3D printing and prototyping; need tooling automation |
-| **Total Addressable Pipeline**   | 155-245 accounts | ~$350K-$500K Year 1-2 pipeline value                                                                 |
-| **CAC Savings**                  | $170K-$226K      | Warm intros reduce Enterprise CAC from $45K → $25K; Mid-market from $12K → $6K                       |
-| **Direct Cost Savings**          | $155K/year       | Shared manufacturing, operations, supply chain                                                       |
-| **Total Synergy Value**          | **$725K-$961K**  | Year 1-2 quantifiable value (not speculative)                                                        |
+| Asset                            | Value            | Strategic Impact                                                                                                  |
+| -------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Enterprise OEM Relationships** | 25-35 accounts   | Honda, TVS, Toyota, Toyoda Gosei, Continental, Bosch, ISRO, Indian Army—direct CEO relationships                  |
+| **Defense Sector Access**        | ₹1.75L cr market | Founders from defense families + Vijay's **active Army/Navy sales** + Advisor Debesh Sharma validates defense GTM |
+| **Mid-Market Manufacturers**     | 80-120 accounts  | Companies the founding team has worked with for 3D printing and prototyping; need tooling automation              |
+| **Total Addressable Pipeline**   | 155-245 accounts | ~$350K-$500K Year 1-2 pipeline value                                                                              |
+| **CAC Savings**                  | $170K-$226K      | Warm intros reduce Enterprise CAC from $45K → $25K; Mid-market from $12K → $6K                                    |
+| **Direct Cost Savings**          | $155K/year       | Shared manufacturing, operations, supply chain                                                                    |
+| **Total Synergy Value**          | **$725K-$961K**  | Year 1-2 quantifiable value (not speculative)                                                                     |
 
 **VAR Network (6 Authorized Resellers):**
 
@@ -576,17 +576,25 @@ Applied Additive has both capabilities in the founding team—a **globally-recog
 
 ### Founding Team
 
-| Role    | Name                | Background                                                                                                                                                                                                                                                                                                                                                   |
-| ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **CEO** | Vijay Raghav Varada | **2023 Hackaday Prize Grand Prize Winner** (Refreshable Braille Display); 3× finalist; deployed **world's first 3D-printed wind turbine in Antarctica**; published author (Arduino for Kids); 15 years building 3D printers and developing computational geometry engines (slicer, mesh algorithms, CAD); deep automotive relationships (Honda, TVS, Toyota) |
-| **CTO** | Atirav Seth         | Carnegie Mellon (Robotics MS); Twara Robotics/ARTPARK IISc—3 products from design-to-production, 5 robotic POCs; Dassault Systèmes—Multiphysics modeling for automotive; Universal Robots certified; Keynote speaker UR APAC 2024; **son of Rear Admiral Ravnish Seth (Indian Navy)—strategic access to ₹1.75L cr defense manufacturing**                    |
+| Role    | Name                | Background                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CEO** | Vijay Raghav Varada | **2023 Hackaday Prize Grand Prize Winner** (Refreshable Braille Display); 3× finalist; deployed **world's first 3D-printed wind turbine in Antarctica**; published author (Arduino for Kids); 15 years building 3D printers and developing computational geometry engines (slicer, mesh algorithms, CAD); deep automotive relationships (Honda, TVS, Toyota); **active defense sales** (Indian Army, Navy indigenization) |
+| **CTO** | Atirav Seth         | Carnegie Mellon (Robotics MS); Twara Robotics/ARTPARK IISc—3 products from design-to-production, 5 robotic POCs; Dassault Systèmes—Multiphysics modeling for automotive; Universal Robots certified; Keynote speaker UR APAC 2024                                                                                                                                                                                         |
+
+**Both founders come from defense families**, providing credibility to access India's ₹1.75L cr defense manufacturing ecosystem.
 
 **Why This Team Wins:**
 
 1. **Already built the hard parts.** The CAD kernel, the mesh algorithms, the slicer—the CEO built these over 15 years. Applied Additive isn't starting from scratch.
 2. **Relationships in place.** Honda didn't take a cold call—they've been working with the founding team for years. TVS, Toyota, Continental, Bosch—same story.
 3. **Manufacturing expertise at the factory level.** Not from McKinsey reports—from standing on shop floors watching fixtures fail.
-4. **Proven ability to ship.** Antarctica wind turbine. Hackaday Grand Prize. Three products to production at Twara. This team executes.
+4. **Proven ability to ship.** Antarctica wind turbine. Hackaday Grand Prize. Multiple products to production at Twara and Fracktal Works. This team executes.
+
+### Advisory Board
+
+| Advisor           | Role                  | Strategic Value                                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Debesh Sharma** | Defense & GTM Advisor | 17-year Indian Navy career (Commanding Officer, missile corvette during 9/11; Fleet Navigating Officer, Western Fleet—21 ships, 6,000+ personnel); Silicon Valley VC ($1B+ AUM); British management consultancy (Fortune 100/500 clients); Board member of Indian deep tech startups; MBA (top of cohort) NUS Singapore. **Navigates Indian defense ecosystem for ₹1.75L cr Atmanirbhar Bharat opportunity.** |
 
 ### Planned Leadership Additions
 

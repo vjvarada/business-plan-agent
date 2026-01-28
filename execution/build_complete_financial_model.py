@@ -133,6 +133,27 @@ def style_data_row(ws, row, start_col, end_col, is_total=False, zebra=False):
             )
 
 
+def style_category_header(ws, row, text, end_col=10):
+    """Apply category header styling with light blue fill across all columns."""
+    ws.cell(row, 1).value = text
+    ws.cell(row, 1).font = Font(name="Calibri", size=10, bold=True, color=Colors.BLACK)
+    # Fill all columns with light blue background
+    for col in range(1, end_col + 1):
+        ws.cell(row, col).fill = PatternFill(
+            start_color=Colors.LIGHT_BLUE, end_color=Colors.LIGHT_BLUE, fill_type="solid"
+        )
+
+
+def style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=10):
+    """Apply column header styling with background fill extending to end_col."""
+    for col, header in enumerate(headers, 1):
+        style_header(ws.cell(row, col), bg=bg, size=10)
+        ws.cell(row, col).value = header
+    # Fill remaining columns with same background
+    for col in range(len(headers) + 1, end_col + 1):
+        ws.cell(row, col).fill = PatternFill(start_color=bg, end_color=bg, fill_type="solid")
+
+
 # =============================================================================
 # YEAR HELPERS
 # =============================================================================
@@ -242,17 +263,14 @@ class FinancialModelBuilder:
             "Source [Ref#]",
             "Confidence",
         ]
-        for col, header in enumerate(tam_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, tam_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         # Track row numbers for formulas
         tam_data_start = row
 
         # SOFTWARE TAM section
-        ws.cell(row, 1).value = "SOFTWARE TAM"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "SOFTWARE TAM")
         row += 1
 
         # CAD Software - row for formula reference
@@ -300,8 +318,7 @@ class FinancialModelBuilder:
         row += 1
 
         # HARDWARE TAM section
-        ws.cell(row, 1).value = "HARDWARE TAM"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "HARDWARE TAM")
         row += 1
 
         # Industrial 3D Printing Market
@@ -338,8 +355,7 @@ class FinancialModelBuilder:
         row += 1
 
         # CONSUMABLES TAM section
-        ws.cell(row, 1).value = "CONSUMABLES TAM"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "CONSUMABLES TAM")
         row += 1
 
         # 3D Printing Materials
@@ -387,8 +403,7 @@ class FinancialModelBuilder:
         row += 1
 
         # SERVICES TAM section
-        ws.cell(row, 1).value = "SERVICES TAM (Triple-Validated)"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "SERVICES TAM (Triple-Validated)")
         row += 1
 
         # Engineering Services Outsourcing
@@ -468,16 +483,13 @@ class FinancialModelBuilder:
             "Calculation",
             "Source [Ref#]",
         ]
-        for col, header in enumerate(sam_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, sam_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         self.row_refs["sam_start"] = row
 
         # PHASE 1: INDIA
-        ws.cell(row, 1).value = "PHASE 1: INDIA BEACHHEAD"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "PHASE 1: INDIA BEACHHEAD")
         row += 1
 
         india_sw_row = row
@@ -533,8 +545,7 @@ class FinancialModelBuilder:
         row += 2
 
         # PHASE 2: SE ASIA
-        ws.cell(row, 1).value = "PHASE 2: + SOUTHEAST ASIA"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "PHASE 2: + SOUTHEAST ASIA")
         row += 1
 
         sea_sw_row = row
@@ -602,8 +613,7 @@ class FinancialModelBuilder:
         row += 2
 
         # PHASE 3: GLOBAL
-        ws.cell(row, 1).value = "PHASE 3: + GLOBAL VAR NETWORK"
-        ws.cell(row, 1).font = Font(bold=True, size=10)
+        style_category_header(ws, row, "PHASE 3: + GLOBAL VAR NETWORK")
         row += 1
 
         eu_row = row
@@ -664,9 +674,7 @@ class FinancialModelBuilder:
 
         # Year-wise headers
         som_year_headers = ["Metric", "Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8"]
-        for col, header in enumerate(som_year_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, som_year_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         self.row_refs["som_start"] = row
@@ -698,8 +706,7 @@ class FinancialModelBuilder:
         row += 1
 
         # Revenue by Stream section header
-        ws.cell(row, 1).value = "REVENUE BY STREAM ($M)"
-        ws.cell(row, 1).font = Font(bold=True, italic=True)
+        style_category_header(ws, row, "REVENUE BY STREAM ($M)")
         row += 1
 
         # Individual revenue streams
@@ -814,14 +821,11 @@ class FinancialModelBuilder:
         row += 1
 
         bench_headers = ["Metric", "Value", "Unit", "Source [Ref#]", "Notes"]
-        for col, header in enumerate(bench_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, bench_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         # Customer Acquisition section
-        ws.cell(row, 1).value = "CUSTOMER ACQUISITION"
-        ws.cell(row, 1).font = Font(bold=True)
+        style_category_header(ws, row, "CUSTOMER ACQUISITION")
         row += 1
 
         plg_cac_row = row
@@ -866,8 +870,7 @@ class FinancialModelBuilder:
         row += 2
 
         # Lifetime Value section
-        ws.cell(row, 1).value = "LIFETIME VALUE (LTV)"
-        ws.cell(row, 1).font = Font(bold=True)
+        style_category_header(ws, row, "LIFETIME VALUE (LTV)")
         row += 1
 
         # Churn rates for LTV calculation
@@ -966,8 +969,7 @@ class FinancialModelBuilder:
         row += 2
 
         # LTV:CAC Ratios section
-        ws.cell(row, 1).value = "LTV:CAC RATIOS"
-        ws.cell(row, 1).font = Font(bold=True)
+        style_category_header(ws, row, "LTV:CAC RATIOS")
         row += 1
 
         # LTV:CAC - FORMULAS
@@ -1006,8 +1008,7 @@ class FinancialModelBuilder:
         row += 2
 
         # Gross Margins section
-        ws.cell(row, 1).value = "GROSS MARGINS"
-        ws.cell(row, 1).font = Font(bold=True)
+        style_category_header(ws, row, "GROSS MARGINS")
         row += 1
 
         sw_gm_row = row
@@ -1072,9 +1073,7 @@ class FinancialModelBuilder:
         row += 1
 
         cagr_headers = ["Market Segment", "CAGR", "Period", "Source [Ref#]", "Notes"]
-        for col, header in enumerate(cagr_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, cagr_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         cagr_data = [
@@ -1152,9 +1151,7 @@ class FinancialModelBuilder:
             "Sector",
             "Source [Ref#]",
         ]
-        for col, header in enumerate(policy_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, policy_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         policy_data = [
@@ -1198,9 +1195,7 @@ class FinancialModelBuilder:
         row += 1
 
         comp_headers = ["Company", "Revenue ($M)", "Segment", "Key Metric", "Source"]
-        for col, header in enumerate(comp_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, comp_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         comp_data = [
@@ -1245,9 +1240,7 @@ class FinancialModelBuilder:
         row += 2
 
         source_headers = ["Ref#", "Source Name", "Data Point", "Value", "URL"]
-        for col, header in enumerate(source_headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, source_headers, bg=Colors.MEDIUM_BLUE)
         row += 1
 
         # Full source citations with URLs
@@ -1779,9 +1772,7 @@ class FinancialModelBuilder:
 
         # Revenue headers
         headers = ["Stream", "Price", "Unit"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=3 + self.num_years)
         row += 1
 
         # Revenue stream data
@@ -1894,9 +1885,7 @@ class FinancialModelBuilder:
 
         # Headers
         headers = ["Department", "Avg Salary"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col))
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, end_col=2 + self.num_years)
         row += 1
 
         # Headcount data
@@ -1992,9 +1981,7 @@ class FinancialModelBuilder:
 
         # Headers
         headers = ["Revenue Stream", "Unit"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col))
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, end_col=2 + self.num_years)
         row += 1
 
         # Revenue calculations per stream
@@ -2223,9 +2210,7 @@ class FinancialModelBuilder:
 
         # Headers
         headers = ["Line Item", "Unit"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col))
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, end_col=2 + self.num_years)
         row += 1
 
         # Revenue
@@ -2440,9 +2425,7 @@ class FinancialModelBuilder:
 
         # Headers
         headers = ["Line Item", "Unit"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col))
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, end_col=2 + self.num_years)
         row += 1
 
         # Operating Activities
@@ -2637,9 +2620,7 @@ class FinancialModelBuilder:
 
         # Headers
         headers = ["Line Item", "Unit"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col))
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, end_col=2 + self.num_years)
         row += 1
 
         # ASSETS
@@ -2821,9 +2802,7 @@ class FinancialModelBuilder:
 
         # Headers
         headers = ["Metric", "Unit"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col))
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, end_col=2 + self.num_years)
         row += 1
 
         # Revenue Metrics
@@ -2958,9 +2937,7 @@ class FinancialModelBuilder:
         row += 1
 
         headers = ["Metric", "Downside (-20%)", "Base Case", "Upside (+20%)"]
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=4)
         row += 1
 
         ws.cell(row, 1).value = "Year 8 Revenue"
@@ -3074,9 +3051,7 @@ class FinancialModelBuilder:
         row += 1
 
         headers = ["Round", "Amount", "Pre-Money", "Post-Money", "Dilution"]
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=5)
         row += 1
 
         funding = self.config.get("funding", {})
@@ -3132,9 +3107,7 @@ class FinancialModelBuilder:
 
         # Revenue data for charts
         headers = ["Metric"] + get_year_headers(self.num_years)
-        for col, header in enumerate(headers, 1):
-            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
-            ws.cell(row, col).value = header
+        style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=1 + self.num_years)
         row += 1
 
         ws.cell(row, 1).value = "Revenue"

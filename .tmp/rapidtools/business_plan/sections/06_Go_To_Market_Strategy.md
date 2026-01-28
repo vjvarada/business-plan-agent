@@ -559,6 +559,40 @@ These partners already sell SOLIDWORKS, CAM software, and 3D printing solutions 
 
 ---
 
+## Defense Sector GTM Strategy
+
+### Strategic Opportunity: ₹1.75 Lakh Crore Atmanirbhar Bharat
+
+The Indian defense sector is a **high-value, relationship-driven vertical** where Applied Additive has unique access:
+
+| Asset | Value |
+| ----- | ----- |
+| **Founders' Defense Background** | Both founders come from defense families; natural familiarity with procurement culture |
+| **Defense GTM Advisor** | Debesh Sharma—17 years Indian Navy (Commanding Officer, missile corvette; Fleet Nav Officer, 21 ships); Silicon Valley VC; Fortune 100/500 consultancy |
+| **Active Sales** | Vijay already selling 3D printers to Indian Army; Fracktal Works leading Navy indigenization projects |
+
+### Defense Target Accounts & Revenue
+
+| Segment | Target Organizations | Opportunity | Timeline |
+| ------- | -------------------- | ----------- | -------- |
+| **Navy Indigenization** | Western/Eastern/Southern Naval Commands | $5-15M (Russian vessel spare parts) | Y1-Y5 |
+| **Naval Shipyards** | Mazagon Dock, Cochin Shipyard, GRSE | $2-5M/shipyard | Y2-Y4 |
+| **Aerospace/HAL** | HAL Bangalore, Nashik, Korwa | $3-8M (Tejas: 5,000+ jigs) | Y2-Y5 |
+| **Defense PSUs** | BEL, BEML, BDL | $1-3M each | Y3-Y5 |
+| **Private Defense** | L&T, Tata Advanced Systems, Bharat Forge | $2-5M each | Y3-Y6 |
+
+**Total Defense Opportunity:** $25-50M over 5 years (~10% of revenue)
+
+### Defense GTM Phases
+
+| Phase | Timeline | Focus | Target Revenue |
+| ----- | -------- | ----- | -------------- |
+| **1** | Y1-Y2 | Navy indigenization PoCs | $200K-800K |
+| **2** | Y2-Y4 | Shipyards + HAL expansion | $3-8M cumulative |
+| **3** | Y4-Y6 | PSUs + private defense | $15-25M cumulative |
+
+---
+
 ## Geographic Expansion: Channel-Led Rollout
 
 ### Phase 1 (Years 1-2): India + Southeast Asia
@@ -582,7 +616,7 @@ These partners already sell SOLIDWORKS, CAM software, and 3D printing solutions 
 
 **Defense Sector Opportunity (Strategic Advantage):**
 
-CTO Atirav Seth's father, **Rear Admiral Ravnish Seth (Indian Navy)**, provides strategic access to India's ₹1.75 lakh crore (~$21B) defense manufacturing ecosystem under Atmanirbhar Bharat:
+Both founders come from defense families, and Vijay has **active defense sales experience**—selling 3D printers to the Indian Army and currently leading Navy indigenization projects through Fracktal Works. Combined with Defense GTM Advisor Debesh Sharma, this positions Applied Additive for India's ₹1.75 lakh crore (~$21B) defense manufacturing ecosystem under Atmanirbhar Bharat:
 
 | **Defense Vertical**       | **Opportunity**                                          | **Tooling Demand**              |
 | -------------------------- | -------------------------------------------------------- | ------------------------------- |
@@ -603,7 +637,7 @@ CTO Atirav Seth's father, **Rear Admiral Ravnish Seth (Indian Navy)**, provides 
 
 **Why This Matters:**
 
-- Defense procurement is relationship-driven—Rear Admiral connections bypass months of cold outreach
+- Defense procurement is relationship-driven—founders' defense backgrounds + Debesh Sharma's network provide warm introductions
 - HAL and naval shipyards face the same tooling engineer shortage as automotive
 - **Already in the door**: Fracktal's indigenization work validates the defense go-to-market strategy
 - RapidTools' IATF 16949 compliance transfers to aerospace AS9100 with minimal additions
