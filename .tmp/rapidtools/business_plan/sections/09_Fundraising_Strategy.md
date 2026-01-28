@@ -57,6 +57,61 @@ The $3M seed provides **30-36 months of runway**--significantly exceeding the YC
 | **Contingency**       | $300K     | 10%      | Market uncertainty buffer                      |
 | **Total**             | **$3.0M** | **100%** |                                                |
 
+### Engineering Budget Math: Why $1.2M Delivers 10 Tools
+
+> **The concern:** "Can you really deliver 10 production tools with $1.2M in engineering spend?"
+>
+> **The answer:** Yes—because we're not building 10 tools from scratch. We're building **one platform** with **10 UX flows**.
+
+**What the $1.2M Funds (18 Months):**
+
+| Line Item | Monthly | 18-Month Total | Notes |
+|-----------|---------|----------------|-------|
+| **Core Team (6-8 engineers)** | $50K | $900K | India: $6-8K/engineer avg loaded cost |
+| **CTO Hire (M6+)** | $12K | $144K | 12 months at senior India rate |
+| **Cloud/Tools** | $5K | $90K | AWS, GitHub, Figma, AI APIs |
+| **Contractor Burst** | $3K | $54K | Specialist help (Gen AI, UX) |
+| **Buffer** | — | $12K | Unexpected costs |
+| **TOTAL** | | **$1.2M** | |
+
+**Development Hours Available:**
+- 8 engineers × 1,700 productive hours/year × 1.5 years = **20,400 hours**
+- CTO (12 months) × 1,700 hours = **1,700 hours**
+- **Total: 22,100 engineering hours**
+
+**Development Hours Required (AI-Assisted):**
+
+| Component | Hours | Notes |
+|-----------|-------|-------|
+| **Platform Foundation** | 0 | Already built (working demos) |
+| **Tier 1: 5 Tools** | 375 hrs | 75 hrs/tool (85-95% reuse) |
+| **Tier 2: 3 Tools** | 300 hrs | 100 hrs/tool (70-75% reuse) |
+| **Tier 3: 2 Tools** | 300 hrs | 150 hrs/tool (55-60% reuse) |
+| **Platform Hardening** | 2,000 hrs | Security, scale, enterprise features |
+| **Customer Integration** | 1,500 hrs | Honda/TVS/Toyota customizations |
+| **QA & Testing** | 2,000 hrs | Automated + manual testing |
+| **DevOps & Infrastructure** | 1,000 hrs | CI/CD, monitoring, deployment |
+| **Documentation & Training** | 500 hrs | User guides, API docs |
+| **TOTAL REQUIRED** | **7,975 hrs** | |
+
+**Margin of Safety:**
+- Hours available: 22,100
+- Hours required: 7,975
+- **Buffer: 14,125 hours (64% margin)**
+
+This buffer absorbs:
+- Scope creep and iteration cycles
+- Customer-driven feature requests
+- Unexpected technical challenges
+- Team ramp-up time
+
+**Why This Math Works:**
+
+1. **Platform is 80% built:** Working demos prove the hard parts (CAD kernels, mesh ops, UX framework) are done
+2. **AI-native development:** 50-65% faster per-tool development (see Technology Architecture)
+3. **India cost advantage:** $6-8K/month loaded cost vs. $15-20K in US = 2.5× more hours per dollar
+4. **Founder technical depth:** CEO built the computational geometry engine himself—no learning curve
+
 ### Milestones to Series A
 
 | Milestone            | Target                                                                      | Timeline            |

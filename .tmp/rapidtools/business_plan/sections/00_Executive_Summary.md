@@ -206,6 +206,8 @@ Four forces are converging simultaneously—this window won't last forever:
 **Conservative commitment:** 5 tools by M6, 8 tools by M12, 10 tools by M18.
 **Aggressive target:** All 10 tools by M12 (achievable with CTO hire + AI-native development).
 
+> **Budget Proof:** $1.2M engineering budget provides 22,100 developer hours (8 engineers + CTO, 18 months, India costs). Tools require only 7,975 hours total (975 hours for 10 tools + 7,000 hours for platform hardening/QA/DevOps). That's a **64% buffer** for iteration and customer requests. See [Fundraising Strategy](09_Fundraising_Strategy.md) for detailed math.
+
 ### AI-Native Development Acceleration
 
 RapidTools is building an AI-native company from Day 1, using Claude Opus 4.5 and coding agents:
