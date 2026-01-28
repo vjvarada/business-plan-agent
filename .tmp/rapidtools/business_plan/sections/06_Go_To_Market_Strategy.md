@@ -565,31 +565,31 @@ These partners already sell SOLIDWORKS, CAM software, and 3D printing solutions 
 
 The Indian defense sector is a **high-value, relationship-driven vertical** where Applied Additive has unique access:
 
-| Asset | Value |
-| ----- | ----- |
-| **Founders' Defense Background** | Both founders come from defense families; natural familiarity with procurement culture |
-| **Defense GTM Advisor** | Debesh Sharma—17 years Indian Navy (Commanding Officer, missile corvette; Fleet Nav Officer, 21 ships); Silicon Valley VC; Fortune 100/500 consultancy |
-| **Active Sales** | Vijay already selling 3D printers to Indian Army; Fracktal Works leading Navy indigenization projects |
+| Asset                            | Value                                                                                                                                                  |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Founders' Defense Background** | Both founders come from defense families; natural familiarity with procurement culture                                                                 |
+| **Defense GTM Advisor**          | Debesh Sharma—17 years Indian Navy (Commanding Officer, missile corvette; Fleet Nav Officer, 21 ships); Silicon Valley VC; Fortune 100/500 consultancy |
+| **Active Sales**                 | Vijay already selling 3D printers to Indian Army; Fracktal Works leading Navy indigenization projects                                                  |
 
 ### Defense Target Accounts & Revenue
 
-| Segment | Target Organizations | Opportunity | Timeline |
-| ------- | -------------------- | ----------- | -------- |
-| **Navy Indigenization** | Western/Eastern/Southern Naval Commands | $5-15M (Russian vessel spare parts) | Y1-Y5 |
-| **Naval Shipyards** | Mazagon Dock, Cochin Shipyard, GRSE | $2-5M/shipyard | Y2-Y4 |
-| **Aerospace/HAL** | HAL Bangalore, Nashik, Korwa | $3-8M (Tejas: 5,000+ jigs) | Y2-Y5 |
-| **Defense PSUs** | BEL, BEML, BDL | $1-3M each | Y3-Y5 |
-| **Private Defense** | L&T, Tata Advanced Systems, Bharat Forge | $2-5M each | Y3-Y6 |
+| Segment                 | Target Organizations                     | Opportunity                         | Timeline |
+| ----------------------- | ---------------------------------------- | ----------------------------------- | -------- |
+| **Navy Indigenization** | Western/Eastern/Southern Naval Commands  | $5-15M (Russian vessel spare parts) | Y1-Y5    |
+| **Naval Shipyards**     | Mazagon Dock, Cochin Shipyard, GRSE      | $2-5M/shipyard                      | Y2-Y4    |
+| **Aerospace/HAL**       | HAL Bangalore, Nashik, Korwa             | $3-8M (Tejas: 5,000+ jigs)          | Y2-Y5    |
+| **Defense PSUs**        | BEL, BEML, BDL                           | $1-3M each                          | Y3-Y5    |
+| **Private Defense**     | L&T, Tata Advanced Systems, Bharat Forge | $2-5M each                          | Y3-Y6    |
 
 **Total Defense Opportunity:** $25-50M over 5 years (~10% of revenue)
 
 ### Defense GTM Phases
 
-| Phase | Timeline | Focus | Target Revenue |
-| ----- | -------- | ----- | -------------- |
-| **1** | Y1-Y2 | Navy indigenization PoCs | $200K-800K |
-| **2** | Y2-Y4 | Shipyards + HAL expansion | $3-8M cumulative |
-| **3** | Y4-Y6 | PSUs + private defense | $15-25M cumulative |
+| Phase | Timeline | Focus                     | Target Revenue     |
+| ----- | -------- | ------------------------- | ------------------ |
+| **1** | Y1-Y2    | Navy indigenization PoCs  | $200K-800K         |
+| **2** | Y2-Y4    | Shipyards + HAL expansion | $3-8M cumulative   |
+| **3** | Y4-Y6    | PSUs + private defense    | $15-25M cumulative |
 
 ---
 

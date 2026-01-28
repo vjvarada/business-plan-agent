@@ -258,13 +258,13 @@ This engagement validates the RapidTools GTM hypothesis: **hardware sales create
 
 **Defense Sector Pipeline (Active Engagement):**
 
-| Customer                      | Relationship                   | Status                              | Potential Value |
-| ----------------------------- | ------------------------------ | ----------------------------------- | --------------- |
-| **Indian Navy Indigenization Unit** | Fracktal Works direct engagement | **Active** — Helping indigenize aging Russian vessel parts | $2-5M (5 year) |
-| **Indian Army**               | Active Fracktal customer       | 3D printer sales ongoing            | $500K+ pipeline |
-| **Naval Dockyards**           | Mazagon Dock, Cochin, GRSE     | Warm intro via Debesh Sharma        | $1-3M pipeline  |
-| **HAL Aerospace**             | Via defense network            | Discovery conversations             | $500K+ pipeline |
-| **DRDO Labs**                 | Via defense network            | Warm intros available               | $300K+ pipeline |
+| Customer                            | Relationship                     | Status                                                     | Potential Value |
+| ----------------------------------- | -------------------------------- | ---------------------------------------------------------- | --------------- |
+| **Indian Navy Indigenization Unit** | Fracktal Works direct engagement | **Active** — Helping indigenize aging Russian vessel parts | $2-5M (5 year)  |
+| **Indian Army**                     | Active Fracktal customer         | 3D printer sales ongoing                                   | $500K+ pipeline |
+| **Naval Dockyards**                 | Mazagon Dock, Cochin, GRSE       | Warm intro via Debesh Sharma                               | $1-3M pipeline  |
+| **HAL Aerospace**                   | Via defense network              | Discovery conversations                                    | $500K+ pipeline |
+| **DRDO Labs**                       | Via defense network              | Warm intros available                                      | $300K+ pipeline |
 
 > **🚢 Unique Traction: Indian Navy Indigenization**
 >

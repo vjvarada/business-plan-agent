@@ -140,7 +140,9 @@ def style_category_header(ws, row, text, end_col=10):
     # Fill all columns with light blue background
     for col in range(1, end_col + 1):
         ws.cell(row, col).fill = PatternFill(
-            start_color=Colors.LIGHT_BLUE, end_color=Colors.LIGHT_BLUE, fill_type="solid"
+            start_color=Colors.LIGHT_BLUE,
+            end_color=Colors.LIGHT_BLUE,
+            fill_type="solid",
         )
 
 
@@ -151,7 +153,9 @@ def style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=10):
         ws.cell(row, col).value = header
     # Fill remaining columns with same background
     for col in range(len(headers) + 1, end_col + 1):
-        ws.cell(row, col).fill = PatternFill(start_color=bg, end_color=bg, fill_type="solid")
+        ws.cell(row, col).fill = PatternFill(
+            start_color=bg, end_color=bg, fill_type="solid"
+        )
 
 
 # =============================================================================
@@ -1772,7 +1776,9 @@ class FinancialModelBuilder:
 
         # Revenue headers
         headers = ["Stream", "Price", "Unit"] + get_year_headers(self.num_years)
-        style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=3 + self.num_years)
+        style_column_headers(
+            ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=3 + self.num_years
+        )
         row += 1
 
         # Revenue stream data
@@ -3107,7 +3113,9 @@ class FinancialModelBuilder:
 
         # Revenue data for charts
         headers = ["Metric"] + get_year_headers(self.num_years)
-        style_column_headers(ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=1 + self.num_years)
+        style_column_headers(
+            ws, row, headers, bg=Colors.MEDIUM_BLUE, end_col=1 + self.num_years
+        )
         row += 1
 
         ws.cell(row, 1).value = "Revenue"

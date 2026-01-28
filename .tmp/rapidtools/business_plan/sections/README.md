@@ -10,13 +10,13 @@
 
 ## � Company Structure
 
-| Entity | What It Is | TAM | Status |
-|--------|-----------|-----|--------|
-| **Applied Additive** | Platform company—AI-driven intent-to-CAD with computational geometry | $140B+ (2030) | Parent company |
-| **RapidTools** | First product vertical—manufacturing tooling (fixtures, jigs, EOAT) | $42B → $65B | **◄ CURRENT FOCUS** |
-| Medical | Future vertical—dental, implants, surgical guides | $15B+ | Planned (Y4-Y6) |
-| Consumer | Future vertical—jewelry, eyewear, footwear | $6B+ | Planned (Y4-Y6) |
-| Architecture | Future vertical—models, restoration, fixtures | $2.5B+ | Planned (Y6+) |
+| Entity               | What It Is                                                           | TAM           | Status              |
+| -------------------- | -------------------------------------------------------------------- | ------------- | ------------------- |
+| **Applied Additive** | Platform company—AI-driven intent-to-CAD with computational geometry | $140B+ (2030) | Parent company      |
+| **RapidTools**       | First product vertical—manufacturing tooling (fixtures, jigs, EOAT)  | $42B → $65B   | **◄ CURRENT FOCUS** |
+| Medical              | Future vertical—dental, implants, surgical guides                    | $15B+         | Planned (Y4-Y6)     |
+| Consumer             | Future vertical—jewelry, eyewear, footwear                           | $6B+          | Planned (Y4-Y6)     |
+| Architecture         | Future vertical—models, restoration, fixtures                        | $2.5B+        | Planned (Y6+)       |
 
 > **You're investing in Applied Additive.** RapidTools proves the technology in the hardest domain. Same platform enables 3× TAM expansion.
 
@@ -45,15 +45,12 @@
 ## Reading Order for VCs
 
 **START HERE:**
+
 1. **00_Executive_Summary.md** - Complete overview with investment thesis
 2. **12_Adjacent_Markets_Expansion.md** - Platform vision and $140B+ TAM expansion
 3. **09_Fundraising_Strategy.md** - The ask: $3M Seed, exit scenarios, returns analysis
 
-**Deep Dives (as needed):**
-4. **01_Market_Drivers.md** - Why Now? ($2.14T government investment + robotics explosion)
-5. **04_Competitive_Analysis.md** - Trinckle comparison + 7 competitive moats
-6. **05_Customer_Validation.md** - Honda pilot + defense sector traction
-7. **07_Revenue_Model.md** - Multi-dependency moat architecture
+**Deep Dives (as needed):** 4. **01_Market_Drivers.md** - Why Now? ($2.14T government investment + robotics explosion) 5. **04_Competitive_Analysis.md** - Trinckle comparison + 7 competitive moats 6. **05_Customer_Validation.md** - Honda pilot + defense sector traction 7. **07_Revenue_Model.md** - Multi-dependency moat architecture
 
 ## Section Files Created
 
@@ -85,12 +82,12 @@
 
 ## Key Investment Thesis
 
-| Why Now? | Why Applied Additive? | Why This Team? |
-|----------|----------------------|----------------|
-| $2.14T manufacturing investment creating demand | Platform company, not point solution | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO) |
-| 540% growth in fixture demand by 2030 | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner |
-| 60% of tooling engineers retiring | India/SEA beachhead ($2.88B untapped SAM) | Defense family backgrounds + active Army/Navy sales |
-| 78% of 3D printers underutilized | $140B+ TAM with adjacent markets | Working demos already built |
+| Why Now?                                        | Why Applied Additive?                     | Why This Team?                                           |
+| ----------------------------------------------- | ----------------------------------------- | -------------------------------------------------------- |
+| $2.14T manufacturing investment creating demand | Platform company, not point solution      | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO) |
+| 540% growth in fixture demand by 2030           | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner                        |
+| 60% of tooling engineers retiring               | India/SEA beachhead ($2.88B untapped SAM) | Defense family backgrounds + active Army/Navy sales      |
+| 78% of 3D printers underutilized                | $140B+ TAM with adjacent markets          | Working demos already built                              |
 
 ## Key Financial Summary (Year 8)
 
