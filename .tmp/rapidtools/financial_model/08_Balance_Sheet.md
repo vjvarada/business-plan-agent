@@ -1,6 +1,6 @@
 ﻿# 08 - Balance Sheet
 
-> **Last Updated:** 2026-01-28  
+> **Last Updated:** 2026-01-29  
 > **Sheet Position:** 8 of 14  
 > **Status:** Complete
 
@@ -57,8 +57,8 @@ This sheet automatically validates that the equation balances (Row 16 = 0).
 | **Creditors (AP)**      | $18K    | $91K     | $253K    | $555K    | $1,070K  | $1,715K  |
 | **Equity**              | $3,000K | $3,000K  | $13,000K | $13,000K | $38,000K | $38,000K |
 | **Debt**                | $0K     | $0K      | $0K      | $0K      | $0K      | $0K      |
-| **Retained Earnings**   | -$798K  | -$1,730K | -$2,631K | -$3,346K | -$2,206K | $1,517K  |
-| **Total Liab & Equity** | $2,220K | $1,361K  | $10,622K | $10,209K | $36,864K | $41,232K |
+| **Retained Earnings**   | -$799K  | -$1,733K | -$2,632K | -$3,332K | -$2,201K | $1,526K  |
+| **Total Liab & Equity** | $2,219K | $1,358K  | $10,621K | $10,223K | $36,869K | $41,241K |
 
 ### Validation
 

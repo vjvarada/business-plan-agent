@@ -1,8 +1,8 @@
 ﻿# 09 - Summary (KPI Dashboard)
 
-> **Last Updated:** 2026-01-28  
+> **Last Updated:** 2026-01-29  
 > **Sheet Position:** 9 of 14  
-> **Status:** Complete
+> **Status:** Complete - Aligned with P&L
 
 ---
 
@@ -33,28 +33,28 @@ The Summary sheet provides a **KPI Dashboard** consolidating key metrics from al
 
 | Metric             | Unit | Y0    | Y1      | Y2      | Y3       | Y4       | Y5       |
 | ------------------ | ---- | ----- | ------- | ------- | -------- | -------- | -------- |
-| **Total Revenue**  | $    | $496K | $2,482K | $7,001K | $15,050K | $30,111K | $50,179K |
-| **Revenue Growth** | %    | -     | 400%    | 182%    | 115%     | 100%     | 67%      |
+| **Total Revenue**  | $    | $498K | $2,470K | $6,988K | $15,109K | $30,044K | $50,068K |
+| **Revenue Growth** | %    | -     | 396%    | 183%    | 116%     | 99%      | 67%      |
 
 ### Profitability Section
 
 | Metric                | Unit | Y0     | Y1      | Y2      | Y3      | Y4       | Y5       |
 | --------------------- | ---- | ------ | ------- | ------- | ------- | -------- | -------- |
-| **Gross Profit**      | $    | $280K  | $1,400K | $3,920K | $8,250K | $16,980K | $29,140K |
-| **Gross Margin**      | %    | 56%    | 56%     | 56%     | 55%     | 57%      | 58%      |
-| **EBITDA**            | $    | -$650K | -$880K  | -$850K  | -$610K  | $1,980K  | $6,000K  |
-| **EBITDA Margin**     | %    | -130%  | -35%    | -12%    | -4%     | 7%       | 12%      |
-| **Net Income**        | $    | -$685K | -$950K  | -$990K  | -$820K  | $1,106K  | $3,675K  |
-| **Net Profit Margin** | %    | -137%  | -38%    | -14%    | -5%     | 4%       | 7%       |
+| **Gross Profit**      | $    | $277K  | $1,368K | $3,909K | $8,357K | $17,028K | $29,208K |
+| **Gross Margin**      | %    | 56%    | 55%     | 56%     | 55%     | 57%      | 58%      |
+| **EBITDA**            | $    | -$763K | -$862K  | -$761K  | -$505K  | $2,028K  | $6,068K  |
+| **EBITDA Margin**     | %    | -153%  | -35%    | -11%    | -3%     | 7%       | 12%      |
+| **Net Income**        | $    | -$798K | -$932K  | -$901K  | -$715K  | $1,140K  | $3,723K  |
+| **Net Profit Margin** | %    | -160%  | -38%    | -13%    | -5%     | 4%       | 7%       |
 
 **Note:** Gross margin stays stable at 56-58% (not improving) — reflects fixed COGS% per stream with services having structural margin limits (materials + labor floor). EBITDA breakeven in Y4, Net Income positive in Y4.
 
 ### Cash & Funding Section
 
-| Metric                  | Unit | Y0      | Y1     | Y2      | Y3      | Y4      | Y5       |
-| ----------------------- | ---- | ------- | ------ | ------- | ------- | ------- | -------- |
-| **Cash Balance**        | $    | $1,168K | $342K  | $3,977K | $4,457K | $7,962K | $16,776K |
-| **Operating Cash Flow** | $    | -$757K  | -$726K | -$265K  | $580K   | $3,605K | $8,914K  |
+| Metric                  | Unit | Y0      | Y1       | Y2      | Y3       | Y4       | Y5       |
+| ----------------------- | ---- | ------- | -------- | ------- | -------- | -------- | -------- |
+| **Cash Balance**        | $    | $2,073K | $788K    | $9,234K | $7,495K  | $31,800K | $33,053K |
+| **Operating Cash Flow** | $    | -$827K  | -$1,085K | -$1,254K| -$1,339K | -$95K    | $2,053K  |
 
 ### Customers Section
 
@@ -84,12 +84,12 @@ The Summary sheet provides a **KPI Dashboard** consolidating key metrics from al
 
 | Stream                    | Y0    | Y1      | Y2      | Y3      | Y4       | Y5       |
 | ------------------------- | ----- | ------- | ------- | ------- | -------- | -------- |
-| **Software Subscription** | $279K | $1,400K | $3,920K | $8,100K | $17,100K | $30,000K |
-| **3D Printer Sales**      | $56K  | $245K   | $595K   | $1,197K | $2,394K  | $3,500K  |
-| **Consumables Materials** | $10K  | $50K    | $100K   | $150K   | $300K    | $500K    |
-| **AMC Spares**            | $2K   | $8K     | $23K    | $53K    | $112K    | $200K    |
+| **Software Subscription** | $281K | $1,388K | $3,906K | $8,159K | $17,037K | $29,888K |
+| **3D Printer Sales**      | $56K  | $245K   | $630K   | $1,197K | $2,394K  | $3,500K  |
+| **Consumables Materials** | $10K  | $50K    | $70K    | $150K   | $300K    | $500K    |
+| **AMC Spares**            | $1K   | $7K     | $23K    | $53K    | $113K    | $200K    |
 | **Managed Services**      | $0K   | $30K    | $330K   | $1,200K | $2,100K  | $3,480K  |
-| **Job Work Services**     | $150K | $750K   | $2,030K | $4,350K | $8,100K  | $12,500K |
+| **Job Work Services**     | $150K | $750K   | $2,029K | $4,350K | $8,100K  | $12,500K |
 
 ---
 

@@ -1,6 +1,6 @@
 ﻿# 12 - Break-even Analysis
 
-> **Last Updated:** 2026-01-28  
+> **Last Updated:** 2026-01-29  
 > **Sheet Position:** 12 of 14  
 > **Status:** Complete
 
@@ -36,20 +36,20 @@ The Break-even Analysis calculates:
 
 | Metric                    | Y0    | Y1      | Y2      | Y3       | Y4       | Y5       |
 | ------------------------- | ----- | ------- | ------- | -------- | -------- | -------- |
-| **Total Revenue**         | $500K | $2,500K | $7,000K | $15,000K | $30,000K | $50,000K |
-| **Variable Costs (COGS)** | $220K | $1,100K | $3,080K | $6,750K  | $13,020K | $20,860K |
-| **Contribution Margin**   | $280K | $1,400K | $3,920K | $8,250K  | $16,980K | $29,140K |
-| **CM %**                  | 56.0% | 56.0%   | 56.0%   | 55.0%    | 56.6%    | 58.3%    |
-| **Fixed Costs**           | $930K | $2,280K | $4,770K | $8,860K  | $15,000K | $23,140K |
+| **Total Revenue**         | $498K | $2,470K | $6,988K | $15,109K | $30,044K | $50,068K |
+| **Variable Costs (COGS)** | $221K | $1,102K | $3,079K | $6,752K  | $13,016K | $20,860K |
+| **Contribution Margin**   | $277K | $1,368K | $3,909K | $8,357K  | $17,028K | $29,208K |
+| **CM %**                  | 55.6% | 55.4%   | 55.9%   | 55.3%    | 56.7%    | 58.3%    |
+| **Fixed Costs**           | $1,040K | $2,230K | $4,670K | $8,862K  | $15,000K | $23,140K |
 
 ### Break-even Analysis
 
 | Metric                   | Y0       | Y1       | Y2       | Y3       | Y4       | Y5       |
 | ------------------------ | -------- | -------- | -------- | -------- | -------- | -------- |
-| **Break-even Revenue**   | $1,661K  | $4,071K  | $8,518K  | $16,109K | $26,501K | $39,692K |
-| **Actual Revenue**       | $500K    | $2,500K  | $7,000K  | $15,000K | $30,000K | $50,000K |
-| **Margin of Safety ($)** | -$1,161K | -$1,571K | -$1,518K | -$1,109K | $3,499K  | $10,308K |
-| **Margin of Safety (%)** | -232%    | -63%     | -22%     | -7%      | 12%      | 21%      |
+| **Break-even Revenue**   | $1,871K  | $4,026K  | $8,354K  | $16,026K | $26,455K | $39,693K |
+| **Actual Revenue**       | $498K    | $2,470K  | $6,988K  | $15,109K | $30,044K | $50,068K |
+| **Margin of Safety ($)** | -$1,373K | -$1,556K | -$1,366K | -$917K   | $3,589K  | $10,375K |
+| **Margin of Safety (%)** | -276%    | -63%     | -20%     | -6%      | 12%      | 21%      |
 | **Break-even Achieved?** | NO       | NO       | NO       | NO       | YES      | YES      |
 
 ### Operating Leverage
@@ -63,9 +63,9 @@ The Break-even Analysis calculates:
 
 | Metric                   | Y0     | Y1     | Y2     | Y3     | Y4      | Y5      |
 | ------------------------ | ------ | ------ | ------ | ------ | ------- | ------- |
-| **EBITDA**               | -$650K | -$880K | -$850K | -$610K | $1,980K | $6,000K |
+| **EBITDA**               | -$763K | -$862K | -$761K | -$505K | $2,028K | $6,068K |
 | **EBITDA Positive?**     | NO     | NO     | NO     | NO     | YES     | YES     |
-| **Net Income**           | -$685K | -$950K | -$990K | -$820K | $1,106K | $3,675K |
+| **Net Income**           | -$798K | -$932K | -$901K | -$715K | $1,140K | $3,723K |
 | **Net Income Positive?** | NO     | NO     | NO     | NO     | YES     | YES     |
 
 ---

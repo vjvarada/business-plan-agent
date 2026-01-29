@@ -1,6 +1,6 @@
 ﻿# 13 - Funding & Cap Table
 
-> **Last Updated:** 2026-01-28  
+> **Last Updated:** 2026-01-29  
 > **Sheet Position:** 13 of 14  
 > **Status:** Complete
 
@@ -34,40 +34,42 @@ The Funding & Cap Table sheet tracks:
 
 | Metric | Y0 | Y1 | Y2 | Y3 | Y4 | Y5 |
 |--------|----|----|----|----|----|----|
-| **Equity Raised** | $2,000K | $0K | $4,000K | $0K | $0K | $0K |
-| **Cumulative Equity** | $2,000K | $2,000K | $6,000K | $6,000K | $6,000K | $6,000K |
+| **Equity Raised** | $3,000K | $0K | $10,000K | $0K | $25,000K | $0K |
+| **Cumulative Equity** | $3,000K | $3,000K | $13,000K | $13,000K | $38,000K | $38,000K |
 | **Debt Raised** | $0K | $0K | $0K | $0K | $0K | $0K |
 | **Cumulative Debt** | $0K | $0K | $0K | $0K | $0K | $0K |
 
 ### Round Details
 
-| Metric | Seed (Y0) | Series A (Y2) |
-|--------|-----------|---------------|
-| **Pre-money Valuation** | $5,000K | $15,000K |
-| **Post-money Valuation** | $7,000K | $19,000K |
-| **Round Ownership %** | 28.6% | 21.1% |
-| **Amount Raised** | $2,000K | $4,000K |
+| Metric | Seed (Y0) | Series A (Y2) | Series B (Y4) |
+|--------|-----------|---------------|---------------|
+| **Pre-money Valuation** | $12,000K | $40,000K | $100,000K |
+| **Post-money Valuation** | $15,000K | $50,000K | $125,000K |
+| **Round Ownership %** | 20.0% | 20.0% | 20.0% |
+| **Amount Raised** | $3,000K | $10,000K | $25,000K |
 
 ### Cap Table (Ownership %)
 
 | Stakeholder | Y0 | Y1 | Y2 | Y3 | Y4 | Y5 |
 |-------------|----|----|----|----|----|----|
-| **Founders** | 71.4% | 71.4% | 56.4% | 56.4% | 56.4% | 56.4% |
-| **Seed Investors** | 28.6% | 28.6% | 22.6% | 22.6% | 22.6% | 22.6% |
-| **Series A Investors** | 0.0% | 0.0% | 21.1% | 21.1% | 21.1% | 21.1% |
-| **Series B Investors** | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| **Founders** | 80.0% | 80.0% | 64.0% | 64.0% | 51.2% | 51.2% |
+| **Seed Investors** | 20.0% | 20.0% | 16.0% | 16.0% | 12.8% | 12.8% |
+| **Series A Investors** | 0.0% | 0.0% | 20.0% | 20.0% | 16.0% | 16.0% |
+| **Series B Investors** | 0.0% | 0.0% | 0.0% | 0.0% | 20.0% | 20.0% |
 | **Total** | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
 
 ### Investor Returns (Conservative - 5x Revenue Exit)
 
 | Metric | Exit Y5 |
 |--------|---------|
-| **Exit Valuation (5x Rev)** | $250,897K |
-| **Seed Investor Return** | $56,593K |
-| **Seed MOIC** | 28.3x |
-| **Series A Return** | $52,821K |
-| **Series A MOIC** | 13.2x |
-| **Founder Value** | $141,483K |
+| **Exit Valuation (5x Rev)** | $250,340K |
+| **Seed Investor Return** | $32,044K |
+| **Seed MOIC** | 10.7x |
+| **Series A Return** | $40,054K |
+| **Series A MOIC** | 4.0x |
+| **Series B Return** | $50,068K |
+| **Series B MOIC** | 2.0x |
+| **Founder Value** | $128,174K |
 
 ---
 
@@ -77,32 +79,50 @@ The Funding & Cap Table sheet tracks:
 
 | | Before | After |
 |---|--------|-------|
-| Founders | 100.0% | 71.4% |
-| Seed | 0.0% | 28.6% |
+| Founders | 100.0% | 80.0% |
+| Seed | 0.0% | 20.0% |
 | Total | 100.0% | 100.0% |
 
 **Calculation:**
-- Pre-money: $5.0M
-- Investment: $2.0M
-- Post-money: $7.0M
-- Seed Ownership: $2M / $7M = **28.6%**
+- Pre-money: $12.0M
+- Investment: $3.0M
+- Post-money: $15.0M
+- Seed Ownership: $3M / $15M = **20.0%**
 
 ### Series A (Y2)
 
 | | Before | After |
 |---|--------|-------|
-| Founders | 71.4% | 56.4% |
-| Seed | 28.6% | 22.6% |
-| Series A | 0.0% | 21.1% |
+| Founders | 80.0% | 64.0% |
+| Seed | 20.0% | 16.0% |
+| Series A | 0.0% | 20.0% |
 | Total | 100.0% | 100.0% |
 
 **Calculation:**
-- Pre-money: $15.0M
-- Investment: $4.0M
-- Post-money: $19.0M
-- Series A Ownership: $4M / $19M = **21.1%**
-- Dilution Factor: $15M / $19M = 78.9%
-- Existing Owners  78.9%
+- Pre-money: $40.0M
+- Investment: $10.0M
+- Post-money: $50.0M
+- Series A Ownership: $10M / $50M = **20.0%**
+- Dilution Factor: $40M / $50M = 80.0%
+- Existing Owners × 80.0%
+
+### Series B (Y4)
+
+| | Before | After |
+|---|--------|-------|
+| Founders | 64.0% | 51.2% |
+| Seed | 16.0% | 12.8% |
+| Series A | 20.0% | 16.0% |
+| Series B | 0.0% | 20.0% |
+| Total | 100.0% | 100.0% |
+
+**Calculation:**
+- Pre-money: $100.0M
+- Investment: $25.0M
+- Post-money: $125.0M
+- Series B Ownership: $25M / $125M = **20.0%**
+- Dilution Factor: $100M / $125M = 80.0%
+- Existing Owners × 80.0%
 
 ---
 
@@ -146,29 +166,32 @@ C27 (Founder Value) = =C22 * C15
 
 ## Return Scenarios
 
-### At 5x Revenue Exit ($250.9M)
+### At 5x Revenue Exit ($250.3M)
 
 | Stakeholder | Investment | Return | MOIC |
 |-------------|------------|--------|------|
-| **Founders** | - | $141.5M | - |
-| **Seed** | $2.0M | $56.6M | **28.3x** |
-| **Series A** | $4.0M | $52.8M | **13.2x** |
+| **Founders** | - | $128.2M | - |
+| **Seed** | $3.0M | $32.0M | **10.7x** |
+| **Series A** | $10.0M | $40.1M | **4.0x** |
+| **Series B** | $25.0M | $50.1M | **2.0x** |
 
-### At 7x Revenue Exit ($351.3M)
-
-| Stakeholder | Investment | Return | MOIC |
-|-------------|------------|--------|------|
-| **Founders** | - | $198.1M | - |
-| **Seed** | $2.0M | $79.2M | **39.6x** |
-| **Series A** | $4.0M | $73.9M | **18.5x** |
-
-### At 10x Revenue Exit ($501.8M)
+### At 7x Revenue Exit ($350.5M)
 
 | Stakeholder | Investment | Return | MOIC |
 |-------------|------------|--------|------|
-| **Founders** | - | $283.0M | - |
-| **Seed** | $2.0M | $113.2M | **56.6x** |
-| **Series A** | $4.0M | $105.6M | **26.4x** |
+| **Founders** | - | $179.5M | - |
+| **Seed** | $3.0M | $44.9M | **15.0x** |
+| **Series A** | $10.0M | $56.1M | **5.6x** |
+| **Series B** | $25.0M | $70.1M | **2.8x** |
+
+### At 10x Revenue Exit ($500.7M)
+
+| Stakeholder | Investment | Return | MOIC |
+|-------------|------------|--------|------|
+| **Founders** | - | $256.4M | - |
+| **Seed** | $3.0M | $64.1M | **21.4x** |
+| **Series A** | $10.0M | $80.1M | **8.0x** |
+| **Series B** | $25.0M | $100.1M | **4.0x** |
 
 ---
 
@@ -178,17 +201,19 @@ C27 (Founder Value) = =C22 * C15
 
 | Round | Valuation | Multiple of Previous |
 |-------|-----------|---------------------|
-| Seed (Y0) | $7.0M post | - |
-| Series A (Y2) | $19.0M post | **2.7x** step-up |
-| Exit (Y5) | $250.9M | **13.2x** step-up |
+| Seed (Y0) | $15.0M post | - |
+| Series A (Y2) | $50.0M post | **3.3x** step-up |
+| Series B (Y4) | $125.0M post | **2.5x** step-up |
+| Exit (Y5) | $250.3M | **2.0x** step-up |
 
 ### Revenue-Based Milestones
 
 | Stage | Revenue | Implied Multiple | Valuation |
 |-------|---------|------------------|-----------|
-| Seed | $0.5M (Y0) | 14x ARR | $7M |
-| Series A | $7M (Y2) | 2.7x ARR | $19M |
-| Exit | $50M (Y5) | 5x Revenue | $251M |
+| Seed | $0.5M (Y0) | 30x ARR | $15M |
+| Series A | $7M (Y2) | 7.1x ARR | $50M |
+| Series B | $30M (Y4) | 4.2x ARR | $125M |
+| Exit | $50M (Y5) | 5x Revenue | $250M |
 
 ---
 

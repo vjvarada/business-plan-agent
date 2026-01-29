@@ -1,6 +1,6 @@
 ﻿# 11 - Valuation
 
-> **Last Updated:** 2026-01-28  
+> **Last Updated:** 2026-01-29  
 > **Sheet Position:** 11 of 14  
 > **Status:** Complete
 
@@ -37,7 +37,7 @@ Also includes **Investor Returns** projections at exit.
 
 | Parameter                | Value    | Notes                      |
 | ------------------------ | -------- | -------------------------- |
-| **Year 5 Revenue**       | $50,179K | From P&L                   |
+| **Year 5 Revenue**       | $50,068K | From P&L                   |
 | **Exit Multiple**        | 5.0x     | Conservative SaaS multiple |
 | **Discount Rate**        | 20.0%    | VC expected return         |
 | **Discount Factor (Y5)** | 0.4x     | 1/(1+20%)^5                |
@@ -46,11 +46,11 @@ Also includes **Investor Returns** projections at exit.
 
 | Step                 | Formula               | Value                         |
 | -------------------- | --------------------- | ----------------------------- |
-| Terminal Value       | Revenue Exit Multiple | $50,179K 5.0x = **$250,897K** |
-| PV of Terminal Value | TV Discount Factor    | $250,897K 0.4 = **$100,830K** |
-| Year 5 FCF           | From Cash Flow        | **$8,914K**                   |
-| PV of Y5 FCF         | FCF Discount Factor   | $8,914K 0.4 = **$3,582K**     |
-| **Enterprise Value** | PV of TV + PV of FCF  | **$100,830K**                 |
+| Terminal Value       | Revenue Exit Multiple | $50,068K 5.0x = **$250,340K** |
+| PV of Terminal Value | TV Discount Factor    | $250,340K 0.4 = **$100,607K** |
+| Year 5 FCF           | From Cash Flow        | **$2,053K**                   |
+| PV of Y5 FCF         | FCF Discount Factor   | $2,053K 0.4 = **$825K**       |
+| **Enterprise Value** | PV of TV + PV of FCF  | **$100,607K**                 |
 
 ---
 
@@ -60,17 +60,17 @@ Also includes **Investor Returns** projections at exit.
 
 | Metric                  | Low       | Base      | High      |
 | ----------------------- | --------- | --------- | --------- |
-| **Year 5 Revenue**      | $50,179K  | $50,179K  | $50,179K  |
+| **Year 5 Revenue**      | $50,068K  | $50,068K  | $50,068K  |
 | **EV/Revenue Multiple** | 5.0x      | 7.0x      | 10.0x     |
-| **Implied Valuation**   | $250,897K | $351,256K | $501,795K |
+| **Implied Valuation**   | $250,340K | $350,476K | $500,680K |
 
 ### EBITDA Multiple Method
 
-| Metric                 | Low      | Base     | High     |
-| ---------------------- | -------- | -------- | -------- |
-| **Year 5 EBITDA**      | $6,000K  | $6,000K  | $6,000K  |
-| **EV/EBITDA Multiple** | 10.0x    | 12.0x    | 15.0x    |
-| **Implied Valuation**  | $60,000K | $72,000K | $90,000K |
+| Metric                 | Low      | Base     | High      |
+| ---------------------- | -------- | -------- | --------- |
+| **Year 5 EBITDA**      | $6,068K  | $6,068K  | $6,068K   |
+| **EV/EBITDA Multiple** | 10.0x    | 12.0x    | 15.0x     |
+| **Implied Valuation**  | $60,680K | $72,816K | $91,020K  |
 
 ---
 
@@ -78,39 +78,41 @@ Also includes **Investor Returns** projections at exit.
 
 | Method               | Conservative  | Base Case     | Upside        |
 | -------------------- | ------------- | ------------- | ------------- |
-| **DCF (Terminal)**   | $60,498K      | $100,830K     | $141,162K     |
-| **Revenue Multiple** | $250,897K     | $351,256K     | $501,795K     |
-| **EBITDA Multiple**  | $60,000K      | $72,000K      | $90,000K      |
-| **Average**          | **$123,798K** | **$174,695K** | **$244,319K** |
+| **DCF (Terminal)**   | $60,364K      | $100,607K     | $140,850K     |
+| **Revenue Multiple** | $250,340K     | $350,476K     | $500,680K     |
+| **EBITDA Multiple**  | $60,680K      | $72,816K      | $91,020K      |
+| **Average**          | **$123,795K** | **$174,633K** | **$244,183K** |
 
 ---
 
 ## Investor Returns at Exit
 
-### Ownership at Exit (Post Series A)
+### Ownership at Exit (Post Series B)
 
 | Stakeholder            | Ownership % | Base Case Value |
 | ---------------------- | ----------- | --------------- |
-| **Founders**           | 56.4%       | $98,528K        |
-| **Seed Investors**     | 22.6%       | $39,481K        |
-| **Series A Investors** | 21.1%       | $36,855K        |
-| **Total**              | 100.0%      | $174,695K       |
+| **Founders**           | 40.0%       | $69,853K        |
+| **Seed Investors**     | 15.0%       | $26,195K        |
+| **Series A Investors** | 20.0%       | $34,927K        |
+| **Series B Investors** | 25.0%       | $43,658K        |
+| **Total**              | 100.0%      | $174,633K       |
 
 ### Returns by Round
 
 | Round        | Investment | Base Case Return | MOIC      |
 | ------------ | ---------- | ---------------- | --------- |
-| **Seed**     | $2,000K    | $39,481K         | **19.7x** |
-| **Series A** | $4,000K    | $36,855K         | **9.2x**  |
-| **Total**    | $6,000K    | $76,336K         | **12.7x** |
+| **Seed**     | $3,000K    | $26,195K         | **8.7x**  |
+| **Series A** | $10,000K   | $34,927K         | **3.5x**  |
+| **Series B** | $25,000K   | $43,658K         | **1.7x**  |
+| **Total**    | $38,000K   | $104,780K        | **2.8x**  |
 
 ### Return Scenarios
 
-| Scenario         | Exit Valuation | Seed MOIC | Series A MOIC |
-| ---------------- | -------------- | --------- | ------------- |
-| **Conservative** | $123,798K      | 14.0x     | 6.5x          |
-| **Base Case**    | $174,695K      | 19.7x     | 9.2x          |
-| **Upside**       | $244,319K      | 27.6x     | 12.9x         |
+| Scenario         | Exit Valuation | Seed MOIC | Series A MOIC | Series B MOIC |
+| ---------------- | -------------- | --------- | ------------- | ------------- |
+| **Conservative** | $123,795K      | 6.2x      | 2.5x          | 1.2x          |
+| **Base Case**    | $174,633K      | 8.7x      | 3.5x          | 1.7x          |
+| **Upside**       | $244,183K      | 12.2x     | 4.9x          | 2.4x          |
 
 ---
 
