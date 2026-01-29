@@ -1,0 +1,133 @@
+{
+  "spreadsheet_id": "1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY",
+  "spreadsheet_title": "Applied Additve: RapidTools Financial Model",
+  "snapshot_date": "2026-01-28T21:33:12.279988",
+  "sheets": [
+    {
+      "name": "Sources & References",
+      "safe_name": "Sources _ References",
+      "index": 0,
+      "rows": 195,
+      "cols": 5,
+      "values_file": "sheets\\Sources _ References.csv",
+      "formulas_file": "sheets\\Sources _ References_formulas.csv"
+    },
+    {
+      "name": "Assumptions",
+      "safe_name": "Assumptions",
+      "index": 1,
+      "rows": 83,
+      "cols": 8,
+      "values_file": "sheets\\Assumptions.csv",
+      "formulas_file": "sheets\\Assumptions_formulas.csv"
+    },
+    {
+      "name": "Headcount Plan",
+      "safe_name": "Headcount Plan",
+      "index": 2,
+      "rows": 84,
+      "cols": 8,
+      "values_file": "sheets\\Headcount Plan.csv",
+      "formulas_file": "sheets\\Headcount Plan_formulas.csv"
+    },
+    {
+      "name": "Revenue",
+      "safe_name": "Revenue",
+      "index": 3,
+      "rows": 18,
+      "cols": 8,
+      "values_file": "sheets\\Revenue.csv",
+      "formulas_file": "sheets\\Revenue_formulas.csv"
+    },
+    {
+      "name": "Operating Costs",
+      "safe_name": "Operating Costs",
+      "index": 4,
+      "rows": 29,
+      "cols": 8,
+      "values_file": "sheets\\Operating Costs.csv",
+      "formulas_file": "sheets\\Operating Costs_formulas.csv"
+    },
+    {
+      "name": "P&L",
+      "safe_name": "P_L",
+      "index": 5,
+      "rows": 37,
+      "cols": 8,
+      "values_file": "sheets\\P_L.csv",
+      "formulas_file": "sheets\\P_L_formulas.csv"
+    },
+    {
+      "name": "Cash Flow",
+      "safe_name": "Cash Flow",
+      "index": 6,
+      "rows": 15,
+      "cols": 8,
+      "values_file": "sheets\\Cash Flow.csv",
+      "formulas_file": "sheets\\Cash Flow_formulas.csv"
+    },
+    {
+      "name": "Balance Sheet",
+      "safe_name": "Balance Sheet",
+      "index": 7,
+      "rows": 16,
+      "cols": 8,
+      "values_file": "sheets\\Balance Sheet.csv",
+      "formulas_file": "sheets\\Balance Sheet_formulas.csv"
+    },
+    {
+      "name": "Summary",
+      "safe_name": "Summary",
+      "index": 8,
+      "rows": 41,
+      "cols": 8,
+      "values_file": "sheets\\Summary.csv",
+      "formulas_file": "sheets\\Summary_formulas.csv"
+    },
+    {
+      "name": "Sensitivity Analysis",
+      "safe_name": "Sensitivity Analysis",
+      "index": 9,
+      "rows": 35,
+      "cols": 7,
+      "values_file": "sheets\\Sensitivity Analysis.csv",
+      "formulas_file": "sheets\\Sensitivity Analysis_formulas.csv"
+    },
+    {
+      "name": "Funding Cap Table",
+      "safe_name": "Funding Cap Table",
+      "index": 10,
+      "rows": 27,
+      "cols": 8,
+      "values_file": "sheets\\Funding Cap Table.csv",
+      "formulas_file": "sheets\\Funding Cap Table_formulas.csv"
+    },
+    {
+      "name": "Valuation",
+      "safe_name": "Valuation",
+      "index": 11,
+      "rows": 49,
+      "cols": 5,
+      "values_file": "sheets\\Valuation.csv",
+      "formulas_file": "sheets\\Valuation_formulas.csv"
+    },
+    {
+      "name": "Break-even Analysis",
+      "safe_name": "Break-even Analysis",
+      "index": 12,
+      "rows": 32,
+      "cols": 8,
+      "values_file": "sheets\\Break-even Analysis.csv",
+      "formulas_file": "sheets\\Break-even Analysis_formulas.csv"
+    },
+    {
+      "name": "Charts Data",
+      "safe_name": "Charts Data",
+      "index": 13,
+      "rows": 54,
+      "cols": 7,
+      "values_file": "sheets\\Charts Data.csv",
+      "formulas_file": "sheets\\Charts Data_formulas.csv"
+    }
+  ]
+}

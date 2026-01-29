@@ -1,0 +1,106 @@
+{
+  "company_name": "Applied Additive - RapidTools",
+  "start_year": 2026,
+  "general": {
+    "tax_rate": 0.25,
+    "capex_y0": 150000,
+    "capex_annual": 50000,
+    "depreciation_years": 5,
+    "debtor_days": 45,
+    "creditor_days": 30,
+    "interest_rate": 0.10,
+    "cost_inflation": 0.05
+  },
+  "revenue_streams": [
+    {
+      "name": "Software Subscriptions",
+      "price": 2400,
+      "volume": 117,
+      "growth": 0.85,
+      "cogs_pct": 0.20,
+      "description": "SaaS licenses for tooling design automation"
+    },
+    {
+      "name": "Tooling Services",
+      "price": 175,
+      "volume": 857,
+      "growth": 0.80,
+      "cogs_pct": 0.56,
+      "description": "Design + Print bundles, Managed programs"
+    },
+    {
+      "name": "Enterprise Managed Services",
+      "price": 190000,
+      "volume": 0,
+      "growth": 1.50,
+      "cogs_pct": 0.72,
+      "description": "Full outsourced tooling operations"
+    },
+    {
+      "name": "Hardware Sales",
+      "price": 12000,
+      "volume": 5,
+      "growth": 0.70,
+      "cogs_pct": 0.74,
+      "description": "3D printers (Fracktal 30%, Partners 15-20%)"
+    },
+    {
+      "name": "Consumables",
+      "price": 100,
+      "volume": 100,
+      "growth": 0.60,
+      "cogs_pct": 0.65,
+      "description": "3D printing materials"
+    }
+  ],
+  "fixed_costs": {
+    "Facilities & Office": 60000,
+    "Technology Infrastructure": 80000,
+    "R&D Infrastructure": 35000,
+    "Professional Services": 45000,
+    "Insurance & Compliance": 25000,
+    "Travel & Marketing Events": 35000,
+    "Other Admin": 20000
+  },
+  "headcount": {
+    "engineering_salary": 45000,
+    "sales_salary": 40000,
+    "ops_salary": 35000,
+    "ga_salary": 50000,
+    "engineering_y0": 7,
+    "sales_y0": 3,
+    "ops_y0": 3,
+    "ga_y0": 3
+  },
+  "funding": {
+    "seed": 3000000,
+    "series_a": 10000000,
+    "series_b": 25000000,
+    "seed_year": 0,
+    "series_a_year": 2,
+    "series_b_year": 4
+  },
+  "market": {
+    "tam_total": 42000000000,
+    "tam_software": 10000000000,
+    "tam_hardware": 4000000000,
+    "tam_consumables": 8000000000,
+    "tam_services": 20000000000,
+    "sam_india": 1800000000,
+    "sam_india_sea": 2880000000,
+    "som_y8": 104000000
+  },
+  "unit_economics": {
+    "blended_arpu": 18909,
+    "blended_cac": 7000,
+    "blended_churn": 0.15,
+    "ltv": 82000,
+    "ltv_cac_ratio": 11.7,
+    "payback_months": 6
+  },
+  "customers": {
+    "smb": {"count_y8": 3850, "arpu": 9300, "cac": 2500, "churn": 0.17},
+    "midmarket": {"count_y8": 1375, "arpu": 37200, "cac": 12000, "churn": 0.11},
+    "enterprise": {"count_y8": 275, "arpu": 62000, "cac": 45000, "churn": 0.06}
+  }
+}

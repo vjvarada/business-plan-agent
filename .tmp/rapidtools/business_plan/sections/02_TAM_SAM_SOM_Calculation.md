@@ -580,11 +580,11 @@ Using conservative churn benchmarks for B2B SaaS [[23]](#ref-23):
 
 | Segment        | ARPU    | Churn Rate | Lifetime   | Gross Margin | LTV      |
 | -------------- | ------- | ---------- | ---------- | ------------ | -------- |
-| **SMB**        | $9,300  | 17%        | 5.9 years  | 70%          | $38,400  |
-| **Mid-Market** | $37,200 | 11%        | 9.1 years  | 65%          | $220,000 |
-| **Enterprise** | $62,000 | 6%         | 16.7 years | 60%          | $621,000 |
+| **SMB**        | $9,300  | 17%        | 5.9 years  | 65%          | $38,400  |
+| **Mid-Market** | $37,200 | 11%        | 9.1 years  | 60%          | $220,000 |
+| **Enterprise** | $62,000 | 6%         | 16.7 years | 55%          | $621,000 |
 
-**Note on Segment Gross Margins:** Enterprise has lower gross margin (60%) than SMB (70%) because enterprise deals include more services and EMS (lower margin) alongside software. The 65% blended margin matches company-level financials.
+**Note on Segment Gross Margins:** Enterprise has lower gross margin (55%) than SMB (65%) because enterprise deals include more services and EMS (lower margin) alongside software. The 59% blended margin reflects realistic stream-level COGS: Software 20%, Job Work 75%, Managed Services 72%, 3D Printers 76%, AMC 60%, Consumables 67%.
 
 **Customer Acquisition Cost (CAC) - Channel-Based:**
 

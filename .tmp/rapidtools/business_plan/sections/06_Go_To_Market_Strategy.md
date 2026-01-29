@@ -844,7 +844,7 @@ Both founders come from defense families, and Vijay has **active defense sales e
 
 **Blended Metrics (Year 8):**
 
-- **Blended Gross Margin**: 65% (weighted average across all revenue streams; software 82%, services 40%, hardware 26%)
+- **Blended Gross Margin**: 59% (weighted average across all revenue streams; software 80%, services 25-28%, hardware 24%)
 - **Blended CAC**: $7,000 (vs. $15K-25K for direct-only model)
 - **Blended LTV:CAC**: 11.7:1 (best-in-class SaaS with conservative assumptions)
 - **CAC Payback**: 6.4 months (channel-accelerated)

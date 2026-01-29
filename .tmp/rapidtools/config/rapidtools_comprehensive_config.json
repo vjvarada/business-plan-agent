@@ -1,0 +1,365 @@
+﻿{
+  "company": {
+    "name": "Applied Additive",
+    "product": "RapidTools",
+    "description": "AI-powered manufacturing tooling design automation platform",
+    "founded": 2023,
+    "location": "Bangalore, India",
+    "industry": "Manufacturing Software / SaaS",
+    "tagline": "From Intent to Object"
+  },
+  "timeline": {
+    "years": 8,
+    "start_year": 2026,
+    "seed_close": "2026-Q1",
+    "series_a_timing": "2028-Q2",
+    "series_b_timing": "2030-Q2"
+  },
+  "market": {
+    "tam_total": 42000000000,
+    "tam_breakdown": {
+      "software": 10000000000,
+      "hardware": 4000000000,
+      "consumables": 8000000000,
+      "services": 20000000000
+    },
+    "sam_india_only": 1800000000,
+    "sam_india_sea": 2880000000,
+    "sam_global_expansion": 5760000000,
+    "som_y8": 104000000,
+    "adjacent_tam_2030": 140000000000
+  },
+  "revenue": {
+    "projections": {
+      "Y1": 500000,
+      "Y2": 2500000,
+      "Y3": 7000000,
+      "Y4": 15000000,
+      "Y5": 30000000,
+      "Y6": 50000000,
+      "Y7": 77000000,
+      "Y8": 104000000
+    },
+    "streams": {
+      "software": {
+        "name": "Software Subscriptions",
+        "description": "SaaS licenses for tooling design automation",
+        "Y1": 280000, "Y2": 1400000, "Y3": 3920000, "Y4": 8100000,
+        "Y5": 17100000, "Y6": 30000000, "Y7": 47000000, "Y8": 64000000,
+        "mix_y8": 0.62,
+        "gross_margin": 0.80
+      },
+      "tooling_services": {
+        "name": "Tooling Services",
+        "description": "Design + Print bundles, Print-only, Managed programs",
+        "Y1": 150000, "Y2": 750000, "Y3": 2030000, "Y4": 4350000,
+        "Y5": 8100000, "Y6": 12500000, "Y7": 18500000, "Y8": 24200000,
+        "mix_y8": 0.23,
+        "gross_margin": 0.44
+      },
+      "ems": {
+        "name": "Enterprise Managed Services",
+        "description": "Full outsourced tooling operations with dedicated staff",
+        "Y1": 0, "Y2": 50000, "Y3": 350000, "Y4": 1200000,
+        "Y5": 2100000, "Y6": 3500000, "Y7": 5400000, "Y8": 7400000,
+        "mix_y8": 0.07,
+        "gross_margin": 0.28
+      },
+      "hardware": {
+        "name": "Hardware Sales",
+        "description": "3D printers (Fracktal 30%, Partners 15-20%)",
+        "Y1": 60000, "Y2": 250000, "Y3": 600000, "Y4": 1200000,
+        "Y5": 2400000, "Y6": 3500000, "Y7": 5400000, "Y8": 7400000,
+        "mix_y8": 0.07,
+        "gross_margin": 0.26
+      },
+      "consumables": {
+        "name": "Consumables",
+        "description": "3D printing materials (filament, resin)",
+        "Y1": 10000, "Y2": 50000, "Y3": 100000, "Y4": 150000,
+        "Y5": 300000, "Y6": 500000, "Y7": 700000, "Y8": 1100000,
+        "mix_y8": 0.01,
+        "gross_margin": 0.35
+      }
+    },
+    "blended_gross_margin_y8": 0.65
+  },
+  "pricing": {
+    "software": {
+      "base_price_per_seat": 2400,
+      "smb_seats_avg": 2.0,
+      "midmarket_seats_avg": 8.0,
+      "enterprise_seats_avg": 25.0,
+      "midmarket_discount": 0.10,
+      "enterprise_discount": 0.20,
+      "multi_year_2yr_discount": 0.10,
+      "multi_year_3yr_discount": 0.15
+    },
+    "services": {
+      "design_simple_fixture": 100,
+      "design_medium_fixture": 175,
+      "design_complex_fixture": 350,
+      "design_custom_fixture": 650,
+      "managed_starter_monthly": 2000,
+      "managed_growth_monthly": 4000,
+      "managed_scale_monthly": 8000,
+      "managed_multisite_monthly": 15000
+    },
+    "ems": {
+      "ems_lite_monthly": 8000,
+      "ems_standard_monthly": 18000,
+      "ems_professional_monthly": 28000,
+      "ems_enterprise_monthly": 50000
+    },
+    "job_work": {
+      "pla_simple": 35,
+      "pla_medium": 75,
+      "pla_complex": 150,
+      "nylon_simple": 90,
+      "nylon_medium": 185,
+      "nylon_complex": 375
+    }
+  },
+  "customers": {
+    "total_y8": 5500,
+    "segments": {
+      "smb": {
+        "count": 3850,
+        "pct": 0.70,
+        "software_revenue": 18500000,
+        "avg_seats": 2.0,
+        "price_per_seat": 2400,
+        "churn_rate": 0.17,
+        "cac": 2500,
+        "arpu": 9300,
+        "lifetime_years": 5.9,
+        "ltv": 38400,
+        "ltv_cac_ratio": 15.4,
+        "payback_months": 4.6,
+        "gross_margin": 0.70
+      },
+      "midmarket": {
+        "count": 1375,
+        "pct": 0.25,
+        "software_revenue": 23800000,
+        "avg_seats": 8.0,
+        "price_per_seat": 2160,
+        "churn_rate": 0.11,
+        "cac": 12000,
+        "arpu": 37200,
+        "lifetime_years": 9.1,
+        "ltv": 220000,
+        "ltv_cac_ratio": 18.3,
+        "payback_months": 5.5,
+        "gross_margin": 0.65
+      },
+      "enterprise": {
+        "count": 275,
+        "pct": 0.05,
+        "software_revenue": 13200000,
+        "avg_seats": 25.0,
+        "price_per_seat": 1920,
+        "churn_rate": 0.06,
+        "cac": 45000,
+        "arpu": 62000,
+        "lifetime_years": 16.7,
+        "ltv": 621000,
+        "ltv_cac_ratio": 13.8,
+        "payback_months": 12.1,
+        "gross_margin": 0.60
+      }
+    },
+    "ems_customers_y8": 39
+  },
+  "unit_economics": {
+    "blended_arpu": 18909,
+    "blended_cac": 7000,
+    "blended_churn": 0.15,
+    "blended_lifetime_years": 6.7,
+    "blended_ltv": 82000,
+    "ltv_cac_ratio": 11.7,
+    "payback_months": 6,
+    "nrr_target": 1.11
+  },
+  "headcount": {
+    "by_year": {
+      "Y1": 16, "Y2": 35, "Y3": 70, "Y4": 120,
+      "Y5": 190, "Y6": 270, "Y7": 340, "Y8": 380
+    },
+    "composition_y8": {
+      "engineering": {"count": 95, "pct": 0.25},
+      "product": {"count": 19, "pct": 0.05},
+      "sales_marketing": {"count": 114, "pct": 0.30},
+      "customer_success": {"count": 76, "pct": 0.20},
+      "operations_services": {"count": 57, "pct": 0.15},
+      "executive_admin": {"count": 19, "pct": 0.05}
+    },
+    "avg_cost_per_fte": {
+      "Y1": 50000, "Y2": 46000, "Y3": 47000, "Y4": 48000,
+      "Y5": 50000, "Y6": 52000, "Y7": 54000, "Y8": 56000
+    },
+    "salaries_india_usd": {
+      "junior_engineer": {"min": 15000, "max": 22000},
+      "mid_engineer": {"min": 25000, "max": 40000},
+      "senior_engineer": {"min": 45000, "max": 65000},
+      "staff_principal": {"min": 70000, "max": 100000},
+      "engineering_manager": {"min": 60000, "max": 85000},
+      "director": {"min": 85000, "max": 120000},
+      "vp": {"min": 120000, "max": 160000},
+      "c_suite": {"min": 150000, "max": 250000}
+    },
+    "y1_team": {
+      "engineering": 7,
+      "product": 1,
+      "sales_marketing": 3,
+      "customer_success": 2,
+      "operations": 1,
+      "executive": 2
+    },
+    "y4_team": {
+      "engineering": 40,
+      "product": 8,
+      "sales_marketing": 35,
+      "customer_success": 20,
+      "operations_services": 12,
+      "executive": 5
+    }
+  },
+  "costs": {
+    "people_cost": {
+      "Y1": 800000, "Y2": 1610000, "Y3": 3290000, "Y4": 5760000,
+      "Y5": 9500000, "Y6": 14040000, "Y7": 18360000, "Y8": 21280000
+    },
+    "fixed_costs_total": {
+      "Y1": 200000, "Y2": 420000, "Y3": 780000, "Y4": 1750000,
+      "Y5": 2800000, "Y6": 4200000, "Y7": 5500000, "Y8": 7100000
+    },
+    "fixed_cost_breakdown_y4": {
+      "facilities": 264000,
+      "technology": 378000,
+      "rd_infra": 168000,
+      "professional_services": 216000,
+      "rd_partnerships": 114000,
+      "other": 610000
+    },
+    "cogs_by_stream": {
+      "software": 0.20,
+      "tooling_services": 0.56,
+      "ems": 0.72,
+      "hardware": 0.74,
+      "consumables": 0.65
+    }
+  },
+  "funding": {
+    "total": 38000000,
+    "rounds": {
+      "seed": {
+        "amount": 3000000,
+        "timing": "Y1-Q1",
+        "pre_money": 10000000,
+        "post_money": 13000000,
+        "dilution": 0.23,
+        "arr_at_raise": 0,
+        "runway_months": 36,
+        "use_of_funds": {
+          "engineering": {"amount": 1200000, "pct": 0.40},
+          "sales_marketing": {"amount": 600000, "pct": 0.20},
+          "operations": {"amount": 450000, "pct": 0.15},
+          "working_capital": {"amount": 450000, "pct": 0.15},
+          "contingency": {"amount": 300000, "pct": 0.10}
+        }
+      },
+      "series_a": {
+        "amount": 10000000,
+        "timing": "Y3-Q2",
+        "pre_money": 30000000,
+        "post_money": 40000000,
+        "dilution": 0.25,
+        "arr_at_raise": 5000000,
+        "valuation_multiple": 6.0,
+        "runway_months": 30,
+        "use_of_funds": {
+          "sales_gtm": {"amount": 4000000, "pct": 0.40},
+          "engineering": {"amount": 2500000, "pct": 0.25},
+          "customer_success": {"amount": 1500000, "pct": 0.15},
+          "geographic_expansion": {"amount": 1000000, "pct": 0.10},
+          "working_capital": {"amount": 1000000, "pct": 0.10}
+        }
+      },
+      "series_b": {
+        "amount": 25000000,
+        "timing": "Y5-Q2",
+        "pre_money": 75000000,
+        "post_money": 100000000,
+        "dilution": 0.25,
+        "arr_at_raise": 15000000,
+        "valuation_multiple": 5.0,
+        "runway_months": 36
+      }
+    },
+    "founder_ownership_at_exit": 0.48
+  },
+  "efficiency_metrics": {
+    "revenue_per_employee_y8": 274000,
+    "burn_multiple_y1_y4": 0.8,
+    "arr_per_dollar_raised": 2.74,
+    "time_to_profitability": "Y5",
+    "sm_as_pct_revenue_y8": 0.24,
+    "rd_as_pct_revenue_y8": 0.07,
+    "ga_as_pct_revenue_y8": 0.07,
+    "rule_of_40_y8": 53,
+    "gross_margin_y8": 0.59,
+    "ebitda_margin_y8": 0.18
+  },
+  "geographic": {
+    "phase1": {"regions": ["India"], "years": "Y1-Y2", "sam": 1800000000},
+    "phase2": {"regions": ["India", "SE Asia"], "years": "Y3-Y4", "sam": 2880000000},
+    "phase3": {"regions": ["India", "SE Asia", "US/EU via VARs"], "years": "Y5-Y8", "sam": 5760000000}
+  },
+  "general_assumptions": {
+    "tax_rate": 0.25,
+    "capex_y0": 150000,
+    "capex_annual": 50000,
+    "depreciation_years": 5,
+    "debtor_days": 45,
+    "creditor_days": 30,
+    "interest_rate": 0.10,
+    "cost_inflation": 0.05,
+    "employer_overhead_pct": 0.25
+  },
+  "var_channel": {
+    "var_count_y8": 85,
+    "customers_per_var": 55,
+    "var_commission_pct": 0.25,
+    "existing_var_relationships": 6,
+    "fracktal_customer_base": 5500
+  },
+  "switching_costs": {
+    "single_product_min": 5000,
+    "single_product_max": 15000,
+    "full_platform_min": 75000,
+    "full_platform_max": 200000,
+    "software_retraining": 15000,
+    "production_disruption": 25000,
+    "hardware_stranded": 20000,
+    "ems_transition": 40000,
+    "material_requalification": 10000
+  },
+  "fracktal_synergies": {
+    "direct_cost_savings": 155000,
+    "pipeline_value_min": 350000,
+    "pipeline_value_max": 500000,
+    "cac_avoidance_min": 170000,
+    "cac_avoidance_max": 226000,
+    "total_synergy_min": 725000,
+    "total_synergy_max": 961000
+  },
+  "exit_scenarios": {
+    "target_exit_year": 8,
+    "revenue_multiple_low": 5,
+    "revenue_multiple_high": 8,
+    "valuation_low": 500000000,
+    "valuation_high": 1000000000,
+    "strategic_buyers": ["Autodesk", "Siemens", "Dassault Systèmes", "Stratasys", "3D Systems"]
+  }
+}

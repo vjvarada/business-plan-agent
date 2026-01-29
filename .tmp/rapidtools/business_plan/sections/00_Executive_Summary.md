@@ -13,7 +13,7 @@
 | **The Ask**        | $3M Seed @ $10M pre             | 30-36 months runway to Series A                            |
 | **Market**         | $42B TAM → $65B+ by 2030        | Manufacturing tooling; 540% fixture demand growth          |
 | **Traction**       | Honda ₹10L ($12K) hardware PAID | Active co-development partnership; TVS, Toyota in pipeline |
-| **Revenue Target** | $104M ARR (Year 8)              | 5,500 customers; 65% gross margin; 24% EBITDA              |
+| **Revenue Target** | $104M ARR (Year 8)              | 5,500 customers; 59% gross margin; 18% EBITDA              |
 | **Team**           | 15 years + CMU robotics         | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum |
 | **Exit Path**      | $500M–$1B (5-8× ARR)            | Strategic: Autodesk, Siemens, Dassault, Stratasys          |
 
@@ -436,12 +436,13 @@ Trinckle's European deployments prove the model:
 
 | Stream                          | Y8 Revenue | Mix      | Gross Margin | Description                    |
 | ------------------------------- | ---------- | -------- | ------------ | ------------------------------ |
-| **Software**                    | $64.0M     | 62%      | 80-85%       | SaaS licenses, seat expansion  |
-| **Tooling Services**            | $24.2M     | 23%      | 44%          | Design + Print bundles         |
+| **Software**                    | $64.0M     | 62%      | 80%          | SaaS licenses, seat expansion  |
+| **Job Work**                    | $25.7M     | 25%      | 25%          | Design + Print bundles         |
 | **Enterprise Managed Services** | $7.4M      | 7%       | 28%          | Dedicated on-site staff        |
-| **Hardware Sales**              | $7.4M      | 7%       | 26%          | 3D printers + partner hardware |
-| **Consumables**                 | $1.1M      | 1%       | 30-35%       | 3D printing materials          |
-| **TOTAL**                       | **$104M**  | **100%** | **65%**      | Blended gross margin           |
+| **Hardware Sales**              | $5.2M      | 5%       | 24%          | 3D printers + partner hardware |
+| **Consumables**                 | $1.1M      | 1%       | 33%          | 3D printing materials          |
+| **AMC**                         | $0.6M      | <1%      | 40%          | Hardware maintenance           |
+| **TOTAL**                       | **$104M**  | **100%** | **59%**      | Blended gross margin (stable)  |
 
 **Services as Customer Acquisition, Not Margin Drag:**
 
@@ -596,16 +597,18 @@ Unlike software-only competitors, Applied Additive creates **5 switching cost la
 | Category                  | Amount  | % of Revenue |
 | ------------------------- | ------- | ------------ |
 | **Revenue**               | $104.0M | 100%         |
-| **COGS**                  | $36.4M  | 35%          |
-| **Gross Profit**          | $67.6M  | **65%**      |
+| **COGS**                  | $42.5M  | 41%          |
+| **Gross Profit**          | $61.5M  | **59%**      |
 | **People Cost**           | $21.3M  | 20%          |
 | **S&M Variable**          | $14.4M  | 14%          |
 | **Fixed Costs (G&A)**     | $7.1M   | 7%           |
-| **EBITDA**                | $24.8M  | **24%**      |
+| **EBITDA**                | $18.8M  | **18%**      |
 | **SBC (non-cash)**        | $2.1M   | 2%           |
-| **GAAP Operating Income** | $22.7M  | **22%**      |
+| **GAAP Operating Income** | $16.7M  | **16%**      |
 
-### Rule of 40: **59** (35% Growth + 24% EBITDA) ✓
+### Rule of 40: **53** (35% Growth + 18% EBITDA) ✔
+
+**Note:** Gross margin is stable at 59% (not improving) because COGS% is fixed per stream. Services have structural margin limits (materials + labor floor) but are essential for customer acquisition. Software contributes 82% of gross profit.
 
 > **📖 Deep Dive:** [07_Revenue_Model.md](07_Revenue_Model.md) for 8-year P&L, working capital, and sensitivity analysis
 

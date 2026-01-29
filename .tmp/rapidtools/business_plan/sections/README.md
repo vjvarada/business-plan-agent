@@ -8,7 +8,7 @@
 
 ---
 
-## � Company Structure
+## Company Structure
 
 | Entity               | What It Is                                                           | TAM           | Status              |
 | -------------------- | -------------------------------------------------------------------- | ------------- | ------------------- |
@@ -22,7 +22,7 @@
 
 ---
 
-## �🎯 The 30-Second Pitch
+## � The 30-Second Pitch
 
 **Problem:** Factories have $50K-$200K 3D printers gathering dust because design is the bottleneck, not printing. You need a $150K/year CAD engineer to create a $50 fixture.
 
@@ -87,24 +87,26 @@
 
 ## Key Investment Thesis
 
-| Why Now?                                        | Why Applied Additive?                     | Why This Team?                                              |
-| ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------- |
-| $2.14T manufacturing investment creating demand | Platform company, not point solution      | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO)    |
-| 540% growth in fixture demand by 2030           | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum  |
-| 60% of tooling engineers retiring               | India/SEA beachhead ($2.88B untapped SAM) | Honda/TVS/Toyota/ISRO/Navy = 15-year relationship network   |
+| Why Now?                                        | Why Applied Additive?                     | Why This Team?                                                  |
+| ----------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------- |
+| $2.14T manufacturing investment creating demand | Platform company, not point solution      | 15-year hardware entrepreneur (CEO) + CMU robotics (CTO)        |
+| 540% growth in fixture demand by 2030           | Multi-dependency moat (5 revenue streams) | Hackaday Prize Grand Prize Winner + Dassault Systèmes alum      |
+| 60% of tooling engineers retiring               | India/SEA beachhead ($2.88B untapped SAM) | Honda/TVS/Toyota/ISRO/Navy = 15-year relationship network       |
 | 78% of 3D printers underutilized                | $140B+ TAM with adjacent markets          | **Debesh Sharma**: Defense advisor (17yr Navy, VC, Fortune 100) |
 
 ## Key Financial Summary (Year 8)
 
-| Metric                | Value                   |
-| --------------------- | ----------------------- |
-| Revenue               | $104M ARR               |
-| Customers             | 5,500                   |
-| Gross Margin          | 65%                     |
-| EBITDA                | $24.82M (24%)           |
-| Rule of 40            | 59 (35% growth + 24%)   |
-| Exit Valuation        | $500M–$1B (5-8× ARR)    |
-| Total Funding         | $38M ($3M + $10M + $25M)|
+| Metric         | Value                    |
+| -------------- | ------------------------ |
+| Revenue        | $104M ARR                |
+| Customers      | 5,500                    |
+| Gross Margin   | 59%                      |
+| EBITDA         | $18.77M (18%)            |
+| Rule of 40     | 53 (35% growth + 18%)    |
+| Exit Valuation | $500M–$1B (5-8× ARR)     |
+| Total Funding  | $38M ($3M + $10M + $25M) |
+
+**Note:** Gross margin reflects realistic stream-level COGS (Software 20%, Job Work 75%, etc.) with no improvement assumed. Services have structural margin limits but are essential for customer acquisition. Software contributes 82% of gross profit.
 
 ## How to Use
 

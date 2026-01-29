@@ -6,14 +6,15 @@
 
 ### Revenue Streams Overview
 
-| Revenue Stream                  | Description                                          | Year 8 Mix   | Gross Margin | Key Driver                              |
-| ------------------------------- | ---------------------------------------------------- | ------------ | ------------ | --------------------------------------- |
-| **Software Subscriptions**      | SaaS licenses for tooling design automation          | 62% ($64.0M) | 80-85%       | Seat expansion, multi-tool adoption     |
-| **Tooling Services**            | Design + Print bundles, Print-only, Managed programs | 23% ($24.2M) | 44% blended  | Software automation + Fracktal capacity |
-| **Enterprise Managed Services** | Full outsourced tooling operations                   | 7% ($7.4M)   | 28%          | Dedicated staff + equipment             |
-| **Hardware Sales**              | 3D printers (Fracktal 30%, Partners 15-20%)          | 7% ($7.4M)   | 26% blended  | Fracktal vertical integration           |
-| **Consumables**                 | 3D printing materials (filament, resin)              | 1% ($1.1M)   | 30-35%       | Recurring from hardware users           |
-| **TOTAL**                       |                                                      | **$104M**    | **65%**      | Blended gross margin                    |
+| Revenue Stream                  | Description                                          | Year 8 Mix   | Gross Margin | Key Driver                            |
+| ------------------------------- | ---------------------------------------------------- | ------------ | ------------ | ------------------------------------- |
+| **Software Subscriptions**      | SaaS licenses for tooling design automation          | 61% ($64.0M) | 80%          | Seat expansion, multi-tool adoption   |
+| **Tooling Services (Job Work)** | Design + Print bundles, Print-only, Managed programs | 25% ($25.7M) | 25%          | Software automation + partner network |
+| **Enterprise Managed Services** | Full outsourced tooling operations                   | 7% ($7.4M)   | 28%          | Dedicated staff + equipment           |
+| **Hardware Sales**              | 3D printers (Fracktal 28%, Partners 15-20%)          | 5% ($5.2M)   | 24%          | Fracktal preferred vendor pricing     |
+| **AMC Contracts**               | Hardware maintenance with OEM revenue share          | <1% ($0.6M)  | 40%          | OEM share 30-40% + service costs      |
+| **Consumables**                 | 3D printing materials (filament, resin)              | 1% ($1.1M)   | 33%          | Recurring from hardware users         |
+| **TOTAL**                       |                                                      | **$104M**    | **59%**      | Blended gross margin (stable)         |
 
 ### Unit Economics Summary (Year 8 - Mature State)
 
@@ -26,7 +27,7 @@
 | **LTV**            | $38,400    | $220,000   | $621,000    | $82,000        |
 | **LTV:CAC**        | **15.4:1** | **18.3:1** | **13.8:1**  | **11.7:1**     |
 | **Payback Period** | 4.6 months | 5.5 months | 12.1 months | **6.0 months** |
-| **Gross Margin**   | 70%        | 65%        | 60%         | **65%**        |
+| **Gross Margin**   | 65%        | 60%        | 55%         | **59%**        |
 
 **Note on LTV:CAC:** Our ratios (12-18:1) exceed the 3:1 industry minimum and align with the "excellent" 10-15:1 range for best-in-class SaaS. These ratios reflect two structural advantages:
 
@@ -95,7 +96,7 @@ As RapidTools expands to US/Europe via VAR partnerships, costs will increase:
 
 **Note on Conservative Assumptions:** We use industry-realistic churn rates (Enterprise 6%, Mid-Market 11%, SMB 17%) and CAC that accounts for pilot costs, travel, and multi-stakeholder sales cycles. These assumptions have been stress-tested against Bessemer, ChartMogul, and ChurnFree benchmarks.
 
-**Note on Segment Gross Margins:** Enterprise has lower gross margin (60%) than SMB (70%) because enterprise deals include more services and EMS (lower margin) alongside software. The 65% blended margin matches company-level financials.
+**Note on Segment Gross Margins:** Enterprise has lower gross margin (55%) than SMB (65%) because enterprise deals include more services and EMS (lower margin) alongside software. The 59% blended margin reflects realistic stream-level COGS: Software 20%, Job Work 75%, Managed Services 72%, 3D Printers 76%, AMC 60%, Consumables 67%.
 
 ---
 
@@ -462,25 +463,49 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 | 51-200 parts   | 20%                  |
 | 200+ parts     | 30% (custom pricing) |
 
-**Job Work Unit Economics:**
+**Job Work Unit Economics (Third-Party Fulfillment Model):**
 
-| Cost Component   | % of Revenue | Description                       |
-| ---------------- | ------------ | --------------------------------- |
-| **Materials**    | 25-35%       | Filament, resin costs             |
-| **Machine Time** | 15-20%       | Printer depreciation, electricity |
-| **Labor**        | 10-15%       | Setup, post-processing, QC        |
-| **Shipping**     | 8-12%        | Delivery to customer              |
-| **Overhead**     | 5-8%         | Platform, customer support        |
-| **TOTAL COGS**   | **63-90%**   |                                   |
-| **Gross Margin** | **10-37%**   | Target: 25-30%                    |
+RapidTools operates as a **marketplace/orchestrator**, partnering with local 3D printing service providers to fulfill customer orders. We do NOT own or operate printing equipment — we aggregate demand, manage quality, and take an arbitrage margin.
+
+**Fulfillment Partner Network:**
+
+| Partner Type           | Examples                          | Typical Pricing          | Geographic Coverage |
+| ---------------------- | --------------------------------- | ------------------------ | ------------------- |
+| **Preferred Partners** | Fracktal Works, regional bureaus  | 55-65% of customer price | India (primary)     |
+| **Standard Partners**  | Local print shops, makerspaces    | 60-70% of customer price | Tier 2/3 cities     |
+| **Overflow Partners**  | On-demand bureaus (Xometry, etc.) | 70-80% of customer price | Global backup       |
+
+**Note:** Fracktal Works (founder's separate company) is treated as an arm's-length third-party vendor with standard commercial terms.
+
+**COGS Breakdown (Third-Party Fulfillment):**
+
+| Cost Component         | % of Revenue | Description                                                         |
+| ---------------------- | ------------ | ------------------------------------------------------------------- |
+| **Vendor Invoice**     | 50-60%       | Payment to fulfillment partner (all-in: materials, printing, labor) |
+| **Platform Fee**       | 3-5%         | Order management, job routing, quality tracking                     |
+| **Quality Assurance**  | 2-3%         | Spot-check QC, customer issue resolution                            |
+| **Shipping/Logistics** | 8-10%        | Delivery from partner to customer                                   |
+| **Customer Support**   | 2-3%         | Order tracking, issue handling                                      |
+| **TOTAL COGS**         | **65-81%**   |                                                                     |
+| **Gross Margin**       | **19-35%**   | Target: **25%**                                                     |
+
+**Margin by Partner Tier:**
+
+| Partner Tier                   | Vendor Cost | RapidTools Margin | Use Case                                        |
+| ------------------------------ | ----------- | ----------------- | ----------------------------------------------- |
+| **Preferred (Fracktal, etc.)** | 50-55%      | **30-35%**        | Standard orders, quality-critical               |
+| **Standard (Local bureaus)**   | 55-65%      | **22-30%**        | Regional fulfillment, cost-sensitive            |
+| **Overflow (On-demand)**       | 65-75%      | **12-20%**        | Capacity overflow, rush orders                  |
+| **Blended Average**            | ~55%        | **~25%**          | Weighted by volume mix (75% preferred/standard) |
 
 **Why Job Work Matters:**
 
 1. **Removes adoption barrier:** Customers can use software without buying printers
 2. **Land-and-expand:** Job work users often upgrade to hardware purchase
 3. **Recurring revenue:** Ongoing printing needs = predictable revenue
-4. **Utilizes Fracktal capacity:** Leverage existing manufacturing infrastructure
-5. **Data flywheel:** More prints = better templates, better automation
+4. **Asset-light model:** No capital tied up in printing equipment
+5. **Scalable network:** Add partners as demand grows, no fixed capacity constraints
+6. **Data flywheel:** More prints = better templates, better automation
 
 **Target Customers:**
 
@@ -512,19 +537,19 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 **Benchmark Comparison:**
 
 - Traditional engineering services gross margin: 25-40% [[2]](#ref-2)
-- RapidTools Tooling Services target (45%) reflects blended design (65%) + printing (28%)
+- RapidTools Tooling Services target (44%) reflects blended design (65%) + printing (25%)
 
 ### Tooling Services Revenue Build-Up
 
 **Year 8 Tooling Services Revenue: $24.2M**
 
-| Service Type               | Customers | Volume/Year | Avg Price  | Revenue    | Gross Margin |
-| -------------------------- | --------- | ----------- | ---------- | ---------- | ------------ |
-| **Print Only**             | 1,500     | 45 parts    | $100       | $6.8M      | 28%          |
-| **Design + Print Bundle**  | 1,400     | 30 orders   | $260       | $10.9M     | 48%          |
-| **Managed Design Program** | 90        | N/A         | $60,000/yr | $5.4M      | 55%          |
-| **Consulting/Training**    | 400       | N/A         | $3,000/yr  | $1.2M      | 65%          |
-| **TOTAL**                  | -         | -           | -          | **$24.2M** | **44%**      |
+| Service Type               | Customers | Volume/Year | Avg Price  | Revenue    | Gross Margin | COGS Breakdown                                    |
+| -------------------------- | --------- | ----------- | ---------- | ---------- | ------------ | ------------------------------------------------- |
+| **Print Only (Job Work)**  | 1,500     | 45 parts    | $100       | $6.8M      | **25%**      | Vendor 55%, Platform 5%, Shipping 10%, Support 5% |
+| **Design + Print Bundle**  | 1,400     | 30 orders   | $260       | $10.9M     | **48%**      | Design 25%, Vendor 20%, Platform 3%, Shipping 4%  |
+| **Managed Design Program** | 90        | N/A         | $60,000/yr | $5.4M      | **55%**      | Design labor 35%, Software 5%, PM 5%              |
+| **Consulting/Training**    | 400       | N/A         | $3,000/yr  | $1.2M      | **65%**      | Trainer time 30%, Materials 5%                    |
+| **TOTAL**                  | -         | -           | -          | **$24.2M** | **42%**      | Weighted blended                                  |
 
 **Why Design + Print Bundle is the Core Offering:**
 
@@ -544,12 +569,12 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 **Why Tooling Services Revenue Model Works:**
 
-| Factor                | Impact                                             |
-| --------------------- | -------------------------------------------------- |
-| **Bundle incentive**  | 10-15% discount on Design+Print vs. separate       |
-| **Single workflow**   | Design in RapidTools → one-click submit to print   |
-| **Land-and-expand**   | Services → Software license → Hardware purchase    |
-| **Fracktal capacity** | Print jobs utilize existing Fracktal manufacturing |
+| Factor               | Impact                                             |
+| -------------------- | -------------------------------------------------- |
+| **Bundle incentive** | 10-15% discount on Design+Print vs. separate       |
+| **Single workflow**  | Design in RapidTools → one-click submit to print   |
+| **Land-and-expand**  | Services → Software license → Hardware purchase    |
+| **Partner network**  | Print jobs fulfilled via local 3D printing bureaus |
 
 **Volume vs. Traditional Competitors:**
 
@@ -572,8 +597,8 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 | Printer Category                     | Price Range     | Target Customer         | Source                     | Gross Margin |
 | ------------------------------------ | --------------- | ----------------------- | -------------------------- | ------------ |
-| **Fracktal Entry FDM**               | $5,000-15,000   | SMB, first-time buyers  | Fracktal Works             | **30%**      |
-| **Fracktal Professional FDM**        | $15,000-50,000  | Mid-market, production  | Fracktal Works             | **30%**      |
+| **Fracktal Entry FDM**               | $5,000-15,000   | SMB, first-time buyers  | Fracktal Works             | **28%**      |
+| **Fracktal Professional FDM**        | $15,000-50,000  | Mid-market, production  | Fracktal Works             | **28%**      |
 | **Third-Party Industrial**           | $50,000-150,000 | Enterprise, high-volume | Partners (Stratasys, etc.) | 15-20%       |
 | **Third-Party Specialty (SLA, MJF)** | $80,000-300,000 | Enterprise, precision   | Partners (Formlabs, HP)    | 15-18%       |
 
@@ -581,25 +606,27 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 **RapidTools Hardware Economics:**
 
-| Scenario                  | Source         | Revenue Recognition | Gross Margin   |
-| ------------------------- | -------------- | ------------------- | -------------- |
-| **Fracktal Direct Sales** | Fracktal Works | Full revenue        | **30%**        |
-| **Third-Party Bundled**   | Partners       | Full revenue        | 15-20%         |
-| **Third-Party Referral**  | Partners       | Fee only            | 10-15% on sale |
+| Scenario                 | Source         | Revenue Recognition | Gross Margin   |
+| ------------------------ | -------------- | ------------------- | -------------- |
+| **Fracktal Preferred**   | Fracktal Works | Full revenue        | **28%**        |
+| **Third-Party Bundled**  | Partners       | Full revenue        | 15-20%         |
+| **Third-Party Referral** | Partners       | Fee only            | 10-15% on sale |
 
-**Why 30% Margin on Fracktal Hardware:**
+**Why 28% Margin on Fracktal Hardware:**
 
-- Vertical integration (RapidTools founder owns Fracktal Works)
-- No middleman markup — direct manufacturing cost
-- Optimized for RapidTools software (tight integration)
-- Volume purchasing on components
+- **Preferred vendor terms:** Volume commitment yields better pricing than spot purchases
+- **Strategic partnership:** Founder relationship enables favorable commercial terms
+- **Arm's-length pricing:** Fracktal is a separate company with its own P&L — pricing reflects fair market value
+- **Optimized integration:** Printers pre-configured for RapidTools software (reduces support costs)
+
+**Note on Related Party:** Fracktal Works is a separate legal entity. While the founder relationship provides relationship benefits, all transactions are at arm's-length commercial terms. Fracktal earns standard manufacturing margins on hardware sales.
 
 **Typical Hardware Deals:**
 
 | Deal Type                 | Hardware   | Source    | Price    | Margin | Net to RapidTools |
 | ------------------------- | ---------- | --------- | -------- | ------ | ----------------- |
-| **SMB (Fracktal)**        | Entry FDM  | Fracktal  | $10,000  | 30%    | **$3,000**        |
-| **Mid-Market (Fracktal)** | Pro FDM    | Fracktal  | $30,000  | 30%    | **$9,000**        |
+| **SMB (Fracktal)**        | Entry FDM  | Fracktal  | $10,000  | 28%    | **$2,800**        |
+| **Mid-Market (Fracktal)** | Pro FDM    | Fracktal  | $30,000  | 28%    | **$8,400**        |
 | **Mid-Market (Partner)**  | Industrial | Stratasys | $60,000  | 18%    | $10,800           |
 | **Enterprise (Partner)**  | SLS/MJF    | HP/EOS    | $150,000 | 15%    | $22,500           |
 
@@ -607,13 +634,15 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 **Fracktal Works Hardware (70% of hardware revenue):**
 
-| Cost Component           | % of Revenue | Description                     |
-| ------------------------ | ------------ | ------------------------------- |
-| **Manufacturing Cost**   | 62-65%       | Direct from Fracktal production |
-| **Logistics/Shipping**   | 3-4%         | Delivery, handling              |
-| **Installation Support** | 2-3%         | Setup, training, commissioning  |
-| **TOTAL COGS**           | **67-72%**   |                                 |
-| **Gross Margin**         | **28-33%**   | Target: **30%**                 |
+Fracktal is treated as a preferred third-party vendor. RapidTools purchases at negotiated wholesale pricing.
+
+| Cost Component           | % of Revenue | Description                                  |
+| ------------------------ | ------------ | -------------------------------------------- |
+| **Vendor Purchase Cost** | 66-70%       | Wholesale price from Fracktal (arm's-length) |
+| **Logistics/Shipping**   | 3-4%         | Delivery, handling                           |
+| **Installation Support** | 2-3%         | Setup, training, commissioning               |
+| **TOTAL COGS**           | **71-77%**   |                                              |
+| **Gross Margin**         | **23-29%**   | Target: **28%**                              |
 
 **Third-Party Hardware (30% of hardware revenue):**
 
@@ -629,11 +658,11 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 | Source         | Revenue Mix | Gross Margin | Weighted Margin |
 | -------------- | ----------- | ------------ | --------------- |
-| Fracktal Works | 70%         | 30%          | 21%             |
-| Third-Party    | 30%         | 17%          | 5%              |
-| **BLENDED**    | 100%        | -            | **26%**         |
+| Fracktal Works | 70%         | 28%          | 19.6%           |
+| Third-Party    | 30%         | 17%          | 5.1%            |
+| **BLENDED**    | 100%        | -            | **24.7%**       |
 
-**Note:** Hardware is BOTH a **margin contributor** (via Fracktal) AND a **strategic enabler**:
+**Note:** Hardware is BOTH a **margin contributor** (via Fracktal preferred pricing) AND a **strategic enabler**:
 
 1. Fracktal sales = healthy 30% margin (not just enabler)
 2. Third-party bundles = lower margin but capture enterprise deals
@@ -646,20 +675,81 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 
 | Channel        | Source   | Units   | Avg Price | Revenue   | Margin  | Gross Profit |
 | -------------- | -------- | ------- | --------- | --------- | ------- | ------------ |
-| **SMB**        | Fracktal | 200     | $10,000   | $2.0M     | 30%     | $600K        |
-| **Mid-Market** | Fracktal | 100     | $30,000   | $3.0M     | 30%     | $900K        |
+| **SMB**        | Fracktal | 200     | $10,000   | $2.0M     | 28%     | $560K        |
+| **Mid-Market** | Fracktal | 100     | $30,000   | $3.0M     | 28%     | $840K        |
 | **Mid-Market** | Partners | 30      | $60,000   | $1.8M     | 18%     | $324K        |
 | **Enterprise** | Partners | 4       | $100,000  | $0.4M     | 15%     | $60K         |
-| **TOTAL**      | -        | **334** | -         | **$7.4M** | **26%** | **$1.92M**   |
+| **TOTAL**      | -        | **334** | -         | **$7.4M** | **24%** | **$1.78M**   |
 
 **Revenue Mix by Source:**
 
-- Fracktal Works: $5.0M (69%) @ 30% margin = $1.5M gross profit
+- Fracktal Works: $5.0M (69%) @ 28% margin = $1.4M gross profit
 - Third-Party: $2.2M (31%) @ 17% margin = $0.38M gross profit
 
 ---
 
-## Revenue Stream 5: Consumables (1% of Revenue)
+## Revenue Stream 5: Annual Maintenance Contracts (AMC)
+
+### What We Sell
+
+**Hardware Maintenance & Support** — recurring annual contracts for 3D printer maintenance, parts replacement, and technical support. AMC is standard practice in industrial equipment and drives predictable recurring revenue with high margins.
+
+**AMC Pricing:**
+
+| Tier         | Coverage                             | Annual Fee | % of Equipment Value |
+| ------------ | ------------------------------------ | ---------- | -------------------- |
+| **Basic**    | Remote support + parts (ex-labor)    | $350-500   | 5-7%                 |
+| **Standard** | Parts + 2 on-site visits/year        | $500-800   | 7-10%                |
+| **Premium**  | Parts + unlimited on-site + priority | $800-1,200 | 10-12%               |
+
+**Blended Average:** $500/year (8% of equipment value) [[24]](#ref-24)
+
+### Cost of Goods Sold (COGS) - AMC
+
+| Cost Component            | % of Revenue | Description                                    |
+| ------------------------- | ------------ | ---------------------------------------------- |
+| **OEM/VAR Revenue Share** | 30-40%       | Fracktal 30%, third-party OEMs 40%             |
+| **Spare Parts**           | 10-15%       | Nozzles, belts, bearings, boards (OEM-sourced) |
+| **Technician Time**       | 8-12%        | On-site visits, remote diagnostics             |
+| **Logistics**             | 3-5%         | Parts shipping, travel                         |
+| **Platform/Tracking**     | 2-3%         | Ticket system, monitoring                      |
+| **TOTAL COGS**            | **53-75%**   |                                                |
+| **Gross Margin**          | **25-47%**   | Blended target: **40%** (60% COGS)             |
+
+**AMC Revenue Share Model:**
+
+OEM/VAR partners require revenue share on maintenance contracts for their hardware:
+
+| OEM Partner                                    | Revenue Share | Rationale                                      |
+| ---------------------------------------------- | ------------- | ---------------------------------------------- |
+| **Fracktal** (preferred)                       | 30%           | Preferred partner rate, provides parts at cost |
+| **Third-Party OEMs** (Stratasys, HP, Formlabs) | 40%           | Standard VAR/reseller maintenance share        |
+| **Blended** (60% Fracktal / 40% third-party)   | **34%**       | Weighted average                               |
+
+**Why Margins Are Still Attractive:**
+
+1. **Predictable demand:** Parts replacement is actuarial (known failure rates)
+2. **Remote-first support:** 80% of issues resolved remotely, reducing technician costs
+3. **Service fee retained:** RapidTools keeps technician labor + platform fee
+4. **Customer relationship:** AMC keeps customers in ecosystem for consumables upsell
+
+### AMC Attach Rate & Revenue Build-Up
+
+**Attach Rate:** 35% of cumulative printer sales sign AMC contracts [[24]](#ref-24)
+
+**Year 8 AMC Revenue: $0.2M**
+
+| Metric                | Y0    | Y1    | Y2     | Y3     | Y4    | Y5    | Y6    | Y7    | Y8    |
+| --------------------- | ----- | ----- | ------ | ------ | ----- | ----- | ----- | ----- | ----- |
+| Cumulative Printers   | 8     | 43    | 128    | 299    | 641   | 1,141 | 1,800 | 2,600 | 3,500 |
+| AMC Contracts (35%)   | 3     | 15    | 45     | 105    | 224   | 399   | 630   | 910   | 1,225 |
+| AMC Revenue ($500/yr) | $1.5K | $7.5K | $22.5K | $52.5K | $112K | $200K | $315K | $455K | $612K |
+
+**Note:** AMC is a small stream (<1% of revenue) with moderate margins (40%) after OEM revenue share. Its strategic value lies in customer stickiness and enabling consumables upsell.
+
+---
+
+## Revenue Stream 6: Consumables (1% of Revenue)
 
 ### What We Sell
 
@@ -716,17 +806,17 @@ EMS is labor-intensive with dedicated staff, equipment, and facility costs—but
 | ------------------------- | ---------------------------------------------- | ---------------------------- | -------------------------------------- |
 | **Software**              | SolidWorks $3,456/yr; AutoCAD $2,100/yr        | $2,400/yr                    | 30% below SolidWorks, tooling-specific |
 | **Design Services**       | US CAD firms $300-600/fixture                  | $75-200/fixture              | 50-70% lower via automation            |
-| **Print Services**        | Protolabs starts $1,495; Xometry varies        | $25-500/part                 | SMB-focused, Fracktal capacity         |
+| **Print Services**        | Protolabs starts $1,495; Xometry varies        | $25-500/part                 | SMB-focused, local partner network     |
 | **Design + Print Bundle** | $400-1,000/fixture (design) + $100-500 (print) | $100-800/fixture delivered   | Single vendor, integrated workflow     |
 | **EMS**                   | IT MSPs $125-255/user/mo                       | $8,000-50,000/mo (full team) | Dedicated staff + equipment            |
-| **Hardware**              | Markforged $9-65K; Ultimaker $7-8K             | Fracktal $5-30K              | 30% margin via vertical integration    |
+| **Hardware**              | Markforged $9-65K; Ultimaker $7-8K             | Fracktal $5-30K              | 28% margin via preferred vendor terms  |
 | **Consumables**           | PLA $15-30/kg; Nylon $60-100/kg                | Same range                   | 30-40% margin via volume               |
 
 ### Pricing Strategy Rationale
 
 1. **Software:** Premium to Fusion 360 ($545/yr) but below SolidWorks ($3,456/yr) — justified by tooling-specific automation that replaces CAD engineers with operators
 
-2. **Tooling Services (Design + Print):** Bundled offering at 50-70% below traditional design firms — software automation reduces design time from 4-8 hours to 0.5-2 hours, combined with Fracktal manufacturing capacity for end-to-end delivery
+2. **Tooling Services (Design + Print):** Bundled offering at 50-70% below traditional design firms — software automation reduces design time from 4-8 hours to 0.5-2 hours, combined with local fulfillment partner network for end-to-end delivery
 
 3. **EMS:** Aligned with enterprise managed services ($8K-50K/month) — includes dedicated staff (designer + operator) plus equipment management
 
@@ -792,11 +882,11 @@ LTV = (ARPU × Gross Margin) / Churn Rate
 | Segment        | ARPU    | Gross Margin | Churn Rate | Lifetime   | LTV         |
 | -------------- | ------- | ------------ | ---------- | ---------- | ----------- |
 | **SMB**        | $9,300  | 70%          | 17%        | 5.9 years  | $38,400     |
-| **Mid-Market** | $37,200 | 65%          | 11%        | 9.1 years  | $220,000    |
-| **Enterprise** | $62,000 | 60%          | 6%         | 16.7 years | $621,000    |
-| **Blended**    | $18,909 | 65%          | 15%        | 6.7 years  | **$82,000** |
+| **Mid-Market** | $37,200 | 60%          | 11%        | 9.1 years  | $220,000    |
+| **Enterprise** | $62,000 | 55%          | 6%         | 16.7 years | $621,000    |
+| **Blended**    | $18,909 | 59%          | 15%        | 6.7 years  | **$82,000** |
 
-**Note on Segment Gross Margins:** Enterprise has lower gross margin (60%) than SMB (70%) because enterprise deals include more services and EMS (lower margin) alongside software. The 65% blended margin matches company-level financials.
+**Note on Segment Gross Margins:** Enterprise has lower gross margin (55%) than SMB (65%) because enterprise deals include more services and EMS (lower margin) alongside software. The 59% blended margin reflects realistic stream-level COGS: Software 20%, Job Work 75%, Managed Services 72%, 3D Printers 76%, AMC 60%, Consumables 67%.
 
 **Note on Blended Churn:** The 15% blended churn is weighted by customer count (SMB 70%, Mid-Market 25%, Enterprise 5%). This is higher than revenue-weighted churn (~12%) because SMB customers (higher churn) are 70% of customer count but only 34% of revenue.
 
@@ -1045,31 +1135,31 @@ Customers using 3+ revenue streams have **4× longer lifetimes** than software-o
 
 ### Gross Margin by Stream
 
-| Revenue Stream       | Y1 GM   | Y4 GM   | Y8 GM   | Driver                                                    |
-| -------------------- | ------- | ------- | ------- | --------------------------------------------------------- |
-| **Software**         | 75%     | 78%     | 82%     | Scale → lower infra cost %                                |
-| **Tooling Services** | 42%     | 44%     | 44%     | Blended: Print (28%) + Design+Print (48%) + Managed (55%) |
-| **EMS**              | N/A     | 25%     | 28%     | Labor-intensive but sticky                                |
-| **Hardware**         | 26%     | 26%     | 26%     | Fracktal 30% + third-party 17% blend                      |
-| **Consumables**      | 28%     | 32%     | 35%     | White-label, volume purchasing                            |
-| **BLENDED**          | **62%** | **62%** | **65%** | Software growth offsets lower-margin services             |
+| Revenue Stream  | Y1 GM   | Y4 GM   | Y8 GM   | Driver                                               |
+| --------------- | ------- | ------- | ------- | ---------------------------------------------------- |
+| **Software**    | 80%     | 80%     | 80%     | Fixed COGS (20%): Cloud, APIs, CS, Payments          |
+| **Job Work**    | 25%     | 25%     | 25%     | Fixed COGS (75%): Materials + labor floor            |
+| **EMS**         | 28%     | 28%     | 28%     | Fixed COGS (72%): Dedicated staff + equipment        |
+| **Hardware**    | 24%     | 24%     | 24%     | Fixed COGS (76%): Fracktal 28% + third-party margins |
+| **Consumables** | 33%     | 33%     | 33%     | Fixed COGS (67%): Materials + logistics              |
+| **AMC**         | 40%     | 40%     | 40%     | Fixed COGS (60%): OEM share + service costs          |
+| **BLENDED**     | **56%** | **55%** | **59%** | Stable — software contributes 82% of GP              |
 
-**Benchmark:** SaaS gross margin median is 77% [[18]](#ref-18); professional services target 30-40% [[19]](#ref-19). RapidTools blended 65% reflects services mix.
+**Benchmark:** SaaS gross margin median is 77% [[18]](#ref-18); professional services target 30-40% [[19]](#ref-19). RapidTools blended 59% reflects services mix with fixed COGS% per stream (no margin improvement assumed).
 
 ### Gross Profit Build-Up (Year 8)
 
-| Stream               | Revenue   | Gross Margin | Gross Profit |
-| -------------------- | --------- | ------------ | ------------ |
-| Software             | $64.0M    | 82%          | $52.5M       |
-| **Tooling Services** | $24.2M    | 44%          | $10.6M       |
-| - Print Only         | $6.8M     | 28%          | $1.9M        |
-| - Design + Print     | $10.9M    | 48%          | $5.2M        |
-| - Managed Design     | $5.4M     | 55%          | $3.0M        |
-| - Consulting         | $1.2M     | 65%          | $0.8M        |
-| **EMS**              | $7.4M     | 28%          | $2.1M        |
-| Hardware             | $7.4M     | 26%          | $1.9M        |
-| Consumables          | $1.1M     | 35%          | $0.4M        |
-| **TOTAL**            | **$104M** | **65%**      | **$67.5M**   |
+| Stream          | Revenue   | Gross Margin | Gross Profit |
+| --------------- | --------- | ------------ | ------------ |
+| **Software**    | $64.0M    | 80%          | $51.2M       |
+| **Job Work**    | $25.7M    | 25%          | $6.4M        |
+| **EMS**         | $7.4M     | 28%          | $2.1M        |
+| **Hardware**    | $5.2M     | 24%          | $1.2M        |
+| **Consumables** | $1.1M     | 33%          | $0.4M        |
+| **AMC**         | $0.6M     | 40%          | $0.2M        |
+| **TOTAL**       | **$104M** | **59%**      | **$61.5M**   |
+
+**Key Insight:** Software contributes **83%** of gross profit ($51.2M / $61.5M) despite being only **62%** of revenue. Services (Job Work + EMS) contribute 14% of GP but are essential for customer acquisition and stickiness.
 
 ---
 
@@ -1077,23 +1167,17 @@ Customers using 3+ revenue streams have **4× longer lifetimes** than software-o
 
 ### Cost of Revenue (COGS) by Stream
 
-| Stream               | Y8 Revenue | COGS %  | COGS $     | Key Components                                |
-| -------------------- | ---------- | ------- | ---------- | --------------------------------------------- |
-| **Software**         | $64.0M     | 18%     | $11.5M     | Cloud (8%), APIs (3%), CS (5%), Payments (2%) |
-| **Tooling Services** | $24.2M     | 56%     | $13.6M     | See breakdown below                           |
-| **EMS**              | $7.4M      | 72%     | $5.3M      | Staff (55%), Equipment (12%), Overhead (5%)   |
-| **Hardware**         | $7.4M      | 74%     | $5.5M      | Fracktal 70% COGS, Partners 83% COGS          |
-| **Consumables**      | $1.1M      | 65%     | $0.7M      | Materials (60%), Logistics (5%)               |
-| **TOTAL**            | **$104M**  | **35%** | **$36.6M** |                                               |
+| Stream          | Y8 Revenue | COGS %  | COGS $     | Key Components                                |
+| --------------- | ---------- | ------- | ---------- | --------------------------------------------- |
+| **Software**    | $64.0M     | 20%     | $12.8M     | Cloud (8%), APIs (3%), CS (5%), Payments (4%) |
+| **Job Work**    | $25.7M     | 75%     | $19.3M     | Materials (40%), Machine (20%), Labor (15%)   |
+| **EMS**         | $7.4M      | 72%     | $5.3M      | Staff (55%), Equipment (12%), Overhead (5%)   |
+| **Hardware**    | $5.2M      | 76%     | $4.0M      | Fracktal 70% COGS, Partners 83% COGS          |
+| **Consumables** | $1.1M      | 67%     | $0.7M      | Materials (60%), Logistics (7%)               |
+| **AMC**         | $0.6M      | 60%     | $0.4M      | OEM share (40%), Service costs (20%)          |
+| **TOTAL**       | **$104M**  | **41%** | **$42.5M** |                                               |
 
-**Tooling Services COGS Breakdown:**
-
-| Service Type   | Revenue | COGS % | COGS $ | Key Components                                              |
-| -------------- | ------- | ------ | ------ | ----------------------------------------------------------- |
-| Print Only     | $6.8M   | 72%    | $4.9M  | Materials (30%), Machine (20%), Labor (12%), Shipping (10%) |
-| Design + Print | $10.9M  | 52%    | $5.7M  | Blended: design (32%) + print (72%)                         |
-| Managed Design | $5.4M   | 45%    | $2.4M  | FTE designers (35%), overhead (10%)                         |
-| Consulting     | $1.2M   | 35%    | $0.4M  | Consultants (30%), Travel (5%)                              |
+**Note:** COGS% is FIXED per stream (no improvement over time). Blended COGS% varies only with revenue mix.
 
 ### Variable Costs (Sales & Marketing)
 
@@ -1366,7 +1450,7 @@ Software subscriptions are billed **annually upfront** (75% of customers) or mon
 
 - Source: rapiddirect.com, all3dp.com
 - Key Data: Xometry cheaper for production runs; marketplace model drives competition
-- Relevance: RapidTools Job Work uses Fracktal capacity for cost advantage
+- Relevance: RapidTools Job Work uses local partner network for cost-effective fulfillment
 
 <a name="ref-12"></a> 12. **On-Demand 3D Printing Market**
 
@@ -1448,10 +1532,19 @@ Software subscriptions are billed **annually upfront** (75% of customers) or mon
 - Key Data: 3D printing businesses report 30-70% gross margins depending on model
 - Relevance: Print services and consumables margin context
 
+### AMC Pricing Benchmarks
+
+<a name="ref-24"></a> 24. **Equipment Maintenance Contract Pricing**
+
+- Source: Gartner IT Services Pricing Guide, Industry benchmarks
+- Key Data: AMC typically 8-12% of equipment value annually; 30-40% attach rates for industrial equipment
+- Detail: Basic support 5-7%, Standard 7-10%, Premium 10-12% of equipment value
+- Relevance: RapidTools AMC at $500/year (8% of avg $7K printer) with 35% attach rate is industry-standard
+
 ---
 
-**Last Updated:** January 26, 2026
-**Total References:** 23 sources
+**Last Updated:** January 28, 2026
+**Total References:** 24 sources
 
 ---
 

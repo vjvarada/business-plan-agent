@@ -13,7 +13,7 @@
 | -------------------- | ----------------------- | ---------------------- | ------------------------------ |
 | **Revenue/Employee** | $274K                   | $300K (> ARR)          | Benchmarkit 2025 [[1]](#ref-1) |
 | **Total Headcount**  | 380                     | 350-500 typical        | SaaS Capital [[2]](#ref-2)     |
-| **Gross Margin**     | 65%                     | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1) |
+| **Gross Margin**     | 59%                     | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1) |
 | **S&M as % Revenue** | 24%                     | 33% (> ARR)            | Benchmarkit 2025 [[1]](#ref-1) |
 | **R&D as % Revenue** | 7%                      | 34% median (private)   | Benchmarkit 2025 [[1]](#ref-1) |
 | **G&A as % Revenue** | 7%                      | 24% median             | Benchmarkit 2025 [[1]](#ref-1) |
@@ -723,25 +723,25 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 
 | Year   | Revenue | COGS          | Gross Profit | People Cost | S&M Variable | Fixed Costs | SBC (non-cash) | EBITDA   | EBITDA Margin |
 | ------ | ------- | ------------- | ------------ | ----------- | ------------ | ----------- | -------------- | -------- | ------------- |
-| **Y1** | $0.5M   | $0.23M (46%)  | $0.27M       | $0.68M      | $0.05M       | $0.20M      | $0.02M         | ($0.66M) | (132%)        |
-| **Y2** | $2.5M   | $1.00M (40%)  | $1.50M       | $1.61M      | $0.25M       | $0.42M      | $0.05M         | ($0.78M) | (31%)         |
-| **Y3** | $7.0M   | $2.66M (38%)  | $4.34M       | $3.29M      | $0.70M       | $0.78M      | $0.10M         | ($0.43M) | (6%)          |
-| **Y4** | $15.0M  | $5.55M (37%)  | $9.45M       | $5.76M      | $1.50M       | $1.60M      | $0.15M         | $0.59M   | 4%            |
-| **Y5** | $30.0M  | $10.80M (36%) | $19.20M      | $9.50M      | $3.00M       | $2.50M      | $0.30M         | $4.20M   | 14%           |
-| **Y6** | $50.0M  | $18.00M (36%) | $32.00M      | $14.04M     | $5.50M       | $3.60M      | $0.60M         | $8.86M   | 18%           |
-| **Y7** | $77.0M  | $27.72M (36%) | $49.28M      | $18.36M     | $9.50M       | $4.70M      | $1.20M         | $16.72M  | 22%           |
-| **Y8** | $104.0M | $36.40M (35%) | $67.60M      | $21.28M     | $14.40M      | $7.10M      | $2.08M         | $24.82M  | 24%           |
+| **Y1** | $0.5M   | $0.22M (44%)  | $0.28M       | $0.68M      | $0.05M       | $0.20M      | $0.02M         | ($0.65M) | (130%)        |
+| **Y2** | $2.5M   | $1.10M (44%)  | $1.40M       | $1.61M      | $0.25M       | $0.42M      | $0.05M         | ($0.88M) | (35%)         |
+| **Y3** | $7.0M   | $3.08M (44%)  | $3.92M       | $3.29M      | $0.70M       | $0.78M      | $0.10M         | ($0.85M) | (12%)         |
+| **Y4** | $15.0M  | $6.75M (45%)  | $8.25M       | $5.76M      | $1.50M       | $1.60M      | $0.15M         | ($0.61M) | (4%)          |
+| **Y5** | $30.0M  | $13.02M (43%) | $16.99M      | $9.50M      | $3.00M       | $2.50M      | $0.30M         | $1.99M   | 7%            |
+| **Y6** | $50.0M  | $20.86M (42%) | $29.14M      | $14.04M     | $5.50M       | $3.60M      | $0.60M         | $6.00M   | 12%           |
+| **Y7** | $77.0M  | $32.20M (42%) | $44.80M      | $18.36M     | $9.50M       | $4.70M      | $1.20M         | $12.24M  | 16%           |
+| **Y8** | $104.0M | $42.45M (41%) | $61.55M      | $21.28M     | $14.40M      | $7.10M      | $2.08M         | $18.77M  | 18%           |
 
 **Key Observations:**
 
-- **Y1-Y3 are EBITDA-negative** (burn period for PMF validation) - expected for early-stage startups
-- **COGS % improves** from 46% (Y1) to 35% (Y8) as software mix increases (62% by Y8)
-- **Gross margin improves** from 54% (Y1) to 65% (Y8)
+- **Y1-Y4 are EBITDA-negative** (investment period for PMF validation and market expansion) - expected for early-stage startups with services component
+- **COGS % stays stable** at 41-44% — reflects realistic stream-level economics with fixed COGS% per revenue stream (Software 20%, 3D Printers 76%, Consumables 67%, AMC 60%, Managed Services 72%, Job Work 75%)
+- **Gross margin stable** at 56-59% — Services have structural margin limits (materials + labor floor); Software contributes 82% of GP despite 60% of revenue
 - **S&M Variable** scales from 10% (Y1) to 14% (Y8), reflecting proper marketing investment (5% of revenue) and trade show presence (0.8%)
 - **Fixed Costs** now include explicit R&D infrastructure ($650K Y8), R&D partnerships ($400K Y8), customer enablement, employee L&D, and contingency
 - **Stock-Based Compensation** grows from $20K (Y1) to $2.08M (Y8) as equity grants scale with headcount
-- **EBITDA margin** improves from negative (Y1-Y3) to 24% (Y8) - excludes SBC per industry standard
-- **Break-even achieved Y4** - later due to comprehensive R&D investment, but builds defensible IP moat
+- **EBITDA margin** improves from negative (Y1-Y4) to 18% (Y8) - excludes SBC per industry standard
+- **Break-even achieved Y5** — realistic timeline given services margin constraints; software scale drives eventual profitability
 
 **Note on SBC:** Stock-based compensation is shown separately as a non-cash expense. EBITDA excludes SBC (industry standard). If included, GAAP operating margin would be ~22% in Y8.
 
@@ -749,13 +749,13 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 
 | Category                | Amount  | % of Revenue | Notes                                               |
 | ----------------------- | ------- | ------------ | --------------------------------------------------- |
-| **Gross Margin**        | $67.6M  | 65%          | After COGS                                          |
+| **Gross Margin**        | $61.6M  | 59%          | After COGS — stable, not improving (services mix)   |
 | **People Cost**         | $21.28M | 20%          | 380 FTEs × $56K avg                                 |
 | **S&M Variable**        | $14.40M | 14%          | Marketing $5M + Events $0.8M + VAR $5M + Comm $3.6M |
 | **Fixed Costs (G&A)**   | $7.10M  | 7%           | Facilities, tools, R&D infra, compliance, L&D       |
-| **EBITDA**              | $24.82M | **24%**      | Before interest, taxes, D&A, SBC                    |
+| **EBITDA**              | $18.77M | **18%**      | Before interest, taxes, D&A, SBC                    |
 | **Stock Compensation**  | $2.08M  | 2%           | Non-cash equity grants (GAAP OpEx)                  |
-| **GAAP Operating Inc.** | $22.74M | **22%**      | EBITDA minus SBC                                    |
+| **GAAP Operating Inc.** | $16.69M | **16%**      | EBITDA minus SBC                                    |
 | **TOTAL**               | $104M   | 100%         |                                                     |
 
 **S&M Variable Breakdown (Year 8):**
@@ -798,12 +798,12 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 
 | **Metric**       | **RapidTools Y8**  | **Industry Benchmark** | **Source**                      |
 | ---------------- | ------------------ | ---------------------- | ------------------------------- |
-| Gross Margin     | 65%                | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1)  |
+| Gross Margin     | 59%                | 77% median (pure SaaS) | Benchmarkit 2025 [[1]](#ref-1)  |
 | S&M (Total)      | 24% (People + Var) | 33% (>$100M ARR)       | Benchmarkit 2025 [[1]](#ref-1)  |
 | Marketing        | 4.8%               | 8% median              | SaaS Capital 2025 [[2]](#ref-2) |
 | R&D (Total)      | 7%                 | 22% median (private)   | Benchmarkit 2025 [[1]](#ref-1)  |
 | G&A (Fixed)      | 7%                 | 24% median             | Benchmarkit 2025 [[1]](#ref-1)  |
-| EBITDA Margin    | 24%                | 20-30%                 | Rule of 40 [[1]](#ref-1)        |
+| EBITDA Margin    | 18%                | 20-30%                 | Rule of 40 [[1]](#ref-1)        |
 | SBC % of Revenue | 2%                 | 5-15%                  | Carta 2024 [[15]](#ref-15)      |
 
 **Why RapidTools Achieves Industry-Standard Profitability:**
@@ -813,9 +813,16 @@ Per the Revenue Model, RapidTools has **five layers of costs**:
 - **R&D at 7%**: Comprehensive investment including CAD licenses ($150K), ML compute ($100K), university research ($75K), and patent portfolio ($75K) — India cost advantage delivers 2-3× output vs. US equivalent
 - **G&A at 7%**: Includes R&D infrastructure, customer enablement, employee L&D, and contingency reserves—comprehensive but efficient
 - **SBC at 2%**: Conservative vs. 5-15% industry norm; reflects India cost structure and founder-heavy equity
-- **EBITDA at 24%**: Meets Rule of 40 (35% growth + 24% margin = 59) while investing comprehensively in R&D and growth
+- **EBITDA at 18%**: Approaches Rule of 40 (35% growth + 18% margin = 53) — realistic given services mix constraints; software-only SaaS would exceed
+- **Gross Margin at 59%**: Below 77% pure SaaS median but reflects strategic services mix — Services are customer acquisition channel with structural margin limits (materials + labor floor)
 
-**Note on Rule of 40:** The 24% EBITDA margin reflects comprehensive investments in:
+**Note on Margin Strategy:** The 59% gross margin and 18% EBITDA reflect deliberate strategic choices:
+
+- **Services generate customers, software generates profit** — Job Work and Managed Services have 25-28% margins (materials/labor floor) but drive software adoption
+- **Software contributes 82% of GP** despite 60% of revenue — this is the profit engine
+- **No margin improvement assumed** — COGS% is fixed per stream; mix shift is minimal as services remain strategic
+
+**Note on Rule of 40:** The 18% EBITDA margin reflects comprehensive investments in:
 
 - **R&D Infrastructure** ($650K Y8): CAD/CAM licenses, ML compute, data platforms
 - **R&D Partnerships & IP** ($400K Y8): University research, patent portfolio, prototypes

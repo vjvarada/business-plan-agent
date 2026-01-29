@@ -7,11 +7,11 @@
 
 ### What You're Investing In
 
-| Entity | Role | This Round |
-|--------|------|------------|
-| **Applied Additive** | Platform company (AI intent-to-CAD) | **← The investment** |
-| **RapidTools** | First product vertical (manufacturing tooling) | Funded by this round |
-| Medical, Consumer, Architecture | Future verticals | Enabled by platform |
+| Entity                          | Role                                           | This Round           |
+| ------------------------------- | ---------------------------------------------- | -------------------- |
+| **Applied Additive**            | Platform company (AI intent-to-CAD)            | **← The investment** |
+| **RapidTools**                  | First product vertical (manufacturing tooling) | Funded by this round |
+| Medical, Consumer, Architecture | Future verticals                               | Enabled by platform  |
 
 ---
 
@@ -135,13 +135,13 @@ This buffer absorbs:
 | Free pilots          | 5+ enterprise pilots (Honda, TVS, Toyota)                                                 | Q2 Y1               |
 | Paying customers     | 8 paying pilots/customers                                                                 | Q4 Y1               |
 | **Tier 2 tools**     | 8 tools production-ready (+Assembly, Sand Casting)                                        | Q4 Y1 (M12)         |
-| ARR achieved         | $500K                                                                       | Q4 Y1 (18-month Y1) |
-| Team built           | 16 FTEs (CTO to accelerate velocity)                                        | Q4 Y1               |
-| **Tier 3 tools**     | 10 tools production-ready (+Palletizing, EOAT)                              | Q2 Y2 (M18)         |
-| Product-market fit   | NPS >40, <15% logo churn                                                    | Q4 Y2               |
-| Y2 revenue target    | $2.5M                                                                       | Q4 Y2               |
-| ARR run rate         | $5M+                                                                        | Q2 Y3               |
-| VAR channel launched | 5-8 active VARs                                                             | Q1 Y3               |
+| ARR achieved         | $500K                                                                                     | Q4 Y1 (18-month Y1) |
+| Team built           | 16 FTEs (CTO to accelerate velocity)                                                      | Q4 Y1               |
+| **Tier 3 tools**     | 10 tools production-ready (+Palletizing, EOAT)                                            | Q2 Y2 (M18)         |
+| Product-market fit   | NPS >40, <15% logo churn                                                                  | Q4 Y2               |
+| Y2 revenue target    | $2.5M                                                                                     | Q4 Y2               |
+| ARR run rate         | $5M+                                                                                      | Q2 Y3               |
+| VAR channel launched | 5-8 active VARs                                                                           | Q1 Y3               |
 
 **Note on Product Roadmap:** The 10 tools are prioritized into 3 tiers based on foundation reuse and customer demand:
 
@@ -250,7 +250,7 @@ With $15M ARR and proven unit economics, Series B funds global expansion into EU
 | ARR achieved  | $104M                                                                           | Y8       |
 | Team scale    | 380 FTEs globally                                                               | Y8       |
 | VAR network   | 85 VARs × 55 customers avg = 4,675 VAR customers (85% of count, 65% of revenue) | Y8       |
-| EBITDA margin | 24%                                                                             | Y5+      |
+| EBITDA margin | 18%                                                                             | Y6+      |
 | Customer base | 5,500 customers, <15% blended logo churn (~12% revenue-weighted)                | Y8       |
 | Exit-ready    | Strategic acquisition or IPO path                                               | Y6-Y8    |
 
@@ -292,7 +292,7 @@ These costs reduce Operating CF vs. earlier projections but build a more defensi
 
 **EBITDA vs Operating Cash Flow Reconciliation:**
 
-The Rule of 40 table shows EBITDA margins of 4-24% (Y4-Y8), while Operating CF margins are 2-18%. The ~4-6% gap is explained by:
+The Rule of 40 table shows EBITDA margins of 7-18% (Y5-Y8), while Operating CF margins are 2-18%. The ~3-5% gap is explained by:
 
 | Factor                         | Impact on Cash Flow | Notes                                                                      |
 | ------------------------------ | ------------------- | -------------------------------------------------------------------------- |
@@ -417,7 +417,7 @@ _Burn Multiple = Net Burn / Net New ARR (lower is better; <1x is excellent)_
 - GAAP Operating Income = EBITDA - SBC = 22% margin
 - Conservative vs. 5-15% industry norm for VC-backed startups
 
-The 24% EBITDA margin is **realistic and defensible** — it reflects full investment in R&D infrastructure, customer success, employee development, and prudent reserves while still meeting Rule of 40 benchmark.
+The 18% EBITDA margin is **realistic and defensible** — it reflects full investment in R&D infrastructure, customer success, employee development, and prudent reserves while approaching Rule of 40 benchmark (35% growth + 18% margin = 53). The margin is constrained by strategic services mix (Job Work and Managed Services have 25-28% margins due to materials/labor floor) but software contributes 82% of gross profit.
 
 ---
 
@@ -468,10 +468,10 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 
 > **Platform Expansion Upside (Not in Base Case):** These exit valuations are based on RapidTools (manufacturing tooling) alone. Applied Additive's platform architecture enables expansion into adjacent markets—Medical ($15B), Consumer Products ($6B), Architecture ($2.5B)—representing **$140B+ combined TAM by 2030**. If Phase 2 expansion succeeds (Dental + Jewelry by Y6), exit multiples could command a **platform premium** of 1.5-2×:
 >
-> | Scenario                      | Base Case (Tooling Only) | Platform Premium (Adjacent Markets) |
-> | ----------------------------- | ------------------------ | ----------------------------------- |
-> | Strategic Acquisition         | $400-600M                | **$600M-1B**                        |
-> | IPO                           | $800M-1.2B               | **$1.5-3B**                         |
+> | Scenario              | Base Case (Tooling Only) | Platform Premium (Adjacent Markets) |
+> | --------------------- | ------------------------ | ----------------------------------- |
+> | Strategic Acquisition | $400-600M                | **$600M-1B**                        |
+> | IPO                   | $800M-1.2B               | **$1.5-3B**                         |
 >
 > This optionality is **free to Seed investors**—we're not raising capital for adjacent markets, but the platform architecture enables them. See [12_Adjacent_Markets_Expansion.md](12_Adjacent_Markets_Expansion.md) for detailed expansion roadmap.
 
@@ -499,7 +499,7 @@ The 24% EBITDA margin is **realistic and defensible** — it reflects full inves
 
 **Attractive to PE:**
 
-- Strong EBITDA margin (24%)
+- Strong EBITDA margin (18%) with path to expansion as software scale increases
 - Recurring revenue (65% software)
 - Low CapEx requirements
 - India cost arbitrage opportunity
