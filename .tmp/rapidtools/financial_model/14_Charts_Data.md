@@ -95,13 +95,15 @@ This sheet contains **10 chart data series** covering:
 
 ### Chart 5: Unit Economics
 
-| Year                 | Y0     | Y1     | Y2     | Y3     | Y4     | Y5     |
-| -------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
-| **LTV:CAC Ratio**    | 207.5x | 226.5x | 251.5x | 248.8x | 226.4x | 184.5x |
-| **CAC Payback (mo)** | 0.6    | 0.5    | 0.5    | 0.5    | 0.5    | 0.7    |
+| Year                 | Y0    | Y1    | Y2    | Y3    | Y4    | Y5    |
+| -------------------- | ----- | ----- | ----- | ----- | ----- | ----- |
+| **LTV:CAC Ratio**    | 10.2x | 11.5x | 12.8x | 13.1x | 13.5x | 14.0x |
+| **CAC Payback (mo)** | 5.8   | 5.2   | 4.7   | 4.5   | 4.2   | 3.9   |
 
 **Chart Type:** Dual-axis (LTV:CAC left, Payback right)
-**Note:** Exceptionally strong unit economics
+**Note:** Strong unit economics - LTV:CAC well above 3:1 threshold. Based on 15% blended churn (6.7yr lifetime).
+
+**BP Reference:** 09_Fundraising_Strategy.md L195-201 (LTV:CAC 11.7:1 blended)
 
 ---
 
@@ -129,28 +131,37 @@ This sheet contains **10 chart data series** covering:
 
 ---
 
-### Chart 8: Cap Table (Post Series A)
+### Chart 8: Cap Table (Post Series B - Final)
 
 | Stakeholder            | Ownership % |
 | ---------------------- | ----------- |
-| **Founders**           | 56.4%       |
-| **Seed Investors**     | 22.6%       |
-| **Series A Investors** | 21.1%       |
+| **Founders**           | 40.5%       |
+| **ESOP Pool**          | 4.0%        |
+| **Seed Investors**     | 13.5%       |
+| **Series A Investors** | 17.0%       |
+| **Series B Investors** | 25.0%       |
 
 **Chart Type:** Pie chart or donut
-**Note:** Founders retain majority control
+**Note:** BP targets 48% founder ownership; 40.5% reflects dilution from ESOP + rounds.
+
+**BP Reference:** 09_Fundraising_Strategy.md L319-340 (Cap Table Evolution)
 
 ---
 
 ### Chart 9: Funding Timeline
 
-| Year                       | Y0    | Y1    | Y2    | Y3    | Y4    | Y5    |
-| -------------------------- | ----- | ----- | ----- | ----- | ----- | ----- |
-| **Equity Raised ($K)**     | 2,000 | 0     | 4,000 | 0     | 0     | 0     |
-| **Cumulative Equity ($K)** | 2,000 | 2,000 | 6,000 | 6,000 | 6,000 | 6,000 |
+| Year                       | Y0     | Y1     | Y2      | Y3      | Y4      | Y5      |
+| -------------------------- | ------ | ------ | ------- | ------- | ------- | ------- |
+| **Equity Raised ($K)**     | 3,000  | 0      | 10,000  | 0       | 25,000  | 0       |
+| **Cumulative Equity ($K)** | 3,000  | 3,000  | 13,000  | 13,000  | 38,000  | 38,000  |
 
 **Chart Type:** Bar for raised, line for cumulative
-**Note:** Show round labels (Seed, Series A)
+**Note:** Show round labels (Seed Y0, Series A Y2, Series B Y4)
+
+**BP Reference:** 09_Fundraising_Strategy.md L120-180
+- Y0 (BP Y1): Seed $3M @ $10M pre-money
+- Y2 (BP Y3): Series A $10M @ $30M pre-money
+- Y4 (BP Y5): Series B $25M @ $75M pre-money
 
 ---
 

@@ -89,30 +89,40 @@ Also includes **Investor Returns** projections at exit.
 
 ### Ownership at Exit (Post Series B)
 
+**BP Reference:** 09_Fundraising_Strategy.md L319-340 (Cap Table Evolution)
+
 | Stakeholder            | Ownership % | Base Case Value |
 | ---------------------- | ----------- | --------------- |
-| **Founders**           | 40.0%       | $69,853K        |
-| **Seed Investors**     | 15.0%       | $26,195K        |
-| **Series A Investors** | 20.0%       | $34,927K        |
+| **Founders**           | 40.5%       | $70,727K        |
+| **ESOP Pool**          | 4.0%        | $6,985K         |
+| **Seed Investors**     | 13.5%       | $23,575K        |
+| **Series A Investors** | 17.0%       | $29,687K        |
 | **Series B Investors** | 25.0%       | $43,658K        |
 | **Total**              | 100.0%      | $174,633K       |
+
+**Note:** BP targets 48% founder ownership post-Series B. The 40.5% here reflects slightly higher dilution per round. ESOP (4%) reserved for key hires.
 
 ### Returns by Round
 
 | Round        | Investment | Base Case Return | MOIC      |
 | ------------ | ---------- | ---------------- | --------- |
-| **Seed**     | $3,000K    | $26,195K         | **8.7x**  |
-| **Series A** | $10,000K   | $34,927K         | **3.5x**  |
+| **Seed**     | $3,000K    | $23,575K         | **7.9x**  |
+| **Series A** | $10,000K   | $29,687K         | **3.0x**  |
 | **Series B** | $25,000K   | $43,658K         | **1.7x**  |
-| **Total**    | $38,000K   | $104,780K        | **2.8x**  |
+| **Total**    | $38,000K   | $96,921K         | **2.6x**  |
+
+**Note:** Base case uses average valuation of $174.6M. At strategic exit ($400-600M per BP L466-470), Seed MOIC would be 18-27x.
 
 ### Return Scenarios
 
 | Scenario         | Exit Valuation | Seed MOIC | Series A MOIC | Series B MOIC |
 | ---------------- | -------------- | --------- | ------------- | ------------- |
-| **Conservative** | $123,795K      | 6.2x      | 2.5x          | 1.2x          |
-| **Base Case**    | $174,633K      | 8.7x      | 3.5x          | 1.7x          |
-| **Upside**       | $244,183K      | 12.2x     | 4.9x          | 2.4x          |
+| **Conservative** | $123,795K      | 5.6x      | 2.1x          | 1.2x          |
+| **Base Case**    | $174,633K      | 7.9x      | 3.0x          | 1.7x          |
+| **Upside**       | $244,183K      | 11.0x     | 4.2x          | 2.4x          |
+| **Strategic**    | $500,000K      | 22.5x     | 8.5x          | 5.0x          |
+
+**Note:** Strategic exit ($400-600M) is BP's most likely scenario (60% probability per L466). Conservative/Base/Upside reflect model-calculated valuations.
 
 ---
 

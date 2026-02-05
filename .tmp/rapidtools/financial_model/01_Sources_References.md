@@ -1,6 +1,6 @@
 ﻿# 01 - Sources & References Sheet
 
-> **Last Updated:** 2026-01-28  
+> **Last Updated:** 2026-01-29  
 > **Purpose:** Single source of truth for all linkable values used across the financial model  
 > **Sheet Position:** 1 of 14
 
@@ -15,34 +15,55 @@ This sheet contains two sections:
 
 All pricing, COGS percentages, CAC, churn rates, and market data should be referenced FROM this sheet.
 
+### TAM/SAM/SOM Summary
+
+| Metric | Value | Description |
+| ------ | ----- | ----------- |
+| **TAM** | $42.0B | Software $10B + Hardware $4B + Consumables $8B + Services $20B |
+| **SAM (Phase 1-2)** | $2.88B | India + SE Asia addressable market |
+| **SAM (Phase 3)** | $5.76B | + Global VAR network (2× regional SAM) |
+| **SOM (Year 8)** | $104M | 1.81% penetration, 5,500 customers |
+| **Revenue Mix** | 62/30/7/1 | Software/Services/Hardware/Consumables |
+
 ---
 
 ## SECTION A: KEY METRICS (Linkable Values)
 
-### A1. TAM - Total Addressable Market (2025)
+### A1. TAM - Total Addressable Market (2025): $42.0 Billion
+
+**Source:** [BP 02_TAM_SAM_SOM_Calculation.md](../business_plan/sections/02_TAM_SAM_SOM_Calculation.md)
 
 | Row | Metric                           | Value              | Unit | Calculation/Source                           | Confidence  |
 | --- | -------------------------------- | ------------------ | ---- | -------------------------------------------- | ----------- |
 | 7   | **SOFTWARE TAM**                 |                    |      |                                              |             |
-| 8   | CAD Software (Tooling Subset)    | 6,100              | $M   | Global CAD $12.2B 50% tooling                | HIGH        |
-| 9   | CAM Software (Tooling Subset)    | 2,800              | $M   | Global CAM $3.45B 80% tooling                | HIGH        |
+| 8   | CAD Software (Tooling Subset)    | 6,100              | $M   | Global CAD $12.2B × 50% tooling [[1]](#ref-1)| HIGH        |
+| 9   | CAM Software (Tooling Subset)    | 2,800              | $M   | Global CAM $3.45B × 80% tooling [[2]](#ref-2)| HIGH        |
 | 10  | Other Mfg Software (PLM/Sim)     | 1,100              | $M   | PLM $0.5B + Simulation $0.4B + Tolerance     | MEDIUM      |
-| 11  | **Total Software TAM**           | `=B8+B9+B10`       | $M   | Sum of CAD + CAM + Other                     | HIGH        |
+| 11  | **Total Software TAM**           | `=B8+B9+B10`       | $M   | Sum of CAD + CAM + Other = **$10.0B**        | HIGH        |
 | 12  | **HARDWARE TAM**                 |                    |      |                                              |             |
-| 13  | Industrial 3D Printing Market    | 18,300             | $M   | Global industrial 3D printing 2025           | HIGH        |
-| 14  | Tooling Applications %           | 22%                | %    | Jigs 12% + Molds 7% + Assembly 3%            | HIGH        |
-| 15  | **Total Hardware TAM**           | `=B13*B14`         | $M   | 3D Print Market Tooling %                    | HIGH        |
+| 13  | Industrial 3D Printing Market    | 18,300             | $M   | Global industrial 3D printing 2025 [[6]](#ref-6) | HIGH    |
+| 14  | Tooling Applications %           | 22%                | %    | Jigs 12% + Molds 7% + Assembly 3% [[10]](#ref-10) | HIGH   |
+| 15  | **Total Hardware TAM**           | `=B13*B14`         | $M   | 3D Print × Tooling % = **$4.0B**             | HIGH        |
 | 16  | **CONSUMABLES TAM**              |                    |      |                                              |             |
-| 17  | 3D Printing Materials Market     | 3,880              | $M   | Global 3D printing materials 2025            | HIGH        |
-| 18  | Tooling Material Subset          | `=B17*0.22*1.33`   | $M   | Materials 22% 1.33 intensity                 | MEDIUM      |
+| 17  | 3D Printing Materials Market     | 3,880              | $M   | Global 3D printing materials 2025 [[8]](#ref-8) | HIGH     |
+| 18  | Tooling Material Subset          | `=B17*0.22*1.33`   | $M   | Materials × 22% × 1.33 intensity = $1.13B    | MEDIUM      |
 | 19  | Traditional Tooling Materials    | 6,870              | $M   | CNC $4.2B + Composite $1.5B + Other          | MEDIUM      |
-| 20  | **Total Consumables TAM**        | `=B18+B19`         | $M   | 3DP Materials + Traditional                  | MEDIUM-HIGH |
+| 20  | **Total Consumables TAM**        | `=B18+B19`         | $M   | 3DP Materials + Traditional = **$8.0B**      | MEDIUM-HIGH |
 | 21  | **SERVICES TAM**                 |                    |      |                                              |             |
-| 22  | Engineering Services Outsourcing | 315,610            | $M   | Global ESO market 2025                       | HIGH        |
-| 23  | Mechanical Engineering Subset    | 50,000             | $M   | Mechanical engineering outsourcing           | HIGH        |
+| 22  | Engineering Services Outsourcing | 315,610            | $M   | Global ESO market 2025 [[32]](#ref-32)       | HIGH        |
+| 23  | Mechanical Engineering Subset    | 50,000             | $M   | Mechanical engineering outsourcing [[33]](#ref-33) | HIGH   |
 | 24  | Tooling Design % of Mech Eng     | 40%                | %    | Jigs/fixtures/molds/dies design work         | MEDIUM      |
-| 25  | **Total Services TAM**           | `=B23*B24`         | $M   | Mech Eng Tooling %                           | MEDIUM-HIGH |
-| 27  | **TOTAL TAM**                    | `=B11+B15+B20+B25` | $M   | Software + Hardware + Consumables + Services | HIGH        |
+| 25  | **Total Services TAM**           | `=B23*B24`         | $M   | Mech Eng × Tooling % = **$20.0B**            | MEDIUM-HIGH |
+| 27  | **TOTAL TAM**                    | `=B11+B15+B20+B25` | $M   | Software + Hardware + Consumables + Services = **$42.0B** | HIGH |
+
+**TAM Summary:**
+| Revenue Stream  | TAM (2025) | Confidence | Primary Source |
+| --------------- | ---------- | ---------- | -------------- |
+| Software        | $10.0B     | HIGH       | Future Market Insights (CAD $12.2B), Mordor (CAM $3.45B) |
+| Hardware        | $4.0B      | HIGH       | GM Insights (3D Printing $18.3B × 22% tooling) |
+| Consumables     | $8.0B      | MEDIUM-HIGH| Grand View ($3.88B materials) + traditional tooling |
+| Services        | $20.0B     | MEDIUM-HIGH| Mordor Intelligence (ESO $315.61B), MRA ($50B mech. eng.) |
+| **TOTAL TAM**   | **$42.0B** | **HIGH**   | All streams validated with tier-1 research |
 
 ### A2. Design Automation Software TAM (10 Modules)
 
@@ -60,55 +81,122 @@ All pricing, COGS percentages, CAC, churn rates, and market data should be refer
 | 38  | 10. EOAT                | 52                | EOAT Market           | 2.00%             | IMARC Group              |
 | 39  | **SOFTWARE TAM TOTAL**  | `=SUM(B29:B38)`   | $M                    | Sum of 10 modules |                          |
 
-### A3. SAM - Regional Breakdown (Formula-Driven)
+### A3. SAM - Serviceable Addressable Market: $2.88B → $5.76B (Phased)
+
+**Source:** [BP 02_TAM_SAM_SOM_Calculation.md](../business_plan/sections/02_TAM_SAM_SOM_Calculation.md)
+
+#### Geographic Expansion Phases
+
+| Row | Phase       | Years | Geography            | SAM ($M)  | Cumulative SAM | Multiplier |
+| --- | ----------- | ----- | -------------------- | --------- | -------------- | ---------- |
+| 42  | **Phase 1** | Y1-Y2 | India                | 1,800     | $1.80B         | 1.0×       |
+| 43  | **Phase 2** | Y3-Y4 | + SE Asia            | 1,080     | $2.88B         | 1.6×       |
+| 44  | **Phase 3** | Y5-Y8 | + Global VARs        | 2,880     | $5.76B         | 2.0×       |
+
+#### SAM by Revenue Stream (India + SE Asia = Phase 1-2)
+
+| Row | Revenue Stream  | SAM ($M) | % of TAM | Calculation                                               |
+| --- | --------------- | -------- | -------- | --------------------------------------------------------- |
+| 46  | Software        | 336      | 3.4%     | Regional CAD ($1.01B) × Addressability (40.9%) × Tooling  |
+| 47  | Hardware        | 366      | 9.2%     | Regional 3DP ($1.66B) × Addressability (24%) × Tooling × Growth |
+| 48  | Consumables     | 440      | 5.5%     | Materials ($103M) + Traditional ($1.77B) with filters     |
+| 49  | Services        | 1,740    | 8.7%     | **BOTTOMS-UP** (650K companies × $1K-15K avg spend/tier)  |
+| 50  | **TOTAL SAM**   | `=SUM(B46:B49)` | 6.9% | India + SE Asia addressable market = **$2.88B**           |
+
+#### Regional Company Base (for Penetration Calculation)
 
 | Row | Region                  | Total Mfg | Target Seg | Digital-Ready % | SAM Companies   |
 | --- | ----------------------- | --------- | ---------- | --------------- | --------------- |
-| 42  | **INDIA**               | 680,000   | 58,500     | 10%             | `=C42*D42`      |
-| 43  | **SE ASIA**             | 250,000   | 24,200     | 12%             | `=C43*D43`      |
-| 44  | **JAPAN**               | 180,000   | 26,400     | 25%             | `=C44*D44`      |
-| 45  | **GERMANY/EU**          | 200,000   | 30,600     | 20%             | `=C45*D45`      |
-| 46  | **OTHERS**              | -         | 8,000      | -               | 8,000           |
-| 47  | **TOTAL SAM Companies** |           |            |                 | `=SUM(E42:E46)` |
+| 52  | **INDIA**               | 680,000   | 58,500     | 10%             | `=C52*D52`      |
+| 53  | **SE ASIA**             | 250,000   | 24,200     | 12%             | `=C53*D53`      |
+| 54  | **JAPAN**               | 180,000   | 26,400     | 25%             | `=C54*D54`      |
+| 55  | **GERMANY/EU**          | 200,000   | 30,600     | 20%             | `=C55*D55`      |
+| 56  | **OTHERS**              | -         | 8,000      | -               | 8,000           |
+| 57  | **TOTAL SAM Companies** |           |            |                 | `=SUM(E52:E56)` |
 
-**Calculated SAM Values:**
+**Calculated SAM Company Values:**
 
-- India SAM: 5,850 companies
-- SE Asia SAM: 2,904 companies
-- Japan SAM: 6,600 companies
-- Germany/EU SAM: 6,120 companies
+- India SAM: 5,850 companies (58,500 × 10%)
+- SE Asia SAM: 2,904 companies (24,200 × 12%)
+- Japan SAM: 6,600 companies (26,400 × 25%)
+- Germany/EU SAM: 6,120 companies (30,600 × 20%)
 - Others: 8,000 companies
 - **Total SAM: 29,474 companies**
 
-### A4. SOM - Customer Projections (Linked to Assumptions)
+#### SAM Addressability Filters
 
-| Row | Year | Penetration % | Customers | Seats  | Seats/Cust | Calculation                     |
-| --- | ---- | ------------- | --------- | ------ | ---------- | ------------------------------- |
-| 50  | Y0   | 0.07%         | 20        | 123    | 6.0        | Pilot phase, enterprise-heavy   |
-| 51  | Y1   | 0.45%         | 133       | 669    | 5.0        | Early adopter, building channel |
-| 52  | Y2   | 1.50%         | 442       | 1,990  | 4.5        | Product-market fit, VAR ramp    |
-| 53  | Y3   | 3.72%         | 1,096     | 4,385  | 4.0        | Growth phase, SMB via VARs      |
-| 54  | Y4   | 8.11%         | 2,390     | 9,082  | 3.8        | Scaling, channel dominant       |
-| 55  | Y5   | 15.44%        | 4,552     | 15,933 | 3.5        | Market expansion, 70% SMB mix   |
+| Filter                           | Software | Hardware | Consumables | Services |
+| -------------------------------- | -------- | -------- | ----------- | -------- |
+| Digital maturity (CAD-ready)     | 40.9%    | -        | -           | -        |
+| Infrastructure ready             | 95%      | 60%      | 60%         | -        |
+| Investment capacity ($80K+)      | -        | 40%      | -           | -        |
+| Outsource tooling design         | -        | -        | -           | 65%      |
+| **Combined Addressability**      | 40.9%    | 24%      | 17%         | 65%      |
+
+### A4. SOM - Serviceable Obtainable Market: $104M (Year 8)
+
+**Source:** [BP 02_TAM_SAM_SOM_Calculation.md](../business_plan/sections/02_TAM_SAM_SOM_Calculation.md)
+
+#### 8-Year SOM Growth Trajectory
+
+| Row | Year | Geography     | Active SAM | Revenue ($M) | Customers | Avg ARPU   | YoY Growth | SAM Penetration |
+| --- | ---- | ------------- | ---------- | ------------ | --------- | ---------- | ---------- | --------------- |
+| 60  | Y1*  | India         | $1.80B     | 0.5          | 8         | $62,500    | -          | 0.03%           |
+| 61  | Y2   | India         | $1.80B     | 2.5          | 30        | $83,333    | 400%       | 0.14%           |
+| 62  | Y3   | + SE Asia     | $2.88B     | 7.0          | 85        | $82,353    | 180%       | 0.24%           |
+| 63  | Y4   | + SE Asia     | $2.88B     | 15.0         | 220       | $68,182    | 114%       | 0.52%           |
+| 64  | Y5   | + Global VARs | $4.32B     | 30.0         | 550       | $54,545    | 100%       | 0.69%           |
+| 65  | Y6   | + Global VARs | $4.80B     | 50.0         | 1,350     | $37,037    | 67%        | 1.04%           |
+| 66  | Y7   | + Global VARs | $5.28B     | 77.0         | 2,900     | $26,552    | 54%        | 1.46%           |
+| 67  | Y8   | Global        | $5.76B     | 104.0        | 5,500     | $18,909    | 35%        | 1.81%           |
+
+*Y1 is an 18-month PMF validation period. Early customers are enterprise pilots at high ARPU.
+
+#### Revenue Mix by Stream (Year 8 = $104M)
+
+| Row | Revenue Stream              | Revenue ($M) | Mix %  | Penetration vs SAM |
+| --- | --------------------------- | ------------ | ------ | ------------------ |
+| 69  | Software Subscriptions      | 64.0         | 61.5%  | 9.5% of $672M      |
+| 70  | Tooling Services (Job Work) | 24.2         | 23.3%  | 0.7% of $3.48B     |
+| 71  | Enterprise Managed Services | 7.4          | 7.1%   | 0.2% of $3.48B     |
+| 72  | Hardware (3D Printers)      | 7.4          | 7.1%   | 1.0% of $732M      |
+| 73  | Consumables                 | 1.1          | 1.1%   | 0.1% of $880M      |
+| 74  | **TOTAL**                   | `=SUM(B69:B73)` | 100% | **1.81%** blended  |
+
+#### Customer Segment Mix (Year 8)
+
+| Row | Segment        | Customers | Mix % | ARPU    | Revenue ($M) | Penetration |
+| --- | -------------- | --------- | ----- | ------- | ------------ | ----------- |
+| 76  | SMB            | 3,850     | 70%   | $9,300  | 35.8         | 0.77%       |
+| 77  | Mid-Market     | 1,375     | 25%   | $37,200 | 51.2         | 2.75%       |
+| 78  | Enterprise     | 275       | 5%    | $62,000 | 17.1         | 5.50%       |
+| 79  | **TOTAL**      | 5,500     | 100%  | $18,909 | 104.0        | 1.81%       |
+
+**ARPU Decline Explanation:** Intentional "land enterprise, scale SMB" strategy.
+- Y1-Y2: Enterprise pilots (Honda, TVS, Toyota) at $62K-$83K ARPU
+- Y3-Y4: Mid-market + SMB entry at $68K-$82K ARPU  
+- Y5-Y8: SMB-dominant (70% of customers) at $19K-$55K ARPU
 
 ### A5. Seats per Customer Model (by Segment)
 
 **Segment Mix Evolution:**
-| Segment | Seats Avg | Y0 Mix | Y5 Mix | Notes |
+| Segment      | Seats Avg | Y1 Mix | Y8 Mix | Notes                              |
 | ------------ | --------- | ------ | ------ | ---------------------------------- |
-| SMB | 2.0 | 30% | 70% | 1-4 operators per company |
-| Mid-Market | 5.0 | 40% | 25% | 3-8 operators, multi-department |
-| Enterprise | 15.0 | 30% | 5% | 10-30 operators, multi-site |
+| SMB          | 2.0       | 30%    | 70%    | 1-4 operators per company          |
+| Mid-Market   | 5.0       | 40%    | 25%    | 3-8 operators, multi-department    |
+| Enterprise   | 15.0      | 30%    | 5%     | 10-30 operators, multi-site        |
 
 **Blended Seats per Customer by Year:**
-| Row | Year | Seats/Customer | Segment Mix Driver |
+| Row | Year | Seats/Customer | Segment Mix Driver                    |
 | --- | ---- | -------------- | ------------------------------------- |
-| 58 | Y0 | 6.0 | Enterprise pilots (Honda, TVS) |
-| 59 | Y1 | 5.0 | More mid-market, building VAR channel |
-| 60 | Y2 | 4.5 | SMB growing via VARs |
-| 61 | Y3 | 4.0 | SMB dominant, VAR-led growth |
-| 62 | Y4 | 3.8 | 65% VAR channel, SMB-heavy |
-| 63 | Y5 | 3.5 | Mature mix: 70% SMB, 25% MM, 5% Ent |
+| 82  | Y1   | 6.0            | Enterprise pilots (Honda, TVS)        |
+| 83  | Y2   | 5.5            | More mid-market, building VAR channel |
+| 84  | Y3   | 5.0            | SMB growing via VARs                  |
+| 85  | Y4   | 4.5            | SMB dominant, VAR-led growth          |
+| 86  | Y5   | 4.0            | 55% VAR channel                       |
+| 87  | Y6   | 3.8            | 65% VAR channel, SMB-heavy            |
+| 88  | Y7   | 3.6            | 70% SMB mix                           |
+| 89  | Y8   | 3.5            | Mature mix: 70% SMB, 25% MM, 5% Ent   |
 
 ### A6. Pricing & Channel Economics (LINKED TO ASSUMPTIONS)
 
@@ -192,6 +280,27 @@ All pricing, COGS percentages, CAC, churn rates, and market data should be refer
 - Mid-Market: 11% (25% of customers)
 - Enterprise: 6% (5% of customers)
 - **Blended: 15%** (weighted by customer count)
+
+### A8a. Unit Economics by Segment (Year 8 - Mature State)
+
+**Source:** [BP 07_Revenue_Model.md](../business_plan/sections/07_Revenue_Model.md)
+
+| Row | Metric             | SMB        | Mid-Market | Enterprise  | Blended        |
+| --- | ------------------ | ---------- | ---------- | ----------- | -------------- |
+| 106 | **Blended ARPU**   | $9,300     | $37,200    | $62,000     | **$18,909**    |
+| 107 | **CAC**            | $2,500     | $12,000    | $45,000     | $7,000         |
+| 108 | **Churn Rate**     | 17%        | 11%        | 6%          | 15%            |
+| 109 | **Lifetime**       | 5.9 yrs    | 9.1 yrs    | 16.7 yrs    | 6.7 yrs        |
+| 110 | **LTV**            | $38,400    | $220,000   | $621,000    | $82,000        |
+| 111 | **LTV:CAC**        | **15.4:1** | **18.3:1** | **13.8:1**  | **11.7:1**     |
+| 112 | **Payback Period** | 4.6 months | 5.5 months | 12.1 months | **6.0 months** |
+| 113 | **Gross Margin**   | 65%        | 60%        | 55%         | **59%**        |
+
+**Note on LTV:CAC Ratios:** Our ratios (12-18:1) exceed the 3:1 industry minimum. Two structural advantages:
+1. **India cost advantage:** Sales/marketing costs are 60-70% lower than US equivalents
+2. **Multi-product stickiness:** Customers using software + services + hardware face 5× switching costs
+
+**Segment Gross Margins:** Enterprise has lower GM (55%) than SMB (65%) because enterprise deals include more services and EMS (lower margin) alongside software.
 
 ### A9. Product Attachment Rates (LINKED TO ASSUMPTIONS)
 
@@ -332,25 +441,64 @@ All pricing, COGS percentages, CAC, churn rates, and market data should be refer
 
 Other sheets should reference this sheet using these cell addresses:
 
+### TAM/SAM/SOM Data
+
 | Data Point              | Cell Reference                    | Used By                      |
 | ----------------------- | --------------------------------- | ---------------------------- |
-| Software Price          | `='Sources & References'!B66`     | Assumptions, Revenue         |
-| 3D Printer Price        | `='Sources & References'!B67`     | Assumptions, Revenue         |
-| Consumables Price       | `='Sources & References'!B68`     | Assumptions, Revenue         |
-| AMC Price               | `='Sources & References'!B69`     | Assumptions, Revenue         |
-| Managed Services Price  | `='Sources & References'!B70`     | Assumptions, Revenue         |
-| Job Work Price          | `='Sources & References'!B71`     | Assumptions, Revenue         |
-| Software COGS %         | `='Sources & References'!B74`     | Assumptions, Operating Costs |
-| 3D Printer COGS %       | `='Sources & References'!B75`     | Assumptions, Operating Costs |
-| Consumables COGS %      | `='Sources & References'!B76`     | Assumptions, Operating Costs |
-| AMC COGS %              | `='Sources & References'!B77`     | Assumptions, Operating Costs |
-| Managed Services COGS % | `='Sources & References'!B78`     | Assumptions, Operating Costs |
-| Job Work COGS %         | `='Sources & References'!B79`     | Assumptions, Operating Costs |
-| Y0-Y5 CAC               | `='Sources & References'!B82:B87` | Assumptions                  |
-| Churn Rate              | `='Sources & References'!B89`     | Assumptions                  |
-| Customer Lifetime       | `='Sources & References'!B90`     | Assumptions                  |
-| Y0-Y5 Customers         | `='Sources & References'!B50:B55` | Assumptions, Summary         |
-| Y0-Y5 Seats/Customer    | `='Sources & References'!B58:B63` | Assumptions                  |
+| Total TAM               | `='Sources & References'!B27`     | Summary, Pitch Deck          |
+| Software TAM            | `='Sources & References'!B11`     | Summary                      |
+| Hardware TAM            | `='Sources & References'!B15`     | Summary                      |
+| Consumables TAM         | `='Sources & References'!B20`     | Summary                      |
+| Services TAM            | `='Sources & References'!B25`     | Summary                      |
+| Total SAM ($M)          | `='Sources & References'!B50`     | Summary                      |
+| SAM by Phase (Y1-8)     | `='Sources & References'!B42:B44` | Summary, Geographic          |
+| Total SAM Companies     | `='Sources & References'!E57`     | Summary                      |
+| Y1-Y8 Revenue           | `='Sources & References'!D60:D67` | Assumptions, P&L             |
+| Y1-Y8 Customers         | `='Sources & References'!E60:E67` | Assumptions, Summary         |
+| Y1-Y8 ARPU              | `='Sources & References'!F60:F67` | Assumptions                  |
+| Y1-Y8 Penetration       | `='Sources & References'!H60:H67` | Summary                      |
+
+### Pricing Data
+
+| Data Point              | Cell Reference                    | Used By                      |
+| ----------------------- | --------------------------------- | ---------------------------- |
+| Software List Price     | `='Sources & References'!B92`     | Assumptions, Revenue         |
+| 3D Printer Price        | `='Sources & References'!B98`     | Assumptions, Revenue         |
+| Consumables Price       | `='Sources & References'!B99`     | Assumptions, Revenue         |
+| AMC Price               | `='Sources & References'!B100`    | Assumptions, Revenue         |
+| Managed Services Price  | `='Sources & References'!B101`    | Assumptions, Revenue         |
+| Job Work Price          | `='Sources & References'!B102`    | Assumptions, Revenue         |
+
+### COGS Data
+
+| Data Point              | Cell Reference                    | Used By                      |
+| ----------------------- | --------------------------------- | ---------------------------- |
+| Software COGS %         | `='Sources & References'!B105`    | Assumptions, Operating Costs |
+| 3D Printer COGS %       | `='Sources & References'!B106`    | Assumptions, Operating Costs |
+| Consumables COGS %      | `='Sources & References'!B107`    | Assumptions, Operating Costs |
+| AMC COGS %              | `='Sources & References'!B108`    | Assumptions, Operating Costs |
+| Managed Services COGS % | `='Sources & References'!B109`    | Assumptions, Operating Costs |
+| Job Work COGS %         | `='Sources & References'!B110`    | Assumptions, Operating Costs |
+
+### Customer Metrics
+
+| Data Point              | Cell Reference                    | Used By                      |
+| ----------------------- | --------------------------------- | ---------------------------- |
+| Y1-Y8 CAC               | `='Sources & References'!B113:B120` | Assumptions                |
+| Churn Rate (Blended)    | `='Sources & References'!B122`    | Assumptions                  |
+| Customer Lifetime       | `='Sources & References'!B123`    | Assumptions                  |
+| Y1-Y8 Seats/Customer    | `='Sources & References'!B82:B89` | Assumptions                  |
+
+### Unit Economics
+
+| Data Point              | Cell Reference                    | Used By                      |
+| ----------------------- | --------------------------------- | ---------------------------- |
+| SMB ARPU                | `='Sources & References'!B127`    | Summary, Valuation           |
+| Mid-Market ARPU         | `='Sources & References'!C127`    | Summary, Valuation           |
+| Enterprise ARPU         | `='Sources & References'!D127`    | Summary, Valuation           |
+| Blended ARPU            | `='Sources & References'!E127`    | Summary, Valuation           |
+| Blended LTV             | `='Sources & References'!E131`    | Summary, Valuation           |
+| Blended LTV:CAC         | `='Sources & References'!E132`    | Summary, Valuation           |
 
 ---
 

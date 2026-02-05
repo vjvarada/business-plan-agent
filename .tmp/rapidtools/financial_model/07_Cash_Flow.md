@@ -16,11 +16,15 @@ The Cash Flow statement tracks all cash movements across three categories:
 
 **BP Reference:** 09_Fundraising_Strategy.md (funding rounds and timing)
 
-**Funding Schedule:**
+**Funding Schedule (Model Year → BP Year Mapping):**
 
-- **Seed ($3M):** Y0 (Model) = BP Y1 Q1
-- **Series A ($10M):** Y2 (Model) = BP Y3 Q2 (after $5M ARR)
-- **Series B ($25M):** Y4 (Model) = BP Y5 Q2 (after $15M ARR)
+| Round | Model Year | BP Year | BP Timing | ARR Trigger | Amount |
+|-------|------------|---------|-----------|-------------|--------|
+| **Seed** | Y0 | Y1 | Q1 (Jan 2026) | Pre-revenue | $3M |
+| **Series A** | Y2 | Y3 | Q2 (Jun 2028) | $5M ARR | $10M |
+| **Series B** | Y4 | Y5 | Q2 (Jun 2030) | $15M ARR | $25M |
+
+**Note:** Model uses Y0-Y5 (6 years), BP uses Y1-Y8 (8 years). Model Y0 = BP Y1. Valuations per BP: Seed $10M pre, Series A $30M pre (6x ARR), Series B $75M pre (5x ARR).
 
 ---
 

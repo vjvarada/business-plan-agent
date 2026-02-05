@@ -67,18 +67,26 @@ The Summary sheet provides a **KPI Dashboard** consolidating key metrics from al
 
 ### Unit Economics Section
 
+**BP Reference:** 07_Revenue_Model.md L24-42 (Unit Economics Summary)
+
 | Metric                    | Unit | Y0       | Y1       | Y2       | Y3       | Y4       | Y5       |
 | ------------------------- | ---- | -------- | -------- | -------- | -------- | -------- | -------- |
 | **CAC**                   | $    | $2,000   | $2,100   | $2,200   | $2,300   | $2,400   | $2,500   |
 | **Total CAC Spend**       | $    | $20K     | $160K    | $343K    | $561K    | $1,013K  | $1,403K  |
 | **ARPU (Annual)**         | $    | $62,058  | $70,914  | $82,317  | $85,997  | $80,283  | $66,906  |
 | **ARPU (Monthly)**        | $    | $5,171   | $5,909   | $6,860   | $7,166   | $6,690   | $5,575   |
-| **Churn Rate**            | %    | 10%      | 10%      | 10%      | 10%      | 10%      | 10%      |
-| **Avg Customer Lifetime** | yrs  | 10.0     | 10.0     | 10.0     | 10.0     | 10.0     | 10.0     |
-| **LTV (Gross)**           | $    | $620,575 | $709,137 | $823,172 | $859,971 | $802,827 | $669,060 |
-| **LTV (Net of COGS)**     | $    | $415,011 | $475,698 | $553,257 | $572,310 | $543,477 | $461,262 |
-| **LTV:CAC Ratio**         | x    | 207.5x   | 226.5x   | 251.5x   | 248.8x   | 226.4x   | 184.5x   |
-| **CAC Payback**           | mo   | 0.6      | 0.5      | 0.5      | 0.5      | 0.5      | 0.7      |
+| **Churn Rate (Blended)**  | %    | 15%      | 15%      | 15%      | 15%      | 15%      | 15%      |
+| **Avg Customer Lifetime** | yrs  | 6.7      | 6.7      | 6.7      | 6.7      | 6.7      | 6.7      |
+| **LTV (Gross)**           | $    | $415,789 | $475,164 | $551,523 | $576,179 | $537,896 | $448,270 |
+| **LTV (Net of COGS)**     | $    | $232,841 | $261,590 | $308,853 | $316,898 | $306,200 | $260,397 |
+| **LTV:CAC Ratio**         | x    | 11.6x    | 12.5x    | 14.0x    | 13.8x    | 12.8x    | 10.4x    |
+| **CAC Payback**           | mo   | 4.6      | 4.3      | 3.9      | 3.9      | 4.3      | 5.4      |
+
+**Note on LTV:CAC (BP 07_Revenue_Model.md L44-60):**
+- Ratios of 10-14:1 reflect India cost advantage (CAC 60-70% lower than US)
+- Blended churn 15% = SMB 17%, Mid-Market 11%, Enterprise 6% weighted by segment
+- As US/EU expansion increases CAC, ratios expected to normalize to 5-8:1
+- Industry benchmark minimum: 3:1 (RapidTools exceeds at all stages)
 
 ### Revenue Mix Section
 
@@ -131,17 +139,19 @@ C22 (Growth Rate) = =(D19-C19)/C19  [D22 onwards]
 
 ### Unit Economics
 
+**BP Reference:** 07_Revenue_Model.md L24-42 (churn by segment, lifetime calculation)
+
 ```
 C25 (CAC) = =Assumptions!C53
 C26 (CAC Spend) = =C25*C20
 C27 (ARPU Annual) = =C4/C19
 C28 (ARPU Monthly) = =C27/12
-C29 (Churn Rate) = =Assumptions!C58
-C30 (Lifetime) = =1/C29
+C29 (Churn Rate) = =Assumptions!C58    // 15% blended (SMB 17%, MM 11%, Ent 6%)
+C30 (Lifetime) = =1/C29               // 6.7 years = 1/0.15
 C31 (LTV Gross) = =C27*C30
-C32 (LTV Net) = =C31*C9
-C33 (LTV:CAC) = =C32/C25
-C34 (Payback) = =C25/C28
+C32 (LTV Net) = =C31*C9               // LTV × Gross Margin
+C33 (LTV:CAC) = =C32/C25              // Target: 10-14x (India advantage)
+C34 (Payback) = =C25/C28              // Target: 4-6 months
 ```
 
 ### Revenue Mix
@@ -177,12 +187,12 @@ C37:C42 = =Revenue!C3:C8
 
 | Metric            | Value  | Assessment               |
 | ----------------- | ------ | ------------------------ |
-| **Revenue**       | $50.2M | Strong growth trajectory |
-| **Gross Margin**  | 68.9%  | SaaS-like margins        |
-| **EBITDA Margin** | 29.0%  | Highly profitable        |
-| **Net Margin**    | 21.7%  | Excellent bottom line    |
-| **LTV:CAC**       | 184.5x | Very efficient CAC       |
-| **Cash**          | $16.8M | Strong cash position     |
+| **Revenue**       | $50.1M | Strong growth trajectory |
+| **Gross Margin**  | 58%    | Services mix constraint  |
+| **EBITDA Margin** | 12%    | Path to 18% by Y8        |
+| **Net Margin**    | 7%     | Profitable, reinvesting  |
+| **LTV:CAC**       | 10.4x  | 3× industry minimum      |
+| **Cash**          | $33.1M | Strong cash position     |
 
 ### Growth Profile
 

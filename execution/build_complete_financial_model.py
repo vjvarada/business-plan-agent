@@ -1872,6 +1872,167 @@ class FinancialModelBuilder:
             ws.cell(row, 3).value = unit
             row += 1
         self.row_refs["funding_end"] = row - 1
+        row += 1
+
+        # Customer Segmentation
+        style_section_header(ws.cell(row, 1), "CUSTOMER SEGMENTATION (Year 8)")
+        ws.merge_cells(f"A{row}:F{row}")
+        row += 1
+
+        customers = self.config.get("customers", {})
+        segments = customers.get("segments", {})
+
+        # Headers for customer segments
+        segment_headers = ["Segment", "Count", "% Mix", "ARPU", "Churn", "GM %"]
+        for col, header in enumerate(segment_headers, 1):
+            ws.cell(row, col).value = header
+            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
+        row += 1
+
+        self.row_refs["customers_start"] = row
+        for seg_name, seg_data in [
+            ("SMB", segments.get("smb", {"count": 3850, "pct": 0.70, "arpu": 9300, "churn": 0.17})),
+            ("Mid-Market", segments.get("midmarket", {"count": 1375, "pct": 0.25, "arpu": 37200, "churn": 0.11})),
+            ("Enterprise", segments.get("enterprise", {"count": 275, "pct": 0.05, "arpu": 62000, "churn": 0.06})),
+        ]:
+            ws.cell(row, 1).value = seg_name
+            ws.cell(row, 2).value = seg_data.get("count", 0)
+            ws.cell(row, 2).number_format = "[$-409]#,##0"
+            ws.cell(row, 3).value = seg_data.get("pct", 0)
+            ws.cell(row, 3).number_format = "0.0%"
+            ws.cell(row, 4).value = seg_data.get("arpu", 0)
+            ws.cell(row, 4).number_format = "[$-409]#,##0"
+            ws.cell(row, 5).value = seg_data.get("churn", 0)
+            ws.cell(row, 5).number_format = "0.0%"
+            ws.cell(row, 6).value = seg_data.get("gross_margin", 0.65)
+            ws.cell(row, 6).number_format = "0.0%"
+            row += 1
+
+        # Total customers row
+        ws.cell(row, 1).value = "TOTAL"
+        ws.cell(row, 1).font = Font(bold=True)
+        ws.cell(row, 2).value = customers.get("total_y8", 5500)
+        ws.cell(row, 2).number_format = "[$-409]#,##0"
+        ws.cell(row, 2).font = Font(bold=True)
+        row += 2
+
+        # Unit Economics
+        style_section_header(ws.cell(row, 1), "UNIT ECONOMICS (Blended)")
+        ws.merge_cells(f"A{row}:C{row}")
+        row += 1
+
+        unit_econ = self.config.get("unit_economics", {})
+        unit_params = [
+            ("Blended ARPU", unit_econ.get("blended_arpu", 18909), "USD"),
+            ("Blended CAC", unit_econ.get("blended_cac", 7000), "USD"),
+            ("Blended Churn Rate", unit_econ.get("blended_churn", 0.15), "%"),
+            ("Blended Lifetime (years)", unit_econ.get("blended_lifetime", 6.7), "Years"),
+            ("LTV", unit_econ.get("ltv", 82000), "USD"),
+            ("LTV:CAC Ratio", unit_econ.get("ltv_cac_ratio", 11.7), "x"),
+            ("Payback Period (months)", unit_econ.get("payback_months", 6), "Months"),
+            ("Net Revenue Retention", unit_econ.get("nrr_target", 1.11), "%"),
+        ]
+
+        self.row_refs["unit_econ_start"] = row
+        for name, value, unit in unit_params:
+            ws.cell(row, 1).value = name
+            ws.cell(row, 2).value = value
+            if unit == "USD":
+                ws.cell(row, 2).number_format = "[$-409]#,##0"
+            elif unit == "%":
+                ws.cell(row, 2).number_format = "0.0%" if value < 2 else "0%"
+            elif unit == "x":
+                ws.cell(row, 2).number_format = "0.0"
+            ws.cell(row, 3).value = unit
+            row += 1
+        row += 1
+
+        # Pricing Architecture
+        style_section_header(ws.cell(row, 1), "SOFTWARE PRICING ARCHITECTURE")
+        ws.merge_cells(f"A{row}:C{row}")
+        row += 1
+
+        pricing = self.config.get("pricing", {})
+        pricing_params = [
+            ("Base Price/Seat/Year", pricing.get("software_per_seat", 2400), "USD"),
+            ("SMB Avg Seats", pricing.get("smb_seats", 2.0), "Seats"),
+            ("Mid-Market Avg Seats", pricing.get("midmarket_seats", 8.0), "Seats"),
+            ("Enterprise Avg Seats", pricing.get("enterprise_seats", 25.0), "Seats"),
+            ("Mid-Market Discount", pricing.get("midmarket_discount", 0.10), "%"),
+            ("Enterprise Discount", pricing.get("enterprise_discount", 0.20), "%"),
+        ]
+
+        for name, value, unit in pricing_params:
+            ws.cell(row, 1).value = name
+            ws.cell(row, 2).value = value
+            if unit == "USD":
+                ws.cell(row, 2).number_format = "[$-409]#,##0"
+            elif unit == "%":
+                ws.cell(row, 2).number_format = "0.0%"
+            elif unit == "Seats":
+                ws.cell(row, 2).number_format = "0.0"
+            ws.cell(row, 3).value = unit
+            row += 1
+        row += 1
+
+        # Geographic Expansion
+        style_section_header(ws.cell(row, 1), "GEOGRAPHIC EXPANSION PHASES")
+        ws.merge_cells(f"A{row}:D{row}")
+        row += 1
+
+        geo_headers = ["Phase", "Regions", "Years", "SAM"]
+        for col, header in enumerate(geo_headers, 1):
+            ws.cell(row, col).value = header
+            style_header(ws.cell(row, col), bg=Colors.MEDIUM_BLUE, size=10)
+        row += 1
+
+        geographic = self.config.get("geographic", {})
+        geo_phases = [
+            ("Phase 1", geographic.get("phase1", {}).get("regions", ["India"]),
+             geographic.get("phase1", {}).get("years", "Y1-Y2"), 1800000000),
+            ("Phase 2", geographic.get("phase2", {}).get("regions", ["India", "SE Asia"]),
+             geographic.get("phase2", {}).get("years", "Y3-Y4"), 2880000000),
+            ("Phase 3", geographic.get("phase3", {}).get("regions", ["India", "SE Asia", "US/EU"]),
+             geographic.get("phase3", {}).get("years", "Y5-Y8"), 5760000000),
+        ]
+
+        for phase, regions, years, sam in geo_phases:
+            ws.cell(row, 1).value = phase
+            ws.cell(row, 2).value = ", ".join(regions) if isinstance(regions, list) else str(regions)
+            ws.cell(row, 3).value = years
+            ws.cell(row, 4).value = sam
+            ws.cell(row, 4).number_format = "[$-409]#,##0"
+            row += 1
+        row += 1
+
+        # Efficiency Metrics
+        style_section_header(ws.cell(row, 1), "EFFICIENCY METRICS (Targets)")
+        ws.merge_cells(f"A{row}:C{row}")
+        row += 1
+
+        efficiency = self.config.get("efficiency_metrics", {})
+        eff_params = [
+            ("Revenue/Employee (Y8)", efficiency.get("revenue_per_employee_y8", 274000), "USD"),
+            ("Burn Multiple (Y1-Y4)", efficiency.get("burn_multiple_y1_y4", 0.8), "x"),
+            ("ARR per $ Raised", efficiency.get("arr_per_dollar_raised", 2.74), "x"),
+            ("Time to Profitability", efficiency.get("time_to_profitability", "Y4"), "Year"),
+            ("S&M as % Revenue (Y8)", efficiency.get("sm_as_pct_revenue_y8", 0.24), "%"),
+            ("R&D as % Revenue (Y8)", efficiency.get("rd_as_pct_revenue_y8", 0.07), "%"),
+            ("G&A as % Revenue (Y8)", efficiency.get("ga_as_pct_revenue_y8", 0.07), "%"),
+            ("Rule of 40 (Y8)", efficiency.get("rule_of_40_y8", 59), "Score"),
+        ]
+
+        for name, value, unit in eff_params:
+            ws.cell(row, 1).value = name
+            ws.cell(row, 2).value = value
+            if unit == "USD":
+                ws.cell(row, 2).number_format = "[$-409]#,##0"
+            elif unit == "%":
+                ws.cell(row, 2).number_format = "0.0%"
+            elif unit == "x":
+                ws.cell(row, 2).number_format = "0.00"
+            ws.cell(row, 3).value = unit
+            row += 1
 
     def _build_headcount(self):
         """Sheet 3: Headcount Plan."""
@@ -3326,6 +3487,69 @@ def load_config(config_path: str) -> Dict[str, Any]:
     config["som"] = {
         "year8_revenue": market.get("som_y8", 104000000)
         / 1000000,  # Convert to millions
+    }
+
+    # Customer segmentation
+    customers_raw = raw_config.get("customers", {})
+    segments_raw = customers_raw.get("segments", {})
+    config["customers"] = {
+        "total_y8": customers_raw.get("total_y8", 5500),
+        "segments": {
+            "smb": segments_raw.get("smb", {
+                "count": 3850, "pct": 0.70, "arpu": 9300, "churn": 0.17, "gross_margin": 0.70
+            }),
+            "midmarket": segments_raw.get("midmarket", {
+                "count": 1375, "pct": 0.25, "arpu": 37200, "churn": 0.11, "gross_margin": 0.65
+            }),
+            "enterprise": segments_raw.get("enterprise", {
+                "count": 275, "pct": 0.05, "arpu": 62000, "churn": 0.06, "gross_margin": 0.60
+            }),
+        }
+    }
+
+    # Unit economics
+    unit_econ_raw = raw_config.get("unit_economics", {})
+    config["unit_economics"] = {
+        "blended_arpu": unit_econ_raw.get("blended_arpu", 18909),
+        "blended_cac": unit_econ_raw.get("blended_cac", 7000),
+        "blended_churn": unit_econ_raw.get("blended_churn", 0.15),
+        "blended_lifetime": unit_econ_raw.get("blended_lifetime", 6.7),
+        "ltv": unit_econ_raw.get("ltv", 82000),
+        "ltv_cac_ratio": unit_econ_raw.get("ltv_cac_ratio", 11.7),
+        "payback_months": unit_econ_raw.get("payback_months", 6),
+        "nrr_target": unit_econ_raw.get("nrr_target", 1.11),
+    }
+
+    # Pricing
+    pricing_raw = raw_config.get("pricing", {})
+    config["pricing"] = {
+        "software_per_seat": pricing_raw.get("software_per_seat", 2400),
+        "smb_seats": pricing_raw.get("smb_seats", 2.0),
+        "midmarket_seats": pricing_raw.get("midmarket_seats", 8.0),
+        "enterprise_seats": pricing_raw.get("enterprise_seats", 25.0),
+        "midmarket_discount": pricing_raw.get("midmarket_discount", 0.10),
+        "enterprise_discount": pricing_raw.get("enterprise_discount", 0.20),
+    }
+
+    # Geographic expansion
+    geographic_raw = raw_config.get("geographic", {})
+    config["geographic"] = {
+        "phase1": geographic_raw.get("phase1", {"regions": ["India"], "years": "Y1-Y2"}),
+        "phase2": geographic_raw.get("phase2", {"regions": ["India", "SE Asia"], "years": "Y3-Y4"}),
+        "phase3": geographic_raw.get("phase3", {"regions": ["India", "SE Asia", "US/EU"], "years": "Y5-Y8"}),
+    }
+
+    # Efficiency metrics
+    efficiency_raw = raw_config.get("efficiency_metrics", {})
+    config["efficiency_metrics"] = {
+        "revenue_per_employee_y8": efficiency_raw.get("revenue_per_employee_y8", 274000),
+        "burn_multiple_y1_y4": efficiency_raw.get("burn_multiple_y1_y4", 0.8),
+        "arr_per_dollar_raised": efficiency_raw.get("arr_per_dollar_raised", 2.74),
+        "time_to_profitability": efficiency_raw.get("time_to_profitability", "Y4"),
+        "sm_as_pct_revenue_y8": efficiency_raw.get("sm_as_pct_revenue_y8", 0.24),
+        "rd_as_pct_revenue_y8": efficiency_raw.get("rd_as_pct_revenue_y8", 0.07),
+        "ga_as_pct_revenue_y8": efficiency_raw.get("ga_as_pct_revenue_y8", 0.07),
+        "rule_of_40_y8": efficiency_raw.get("rule_of_40_y8", 59),
     }
 
     return config

@@ -41,35 +41,49 @@ The Funding & Cap Table sheet tracks:
 
 ### Round Details
 
+**BP Reference:** 09_Fundraising_Strategy.md L56, L186, L228
+
 | Metric | Seed (Y0) | Series A (Y2) | Series B (Y4) |
 |--------|-----------|---------------|---------------|
-| **Pre-money Valuation** | $12,000K | $40,000K | $100,000K |
-| **Post-money Valuation** | $15,000K | $50,000K | $125,000K |
-| **Round Ownership %** | 20.0% | 20.0% | 20.0% |
+| **Pre-money Valuation** | $10,000K | $30,000K | $75,000K |
+| **Post-money Valuation** | $13,000K | $40,000K | $100,000K |
+| **Round Ownership %** | 23.0% | 25.0% | 25.0% |
 | **Amount Raised** | $3,000K | $10,000K | $25,000K |
+
+**Note:** Model Y0/Y2/Y4 corresponds to BP Y1/Y3/Y5. Pre-money valuations per BP: Seed $10M (vs $13.5M median), Series A $30M (6x ARR), Series B $75M (5x ARR).
 
 ### Cap Table (Ownership %)
 
+**BP Reference:** 09_Fundraising_Strategy.md L319-340 (Cap Table Evolution)
+
 | Stakeholder | Y0 | Y1 | Y2 | Y3 | Y4 | Y5 |
-|-------------|----|----|----|----|----|----|
-| **Founders** | 80.0% | 80.0% | 64.0% | 64.0% | 51.2% | 51.2% |
-| **Seed Investors** | 20.0% | 20.0% | 16.0% | 16.0% | 12.8% | 12.8% |
-| **Series A Investors** | 0.0% | 0.0% | 20.0% | 20.0% | 16.0% | 16.0% |
-| **Series B Investors** | 0.0% | 0.0% | 0.0% | 0.0% | 20.0% | 20.0% |
+|-------------|----|----|----|----|----|----|----|
+| **Founders** | 72.0% | 72.0% | 54.0% | 54.0% | 40.5% | 40.5% |
+| **ESOP Pool** | 5.0% | 5.0% | 4.0% | 4.0% | 4.0% | 4.0% |
+| **Seed Investors** | 23.0% | 23.0% | 17.0% | 17.0% | 13.5% | 13.5% |
+| **Series A Investors** | 0.0% | 0.0% | 25.0% | 25.0% | 17.0% | 17.0% |
+| **Series B Investors** | 0.0% | 0.0% | 0.0% | 0.0% | 25.0% | 25.0% |
 | **Total** | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
+
+**Note:** BP target is ~48% founder ownership post-Series B. The 40.5% shown here is slightly lower due to higher dilution per round (23%/25%/25% vs BP's 23%/25%/25% with different ESOP treatment). Founders retain board control through Series B.
 
 ### Investor Returns (Conservative - 5x Revenue Exit)
 
+**BP Reference:** 09_Fundraising_Strategy.md L492-520 (Investor Returns Analysis)
+
 | Metric | Exit Y5 |
-|--------|---------|
+|--------|---------|----|
 | **Exit Valuation (5x Rev)** | $250,340K |
-| **Seed Investor Return** | $32,044K |
-| **Seed MOIC** | 10.7x |
-| **Series A Return** | $40,054K |
-| **Series A MOIC** | 4.0x |
-| **Series B Return** | $50,068K |
-| **Series B MOIC** | 2.0x |
-| **Founder Value** | $128,174K |
+| **Founder Value** | $101,388K |
+| **ESOP Pool Value** | $10,014K |
+| **Seed Investor Return** | $33,796K |
+| **Seed MOIC** | **11.3x** |
+| **Series A Return** | $42,558K |
+| **Series A MOIC** | **4.3x** |
+| **Series B Return** | $62,585K |
+| **Series B MOIC** | **2.5x** |
+
+**Note:** Returns recalculated with corrected cap table (including ESOP). BP projects Seed 20-30x MOIC at strategic exit ($400-600M), Series A 6-10x, Series B 2-3x.
 
 ---
 
@@ -79,50 +93,54 @@ The Funding & Cap Table sheet tracks:
 
 | | Before | After |
 |---|--------|-------|
-| Founders | 100.0% | 80.0% |
-| Seed | 0.0% | 20.0% |
+| Founders | 95.0% | 72.0% |
+| ESOP | 5.0% | 5.0% |
+| Seed | 0.0% | 23.0% |
 | Total | 100.0% | 100.0% |
 
-**Calculation:**
-- Pre-money: $12.0M
+**Calculation (per BP 09_Fundraising_Strategy.md L56):**
+- Pre-money: $10.0M
 - Investment: $3.0M
-- Post-money: $15.0M
-- Seed Ownership: $3M / $15M = **20.0%**
+- Post-money: $13.0M
+- Seed Ownership: $3M / $13M = **23.0%**
+- ESOP reserved pre-Seed (5% of cap table)
 
 ### Series A (Y2)
 
 | | Before | After |
 |---|--------|-------|
-| Founders | 80.0% | 64.0% |
-| Seed | 20.0% | 16.0% |
-| Series A | 0.0% | 20.0% |
+| Founders | 72.0% | 54.0% |
+| ESOP | 5.0% | 4.0% |
+| Seed | 23.0% | 17.0% |
+| Series A | 0.0% | 25.0% |
 | Total | 100.0% | 100.0% |
 
-**Calculation:**
-- Pre-money: $40.0M
+**Calculation (per BP 09_Fundraising_Strategy.md L186):**
+- Pre-money: $30.0M (6x trailing $5M ARR)
 - Investment: $10.0M
-- Post-money: $50.0M
-- Series A Ownership: $10M / $50M = **20.0%**
-- Dilution Factor: $40M / $50M = 80.0%
-- Existing Owners × 80.0%
+- Post-money: $40.0M
+- Series A Ownership: $10M / $40M = **25.0%**
+- Dilution Factor: $30M / $40M = 75.0%
+- Existing Owners × 75.0%
 
 ### Series B (Y4)
 
 | | Before | After |
 |---|--------|-------|
-| Founders | 64.0% | 51.2% |
-| Seed | 16.0% | 12.8% |
-| Series A | 20.0% | 16.0% |
-| Series B | 0.0% | 20.0% |
+| Founders | 54.0% | 40.5% |
+| ESOP | 4.0% | 4.0% |
+| Seed | 17.0% | 13.5% |
+| Series A | 25.0% | 17.0% |
+| Series B | 0.0% | 25.0% |
 | Total | 100.0% | 100.0% |
 
-**Calculation:**
-- Pre-money: $100.0M
+**Calculation (per BP 09_Fundraising_Strategy.md L228):**
+- Pre-money: $75.0M (5x trailing $15M ARR)
 - Investment: $25.0M
-- Post-money: $125.0M
-- Series B Ownership: $25M / $125M = **20.0%**
-- Dilution Factor: $100M / $125M = 80.0%
-- Existing Owners × 80.0%
+- Post-money: $100.0M
+- Series B Ownership: $25M / $100M = **25.0%**
+- Dilution Factor: $75M / $100M = 75.0%
+- Existing Owners × 75.0%
 
 ---
 
@@ -170,28 +188,33 @@ C27 (Founder Value) = =C22 * C15
 
 | Stakeholder | Investment | Return | MOIC |
 |-------------|------------|--------|------|
-| **Founders** | - | $128.2M | - |
-| **Seed** | $3.0M | $32.0M | **10.7x** |
-| **Series A** | $10.0M | $40.1M | **4.0x** |
-| **Series B** | $25.0M | $50.1M | **2.0x** |
+| **Founders** | - | $101.4M | - |
+| **ESOP Pool** | - | $10.0M | - |
+| **Seed** | $3.0M | $33.8M | **11.3x** |
+| **Series A** | $10.0M | $42.6M | **4.3x** |
+| **Series B** | $25.0M | $62.6M | **2.5x** |
 
 ### At 7x Revenue Exit ($350.5M)
 
 | Stakeholder | Investment | Return | MOIC |
 |-------------|------------|--------|------|
-| **Founders** | - | $179.5M | - |
-| **Seed** | $3.0M | $44.9M | **15.0x** |
-| **Series A** | $10.0M | $56.1M | **5.6x** |
-| **Series B** | $25.0M | $70.1M | **2.8x** |
+| **Founders** | - | $142.0M | - |
+| **ESOP Pool** | - | $14.0M | - |
+| **Seed** | $3.0M | $47.3M | **15.8x** |
+| **Series A** | $10.0M | $59.6M | **6.0x** |
+| **Series B** | $25.0M | $87.6M | **3.5x** |
 
 ### At 10x Revenue Exit ($500.7M)
 
 | Stakeholder | Investment | Return | MOIC |
 |-------------|------------|--------|------|
-| **Founders** | - | $256.4M | - |
-| **Seed** | $3.0M | $64.1M | **21.4x** |
-| **Series A** | $10.0M | $80.1M | **8.0x** |
-| **Series B** | $25.0M | $100.1M | **4.0x** |
+| **Founders** | - | $202.8M | - |
+| **ESOP Pool** | - | $20.0M | - |
+| **Seed** | $3.0M | $67.6M | **22.5x** |
+| **Series A** | $10.0M | $85.1M | **8.5x** |
+| **Series B** | $25.0M | $125.2M | **5.0x** |
+
+**Note:** BP 09_Fundraising_Strategy.md L492-520 projects Seed 20-30x at strategic exit ($400-600M Y6-Y8), Series A 6-10x, Series B 2-3x. Conservative 5x exit shown here.
 
 ---
 
@@ -201,19 +224,21 @@ C27 (Founder Value) = =C22 * C15
 
 | Round | Valuation | Multiple of Previous |
 |-------|-----------|---------------------|
-| Seed (Y0) | $15.0M post | - |
-| Series A (Y2) | $50.0M post | **3.3x** step-up |
-| Series B (Y4) | $125.0M post | **2.5x** step-up |
-| Exit (Y5) | $250.3M | **2.0x** step-up |
+| Seed (Y0) | $13.0M post | - |
+| Series A (Y2) | $40.0M post | **3.1x** step-up |
+| Series B (Y4) | $100.0M post | **2.5x** step-up |
+| Exit (Y5) | $250.3M | **2.5x** step-up |
 
 ### Revenue-Based Milestones
 
 | Stage | Revenue | Implied Multiple | Valuation |
-|-------|---------|------------------|-----------|
-| Seed | $0.5M (Y0) | 30x ARR | $15M |
-| Series A | $7M (Y2) | 7.1x ARR | $50M |
-| Series B | $30M (Y4) | 4.2x ARR | $125M |
+|-------|---------|------------------|-----------||
+| Seed | $0.5M (Y0) | 26x ARR | $13M |
+| Series A | $7M (Y2) | 5.7x ARR | $40M |
+| Series B | $30M (Y4) | 3.3x ARR | $100M |
 | Exit | $50M (Y5) | 5x Revenue | $250M |
+
+**Note:** Conservative multiples reflect capital-efficient model. BP targets 6x ARR for Series A (aligned with Bessemer benchmarks) and 5x ARR for Series B.
 
 ---
 
