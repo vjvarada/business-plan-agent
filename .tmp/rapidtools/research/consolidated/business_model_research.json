@@ -1,0 +1,594 @@
+{
+  "category": "Business Model",
+  "description": "Revenue models, pricing, unit economics",
+  "consolidated_at": "2026-01-27T14:23:24.135733",
+  "source_files": [
+    "3d_printing_service_pricing.json",
+    "cad_software_pricing.json",
+    "consumables_pricing.json",
+    "daas_freelance_pricing.json",
+    "daas_pricing_research.json",
+    "fracktal_pricing.json",
+    "industrial_printer_pricing.json",
+    "managed_services_pricing.json",
+    "daas_hourly_rates.json"
+  ],
+  "sources": [
+    {
+      "title": "How Much Does a 3D Printer Cost? Investment Insight 2025",
+      "url": "https://www.eufymake.com/blogs/buying-guides/how-much-does-a-3d-printer-cost?srsltid=AfmBOopHFlm0_LqnTsgyYLCBerxsMb0ZOPP5tt1V9AXdDATQz8XJtMtn",
+      "snippet": "Low-cost 3D printers for beginners range from $100 to $400, while hobbyist 3D printers cost between $400 and $1,000.",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "What Is the Price of a Metal 3D Printer These Days?",
+      "url": "https://all3dp.com/2/how-much-does-a-metal-3d-printer-cost/",
+      "snippet": "We already mentioned that metal filament can cost about $250 to $475 per kilogram for stainless steel, $121 per kilogram for copper, and $832 per kilogram for ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "How Much Does A Metal 3D Printer Cost?",
+      "url": "https://www.phillipscorp.com/usa/how-much-does-a-metal-3d-printer-cost/",
+      "snippet": "A Metal 3D Printer may cost you anywhere between $50,000 and a few million. The reason why the cost of Metal 3D printers has such a wide range is the variations ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "How Much Does 3D Printing Cost? A Complete Breakdown",
+      "url": "https://jlc3dp.com/blog/3d-printing-cost",
+      "snippet": "Resin printers: $300-$1,000, plus you'll need a curing station. b. Filament Costs. PLA and PETG: $20\u2013$30 per 1kg spool. Let's put that ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "Metal 3D Printer Cost & Calculating Financial Returns",
+      "url": "https://markforged.com/resources/blog/roi-for-metal-3d-printers",
+      "snippet": "Depending on your unique facility needs and the type of metal 3D printer you choose, acquiring a metal 3D printer can cost anywhere from $150,000 to more than ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "Ultimate 3D Printer Price Guide - TriMech",
+      "url": "https://mfg.trimech.com/ultimate-3d-printer-price-guide/",
+      "snippet": "As the most significant upfront investment, a 3D printer price has a wide range from $100 to $1 million, depending on different 3D printing ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "How Much Is a 3D Printer? 2025 Prices Explained",
+      "url": "https://www.flashforge.com/blogs/news/how-much-is-a-3d-printer?srsltid=AfmBOorhlmWVntJTayRj-Hmn3YVq4FF96yj0fiOlZTHrzwg7fonxXTSQ",
+      "snippet": "Prices here range from $1,500 to $5,000+, but the value comes from advanced features and industrial-grade reliability.",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "3D Printing Market - Global Outlook and Forecast 2020-2025",
+      "url": "https://www.arizton.com/market-reports/3d-printing-market",
+      "snippet": "The global 3D printing market was valued at USD 10.37 billion in 2019 and is expected to reach USD 28.99 billion by 2025, representing a CAGR of 18.69% ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "Affordable Industrial 3D Printer | Fusion3 Design",
+      "url": "https://www.fusion3design.com/industrial-3d-printer/",
+      "snippet": "Industrial printers typically run anywhere from $20,000 \u2013 $100,000. The printers in the Industrial class differ from the Performance class in a few ways. These ...",
+      "file_source": "3d_printer_pricing.json"
+    },
+    {
+      "title": "Design jig and fixtures for manufacturing by Kryadav",
+      "url": "https://www.fiverr.com/kryadav/design-modular-fixtures-for-productivity",
+      "snippet": "$15. Conceptual jig and fixture design by auto cad.& solid works ... 7 months ago. thankyou, excellent work as always. Up to $50. Price. 2 days. Duration. Helpful ...",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "I will design your tooling and fixtures for manufacturing",
+      "url": "https://www.fiverr.com/nmccluskey/design-your-tooling-and-fixtures-for-manufacturing",
+      "snippet": "Basic jigs or fixtures. $595 ... Single part fixtures for location and manufacturing assistance or inspection. 21-day delivery.",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "I will design professional jig, fixture and press tool",
+      "url": "https://www.fiverr.com/jignesh_n_b/design-sheet-metal-part-press-tool-and-production-drawing",
+      "snippet": "$50. Jig or fixture or press tool design(simple die) for Single operation. t does not include 2D drw.",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "Design welding fixture, custom jig design by Fromengineer",
+      "url": "https://www.fiverr.com/fromengineer/design-welding-fixture-custom-jig-design",
+      "snippet": "What I Offer: 2D and 3D CAD design (STEP, STL, PDF); Exploded views for easy understanding. IKEA-style visual assembly guides. Technical drawings for ...",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "Do jigs fixtures design autocad 2d drawings 3d modeling ...",
+      "url": "https://www.fiverr.com/prajesh1822/do-jigs-fixtures-design-autocad-2d-drawings-3d-modeling-die-design",
+      "snippet": "Great work, very professional, and followed all the requirements. Would happily work with them again. $50-$100. Price. 6 days. Duration. Helpful? Yes. No. L.",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "Hire the best Jig and Fixture Design specialists",
+      "url": "https://www.upwork.com/hire/jig-and-fixture-design-freelancers/",
+      "snippet": "Find freelance jig-and-fixture-design specialists for hire. Post a job and access 27 jig-and-fixture-design freelancers to outsource your project.",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "Design welding jig, fixture by Andrey_sychev",
+      "url": "https://www.fiverr.com/andrey_sychev/design-welding-jig-fixture",
+      "snippet": "Fiverr freelancer will provide Industrial & Product Design services and design welding jig, fixture within 4 days. ... Will continue to work with Andrey. $800-$ ...",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "I will design welding jigs and fixtures with laser cutting or ...",
+      "url": "https://www.fiverr.com/martinnguyenn/design-welding-jigs-and-fixtures-with-laser-cutting-method",
+      "snippet": "Small Jig or Fixture. $30. The welding part assembly is from 2 to 3 parts. Contact me to get the best price. 1-day delivery. 1 Revision. 3D modeling; 1 3D ...",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "Do creative jig, fixture and dies for sheet metal by Atif0909",
+      "url": "https://www.fiverr.com/atif0909/do-creative-jig-fixture-and-dies-for-sheet-metal",
+      "snippet": "Fiverr freelancer will provide Industrial & Product Design services and do creative jig, fixture and dies for sheet metal within 2 days.",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "I will design professional welding jigs, assembly fixtures ...",
+      "url": "https://www.fiverr.com/quangvu979/create-3d-cad-models-and-technical-drawings-for-manufacturing?context_referrer=seller_page&ref_ctx_id=f2b43432307b48719e1cc9e4b428a3f3&pckg_id=1&pos=4&imp_id=af38deea-4e83-4619-b163-b6e3b7f15da2",
+      "snippet": "Full Design Process. Starting at $50 \u00b7 Design for Manufacturing. Starting at $120 \u00b7 Technical Drawing. Starting at $30 ...",
+      "file_source": "daas_freelance_pricing.json"
+    },
+    {
+      "title": "Cost of Jig & Fixture Design: Complete Breakdown",
+      "url": "https://yicenprecision.com/cost-of-jig-fixture-design-complete-breakdown/",
+      "snippet": "Simple fixtures may cost a few hundred dollars, while highly specialized or automated systems can reach tens of thousands of dollars. The more demanding the ...",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Turnkey Fixtures/Jigs/Tooling Manufacturing Design Services",
+      "url": "https://www.ktmsolutions.com/manufacturing-fixturing-tooling",
+      "snippet": "Fixtures & Tooling Pricing. KTM provides fixed price quotes for all fixturing and tooling designs and builds. Request a quote for your project today.",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Job shop estimating: Programming, fixtures, and special ...",
+      "url": "https://www.thefabricator.com/thefabricator/article/shopmanagement/job-shop-estimating-programming-fixtures-and-special-handling-",
+      "snippet": "The estimator must predict costs of jigs, fixtures, tooling, CNC programming, and unique processing or handling needed to satisfy the terms of the customer's ...",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Custom Metrology Fixturing Design Services",
+      "url": "https://inspectionarsenal.com/custom-metrology-fixturing-design-services/?srsltid=AfmBOoqLV8VPzKb_sIwsPxuTJ0bkTgkzeVWC41BjgcVn2MTYVzsgVzgD",
+      "snippet": "This cost varies depending on fixture geometry, size, and complexity, and will be credited toward the final project cost. Deposit & Purchase Order A purchase ...",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "custom workholding fixtures - Resources",
+      "url": "https://pdqwh.com/custom-workholding-fixtures-344608bc/",
+      "snippet": "Cost Considerations for Custom Workholding Fixtures ... These elements will guide the design and manufacturing of the most effective fixture for your needs.",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Outsource fixture design & Save time, cost",
+      "url": "https://www.milestonetech.net/outsource-fixture-design-services-save-time-and-cost/",
+      "snippet": "Discover how Outsource fixture design services can streamline your project timelines and reduce expenses. Explore cost-effective engineering solutions to ...",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "How to Make Tooling Fixtures Faster & Cheaper",
+      "url": "https://www.rnd-tech.com/how-make-tooling-fixtures-faster-cheaper/?srsltid=AfmBOoosJ3WlCtAuUC8M9Dwf7wptymXhDO4726eJtNH1TzbuwzA-bMWp",
+      "snippet": "3D printing offers a more time and cost-efficient means of making tooling fixtures than machining them.",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Custom Fixtures Engineering Service in USA",
+      "url": "https://www.cavtool.com/fixtures/",
+      "snippet": "Custom jigs and fixtures produced by Cav Tool offer you amazing benefits at low costs. We use the best manufacturing technologies like CNC Machining, to improve ...",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Jigs and Fixture Design Services",
+      "url": "https://www.encata.net/services/jig-fixture-design",
+      "snippet": "EnCata provides jigs and fixture design and manufacturing services. We create custom drill bushings, jig plates, building ways, fixtures for assembling and ...",
+      "file_source": "daas_pricing_research.json"
+    },
+    {
+      "title": "Online 3D Printing Service for Custom Parts",
+      "url": "https://www.protolabs.com/services/3d-printing/",
+      "snippet": "On-demand 3D printing for rapid prototyping and production in as fast as 1 day. Get an instant 3D printing quote with DFAM analysis today.",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Xometry vs. Protolabs: Who Offers the Best On-Demand ...",
+      "url": "https://www.rapiddirect.com/blog/xometry-vs-protolabs/",
+      "snippet": "Xometry tends to be cheaper for larger production runs, where supplier competition in its marketplace drives down per-unit pricing. Which is ...",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Xometry vs Protolabs vs Craftcloud Put To The Test",
+      "url": "https://all3dp.com/1/xometry-vs-protolabs-vs-craftcloud-put-to-the-test/",
+      "snippet": "A side-by-side comparison of Xometry, Protolabs, and Craftcloud looking at technologies, materials, finishes, customer service, and prices.",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Pricing and Payment Options",
+      "url": "https://www.protolabs.com/help-center/pricing-and-payment-options/",
+      "snippet": "Prices start around $1,495, depending on part geometry and complexity. The best way to estimate cost is to upload your model to our website to receive an ...",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Custom Online 3D Printing Services",
+      "url": "https://www.xometry.com/capabilities/3d-printing-service/",
+      "snippet": "Get instant online 3D printing service quotes on custom parts in dozens of plastic and metal materials. Order 3D printed items and get free shipping on all ...",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Protolabs | Rapid Prototyping & On-demand Production Services",
+      "url": "https://www.protolabs.com/",
+      "snippet": "We are the fastest and most comprehensive manufacturer in the world. Get an online quote for parts within days or talk with a production expert for solutions.",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Top 10 3D Printing Cost Calculators [+Detailed Comparsion]",
+      "url": "https://www.unionfab.com/blog/2025/09/3d-printing-cost-calculator",
+      "snippet": "Protolabs is well known for speed and reliability in digital manufacturing. Its cost calculator provides real-time pricing for SLA, SLS, and ...",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Online 3D Printing Service",
+      "url": "https://www.hubs.com/3d-printing/",
+      "snippet": "Professional 3D printing service for rapid prototypes & production parts. Instant 3D printing quotes for 1-1000 units. FDM, SLS, MJF & SLA. 25+ materials.",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Xometry vs Protolabs in 2026: Full Comparison",
+      "url": "https://ezramade.com/xometry-vs-protolabs/",
+      "snippet": "The effect is lower prices. Protolabs is great for prototyping. But Xometry is the best manufacturing partner for scale and affordability. Range of services.",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "4Q24 Pricing Analysis: Protolabs vs Xometry",
+      "url": "https://industrialanalyst.substack.com/p/4q24-pricing-analysis-protolabs-vs",
+      "snippet": "Protolabs saw prices for 3D printed parts remain unchanged since we began tracking prices in 1Q24, while Xometry saw prices decrease in October, ...",
+      "file_source": "3d_printing_service_pricing.json"
+    },
+    {
+      "title": "Get Prices & Buy Official AutoCAD Software",
+      "url": "https://www.autodesk.com/products/autocad/overview",
+      "snippet": "Autodesk AutoCAD: Design and drafting software trusted by millions ; Annual subscription. $175/month. Paid annually. Most popular ; Monthly subscription. $260.",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "SOLIDWORKS Design Offer Plans and Pricing | Buy 3D CAD",
+      "url": "https://www.solidworks.com/how-to-buy/solidworks-design-plans-pricing",
+      "snippet": "$3,456 USD/year* \u00b7 Everything included in Standard plus \u00b7 Access an intelligent CAD library of components, fasteners, and hardware parts \u00b7 Photorealistic rendering ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "\u30102025\u3011Fusion 360 vs SolidWorks: Leading 3D CAD ...",
+      "url": "https://cad-kenkyujo.com/en/3dcad/fusion/fusion-360-vs-solidworks/",
+      "snippet": "At the time of writing, the annual subscription price is approximately $2,797 per year, which includes all software updates and upgrades released during the ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "Buy Fusion 360 3 Year License PC/Mac \u2013 Best Price",
+      "url": "https://elementskeys.com/software/design/autodesk/fusion-360-3-year-license?srsltid=AfmBOop2_fwsnnaCSqKj342Ut8gxWQtb8wLTTiu0J_uKWlWasQo5P4Bm",
+      "snippet": "Autodesk Fusion 360 3 Year Subscription 2026/2025/2024 Mac/PC ; Original price was \u00b7 US$1,662.00. ; Current price is \u00b7 US$59.99. ; Regular Update. ; Last Update Date: ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "Autodesk | 3D Design, Engineering & Construction Software",
+      "url": "https://www.autodesk.com/",
+      "snippet": "AutoCAD button icon. AutoCAD \u00b7 Starting from $260/month ; Fusion button icon. Fusion \u00b7 Starting from $85/month ; 3DS Max button icon. 3ds Max \u00b7 Starting from $255/ ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "SolidWorks vs Fusion 360: The Differences",
+      "url": "https://all3dp.com/2/fusion-360-vs-solidworks-cad-software-compared-side-by-side/",
+      "snippet": "Fusion is free for students and educators and qualifying start-ups, while the educational version of SolidWorks costs from $60 \u2013 $99 per year. A ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "Best 12 Cheapest CAD Software in 2024 (Most people ...",
+      "url": "https://blog.gstarcad.net/best-12-cheapest-cad-software-in-2024-most-people-choose/",
+      "snippet": "1. Subscription-Based Pricing: Fusion 360 operates on a subscription model, with pricing starting at $495/year for commercial users, which may be prohibitive ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "Autodesk Fusion | 3D CAD, CAM, CAE, & PCB Cloud- ...",
+      "url": "https://www.autodesk.com/products/fusion-360/overview",
+      "snippet": "Drawing automation & design configuration. Best for: Early-stage teams and makers. $680/ YEAR ($57/month ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "SOLIDWORKS VS FUSION 360",
+      "url": "https://www.reddit.com/r/SolidWorks/comments/1bu202v/solidworks_vs_fusion_360/",
+      "snippet": "Just FYI - you can get Maker version of Solidworks for $49 a year. It's basically full basic seat of SW2024. There is some clound functionality ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "SOLIDWORKS Design with Cloud Services Plans and Pricing",
+      "url": "https://www.solidworks.com/how-to-buy/solidworks-design-cloud-services-plans-pricing",
+      "snippet": "$3,456 USD/year* \u00b7 Everything included in Standard plus \u00b7 Access an intelligent CAD library of components, fasteners, and hardware parts \u00b7 Photorealistic rendering ...",
+      "file_source": "cad_software_pricing.json"
+    },
+    {
+      "title": "2026 PLA Filament Cost Comparison: PLA vs. ABS vs. PETG",
+      "url": "https://salesplastics.com/pla-filament-cost-comparison/",
+      "snippet": "Standard PLA now ranges from $15 to $22 per kilogram for basic colors, with premium brands commanding up to $30 per kilogram.",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "SUNLU | Affordable 3D Printing Filaments, Filament Dryer and ...",
+      "url": "https://store.sunlu.com/",
+      "snippet": "Hot Sale ; [MOQ: 6KG] PLA 3D Printer Filament 1KG \u00b7 $10.99 USD \u00b7 $18.99 USD ; [MOQ: 6KG] PLA+(PLA Plus) 3D Printer Filament 1KG \u00b7 $11.49 USD \u00b7 $18.99 USD ; [MOQ: 6KG] ...",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "How Much Does 3D Printer Filament Cost? A Detailed Guide",
+      "url": "https://www.eufymake.com/blogs/buying-guides/how-much-does-3d-printer-filament-cost?srsltid=AfmBOoq6PArn3Xq8YjjrZxfIXCZuo0Xjjy1Wsjkpx2jB5xQPQZJRRgsr",
+      "snippet": "PLA typically costs around $10 to $40 per kilogram, offering an affordable option for enthusiasts and professionals alike.",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "How Much Does 3D Printing Cost?[+ Free Cost Calculator]",
+      "url": "https://www.unionfab.com/blog/2024/10/how-much-does-it-cost-to-3d-print-something",
+      "snippet": "\u200b \u25cb PLA is one of the most affordable and user-friendly materials, usually priced between $20 and $30 per kilogram. \u200b \u25cb ABS is another popular ...",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "How Much Does 3D Printing Cost? [2025 Update] - Xmake",
+      "url": "https://xmake.com/3d-printing-cost/",
+      "snippet": "Standard filaments like PLA and ABS usually cost between $20 and $50 per kilogram ... nylons can exceed $60\u2013$100 per kilogram. 3. Is it ...",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "3D Printer Material Cost",
+      "url": "https://all3dp.com/2/3d-printer-material-cost-the-real-cost-of-3d-printing-materials/",
+      "snippet": "The standard filaments cost around $20 per kg on average. You can find special filaments like the cool-looking silk PLA for around $30.",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "How Much Does 3D Printing Typically Cost?",
+      "url": "https://printmyparts.io/blog-posts/how-much-does-3d-printing-cost/",
+      "snippet": "Affordable original filaments such as PLA or ABS: cost $0.10 \u2013 $0.50 per gram. The higher-density materials like resin or nylon cost 0.50 to $5.00 per gram.",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "3D Printer Filament Prices in 2025: From $5 Bulk Deals to ...",
+      "url": "https://www.fabbaloo.com/news/3d-printer-filament-prices-in-2025-from-5-bulk-deals-to-premium-brands",
+      "snippet": "3D Printer Filament Prices in 2025: From $5 Bulk Deals to Premium Brands \u00b7 Prusament PLA: US$29.99 \u00b7 Polymaker PLA: US$20.99 \u00b7 Overture PLA: US ...",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "Understanding 3D Printer Filament Prices: Trends, Factors, ...",
+      "url": "https://www.linkedin.com/pulse/understanding-3d-printer-filament-prices-trends-factors-james-madison-dmlac",
+      "snippet": "As of 2025, the average price for standard 1kg spools of filament, such as PLA or PETG, typically ranges from $10 to $19, depending on the brand and quality.",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "Filament for 3D Printer - Price of High-Quality Plastic Rods",
+      "url": "https://www.alibaba.com/showroom/filament-price.html",
+      "snippet": "Filament Price(999+) ; $0.25-0.35. Min. order: 1 bag ; $9-10. Min. order: 1 kilogram ; $4.85-4.96. Min. order: 30 kilograms ; $4.50-5.30. Min. order: 12 kilograms.",
+      "file_source": "consumables_pricing.json"
+    },
+    {
+      "title": "ABS Fracktal Julia Pro Single 3\u200bD Printer",
+      "url": "https://www.indiamart.com/proddetail/fracktal-julia-pro-single-3d-printer-27124246312.html?srsltid=AfmBOooD4TL2lN2XDWLb5jMhXiCVLoP8D47cSTc5eXXu4KWbFEZt0QIn",
+      "snippet": "Technoventor Innovations Private Limited - Offering ABS Fracktal Julia Pro Single 3D Printer at \u20b9 450000/piece in Nagpur, Maharashtra. Get at lowest price ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works Julia 200 FDM 3D Printer",
+      "url": "https://robocraze.com/products/fracktal-works-julia-200-fdm-3d-printer?srsltid=AfmBOootCPr58EdXL7bxsdq53AMjvRKfSbX8C5-RRs39kyKGYtxUvK67",
+      "snippet": "Fracktal Works Julia 200 FDM 3D Printer - Buy Online in India ; SKU: TIF3P0312 ; BEST COUPON. RC1000. COPY CODE. When you shop for \u20b9 25,000 required. Applicable ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fractal Works Fff With Imex Julia Pro Single Industrial 3D ...",
+      "url": "https://www.indiamart.com/proddetail/julia-pro-single-industrial-3d-printer-19127820955.html?srsltid=AfmBOopose_PK82Te_gjemBoc1apJ5YaoPGhJVUG9Nr4gKpCc39br1a4",
+      "snippet": "Fracktal Works Private Limited - Offering Fractal Works Fff With Imex Julia Pro Single Industrial 3D Printer, Fracktory 3.2 at \u20b9 460000 in Bengaluru, ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works Julia Extended 250 FDM 3D Printer",
+      "url": "https://robocraze.com/products/fracktal-works-julia-extended-250-fdm-3d-printer?srsltid=AfmBOooC1zv8Z4qTblugS1_LO45YMd7_WQOZAWOWrEp39wyTVuYIRmXQ",
+      "snippet": "Build size \u00b7 250 x 250 x 300 mm. ; Weight \u00b7 35 KG. ; BEST COUPON. RC1000. COPY CODE. When you shop for \u20b9 25,000 required. Applicable at Checkout. *Coupons are not ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Julia \u2013 Best FDM 3D Printer in India",
+      "url": "https://fracktal.in/julia/",
+      "snippet": "Julia offers the Lowest Cost/CC of any 3D printer in the same category, giving you the most value for your money. Remote 3D Printing. Monitoring & Control.",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works Julia 200 FDM 3D Printer",
+      "url": "http://iotcart.in/product/fracktal-works-julia-200-fdm-3d-printer?srsltid=AfmBOoqfUI8osPiZA4E4SpRjJWQMlFVLQz4SALAG7wTpgm7rt0ACadfJ",
+      "snippet": "Lowest Cost Per Unit Volume: If you want good value, the Julia 200 has the lowest cost per cubic centimeter in its category. Plus, it has a build volume of 200 ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works Private Limited in Bangalore",
+      "url": "https://www.exportersindia.com/fracktal-works/",
+      "snippet": "Julia Pro Single 3d Printer. \u20b9 3.75 Lakh - \u20b9 4.58 Lakh / piece. MOQ 1 piece; Size400 x 400 x 400 mm; BrandFracktal Works ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works - JULIA Pro single",
+      "url": "https://www.indiamart.com/proddetail/fracktal-works-julia-pro-single-2854422019873.html?srsltid=AfmBOoqyNX6zlpYRuSKn0G1LL2REiPj2qUvum0Tpsy-hxVStpf9bg-2G",
+      "snippet": "Fracktal Works - JULIA Pro single \u00b7 F430 Industrial Grade 3D Printers. \u20b9 5,80,000 \u00b7 Bambu Lab X1C Combo FDM Printer. \u20b9 1,49,999 \u00b7 FDM 3D Printer \u00b7 BigRep Studio G2 ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works Julia 2018 Basic review - desktop 3D printer",
+      "url": "https://www.aniwaa.com/product/3d-printers/fracktal-works-julia-2018-basic/",
+      "snippet": "This 3D printer is available from $ 799735 \u20ac. Specifications. General ...",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Fracktal Works Julia Advanced 200i FDM 3D Printer",
+      "url": "https://robocraze.com/products/fracktal-works-julia-advanced-200i-fdm-3d-printer?srsltid=AfmBOopkx2SiP7UkL4gTx7rIOb-WgMPlZH8Ts-mGzv4q6UbQHlbqPqE7",
+      "snippet": "Fracktal Works Julia Advanced 200i FDM 3D Printer - Buy Online in India ; SKU: TIF3P0314 ; BEST COUPON. RC1000. COPY CODE. When you shop for \u20b9 25,000 required.",
+      "file_source": "fracktal_pricing.json"
+    },
+    {
+      "title": "Top 6 Professional 3D Printers Under $10000",
+      "url": "https://all3dp.com/1/best-professional-3d-printer-small-business/",
+      "snippet": "There's a wide range of highly capable options under $10,000 that offer the automation, sensors, and quality you need to make 3D printing an ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "How much does a 3D printer cost?",
+      "url": "https://ultimaker.com/learn/how-much-does-a-3d-printer-cost/",
+      "snippet": "Industrial 3D printer price $10,000+. 3D printers that cost tens or hundreds of thousands are made to do a few things at a high level of quality ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "Buy Markforged 3D Printers",
+      "url": "https://hawkridgesys.com/product-category/3d-printers/markforged-3d-printers",
+      "snippet": "Markforged 3D Printers ; Markforged Onyx Pro \u00b7 8,990.00 ; Markforged Mark Two \u00b7 15,990.00 ; Markforged X3 \u00b7 44,990.00 ; Markforged X7 \u00b7 64,990.00.",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "FDM 3D Printers",
+      "url": "https://www.matterhackers.com/store/c/fdm-3d-printers?srsltid=AfmBOooffjtX_l1boPJTlcvWlvlNdODv3li-Cr7cmU93Qj1LShZCcEAR",
+      "snippet": "FDM 3D printers come in a wide price range, from as little as $189 to the $10,000 neighborhood. The pricier you go the less the user should need to do to get a ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "Best 3D Printers 2025: buying guide \u2013 3D Mag",
+      "url": "https://www.3dmag.com/3d-printers/best-3d-printer/",
+      "snippet": "At $6,950, the Ultimaker S5 is a desktop FFF 3D printer that's obviously aimed at the professional, high-end market. With a price tag like that, the S5 has ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "Understanding 3D Printer Cost",
+      "url": "https://markforged.com/resources/learn/3d-printing-basics/3d-printing-introduction/3d-printer-costs",
+      "snippet": "Many of these systems typically retail between $15,000 and $150,000 USD (higher than $150k for large-format printers), are available with the widest range of ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "How Much Do 3D Printers Cost?",
+      "url": "https://www.makerbot.com/stories/how-much-do-3d-printers-cost/",
+      "snippet": "Industrial 3D Printer Cost ($10,000+). Stratasys Fortus 900mc / Courtesy: Stratasys. These are generally the ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "Commercial & Industrial 3D Printers",
+      "url": "https://3dprintersdepot.com/collections/industrial-3d-printers?srsltid=AfmBOopd6jAqoWfDopdaFzbZhQobXXhI4qFInlks7K1Ilu9Qn-Ecz7g0",
+      "snippet": "CreatBot F430 | High-Temperature, Fully Enclosed 3D Printer for Industrial-Grade Materials ... CreatBot F160 3D Printer. CreatBot. Regular price $1,699.00 ...",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "Ultimaker 3D Printers: Reliable & Easy-To-Use",
+      "url": "https://sourcegraphics.com/product-category/3d/3d-printers/ultimaker-printers/?srsltid=AfmBOor-n88xblc6GG2tkaDi4vWjEf6mcLIHt_hjOA9ftwRknnDY8V9k",
+      "snippet": "Ultimaker 3D Printers: Reliable & Easy-To-Use ; UltiMaker S7 3D Printer \u00b7 7,999.00 Original price was: $7,999.00. \u00b7 7,499.00 Current price is: $7,499.00.",
+      "file_source": "industrial_printer_pricing.json"
+    },
+    {
+      "title": "How much do outsourced IT services cost in 2025?",
+      "url": "https://www.encomputers.com/2024/01/how-much-do-outsourced-it-services-cost/",
+      "snippet": "An all-inclusive managed IT services plan typically costs between $125-$255 per computer-using employee per month.",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "How Much Do Outsourced IT Services Cost?",
+      "url": "https://www.rekalltech.com/how-much-do-outsourced-it-services-cost/",
+      "snippet": "Retainer services cost $1,000-$10,000 monthly for a set number of support hours, usually cheaper than managed services but with less coverage. ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "How Much Do Managed IT Services Cost? [Updated for ...",
+      "url": "https://www.krgroup.com/managed-it-services-cost/",
+      "snippet": "You can anticipate spending between $200 and $250 per user per month, with a minimum monthly commitment of $2,500. Keep in mind the numbers are based on The KR ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "IT Services Pricing Guide January 2026",
+      "url": "https://clutch.co/it-services/msp/pricing",
+      "snippet": "Managed Service Providers (MSP): $100\u2013$149/hour. Outsourcing IT services or MSP support has become a popular trend in recent years, with more and more companies ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "Managed IT Services Pricing [Cost + ROI Calculator]",
+      "url": "https://netsurit.com/en-us/managed-it-services-pricing/",
+      "snippet": "This blog will help you know how to price managed IT services and give you questions to ask when creating your managed IT services pricing calculator.",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "How Much Does Managed IT Services Cost - 2025 : Aalpha",
+      "url": "https://www.aalpha.net/blog/how-much-does-managed-it-services-cost/",
+      "snippet": "For small businesses\u2014typically under 50 users\u2014MSPs in the United States generally charge between $75 and $200 per user per month. This includes remote ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "Managed Services & Retainers",
+      "url": "https://optimalbusinessconsulting.com/managed-services-retainers/",
+      "snippet": "Packages for Managed Services \u00b7 Best Fit. Hours good for up to 6 months \u00b7 Commitment. One-Time \u00b7 Pricing. 50 hours \u00b7 Hours Included. $110 \u00b7 Tier Hourly Rate. CRM, ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "12 Types of Outsourcing Pricing Models Explained",
+      "url": "https://outsourcedstaff.com.au/blog/outsourcing-pricing-models/",
+      "snippet": "7. Retainer-based Pricing Model. This arrangement makes you pay a set fee each month for access to ongoing support or services. It's predictable ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "Should You Outsource IT in 2025? The Real Cost of In- ...",
+      "url": "https://www.microtechboise.com/blog/should-you-outsource-it-in-2025-real-cost-of-in-house-vs-managed-services",
+      "snippet": "MSP: Typically, MSPs operate on a predictable monthly retainer, which can be more cost-effective, especially for small to medium-sized ...",
+      "file_source": "managed_services_pricing.json"
+    },
+    {
+      "title": "How Much Do Engineering Design Services Cost for ...",
+      "url": "https://www.cadcrowd.com/blog/how-much-do-engineering-design-services-cost/",
+      "snippet": "You can expect an engineer's hourly fee to be somewhere between $100 and $120 per hour, with the price of your project varying on how many hours the engineer ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "How Much Do CAD Drafting Services Cost? Real Pricing ...",
+      "url": "https://caddrafter.us/how-much-do-cad-drafting-services-cost/",
+      "snippet": "For entry-level or straightforward 2D work, expect something near $25\u2013$60/hour. Mid-tier drafting runs closer to $70\u2013$120, and advanced BIM or ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "How Much Does a CAD Design Cost?",
+      "url": "https://cadmore.com/blog/cad-design-cost",
+      "snippet": "Beginner CAD Designers: $20 - $40 per hour. \u00b7 Intermediate CAD Designers: $40 - $60 per hour. \u00b7 Experienced CAD Designers: $60 - $100+ per hour.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Hire 3D CAD Designer in 2025 | Rates & Pricing Guide",
+      "url": "https://shalindesigns.com/blog/how-much-does-it-cost-to-hire-3d-cad-designers/",
+      "snippet": "Beginner CAD Designers: $20 \u2013 $40 per hour ; Intermediate CAD Designers: $40 \u2013 $60 per hour ; Experienced CAD Designers: $60 \u2013 $100+ per hour.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Mechanical Engineering Professionals' Rates and Fees",
+      "url": "https://mechanicalengineeringpros.com/mechanical_engineering_rates_and_fees.php",
+      "snippet": "can be estimated at the rate of $140 per hour for a senior engineer and $90 per hour for a junior engineer. Below is a link to a document about the overhead of ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Learn All You Need To Know About Machine Design Costs ...",
+      "url": "https://www.cadcrowd.com/blog/learn-about-machine-design-costs-engineering-services-rates-pricing-for-companies/",
+      "snippet": "The average cost to hire a mechanical engineer is around $46 per hour. Depending on experience, the rate ranges from $30 to $65 per hour.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Salary: Mechanical Cad Designer (Jan, 2026) United States",
+      "url": "https://www.ziprecruiter.com/Salaries/Mechanical-Cad-Designer-Salary",
+      "snippet": "The average MECHANICAL CAD DESIGNER SALARY in the United States as of January 2026 is $34.65 an hour or $72067 per year. Get paid what you're worth!",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "How Much Do Product Design Firms Charge?",
+      "url": "https://design1st.com/how-product-design-firms-charge/",
+      "snippet": "Rates for full-service design plus engineering companies are similar to model 1 and will range from ($100 USD up to $450 USD per hour) depending on who you ...",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Outsourced Mechanical Design Cost for U.S. & EU SMEs",
+      "url": "https://engontechnologies.com/outsourced-mechanical-design-cost-breakdown/",
+      "snippet": "Cut outsourced mechanical design cost and speed up engineering. Save 60%+ with expert CAD and simulation support.",
+      "file_source": "daas_hourly_rates.json"
+    },
+    {
+      "title": "Hourly Rate for Skill: Engineering Design",
+      "url": "https://www.payscale.com/research/US/Skill=Engineering_Design/Hourly_Rate",
+      "snippet": "Engineering Design Jobs by Hourly Rate ; Job Title:Mechanical Engineer, Range:$21 - $49, Average:$33 ; Job Title:Civil Engineer, Range:$27 - $47, Average:$35 ; Job ...",
+      "file_source": "daas_hourly_rates.json"
+    }
+  ]
+}

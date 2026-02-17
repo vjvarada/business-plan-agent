@@ -11,10 +11,10 @@ This script parses business plan markdown sections to extract:
 - Financial projections from 10_Financial_Projections.md
 
 Usage:
-    python extract_config_from_plan.py --sections-dir .tmp/rapidtools/business_plan/sections
-    python extract_config_from_plan.py --sections-dir .tmp/rapidtools/business_plan/sections --output .tmp/rapidtools/config/rapidtools_config.json
+    python extract_config_from_plan.py --sections-dir .tmp/myproject/business_plan/sections
+    python extract_config_from_plan.py --sections-dir .tmp/myproject/business_plan/sections --output .tmp/myproject/config/config.json
 
-Output: JSON configuration file for build_complete_financial_model.py
+Output: JSON configuration file for build_financial_model.py
 """
 
 import os
@@ -462,9 +462,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 Examples:
-  python extract_config_from_plan.py --sections-dir .tmp/rapidtools/business_plan/sections
-  python extract_config_from_plan.py --sections-dir .tmp/rapidtools/business_plan/sections --output .tmp/rapidtools/config/config.json
-  python extract_config_from_plan.py --company "RapidTools" --create-default
+  python extract_config_from_plan.py --sections-dir .tmp/myproject/business_plan/sections
+  python extract_config_from_plan.py --sections-dir .tmp/myproject/business_plan/sections --output .tmp/myproject/config/config.json
+  python extract_config_from_plan.py --company "MyCompany" --create-default
 
 Extracts from these sections:
   02_TAM_SAM_SOM_Calculation.md     → tam, sam, som
@@ -552,7 +552,7 @@ Extracts from these sections:
     print(f"\nNext steps:")
     print(f"  1. Review and edit: {output_path}")
     print(f"  2. Build model:")
-    print(f"     python execution/build_complete_financial_model.py --config {output_path}")
+    print(f"     python execution/build_financial_model.py --config {output_path}")
     
     return 0
 

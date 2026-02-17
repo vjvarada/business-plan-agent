@@ -262,11 +262,17 @@ def audit_valuations(spreadsheet, company_type: str = "saas") -> List[AuditResul
         "traditional": {"seed": (5, 10), "series_a": (4, 8), "series_b": (3, 7)},
     }
     
-    try:
-        funding = spreadsheet.worksheet("Funding & Cap Table")
-        data = funding.get_all_values()
-    except Exception as e:
-        return [AuditResult("Funding Sheet Access", AuditStatus.FAIL, str(e))]
+    data = None
+    funding_sheet_names = ["Funding & Cap Table", "Funding Cap Table"]
+    for sheet_name in funding_sheet_names:
+        try:
+            funding = spreadsheet.worksheet(sheet_name)
+            data = funding.get_all_values()
+            break
+        except Exception:
+            continue
+    if data is None:
+        return [AuditResult("Funding Sheet Access", AuditStatus.FAIL, "Funding sheet not found (tried: Funding & Cap Table, Funding Cap Table)")]
     
     # Find revenue at funding rounds
     try:
@@ -359,11 +365,17 @@ def audit_metrics(spreadsheet) -> List[AuditResult]:
     """Audit unit economics metrics"""
     results = []
     
-    try:
-        ce = spreadsheet.worksheet("Customer Economics")
-        data = ce.get_all_values()
-    except Exception as e:
-        return [AuditResult("Customer Economics Access", AuditStatus.FAIL, str(e))]
+    data = None
+    metrics_sheet_names = ["Customer Economics", "Assumptions"]
+    for sheet_name in metrics_sheet_names:
+        try:
+            ce = spreadsheet.worksheet(sheet_name)
+            data = ce.get_all_values()
+            break
+        except Exception:
+            continue
+    if data is None:
+        return [AuditResult("Customer Economics Access", AuditStatus.FAIL, "Metrics sheet not found (tried: Customer Economics, Assumptions)")]
     
     # Find key metric rows
     cac_row = None

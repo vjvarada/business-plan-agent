@@ -19,6 +19,54 @@
 - ❌ Use Local-First to restructure TAM/SAM (shifts all references)
 - ❌ Edit Google Sheets directly via API for multi-cell changes
 
+## ✅ MANDATORY DEFAULT: Local-First Sheet-Gated Model Build
+
+For **new financial model creation**, use local Excel build + gated reviews before any cloud sync.
+
+### Why
+
+- Avoid Google Sheets write quota/rate-limit issues during build
+- Enable deterministic, reviewable step-by-step sheet validation
+- Prevent downstream breakage by requiring sheet-level sign-off sequence
+
+### Gate sequence (must be approved in order)
+
+1. Sources & References
+2. Assumptions
+3. Headcount Plan
+4. Revenue
+5. Operating Costs
+6. P&L
+7. Cash Flow
+8. Balance Sheet
+9. Summary
+10. Sensitivity Analysis
+11. Valuation
+12. Break-even Analysis
+13. Funding Cap Table
+14. Charts Data
+
+### Orchestrator usage
+
+```bash
+# Stage 4: Build local model (no Google write operations)
+python execution/run_stepwise_workflow.py \
+  --project <project> --stage 4 --execute \
+  --company "<Company>" --config .tmp/<project>/config/<project>_config.json \
+  --local-first
+
+# Stage 5: approve one or more sheets (repeat until all 14 are approved)
+python execution/run_stepwise_workflow.py \
+  --project <project> --stage 5 --execute --local-first \
+  --approve-sheet "Sources & References"
+
+# Optional final sync to cloud after all gates approved
+python execution/run_stepwise_workflow.py \
+  --project <project> --stage 5 --execute --local-first --sync-to-cloud
+```
+
+Gate state is persisted in `.tmp/<project>/notes/local_sheet_gates.json`.
+
 ---
 
 ## Business Plan Document Structure (Section-Based)
@@ -98,11 +146,338 @@ Work **collaboratively** with the user to create a professional business plan by
 4. Validate assumptions with the user before finalizing
 5. Build the model iteratively with user feedback
 
+### Mandatory Stage Questioning Rule (New Business Plans)
+
+For every new business plan + financial model build, the agent must ask the
+user questions at **every stage** of information gathering (Stages 0-5). This
+is required even when the agent has partial defaults from templates.
+
+Rules:
+- Do not proceed to a downstream stage without user answers for the current
+  stage's required inputs
+- Do not silently assume missing values; present proposed defaults and ask for
+  confirmation
+- Ask at least one trade-off question when assumptions can materially change
+  outputs
+- Record all confirmed answers in the assumption register and stage output
+  artifact before moving forward
+
+---
+
+## ⚠️ MANDATORY: Dependency-Gated Data Collection Protocol
+
+**Purpose:** Ensure every downstream model output is traceable to verified upstream data.
+
+### Agent Operating Rule
+
+At each stage, the agent must:
+1. Collect required inputs
+2. Present derived outputs
+3. Explicitly flag gaps or conflicts
+4. Ask targeted follow-up questions
+5. Get user confirmation
+6. Only then proceed downstream
+
+**Questioning checkpoint (mandatory at each stage):**
+- Ask stage-specific data questions
+- Ask derived-assumption confirmation questions
+- Ask risk/appetite or conservatism preference question
+- Wait for explicit user response before stage completion
+
+If dependencies are incomplete, the agent must pause and resolve them before continuing.
+
+### Stage 0 — Scope Lock (Pre-Model)
+
+**Collect:**
+- Business model and revenue stream definitions
+- Geography and segment scope
+- Time horizon and reporting granularity
+- Currency and benchmark context
+
+**Output artifact:** `project_scope + modeling_config`
+
+**Gate check:** No model work starts until scope is locked.
+
+### Stage 1 — TAM / SAM / SOM (Market Foundation)
+
+**Collect:**
+- Source-backed TAM components
+- SAM filters (geography, segment, readiness)
+- SOM adoption assumptions by year
+
+**Output artifact:** `market_sizing_pack`
+- TAM/SAM/SOM values
+- Calculation logic
+- Confidence labels (HIGH/MEDIUM/LOW)
+- Citation map
+
+**Gate check:**
+- Every major market figure has a source or explicitly labeled estimate
+- SOM trajectory is time-based and not a single-point claim
+
+**If discrepancy:**
+- Ask user whether to use conservative/mid/aggressive assumption set
+- Mark unresolved data as estimate with rationale
+
+### Stage 2 — Demand & Revenue Drivers (Commercial Engine)
+
+**Collect:**
+- Pricing model per stream
+- Volume/customer assumptions by year
+- Growth, churn, retention, attachment/cross-sell assumptions
+
+**Output artifact:** `revenue_driver_pack`
+- Stream-level unit economics and formula logic
+- Year-wise driver table tied to SOM
+
+**Gate check:**
+- Revenue assumptions reconcile with SOM capacity and GTM realism
+- No driver is orphaned from an upstream market logic
+
+**If discrepancy:**
+- Agent surfaces contradiction (e.g., implied penetration too high)
+- Agent requests corrected constraint before proceeding
+
+### Stage 3 — Operating Cost Drivers (Cost Engine)
+
+**Collect:**
+- COGS by stream
+- Headcount plan and salary benchmarks
+- Fixed operating costs and inflation assumptions
+- CAC and sales/marketing efficiency assumptions
+
+**Output artifact:** `cost_driver_pack`
+- Stream-level COGS logic
+- Headcount and fixed-cost schedules
+- CAC-linked S&M schedule
+
+**Gate check:**
+- Cost structure is compatible with revenue model and GTM assumptions
+- All assumptions are versioned and attributable
+
+### Stage 4 — Integrated Financial Statements
+
+**Build order (required):**
+1. Revenue / Headcount / Operating Costs
+2. P&L
+3. Cash Flow
+4. Balance Sheet
+5. Summary / Sensitivity / Valuation / Break-even / Funding & Cap Table / Charts
+
+**Output artifact:** `integrated_model_v1`
+
+**Gate check:**
+- Formula integrity passes
+- Balance sheet balances for all years
+- Linkage audits pass
+
+### Stage 5 — Review, Revisions, and Scenario Sign-Off
+
+**Collect:**
+- User feedback on assumptions and risk posture
+- Scenario preferences (base/upside/downside)
+
+**Output artifact:** `final_assumption_register + scenario_set`
+
+**Gate check:**
+- Changes preserve dependency integrity
+- Structural changes route through Config-Based Rebuild
+
+### Mandatory Incremental Update & Propagation Rule
+
+After each stage, the agent must persist updates before moving to the next stage:
+
+1. Update the relevant business-plan section content for that stage
+2. Update the corresponding financial model block (Sources/Assumptions/drivers/statements)
+3. Validate that stage outputs in-place
+4. Confirm downstream formulas/sheets reference the newly updated upstream data
+5. Present Stage Sign-Off Card and obtain user confirmation
+
+### Stage Execution Loop (Required)
+
+For every stage (0 through 5), execute this loop:
+
+1. **Collect & Derive** stage data
+2. **Persist** updates to both artifacts (business plan + financial model)
+3. **Validate** stage-specific integrity checks
+4. **Propagate** dependencies to downstream blocks
+5. **Sign-Off** with user before next stage
+
+No stage may be skipped, merged, or deferred to a later bulk update.
+
+### Consulting-Grade Standards (Mandatory)
+
+#### 1) Source Quality Hierarchy
+
+Classify each external input as:
+- **Tier 1 (High confidence):** Government, regulator, audited filings, top research firms
+- **Tier 2 (Medium confidence):** Reputable industry publications, operator benchmarks
+- **Tier 3 (Low confidence):** Blogs/forums/vendor claims without triangulation
+
+**Rules:**
+- TAM/SAM foundations should be Tier 1/Tier 2 where possible
+- Tier 3 inputs must be marked as assumptions and sensitivity-tested
+- If only Tier 3 exists, agent must explicitly flag confidence risk before proceeding
+
+#### 2) Assumption Register (Single Source of Truth)
+
+Maintain a structured assumption register during build with:
+- Assumption name and formula usage
+- Value by period (if time-varying)
+- Source URL or rationale (if estimated)
+- Confidence level (HIGH/MEDIUM/LOW)
+- Owner decision (user-confirmed / agent-proposed)
+- Last updated timestamp
+
+All downstream sheets must trace back to this register via Assumptions/Sources.
+
+#### 3) Required Stage Exit Tests
+
+Before moving to downstream stages, run these checks:
+
+- **Stage 1 exit (TAM/SAM/SOM):**
+  - TAM ≥ SAM ≥ SOM logic is valid
+  - SOM trajectory is time-based and defendable
+  - Penetration assumptions are explicitly justified
+
+- **Stage 2 exit (Revenue Drivers):**
+  - Revenue = price × volume (or equivalent explicit driver formula)
+  - Implied market penetration is reconciled to SOM
+  - Churn/retention and growth assumptions are internally consistent
+
+- **Stage 3 exit (Cost Drivers):**
+  - COGS and fixed costs are fully mapped per stream/category
+  - Headcount plan reconciles to salary cost schedule
+  - CAC/S&M logic reconciles to acquisition plan
+
+- **Stage 4 exit (Integrated Statements):**
+  - P&L, Cash Flow, Balance Sheet linkages pass
+  - Balance Sheet check equals zero across all years
+  - No formula errors or broken references
+
+#### 4) Reasonability and Sanity Tests
+
+Agent must run and report:
+- Growth realism checks vs market expansion assumptions
+- Margin trajectory plausibility (gross/EBITDA/net trend logic)
+- Working capital logic consistency with debtor/creditor assumptions
+- Funding runway sufficiency against burn and planned milestones
+- Revenue-per-employee and CAC payback directional plausibility
+
+If any test fails, agent must stop and return a discrepancy summary with options.
+
+#### 5) Stage Sign-Off Protocol
+
+At each stage gate, the agent must present a **Stage Sign-Off Card**:
+1. Inputs collected
+2. Derived outputs
+3. Quality/confidence summary
+4. Open issues and risks
+5. Recommendation (proceed / revise)
+
+Proceed only after explicit user confirmation.
+
+#### 6) Change Control
+
+- **Non-structural changes:** Local-First editing workflow
+- **Structural changes:** Config-Based Rebuild (never patch structure in place)
+- After structural changes, rerun all downstream validation gates before release
+
+### Mandatory Interaction Pattern (During Build)
+
+For each stage, the agent must provide:
+1. **What was collected**
+2. **What was derived**
+3. **What is missing or conflicting**
+4. **Questions requiring user input**
+5. **What step is blocked until confirmation**
+
+### Stage Question Checklist (Use During Information Gathering)
+
+- **Stage 0 - Scope Lock:** What business model, geographies, timeline,
+  reporting granularity, and currency should be used?
+- **Stage 1 - TAM/SAM/SOM:** Which sources are acceptable, what confidence
+  threshold is required, and what estimate tolerance is acceptable?
+- **Stage 2 - Revenue Drivers:** What pricing model, growth/churn path,
+  conversion assumptions, and stream attachment rates should be used?
+- **Stage 3 - Cost Drivers:** What COGS structure, hiring plan,
+  fixed-cost baseline, and CAC/S&M efficiency assumptions should apply?
+- **Stage 4 - Statements Build:** Which scenarios should be modeled, what
+  reporting view is preferred, and how strict should validation gates be?
+- **Stage 5 - Sign-Off:** Which revisions are mandatory, what risk posture is
+  preferred, and is the final recommendation proceed or revise?
+
+### Mandatory Blockers (Do Not Proceed)
+
+- Missing TAM/SAM logic but revenue modeling requested
+- Revenue drivers not reconciled but cost/statement build requested
+- Unresolved assumption conflicts (e.g., churn vs growth mismatch)
+- Failed formula/linkage/integrity checks
+- Stage outputs not yet persisted to both artifacts
+- Attempt to update multiple downstream stages before upstream sign-off
+
+---
+
+## ⚠️ MANDATORY: Financial Model Creation Workflow (Step-Gated)
+
+**Use this workflow for all NEW financial models.**
+
+### Canonical Path (No Ambiguity)
+
+1. **Create from RapidTools template (14-sheet fidelity) using deterministic script**
+
+```bash
+python execution/create_financial_model.py \
+  --company "<CompanyName>" \
+  --config .tmp/<project>/config/<project>_config.json \
+  --from-template
+```
+
+2. **Run template + integrity verification (Gate 1)**
+
+```bash
+python execution/verify_template_copy.py --sheet-id "<SHEET_ID>"
+python execution/audit_financial_model.py --mode comprehensive --sheet-id "<SHEET_ID>"
+python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
+```
+
+**Proceed only if:**
+- All 14 required sheets exist in correct order
+- No formula/linkage integrity failures
+- Balance sheet and cross-sheet checks pass
+
+3. **Only then start iterative edits** via `directives/DECISION_TREE.md`
+
+4. **Optional draft-only path (not canonical)**
+
+Use `execution/create_financial_model_local.py` only for quick offline prototype modeling. It currently creates a reduced model and must not be treated as the production 14-sheet baseline.
+
+### Data Build Order (Must Follow)
+
+The model must be built and validated in this order so downstream sheets depend on verified upstream data:
+
+1. **Sources & References** (market data + benchmarks)
+2. **Assumptions** (single source of truth for all drivers)
+3. **Revenue / Headcount / Operating Costs** (derived operating blocks)
+4. **P&L**
+5. **Cash Flow**
+6. **Balance Sheet** (must balance every year)
+7. **Summary / Sensitivity / Valuation / Break-even / Funding & Cap Table / Charts**
+
+### Hard Stop Rules
+
+- Do not upload if Gate 1 fails
+- Do not proceed to downstream block if upstream block has unresolved errors
+- Do not edit multi-cell structures directly in Google Sheets API
+- Do not use Local-First editing for row add/remove or revenue stream structure changes
+
 ---
 
 ## EXCEL/SHEETS STRUCTURE (14 Sheets)
 
-**Script:** `execution/create_financial_model.py` + `execution/update_financial_model.py`
+**Creation Scripts (Canonical):** `execution/create_financial_model.py --from-template` → `execution/verify_template_copy.py` → `execution/audit_financial_model.py` → `execution/verify_sheet_integrity.py`
+
+**Editing Scripts (Post-Creation):** `execution/edit_financial_model.py` (Local-First) or `execution/create_financial_model.py` (Config-Based Rebuild for structural changes)
 
 > **📋 TEMPLATE REFERENCE:** See `directives/FINANCIAL_MODEL_TEMPLATE.md` for the complete RapidTools template with detailed row structures, formula patterns, and formatting standards.
 >

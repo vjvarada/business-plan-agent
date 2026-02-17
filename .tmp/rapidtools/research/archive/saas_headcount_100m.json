@@ -1,0 +1,85 @@
+{
+  "query": "SaaS company  million ARR headcount employees size benchmark",
+  "total_results": 41700,
+  "organic_results": [
+    {
+      "title": "2025 Revenue Per Employee Benchmarks for Private ...",
+      "link": "https://www.saas-capital.com/blog-posts/revenue-per-employee-benchmarks-for-private-saas-companies/",
+      "snippet": "For example, the chart shows that companies with $1 million to $3 million in ARR have a median ARR per employee of $99,858. The clear takeaway ...",
+      "position": 1
+    },
+    {
+      "title": "2025 SaaS Benchmarks: What \u201cGreat\u201d Looks Like (and ...",
+      "link": "https://burklandassociates.com/2025/11/18/2025-saas-benchmarks-what-great-looks-like-and-how-to-reach-it/",
+      "snippet": "Since 2022, ARR per employee has climbed in every ARR band, while median headcount has fallen, especially for companies at $5M+ ARR.",
+      "position": 2
+    },
+    {
+      "title": "Your guide to ARR per employee",
+      "link": "https://www.growthunhinged.com/p/your-guide-to-arr-per-fte",
+      "snippet": "Public SaaS companies see a median of $283k ARR per FTE and a top quartile of $369k ARR per FTE based on data powered by the team at Virtua Research. A few ...",
+      "position": 3
+    },
+    {
+      "title": "The GOAT of SaaS Metrics - Revenue per employee",
+      "link": "https://www.mostlymetrics.com/p/the-goat-of-saas-metrics",
+      "snippet": "You should be approaching $150K in ARR per employee at around $20M in ARR. And you should be approaching $300K in ARR per employee at scale (+$50M in ARR).",
+      "position": 4
+    },
+    {
+      "title": "How AI SaaS teams are outperforming giants with fewer ...",
+      "link": "https://www.linkedin.com/posts/ryanallis_revenue-per-employee-is-the-most-valuable-activity-7389350005750259712-CFCN",
+      "snippet": "Revenue per employee is the most valuable AI SaaS metric in 2025. This chart shows it. Here's what it means AI native teams like Cursor and ...",
+      "position": 5
+    },
+    {
+      "title": "ARR to Headcount Ratio: The SaaS Gut Check",
+      "link": "https://medium.com/reformation-partners/arr-to-headcount-ratio-the-saas-gut-check-d9d13bc9e",
+      "snippet": "SaaS companies tend to conform to a ARR to Headcount ratio of around $100k plus or minus $50k, meaning a $1M ARR business tends to have between 7 and 20 ...",
+      "position": 6
+    },
+    {
+      "title": "How Much Do Companies Spend on SaaS Per Employee? ...",
+      "link": "https://threadgoldconsulting.com/research/saas-spend-per-employee-benchmarks-2025",
+      "snippet": "SaaS Capital's 2025 (3) dataset shows: Median ARR per employee: $129,724. Firms with $20\u201350M ARR achieve the highest efficiency (~$175K per ...",
+      "position": 7
+    },
+    {
+      "title": "2025 SaaS Performance Metrics",
+      "link": "https://www.benchmarkit.ai/2025benchmarks",
+      "snippet": "ARR per FTE continues to climb in the $50M - $100M ARR segment at $200,000 per FTE. and at companies > $100M this increases to $300,000 per FTE\u200b ...",
+      "position": 8
+    },
+    {
+      "title": "Don't Believe the $5M ARR per Employee Hype | SaaS ...",
+      "link": "https://www.youtube.com/watch?v=nCR33DXpAmk",
+      "snippet": "\ud83d\udcca ARR per Employee Benchmarks: Based on real-world SaaS company performance, here's where top quartile companies land: $1M\u2013$5M ARR \u2192 ~$100K per ...",
+      "position": 9
+    },
+    {
+      "title": "Easy guide to SaaS benchmarks | 2025 - Orb",
+      "link": "https://www.withorb.com/blog/saas-benchmarks",
+      "snippet": "The goal of this guide is to give you a breakdown of the importance of SaaS benchmarks. We'll also explore different types of benchmarks within this industry.",
+      "position": 10
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "What is the benchmark for arr FTE?",
+      "snippet": "ARR/FTE (Annual Recurring Revenue per Full-Time Employee) measures a SaaS company's operational efficiency by calculating recurring revenue generated per employee. Industry benchmarks suggest the overall median revenue per employee for private SaaS companies is around $112,500, varying by company size."
+    },
+    {
+      "question": "What is the headcount ratio for SaaS?",
+      "snippet": "What I noticed is no matter how big or small, fast growing or slow, SaaS companies tend to conform to a ARR to Headcount ratio of around $100k plus or minus $50k, meaning a $1M ARR business tends to have between 7 and 20 employees."
+    },
+    {
+      "question": "What is the CAC benchmark for SaaS?",
+      "snippet": "SaaS businesses generally aim for a 3:1 LTV/CAC ratio. In other words, for every $1 you spend to acquire a customer, you should earn about $3 in return. This ratio gives you enough margin to cover overhead, support, and reinvestment in growth."
+    },
+    {
+      "question": "What is the rule of 40 measure in a SaaS company?",
+      "snippet": null
+    }
+  ],
+  "timestamp": "2026-01-26T21:24:27.536922"
+}

@@ -7,7 +7,7 @@ Uses the 'formulas' library to evaluate all Excel formulas without opening Excel
 Detects: #REF!, #VALUE!, #DIV/0!, #NAME?, #N/A, NaN, Inf errors.
 
 Usage:
-    python validate_excel_model.py --file .tmp/RapidTools_financial_model.xlsx
+    python validate_excel_model.py --file .tmp/MyCompany_financial_model.xlsx
     python validate_excel_model.py --file .tmp/model.xlsx --verbose
     python validate_excel_model.py --file .tmp/model.xlsx --check-balance
 """

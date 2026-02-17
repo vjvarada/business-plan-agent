@@ -15,6 +15,9 @@ This folder contains the Standard Operating Procedures (SOPs) for the business p
 
 2. **[business_planning.md](business_planning.md)** - Complete business planning SOP
    - 14-step workflow from idea to finished plan
+   - Step-gated financial model creation workflow (mandatory)
+   - Dependency-gated data collection + user confirmation protocol
+   - Consulting-grade controls (source tiering, assumption register, sign-off cards)
    - Sheet structure (14 sheets)
    - Formula linkage principles
    - Integration with execution scripts
@@ -85,7 +88,12 @@ Q: Is it updating values or fixing formulas?
 
 | Script                       | Purpose                    | When to Use                    |
 | ---------------------------- | -------------------------- | ------------------------------ |
-| `create_financial_model.py`  | Build/rebuild entire model | Structural changes, new models |
+| `run_stepwise_workflow.py`   | Stage-gated orchestration across business + financial model | Primary step-by-step execution |
+| `validate_script_registry.py`| Validate that all execution scripts are mapped to stages | Governance / CI sanity check |
+| `create_financial_model.py`  | Create/rebuild full 14-sheet model | New model creation (preferred), structural changes |
+| `create_financial_model_local.py` | Create reduced local Excel draft | Offline prototyping only (not production baseline) |
+| `validate_excel_model.py`    | Validate local Excel formulas | Before uploading new model |
+| `sync_to_cloud.py`           | Upload local .xlsx to Google Sheets | After validation passes |
 | `edit_financial_model.py`    | Local-First editing helper | Value updates, formula fixes   |
 | `download_model_snapshot.py` | Download to CSV            | Part of Local-First workflow   |
 | `sync_snapshot_to_sheets.py` | Sync CSV back to Sheets    | Part of Local-First workflow   |
@@ -97,6 +105,23 @@ Q: Is it updating values or fixing formulas?
 ### Quick Commands
 
 ```bash
+# Canonical New Model Creation (step-gated)
+python execution/create_financial_model.py --company "<CompanyName>" --config .tmp/<project>/config/<project>_config.json --from-template
+python execution/verify_template_copy.py --sheet-id "<SHEET_ID>"
+python execution/audit_financial_model.py --sheet-id "<SHEET_ID>" --mode comprehensive
+python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
+
+# Full stage-gated orchestration (recommended)
+python execution/run_stepwise_workflow.py --project <project> --stage 0 --company "<CompanyName>" --config .tmp/<project>/config/<project>_config.json --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 1 --research-dir .tmp/<project>/research --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 2 --sections-dir .tmp/<project>/business_plan/sections --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 3 --config .tmp/<project>/config/<project>_config.json --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 4 --company "<CompanyName>" --config .tmp/<project>/config/<project>_config.json --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 5 --sections-dir .tmp/<project>/business_plan/sections --execute
+
+# Registry coverage check
+python execution/validate_script_registry.py
+
 # Config-Based Rebuild (for structural changes)
 python execution/create_financial_model.py \
   --config .tmp/rapidtools_config.json \

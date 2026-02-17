@@ -1,0 +1,328 @@
+{
+  "category": "Headcount & Hiring",
+  "description": "Team composition, salaries, roles, hiring benchmarks",
+  "consolidated_at": "2026-01-27T14:23:24.133809",
+  "source_files": [
+    "saas_headcount_100m.json",
+    "india_employer_costs.json"
+  ],
+  "sources": [
+    {
+      "title": "2025 Revenue Per Employee Benchmarks for Private ...",
+      "url": "https://www.saas-capital.com/blog-posts/revenue-per-employee-benchmarks-for-private-saas-companies/",
+      "snippet": "As of 2025, the median revenue per employee for private SaaS companies is $129,724, up from $125,000 the previous year. However, it is important ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "2025 SaaS Benchmarks: What \u201cGreat\u201d Looks Like (and ...",
+      "url": "https://burklandassociates.com/2025/11/18/2025-saas-benchmarks-what-great-looks-like-and-how-to-reach-it/",
+      "snippet": "Since 2022, ARR per employee has climbed in every ARR band, while median headcount has fallen, especially for companies at $5M+ ARR. Bar ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Annual recurring revenue per employee: What it is, why it's ...",
+      "url": "https://www.drivetrain.ai/strategic-finance-glossary/annual-recurring-revenue-per-employee",
+      "snippet": "Industry benchmarks suggest the overall median revenue per employee for private SaaS companies is around $112,500, varying by company size. At ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "85 SaaS Statistics, Trends and Benchmarks for 2026",
+      "url": "https://www.venasolutions.com/blog/saas-statistics",
+      "snippet": "11. The median growth rate for public SaaS companies as of October 2024 is 30%, down from an overall median of 35% reported in 2023.",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Hiring SaaS Executives: Ramp, Retention and ROI ...",
+      "url": "https://talentfoot.com/hiring-saas-executive-data/",
+      "snippet": "Explore SaaS executive hiring benchmarks on ramp, retention, and ROI to help CEOs and boards set expectations and measure leadership impact.",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "What Is Revenue per Employee in Saas? How to Improve It",
+      "url": "https://www.alexanderjarvis.com/what-is-revenue-per-employee-in-saas/",
+      "snippet": "For context, most public SaaS companies achieve between $190,000 and $210,000 per employee, while top performers push that number to $250,000 or even $300,000.",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Boost SaaS Revenue Per Employee With Actionable ...",
+      "url": "https://saasoperations.com/saas-revenue-per-employee/",
+      "snippet": "Learn how to measure and maximize saas revenue per employee with real benchmarks, worked examples, and a step-by-step playbook for scalable ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "ARR to Headcount Ratio: The SaaS Gut Check",
+      "url": "https://medium.com/reformation-partners/arr-to-headcount-ratio-the-saas-gut-check-d9d13bc9e",
+      "snippet": "SaaS companies tend to conform to a ARR to Headcount ratio of around $100k plus or minus $50k, meaning a $1M ARR business tends to have between 7 and 20 ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "State of Startup Compensation, H1 2024",
+      "url": "https://carta.com/data/startup-compensation-h1-2024/",
+      "snippet": "The biggest recent shift has occurred at Series C, where median headcount for SaaS companies has fallen from 131.7 in H1 2022 to 86.5 in H1 2024 ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "Typical Employee Count for SaaS Companies \u2013",
+      "url": "https://publicsaascompanies.com/typical-employee-count-for-saas-companies/",
+      "snippet": "For instance, many established SaaS firms might employ between 500 to 2,000 people, reflecting their broader market reach and extensive service ...",
+      "data_points": [],
+      "file_source": "headcount_research.json"
+    },
+    {
+      "title": "15 Critical B2B Sales Metrics Every Team Should Track in ...",
+      "url": "https://monday.com/blog/crm-and-sales/b2b-sales-metrics/",
+      "snippet": "Client retention rate: Retaining 90%+ of clients annually is standard in professional services, as ongoing relationships generate predictable ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "How to Think About Scaling Your Customer Success Team ...",
+      "url": "https://www.saastr.com/the-2-million-dollar-man-woman-how-to-think-about-scaling-your-customer-success-team/",
+      "snippet": "$2m ARR per Customer Success Manager \u2014 but hired in advance, not arrears \u2014 is a solid model to scale with ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "The Tactical Guide To SaaS Customer Success For B2B ...",
+      "url": "https://onboard.io/blog/tactical-guide-to-saas-customer-success-for-b2b",
+      "snippet": "SaaS customer success involves a lengthy customer journey with a focus on retention and the recurring revenue that this provides.",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "31 B2B Sales KPIs & Metrics Every Organization Should ...",
+      "url": "https://www.default.com/post/b2b-sales-kpis",
+      "snippet": "How it's calculated: Percentage of reps who meet or exceed their sales quota within a defined time period. What success looks like: 70\u201380%+ of ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "Capacity Planning for Customer Success",
+      "url": "https://www.insightpartners.com/ideas/capacity-planning-for-customer-success/",
+      "snippet": "This article is intended to help customer success leaders accurately forecast headcount for the next twelve months to drive strong customer and employee ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "6 Ways to Improve Your B2B SaaS Customer Success Efforts",
+      "url": "https://www.salesassembly.com/blog/playbooks/6-ways-to-improve-your-b2b-saas-customer-success-efforts/",
+      "snippet": "Here are six best practices every B2B SaaS customer success team should adhere to and how they can better align with sales teams.",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "2025 Customer Success Industry Market Statistics, Salaries ...",
+      "url": "https://www.custify.com/blog/customer-success-statistics/",
+      "snippet": "General Customer Success Stats \u00b7 In 2020 more than 90% of organizations stated they have a dedicated customer success role in their company.",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "B2B Benchmarks for SaaS Sales: What to Measure and How",
+      "url": "https://www.walnut.io/blog/sales-tips/saas-and-b2b-sales-benchmarks-what-to-measure-and-how/",
+      "snippet": "If your rep has 100 conversations per week, leading to 25 appointments, your average conversation to appointment ratio is 25%. If you find that this ratio falls ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "How to approach your customer success comp plans",
+      "url": "https://www.quotapath.com/blog/customer-success-comp-plans/",
+      "snippet": "Pay mix: 80% base and 20% variable \u00b7 10% of variable pay is based on a 90% customer retention goal \u00b7 Other 10% is earned from commissions on ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "How to Build a Scalable B2B SaaS Sales Team (A Step-by- ...",
+      "url": "https://demandzen.com/how-to-build-scalable-b2b-saas-sales-team/",
+      "snippet": "Learn how to build a high-performing B2B SaaS sales team from scratch. This guide covers team structure, key roles, sales processes, ...",
+      "data_points": [],
+      "file_source": "headcount_research2.json"
+    },
+    {
+      "title": "The Best Sales Team Structure for Startups and Growth- ...",
+      "url": "https://www.sloane-staffing.com/insights/the-best-sales-team-structure-for-startups-and-growth-stage-companies",
+      "snippet": "Seed to Series A Stage ($1M - $5M in ARR)\u200b\u200b Primary Goals: Establish repeatable processes, expand customer base, and start to scale. Team ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "A Complete Guide to Ideal Startup Marketing Team Structure",
+      "url": "https://technext.it/startup-marketing-team-structure/",
+      "snippet": "This article gives you a basic guideline on the ideal startup marketing team structure at a different stage of your venture.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "The Ultimate Guide to Startup Funding Stages",
+      "url": "https://visible.vc/blog/startup-funding-stages/",
+      "snippet": "A pre-seed round generally allows a founding team to find product-market fit, hire early employees, and test go-to-market models. As a general ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Is There an Ideal Team Structure in A Startup?",
+      "url": "https://storm2.com/resources/startup/is-there-an-ideal-team-structure-in-a-startup/",
+      "snippet": "The ideal team structure is driven by your priorities. Building the right set of C-Suite matrix is the fundamental step to success.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Startup Funding Stages: A Complete Guide for 2026",
+      "url": "https://growthlist.co/startup-funding-stages/",
+      "snippet": "Learn the 7 startup funding stages from pre-seed to IPO. Understand what each funding round means for sales teams targeting growing ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "GTM to Engineering Ratio: How Startups Build for Growth",
+      "url": "https://zelt.app/blog/the-gtm-to-engineering-ratio-how-early-stage-startups-build-for-growth/",
+      "snippet": "Learn how early-stage startups balance Go-to-Market and engineering teams to scale effectively, with insights on team ratios and growth ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Stages of startups : YC Startup Job Guide",
+      "url": "https://www.ycombinator.com/library/Ek-stages-of-startups",
+      "snippet": "Seed stage startups are the riskiest and most dynamic. They're the youngest and the least established, typically with teams of 2-10 people (sometimes just the ...",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Startup Funding Stages - SaaSLabs",
+      "url": "https://saaslabs.com.au/2024/06/22/startup-funding-stages/",
+      "snippet": "Hiring: Expanding the team by hiring additional talent, especially in critical areas such as sales, marketing, engineering, and operations.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Seed Funding for Startups: How to Raise a Seed Round",
+      "url": "https://carta.com/learn/startups/fundraising/seed-funding/",
+      "snippet": "Conduct market research and validation. Launch initial marketing initiatives and sales motions. Secure early-adopters and develop partnerships.",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "A Guide to Raising a Series A Round in 2025",
+      "url": "https://www.failory.com/blog/series-a-funding",
+      "snippet": "The typical Series A startup's optional pool ranges from 10% to 20%, with later stages startups having smaller option pools (1-10%).",
+      "data_points": [],
+      "file_source": "headcount_research3.json"
+    },
+    {
+      "title": "Your guide to ARR per employee",
+      "url": "https://www.growthunhinged.com/p/your-guide-to-arr-per-fte",
+      "snippet": "Public SaaS companies see a median of $283k ARR per FTE and a top quartile of $369k ARR per FTE based on data powered by the team at Virtua Research. A few ...",
+      "data_points": [],
+      "file_source": "saas_headcount_100m.json"
+    },
+    {
+      "title": "The GOAT of SaaS Metrics - Revenue per employee",
+      "url": "https://www.mostlymetrics.com/p/the-goat-of-saas-metrics",
+      "snippet": "You should be approaching $150K in ARR per employee at around $20M in ARR. And you should be approaching $300K in ARR per employee at scale (+$50M in ARR).",
+      "data_points": [],
+      "file_source": "saas_headcount_100m.json"
+    },
+    {
+      "title": "How AI SaaS teams are outperforming giants with fewer ...",
+      "url": "https://www.linkedin.com/posts/ryanallis_revenue-per-employee-is-the-most-valuable-activity-7389350005750259712-CFCN",
+      "snippet": "Revenue per employee is the most valuable AI SaaS metric in 2025. This chart shows it. Here's what it means AI native teams like Cursor and ...",
+      "data_points": [],
+      "file_source": "saas_headcount_100m.json"
+    },
+    {
+      "title": "How Much Do Companies Spend on SaaS Per Employee? ...",
+      "url": "https://threadgoldconsulting.com/research/saas-spend-per-employee-benchmarks-2025",
+      "snippet": "SaaS Capital's 2025 (3) dataset shows: Median ARR per employee: $129,724. Firms with $20\u201350M ARR achieve the highest efficiency (~$175K per ...",
+      "data_points": [],
+      "file_source": "saas_headcount_100m.json"
+    },
+    {
+      "title": "Don't Believe the $5M ARR per Employee Hype | SaaS ...",
+      "url": "https://www.youtube.com/watch?v=nCR33DXpAmk",
+      "snippet": "\ud83d\udcca ARR per Employee Benchmarks: Based on real-world SaaS company performance, here's where top quartile companies land: $1M\u2013$5M ARR \u2192 ~$100K per ...",
+      "data_points": [],
+      "file_source": "saas_headcount_100m.json"
+    },
+    {
+      "title": "New Labour Law 2025: Gratuity Calculator for CTC of Rs 6 ...",
+      "url": "https://m.economictimes.com/wealth/legal/will/new-labour-law-2025-gratuity-calculator-for-ctc-of-rs-6-lakh-rs-12-lakh-and-rs-24-lakh-/gratuity-breakdown-rs-12-lakh-rs-24-lakh-ctc/slideshow/125742928.cms",
+      "snippet": "Rs 12 lakh CTC: Wages rise from Rs 6 lakh to Rs 7.9 lakh; annual gratuity jumps from Rs 28860 to Rs 37999. Rs 24 lakh CTC: Wages jump from ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "Gratuity Rules India 2025: Key Changes Explained",
+      "url": "https://numericaconsulting.com/blog/gratuity-rules-india-2025-labour-code/",
+      "snippet": "Gratuity = 15/26 \u00d7 Eligible Salary \u00d7 Years of Service \u00b7 \u20b920,00,000 \u00b7 the eligible salary (now called \u201cwages\u201d) must constitute at least 50% of ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "Cost to Company and How It Shapes Your Total Benefits",
+      "url": "https://www.plumhq.com/blog/what-is-ctc",
+      "snippet": "CTC (Cost to Company) is the total annual cost an employer spends on an employee, including salary, benefits, and statutory contributions.",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "Gratuity Calculation, Eligibility, And Taxation In India [2025 ...",
+      "url": "https://quikchex.in/gratuity-calculation-eligibility/",
+      "snippet": "CTC is the total cost to the company for employing an individual, and gratuity is often considered a benefit included in this total cost.",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "India Labour Code 2025: The New Playbook for CHROs",
+      "url": "https://www.compport.com/blog/india-labour-code-2025",
+      "snippet": "Explore how India's new labour codes affect compensation, PF, gratuity, and gig workforce compliance. A practical guide for CHROs and CROs.",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "Basic Pay 50% of CTC: New Labour Law 2025 Rules in India",
+      "url": "https://savvyhrms.com/basic-pay-50-rule-explained/",
+      "snippet": "With basic pay fixed at 50% of CTC, provident fund contributions increase for both employer and employee. This significantly improves the ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "New gratuity rules explained: How new labour codes will ...",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/new-gratuity-calculator-rules-explained-how-new-labour-codes-will-increase-payout-at-various-salary-levels-check-calculations/articleshow/125762501.cms",
+      "snippet": "In the chart above, a permanent employee gets a basic salary of Rs 100,000 per month, which is just 38.91% of the total monthly Cost to Company ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "How can pay structure be reinvented after gratuity reforms ...",
+      "url": "https://www.linkedin.com/pulse/how-can-pay-structure-reinvented-after-gratuity-2025-chakraborty-tb64f",
+      "snippet": "... employee who has a Cost to Company (CTC) of 10 Lakh. In case the employer reduced the Basic Pay to 35% ( 3.5 lakh ) during the legacy system ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "EOR Costs & Salaries in India: 2025-2026 Guide - Team Up",
+      "url": "https://www.helloteamup.com/post/cost-to-use-an-eor-in-india",
+      "snippet": "Hiring a full-time onsite employee in a Tier 1 city: expect total employer costs to reach 20\u201330% above gross salary, factoring in office ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "Salary Structure in India: The Ultimate Expert Guide for 2025",
+      "url": "https://asanify.com/blog/human-resources/salary-structure-in-india-the-ultimate-expert-guide-for-2025/",
+      "snippet": "CTC in salary is calculated by adding Basic Salary and other additional benefits that employees receive such as Gratuity, EPF, HRA, Travel ...",
+      "file_source": "india_employer_costs.json"
+    },
+    {
+      "title": "2025 SaaS Performance Metrics",
+      "url": "https://www.benchmarkit.ai/2025benchmarks",
+      "snippet": "ARR per FTE continues to climb in the $50M - $100M ARR segment at $200,000 per FTE. and at companies > $100M this increases to $300,000 per FTE\u200b ...",
+      "file_source": "saas_headcount_100m.json"
+    },
+    {
+      "title": "Easy guide to SaaS benchmarks | 2025 - Orb",
+      "url": "https://www.withorb.com/blog/saas-benchmarks",
+      "snippet": "The goal of this guide is to give you a breakdown of the importance of SaaS benchmarks. We'll also explore different types of benchmarks within this industry.",
+      "file_source": "saas_headcount_100m.json"
+    }
+  ]
+}

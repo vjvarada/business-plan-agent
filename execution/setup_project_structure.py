@@ -14,7 +14,7 @@ Creates standardized folder structure for business plan projects:
 - scripts_archive/ - One-time analysis scripts
 
 Usage:
-  python execution/setup_project_structure.py --project rapidtools
+  python execution/setup_project_structure.py --project my_startup
   python execution/setup_project_structure.py --project ai_tutoring --init-only
 """
 
@@ -209,7 +209,7 @@ def main():
         description='Setup and manage .tmp folder structure for business plan projects'
     )
     parser.add_argument('--project', 
-                       help='Project name to create (e.g., rapidtools, ai_tutoring)')
+                       help='Project name to create (e.g., my_startup, ai_tutoring)')
     parser.add_argument('--init-only', action='store_true',
                        help='Only initialize core folders, don\'t create project')
     parser.add_argument('--summary', action='store_true',

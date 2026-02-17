@@ -1,0 +1,76 @@
+{
+  "stages": {
+    "0_scope_lock": [
+      "setup_project_structure.py",
+      "parse_business_plan_content.py",
+      "extract_config_from_plan.py",
+      "validate_config.py"
+    ],
+    "1_market_foundation": [
+      "serp_market_research.py",
+      "consolidate_market_research.py",
+      "analyze_benchmarks.py"
+    ],
+    "2_revenue_drivers": [
+      "extract_config_from_plan.py",
+      "validate_config.py",
+      "generate_business_plan.py",
+      "update_google_doc.py"
+    ],
+    "3_cost_drivers": [
+      "extract_config_from_plan.py",
+      "validate_config.py",
+      "generate_business_plan.py",
+      "audit_business_plan.py"
+    ],
+    "4_financial_model_build": [
+      "create_financial_model.py",
+      "verify_template_copy.py",
+      "audit_financial_model.py",
+      "verify_sheet_integrity.py",
+      "format_sheets.py",
+      "validate_financial_model.py",
+      "export_model_summary.py"
+    ],
+    "5_review_signoff": [
+      "audit_financial_model.py",
+      "verify_sheet_integrity.py",
+      "validate_financial_model.py",
+      "export_model_summary.py",
+      "audit_business_plan.py",
+      "create_pitch_deck.py",
+      "populate_pitch_deck.py"
+    ],
+    "editing_non_structural": [
+      "edit_financial_model.py",
+      "download_model_snapshot.py",
+      "validate_model_snapshot.py",
+      "sync_snapshot_to_sheets.py",
+      "repair_financial_model.py",
+      "update_financial_model.py",
+      "analyze_sheet_linkages.py"
+    ],
+    "draft_local_tools": [
+      "create_financial_model_local.py",
+      "validate_excel_model.py",
+      "build_financial_model.py",
+      "create_business_plan_local.py",
+      "sync_to_cloud.py",
+      "download_sheets_to_excel.py",
+      "download_doc_to_word.py"
+    ],
+    "document_tools": [
+      "create_google_doc.py",
+      "update_google_doc.py",
+      "format_google_doc_enhanced.py",
+      "download_doc_to_word.py",
+      "create_pitch_deck.py",
+      "populate_pitch_deck.py"
+    ],
+    "shared_utilities": [
+      "sheets_utils.py",
+      "update_financial_model.py",
+      "run_stepwise_workflow.py"
+    ]
+  }
+}

@@ -175,11 +175,13 @@ Now when individual module TAMs change, the total updates automatically.
 
 ### Example 3: Add New Revenue Stream
 
-1. Download snapshot
-2. Edit `Revenue_formulas.csv` - add row 25
-3. Edit `Assumptions_formulas.csv` - add parameters
-4. Update Total Revenue formula: `=B18+B19+...+B25`
-5. Validate → Preview → Apply
+Structural change detected (adds rows and shifts references).
+
+1. Update config (`.tmp/rapidtools_config.json`)
+2. Rebuild using `create_financial_model.py --config ... --output-id ...`
+3. Run comprehensive audit after rebuild
+
+Use Local-First workflow only for non-structural value/formula updates.
 
 ## Performance Metrics
 
@@ -236,16 +238,16 @@ python execution/edit_financial_model.py --sheet-id "..." --apply
 
 **Key Instruction:**
 
-> ⚠️ ALWAYS use the Local-First workflow for editing Google Sheets financial models. NEVER edit directly via API calls unless it's a single-cell emergency fix.
+> ⚠️ Use Local-First workflow for non-structural edits only. Use Config-Based Rebuild for structural changes per `directives/DECISION_TREE.md`.
 
 ### Agent Decision Tree
 
 ```
 User wants to edit financial model
     ↓
-Is it a single-cell fix?
-    YES → Use direct API (worksheet.update) - EXCEPTION ONLY
-    NO ↓
+Does change add/remove rows or alter model structure?
+  YES → Use Config-Based Rebuild
+  NO ↓
 Use Local-First:
     1. Download snapshot (--prepare)
     2. User edits CSV files
@@ -308,9 +310,8 @@ python execution/edit_financial_model.py --sheet-id "SHEET_ID" --backup
    ```
 
 2. **For any new financial model:**
-   - Use same workflow
-   - Works with any Google Sheets file
-   - Just need the sheet ID
+  - Use canonical creation gates: Create Local → Validate Local → Upload → Audit
+  - Do not start with editing workflow unless model already exists in Sheets
 
 ### For Future Enhancement
 
@@ -343,7 +344,7 @@ python execution/edit_financial_model.py --sheet-id "SHEET_ID" --backup
 
 **The agent is now properly configured to:**
 
-1. ✅ Use Local-First workflow as default for all financial model editing
+1. ✅ Use Local-First as default for non-structural edits
 2. ✅ Preserve formulas instead of breaking them
 3. ✅ Provide full visibility into model structure
 4. ✅ Enable safe, auditable, reversible changes

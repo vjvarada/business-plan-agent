@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-**ALWAYS use the Local-First workflow for editing financial models.** This prevents formula breakage, provides audit trails, and reduces errors by 95%.
+**Use the Local-First workflow for non-structural edits only.** Structural edits must use Config-Based Rebuild per `directives/DECISION_TREE.md`.
 
 ## Why Local-First?
 
@@ -237,31 +237,19 @@ python edit_financial_model.py --sheet-id "1-Ss62..." --apply
 
 **Task:** Add "Training Services" as 6th revenue stream
 
+**Decision:** This is a structural change (adds rows and shifts formula references) → **Config-Based Rebuild**
+
 ```bash
-# 1. Download
-python edit_financial_model.py --sheet-id "1-Ss62..." --prepare
+# 1. Update config with the new stream
+# Edit .tmp/rapidtools_config.json
 
-# 2. Edit .tmp/snapshot/sheets/Revenue_formulas.csv
-#    Add new row after row 23 (existing streams):
-#    24,Training Services,10000,25000,50000,100000,200000
-#
-#    Update Total Revenue formula in row 25:
-#    OLD: 25,Total Revenue,=B18+B19+B20+B21+B22+B23
-#    NEW: 25,Total Revenue,=B18+B19+B20+B21+B22+B23+B24
+# 2. Rebuild model with regenerated formulas
+python execution/create_financial_model.py \
+   --config .tmp/rapidtools_config.json \
+   --output-id "1-Ss62..."
 
-# 3. Edit .tmp/snapshot/sheets/Assumptions_formulas.csv
-#    Add new parameters:
-#    Find "Revenue Streams" section (around row 14)
-#    Add new rows for Training Services pricing, volume, growth, COGS%
-
-# 4. Validate
-python edit_financial_model.py --sheet-id "1-Ss62..." --validate
-
-# 5. Preview
-python edit_financial_model.py --sheet-id "1-Ss62..." --preview
-
-# 6. Apply
-python edit_financial_model.py --sheet-id "1-Ss62..." --apply
+# 3. Validate integrity after rebuild
+python execution/audit_financial_model.py --mode comprehensive --sheet-id "1-Ss62..."
 ```
 
 ### Scenario 3: Fix Hard-Coded Values
@@ -295,25 +283,7 @@ python edit_financial_model.py --sheet-id "1-Ss62..." --apply
 
 **Task:** Reorder sections in Assumptions sheet
 
-**Method 1: CSV Editing (Recommended for small changes)**
-
-```bash
-# 1. Download snapshot
-python edit_financial_model.py --sheet-id "1-Ss62..." --prepare
-
-# 2. Edit Assumptions_formulas.csv
-#    - Cut rows 48-56 (Customer Acquisition)
-#    - Paste after row 34 (Revenue Streams section)
-#    - Update all formula references that point to moved rows
-
-# 3. Validate
-python edit_financial_model.py --sheet-id "1-Ss62..." --validate
-
-# 4. Apply
-python edit_financial_model.py --sheet-id "1-Ss62..." --apply
-```
-
-**Method 2: Full Rebuild (Recommended for major changes)**
+**Required Method: Full Rebuild (structural change)**
 
 ```bash
 # 1. Update .tmp/rapidtools_config.json with new structure

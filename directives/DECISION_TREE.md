@@ -2,6 +2,11 @@
 
 > **For Agents: Use this decision tree to choose the right editing approach**
 
+## Scope Clarification
+
+- This decision tree applies to **existing** Google Sheets models that need edits.
+- For **new model creation from scratch**, use the step-gated workflow in `directives/business_planning.md` (Create Local → Validate Local → Upload → Audit).
+
 ## The Central Question
 
 **"What type of change is the user requesting?"**

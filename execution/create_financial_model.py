@@ -6,7 +6,7 @@ Complete investor-ready financial model with advanced analytics.
 🎯 TWO CREATION METHODS:
 
 1. **TEMPLATE COPY (RECOMMENDED - Default)**
-   - Copies RapidTools template spreadsheet
+   - Copies the standard 14-sheet template spreadsheet
    - MUCH FASTER: ~10 seconds vs 2-3 minutes
    - 100% guaranteed fidelity to template
    - Updates only values, preserves all formulas/formatting
@@ -46,7 +46,7 @@ Features:
 - Funding & Cap Table tracking
 - Charts Data for embedded visualizations
 
-Output: 14-sheet Google Sheets model (RapidTools Template Structure)
+Output: 14-sheet Google Sheets model (Standard Template Structure)
     1. Sources & References - TAM/SAM/SOM with linkable values
     2. Assumptions - All input parameters + Unit Economics
     3. Headcount Plan - Team growth and salary costs
@@ -273,8 +273,8 @@ class FinancialModelBuilder:
                 print(f"    Warning: Could not batch format: {e}")
 
     def build_all_sheets(self):
-        """Build all sheets in the correct order - matching RapidTools template."""
-        print("\nBuilding financial model sheets (RapidTools Template Order)...")
+        """Build all sheets in the correct order - matching standard 14-sheet template."""
+        print("\nBuilding financial model sheets (Standard Template Order)...")
 
         # 1. Sources & References - TAM/SAM/SOM with linkable values
         self.build_sources_sheet()
@@ -338,7 +338,7 @@ class FinancialModelBuilder:
         except:
             pass
 
-        print("\n✅ All 14 sheets created successfully (RapidTools Template)!")
+        print("\n✅ All 14 sheets created successfully!")
 
     def build_assumptions_sheet(self):
         """Build the Assumptions sheet with all input parameters."""
@@ -4605,7 +4605,7 @@ def create_from_template(
     company_name, config=None, use_humanoid_rent=False, folder_id=None
 ):
     """
-    Create a new financial model by COPYING the RapidTools template.
+    Create a new financial model by COPYING the standard template.
     This is MUCH faster and ensures 100% fidelity to the template structure.
 
     Args:
@@ -4617,7 +4617,7 @@ def create_from_template(
     Returns:
         Dict with spreadsheet info
     """
-    RAPIDTOOLS_TEMPLATE_ID = "1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY"
+    TEMPLATE_SPREADSHEET_ID = "1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY"
     
     creds = get_credentials()
     client = gspread.authorize(creds)
@@ -4634,8 +4634,8 @@ def create_from_template(
         print("Falling back to build-from-scratch method for full customization...")
         return create_financial_model_v2(company_name, config, use_humanoid_rent, folder_id)
     
-    print(f"\nCopying RapidTools template...")
-    print(f"Template ID: {RAPIDTOOLS_TEMPLATE_ID}")
+    print(f"\nCopying template spreadsheet...")
+    print(f"Template ID: {TEMPLATE_SPREADSHEET_ID}")
     
     # Copy the template spreadsheet
     try:
@@ -4649,7 +4649,7 @@ def create_from_template(
         }
         
         copied_file = drive_service.files().copy(
-            fileId=RAPIDTOOLS_TEMPLATE_ID,
+            fileId=TEMPLATE_SPREADSHEET_ID,
             body=file_metadata
         ).execute()
         
@@ -4674,7 +4674,7 @@ def create_from_template(
             "title": title,
             "url": url,
             "method": "template_copy",
-            "template_id": RAPIDTOOLS_TEMPLATE_ID,
+            "template_id": TEMPLATE_SPREADSHEET_ID,
             "revenue_streams": [s["name"] for s in config.get("revenue_streams", [])] if config else []
         }
         
@@ -4687,7 +4687,7 @@ def create_from_template(
 def _update_template_values(spreadsheet, config):
     """
     Comprehensively update copied template with new business configuration.
-    Handles businesses very different from RapidTools by updating all sections.
+    Handles any business by updating all sections.
     """
     try:
         assumptions = spreadsheet.worksheet("Assumptions")
@@ -5003,7 +5003,7 @@ def main():
         description="Create comprehensive financial model",
         epilog="""
 Examples:
-  # Copy from RapidTools template (RECOMMENDED - faster and guaranteed fidelity)
+  # Copy from template (RECOMMENDED - faster and guaranteed fidelity)
   python create_financial_model.py --company "MyStartup" --config config.json --from-template
 
   # Build from scratch (programmatic)
@@ -5024,7 +5024,7 @@ Examples:
     parser.add_argument(
         "--from-template", 
         action="store_true", 
-        help="Copy from RapidTools template (RECOMMENDED - much faster, guaranteed fidelity)"
+        help="Copy from template (RECOMMENDED - much faster, guaranteed fidelity)"
     )
     parser.add_argument(
         "--build-from-scratch",
@@ -5100,6 +5100,16 @@ Examples:
                 print("   ✅ Model audit passed")
             else:
                 print("   ⚠️  Model audit found issues (review above)")
+
+            # Run sheet integrity verification
+            print("\n3. Sheet Integrity Verification...")
+            integrity_cmd = f'python execution/verify_sheet_integrity.py --sheet-id "{sheet_id}"'
+            integrity_result = os.system(integrity_cmd)
+
+            if integrity_result == 0:
+                print("   ✅ Sheet integrity verification passed")
+            else:
+                print("   ⚠️  Sheet integrity verification found issues (review above)")
             
             print("\n" + "="*60)
             print("📊 MODEL CREATED AND VALIDATED")

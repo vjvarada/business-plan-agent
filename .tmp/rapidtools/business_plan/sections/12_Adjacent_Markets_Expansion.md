@@ -42,23 +42,23 @@ This represents a **4× expansion** of our addressable market beyond manufacturi
 
 ### Why This Changes Everything
 
-| Traditional Medical Implants Entry | Applied Additive + OsteoForge |
-|------------------------------------|-------------------------------|
-| 3-5 years regulatory pathway | **Partner has CDSCO test batch license** |
-| Develop biocompatible materials | **SERIBO already ISO 10993 certified** |
-| Build clinical relationships | **50+ maxillofacial + 7 orthopedic surgeons** |
-| No material differentiation | **2× faster bone regeneration (patented)** |
-| Compete with titanium incumbents | **Disrupt with bioresorbable alternative** |
+| Traditional Medical Implants Entry | Applied Additive + OsteoForge                 |
+| ---------------------------------- | --------------------------------------------- |
+| 3-5 years regulatory pathway       | **Partner has CDSCO test batch license**      |
+| Develop biocompatible materials    | **SERIBO already ISO 10993 certified**        |
+| Build clinical relationships       | **50+ maxillofacial + 7 orthopedic surgeons** |
+| No material differentiation        | **2× faster bone regeneration (patented)**    |
+| Compete with titanium incumbents   | **Disrupt with bioresorbable alternative**    |
 
 ### SERIBO Material Advantages
 
-| Property | Titanium (Incumbent) | SERIBO (OsteoForge) |
-|----------|---------------------|---------------------|
-| **Bone Regeneration** | Stress shielding → bone loss | **2-3× faster healing** |
-| **Second Surgery** | Required for removal | **Not required (bioresorbable)** |
-| **MRI Compatibility** | Contraindicated | **Fully compatible** |
-| **Pediatric Use** | Restricts bone growth | **Safe for children** |
-| **Pricing** | ₹10,000-30,000 | ₹30,000-70,000 (premium justified) |
+| Property              | Titanium (Incumbent)         | SERIBO (OsteoForge)                |
+| --------------------- | ---------------------------- | ---------------------------------- |
+| **Bone Regeneration** | Stress shielding → bone loss | **2-3× faster healing**            |
+| **Second Surgery**    | Required for removal         | **Not required (bioresorbable)**   |
+| **MRI Compatibility** | Contraindicated              | **Fully compatible**               |
+| **Pediatric Use**     | Restricts bone growth        | **Safe for children**              |
+| **Pricing**           | ₹10,000-30,000               | ₹30,000-70,000 (premium justified) |
 
 ### Integrated Value Chain (Unique Moat)
 
@@ -90,6 +90,7 @@ This represents a **4× expansion** of our addressable market beyond manufacturi
 ```
 
 **No competitor can replicate this stack:**
+
 - Trinckle has no medical device pathway
 - Traditional implant companies have no design automation
 - 3D printing services have no proprietary material
@@ -97,30 +98,33 @@ This represents a **4× expansion** of our addressable market beyond manufacturi
 
 ### OsteoForge Traction (Current State)
 
-| Milestone | Status |
-|-----------|--------|
-| **Patent Granted (India)** | ✅ IP India 202141055556 (2022) |
-| **ISO 10993 Biocompatibility** | ✅ GLP-certified lab testing complete |
-| **CDSCO Test Batch License** | ✅ Obtained |
-| **GMP Manufacturing Unit** | ✅ Leased |
-| **Clinical Collaborations** | ✅ 50 maxillofacial + 7 orthopedic surgeons |
-| **Clinical Trials** | 🔄 In progress (2025-2026) |
-| **Manufacturing License** | 🔜 Expected 2026 |
+| Milestone                      | Status                                      |
+| ------------------------------ | ------------------------------------------- |
+| **Patent Granted (India)**     | ✅ IP India 202141055556 (2022)             |
+| **ISO 10993 Biocompatibility** | ✅ GLP-certified lab testing complete       |
+| **CDSCO Test Batch License**   | ✅ Obtained                                 |
+| **GMP Manufacturing Unit**     | ✅ Leased                                   |
+| **Clinical Collaborations**    | ✅ 50 maxillofacial + 7 orthopedic surgeons |
+| **Clinical Trials**            | 🔄 In progress (2025-2026)                  |
+| **Manufacturing License**      | 🔜 Expected 2026                            |
 
 ### Market Opportunity: Orthopedic & Craniomaxillofacial
 
 **India Trauma Care Procedures (2022):**
+
 - **56.7 lakh** orthopedic fractures (14.2% annual increase)
 - **4.3 lakh** craniomaxillofacial fractures (7% annual increase)
 - **19.3 lakh** pediatric orthopedic fractures (11% annual increase)
 - **5.2 lakh** bone grafting procedures (12.4% annual increase)
 
 **India Implant Market:**
+
 - **Orthopedic:** $2.35B (2025) → $5.08B (2034), 8% CAGR [[21]](#ref-21)
 - **Craniomaxillofacial:** $150M (2025) → $300M+ (2032), 8% CAGR [[22]](#ref-22)
 - **Bone Graft:** $150M (2025) → $390M (2032), 15% CAGR [[23]](#ref-23)
 
 **Global 3D Printed Medical Implants:**
+
 - **$2.76B (2025) → $6.19B (2030)**, 17.5% CAGR [[24]](#ref-24)
 - **Bioresorbable implants:** $6.63B (2025) → $11.90B (2032), 8.7% CAGR [[25]](#ref-25)
 
@@ -167,36 +171,36 @@ Each adjacent market has the same fundamental problem—**domain experts who kno
 
 ### Sub-Domain Applications (OsteoForge Priority)
 
-| Sub-Domain                  | Application                                        | Applied Additive + OsteoForge Fit                                                                                                |
-| --------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **🎯 Craniomaxillofacial**  | Patient-specific plates, meshes, scaffolds         | **PRIORITY:** AI processes CT data → generates SERIBO-optimized implant geometry → 3D printed in CDSCO-compliant facility        |
-| **🎯 Orthopedic Trauma**    | Bone plates, screws, scaffolds for fractures       | **PRIORITY:** CT scan → automated implant design → bioresorbable SERIBO material → faster bone healing                           |
-| **🎯 Bone Grafts**          | Custom scaffolds replacing autografts/allografts   | **PRIORITY:** SERIBO's bioactive properties eliminate need for bone harvesting surgery                                           |
-| **Prosthetics & Orthotics** | Custom sockets, fracture braces, shoe insoles      | Body scans → topology-optimized, lightweight lattice geometries for comfort, strength, airflow                                   |
-| **Surgical Planning**       | AI-segmented anatomical models                     | Automatically generates printable 3D anatomy models for surgical planning, medical education                                     |
-| **Surgical Guides**         | Patient-specific cutting/drilling guides           | AI generates procedure-specific guides optimized for accuracy and sterile 3D printing                                            |
+| Sub-Domain                  | Application                                      | Applied Additive + OsteoForge Fit                                                                                         |
+| --------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **🎯 Craniomaxillofacial**  | Patient-specific plates, meshes, scaffolds       | **PRIORITY:** AI processes CT data → generates SERIBO-optimized implant geometry → 3D printed in CDSCO-compliant facility |
+| **🎯 Orthopedic Trauma**    | Bone plates, screws, scaffolds for fractures     | **PRIORITY:** CT scan → automated implant design → bioresorbable SERIBO material → faster bone healing                    |
+| **🎯 Bone Grafts**          | Custom scaffolds replacing autografts/allografts | **PRIORITY:** SERIBO's bioactive properties eliminate need for bone harvesting surgery                                    |
+| **Prosthetics & Orthotics** | Custom sockets, fracture braces, shoe insoles    | Body scans → topology-optimized, lightweight lattice geometries for comfort, strength, airflow                            |
+| **Surgical Planning**       | AI-segmented anatomical models                   | Automatically generates printable 3D anatomy models for surgical planning, medical education                              |
+| **Surgical Guides**         | Patient-specific cutting/drilling guides         | AI generates procedure-specific guides optimized for accuracy and sterile 3D printing                                     |
 
 ### Why OsteoForge Partnership Accelerates Phase 2
 
 **Traditional Medical Device Entry (Without Partnership):**
 
-| Requirement | Typical Timeline | Applied Additive Status |
-|-------------|------------------|------------------------|
-| Biocompatible material development | 3-5 years | **OsteoForge: DONE (SERIBO patented)** |
-| ISO 10993 biocompatibility testing | 12-18 months | **OsteoForge: DONE (GLP-certified)** |
-| CDSCO/FDA regulatory pathway | 2-4 years | **OsteoForge: Test batch license obtained** |
-| GMP manufacturing facility | 18-24 months | **OsteoForge: Building facility with Fracktal's certified printers** |
-| Clinical collaborations | 1-2 years | **OsteoForge: 57 surgeons already partnered** |
-| Clinical trials | 2-3 years | **OsteoForge: In progress (2025-2026)** |
+| Requirement                        | Typical Timeline | Applied Additive Status                                              |
+| ---------------------------------- | ---------------- | -------------------------------------------------------------------- |
+| Biocompatible material development | 3-5 years        | **OsteoForge: DONE (SERIBO patented)**                               |
+| ISO 10993 biocompatibility testing | 12-18 months     | **OsteoForge: DONE (GLP-certified)**                                 |
+| CDSCO/FDA regulatory pathway       | 2-4 years        | **OsteoForge: Test batch license obtained**                          |
+| GMP manufacturing facility         | 18-24 months     | **OsteoForge: Building facility with Fracktal's certified printers** |
+| Clinical collaborations            | 1-2 years        | **OsteoForge: 57 surgeons already partnered**                        |
+| Clinical trials                    | 2-3 years        | **OsteoForge: In progress (2025-2026)**                              |
 
 **With OsteoForge Partnership — Accelerated Timeline:**
 
-| Milestone | Without Partner | With OsteoForge |
-|-----------|-----------------|------------------|
-| First implant design tool | Y6 | **Y3** |
-| CDSCO manufacturing license | Y7 | **Y4 (OsteoForge obtains 2026)** |
-| First revenue | Y7 | **Y4** |
-| Scale production | Y8 | **Y5** |
+| Milestone                   | Without Partner | With OsteoForge                  |
+| --------------------------- | --------------- | -------------------------------- |
+| First implant design tool   | Y6              | **Y3**                           |
+| CDSCO manufacturing license | Y7              | **Y4 (OsteoForge obtains 2026)** |
+| First revenue               | Y7              | **Y4**                           |
+| Scale production            | Y8              | **Y5**                           |
 
 ### The Medical Problem is Identical to Manufacturing
 
@@ -219,21 +223,21 @@ Each adjacent market has the same fundamental problem—**domain experts who kno
 
 **Why No One Else Can Replicate This:**
 
-| Competitor Type | Missing Pieces |
-|-----------------|----------------|
-| **Trinckle** | No medical pathway, no material, no regulatory |
-| **Stratasys/3D Systems** | No proprietary bioactive material, no design automation |
-| **Traditional implant companies** | No design automation, stuck with titanium |
-| **Hospital 3D printing labs** | No automated design, no bioactive material |
-| **AI design tools (general)** | No regulatory compliance, no manufacturing |
+| Competitor Type                   | Missing Pieces                                          |
+| --------------------------------- | ------------------------------------------------------- |
+| **Trinckle**                      | No medical pathway, no material, no regulatory          |
+| **Stratasys/3D Systems**          | No proprietary bioactive material, no design automation |
+| **Traditional implant companies** | No design automation, stuck with titanium               |
+| **Hospital 3D printing labs**     | No automated design, no bioactive material              |
+| **AI design tools (general)**     | No regulatory compliance, no manufacturing              |
 
 **Applied Additive + OsteoForge + Fracktal = Full Stack:**
 
-| Partner | Role | What They Bring |
-|---------|------|-----------------|
-| **Applied Additive** | Design Automation | AI software that enables **any surgeon** to design patient-specific implants from CT scans—no CAD expertise required |
-| **OsteoForge** | Material + Regulatory + Clinical | SERIBO bioactive material, CDSCO/FDA pathway, 57 surgeon relationships |
-| **Fracktal Works** | Certified Manufacturing | CDSCO/FDA-certified 3D printers installed at OsteoForge's facility |
+| Partner              | Role                             | What They Bring                                                                                                      |
+| -------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Applied Additive** | Design Automation                | AI software that enables **any surgeon** to design patient-specific implants from CT scans—no CAD expertise required |
+| **OsteoForge**       | Material + Regulatory + Clinical | SERIBO bioactive material, CDSCO/FDA pathway, 57 surgeon relationships                                               |
+| **Fracktal Works**   | Certified Manufacturing          | CDSCO/FDA-certified 3D printers installed at OsteoForge's facility                                                   |
 
 **The Value Proposition:** Today, patient-specific implants require expensive specialists at elite hospitals with in-house design capabilities. This three-way partnership democratizes access—**any surgeon at any hospital can design and order a custom bioactive implant** through Applied Additive's software, manufactured by OsteoForge on Fracktal's certified printers.
 
@@ -281,13 +285,13 @@ Each adjacent market has the same fundamental problem—**domain experts who kno
 
 Applied Additive's **Vacuum Casting Mold** automation tool (production-ready) shares 85%+ technology with jewelry design:
 
-| Vacuum Casting Molds (Production)        | Jewelry Design (Phase 2)                |
-| ---------------------------------------- | --------------------------------------- |
-| Parting line algorithms                  | Same algorithms for ring splits         |
-| Runner and vent generation               | Same for wax casting sprues             |
-| Surface continuity (B-spline)            | Required for organic jewelry forms      |
-| Material shrinkage compensation          | Same for jewelry alloy shrinkage        |
-| Undercut detection                       | Critical for castable jewelry           |
+| Vacuum Casting Molds (Production) | Jewelry Design (Phase 2)           |
+| --------------------------------- | ---------------------------------- |
+| Parting line algorithms           | Same algorithms for ring splits    |
+| Runner and vent generation        | Same for wax casting sprues        |
+| Surface continuity (B-spline)     | Required for organic jewelry forms |
+| Material shrinkage compensation   | Same for jewelry alloy shrinkage   |
+| Undercut detection                | Critical for castable jewelry      |
 
 **Jewelry Entry = 6-Month UX Sprint, Not New Platform:**
 
@@ -316,23 +320,23 @@ Applied Additive's **Vacuum Casting Mold** automation tool (production-ready) sh
 
 ### Sub-Domain Applications
 
-| Sub-Domain               | Application                                | Applied Additive Technology Fit                                                              |
-| ------------------------ | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| **Crowns & Bridges**     | Automated restoration design               | Intraoral scan → AI generates restorative geometry → optimized for ceramic/resin printing    |
-| **Aligners**             | Clear aligner design automation            | Scan series → AI generates staged aligner geometry → optimized for thermoforming/printing    |
-| **Surgical Guides**      | Implant placement guides                   | CBCT scan → AI generates drilling guides with planned implant positions                      |
-| **Dentures**             | Full/partial denture design                | Impression scan → AI generates denture base and teeth arrangement                            |
-| **Bone Grafts (Dental)** | Custom scaffolds for ridge augmentation    | **OsteoForge SERIBO expansion** → bioactive scaffolds for dental bone regeneration           |
+| Sub-Domain               | Application                             | Applied Additive Technology Fit                                                           |
+| ------------------------ | --------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **Crowns & Bridges**     | Automated restoration design            | Intraoral scan → AI generates restorative geometry → optimized for ceramic/resin printing |
+| **Aligners**             | Clear aligner design automation         | Scan series → AI generates staged aligner geometry → optimized for thermoforming/printing |
+| **Surgical Guides**      | Implant placement guides                | CBCT scan → AI generates drilling guides with planned implant positions                   |
+| **Dentures**             | Full/partial denture design             | Impression scan → AI generates denture base and teeth arrangement                         |
+| **Bone Grafts (Dental)** | Custom scaffolds for ridge augmentation | **OsteoForge SERIBO expansion** → bioactive scaffolds for dental bone regeneration        |
 
 ### Why Dental is Phase 3 (After Medical Implants)
 
-| Factor | Medical Implants (Phase 2) | Dental (Phase 3) |
-|--------|---------------------------|------------------|
-| **Regulatory Pathway** | OsteoForge has CDSCO license | Different pathway (dental-specific) |
-| **Material** | SERIBO bioactive composite | Dental resins, ceramics (different) |
-| **Clinical Relationships** | 57 surgeons via OsteoForge | Need to build new relationships |
-| **Manufacturing** | OsteoForge facility (Fracktal printers) | Can leverage same facility |
-| **Technology Reuse** | 90% from RapidTools | 85% from Medical + RapidTools |
+| Factor                     | Medical Implants (Phase 2)              | Dental (Phase 3)                    |
+| -------------------------- | --------------------------------------- | ----------------------------------- |
+| **Regulatory Pathway**     | OsteoForge has CDSCO license            | Different pathway (dental-specific) |
+| **Material**               | SERIBO bioactive composite              | Dental resins, ceramics (different) |
+| **Clinical Relationships** | 57 surgeons via OsteoForge              | Need to build new relationships     |
+| **Manufacturing**          | OsteoForge facility (Fracktal printers) | Can leverage same facility          |
+| **Technology Reuse**       | 90% from RapidTools                     | 85% from Medical + RapidTools       |
 
 **Sequencing Logic:** Medical implants establish the regulatory/manufacturing infrastructure that dental can leverage. SERIBO bone graft technology for orthopedic also applies to dental bone regeneration (ridge augmentation), creating natural expansion.
 
@@ -351,15 +355,16 @@ Applied Additive's **Vacuum Casting Mold** automation tool (production-ready) sh
 
 ### Sub-Domain Applications
 
-| Sub-Domain                 | Application                                    | Applied Additive Technology Fit                                                                    |
-| -------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Sub-Domain                 | Application                                    | Applied Additive Technology Fit                                                                      |
+| -------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | **Restoration & Heritage** | Scan-to-print ornament reconstruction          | AI reconstructs missing/damaged sculpture and carving details from scans → generates printable molds |
-| **Architectural Models**   | 2D plans to dollhouse-style models             | Automatically converts 2D architectural drawings into detailed, 3D-printable scale models          |
-| **Modular Fixtures**       | HVAC mounts, conduit supports, custom brackets | AI generates part-specific building fixtures and accessories optimized for on-site 3D printing     |
+| **Architectural Models**   | 2D plans to dollhouse-style models             | Automatically converts 2D architectural drawings into detailed, 3D-printable scale models            |
+| **Modular Fixtures**       | HVAC mounts, conduit supports, custom brackets | AI generates part-specific building fixtures and accessories optimized for on-site 3D printing       |
 
 ### Why Architecture is Phase 4 (Opportunistic)
 
 **Lower Priority Due To:**
+
 - Fragmented market with many small players
 - Lower price points than medical/manufacturing
 - Requires partnerships with architecture software companies
@@ -373,29 +378,29 @@ Applied Additive's **Vacuum Casting Mold** automation tool (production-ready) sh
 
 ### Phased Market Entry Strategy
 
-| Phase       | Timeline | Market                                       | Revenue Target | Investment Required     | Key Enabler                        |
-| ----------- | -------- | -------------------------------------------- | -------------- | ----------------------- | ---------------------------------- |
-| **Phase 1** | Y1-Y3    | Manufacturing Tooling (RapidTools)           | $10M ARR       | Seed ($3M)              | Honda/TVS/Toyota validation        |
-| **Phase 2** | Y3-Y5    | **Medical Implants + Jewelry**               | $35M ARR       | Series A ($10M)         | **OsteoForge partnership**         |
-| **Phase 3** | Y5-Y7    | Dental + Eyewear + Footwear                  | $70M ARR       | Series B ($25M)         | Medical infrastructure leverage    |
-| **Phase 4** | Y7+      | Full Platform (Architecture + more)          | $150M+ ARR     | Series C / Growth       | Multi-vertical platform maturity   |
+| Phase       | Timeline | Market                              | Revenue Target | Investment Required | Key Enabler                      |
+| ----------- | -------- | ----------------------------------- | -------------- | ------------------- | -------------------------------- |
+| **Phase 1** | Y1-Y3    | Manufacturing Tooling (RapidTools)  | $10M ARR       | Seed ($3M)          | Honda/TVS/Toyota validation      |
+| **Phase 2** | Y3-Y5    | **Medical Implants + Jewelry**      | $35M ARR       | Series A ($10M)     | **OsteoForge partnership**       |
+| **Phase 3** | Y5-Y7    | Dental + Eyewear + Footwear         | $70M ARR       | Series B ($25M)     | Medical infrastructure leverage  |
+| **Phase 4** | Y7+      | Full Platform (Architecture + more) | $150M+ ARR     | Series C / Growth   | Multi-vertical platform maturity |
 
 ### Why This Sequencing?
 
 **Phase 2: Medical Implants + Jewelry (Y3-Y5)**
 
-| Vertical | Why Phase 2 | Accelerator |
-|----------|-------------|-------------|
+| Vertical             | Why Phase 2                                                       | Accelerator                                       |
+| -------------------- | ----------------------------------------------------------------- | ------------------------------------------------- |
 | **Medical Implants** | OsteoForge provides material, regulatory, clinical infrastructure | **3-year acceleration** vs. building from scratch |
-| **Jewelry** | Vacuum Casting Mold tool already in production (85%+ overlap) | **6-month UX sprint** to production |
+| **Jewelry**          | Vacuum Casting Mold tool already in production (85%+ overlap)     | **6-month UX sprint** to production               |
 
 **Phase 3: Dental + Lifestyle (Y5-Y7)**
 
-| Vertical | Why Phase 3 | Prerequisite |
-|----------|-------------|---------------|
-| **Dental** | Requires different regulatory pathway than orthopedic | Medical infrastructure from Phase 2 |
-| **Eyewear** | Face scan → frame design; lower technology overlap | Platform maturity from Phase 2 |
-| **Footwear** | Gait → lattice; requires new lattice expertise | Platform maturity from Phase 2 |
+| Vertical     | Why Phase 3                                           | Prerequisite                        |
+| ------------ | ----------------------------------------------------- | ----------------------------------- |
+| **Dental**   | Requires different regulatory pathway than orthopedic | Medical infrastructure from Phase 2 |
+| **Eyewear**  | Face scan → frame design; lower technology overlap    | Platform maturity from Phase 2      |
+| **Footwear** | Gait → lattice; requires new lattice expertise        | Platform maturity from Phase 2      |
 
 ### Technology Reuse Analysis (Updated with OsteoForge)
 
@@ -416,14 +421,14 @@ Applied Additive's **Vacuum Casting Mold** automation tool (production-ready) sh
 
 **Estimated Technology Reuse & Development Time:**
 
-| Vertical | Technology Reuse | Development Cycle | OsteoForge Acceleration |
-|----------|------------------|-------------------|-------------------------|
-| **Medical Implants** | 90% | 9-12 months | **3-year regulatory acceleration** |
-| **Jewelry** | 85% | 6 months | N/A |
-| **Dental** | 85% | 9 months | Leverages medical infrastructure |
-| **Eyewear** | 70% | 9 months | N/A |
-| **Footwear** | 60% | 12 months | N/A |
-| **Architecture** | 50% | 12 months | N/A |
+| Vertical             | Technology Reuse | Development Cycle | OsteoForge Acceleration            |
+| -------------------- | ---------------- | ----------------- | ---------------------------------- |
+| **Medical Implants** | 90%              | 9-12 months       | **3-year regulatory acceleration** |
+| **Jewelry**          | 85%              | 6 months          | N/A                                |
+| **Dental**           | 85%              | 9 months          | Leverages medical infrastructure   |
+| **Eyewear**          | 70%              | 9 months          | N/A                                |
+| **Footwear**         | 60%              | 12 months         | N/A                                |
+| **Architecture**     | 50%              | 12 months         | N/A                                |
 
 ---
 
@@ -431,15 +436,15 @@ Applied Additive's **Vacuum Casting Mold** automation tool (production-ready) sh
 
 ### Combined TAM Across All Verticals
 
-| Market Vertical                    | 2025 TAM   | 2030 TAM  | Applied Additive Addressable % | 2030 Addressable |
-| ---------------------------------- | ---------- | --------- | ------------------------------ | ---------------- |
-| **Manufacturing Tooling**          | $42.0B     | $65B      | 100%                           | $65.0B           |
-| **Medical Implants (OsteoForge)**  | $18.5B     | $50B      | 60% (full stack with partner)  | $30.0B           |
-| **Jewelry**                        | $6.1B      | $13B      | 50% (B2B2C platform)           | $6.5B            |
-| **Dental**                         | $10.8B     | $22B      | 40% (software/services)        | $8.8B            |
-| **Eyewear + Footwear**             | $5.1B      | $14B      | 30% (platform licensing)       | $4.2B            |
-| **Architecture & Construction**    | $2.5B      | $12B      | 20% (modular fixtures)         | $2.4B            |
-| **TOTAL**                          | **$85.0B** | **$176B** | —                              | **$116.9B**      |
+| Market Vertical                   | 2025 TAM   | 2030 TAM  | Applied Additive Addressable % | 2030 Addressable |
+| --------------------------------- | ---------- | --------- | ------------------------------ | ---------------- |
+| **Manufacturing Tooling**         | $42.0B     | $65B      | 100%                           | $65.0B           |
+| **Medical Implants (OsteoForge)** | $18.5B     | $50B      | 60% (full stack with partner)  | $30.0B           |
+| **Jewelry**                       | $6.1B      | $13B      | 50% (B2B2C platform)           | $6.5B            |
+| **Dental**                        | $10.8B     | $22B      | 40% (software/services)        | $8.8B            |
+| **Eyewear + Footwear**            | $5.1B      | $14B      | 30% (platform licensing)       | $4.2B            |
+| **Architecture & Construction**   | $2.5B      | $12B      | 20% (modular fixtures)         | $2.4B            |
+| **TOTAL**                         | **$85.0B** | **$176B** | —                              | **$116.9B**      |
 
 **Key Insight:** The OsteoForge partnership increases Applied Additive's addressable percentage in Medical Implants from 40% (software-only) to **60%** (full stack: design + material + manufacturing). This represents a **$12B increase** in 2030 addressable market vs. the previous estimate.
 

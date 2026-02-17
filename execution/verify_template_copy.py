@@ -2,7 +2,7 @@
 '''
 Template Copy Verifier
 ======================
-Verifies that a copied financial model matches the RapidTools template structure.
+Verifies that a copied financial model matches the expected 14-sheet template structure.
 
 Usage:
     python verify_template_copy.py --sheet-id "1ABC..."
@@ -39,7 +39,7 @@ except ImportError:
     import gspread
 
 
-# RapidTools Template Structure
+# Expected 14-Sheet Template Structure
 EXPECTED_SHEETS = [
     'Sources & References',
     'Assumptions',
@@ -271,7 +271,7 @@ def main():
     print('Template Copy Verifier')
     print('='*60)
     print(f'Sheet ID: {args.sheet_id}')
-    print(f'Expected structure: {len(EXPECTED_SHEETS)} sheets (RapidTools template)\n')
+    print(f'Expected structure: {len(EXPECTED_SHEETS)} sheets (standard template)\n')
     
     # Connect to Google Sheets
     try:

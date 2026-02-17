@@ -190,24 +190,26 @@ python execution/validate_model_snapshot.py --snapshot .tmp/snapshot
 python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --sheet-id "1-Ss62..." --apply
 ```
 
-### Example 3: Add New Revenue Stream
+### Example 3: Structural Change (Route to Config Rebuild)
+
+**Task:** Add a new revenue stream
 
 ```bash
-# 1. Download snapshot
-python execution/download_model_snapshot.py --sheet-id "1-Ss62..." --output .tmp/snapshot
+# Do NOT do this via Local-First CSV editing (row shifts break downstream formulas)
 
-# 2. Edit Assumptions_formulas.csv
-#    Add row: New Stream, =25000*12, USD
+# 1. Update config with new stream definition
+# Edit .tmp/rapidtools_config.json
 
-# 3. Edit Revenue_formulas.csv
-#    Add row: New Stream Revenue, =Assumptions!B45*Volume
+# 2. Rebuild with regenerated sheet structure and formulas
+python execution/create_financial_model.py \
+  --config .tmp/rapidtools_config.json \
+  --output-id "1-Ss62..."
 
-# 4. Validate (checks formula references exist)
-python execution/validate_model_snapshot.py --snapshot .tmp/snapshot
-
-# 5. Apply
-python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --sheet-id "1-Ss62..." --apply
+# 3. Run integrity audit
+python execution/audit_financial_model.py --mode comprehensive --sheet-id "1-Ss62..."
 ```
+
+**Rule:** Local-First is for value/formula updates with stable structure only.
 
 ## Benefits Summary
 

@@ -1,0 +1,27 @@
+{
+  "required_sheets": [
+    "Sources & References",
+    "Assumptions",
+    "Headcount Plan",
+    "Revenue",
+    "Operating Costs",
+    "P&L",
+    "Cash Flow",
+    "Balance Sheet",
+    "Summary",
+    "Sensitivity Analysis",
+    "Valuation",
+    "Break-even Analysis",
+    "Funding Cap Table",
+    "Charts Data"
+  ],
+  "approved_sheets": {
+    "Sources & References": {
+      "approved_at": "2026-02-17T12:19:07.849116"
+    },
+    "Assumptions": {
+      "approved_at": "2026-02-17T12:19:07.849118"
+    }
+  },
+  "last_updated": "2026-02-17T12:19:07.849251"
+}

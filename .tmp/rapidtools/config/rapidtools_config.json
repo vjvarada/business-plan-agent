@@ -1,175 +1,77 @@
 {
-  "company": {
-    "name": "Applied Additive",
-    "product": "RapidTools",
-    "description": "AI-powered manufacturing tooling design automation platform",
-    "founded": 2023,
-    "location": "Bangalore, India",
-    "industry": "Manufacturing Software / SaaS"
+  "company": "RapidTools",
+  "general": {
+    "tax_rate": 0.25,
+    "capex_y0": 150000,
+    "capex_annual": 50000,
+    "depreciation_years": 5,
+    "debtor_days": 45,
+    "creditor_days": 30,
+    "interest_rate": 0.1,
+    "cost_inflation": 0.05
   },
-  "timeline": {
-    "years": 8,
-    "start_year": 2026,
-    "seed_close": "2026-Q1"
-  },
-  "market": {
-    "tam": 42000000000,
-    "sam": 1800000000,
-    "som_y8": 104000000,
-    "adjacent_tam": 140000000000
-  },
-  "revenue": {
-    "projections": {
-      "Y1": 500000,
-      "Y2": 2500000,
-      "Y3": 7000000,
-      "Y4": 15000000,
-      "Y5": 30000000,
-      "Y6": 50000000,
-      "Y7": 77000000,
-      "Y8": 104000000
+  "revenue_streams": [
+    {
+      "name": "Software",
+      "price": 2500,
+      "volume": 25,
+      "growth": 0.5,
+      "cogs_pct": 0.15
     },
-    "streams": {
-      "software": {
-        "Y1": 280000, "Y2": 1400000, "Y3": 3920000, "Y4": 8100000,
-        "Y5": 17100000, "Y6": 30000000, "Y7": 47000000, "Y8": 64000000
-      },
-      "tooling_services": {
-        "Y1": 150000, "Y2": 750000, "Y3": 2030000, "Y4": 4350000,
-        "Y5": 8100000, "Y6": 12500000, "Y7": 18500000, "Y8": 24200000
-      },
-      "ems": {
-        "Y1": 0, "Y2": 50000, "Y3": 350000, "Y4": 1200000,
-        "Y5": 2100000, "Y6": 3500000, "Y7": 5400000, "Y8": 7400000
-      },
-      "hardware": {
-        "Y1": 60000, "Y2": 250000, "Y3": 600000, "Y4": 1200000,
-        "Y5": 2400000, "Y6": 3500000, "Y7": 5400000, "Y8": 7400000
-      },
-      "consumables": {
-        "Y1": 10000, "Y2": 50000, "Y3": 100000, "Y4": 150000,
-        "Y5": 300000, "Y6": 500000, "Y7": 700000, "Y8": 1100000
-      }
+    {
+      "name": "Hardware",
+      "price": 5000,
+      "volume": 15,
+      "growth": 0.35,
+      "cogs_pct": 0.6
     },
-    "mix_y8": {
-      "software": 0.62,
-      "tooling_services": 0.23,
-      "ems": 0.07,
-      "hardware": 0.07,
-      "consumables": 0.01
+    {
+      "name": "Services",
+      "price": 10000,
+      "volume": 5,
+      "growth": 0.4,
+      "cogs_pct": 0.45
     }
-  },
-  "gross_margins": {
-    "software": 0.82,
-    "tooling_services": 0.44,
-    "ems": 0.28,
-    "hardware": 0.26,
-    "consumables": 0.35,
-    "blended_y8": 0.65
-  },
-  "pricing": {
-    "software_per_seat": 2400,
-    "smb_seats": 2.0,
-    "midmarket_seats": 8.0,
-    "enterprise_seats": 25.0,
-    "midmarket_discount": 0.10,
-    "enterprise_discount": 0.20
-  },
-  "customers": {
-    "total_y8": 5500,
-    "segments": {
-      "smb": {"count": 3850, "pct": 0.70, "arpu": 9300, "churn": 0.17},
-      "midmarket": {"count": 1375, "pct": 0.25, "arpu": 37200, "churn": 0.11},
-      "enterprise": {"count": 275, "pct": 0.05, "arpu": 62000, "churn": 0.06}
-    }
-  },
-  "unit_economics": {
-    "blended_arpu": 18909,
-    "blended_cac": 7000,
-    "blended_churn": 0.15,
-    "blended_lifetime": 6.7,
-    "ltv": 82000,
-    "ltv_cac_ratio": 11.7,
-    "payback_months": 6
+  ],
+  "fixed_costs": {
+    "Office & Utilities": 36000,
+    "Marketing": 60000,
+    "R&D": 72000,
+    "Legal & Compliance": 24000,
+    "Insurance": 12000
   },
   "headcount": {
-    "by_year": {
-      "Y1": 16, "Y2": 35, "Y3": 70, "Y4": 120,
-      "Y5": 190, "Y6": 270, "Y7": 340, "Y8": 380
-    },
-    "composition_y8": {
-      "engineering": {"count": 95, "pct": 0.25},
-      "product": {"count": 19, "pct": 0.05},
-      "sales_marketing": {"count": 114, "pct": 0.30},
-      "customer_success": {"count": 76, "pct": 0.20},
-      "operations_services": {"count": 57, "pct": 0.15},
-      "executive_admin": {"count": 19, "pct": 0.05}
-    },
-    "avg_cost_per_fte": {
-      "Y1": 50000, "Y2": 46000, "Y3": 47000, "Y4": 48000,
-      "Y5": 50000, "Y6": 52000, "Y7": 54000, "Y8": 56000
-    }
-  },
-  "costs": {
-    "people_cost": {
-      "Y1": 800000, "Y2": 1610000, "Y3": 3290000, "Y4": 5760000,
-      "Y5": 9500000, "Y6": 14040000, "Y7": 18360000, "Y8": 21280000
-    },
-    "fixed_costs": {
-      "Y1": 200000, "Y2": 420000, "Y3": 780000, "Y4": 1750000,
-      "Y5": 2800000, "Y6": 4200000, "Y7": 5500000, "Y8": 7100000
-    },
-    "fixed_cost_breakdown_y4": {
-      "facilities": 264000,
-      "technology": 378000,
-      "rd_infra": 168000,
-      "professional_services": 216000,
-      "rd_partnerships": 114000,
-      "other": 610000
-    }
+    "engineering_salary": 80000,
+    "engineering_y0": 5,
+    "sales_salary": 60000,
+    "sales_y0": 3,
+    "ops_salary": 50000,
+    "ops_y0": 2,
+    "ga_salary": 70000,
+    "ga_y0": 2
   },
   "funding": {
-    "total": 38000000,
-    "rounds": {
-      "seed": {
-        "amount": 3000000,
-        "timing": "Y1-Q1",
-        "pre_money": 10000000,
-        "dilution": 0.23,
-        "use_of_funds": {
-          "engineering": 1200000,
-          "sales_marketing": 600000,
-          "operations": 450000,
-          "working_capital": 450000,
-          "contingency": 300000
-        }
-      },
-      "series_a": {
-        "amount": 10000000,
-        "timing": "Y3-Q2",
-        "pre_money": 30000000,
-        "dilution": 0.25,
-        "arr_at_raise": 5000000
-      },
-      "series_b": {
-        "amount": 25000000,
-        "timing": "Y5-Q2",
-        "pre_money": 75000000,
-        "dilution": 0.25,
-        "arr_at_raise": 15000000
-      }
-    },
-    "founder_ownership_at_exit": 0.48
+    "seed": 3000000,
+    "seed_year": 0,
+    "seed_pre": 10000000,
+    "series_a": 10000000,
+    "series_a_year": 2,
+    "series_a_pre": 30000000,
+    "series_b": 25000000,
+    "series_b_year": 4,
+    "series_b_pre": 75000000
   },
-  "efficiency_metrics": {
-    "revenue_per_employee_y8": 274000,
-    "burn_multiple_y1_y4": 0.8,
-    "arr_per_dollar_raised": 2.74,
-    "time_to_profitability": "Y4"
+  "tam": {
+    "software": 10000,
+    "hardware": 4000,
+    "consumables": 8000,
+    "services": 20000
   },
-  "geographic": {
-    "phase1": {"regions": ["India"], "years": "Y1-Y2"},
-    "phase2": {"regions": ["India", "SE Asia"], "years": "Y3-Y4"},
-    "phase3": {"regions": ["India", "SE Asia", "US/EU via VARs"], "years": "Y5-Y8"}
+  "sam": {
+    "india": 1800,
+    "se_asia": 1080
+  },
+  "som": {
+    "year8_revenue": 104
   }
 }

@@ -1,102 +1,82 @@
 ﻿# .tmp Folder Organization
 
-> Last Cleaned: January 22, 2026
+> Last Cleaned: February 11, 2026
 
 ## Purpose
 
-This folder contains intermediate files generated during business plan creation and financial modeling. It follows the **"intermediates are temporary, deliverables are cloud-based"** principle.
+This folder contains intermediate files generated during business plan creation and financial modeling. Each business plan project gets its own isolated folder to prevent interference.
 
 ## Folder Structure
 
 ```
 .tmp/
- _archive/                    # Old temporary scripts (91 files)
- snapshot_test/              # Latest financial model snapshot
- *.md                        # Important documentation
- *.txt                       # Analysis reports
- *.json                      # Data files and configurations
- README.md                   # This file
+├── rapidtools/              # Applied Additive: RapidTools project (COMPLETE)
+│   ├── business_plan/       # All business plan sections (11 MD files)
+│   ├── config/              # Configuration files
+│   ├── financial_model/     # Financial model markdown sources (14 MD files)
+│   ├── notes/               # Working notes and memos
+│   ├── pitch_deck/          # Pitch deck content
+│   ├── research/            # Project-specific research
+│   │   ├── archive/         # Archived research data
+│   │   └── consolidated/    # Consolidated research by category
+│   ├── scripts/             # One-off scripts used during development
+│   └── snapshots/           # Google Sheets snapshots by date
+│       ├── 2026-01-25/      # Earlier snapshot
+│       ├── 2026-01-28/      # Latest snapshot
+│       ├── template/        # Template snapshot
+│       └── template_backup/ # Template backup
+├── research/                # Market research for FUTURE projects (reusable)
+├── templates/               # Reusable templates for new projects
+├── saas_*.json              # General SaaS benchmarks (reusable)
+└── README.md                # This file
 ```
 
-## What to Keep
+## Project Organization
 
-### Documents (13 files)
-- `funding_recommendation.txt` - Funding strategy analysis
-- `model_update_summary.txt` - Financial model changes
-- `local_first_*.txt` - Local-first workflow documentation
-- `RapidTools_Business_Plan.md` - Business plan source
-- `market_analysis.md` - Market research compilation
-- `*.docx` - Word document exports
+### Completed Projects
+- **rapidtools/** - Applied Additive: RapidTools business plan and financial model
+  - Google Sheet: `1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY`
+  - Status: COMPLETE
 
-### Data Files (32 files)
-- `pitch_content.json` - Pitch deck data
-- `financial_model_data.json` - Model snapshots
-- `market_research_*.json` - SerpAPI research results
-- `*_config.json` - Configuration files
+### Reusable Resources (Root Level)
+- `research/` - Market research for adjacent markets (dental, eyewear, footwear, etc.)
+- `templates/` - Starter templates for new projects
+- `saas_*.json` - General SaaS industry benchmarks
 
-### Snapshots
-- `snapshot_test/` - Financial model snapshot (29 files)
-  - 14 value CSVs
-  - 14 formula CSVs
-  - 1 metadata JSON
+## Creating a New Business Plan
 
-## What's Archived
+```bash
+# 1. Copy the project template
+cp -r .tmp/templates/project_template .tmp/new_project_name
 
-### Old Scripts (91 files in _archive/)
-- `fix_*.py` - One-time fix scripts
-- `update_*.py` - One-time update scripts
-- `check_*.py` - Verification scripts
-- `format_*.py` - Formatting utilities
-- `sync_*.py` - One-time sync scripts
+# 2. Or start fresh
+mkdir -p .tmp/new_project_name/{business_plan/sections,config,financial_model,research,snapshots}
 
-**These are kept for reference but not actively used.**
+# 3. Use market research from shared research/ folder
+# 4. Create new config: .tmp/new_project_name/config/project_config.json
+```
+
+## Cloud Deliverables
+
+All final deliverables are in Google Drive/Sheets (not local):
+- **Financial Model**: Google Sheets with 14 interconnected sheets
+- **Business Plan**: Google Docs formatted document
+- **Pitch Deck**: Google Slides presentation
 
 ## Cleanup Policy
 
-### Automatic (Run as Needed)
+### Per-Project
+Each project folder is self-contained. Archive old projects by:
 ```bash
-# Archive old scripts, keep important files
-python -c "
-import shutil
-from pathlib import Path
-tmp = Path('.tmp')
-archive = tmp / '_archive'
-archive.mkdir(exist_ok=True)
-for f in tmp.glob('*.py'):
-    if f.stem.startswith(('fix_', 'update_', 'check_', 'format_', 'sync_')):
-        shutil.move(str(f), str(archive / f.name))
-"
+zip -r .tmp/archives/rapidtools_$(date +%Y%m%d).zip .tmp/rapidtools/
 ```
 
-### Manual Review (Monthly)
-1. Delete old market research JSON files (>30 days)
-2. Keep only latest business plan .md/.docx
-3. Archive old snapshot folders
-
-## Important Files Summary
-
-| Category | Count | Keep/Archive |
-|----------|-------|--------------|
-| Documents (.md, .txt, .docx) | 13 | KEEP - Source of truth |
-| Data Files (.json) | 32 | KEEP - Research data |
-| Snapshots (snapshot_test/) | 29 | KEEP - Latest model state |
-| Old Scripts (_archive/) | 91 | ARCHIVE - Reference only |
-
-## Usage
-
-### Before Major Work
-```bash
-# Clean up old files
-python -c "..." # Run cleanup script
-
-# Download fresh snapshot
-python execution/download_model_snapshot.py --sheet-id "1-Ss62..." --output .tmp/snapshot
-```
-
-### After Major Work
-```bash
-# Archive completed work
-mv .tmp/snapshot .tmp/snapshot_$(date +%Y%m%d)
+### Root Level
+Keep only:
+- Active project folders
+- `research/` - Reusable market research
+- `templates/` - Project templates
+- `saas_*.json` - General benchmarks
 
 # Clean up temporary files
 # (Documents and data files remain)

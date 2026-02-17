@@ -12,8 +12,14 @@ Workflow:
     2. VALIDATE: Compute all formulas with 'formulas' library (detect #REF!, #DIV/0!, etc.)
     3. UPLOAD: Push to Google Sheets via sync_to_cloud.py
 
+IMPORTANT:
+    This script is for draft/prototype local modeling and formula experiments.
+    It does NOT generate the full production 14-sheet template structure.
+    For production model creation, use:
+        create_financial_model.py --from-template
+
 Usage:
-    python create_financial_model_local.py --company "RapidTools" --rapidtools
+    python create_financial_model_local.py --company "MyCompany" --sample
     python create_financial_model_local.py --company "MyCompany" --config config.json
     python create_financial_model_local.py --company "Test" --validate-only .tmp/test.xlsx
 
@@ -59,10 +65,10 @@ class Colors:
 YEAR_HEADERS = ['Year 0', 'Year 1', 'Year 2', 'Year 3', 'Year 4', 
                 'Year 5', 'Year 6', 'Year 7', 'Year 8', 'Year 9', 'Year 10']
 
-# Default RapidTools configuration (can be overridden via --config)
-RAPIDTOOLS_CONFIG = {
+# Sample configuration (can be overridden via --config)
+SAMPLE_CONFIG = {
     'general': {
-        'tax_rate': 0.30,
+        'tax_rate': 0.25,
         'capex_y0': 150000,
         'capex_annual': 50000,
         'depreciation_years': 5,
@@ -74,10 +80,8 @@ RAPIDTOOLS_CONFIG = {
         'cost_inflation': 0.05
     },
     'revenue_streams': [
-        {'name': 'Software Licenses', 'price': 12000, 'volume': 10, 'growth': 0.40, 'cogs_pct': 0.10},
-        {'name': 'Hardware Sales', 'price': 180000, 'volume': 4, 'growth': 0.35, 'cogs_pct': 0.60},
-        {'name': 'Consumables', 'price': 8000, 'volume': 6, 'growth': 0.30, 'cogs_pct': 0.50},
-        {'name': 'Managed Services', 'price': 24000, 'volume': 3, 'growth': 0.45, 'cogs_pct': 0.20},
+        {'name': 'Product A', 'price': 10000, 'volume': 10, 'growth': 0.30, 'cogs_pct': 0.25},
+        {'name': 'Product B', 'price': 5000, 'volume': 20, 'growth': 0.25, 'cogs_pct': 0.40},
     ],
     'fixed_costs': {
         'Salaries': 360000,
@@ -176,20 +180,20 @@ def validate_model(filepath: str) -> bool:
             return True  # Don't block on missing validation
 
 
-def create_financial_model_local(company_name: str, config: dict = None, use_rapidtools: bool = False) -> str:
+def create_financial_model_local(company_name: str, config: dict = None, use_sample: bool = False) -> str:
     """
     Create a financial model Excel file locally using openpyxl.
     
     Args:
         company_name: Name of the company (used for filename)
         config: Configuration dict with revenue_streams, fixed_costs, general params
-        use_rapidtools: If True, use the RapidTools preset configuration
+        use_sample: If True, use the built-in sample configuration
     
     Returns:
         Path to the created Excel file
     """
-    if use_rapidtools:
-        config = RAPIDTOOLS_CONFIG
+    if use_sample:
+        config = SAMPLE_CONFIG
     
     if config is None:
         config = {
@@ -223,6 +227,9 @@ def create_financial_model_local(company_name: str, config: dict = None, use_rap
     
     print(f"Creating financial model for {company_name}...")
     print("=" * 60)
+    print("⚠️  Draft mode: reduced local model (non-production baseline)")
+    print("   For full 14-sheet production models,")
+    print("   use create_financial_model.py --from-template")
     
     # =========================================================================
     # SHEET 1: ASSUMPTIONS
@@ -510,7 +517,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 Examples:
-  python create_financial_model_local.py --company "RapidTools" --rapidtools
+python create_financial_model_local.py --company "MyCompany" --sample
   python create_financial_model_local.py --company "MyCompany" --config config.json
   python create_financial_model_local.py --validate-only .tmp/existing_model.xlsx
 
@@ -522,7 +529,7 @@ Workflow:
     )
     parser.add_argument('--company', help='Company name (for filename)')
     parser.add_argument('--config', help='Path to JSON config file')
-    parser.add_argument('--rapidtools', action='store_true', help='Use RapidTools preset')
+    parser.add_argument('--sample', action='store_true', help='Use built-in sample config')
     parser.add_argument('--validate-only', metavar='FILE', help='Only validate existing Excel file')
     parser.add_argument('--skip-validation', action='store_true', help='Skip formula validation')
     
@@ -548,7 +555,7 @@ Workflow:
         filepath = create_financial_model_local(
             company_name=args.company,
             config=config,
-            use_rapidtools=args.rapidtools
+            use_sample=args.sample
         )
         
         # Step 2: Validate formulas (unless skipped)

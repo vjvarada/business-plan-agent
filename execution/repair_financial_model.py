@@ -340,12 +340,20 @@ def fix_cash_flow(spreadsheet) -> bool:
                 rate_limit(0.5)
                 fc_data = fc.get_all_values()
                 
-                # Find funding rows (Seed, Series A, Series B)
+                # Find funding rows (supports both detailed rounds and template summary rows)
+                equity_raised_row = find_row_by_label(fc_data, 'equity raised')
                 seed_row = find_row_by_label(fc_data, 'seed')
                 series_a_row = find_row_by_label(fc_data, 'series a')
                 series_b_row = find_row_by_label(fc_data, 'series b')
                 
-                if seed_row >= 0:
+                if equity_raised_row >= 0:
+                    cells = []
+                    for col in range(3, 14):
+                        col_l = col_letter(col)
+                        cells.append(gspread.Cell(equity_row + 1, col, f"='Funding Cap Table'!{col_l}{equity_raised_row + 1}"))
+                    cf.update_cells(cells, value_input_option='USER_ENTERED')
+                    print(f"  Linked Equity row {equity_row+1} to Funding Cap Table Equity Raised row {equity_raised_row+1}")
+                elif seed_row >= 0:
                     cells = []
                     for col in range(3, 14):
                         col_l = col_letter(col)
@@ -357,6 +365,8 @@ def fix_cash_flow(spreadsheet) -> bool:
                         cells.append(gspread.Cell(equity_row + 1, col, "+".join(formula_parts)))
                     cf.update_cells(cells, value_input_option='USER_ENTERED')
                     print(f"  Linked Equity row {equity_row+1} to Funding Cap Table")
+                else:
+                    print("  Could not find funding source rows (Equity Raised / Seed / Series), skipping equity link")
             except gspread.WorksheetNotFound:
                 print("  Funding Cap Table not found, skipping equity link")
         

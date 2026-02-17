@@ -388,102 +388,198 @@ The Market Drivers document (`01_Market_Drivers.md`) serves as the reference sta
 
 **⚠️ BEFORE ANY WORK: Determine if you're CREATING or EDITING**
 
+## Local-First Sheet-Gated Build (MANDATORY DEFAULT)
+
+For new financial models in this workspace, default to **local-first creation** and **sheet-by-sheet approval gates** before any cloud sync.
+
+### Required behavior
+
+1. Build model locally first (`.xlsx`) using deterministic scripts
+2. Validate formulas and balance checks locally
+3. Approve sheets one-by-one in this order before final sign-off:
+   - Sources & References → Assumptions → Headcount Plan → Revenue → Operating Costs → P&L → Cash Flow → Balance Sheet → Summary → Sensitivity Analysis → Valuation → Break-even Analysis → Funding Cap Table → Charts Data
+4. Only after all sheets are approved, optionally sync to Google Drive/Sheets
+
+### Orchestrator commands
+
+```bash
+# Stage 4: Build local model (no Google API writes)
+python execution/run_stepwise_workflow.py \
+  --project <project> --stage 4 --execute \
+  --company "<Company>" --config .tmp/<project>/config/<project>_config.json \
+  --local-first
+
+# Stage 5: Approve sheet gates progressively (repeat per sheet)
+python execution/run_stepwise_workflow.py \
+  --project <project> --stage 5 --execute --local-first \
+  --approve-sheet "Sources & References"
+
+# Final Stage 5 after all sheets approved (optional cloud sync)
+python execution/run_stepwise_workflow.py \
+  --project <project> --stage 5 --execute --local-first --sync-to-cloud
+```
+
+Gate approvals persist in:
+
+- `.tmp/<project>/notes/local_sheet_gates.json`
+
 ### Three Workflows:
 
 | Workflow | When to Use | Tools |
 |----------|-------------|-------|
-| **1. Local-First Creation** | Building a NEW financial model from scratch | `openpyxl` + `formulas` + `sync_to_cloud.py` |
+| **1. Template-First Creation** | Building a NEW production financial model from scratch | `create_financial_model.py --from-template` + verification/audit scripts |
 | **2. Local-First Editing** | Value updates, formula fixes (NO structure changes) | `download_model_snapshot.py` + CSV edits + `sync_snapshot_to_sheets.py` |
 | **3. Config-Based Rebuild** | Adding/removing revenue streams, restructuring | `create_financial_model.py` with updated config |
 
 **Quick Rules:**
-- **Creating from scratch?** → Local-First Creation (openpyxl)
+- **Creating from scratch?** → Template-First Creation (`create_financial_model.py --from-template`)
 - **Updating values?** → Local-First Editing (CSV snapshots)
 - **Changing structure?** → Config-Based Rebuild
 
+**Mandatory Gates for New Models:**
+1. Create model from template (`create_financial_model.py --from-template`)
+2. Verify template fidelity (`verify_template_copy.py`) — 14-sheet structure must match
+3. Audit model integrity (`audit_financial_model.py --mode comprehensive`)
+4. Verify sheet integrity (`verify_sheet_integrity.py`)
+
+### Dependency-Gated Interaction Protocol (MANDATORY)
+
+When building a financial model, move through dependencies in order and do not skip gates:
+
+1. **Scope Lock** → business model, geographies, timeline, streams
+2. **TAM/SAM/SOM** → source-backed market sizing with confidence labels
+3. **Revenue Drivers** → price/volume/growth/churn tied to SOM
+4. **Cost Drivers** → COGS, headcount, fixed costs, CAC/S&M
+5. **Statements Build** → P&L → Cash Flow → Balance Sheet → dashboards/valuation
+
+For each stage, the agent must:
+- Summarize what was collected
+- Show what was derived
+- Flag missing/conflicting dependencies
+- Ask targeted follow-up questions
+- Obtain user confirmation before moving downstream
+
+### Stage-by-Stage Questioning Requirement (MANDATORY FOR NEW PLANS)
+
+When creating a **new** business plan and financial model, the agent must ask
+the user questions at **every stage gate** before proceeding. Do not auto-fill
+or silently assume missing values.
+
+Required questioning behavior per stage:
+
+1. Ask stage-specific questions to collect missing inputs
+2. Ask at least one confirmation question for derived assumptions
+3. Ask at least one prioritization/trade-off question when multiple valid
+   paths exist (e.g., conservative vs aggressive)
+4. Pause for explicit user response before moving to the next stage
+
+Minimum stage prompts (0-5):
+- **Stage 0 (Scope Lock):** business model, geographies, timeline, currency
+- **Stage 1 (TAM/SAM/SOM):** source preference, confidence thresholds,
+  estimate tolerance
+- **Stage 2 (Revenue Drivers):** pricing, growth, churn, attachment logic
+- **Stage 3 (Cost Drivers):** COGS, hiring plan, fixed costs, CAC efficiency
+- **Stage 4 (Statements Build):** reporting format, scenario set, validation
+  strictness
+- **Stage 5 (Sign-Off):** revision priorities, risk posture, go/no-go decision
+
+All stage answers must be captured in the assumption register and reflected in
+stage artifacts before downstream execution.
+
+If dependencies are incomplete or conflicting, stop and resolve before progressing.
+
+### Incremental Artifact Update Rule (MANDATORY)
+
+After each stage, the agent must update artifacts immediately (no end-of-process batching):
+
+1. Update the relevant business plan section for the stage
+2. Update the corresponding financial model component for the stage
+3. Run stage validation checks
+4. Ensure downstream elements pull from updated upstream cells/content
+5. Obtain user sign-off before advancing
+
+This is required to ensure each downstream step uses validated, already-persisted data.
+
+### Consulting-Grade Controls (MANDATORY)
+
+The agent must apply these controls throughout the dependency pipeline:
+
+1. **Source quality tiering** for all external inputs (Tier 1/2/3)
+2. **Assumption register discipline** (source, confidence, owner decision, timestamp)
+3. **Stage exit tests** before each downstream transition
+4. **Reasonability checks** (growth, margins, WC logic, runway, efficiency)
+5. **Stage Sign-Off Card** with proceed/revise recommendation
+
+If any control fails, the agent must pause and resolve with the user before proceeding.
+
 ---
 
-## Local-First Creation Workflow (NEW MODELS)
+## Template-First Creation Workflow (NEW MODELS)
 
-**Use this for:** Creating new financial models from scratch
+**Use this for:** Creating new production financial models from scratch
 
-**Why Local-First Creation?**
+**Why Template-First Creation?**
 
-| Google Sheets API (Old Way) | Local-First (New Way) |
-| --------------------------- | --------------------- |
-| 100+ API calls, rate limits | Single file write |
-| Hard to debug (need API to inspect) | Open in Excel to verify |
-| Can't see computed values | `formulas` library computes all formulas |
-| Slow (429 errors) | Fast (no network) |
-| Formula errors discovered late | Errors caught before upload |
+| Programmatic Build From Scratch | Template-First Creation |
+| ------------------------------ | ----------------------- |
+| Higher risk of formula drift | Preserves proven 14-sheet template formulas |
+| More setup complexity | Fast copy with deterministic structure |
+| Easier to miss formatting parity | Guaranteed template formatting fidelity |
+| Requires rebuilding references | Existing cross-sheet linkages already embedded |
 
-### The 3-Step Creation Workflow
+### The 4-Step Creation Workflow
 
-**Reference:** `execution/create_financial_model_local.py`, `execution/validate_excel_model.py`
+**Reference:** `execution/create_financial_model.py`, `execution/verify_template_copy.py`
 
-#### 1. Create Excel File (openpyxl)
+#### 1. Create Google Sheet from Template
 
 ```bash
-python execution/create_financial_model_local.py \
-  --company "RapidTools" \
-  --rapidtools
+python execution/create_financial_model.py \
+  --company "<CompanyName>" \
+  --config .tmp/<project>/config/<project>_config.json \
+  --from-template
 ```
 
 **What it does:**
-- Creates `.xlsx` file with all formulas, formatting, cross-sheet references
-- Uses `openpyxl` library (no Excel or Google Sheets needed)
-- Applies standard color palette and number formats
-- Saves to `.tmp/<company>_financial_model.xlsx`
+- Copies the approved RapidTools template structure
+- Preserves all formulas, formatting, and sheet ordering
+- Applies configuration updates to template-driven assumptions
+- Returns a production Google Sheets URL
 
-#### 2. Validate Formulas (formulas library)
+#### 2. Verify Template Fidelity
 
 ```bash
-python execution/validate_excel_model.py \
-  --file .tmp/RapidTools_financial_model.xlsx \
-  --verbose
+python execution/verify_template_copy.py --sheet-id "<SHEET_ID>"
 ```
 
 **What it does:**
-- Computes ALL formulas without opening Excel
-- Detects errors: `#REF!`, `#VALUE!`, `#DIV/0!`, `#NAME?`, `#N/A`
-- Detects numeric errors: `NaN`, `Infinity`
-- Reports computed values for verification
+- Confirms all 14 required sheets exist
+- Verifies sheet order and structure against template
+- Flags missing/extra/misaligned template components
 
-**Example output:**
-```
-======================================================================
-EXCEL MODEL VALIDATION: RapidTools_financial_model.xlsx
-======================================================================
-
-✓ Loaded successfully
-  Total computed cells: 245
-
-Sheets found:
-  • ASSUMPTIONS: 89 cells
-  • REVENUE: 56 cells
-  • P&L: 78 cells
-  • SOURCES & REFERENCES: 22 cells
-
-Checking formulas...
-✓ No formula errors detected
-
-======================================================================
-✅ VALIDATION PASSED
-   Model is ready for upload to Google Sheets
-======================================================================
-```
-
-#### 3. Upload to Google Sheets
+#### 3. Run Comprehensive Model Audit
 
 ```bash
-python execution/sync_to_cloud.py \
-  --file .tmp/RapidTools_financial_model.xlsx
+python execution/audit_financial_model.py --mode comprehensive --sheet-id "<SHEET_ID>"
 ```
 
 **What it does:**
-- Uploads `.xlsx` to Google Drive
-- Converts to Google Sheets format automatically
-- Returns the Google Sheets URL
+- Checks formula health, statement consistency, and model-level quality issues
+
+#### 4. Post-Upload Integrity Audit (Required)
+
+```bash
+python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
+```
+
+**Proceed only if:**
+- Balance sheet checks pass
+- Linkages are intact
+- No formula integrity issues are reported
+
+### Draft-Only Local Build (Non-Canonical)
+
+`create_financial_model_local.py` can still be used for offline prototype drafts and formula experiments, but it is not the production baseline for creating the full template model.
 
 ### Key Libraries
 
@@ -674,21 +770,11 @@ python execution/validate_model_snapshot.py --snapshot .tmp/snapshot
 python execution/sync_snapshot_to_sheets.py --snapshot .tmp/snapshot --sheet-id "1-Ss62..." --apply
 ```
 
-### Adding Rows Without Breaking Formulas
+### Adding Rows (Structural Change)
 
-**Problem:** Inserting rows in Google Sheets breaks formulas that reference cells below the insertion point.
+**Rule:** Do NOT add/remove rows via Local-First editing.
 
-**Solution with Local-First:**
-
-1. Download snapshot
-2. Edit CSV files:
-   - Add new rows at desired position
-   - Update row numbers in formulas CSV
-   - Adjust cross-sheet references (e.g., `='Sheet1'!B10` → `='Sheet1'!B11`)
-3. Validate to catch broken references
-4. Sync to apply changes atomically
-
-**Alternative:** For major restructuring, use the **full rebuild pattern** in `create_financial_model.py` with updated configuration.
+**Required approach:** Use **Config-Based Rebuild** in `create_financial_model.py` so all downstream formulas are regenerated safely.
 
 ### Markdown-as-Intermediate (DEPRECATED for Sheets)
 
@@ -767,13 +853,19 @@ You specialize in comprehensive business planning with full financial modeling. 
 
 **Tools:**
 
-**Local-First Creation (NEW - Recommended for new models):**
-- `create_financial_model_local.py` - **Creates Excel file locally** using openpyxl (no API calls, full formula visibility)
-- `validate_excel_model.py` - **Validates all formulas** using `formulas` library (detects #REF!, #DIV/0!, etc. without opening Excel)
-- `sync_to_cloud.py` - **Uploads Excel to Google Sheets** (converts .xlsx → Google Sheets)
+**Template-First Creation (NEW - Recommended for new production models):**
+- `create_financial_model.py` - **Creates/copies a 14-sheet Google Sheets model** from the approved template with high fidelity
+- `verify_template_copy.py` - **Verifies template fidelity** (sheet count/order/structure checks)
+- `audit_financial_model.py` - **Runs comprehensive post-create audit**
+- `verify_sheet_integrity.py` - **Validates cross-sheet linkage and integrity**
 
-**Google Sheets API (Legacy - for editing existing sheets):**
-- `create_financial_model.py` - Creates 14-sheet Google Sheets financial model with full investor analytics
+**Draft Local Build (Optional, non-canonical):**
+- `create_financial_model_local.py` - Creates simplified local Excel draft for offline prototyping only
+- `validate_excel_model.py` - Validates local draft formulas using `formulas` library
+- `sync_to_cloud.py` - Uploads local draft Excel to Google Sheets when needed
+
+**Google Sheets API (Primary for edits/rebuilds):**
+- `create_financial_model.py` - Creates/rebuilds 14-sheet Google Sheets financial model with full investor analytics
 - `update_financial_model.py` - Updates existing models (add sheets, fix formatting, update growth rates)
 - `download_model_snapshot.py` - Downloads sheet to CSV for local editing
 - `sync_snapshot_to_sheets.py` - Syncs CSV edits back to Google Sheets
@@ -785,6 +877,8 @@ You specialize in comprehensive business planning with full financial modeling. 
 - `repair_financial_model.py` - **Fix common model issues** (modes: fix-formulas, fix-formatting, fix-balance-sheet, fix-cash-flow, fix-funding, trim-years, rebalance-sm, verify-links, all)
 - `export_model_summary.py` - **Quick model overview** (formats: text, json, markdown) - key metrics, funding, balance check
 - `validate_financial_model.py` - Validate financial model integrity
+- `run_stepwise_workflow.py` - **Stage-gated orchestrator** for end-to-end business + financial model flow
+- `validate_script_registry.py` - **Coverage validator** to ensure all `execution/*.py` scripts are mapped to pipeline stages
 
 **Business Planning:**
 - `serp_market_research.py` - Market intelligence (modes: search, competitors, trends, news, sources)
@@ -1129,7 +1223,7 @@ When populating the Sources & References sheet:
 4. **Validate calculations**: TAM segment = Global × Segment%, SAM = Target × Addressable%
 5. **Document industry benchmarks**: Churn rate (3.5-10%), SAM penetration (2-5%), LTV:CAC (>3:1)
 6. **Format consistently**: Headers in blue, zebra striping for data rows, bold for calculated labels
-7. **Edit via markdown**: Always update `.tmp/sources_references.md` first, then sync
+7. **Edit via decision tree**: Use Local-First CSV workflow for non-structural updates, Config-Based Rebuild for structural changes
 
 ### Google Sheets Editing Rules (MANDATORY)
 
@@ -1137,15 +1231,16 @@ When populating the Sources & References sheet:
 
 - Inline Python `-c` commands with multiple cell updates
 - Sequential `worksheet.update()` calls in chat
-- Ad-hoc formatting requests without a sync script
+- Manual row insertions/deletions via Local-First CSV edits
 
-**ALWAYS** use the Markdown-as-Intermediate pattern:
+**ALWAYS** use the decision tree (`directives/DECISION_TREE.md`):
 
-1. Update the markdown file (`.tmp/<sheet>.md`)
-2. Run/create the sync script (`.tmp/sync_<sheet>_to_sheets.py`)
-3. Verify changes in Google Sheets
+1. **Non-structural edits** (values/formulas, no row movement):
+  - `download_model_snapshot.py` → CSV edits → `validate_model_snapshot.py` → `sync_snapshot_to_sheets.py`
+2. **Structural edits** (add/remove rows, revenue streams, TAM/SAM structure):
+  - Update config → `create_financial_model.py --config ... --output-id ...`
 
-**Exception:** Single-cell fixes or formula corrections can be done inline for speed.
+**Exception:** Emergency single-cell fix only.
 
 ---
 

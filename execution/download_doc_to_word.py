@@ -64,8 +64,8 @@ def download_google_doc_to_docx(document_id, output_path):
     return output_path
 
 if __name__ == '__main__':
-    document_id = "1ykrGQp-dnPtlOn9TtaYX8Bur-44s8gnrhSzV_01_lEw"
-    output_path = ".tmp/RapidTools_Business_Plan_from_Cloud.docx"
+    document_id = os.environ.get("DOC_ID", "YOUR_DOC_ID_HERE")
+    output_path = ".tmp/Business_Plan_from_Cloud.docx"
     
     try:
         download_google_doc_to_docx(document_id, output_path)

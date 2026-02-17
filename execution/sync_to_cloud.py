@@ -5,7 +5,7 @@ Sync local files (.xlsx, .docx) to Google Drive.
 Uploads and converts to Google Sheets/Docs format.
 
 Usage:
-    python sync_to_cloud.py --file .tmp/RapidTools_financial_model.xlsx
+    python sync_to_cloud.py --file .tmp/MyCompany_financial_model.xlsx
     python sync_to_cloud.py --file .tmp/business_plan.docx --folder-id FOLDER_ID
 """
 

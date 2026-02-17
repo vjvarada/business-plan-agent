@@ -127,8 +127,8 @@ def download_google_sheets_to_excel(spreadsheet_id, output_path):
     return output_path
 
 if __name__ == '__main__':
-    spreadsheet_id = "1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY"
-    output_path = ".tmp/RapidTools_Financial_Model_from_Cloud.xlsx"
+    spreadsheet_id = os.environ.get("SHEET_ID", "YOUR_SHEET_ID_HERE")
+    output_path = ".tmp/Financial_Model_from_Cloud.xlsx"
     
     try:
         download_google_sheets_to_excel(spreadsheet_id, output_path)

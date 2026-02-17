@@ -1,0 +1,68 @@
+{
+  "query": "onboard satellite edge AI processing market trend downlink cost reduction",
+  "total_results": 38000,
+  "organic_results": [
+    {
+      "title": "CATALYST Optimizes Satellite Performance with in orbit ...",
+      "link": "https://catalyst.earth/catalyst-optimizes-satellite-performance-with-in-orbit-edge-data-processing/",
+      "snippet": "Bandwidth Optimization: By processing and filtering data in orbit, operators can dramatically reduce downlink requirements while increasing ...",
+      "position": 1
+    },
+    {
+      "title": "AI Impact Analysis on the Small Satellite Industry",
+      "link": "https://www.marketsandmarkets.com/ResearchInsight/ai-impact-analysis-small-satellite-industry.asp",
+      "snippet": "These systems can pre-process, filter, and interpret data onboard\u2014enabling satellites to prioritize key observations, reduce downlink congestion ...",
+      "position": 2
+    },
+    {
+      "title": "Opportunities and challenges of on-board AI-based image ...",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0273117724002886",
+      "snippet": "When such AI systems are combined with an efficient deployment on the edge, there is a significant reduction in pre-processing and post- ...",
+      "position": 3
+    },
+    {
+      "title": "Satellite Component Market | Global Market Analysis Report",
+      "link": "https://www.futuremarketinsights.com/reports/satellite-component-market",
+      "snippet": "The satellite component market is projected to grow from USD 3.2 billion in 2025 to USD 6.4 billion by 2035, at a CAGR of 7.1%. Communication ...",
+      "position": 4
+    },
+    {
+      "title": "Edge Computing in Space: Necessity or Luxury?",
+      "link": "https://www.analysysmason.com/research/content/articles/edge-computing-in-space-necessity-or-luxury/",
+      "snippet": "Thus, processing data near to the sensor is seen as a suitable solution for faster delivery and reducing the data volumes to be downlinked, and as a result, ...",
+      "position": 5
+    },
+    {
+      "title": "Satellite Onboard Computing System Market Size and Share",
+      "link": "https://www.mordorintelligence.com/industry-reports/satellite-onboard-computing-system-market",
+      "snippet": "The satellite onboard computing system market size stands at USD 2.15 billion in 2025 and is projected to reach USD 3.50 billion by 2030, ...",
+      "position": 6
+    },
+    {
+      "title": "On-Orbit Data Centers: Enabling Technologies & Emerging ...",
+      "link": "https://www.cutter.com/article/rise-orbit-data-centers-enabling-technologies-emerging-capabilities",
+      "snippet": "Optical downlinks to Earth further enhance performance by alleviating RF congestion and bypassing the limitations of traditional communication ...",
+      "position": 7
+    },
+    {
+      "title": "A guide to advanced data processing and AI for satellite ... - Blog",
+      "link": "https://blog.satsearch.co/2021-11-16-a-guide-to-advanced-data-processing-and-ai-for-satellite-missions",
+      "snippet": "Advanced on-board processing and AI processes enable satellites to extract more value from greater volumes and varieties of data than ever ...",
+      "position": 8
+    },
+    {
+      "title": "Future Benefits and Applications Intelligent On-Board ...",
+      "link": "https://ntrs.nasa.gov/api/citations/19920019188/downloads/19920019188.pdf",
+      "snippet": "... on-board processor for versatility in connecting the up and down links. The satellite architecture, the form of the on-board processing, and the economics.",
+      "position": 9
+    },
+    {
+      "title": "AI/ML for Mission Processing Onboard Satellites",
+      "link": "https://www.lockheedmartin.com/content/dam/lockheed-martin/space/documents/ai-ml/PIRA-aiaa-6.2022-1472-aiml-mission-processing-onboard-satellites-paper.pdf",
+      "snippet": "In this manuscript, we identify the driving requirements for AI/ML processing onboard; detail the similarities and differences between the ground, edge, and ...",
+      "position": 10
+    }
+  ],
+  "related_questions": [],
+  "timestamp": "2026-02-17T10:53:47.619548"
+}

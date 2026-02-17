@@ -139,7 +139,21 @@ _[Continues gathering assumptions...]_
 
 ## Workflows
 
-### **Local-First Workflow** ✨ NEW!
+### **Template-First Production Workflow** ✨ RECOMMENDED
+
+Create production models by copying the approved 14-sheet template, then validating integrity:
+
+```bash
+# 1. Create production model from template
+python execution/create_financial_model.py --company "MyCompany" --config .tmp/<project>/config/<project>_config.json --from-template
+
+# 2. Verify template fidelity + model integrity
+python execution/verify_template_copy.py --sheet-id "<SHEET_ID>"
+python execution/audit_financial_model.py --sheet-id "<SHEET_ID>" --mode comprehensive
+python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
+```
+
+### **Local-First Draft Workflow**
 
 Work locally without API rate limits, then sync when ready:
 
@@ -158,7 +172,7 @@ python execution/sync_to_cloud.py --file .tmp/MyCompany_financial_model.xlsx
 python execution/sync_to_cloud.py --file .tmp/MyCompany_business_plan.docx
 ```
 
-**Benefits:**
+**Benefits (Draft Workflow):**
 
 - ✅ No API rate limits during development
 - ✅ Faster iteration (no network calls)
@@ -188,11 +202,11 @@ python execution/create_google_doc.py --company "MyCompany" --content "..."
 | Script                            | Purpose                                        | Mode        |
 | --------------------------------- | ---------------------------------------------- | ----------- |
 | **Local-First Scripts**           |                                                |             |
-| `create_financial_model_local.py` | Create Excel financial model (.xlsx)           | Local       |
+| `create_financial_model_local.py` | Create reduced Excel financial draft (.xlsx)   | Local draft |
 | `create_business_plan_local.py`   | Create Word business plan (.docx)              | Local       |
 | `sync_to_cloud.py`                | Upload local files to Google Drive and convert | Hybrid      |
 | **Cloud-First Scripts**           |                                                |             |
-| `create_financial_model.py`       | Create 15-sheet Google Sheets financial model  | Cloud       |
+| `create_financial_model.py`       | Create/copy 14-sheet Google Sheets financial model | Cloud   |
 | `update_financial_model.py`       | Update existing Google Sheets models           | Cloud       |
 | `format_sheets.py`                | Standardized formatting for Google Sheets      | Cloud       |
 | `audit_financial_model.py`        | Validate Google Sheets model integrity         | Cloud       |
@@ -205,6 +219,23 @@ python execution/create_google_doc.py --company "MyCompany" --content "..."
 | `generate_business_plan.py`       | Generate SWOT, canvas, financials              | Local/Cloud |
 | `sheets_utils.py`                 | Google Sheets operations (read, write, append) | Cloud       |
 | `analyze_sheet_linkages.py`       | Find formula dependencies between sheets       | Cloud       |
+
+### Stage-Gated Execution (Recommended)
+
+Use the orchestrator to run the process in strict dependency order and persist stage state:
+
+```bash
+python execution/run_stepwise_workflow.py --project <project> --stage status
+python execution/run_stepwise_workflow.py --project <project> --stage 0 --company "<CompanyName>" --config .tmp/<project>/config/<project>_config.json --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 1 --research-dir .tmp/<project>/research --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 2 --sections-dir .tmp/<project>/business_plan/sections --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 3 --config .tmp/<project>/config/<project>_config.json --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 4 --company "<CompanyName>" --config .tmp/<project>/config/<project>_config.json --execute
+python execution/run_stepwise_workflow.py --project <project> --stage 5 --sections-dir .tmp/<project>/business_plan/sections --execute
+
+# Governance check: ensure every execution script is mapped to a stage
+python execution/validate_script_registry.py
+```
 
 ### Reusable Patterns & Documentation
 

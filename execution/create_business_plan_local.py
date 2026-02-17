@@ -5,7 +5,7 @@ Create business plan as LOCAL WORD DOCUMENT (.docx).
 Compatible with Google Docs when uploaded.
 
 Usage:
-    python create_business_plan_local.py --company "RapidTools" --industry "Manufacturing" --description "Design automation for tooling"
+    python create_business_plan_local.py --company "MyCompany" --industry "Manufacturing" --description "Design automation for tooling"
 """
 
 import os

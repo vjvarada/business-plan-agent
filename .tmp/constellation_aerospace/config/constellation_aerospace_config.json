@@ -1,5 +1,9 @@
 {
-  "company": "RapidTools",
+  "company": "Constellation Aerospace",
+  "company_name": "Constellation Aerospace",
+  "starting_year": 2026,
+  "tax_rate": 0.25,
+  "churn_rate": 0.12,
   "general": {
     "tax_rate": 0.25,
     "capex_y0": 150000,
@@ -33,12 +37,33 @@
       "cogs_pct": 0.45
     }
   ],
-  "fixed_costs": {
-    "Office & Utilities": 36000,
-    "Marketing": 60000,
-    "R&D": 72000,
-    "Legal & Compliance": 24000,
-    "Insurance": 12000
+  "fixed_costs": [
+    {
+      "name": "Office & Utilities",
+      "annual_cost": 36000
+    },
+    {
+      "name": "Marketing",
+      "annual_cost": 60000
+    },
+    {
+      "name": "R&D",
+      "annual_cost": 72000
+    },
+    {
+      "name": "Legal & Compliance",
+      "annual_cost": 24000
+    },
+    {
+      "name": "Insurance",
+      "annual_cost": 12000
+    }
+  ],
+  "customer_acquisition": {
+    "cac": 180000,
+    "new_customers_y0": 8,
+    "new_customer_growth": 0.5,
+    "churn_rate": 0.12
   },
   "headcount": {
     "engineering_salary": 80000,
