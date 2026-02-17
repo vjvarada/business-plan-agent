@@ -37,7 +37,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 
-
 STAGES = ["0", "1", "2", "3", "4", "5"]
 
 LOCAL_SHEET_SEQUENCE = [
@@ -236,9 +235,7 @@ def stage_2_revenue_config(
     if not args.sections_dir:
         raise RuntimeError("Stage 2 requires --sections-dir")
 
-    output_config = (
-        args.config or str(paths["config"] / f"{args.project}_config.json")
-    )
+    output_config = args.config or str(paths["config"] / f"{args.project}_config.json")
 
     commands = [
         CommandStep(
@@ -388,9 +385,8 @@ def stage_5_signoff(
     commands: List[CommandStep] = []
 
     if args.local_first:
-        local_model_path = (
-            args.local_model_path
-            or state.get("artifacts", {}).get("local_model_path")
+        local_model_path = args.local_model_path or state.get("artifacts", {}).get(
+            "local_model_path"
         )
         if not local_model_path:
             raise RuntimeError(
@@ -431,13 +427,11 @@ def stage_5_signoff(
             save_gate_state(paths["gate_state"], gate_state)
 
         approved_names = set(gate_state.get("approved_sheets", {}).keys())
-        pending = [
-            name for name in LOCAL_SHEET_SEQUENCE if name not in approved_names
-        ]
+        pending = [name for name in LOCAL_SHEET_SEQUENCE if name not in approved_names]
         if pending:
             raise RuntimeError(
                 "Local sheet gates pending. Approve one or more with "
-                "--approve-sheet \"<Sheet Name>\". Pending: " + ", ".join(pending)
+                '--approve-sheet "<Sheet Name>". Pending: ' + ", ".join(pending)
             )
 
         if args.sync_to_cloud:
@@ -560,9 +554,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Run stage-gated business/financial model workflow"
     )
-    parser.add_argument(
-        "--project", required=True, help="Project name under .tmp/"
-    )
+    parser.add_argument("--project", required=True, help="Project name under .tmp/")
     parser.add_argument("--stage", required=True, help="0|1|2|3|4|5|status")
     parser.add_argument(
         "--execute",
@@ -570,9 +562,7 @@ def main() -> int:
         help="Execute commands (default is dry-run)",
     )
 
-    parser.add_argument(
-        "--company", help="Company name (required for stage 4)"
-    )
+    parser.add_argument("--company", help="Company name (required for stage 4)")
     parser.add_argument("--config", help="Config JSON path")
     parser.add_argument(
         "--research-dir",
@@ -582,12 +572,8 @@ def main() -> int:
         "--output-research-dir",
         help="Consolidated research output directory",
     )
-    parser.add_argument(
-        "--sections-dir", help="Business plan sections directory"
-    )
-    parser.add_argument(
-        "--sheet-id", help="Existing Google Sheet ID (used in stage 5)"
-    )
+    parser.add_argument("--sections-dir", help="Business plan sections directory")
+    parser.add_argument("--sheet-id", help="Existing Google Sheet ID (used in stage 5)")
     parser.add_argument(
         "--local-first",
         action="store_true",

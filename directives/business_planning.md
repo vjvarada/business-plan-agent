@@ -72,29 +72,31 @@ Gate state is persisted in `.tmp/<project>/notes/local_sheet_gates.json`.
 ## Business Plan Document Structure (Section-Based)
 
 **Create business plans as a series of standalone markdown sections.** This approach allows for:
+
 - Independent research and iteration per section
 - Cross-section alignment verification before finalizing
 - Modular compilation into final documents or pitch decks
 
 ### Section Sequence (11 Sections)
 
-| # | Section | Purpose | Key Outputs |
-|---|---------|---------|-------------|
-| 01 | Market Drivers | Why Now? | Government policies, industry shifts, timing justification |
-| 02 | TAM/SAM/SOM | Market Sizing | Bottoms-up market size with research citations |
-| 03 | Technology Architecture | Technical Differentiation | Architecture diagrams, tech moats |
-| 04 | Competitive Analysis | Competitive Landscape | Positioning matrix, 5-7 competitive moats |
-| 05 | Customer Validation | Traction Proof | Pilot logos, testimonials, metrics |
-| 06 | Go-To-Market Strategy | Acquisition Strategy | Dual GTM (Enterprise + PLG), channel mix |
-| 07 | Revenue Model | Unit Economics | 4-5 revenue streams, ARPU, LTV, payback |
-| 08 | Team & Costs | Organization | Headcount plan, fixed costs, efficiency metrics |
-| 09 | Fundraising Strategy | Capital Strategy | Round sizing, cap table, exit scenarios |
-| 10 | Financial Projections | 8-Year Model | P&L, Cash Flow, Balance Sheet, key metrics |
-| 11 | Risk Analysis | Risk Mitigation | Market/execution/competitive risks + responses |
+| #   | Section                 | Purpose                   | Key Outputs                                                |
+| --- | ----------------------- | ------------------------- | ---------------------------------------------------------- |
+| 01  | Market Drivers          | Why Now?                  | Government policies, industry shifts, timing justification |
+| 02  | TAM/SAM/SOM             | Market Sizing             | Bottoms-up market size with research citations             |
+| 03  | Technology Architecture | Technical Differentiation | Architecture diagrams, tech moats                          |
+| 04  | Competitive Analysis    | Competitive Landscape     | Positioning matrix, 5-7 competitive moats                  |
+| 05  | Customer Validation     | Traction Proof            | Pilot logos, testimonials, metrics                         |
+| 06  | Go-To-Market Strategy   | Acquisition Strategy      | Dual GTM (Enterprise + PLG), channel mix                   |
+| 07  | Revenue Model           | Unit Economics            | 4-5 revenue streams, ARPU, LTV, payback                    |
+| 08  | Team & Costs            | Organization              | Headcount plan, fixed costs, efficiency metrics            |
+| 09  | Fundraising Strategy    | Capital Strategy          | Round sizing, cap table, exit scenarios                    |
+| 10  | Financial Projections   | 8-Year Model              | P&L, Cash Flow, Balance Sheet, key metrics                 |
+| 11  | Risk Analysis           | Risk Mitigation           | Market/execution/competitive risks + responses             |
 
 ### Section Standards
 
 **Every section MUST include:**
+
 1. **Header** with Last Updated date and Status (Draft/Review/Final)
 2. **Executive Summary** (2-3 paragraphs)
 3. **Detailed Content** with markdown tables
@@ -103,6 +105,7 @@ Gate state is persisted in `.tmp/<project>/notes/local_sheet_gates.json`.
 6. **References & Sources** with anchor links: `<a name="ref-X"></a>`
 
 **Inline Citation Format:**
+
 ```markdown
 The global market reached $12.2B in 2024 [[1]](#ref-1), growing at 6.2% CAGR [[2]](#ref-2).
 ```
@@ -153,6 +156,7 @@ user questions at **every stage** of information gathering (Stages 0-5). This
 is required even when the agent has partial defaults from templates.
 
 Rules:
+
 - Do not proceed to a downstream stage without user answers for the current
   stage's required inputs
 - Do not silently assume missing values; present proposed defaults and ask for
@@ -171,6 +175,7 @@ Rules:
 ### Agent Operating Rule
 
 At each stage, the agent must:
+
 1. Collect required inputs
 2. Present derived outputs
 3. Explicitly flag gaps or conflicts
@@ -179,6 +184,7 @@ At each stage, the agent must:
 6. Only then proceed downstream
 
 **Questioning checkpoint (mandatory at each stage):**
+
 - Ask stage-specific data questions
 - Ask derived-assumption confirmation questions
 - Ask risk/appetite or conservatism preference question
@@ -189,6 +195,7 @@ If dependencies are incomplete, the agent must pause and resolve them before con
 ### Stage 0 — Scope Lock (Pre-Model)
 
 **Collect:**
+
 - Business model and revenue stream definitions
 - Geography and segment scope
 - Time horizon and reporting granularity
@@ -201,63 +208,75 @@ If dependencies are incomplete, the agent must pause and resolve them before con
 ### Stage 1 — TAM / SAM / SOM (Market Foundation)
 
 **Collect:**
+
 - Source-backed TAM components
 - SAM filters (geography, segment, readiness)
 - SOM adoption assumptions by year
 
 **Output artifact:** `market_sizing_pack`
+
 - TAM/SAM/SOM values
 - Calculation logic
 - Confidence labels (HIGH/MEDIUM/LOW)
 - Citation map
 
 **Gate check:**
+
 - Every major market figure has a source or explicitly labeled estimate
 - SOM trajectory is time-based and not a single-point claim
 
 **If discrepancy:**
+
 - Ask user whether to use conservative/mid/aggressive assumption set
 - Mark unresolved data as estimate with rationale
 
 ### Stage 2 — Demand & Revenue Drivers (Commercial Engine)
 
 **Collect:**
+
 - Pricing model per stream
 - Volume/customer assumptions by year
 - Growth, churn, retention, attachment/cross-sell assumptions
 
 **Output artifact:** `revenue_driver_pack`
+
 - Stream-level unit economics and formula logic
 - Year-wise driver table tied to SOM
 
 **Gate check:**
+
 - Revenue assumptions reconcile with SOM capacity and GTM realism
 - No driver is orphaned from an upstream market logic
 
 **If discrepancy:**
+
 - Agent surfaces contradiction (e.g., implied penetration too high)
 - Agent requests corrected constraint before proceeding
 
 ### Stage 3 — Operating Cost Drivers (Cost Engine)
 
 **Collect:**
+
 - COGS by stream
 - Headcount plan and salary benchmarks
 - Fixed operating costs and inflation assumptions
 - CAC and sales/marketing efficiency assumptions
 
 **Output artifact:** `cost_driver_pack`
+
 - Stream-level COGS logic
 - Headcount and fixed-cost schedules
 - CAC-linked S&M schedule
 
 **Gate check:**
+
 - Cost structure is compatible with revenue model and GTM assumptions
 - All assumptions are versioned and attributable
 
 ### Stage 4 — Integrated Financial Statements
 
 **Build order (required):**
+
 1. Revenue / Headcount / Operating Costs
 2. P&L
 3. Cash Flow
@@ -267,6 +286,7 @@ If dependencies are incomplete, the agent must pause and resolve them before con
 **Output artifact:** `integrated_model_v1`
 
 **Gate check:**
+
 - Formula integrity passes
 - Balance sheet balances for all years
 - Linkage audits pass
@@ -274,12 +294,14 @@ If dependencies are incomplete, the agent must pause and resolve them before con
 ### Stage 5 — Review, Revisions, and Scenario Sign-Off
 
 **Collect:**
+
 - User feedback on assumptions and risk posture
 - Scenario preferences (base/upside/downside)
 
 **Output artifact:** `final_assumption_register + scenario_set`
 
 **Gate check:**
+
 - Changes preserve dependency integrity
 - Structural changes route through Config-Based Rebuild
 
@@ -310,11 +332,13 @@ No stage may be skipped, merged, or deferred to a later bulk update.
 #### 1) Source Quality Hierarchy
 
 Classify each external input as:
+
 - **Tier 1 (High confidence):** Government, regulator, audited filings, top research firms
 - **Tier 2 (Medium confidence):** Reputable industry publications, operator benchmarks
 - **Tier 3 (Low confidence):** Blogs/forums/vendor claims without triangulation
 
 **Rules:**
+
 - TAM/SAM foundations should be Tier 1/Tier 2 where possible
 - Tier 3 inputs must be marked as assumptions and sensitivity-tested
 - If only Tier 3 exists, agent must explicitly flag confidence risk before proceeding
@@ -322,6 +346,7 @@ Classify each external input as:
 #### 2) Assumption Register (Single Source of Truth)
 
 Maintain a structured assumption register during build with:
+
 - Assumption name and formula usage
 - Value by period (if time-varying)
 - Source URL or rationale (if estimated)
@@ -358,6 +383,7 @@ Before moving to downstream stages, run these checks:
 #### 4) Reasonability and Sanity Tests
 
 Agent must run and report:
+
 - Growth realism checks vs market expansion assumptions
 - Margin trajectory plausibility (gross/EBITDA/net trend logic)
 - Working capital logic consistency with debtor/creditor assumptions
@@ -369,6 +395,7 @@ If any test fails, agent must stop and return a discrepancy summary with options
 #### 5) Stage Sign-Off Protocol
 
 At each stage gate, the agent must present a **Stage Sign-Off Card**:
+
 1. Inputs collected
 2. Derived outputs
 3. Quality/confidence summary
@@ -386,6 +413,7 @@ Proceed only after explicit user confirmation.
 ### Mandatory Interaction Pattern (During Build)
 
 For each stage, the agent must provide:
+
 1. **What was collected**
 2. **What was derived**
 3. **What is missing or conflicting**
@@ -442,6 +470,7 @@ python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
 ```
 
 **Proceed only if:**
+
 - All 14 required sheets exist in correct order
 - No formula/linkage integrity failures
 - Balance sheet and cross-sheet checks pass
@@ -712,18 +741,18 @@ S&M Cost (CAC)    | $ | =Assumptions!CAC × Assumptions!NewCustomers
 
 **Dynamic salary model with regional adjustments:**
 
-| Section | Rows | Content |
-| ----------------------------- | ----- | ---------------------------------------------------------------------- |
-| Parameters | 4-12 | Annual salary growth rate (15%), Regional salary premiums by geography |
-| Base Salary Rates | 14-23 | Base salaries for 9 role types (Founders, Engineering, Sales, etc.) |
-| Salary Rates by Year | 25-34 | Calculated salaries with annual growth: `=BaseRate*(1+GrowthRate)^Year` |
-| Headcount by Role | 36-44 | Employee count projections by role (Y0-Y5) |
-| Regional Managers | 46-52 | Regional manager distribution (India, SE Asia, MENA, Europe, Americas) |
-| Total Headcount | 54 | =SUM(All Roles) + Regional Managers |
-| Salary Costs | 56-64 | `=Headcount × Salary Rate` per role |
-| Regional Manager Costs | 66-72 | Salaries adjusted for regional premiums |
-| Total People Cost | 74 | =SUM(All Salary Costs) |
-| Efficiency Metrics | 76-78 | Revenue per Employee, People Cost % of Revenue |
+| Section                | Rows  | Content                                                                 |
+| ---------------------- | ----- | ----------------------------------------------------------------------- |
+| Parameters             | 4-12  | Annual salary growth rate (15%), Regional salary premiums by geography  |
+| Base Salary Rates      | 14-23 | Base salaries for 9 role types (Founders, Engineering, Sales, etc.)     |
+| Salary Rates by Year   | 25-34 | Calculated salaries with annual growth: `=BaseRate*(1+GrowthRate)^Year` |
+| Headcount by Role      | 36-44 | Employee count projections by role (Y0-Y5)                              |
+| Regional Managers      | 46-52 | Regional manager distribution (India, SE Asia, MENA, Europe, Americas)  |
+| Total Headcount        | 54    | =SUM(All Roles) + Regional Managers                                     |
+| Salary Costs           | 56-64 | `=Headcount × Salary Rate` per role                                     |
+| Regional Manager Costs | 66-72 | Salaries adjusted for regional premiums                                 |
+| Total People Cost      | 74    | =SUM(All Salary Costs)                                                  |
+| Efficiency Metrics     | 76-78 | Revenue per Employee, People Cost % of Revenue                          |
 
 **Key Formulas:**
 
@@ -1227,6 +1256,7 @@ python execution/setup_project_structure.py --project rapidtools
 ```
 
 **This creates:**
+
 ```
 .tmp/
 ├── consolidated_research/    [Shared] Research database (6 categories)
@@ -1241,6 +1271,7 @@ python execution/setup_project_structure.py --project rapidtools
 ```
 
 **Why This Matters:**
+
 - ✓ Organized structure from the start
 - ✓ All project files in one place
 - ✓ Research database shared across projects
@@ -1248,6 +1279,7 @@ python execution/setup_project_structure.py --project rapidtools
 - ✓ Professional organization
 
 **Check current structure:**
+
 ```bash
 python execution/setup_project_structure.py --summary
 ```

@@ -51,7 +51,7 @@ this config — the builder script contains **zero hardcoded business data**.
     "depreciation_years": 5,
     "debtor_days": 45,
     "creditor_days": 30,
-    "interest_rate": 0.10,
+    "interest_rate": 0.1,
     "cost_inflation": 0.05
   },
   "revenue_streams": [
@@ -59,7 +59,7 @@ this config — the builder script contains **zero hardcoded business data**.
       "name": "Stream Name",
       "price": 2500,
       "volume": 25,
-      "growth": 0.50,
+      "growth": 0.5,
       "cogs_pct": 0.15
     }
   ],
@@ -69,8 +69,13 @@ this config — the builder script contains **zero hardcoded business data**.
   ],
   "headcount": {
     "departments": [
-      { "name": "Engineering", "salary": 80000, "y0_count": 5, "growth": 0.40 },
-      { "name": "Sales & Marketing", "salary": 60000, "y0_count": 3, "growth": 0.50 },
+      { "name": "Engineering", "salary": 80000, "y0_count": 5, "growth": 0.4 },
+      {
+        "name": "Sales & Marketing",
+        "salary": 60000,
+        "y0_count": 3,
+        "growth": 0.5
+      },
       { "name": "Operations", "salary": 50000, "y0_count": 2, "growth": 0.35 },
       { "name": "G&A", "salary": 70000, "y0_count": 2, "growth": 0.25 }
     ]
@@ -78,14 +83,34 @@ this config — the builder script contains **zero hardcoded business data**.
   "funding": {
     "rounds": [
       { "name": "Seed", "amount": 3000000, "year": 0, "pre_money": 10000000 },
-      { "name": "Series A", "amount": 10000000, "year": 2, "pre_money": 30000000 },
-      { "name": "Series B", "amount": 25000000, "year": 4, "pre_money": 75000000 }
+      {
+        "name": "Series A",
+        "amount": 10000000,
+        "year": 2,
+        "pre_money": 30000000
+      },
+      {
+        "name": "Series B",
+        "amount": 25000000,
+        "year": 4,
+        "pre_money": 75000000
+      }
     ]
   },
   "tam": {
     "streams": [
-      { "name": "Software", "value_m": 10000, "source": "Research Firm", "confidence": "HIGH" },
-      { "name": "Hardware", "value_m": 4000, "source": "Research Firm", "confidence": "HIGH" }
+      {
+        "name": "Software",
+        "value_m": 10000,
+        "source": "Research Firm",
+        "confidence": "HIGH"
+      },
+      {
+        "name": "Hardware",
+        "value_m": 4000,
+        "source": "Research Firm",
+        "confidence": "HIGH"
+      }
     ]
   },
   "sam": {
@@ -129,9 +154,7 @@ The builder also accepts the legacy flat config format:
     "series_a": 10000000,
     "series_a_year": 2
   },
-  "fixed_costs": [
-    { "name": "Office", "annual_cost": 36000 }
-  ]
+  "fixed_costs": [{ "name": "Office", "annual_cost": 36000 }]
 }
 ```
 
@@ -170,56 +193,56 @@ sheets must be rebuilt.
 
 All sheets use a consistent color palette:
 
-| Constant       | Hex       | RGB              | Usage                          |
-|----------------|-----------|------------------|--------------------------------|
-| TITLE_BLUE     | `#335080` | (51,80,128)      | Sheet title row (row 1)        |
-| DARK_BLUE      | `#336699` | (51,102,153)     | Section headers                |
-| MEDIUM_BLUE    | `#6699CC` | (102,153,204)    | Column headers, sub-headers    |
-| SECTION_A_CAT  | `#4D80B3` | (77,128,179)     | Category headers (Sources)     |
-| LIGHT_BLUE     | `#D8EAF9` | (216,234,249)    | Zebra-stripe / category rows   |
-| LIGHT_GRAY     | `#F2F2F2` | (242,242,242)    | Alternate column headers       |
-| GREEN          | `#E5F8E5` | (229,248,229)    | Total / summary rows           |
-| WHITE          | `#FFFFFF` |                  | Data rows (odd)                |
-| BLACK          | `#000000` |                  | Default font color             |
-| URL_BLUE       | `#1A4CB3` | (26,76,179)      | Hyperlink text                 |
-| GRAY           | `#808080` |                  | Notes, validation rows         |
+| Constant      | Hex       | RGB           | Usage                        |
+| ------------- | --------- | ------------- | ---------------------------- |
+| TITLE_BLUE    | `#335080` | (51,80,128)   | Sheet title row (row 1)      |
+| DARK_BLUE     | `#336699` | (51,102,153)  | Section headers              |
+| MEDIUM_BLUE   | `#6699CC` | (102,153,204) | Column headers, sub-headers  |
+| SECTION_A_CAT | `#4D80B3` | (77,128,179)  | Category headers (Sources)   |
+| LIGHT_BLUE    | `#D8EAF9` | (216,234,249) | Zebra-stripe / category rows |
+| LIGHT_GRAY    | `#F2F2F2` | (242,242,242) | Alternate column headers     |
+| GREEN         | `#E5F8E5` | (229,248,229) | Total / summary rows         |
+| WHITE         | `#FFFFFF` |               | Data rows (odd)              |
+| BLACK         | `#000000` |               | Default font color           |
+| URL_BLUE      | `#1A4CB3` | (26,76,179)   | Hyperlink text               |
+| GRAY          | `#808080` |               | Notes, validation rows       |
 
 ### Standard Formatting Rules
 
-| Element             | Font            | Size | Bold | BG Color   | FG Color | Alignment |
-|---------------------|-----------------|------|------|------------|----------|-----------|
-| Sheet title (row 1) | Calibri         | 14   | Yes  | TITLE_BLUE | White    | Center    |
-| Section header      | Calibri         | 11   | Yes  | DARK_BLUE  | White    | Center    |
-| Column header       | Calibri         | 10   | Yes  | MEDIUM_BLUE| White    | Center    |
-| Category label      | Calibri         | 10   | Yes  | LIGHT_BLUE | Black    | Left      |
-| Data row (normal)   | Calibri         | 10   | No   | White      | Black    | Right     |
-| Data row (zebra)    | Calibri         | 10   | No   | LIGHT_BLUE | Black    | Right     |
-| Total row           | Calibri         | 10   | Yes  | GREEN      | Black    | Right     |
-| Row label           | Calibri         | 10   | No   | —          | Black    | Left      |
+| Element             | Font    | Size | Bold | BG Color    | FG Color | Alignment |
+| ------------------- | ------- | ---- | ---- | ----------- | -------- | --------- |
+| Sheet title (row 1) | Calibri | 14   | Yes  | TITLE_BLUE  | White    | Center    |
+| Section header      | Calibri | 11   | Yes  | DARK_BLUE   | White    | Center    |
+| Column header       | Calibri | 10   | Yes  | MEDIUM_BLUE | White    | Center    |
+| Category label      | Calibri | 10   | Yes  | LIGHT_BLUE  | Black    | Left      |
+| Data row (normal)   | Calibri | 10   | No   | White       | Black    | Right     |
+| Data row (zebra)    | Calibri | 10   | No   | LIGHT_BLUE  | Black    | Right     |
+| Total row           | Calibri | 10   | Yes  | GREEN       | Black    | Right     |
+| Row label           | Calibri | 10   | No   | —           | Black    | Left      |
 
 ### Number Formats
 
-| Data Type     | Format                  | Example         |
-|---------------|-------------------------|-----------------|
-| Currency      | `[$-409]#,##0`          | $1,234,567      |
-| Percentage    | `0.0%`                  | 25.0%           |
-| Integer       | `#,##0`                 | 1,234           |
-| Decimal       | `#,##0.0`               | 1,234.5         |
-| Ratio         | `0.0`                   | 3.2             |
-| Year header   | Plain text              | Year 0          |
+| Data Type   | Format         | Example    |
+| ----------- | -------------- | ---------- |
+| Currency    | `[$-409]#,##0` | $1,234,567 |
+| Percentage  | `0.0%`         | 25.0%      |
+| Integer     | `#,##0`        | 1,234      |
+| Decimal     | `#,##0.0`      | 1,234.5    |
+| Ratio       | `0.0`          | 3.2        |
+| Year header | Plain text     | Year 0     |
 
 ### Column Layout Convention
 
 Most sheets follow this column pattern:
 
-| Column | Content        | Width |
-|--------|----------------|-------|
-| A      | Row label      | 30-48 |
-| B      | Unit / Value   | 10-15 |
-| C      | Year 0         | 12-14 |
-| D      | Year 1         | 12-14 |
-| ...    | ...            | 12-14 |
-| M      | Year 10        | 12-14 |
+| Column | Content      | Width |
+| ------ | ------------ | ----- |
+| A      | Row label    | 30-48 |
+| B      | Unit / Value | 10-15 |
+| C      | Year 0       | 12-14 |
+| D      | Year 1       | 12-14 |
+| ...    | ...          | 12-14 |
+| M      | Year 10      | 12-14 |
 
 Year columns start at **column C** (index 3) for most sheets.
 Exception: Sources & References uses a different layout (see below).
@@ -229,14 +252,17 @@ Exception: Sources & References uses a different layout (see below).
 ## Sheet 1 — Sources & References
 
 ### Purpose
+
 Documents the market sizing (TAM/SAM/SOM) with linkable values that
 downstream sheets can reference. Also provides source documentation for
 all external data used in the model.
 
 ### Dependencies
+
 None — this is a standalone sheet.
 
 ### Config Keys Used
+
 - `tam.streams[]` — TAM by revenue stream
 - `sam.regions[]` — SAM by geography
 - `som.year8_revenue_m` or `som.terminal_revenue_m` — SOM target
@@ -244,13 +270,13 @@ None — this is a standalone sheet.
 
 ### Column Layout
 
-| Column | Content             | Width |
-|--------|---------------------|-------|
-| A      | Metric / Label      | 48    |
-| B      | Value               | 15    |
-| C      | Unit / Calculation  | 15    |
-| D      | Source              | 15    |
-| E      | Confidence          | 15    |
+| Column | Content            | Width |
+| ------ | ------------------ | ----- |
+| A      | Metric / Label     | 48    |
+| B      | Value              | 15    |
+| C      | Unit / Calculation | 15    |
+| D      | Source             | 15    |
+| E      | Confidence         | 15    |
 
 ### Row Structure
 
@@ -294,13 +320,14 @@ Row S+10: (placeholder rows — agent fills during research phase)
 
 ### Key Formulas
 
-| Cell    | Formula                           | Purpose                 |
-|---------|-----------------------------------|-------------------------|
-| B(TAM total)  | `=SUM(B<first_tam>:B<last_tam>)` | Total TAM              |
-| B(SAM total)  | `=SUM(B<first_sam>:B<last_sam>)` | Total SAM              |
-| B(Penetration)| `=B<som_rev>/B<sam_total>`       | SOM/SAM penetration %  |
+| Cell           | Formula                          | Purpose               |
+| -------------- | -------------------------------- | --------------------- |
+| B(TAM total)   | `=SUM(B<first_tam>:B<last_tam>)` | Total TAM             |
+| B(SAM total)   | `=SUM(B<first_sam>:B<last_sam>)` | Total SAM             |
+| B(Penetration) | `=B<som_rev>/B<sam_total>`       | SOM/SAM penetration % |
 
 ### Formatting Notes
+
 - Section A categories use SECTION_A_CAT background
 - Total rows use GREEN background
 - Section B source rows use zebra striping
@@ -311,13 +338,16 @@ Row S+10: (placeholder rows — agent fills during research phase)
 ## Sheet 2 — Assumptions
 
 ### Purpose
+
 Single source of truth for all input parameters. Other sheets pull values
 from this sheet so changes propagate automatically.
 
 ### Dependencies
+
 None — reads from config only.
 
 ### Config Keys Used
+
 - `general.*` — tax rate, capex, depreciation, debtor/creditor days, inflation
 - `revenue_streams[]` — price, volume, growth, cogs_pct per stream
 - `fixed_costs[]` — cost categories and amounts
@@ -327,7 +357,7 @@ None — reads from config only.
 ### Column Layout
 
 | Column | Content        | Width |
-|--------|----------------|-------|
+| ------ | -------------- | ----- |
 | A      | Parameter name | 35    |
 | B      | Value          | 15    |
 | C      | Unit           | 10    |
@@ -378,26 +408,28 @@ Row P:  [SECTION HEADER] "FUNDING PARAMETERS"  (DARK_BLUE)
 
 The builder tracks these row numbers for cross-sheet formulas:
 
-| Reference Key             | Content                        |
-|---------------------------|--------------------------------|
-| `assumptions_start`       | First general parameter row    |
-| `tax_rate`                | Tax Rate row                   |
-| `cost_inflation`          | Cost Inflation row             |
-| `revenue_streams_start`   | First stream's Price row       |
-| `revenue_streams_end`     | Last stream's COGS % row       |
-| `fixed_costs_start`       | First fixed cost row           |
-| `fixed_costs_end`         | Last fixed cost row            |
-| `funding_start`           | First funding parameter row    |
+| Reference Key           | Content                     |
+| ----------------------- | --------------------------- |
+| `assumptions_start`     | First general parameter row |
+| `tax_rate`              | Tax Rate row                |
+| `cost_inflation`        | Cost Inflation row          |
+| `revenue_streams_start` | First stream's Price row    |
+| `revenue_streams_end`   | Last stream's COGS % row    |
+| `fixed_costs_start`     | First fixed cost row        |
+| `fixed_costs_end`       | Last fixed cost row         |
+| `funding_start`         | First funding parameter row |
 
 ### Revenue Stream Row Arithmetic
 
 Each stream consumes exactly **4 rows** in the Assumptions sheet:
+
 - Row offset 0: Price
 - Row offset 1: Volume (with year-by-year growth formulas)
 - Row offset 2: Growth rate
 - Row offset 3: COGS %
 
 So for stream index `i`, the rows are:
+
 - Price row = `revenue_streams_start + (i * 4)`
 - Volume row = `revenue_streams_start + (i * 4) + 1`
 - Growth row = `revenue_streams_start + (i * 4) + 2`
@@ -419,21 +451,24 @@ Where `<growth_rate>` is the literal value from config (e.g. `0.5`).
 ## Sheet 3 — Headcount Plan
 
 ### Purpose
+
 Projects team size and salary costs by department over time.
 
 ### Dependencies
+
 None — reads from config only.
 
 ### Config Keys Used
+
 - `headcount.departments[]` or legacy `headcount.*_salary` / `headcount.*_y0`
 
 ### Column Layout
 
-| Column | Content        | Width |
-|--------|----------------|-------|
-| A      | Department     | 30    |
-| B      | Avg Salary     | 15    |
-| C-M    | Year 0-10      | 12 ea |
+| Column | Content    | Width |
+| ------ | ---------- | ----- |
+| A      | Department | 30    |
+| B      | Avg Salary | 15    |
+| C-M    | Year 0-10  | 12 ea |
 
 ### Row Structure
 
@@ -452,35 +487,37 @@ Row T+2: "TOTAL SALARY COST" | — | =SUM(count*salary) per year  (GREEN)
 
 ### Key Formulas
 
-| Row         | Formula per year column                               |
-|-------------|-------------------------------------------------------|
-| Dept count  | Y0: literal; Y1+: `=ROUND(<prev>*(1+<growth>),0)`    |
-| Total HC    | `=SUM(C<first_dept>:C<last_dept>)`                    |
-| Salary Cost | `=SUM(C<dept1>*B<dept1>, C<dept2>*B<dept2>, ...)`     |
+| Row         | Formula per year column                           |
+| ----------- | ------------------------------------------------- |
+| Dept count  | Y0: literal; Y1+: `=ROUND(<prev>*(1+<growth>),0)` |
+| Total HC    | `=SUM(C<first_dept>:C<last_dept>)`                |
+| Salary Cost | `=SUM(C<dept1>*B<dept1>, C<dept2>*B<dept2>, ...)` |
 
 ### Tracked Row References
 
-| Key                | Content            |
-|--------------------|--------------------|
-| `headcount_start`  | First department   |
-| `headcount_end`    | Last department    |
-| `headcount_total`  | Total headcount    |
-| `salary_cost_total`| Total salary cost  |
+| Key                 | Content           |
+| ------------------- | ----------------- |
+| `headcount_start`   | First department  |
+| `headcount_end`     | Last department   |
+| `headcount_total`   | Total headcount   |
+| `salary_cost_total` | Total salary cost |
 
 ---
 
 ## Sheet 4 — Revenue
 
 ### Purpose
+
 Calculates annual revenue per stream using Price x Volume from Assumptions.
 
 ### Dependencies
+
 - **Assumptions** — reads price and volume rows
 
 ### Column Layout
 
 | Column | Content        | Width |
-|--------|----------------|-------|
+| ------ | -------------- | ----- |
 | A      | Revenue Stream | 30    |
 | B      | Unit           | 10    |
 | C-M    | Year 0-10      | 14 ea |
@@ -505,6 +542,7 @@ Row N:   Stream name %  | %  | =IF(total=0, 0, stream/total)
 ### Key Formula
 
 Revenue per stream per year:
+
 ```
 =Assumptions!$B$<price_row> * Assumptions!<year_col>$<volume_row>
 ```
@@ -515,21 +553,23 @@ Revenue per stream per year:
 
 ### Tracked Row References
 
-| Key              | Content         |
-|------------------|-----------------|
-| `revenue_start`  | First stream    |
-| `revenue_end`    | Last stream     |
-| `revenue_total`  | Total Revenue   |
+| Key             | Content       |
+| --------------- | ------------- |
+| `revenue_start` | First stream  |
+| `revenue_end`   | Last stream   |
+| `revenue_total` | Total Revenue |
 
 ---
 
 ## Sheet 5 — Operating Costs
 
 ### Purpose
+
 Aggregates all costs: COGS (variable), salaries (from Headcount), and
 other fixed costs (with inflation).
 
 ### Dependencies
+
 - **Assumptions** — COGS % per stream
 - **Revenue** — revenue per stream (for COGS calculation)
 - **Headcount Plan** — salary cost total
@@ -560,7 +600,7 @@ Row OT:  "TOTAL OPERATING COSTS"  | USD  | =COGS + FIXED  (GREEN)
 ### Key Formulas
 
 | Row             | Formula                                              |
-|-----------------|------------------------------------------------------|
+| --------------- | ---------------------------------------------------- |
 | COGS per stream | `=Revenue!<col><stream> * Assumptions!$B$<cogs_pct>` |
 | Total COGS      | `=SUM(<first_cogs>:<last_cogs>)`                     |
 | Fixed cost Y1+  | `=<prev_col><row> * (1 + <inflation>)`               |
@@ -569,26 +609,28 @@ Row OT:  "TOTAL OPERATING COSTS"  | USD  | =COGS + FIXED  (GREEN)
 
 ### Tracked Row References
 
-| Key                | Content             |
-|--------------------|---------------------|
-| `cogs_start`       | First COGS row      |
-| `cogs_end`         | Last COGS row       |
-| `cogs_total`       | Total COGS          |
-| `fixed_salaries`   | Salaries row        |
-| `other_fixed_start`| First other fixed   |
-| `other_fixed_end`  | Last other fixed    |
-| `fixed_total`      | Total Fixed Costs   |
-| `opex_total`       | Total Operating     |
+| Key                 | Content           |
+| ------------------- | ----------------- |
+| `cogs_start`        | First COGS row    |
+| `cogs_end`          | Last COGS row     |
+| `cogs_total`        | Total COGS        |
+| `fixed_salaries`    | Salaries row      |
+| `other_fixed_start` | First other fixed |
+| `other_fixed_end`   | Last other fixed  |
+| `fixed_total`       | Total Fixed Costs |
+| `opex_total`        | Total Operating   |
 
 ---
 
 ## Sheet 6 — P&L
 
 ### Purpose
-Standard Profit & Loss statement: Revenue  Gross Profit  EBITDA 
-EBIT  PBT  Net Income, with margin percentages.
+
+Standard Profit & Loss statement: Revenue Gross Profit EBITDA
+EBIT PBT Net Income, with margin percentages.
 
 ### Dependencies
+
 - **Revenue** — total revenue
 - **Operating Costs** — COGS total, fixed costs total
 
@@ -621,6 +663,7 @@ Row 20: Net Margin %      | %   | =IF(Revenue=0, 0, NetIncome/Revenue)
 ### Depreciation Calculation
 
 Simplified straight-line depreciation:
+
 ```python
 Y0: capex_y0 / dep_years
 Y1: capex_y0/dep_years + capex_annual/dep_years
@@ -633,29 +676,31 @@ After `dep_years`, the Y0 asset is fully depreciated and drops off.
 
 ### Tracked Row References
 
-| Key                | Content         |
-|--------------------|-----------------|
-| `pnl_revenue`      | Revenue row     |
-| `pnl_cogs`         | COGS row        |
-| `pnl_gross_profit`  | Gross Profit   |
-| `pnl_opex`         | Operating Exp   |
-| `pnl_ebitda`       | EBITDA          |
-| `pnl_depreciation` | Depreciation    |
-| `pnl_ebit`         | EBIT            |
-| `pnl_interest`     | Interest        |
-| `pnl_pbt`          | PBT             |
-| `pnl_tax`          | Tax             |
-| `pnl_net_income`   | Net Income      |
+| Key                | Content       |
+| ------------------ | ------------- |
+| `pnl_revenue`      | Revenue row   |
+| `pnl_cogs`         | COGS row      |
+| `pnl_gross_profit` | Gross Profit  |
+| `pnl_opex`         | Operating Exp |
+| `pnl_ebitda`       | EBITDA        |
+| `pnl_depreciation` | Depreciation  |
+| `pnl_ebit`         | EBIT          |
+| `pnl_interest`     | Interest      |
+| `pnl_pbt`          | PBT           |
+| `pnl_tax`          | Tax           |
+| `pnl_net_income`   | Net Income    |
 
 ---
 
 ## Sheet 7 — Cash Flow
 
 ### Purpose
+
 Three-section cash flow statement: Operating, Investing, Financing.
 Calculates cumulative cash position.
 
 ### Dependencies
+
 - **P&L** — net income, depreciation
 - **Config** — capex, funding rounds
 
@@ -700,28 +745,30 @@ cell.value = equity
 
 ### Tracked Row References
 
-| Key              | Content              |
-|------------------|----------------------|
-| `cf_net_income`  | Net Income ref       |
-| `cf_depreciation`| Depreciation ref     |
-| `cf_wc_change`   | Working capital      |
-| `cf_operating`   | Operating CF total   |
-| `cf_capex`       | CapEx row            |
-| `cf_investing`   | Investing CF total   |
-| `cf_equity`      | Equity Raised row    |
-| `cf_financing`   | Financing CF total   |
-| `cf_net`         | Net Cash Flow        |
-| `cf_cumulative`  | Cumulative Cash      |
+| Key               | Content            |
+| ----------------- | ------------------ |
+| `cf_net_income`   | Net Income ref     |
+| `cf_depreciation` | Depreciation ref   |
+| `cf_wc_change`    | Working capital    |
+| `cf_operating`    | Operating CF total |
+| `cf_capex`        | CapEx row          |
+| `cf_investing`    | Investing CF total |
+| `cf_equity`       | Equity Raised row  |
+| `cf_financing`    | Financing CF total |
+| `cf_net`          | Net Cash Flow      |
+| `cf_cumulative`   | Cumulative Cash    |
 
 ---
 
 ## Sheet 8 — Balance Sheet
 
 ### Purpose
+
 Assets = Liabilities + Equity validation. Tracks cash, fixed assets,
 paid-in capital, and retained earnings.
 
 ### Dependencies
+
 - **Cash Flow** — cumulative cash
 - **P&L** — net income (for retained earnings)
 - **Config** — capex, depreciation, funding
@@ -760,6 +807,7 @@ Year 1+: =<prev_col><retained_row> + 'P&L'!<col><net_income>
 ### Paid-in Capital Logic
 
 Cumulative equity raised up to and including this year:
+
 ```python
 cum_equity = sum(round.amount for round in funding.rounds if round.year <= year)
 ```
@@ -777,9 +825,11 @@ If this is not zero, the model has an error.
 ## Sheet 9 — Summary
 
 ### Purpose
+
 KPI dashboard pulling key metrics from P&L, Cash Flow, and Headcount.
 
 ### Dependencies
+
 - **P&L** — revenue, gross profit, EBITDA, net income
 - **Cash Flow** — cumulative cash, net cash flow
 - **Headcount Plan** — total headcount
@@ -814,9 +864,11 @@ Row 16: Net Cash Flow      | USD | ='Cash Flow'!<col><net>
 ## Sheet 10 — Sensitivity Analysis
 
 ### Purpose
+
 Shows Base/Downside/Upside scenarios for key terminal-year metrics.
 
 ### Dependencies
+
 - **P&L** — terminal-year revenue, EBITDA
 - **Cash Flow** — terminal-year cumulative cash
 - **Config** — `valuation.terminal_year` (defaults to 8, capped at `num_years - 1`)
@@ -835,16 +887,18 @@ Row 7:  Year N Cash       | =0.75*C7 | ='Cash Flow'!<term_col><cum>| =1.25*C7
 ```
 
 Note: Terminal year column is `3 + terminal_year`. For an 11-year model with
-`terminal_year=8`, this is column K.  For a 5-year model, it caps at Year 4.
+`terminal_year=8`, this is column K. For a 5-year model, it caps at Year 4.
 
 ---
 
 ## Sheet 11 — Valuation
 
 ### Purpose
+
 DCF assumptions and implied exit valuation.
 
 ### Dependencies
+
 - **P&L** — terminal-year revenue, EBITDA
 - **Config** — `valuation.wacc`, `valuation.terminal_growth`, `valuation.exit_multiple`, `valuation.terminal_year`
 
@@ -871,9 +925,11 @@ All valuation parameters come from `config.valuation` with sensible defaults.
 ## Sheet 12 — Break-even Analysis
 
 ### Purpose
+
 Contribution-margin break-even analysis per revenue stream.
 
 ### Dependencies
+
 - **Revenue** — per-stream revenue values
 - **Operating Costs** — per-stream COGS values
 - **P&L** — total fixed costs (OpEx)
@@ -910,9 +966,11 @@ actual P&L.
 ## Sheet 13 — Funding Cap Table
 
 ### Purpose
+
 Tracks funding rounds with amounts, valuations, and dilution.
 
 ### Dependencies
+
 - **Config** — funding.rounds[]
 
 ### Row Structure
@@ -932,21 +990,23 @@ Row T+1: "TOTAL RAISED"  | =SUM(amounts)  (bold, GREEN)
 
 ### Key Formulas
 
-| Cell        | Formula                    |
-|-------------|----------------------------|
-| Post-Money  | `=B<row> + C<row>`         |
-| Dilution    | `=B<row> / D<row>`         |
-| Total Raised| `=SUM(B<first>:B<last>)`   |
+| Cell         | Formula                  |
+| ------------ | ------------------------ |
+| Post-Money   | `=B<row> + C<row>`       |
+| Dilution     | `=B<row> / D<row>`       |
+| Total Raised | `=SUM(B<first>:B<last>)` |
 
 ---
 
 ## Sheet 14 — Charts Data
 
 ### Purpose
+
 Aggregates key time-series data for chart creation. All values are
 cross-sheet references.
 
 ### Dependencies
+
 - **P&L** — revenue, EBITDA, net income
 - **Cash Flow** — cumulative cash
 

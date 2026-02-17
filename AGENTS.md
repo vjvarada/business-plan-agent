@@ -425,18 +425,20 @@ Gate approvals persist in:
 
 ### Three Workflows:
 
-| Workflow | When to Use | Tools |
-|----------|-------------|-------|
+| Workflow                       | When to Use                                            | Tools                                                                    |
+| ------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------------------ |
 | **1. Template-First Creation** | Building a NEW production financial model from scratch | `create_financial_model.py --from-template` + verification/audit scripts |
-| **2. Local-First Editing** | Value updates, formula fixes (NO structure changes) | `download_model_snapshot.py` + CSV edits + `sync_snapshot_to_sheets.py` |
-| **3. Config-Based Rebuild** | Adding/removing revenue streams, restructuring | `create_financial_model.py` with updated config |
+| **2. Local-First Editing**     | Value updates, formula fixes (NO structure changes)    | `download_model_snapshot.py` + CSV edits + `sync_snapshot_to_sheets.py`  |
+| **3. Config-Based Rebuild**    | Adding/removing revenue streams, restructuring         | `create_financial_model.py` with updated config                          |
 
 **Quick Rules:**
+
 - **Creating from scratch?** → Template-First Creation (`create_financial_model.py --from-template`)
 - **Updating values?** → Local-First Editing (CSV snapshots)
 - **Changing structure?** → Config-Based Rebuild
 
 **Mandatory Gates for New Models:**
+
 1. Create model from template (`create_financial_model.py --from-template`)
 2. Verify template fidelity (`verify_template_copy.py`) — 14-sheet structure must match
 3. Audit model integrity (`audit_financial_model.py --mode comprehensive`)
@@ -453,6 +455,7 @@ When building a financial model, move through dependencies in order and do not s
 5. **Statements Build** → P&L → Cash Flow → Balance Sheet → dashboards/valuation
 
 For each stage, the agent must:
+
 - Summarize what was collected
 - Show what was derived
 - Flag missing/conflicting dependencies
@@ -474,6 +477,7 @@ Required questioning behavior per stage:
 4. Pause for explicit user response before moving to the next stage
 
 Minimum stage prompts (0-5):
+
 - **Stage 0 (Scope Lock):** business model, geographies, timeline, currency
 - **Stage 1 (TAM/SAM/SOM):** source preference, confidence thresholds,
   estimate tolerance
@@ -520,12 +524,12 @@ If any control fails, the agent must pause and resolve with the user before proc
 
 **Why Template-First Creation?**
 
-| Programmatic Build From Scratch | Template-First Creation |
-| ------------------------------ | ----------------------- |
-| Higher risk of formula drift | Preserves proven 14-sheet template formulas |
-| More setup complexity | Fast copy with deterministic structure |
-| Easier to miss formatting parity | Guaranteed template formatting fidelity |
-| Requires rebuilding references | Existing cross-sheet linkages already embedded |
+| Programmatic Build From Scratch  | Template-First Creation                        |
+| -------------------------------- | ---------------------------------------------- |
+| Higher risk of formula drift     | Preserves proven 14-sheet template formulas    |
+| More setup complexity            | Fast copy with deterministic structure         |
+| Easier to miss formatting parity | Guaranteed template formatting fidelity        |
+| Requires rebuilding references   | Existing cross-sheet linkages already embedded |
 
 ### The 4-Step Creation Workflow
 
@@ -541,6 +545,7 @@ python execution/create_financial_model.py \
 ```
 
 **What it does:**
+
 - Copies the approved RapidTools template structure
 - Preserves all formulas, formatting, and sheet ordering
 - Applies configuration updates to template-driven assumptions
@@ -553,6 +558,7 @@ python execution/verify_template_copy.py --sheet-id "<SHEET_ID>"
 ```
 
 **What it does:**
+
 - Confirms all 14 required sheets exist
 - Verifies sheet order and structure against template
 - Flags missing/extra/misaligned template components
@@ -564,6 +570,7 @@ python execution/audit_financial_model.py --mode comprehensive --sheet-id "<SHEE
 ```
 
 **What it does:**
+
 - Checks formula health, statement consistency, and model-level quality issues
 
 #### 4. Post-Upload Integrity Audit (Required)
@@ -573,6 +580,7 @@ python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
 ```
 
 **Proceed only if:**
+
 - Balance sheet checks pass
 - Linkages are intact
 - No formula integrity issues are reported
@@ -583,25 +591,25 @@ python execution/verify_sheet_integrity.py --sheet-id "<SHEET_ID>"
 
 ### Key Libraries
 
-| Library | Purpose | Install |
-|---------|---------|---------|
-| `openpyxl` | Create/read Excel files (.xlsx) | `pip install openpyxl` |
+| Library    | Purpose                          | Install                |
+| ---------- | -------------------------------- | ---------------------- |
+| `openpyxl` | Create/read Excel files (.xlsx)  | `pip install openpyxl` |
 | `formulas` | Compute Excel formulas in Python | `pip install formulas` |
-| `numpy` | Detect NaN/Infinity errors | `pip install numpy` |
+| `numpy`    | Detect NaN/Infinity errors       | `pip install numpy`    |
 
 ### Validation Capabilities
 
 The `formulas` library can detect:
 
-| Error | Meaning | Example |
-|-------|---------|---------|
-| `#REF!` | Broken cell reference | `=Sheet1!A999` (row doesn't exist) |
-| `#VALUE!` | Wrong value type | `="text"+5` |
-| `#DIV/0!` | Division by zero | `=A1/0` |
-| `#NAME?` | Unknown function/name | `=UNKNOWNFUNC()` |
-| `#N/A` | Value not available | `=VLOOKUP(999,A:B,2,FALSE)` |
-| `NaN` | Not a number | Result of invalid math |
-| `Infinity` | Division by zero (numeric) | Large number / 0 |
+| Error      | Meaning                    | Example                            |
+| ---------- | -------------------------- | ---------------------------------- |
+| `#REF!`    | Broken cell reference      | `=Sheet1!A999` (row doesn't exist) |
+| `#VALUE!`  | Wrong value type           | `="text"+5`                        |
+| `#DIV/0!`  | Division by zero           | `=A1/0`                            |
+| `#NAME?`   | Unknown function/name      | `=UNKNOWNFUNC()`                   |
+| `#N/A`     | Value not available        | `=VLOOKUP(999,A:B,2,FALSE)`        |
+| `NaN`      | Not a number               | Result of invalid math             |
+| `Infinity` | Division by zero (numeric) | Large number / 0                   |
 
 ### When NOT to Use Local-First Creation
 
@@ -612,7 +620,6 @@ The `formulas` library can detect:
 ---
 
 ## Local-First Editing Workflow
-
 
 **Use this for:** Value updates, formula fixes, bulk edits (when structure stays the same)
 
@@ -854,23 +861,27 @@ You specialize in comprehensive business planning with full financial modeling. 
 **Tools:**
 
 **Template-First Creation (NEW - Recommended for new production models):**
+
 - `create_financial_model.py` - **Creates/copies a 14-sheet Google Sheets model** from the approved template with high fidelity
 - `verify_template_copy.py` - **Verifies template fidelity** (sheet count/order/structure checks)
 - `audit_financial_model.py` - **Runs comprehensive post-create audit**
 - `verify_sheet_integrity.py` - **Validates cross-sheet linkage and integrity**
 
 **Draft Local Build (Optional, non-canonical):**
+
 - `create_financial_model_local.py` - Creates simplified local Excel draft for offline prototyping only
 - `validate_excel_model.py` - Validates local draft formulas using `formulas` library
 - `sync_to_cloud.py` - Uploads local draft Excel to Google Sheets when needed
 
 **Google Sheets API (Primary for edits/rebuilds):**
+
 - `create_financial_model.py` - Creates/rebuilds 14-sheet Google Sheets financial model with full investor analytics
 - `update_financial_model.py` - Updates existing models (add sheets, fix formatting, update growth rates)
 - `download_model_snapshot.py` - Downloads sheet to CSV for local editing
 - `sync_snapshot_to_sheets.py` - Syncs CSV edits back to Google Sheets
 
 **Analysis & Validation:**
+
 - `format_sheets.py` - **Reusable formatting utility** with standardized colors, fonts, and layouts for all sheets
 - `audit_financial_model.py` - **Comprehensive model validation** (modes: balance, runway, valuation, metrics, comprehensive)
 - `analyze_benchmarks.py` - **Industry benchmark research** (modes: sm, cac, valuation, margins, comprehensive)
@@ -881,6 +892,7 @@ You specialize in comprehensive business planning with full financial modeling. 
 - `validate_script_registry.py` - **Coverage validator** to ensure all `execution/*.py` scripts are mapped to pipeline stages
 
 **Business Planning:**
+
 - `serp_market_research.py` - Market intelligence (modes: search, competitors, trends, news, sources)
 - `generate_business_plan.py` - Business analysis (modes: swot, financials, canvas, compile) - use --copilot flag
 - `create_pitch_deck.py` - Creates professional pitch decks with References slide
@@ -1236,9 +1248,12 @@ When populating the Sources & References sheet:
 **ALWAYS** use the decision tree (`directives/DECISION_TREE.md`):
 
 1. **Non-structural edits** (values/formulas, no row movement):
-  - `download_model_snapshot.py` → CSV edits → `validate_model_snapshot.py` → `sync_snapshot_to_sheets.py`
+
+- `download_model_snapshot.py` → CSV edits → `validate_model_snapshot.py` → `sync_snapshot_to_sheets.py`
+
 2. **Structural edits** (add/remove rows, revenue streams, TAM/SAM structure):
-  - Update config → `create_financial_model.py --config ... --output-id ...`
+
+- Update config → `create_financial_model.py --config ... --output-id ...`
 
 **Exception:** Emergency single-cell fix only.
 
@@ -1250,13 +1265,13 @@ When populating the Sources & References sheet:
 
 ### Why Section-Based?
 
-| Traditional Approach | Section-Based Approach |
-|---------------------|------------------------|
-| One long document, hard to iterate | Modular sections, easy to revise |
-| Research scattered throughout | Each section has its own references |
-| Difficult to collaborate on | Team members can own sections |
-| Hard to maintain consistency | Template enforces standards |
-| Single point of failure | Sections can be validated independently |
+| Traditional Approach               | Section-Based Approach                  |
+| ---------------------------------- | --------------------------------------- |
+| One long document, hard to iterate | Modular sections, easy to revise        |
+| Research scattered throughout      | Each section has its own references     |
+| Difficult to collaborate on        | Team members can own sections           |
+| Hard to maintain consistency       | Template enforces standards             |
+| Single point of failure            | Sections can be validated independently |
 
 ### Project Structure
 
@@ -1316,7 +1331,7 @@ python execution/serp_market_research.py --mode search \
 Every data point requires a citation. Use the inline reference format:
 
 ```markdown
-The global CAD software market reached $12.2B in 2024 [[1]](#ref-1), 
+The global CAD software market reached $12.2B in 2024 [[1]](#ref-1),
 with the tooling segment representing approximately 50% [[2]](#ref-2).
 ```
 
@@ -1332,31 +1347,32 @@ Each section ends with a numbered references section:
 ### Market Research Sources
 
 <a name="ref-1"></a>
+
 1. **Future Market Insights - CAD Software Market 2024**
    - Global market: $12.2B, CAGR 6.2%
    - Source: Future Market Insights
    - URL: https://www.futuremarketinsights.com/reports/cad-software-market
 
-<a name="ref-2"></a>
-2. **Industry Analysis - Tooling Software Segment**
-   - Tooling represents ~50% of CAD applications in manufacturing
-   - Source: Internal analysis based on FMI data
-   - URL: N/A (derived)
+<a name="ref-2"></a> 2. **Industry Analysis - Tooling Software Segment**
+
+- Tooling represents ~50% of CAD applications in manufacturing
+- Source: Internal analysis based on FMI data
+- URL: N/A (derived)
 ```
 
 ### Section Template Standards
 
 **Each section MUST include:**
 
-| Component | Required | Description |
-|-----------|----------|-------------|
-| Title (H1) | ✅ | Clear section name |
-| Last Updated | ✅ | Date stamp for version tracking |
-| Executive Summary | ✅ | 2-3 paragraph overview |
-| Detailed Content | ✅ | Tables, analysis, data |
-| Key Insights | ✅ | Bullet points for quick reference |
-| Investment Implications | ✅ | Why investors should care |
-| References & Sources | ✅ | Numbered citations with URLs |
+| Component               | Required | Description                       |
+| ----------------------- | -------- | --------------------------------- |
+| Title (H1)              | ✅       | Clear section name                |
+| Last Updated            | ✅       | Date stamp for version tracking   |
+| Executive Summary       | ✅       | 2-3 paragraph overview            |
+| Detailed Content        | ✅       | Tables, analysis, data            |
+| Key Insights            | ✅       | Bullet points for quick reference |
+| Investment Implications | ✅       | Why investors should care         |
+| References & Sources    | ✅       | Numbered citations with URLs      |
 
 **Section Header Template:**
 
@@ -1378,16 +1394,17 @@ Each section ends with a numbered references section:
 
 **CRITICAL: Numbers must match across sections.** Before finalizing any section:
 
-| Section | Must Align With | Key Numbers to Match |
-|---------|-----------------|---------------------|
-| Revenue Model | Financial Projections | Revenue targets, growth rates |
-| Team & Costs | Financial Projections | Headcount, salary costs |
-| Team & Costs | Revenue Model | Revenue per employee metrics |
-| Fundraising | Financial Projections | Funding amounts, runway |
-| Fundraising | Team & Costs | Pre-money valuations based on ARR |
-| TAM/SAM/SOM | Revenue Model | SOM penetration = Revenue ÷ SAM |
+| Section       | Must Align With       | Key Numbers to Match              |
+| ------------- | --------------------- | --------------------------------- |
+| Revenue Model | Financial Projections | Revenue targets, growth rates     |
+| Team & Costs  | Financial Projections | Headcount, salary costs           |
+| Team & Costs  | Revenue Model         | Revenue per employee metrics      |
+| Fundraising   | Financial Projections | Funding amounts, runway           |
+| Fundraising   | Team & Costs          | Pre-money valuations based on ARR |
+| TAM/SAM/SOM   | Revenue Model         | SOM penetration = Revenue ÷ SAM   |
 
 **Alignment Checklist:**
+
 - [ ] Year 8 revenue in Fundraising matches Financial Projections
 - [ ] Total headcount costs match between Team and P&L
 - [ ] Funding amounts in Fundraising match Cash Flow financing
@@ -1399,6 +1416,7 @@ Each section ends with a numbered references section:
 The Fundraising Strategy section requires special attention:
 
 **Research Sources (Mandatory):**
+
 - Bessemer Venture Partners cloud metrics
 - Y Combinator benchmarks
 - CB Insights funding data
@@ -1407,18 +1425,20 @@ The Fundraising Strategy section requires special attention:
 
 **Safety Factors:**
 
-| Metric | Conservative | Moderate | Aggressive |
-|--------|-------------|----------|------------|
-| Cash Runway Buffer | 6 months | 3-4 months | 2 months |
-| Revenue Growth Haircut | 25% | 15% | 0% |
-| Dilution per Round | 20-25% | 15-20% | 10-15% |
+| Metric                 | Conservative | Moderate   | Aggressive |
+| ---------------------- | ------------ | ---------- | ---------- |
+| Cash Runway Buffer     | 6 months     | 3-4 months | 2 months   |
+| Revenue Growth Haircut | 25%          | 15%        | 0%         |
+| Dilution per Round     | 20-25%       | 15-20%     | 10-15%     |
 
 **Round Sizing Formula:**
+
 ```
 Round Size = (18-24mo Operating Costs) × 1.25 (safety buffer)
 ```
 
 **Milestone Alignment:**
+
 - Seed: MVP → Product-market fit
 - Series A: Product-market fit → Scalable GTM
 - Series B: Scalable GTM → Market leadership
@@ -1431,27 +1451,31 @@ Each project's `sections/` folder MUST have a README.md:
 # [Project Name] Business Plan Sections
 
 ## Overview
+
 Comprehensive business plan sections for [description].
 
 ## Section Index
 
-| # | Section | Status | Pages | Key Insight |
-|---|---------|--------|-------|-------------|
-| 01 | Market Drivers | ✅ Final | ~15 | $X policy investment driving adoption |
-| 02 | TAM/SAM/SOM | ✅ Final | ~12 | $XB TAM, $XM SAM, X% penetration |
-| ... | ... | ... | ... | ... |
+| #   | Section        | Status   | Pages | Key Insight                           |
+| --- | -------------- | -------- | ----- | ------------------------------------- |
+| 01  | Market Drivers | ✅ Final | ~15   | $X policy investment driving adoption |
+| 02  | TAM/SAM/SOM    | ✅ Final | ~12   | $XB TAM, $XM SAM, X% penetration      |
+| ... | ...            | ...      | ...   | ...                                   |
 
 ## Usage
 
 ### For Full Business Plan
+
 Compile sections 01-11 in order for complete narrative.
 
 ### For Pitch Deck
-Key sections: 01 (Why Now), 02 (Market), 04 (Competition), 
+
+Key sections: 01 (Why Now), 02 (Market), 04 (Competition),
 05 (Traction), 07 (Business Model), 09 (Fundraising)
 
 ### For Financial Model
-Primary inputs from: 02 (TAM/SAM), 07 (Revenue), 
+
+Primary inputs from: 02 (TAM/SAM), 07 (Revenue),
 08 (Costs), 09 (Funding)
 ```
 
@@ -1474,6 +1498,7 @@ Revenue target: $105.2M Year 8  # Becomes: Revenue target: .2M Year 8
 ```
 
 **Why This Matters:**
+
 - PowerShell double-quoted strings (`@" "@ `or `" "`) interpret `$` as variable references
 - Using `$105.2M` in a double-quoted string becomes `.2M` (treats `$105` as undefined variable)
 - Single-quoted strings (`@' '@` or `' '`) are literal - no variable interpretation
@@ -1482,19 +1507,19 @@ Revenue target: $105.2M Year 8  # Becomes: Revenue target: .2M Year 8
 
 When creating pitch decks from sections:
 
-| Pitch Deck Slide | Source Section(s) | Key Content |
-|-----------------|-------------------|-------------|
-| Title + Tagline | All | Company name, one-liner |
-| Problem | 01 Market Drivers | Pain points, urgency |
-| Solution | 03 Technology | Product capabilities |
-| Market | 02 TAM/SAM/SOM | Market size charts |
-| Product | 03 Technology | Screenshots, architecture |
-| Traction | 05 Customer Validation | Logos, metrics, testimonials |
-| Business Model | 07 Revenue Model | Revenue streams, pricing |
-| Competition | 04 Competitive Analysis | Positioning matrix |
-| Team | 08 Team & Costs | Founders, key hires |
-| Financials | 10 Financial Projections | Revenue chart, key metrics |
-| The Ask | 09 Fundraising | Round size, use of funds |
+| Pitch Deck Slide | Source Section(s)        | Key Content                  |
+| ---------------- | ------------------------ | ---------------------------- |
+| Title + Tagline  | All                      | Company name, one-liner      |
+| Problem          | 01 Market Drivers        | Pain points, urgency         |
+| Solution         | 03 Technology            | Product capabilities         |
+| Market           | 02 TAM/SAM/SOM           | Market size charts           |
+| Product          | 03 Technology            | Screenshots, architecture    |
+| Traction         | 05 Customer Validation   | Logos, metrics, testimonials |
+| Business Model   | 07 Revenue Model         | Revenue streams, pricing     |
+| Competition      | 04 Competitive Analysis  | Positioning matrix           |
+| Team             | 08 Team & Costs          | Founders, key hires          |
+| Financials       | 10 Financial Projections | Revenue chart, key metrics   |
+| The Ask          | 09 Fundraising           | Round size, use of funds     |
 
 ---
 

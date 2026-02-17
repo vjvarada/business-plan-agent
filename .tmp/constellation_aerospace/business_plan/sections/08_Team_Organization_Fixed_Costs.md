@@ -231,13 +231,13 @@ Founders will handle North American BD through regular travel:
 
 ## 7. Cross-Section Alignment
 
-| Metric                       | Previous Sections            | This Section                   | Aligned? |
-| ---------------------------- | ---------------------------- | ------------------------------ | -------- |
-| Y7 Revenue (Sec 07)          | $30.3M                       | $30.3M (for efficiency calcs)  | ✅       |
-| Pre-seed amount (Sec 09)     | $1.3M                        | $1.3M (fully allocated in 1.2) | ✅       |
-| Y0 CapEx allocation (Sec 03) | $1.0M                        | $1.0M (payload + bus)          | ✅       |
-| 3U Sat Bus source (Sec 03)   | Dhruva Aerospace OTS         | $200K Dhruva bus               | ✅       |
-| Y0 OpEx                      | $0.30M (Sec 10)              | $0.30M                         | ✅       |
+| Metric                       | Previous Sections    | This Section                   | Aligned? |
+| ---------------------------- | -------------------- | ------------------------------ | -------- |
+| Y7 Revenue (Sec 07)          | $30.3M               | $30.3M (for efficiency calcs)  | ✅       |
+| Pre-seed amount (Sec 09)     | $1.3M                | $1.3M (fully allocated in 1.2) | ✅       |
+| Y0 CapEx allocation (Sec 03) | $1.0M                | $1.0M (payload + bus)          | ✅       |
+| 3U Sat Bus source (Sec 03)   | Dhruva Aerospace OTS | $200K Dhruva bus               | ✅       |
+| Y0 OpEx                      | $0.30M (Sec 10)      | $0.30M                         | ✅       |
 
 > ✅ **Cascade complete (v3):** Sections 03 and 10 have been updated to reflect Y0 CapEx of $1.0M and OpEx of $0.30M. All downstream projections align.
 

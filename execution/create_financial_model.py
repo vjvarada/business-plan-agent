@@ -65,13 +65,13 @@ Output: 14-sheet Google Sheets model (Standard Template Structure)
 Usage:
     # RECOMMENDED: Copy from template (default, fast)
     python create_financial_model.py --company "MyStartup" --config config.json
-    
+
     # Explicit template copy
     python create_financial_model.py --company "MyStartup" --config config.json --from-template
-    
+
     # Build from scratch (slower, for debugging)
     python create_financial_model.py --company "MyStartup" --config config.json --build-from-scratch
-    
+
     # Use preset
     python create_financial_model.py --company "HumanoidRent" --humanoid-rent
 """
@@ -517,7 +517,9 @@ class FinancialModelBuilder:
         # LTV = ARPU × Lifetime × Gross Margin
         ltv_row = ["LTV", "$"]
         for i, col in enumerate(YEAR_COLS):
-            ltv_row.append(f"={col}{self.row_map['arpu']}*{col}{self.row_map['lifetime']}*{col}{row-1}")
+            ltv_row.append(
+                f"={col}{self.row_map['arpu']}*{col}{self.row_map['lifetime']}*{col}{row-1}"
+            )
         data.append(ltv_row)
         self.row_map["ltv"] = row
         row += 1
@@ -525,7 +527,9 @@ class FinancialModelBuilder:
         # LTV:CAC Ratio
         ltv_cac_row = ["LTV:CAC Ratio", "x"]
         for i, col in enumerate(YEAR_COLS):
-            ltv_cac_row.append(f"=IF({col}{self.row_map['cac']}>0,{col}{self.row_map['ltv']}/{col}{self.row_map['cac']},0)")
+            ltv_cac_row.append(
+                f"=IF({col}{self.row_map['cac']}>0,{col}{self.row_map['ltv']}/{col}{self.row_map['cac']},0)"
+            )
         data.append(ltv_cac_row)
         self.row_map["ltv_cac"] = row
         row += 1
@@ -533,7 +537,9 @@ class FinancialModelBuilder:
         # CAC Payback Period (months)
         payback_row = ["CAC Payback", "months"]
         for i, col in enumerate(YEAR_COLS):
-            payback_row.append(f"=IF(AND({col}{self.row_map['arpu']}>0,{col}{self.row_map['gross_margin']}>0),{col}{self.row_map['cac']}/({col}{self.row_map['arpu']}/12*{col}{self.row_map['gross_margin']}),0)")
+            payback_row.append(
+                f"=IF(AND({col}{self.row_map['arpu']}>0,{col}{self.row_map['gross_margin']}>0),{col}{self.row_map['cac']}/({col}{self.row_map['arpu']}/12*{col}{self.row_map['gross_margin']}),0)"
+            )
         data.append(payback_row)
         self.row_map["cac_payback"] = row
         row += 1
@@ -4370,15 +4376,39 @@ class FinancialModelBuilder:
         data = []
 
         # Header
-        data.append(["HEADCOUNT PLAN", "", "Year 0", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5"])
-        data.append(["Dynamic salary model with editable parameters", "", "", "", "", "", "", ""])
+        data.append(
+            [
+                "HEADCOUNT PLAN",
+                "",
+                "Year 0",
+                "Year 1",
+                "Year 2",
+                "Year 3",
+                "Year 4",
+                "Year 5",
+            ]
+        )
+        data.append(
+            [
+                "Dynamic salary model with editable parameters",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]
+        )
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # PARAMETERS Section
         data.append(["PARAMETERS", "", "", "", "", "", "", ""])
-        data.append(["Annual Salary Growth Rate", "", "15%", "", "", "", "", ""])  # Row 5
+        data.append(
+            ["Annual Salary Growth Rate", "", "15%", "", "", "", "", ""]
+        )  # Row 5
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         data.append(["Regional Salary Premiums", "", "Premium %", "", "", "", "", ""])
         data.append(["India (Base)", "", "0%", "", "", "", "", ""])
         data.append(["SE Asia", "", "25%", "", "", "", "", ""])
@@ -4386,9 +4416,11 @@ class FinancialModelBuilder:
         data.append(["Europe", "", "88%", "", "", "", "", ""])
         data.append(["Americas", "", "117%", "", "", "", "", ""])
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # BASE SALARY RATES Section
-        data.append(["BASE SALARY RATES ($/yr)", "", "Base Rate", "", "", "", "", ""])  # Row 14
+        data.append(
+            ["BASE SALARY RATES ($/yr)", "", "Base Rate", "", "", "", "", ""]
+        )  # Row 14
         data.append(["Founders / Leadership", "", "50000", "", "", "", "", ""])
         data.append(["Engineering Team", "", "18000", "", "", "", "", ""])
         data.append(["Sales & Marketing", "", "20000", "", "", "", "", ""])
@@ -4399,22 +4431,125 @@ class FinancialModelBuilder:
         data.append(["AI/Data Specialists", "", "25000", "", "", "", "", ""])
         data.append(["Regional Managers (Base)", "", "25000", "", "", "", "", ""])
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # SALARY RATES BY YEAR Section
-        data.append(["SALARY RATES BY YEAR", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])  # Row 25
-        data.append(["Founders / Leadership", "", "=$C$15*(1+$C$5)^0", "=$C$15*(1+$C$5)^1", "=$C$15*(1+$C$5)^2", "=$C$15*(1+$C$5)^3", "=$C$15*(1+$C$5)^4", "=$C$15*(1+$C$5)^5"])
-        data.append(["Engineering Team", "", "=$C$16*(1+$C$5)^0", "=$C$16*(1+$C$5)^1", "=$C$16*(1+$C$5)^2", "=$C$16*(1+$C$5)^3", "=$C$16*(1+$C$5)^4", "=$C$16*(1+$C$5)^5"])
-        data.append(["Sales & Marketing", "", "=$C$17*(1+$C$5)^0", "=$C$17*(1+$C$5)^1", "=$C$17*(1+$C$5)^2", "=$C$17*(1+$C$5)^3", "=$C$17*(1+$C$5)^4", "=$C$17*(1+$C$5)^5"])
-        data.append(["Customer Success", "", "=$C$18*(1+$C$5)^0", "=$C$18*(1+$C$5)^1", "=$C$18*(1+$C$5)^2", "=$C$18*(1+$C$5)^3", "=$C$18*(1+$C$5)^4", "=$C$18*(1+$C$5)^5"])
-        data.append(["Customer Support", "", "=$C$19*(1+$C$5)^0", "=$C$19*(1+$C$5)^1", "=$C$19*(1+$C$5)^2", "=$C$19*(1+$C$5)^3", "=$C$19*(1+$C$5)^4", "=$C$19*(1+$C$5)^5"])
-        data.append(["Support Manager", "", "=$C$20*(1+$C$5)^0", "=$C$20*(1+$C$5)^1", "=$C$20*(1+$C$5)^2", "=$C$20*(1+$C$5)^3", "=$C$20*(1+$C$5)^4", "=$C$20*(1+$C$5)^5"])
-        data.append(["Finance/HR/Admin", "", "=$C$21*(1+$C$5)^0", "=$C$21*(1+$C$5)^1", "=$C$21*(1+$C$5)^2", "=$C$21*(1+$C$5)^3", "=$C$21*(1+$C$5)^4", "=$C$21*(1+$C$5)^5"])
-        data.append(["AI/Data Specialists", "", "=$C$22*(1+$C$5)^0", "=$C$22*(1+$C$5)^1", "=$C$22*(1+$C$5)^2", "=$C$22*(1+$C$5)^3", "=$C$22*(1+$C$5)^4", "=$C$22*(1+$C$5)^5"])
-        data.append(["Regional Managers (Base)", "", "=$C$23*(1+$C$5)^0", "=$C$23*(1+$C$5)^1", "=$C$23*(1+$C$5)^2", "=$C$23*(1+$C$5)^3", "=$C$23*(1+$C$5)^4", "=$C$23*(1+$C$5)^5"])
+        data.append(
+            ["SALARY RATES BY YEAR", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"]
+        )  # Row 25
+        data.append(
+            [
+                "Founders / Leadership",
+                "",
+                "=$C$15*(1+$C$5)^0",
+                "=$C$15*(1+$C$5)^1",
+                "=$C$15*(1+$C$5)^2",
+                "=$C$15*(1+$C$5)^3",
+                "=$C$15*(1+$C$5)^4",
+                "=$C$15*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Engineering Team",
+                "",
+                "=$C$16*(1+$C$5)^0",
+                "=$C$16*(1+$C$5)^1",
+                "=$C$16*(1+$C$5)^2",
+                "=$C$16*(1+$C$5)^3",
+                "=$C$16*(1+$C$5)^4",
+                "=$C$16*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Sales & Marketing",
+                "",
+                "=$C$17*(1+$C$5)^0",
+                "=$C$17*(1+$C$5)^1",
+                "=$C$17*(1+$C$5)^2",
+                "=$C$17*(1+$C$5)^3",
+                "=$C$17*(1+$C$5)^4",
+                "=$C$17*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Customer Success",
+                "",
+                "=$C$18*(1+$C$5)^0",
+                "=$C$18*(1+$C$5)^1",
+                "=$C$18*(1+$C$5)^2",
+                "=$C$18*(1+$C$5)^3",
+                "=$C$18*(1+$C$5)^4",
+                "=$C$18*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Customer Support",
+                "",
+                "=$C$19*(1+$C$5)^0",
+                "=$C$19*(1+$C$5)^1",
+                "=$C$19*(1+$C$5)^2",
+                "=$C$19*(1+$C$5)^3",
+                "=$C$19*(1+$C$5)^4",
+                "=$C$19*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Support Manager",
+                "",
+                "=$C$20*(1+$C$5)^0",
+                "=$C$20*(1+$C$5)^1",
+                "=$C$20*(1+$C$5)^2",
+                "=$C$20*(1+$C$5)^3",
+                "=$C$20*(1+$C$5)^4",
+                "=$C$20*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Finance/HR/Admin",
+                "",
+                "=$C$21*(1+$C$5)^0",
+                "=$C$21*(1+$C$5)^1",
+                "=$C$21*(1+$C$5)^2",
+                "=$C$21*(1+$C$5)^3",
+                "=$C$21*(1+$C$5)^4",
+                "=$C$21*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "AI/Data Specialists",
+                "",
+                "=$C$22*(1+$C$5)^0",
+                "=$C$22*(1+$C$5)^1",
+                "=$C$22*(1+$C$5)^2",
+                "=$C$22*(1+$C$5)^3",
+                "=$C$22*(1+$C$5)^4",
+                "=$C$22*(1+$C$5)^5",
+            ]
+        )
+        data.append(
+            [
+                "Regional Managers (Base)",
+                "",
+                "=$C$23*(1+$C$5)^0",
+                "=$C$23*(1+$C$5)^1",
+                "=$C$23*(1+$C$5)^2",
+                "=$C$23*(1+$C$5)^3",
+                "=$C$23*(1+$C$5)^4",
+                "=$C$23*(1+$C$5)^5",
+            ]
+        )
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # HEADCOUNT BY ROLE Section
-        data.append(["HEADCOUNT BY ROLE", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])  # Row 36
+        data.append(
+            ["HEADCOUNT BY ROLE", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"]
+        )  # Row 36
         data.append(["Founders / Leadership", "", "2", "3", "3", "3", "3", "3"])
         data.append(["Engineering Team", "", "5", "10", "20", "30", "35", "40"])
         data.append(["Sales & Marketing", "", "2", "5", "15", "22", "30", "35"])
@@ -4424,90 +4559,419 @@ class FinancialModelBuilder:
         data.append(["Finance/HR/Admin", "", "1", "1", "2", "2", "3", "4"])
         data.append(["AI/Data Specialists", "", "2", "2", "2", "3", "4", "6"])
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # REGIONAL MANAGERS Section
-        data.append(["REGIONAL MANAGERS BY REGION", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])  # Row 46
+        data.append(
+            ["REGIONAL MANAGERS BY REGION", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"]
+        )  # Row 46
         data.append(["India", "", "1", "2", "4", "4", "4", "4"])
         data.append(["SE Asia", "", "0", "1", "3", "4", "4", "4"])
         data.append(["MENA", "", "0", "0", "2", "2", "3", "3"])
         data.append(["Europe", "", "0", "0", "0", "1", "2", "3"])
         data.append(["Americas", "", "0", "0", "0", "0", "1", "2"])
-        data.append(["Total Regional Managers", "", "=SUM(C47:C51)", "=SUM(D47:D51)", "=SUM(E47:E51)", "=SUM(F47:F51)", "=SUM(G47:G51)", "=SUM(H47:H51)"])
+        data.append(
+            [
+                "Total Regional Managers",
+                "",
+                "=SUM(C47:C51)",
+                "=SUM(D47:D51)",
+                "=SUM(E47:E51)",
+                "=SUM(F47:F51)",
+                "=SUM(G47:G51)",
+                "=SUM(H47:H51)",
+            ]
+        )
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # TOTAL HEADCOUNT
-        data.append(["TOTAL HEADCOUNT", "", "=SUM(C37:C44)+C52", "=SUM(D37:D44)+D52", "=SUM(E37:E44)+E52", "=SUM(F37:F44)+F52", "=SUM(G37:G44)+G52", "=SUM(H37:H44)+H52"])  # Row 54
+        data.append(
+            [
+                "TOTAL HEADCOUNT",
+                "",
+                "=SUM(C37:C44)+C52",
+                "=SUM(D37:D44)+D52",
+                "=SUM(E37:E44)+E52",
+                "=SUM(F37:F44)+F52",
+                "=SUM(G37:G44)+G52",
+                "=SUM(H37:H44)+H52",
+            ]
+        )  # Row 54
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # SALARY COSTS Section
         data.append(["SALARY COSTS", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])  # Row 56
-        data.append(["Founders / Leadership", "", "=C37*C26", "=D37*D26", "=E37*E26", "=F37*F26", "=G37*G26", "=H37*H26"])
-        data.append(["Engineering Team", "", "=C38*C27", "=D38*D27", "=E38*E27", "=F38*F27", "=G38*G27", "=H38*H27"])
-        data.append(["Sales & Marketing", "", "=C39*C28", "=D39*D28", "=E39*E28", "=F39*F28", "=G39*G28", "=H39*H28"])
-        data.append(["Customer Success", "", "=C40*C29", "=D40*D29", "=E40*E29", "=F40*F29", "=G40*G29", "=H40*H29"])
-        data.append(["Customer Support", "", "=C41*C30", "=D41*D30", "=E41*E30", "=F41*F30", "=G41*G30", "=H41*H30"])
-        data.append(["Support Manager", "", "=C42*C31", "=D42*D31", "=E42*E31", "=F42*F31", "=G42*G31", "=H42*H31"])
-        data.append(["Finance/HR/Admin", "", "=C43*C32", "=D43*D32", "=E43*E32", "=F43*F32", "=G43*G32", "=H43*H32"])
-        data.append(["AI/Data Specialists", "", "=C44*C33", "=D44*D33", "=E44*E33", "=F44*F33", "=G44*G33", "=H44*H33"])
+        data.append(
+            [
+                "Founders / Leadership",
+                "",
+                "=C37*C26",
+                "=D37*D26",
+                "=E37*E26",
+                "=F37*F26",
+                "=G37*G26",
+                "=H37*H26",
+            ]
+        )
+        data.append(
+            [
+                "Engineering Team",
+                "",
+                "=C38*C27",
+                "=D38*D27",
+                "=E38*E27",
+                "=F38*F27",
+                "=G38*G27",
+                "=H38*H27",
+            ]
+        )
+        data.append(
+            [
+                "Sales & Marketing",
+                "",
+                "=C39*C28",
+                "=D39*D28",
+                "=E39*E28",
+                "=F39*F28",
+                "=G39*G28",
+                "=H39*H28",
+            ]
+        )
+        data.append(
+            [
+                "Customer Success",
+                "",
+                "=C40*C29",
+                "=D40*D29",
+                "=E40*E29",
+                "=F40*F29",
+                "=G40*G29",
+                "=H40*H29",
+            ]
+        )
+        data.append(
+            [
+                "Customer Support",
+                "",
+                "=C41*C30",
+                "=D41*D30",
+                "=E41*E30",
+                "=F41*F30",
+                "=G41*G30",
+                "=H41*H30",
+            ]
+        )
+        data.append(
+            [
+                "Support Manager",
+                "",
+                "=C42*C31",
+                "=D42*D31",
+                "=E42*E31",
+                "=F42*F31",
+                "=G42*G31",
+                "=H42*H31",
+            ]
+        )
+        data.append(
+            [
+                "Finance/HR/Admin",
+                "",
+                "=C43*C32",
+                "=D43*D32",
+                "=E43*E32",
+                "=F43*F32",
+                "=G43*G32",
+                "=H43*H32",
+            ]
+        )
+        data.append(
+            [
+                "AI/Data Specialists",
+                "",
+                "=C44*C33",
+                "=D44*D33",
+                "=E44*E33",
+                "=F44*F33",
+                "=G44*G33",
+                "=H44*H33",
+            ]
+        )
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # Regional Manager Costs
         data.append(["Regional Manager Costs", "", "", "", "", "", "", ""])  # Row 66
-        data.append(["  India", "", "=C47*C34*(1+$C$8)", "=D47*D34*(1+$C$8)", "=E47*E34*(1+$C$8)", "=F47*F34*(1+$C$8)", "=G47*G34*(1+$C$8)", "=H47*H34*(1+$C$8)"])
-        data.append(["  SE Asia", "", "=C48*C34*(1+$C$9)", "=D48*D34*(1+$C$9)", "=E48*E34*(1+$C$9)", "=F48*F34*(1+$C$9)", "=G48*G34*(1+$C$9)", "=H48*H34*(1+$C$9)"])
-        data.append(["  MENA", "", "=C49*C34*(1+$C$10)", "=D49*D34*(1+$C$10)", "=E49*E34*(1+$C$10)", "=F49*F34*(1+$C$10)", "=G49*G34*(1+$C$10)", "=H49*H34*(1+$C$10)"])
-        data.append(["  Europe", "", "=C50*C34*(1+$C$11)", "=D50*D34*(1+$C$11)", "=E50*E34*(1+$C$11)", "=F50*F34*(1+$C$11)", "=G50*G34*(1+$C$11)", "=H50*H34*(1+$C$11)"])
-        data.append(["  Americas", "", "=C51*C34*(1+$C$12)", "=D51*D34*(1+$C$12)", "=E51*E34*(1+$C$12)", "=F51*F34*(1+$C$12)", "=G51*G34*(1+$C$12)", "=H51*H34*(1+$C$12)"])
-        data.append(["Total Regional Managers", "", "=SUM(C67:C71)", "=SUM(D67:D71)", "=SUM(E67:E71)", "=SUM(F67:F71)", "=SUM(G67:G71)", "=SUM(H67:H71)"])
+        data.append(
+            [
+                "  India",
+                "",
+                "=C47*C34*(1+$C$8)",
+                "=D47*D34*(1+$C$8)",
+                "=E47*E34*(1+$C$8)",
+                "=F47*F34*(1+$C$8)",
+                "=G47*G34*(1+$C$8)",
+                "=H47*H34*(1+$C$8)",
+            ]
+        )
+        data.append(
+            [
+                "  SE Asia",
+                "",
+                "=C48*C34*(1+$C$9)",
+                "=D48*D34*(1+$C$9)",
+                "=E48*E34*(1+$C$9)",
+                "=F48*F34*(1+$C$9)",
+                "=G48*G34*(1+$C$9)",
+                "=H48*H34*(1+$C$9)",
+            ]
+        )
+        data.append(
+            [
+                "  MENA",
+                "",
+                "=C49*C34*(1+$C$10)",
+                "=D49*D34*(1+$C$10)",
+                "=E49*E34*(1+$C$10)",
+                "=F49*F34*(1+$C$10)",
+                "=G49*G34*(1+$C$10)",
+                "=H49*H34*(1+$C$10)",
+            ]
+        )
+        data.append(
+            [
+                "  Europe",
+                "",
+                "=C50*C34*(1+$C$11)",
+                "=D50*D34*(1+$C$11)",
+                "=E50*E34*(1+$C$11)",
+                "=F50*F34*(1+$C$11)",
+                "=G50*G34*(1+$C$11)",
+                "=H50*H34*(1+$C$11)",
+            ]
+        )
+        data.append(
+            [
+                "  Americas",
+                "",
+                "=C51*C34*(1+$C$12)",
+                "=D51*D34*(1+$C$12)",
+                "=E51*E34*(1+$C$12)",
+                "=F51*F34*(1+$C$12)",
+                "=G51*G34*(1+$C$12)",
+                "=H51*H34*(1+$C$12)",
+            ]
+        )
+        data.append(
+            [
+                "Total Regional Managers",
+                "",
+                "=SUM(C67:C71)",
+                "=SUM(D67:D71)",
+                "=SUM(E67:E71)",
+                "=SUM(F67:F71)",
+                "=SUM(G67:G71)",
+                "=SUM(H67:H71)",
+            ]
+        )
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # TOTAL PEOPLE COST
-        data.append(["TOTAL PEOPLE COST", "", "=SUM(C57:C64)+C72", "=SUM(D57:D64)+D72", "=SUM(E57:E64)+E72", "=SUM(F57:F64)+F72", "=SUM(G57:G64)+G72", "=SUM(H57:H64)+H72"])  # Row 74
+        data.append(
+            [
+                "TOTAL PEOPLE COST",
+                "",
+                "=SUM(C57:C64)+C72",
+                "=SUM(D57:D64)+D72",
+                "=SUM(E57:E64)+E72",
+                "=SUM(F57:F64)+F72",
+                "=SUM(G57:G64)+G72",
+                "=SUM(H57:H64)+H72",
+            ]
+        )  # Row 74
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # EFFICIENCY METRICS
-        data.append(["EFFICIENCY METRICS", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])  # Row 76
-        data.append(["Revenue per Employee", "", "=IFERROR(Revenue!C10*1000/C54,0)", "=IFERROR(Revenue!D10*1000/D54,0)", "=IFERROR(Revenue!E10*1000/E54,0)", "=IFERROR(Revenue!F10*1000/F54,0)", "=IFERROR(Revenue!G10*1000/G54,0)", "=IFERROR(Revenue!H10*1000/H54,0)"])
-        data.append(["People Cost % of Revenue", "", "=IFERROR(C74/(Revenue!C10*1000),0)", "=IFERROR(D74/(Revenue!D10*1000),0)", "=IFERROR(E74/(Revenue!E10*1000),0)", "=IFERROR(F74/(Revenue!F10*1000),0)", "=IFERROR(G74/(Revenue!G10*1000),0)", "=IFERROR(H74/(Revenue!H10*1000),0)"])
+        data.append(
+            ["EFFICIENCY METRICS", "", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"]
+        )  # Row 76
+        data.append(
+            [
+                "Revenue per Employee",
+                "",
+                "=IFERROR(Revenue!C10*1000/C54,0)",
+                "=IFERROR(Revenue!D10*1000/D54,0)",
+                "=IFERROR(Revenue!E10*1000/E54,0)",
+                "=IFERROR(Revenue!F10*1000/F54,0)",
+                "=IFERROR(Revenue!G10*1000/G54,0)",
+                "=IFERROR(Revenue!H10*1000/H54,0)",
+            ]
+        )
+        data.append(
+            [
+                "People Cost % of Revenue",
+                "",
+                "=IFERROR(C74/(Revenue!C10*1000),0)",
+                "=IFERROR(D74/(Revenue!D10*1000),0)",
+                "=IFERROR(E74/(Revenue!E10*1000),0)",
+                "=IFERROR(F74/(Revenue!F10*1000),0)",
+                "=IFERROR(G74/(Revenue!G10*1000),0)",
+                "=IFERROR(H74/(Revenue!H10*1000),0)",
+            ]
+        )
         data.append(["", "", "", "", "", "", "", ""])
-        
+
         # NOTES
         data.append(["NOTES", "", "", "", "", "", "", ""])  # Row 80
-        data.append(["• Edit C5 to change annual salary growth rate", "", "", "", "", "", "", ""])
-        data.append(["• Edit C8:C12 to change regional salary premiums", "", "", "", "", "", "", ""])
-        data.append(["• Edit C15:C23 to change base salary rates", "", "", "", "", "", "", ""])
-        data.append(["• Edit C47:H51 to change regional manager distribution", "", "", "", "", "", "", ""])
-        
+        data.append(
+            [
+                "• Edit C5 to change annual salary growth rate",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]
+        )
+        data.append(
+            [
+                "• Edit C8:C12 to change regional salary premiums",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]
+        )
+        data.append(
+            ["• Edit C15:C23 to change base salary rates", "", "", "", "", "", "", ""]
+        )
+        data.append(
+            [
+                "• Edit C47:H51 to change regional manager distribution",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]
+        )
+
         # Write data to sheet
         sheet.update(values=data, range_name="A1", value_input_option="USER_ENTERED")
-        
+
         # Apply formatting
-        sheet.format("A1:H1", {"textFormat": {"bold": True, "fontSize": 14}, "backgroundColor": {"red": 0.2, "green": 0.3, "blue": 0.5}, "horizontalAlignment": "LEFT"})
-        sheet.format("A4", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A14", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A25", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A36", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A46", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A54", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.4, "green": 0.6, "blue": 0.8}})
-        sheet.format("A56", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A74", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.4, "green": 0.6, "blue": 0.8}})
-        sheet.format("A76", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A80", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.5, "green": 0.5, "blue": 0.5}})
-        
+        sheet.format(
+            "A1:H1",
+            {
+                "textFormat": {"bold": True, "fontSize": 14},
+                "backgroundColor": {"red": 0.2, "green": 0.3, "blue": 0.5},
+                "horizontalAlignment": "LEFT",
+            },
+        )
+        sheet.format(
+            "A4",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A14",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A25",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A36",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A46",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A54",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.4, "green": 0.6, "blue": 0.8},
+            },
+        )
+        sheet.format(
+            "A56",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A74",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.4, "green": 0.6, "blue": 0.8},
+            },
+        )
+        sheet.format(
+            "A76",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A80",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+            },
+        )
+
         # Format currency columns
-        sheet.format("C26:H34", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}})
-        sheet.format("C57:H72", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}})
-        sheet.format("C74:H74", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}})
-        sheet.format("C77:H77", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}})
-        
+        sheet.format(
+            "C26:H34", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}}
+        )
+        sheet.format(
+            "C57:H72", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}}
+        )
+        sheet.format(
+            "C74:H74", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}}
+        )
+        sheet.format(
+            "C77:H77", {"numberFormat": {"type": "CURRENCY", "pattern": "$#,##0"}}
+        )
+
         # Format percentages
         sheet.format("C5", {"numberFormat": {"type": "PERCENT", "pattern": "0.0%"}})
         sheet.format("C8:C12", {"numberFormat": {"type": "PERCENT", "pattern": "0%"}})
-        sheet.format("C78:H78", {"numberFormat": {"type": "PERCENT", "pattern": "0.0%"}})
-        
+        sheet.format(
+            "C78:H78", {"numberFormat": {"type": "PERCENT", "pattern": "0.0%"}}
+        )
+
         # Format integers
-        sheet.format("C37:H52", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"}})
-        sheet.format("C54:H54", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"}})
+        sheet.format(
+            "C37:H52", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"}}
+        )
+        sheet.format(
+            "C54:H54", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"}}
+        )
 
         print(f"    ✓ Headcount Plan sheet")
 
@@ -4518,13 +4982,23 @@ class FinancialModelBuilder:
         sheet = self.spreadsheet.add_worksheet("Charts Data", rows=60, cols=7)
 
         data = []
-        
+
         # CHART 1: Revenue Growth
         data.append(["CHART 1: REVENUE GROWTH", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["Revenue ($K)", "=Revenue!C10", "=Revenue!D10", "=Revenue!E10", "=Revenue!F10", "=Revenue!G10", "=Revenue!H10"])
+        data.append(
+            [
+                "Revenue ($K)",
+                "=Revenue!C10",
+                "=Revenue!D10",
+                "=Revenue!E10",
+                "=Revenue!F10",
+                "=Revenue!G10",
+                "=Revenue!H10",
+            ]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 2: Revenue Mix (Year 5)
         data.append(["CHART 2: REVENUE MIX (Year 5)", "", "", "", "", "", ""])
         data.append(["Stream", "Revenue ($K)", "", "", "", "", ""])
@@ -4534,70 +5008,224 @@ class FinancialModelBuilder:
             row_ref = 5 + i * 4  # Assuming 4 rows per stream in Revenue sheet
             data.append([stream_name, f"=Revenue!H{row_ref}", "", "", "", "", ""])
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 3: Profitability Trend
         data.append(["CHART 3: PROFITABILITY TREND", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["Gross Profit ($K)", "=P_L!C5", "=P_L!D5", "=P_L!E5", "=P_L!F5", "=P_L!G5", "=P_L!H5"])
-        data.append(["EBITDA ($K)", "=P_L!C7", "=P_L!D7", "=P_L!E7", "=P_L!F7", "=P_L!G7", "=P_L!H7"])
-        data.append(["Net Income ($K)", "=P_L!C13", "=P_L!D13", "=P_L!E13", "=P_L!F13", "=P_L!G13", "=P_L!H13"])
+        data.append(
+            [
+                "Gross Profit ($K)",
+                "=P_L!C5",
+                "=P_L!D5",
+                "=P_L!E5",
+                "=P_L!F5",
+                "=P_L!G5",
+                "=P_L!H5",
+            ]
+        )
+        data.append(
+            [
+                "EBITDA ($K)",
+                "=P_L!C7",
+                "=P_L!D7",
+                "=P_L!E7",
+                "=P_L!F7",
+                "=P_L!G7",
+                "=P_L!H7",
+            ]
+        )
+        data.append(
+            [
+                "Net Income ($K)",
+                "=P_L!C13",
+                "=P_L!D13",
+                "=P_L!E13",
+                "=P_L!F13",
+                "=P_L!G13",
+                "=P_L!H13",
+            ]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 4: Customer Growth
         data.append(["CHART 4: CUSTOMER GROWTH", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["Total Customers", "=Assumptions!C56", "=Assumptions!D56", "=Assumptions!E56", "=Assumptions!F56", "=Assumptions!G56", "=Assumptions!H56"])
-        data.append(["New Customers", "=Assumptions!C48", "=Assumptions!D48", "=Assumptions!E48", "=Assumptions!F48", "=Assumptions!G48", "=Assumptions!H48"])
+        data.append(
+            [
+                "Total Customers",
+                "=Assumptions!C56",
+                "=Assumptions!D56",
+                "=Assumptions!E56",
+                "=Assumptions!F56",
+                "=Assumptions!G56",
+                "=Assumptions!H56",
+            ]
+        )
+        data.append(
+            [
+                "New Customers",
+                "=Assumptions!C48",
+                "=Assumptions!D48",
+                "=Assumptions!E48",
+                "=Assumptions!F48",
+                "=Assumptions!G48",
+                "=Assumptions!H48",
+            ]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 5: Unit Economics
         data.append(["CHART 5: UNIT ECONOMICS", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["LTV:CAC Ratio", "=Assumptions!C64", "=Assumptions!D64", "=Assumptions!E64", "=Assumptions!F64", "=Assumptions!G64", "=Assumptions!H64"])
-        data.append(["CAC Payback (months)", "=Assumptions!C66", "=Assumptions!D66", "=Assumptions!E66", "=Assumptions!F66", "=Assumptions!G66", "=Assumptions!H66"])
+        data.append(
+            [
+                "LTV:CAC Ratio",
+                "=Assumptions!C64",
+                "=Assumptions!D64",
+                "=Assumptions!E64",
+                "=Assumptions!F64",
+                "=Assumptions!G64",
+                "=Assumptions!H64",
+            ]
+        )
+        data.append(
+            [
+                "CAC Payback (months)",
+                "=Assumptions!C66",
+                "=Assumptions!D66",
+                "=Assumptions!E66",
+                "=Assumptions!F66",
+                "=Assumptions!G66",
+                "=Assumptions!H66",
+            ]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 6: Cash Position
         data.append(["CHART 6: CASH POSITION", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["Cash Balance ($K)", "='Cash Flow'!C19", "='Cash Flow'!D19", "='Cash Flow'!E19", "='Cash Flow'!F19", "='Cash Flow'!G19", "='Cash Flow'!H19"])
+        data.append(
+            [
+                "Cash Balance ($K)",
+                "='Cash Flow'!C19",
+                "='Cash Flow'!D19",
+                "='Cash Flow'!E19",
+                "='Cash Flow'!F19",
+                "='Cash Flow'!G19",
+                "='Cash Flow'!H19",
+            ]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 7: Margin Trends
         data.append(["CHART 7: MARGIN TRENDS", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["Gross Margin %", "=P_L!C6", "=P_L!D6", "=P_L!E6", "=P_L!F6", "=P_L!G6", "=P_L!H6"])
-        data.append(["EBITDA Margin %", "=P_L!C8", "=P_L!D8", "=P_L!E8", "=P_L!F8", "=P_L!G8", "=P_L!H8"])
-        data.append(["Net Profit Margin %", "=P_L!C14", "=P_L!D14", "=P_L!E14", "=P_L!F14", "=P_L!G14", "=P_L!H14"])
+        data.append(
+            [
+                "Gross Margin %",
+                "=P_L!C6",
+                "=P_L!D6",
+                "=P_L!E6",
+                "=P_L!F6",
+                "=P_L!G6",
+                "=P_L!H6",
+            ]
+        )
+        data.append(
+            [
+                "EBITDA Margin %",
+                "=P_L!C8",
+                "=P_L!D8",
+                "=P_L!E8",
+                "=P_L!F8",
+                "=P_L!G8",
+                "=P_L!H8",
+            ]
+        )
+        data.append(
+            [
+                "Net Profit Margin %",
+                "=P_L!C14",
+                "=P_L!D14",
+                "=P_L!E14",
+                "=P_L!F14",
+                "=P_L!G14",
+                "=P_L!H14",
+            ]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 8: Cap Table
         data.append(["CHART 8: CAP TABLE (Post Series A)", "", "", "", "", "", ""])
         data.append(["Stakeholder", "Ownership %", "", "", "", "", ""])
         data.append(["Founders", "='Funding Cap Table'!C41", "", "", "", "", ""])
         data.append(["Seed Investors", "='Funding Cap Table'!C42", "", "", "", "", ""])
-        data.append(["Series A Investors", "='Funding Cap Table'!C43", "", "", "", "", ""])
+        data.append(
+            ["Series A Investors", "='Funding Cap Table'!C43", "", "", "", "", ""]
+        )
         data.append(["", "", "", "", "", "", ""])
-        
+
         # CHART 9: Funding Timeline
         data.append(["CHART 9: FUNDING TIMELINE", "", "", "", "", "", ""])
         data.append(["Year", "Y0", "Y1", "Y2", "Y3", "Y4", "Y5"])
-        data.append(["Equity Raised ($K)", "=Assumptions!C10", "=Assumptions!D10", "=Assumptions!E10", "=Assumptions!F10", "=Assumptions!G10", "=Assumptions!H10"])
-        data.append(["Cumulative Equity ($K)", "=C48", "=C48+D48", "=C48+D48+E48", "=C48+D48+E48+F48", "=C48+D48+E48+F48+G48", "=C48+D48+E48+F48+G48+H48"])
-        
+        data.append(
+            [
+                "Equity Raised ($K)",
+                "=Assumptions!C10",
+                "=Assumptions!D10",
+                "=Assumptions!E10",
+                "=Assumptions!F10",
+                "=Assumptions!G10",
+                "=Assumptions!H10",
+            ]
+        )
+        data.append(
+            [
+                "Cumulative Equity ($K)",
+                "=C48",
+                "=C48+D48",
+                "=C48+D48+E48",
+                "=C48+D48+E48+F48",
+                "=C48+D48+E48+F48+G48",
+                "=C48+D48+E48+F48+G48+H48",
+            ]
+        )
+
         # Write data to sheet
         sheet.update(values=data, range_name="A1", value_input_option="USER_ENTERED")
-        
+
         # Apply formatting
-        sheet.format("A1", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        sheet.format("A5", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
+        sheet.format(
+            "A1",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+        sheet.format(
+            "A5",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
         chart3_row = 7 + len(self.config["revenue_streams"]) + 1
-        sheet.format(f"A{chart3_row}", {"textFormat": {"bold": True}, "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7}})
-        
+        sheet.format(
+            f"A{chart3_row}",
+            {
+                "textFormat": {"bold": True},
+                "backgroundColor": {"red": 0.3, "green": 0.5, "blue": 0.7},
+            },
+        )
+
         # Format numbers
-        sheet.format("B3:G3", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.0"}})
-        sheet.format("B7:B20", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.0"}})
-        
+        sheet.format(
+            "B3:G3", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.0"}}
+        )
+        sheet.format(
+            "B7:B20", {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.0"}}
+        )
+
         print(f"    ✓ Charts Data sheet")
 
 
@@ -4618,70 +5246,77 @@ def create_from_template(
         Dict with spreadsheet info
     """
     TEMPLATE_SPREADSHEET_ID = "1-Ss62JDYgrD9W3vwAcmvdikdmoy-Ud--8wpBFRzkaXY"
-    
+
     creds = get_credentials()
     client = gspread.authorize(creds)
-    
+
     # Use preset if specified
     if use_humanoid_rent or config is None:
         config = HUMANOID_RENT_CONFIG
         print("Using HumanoidRent preset configuration")
-    
+
     # Check if config is compatible with template (max 6 revenue streams)
     streams = config.get("revenue_streams", []) if config else []
     if len(streams) > 6:
-        print(f"\n⚠ Config has {len(streams)} revenue streams, but template supports max 6")
+        print(
+            f"\n⚠ Config has {len(streams)} revenue streams, but template supports max 6"
+        )
         print("Falling back to build-from-scratch method for full customization...")
-        return create_financial_model_v2(company_name, config, use_humanoid_rent, folder_id)
-    
+        return create_financial_model_v2(
+            company_name, config, use_humanoid_rent, folder_id
+        )
+
     print(f"\nCopying template spreadsheet...")
     print(f"Template ID: {TEMPLATE_SPREADSHEET_ID}")
-    
+
     # Copy the template spreadsheet
     try:
         from googleapiclient.discovery import build
+
         drive_service = build("drive", "v3", credentials=creds)
-        
+
         title = f"{company_name} - Financial Model"
-        file_metadata = {
-            'name': title,
-            'parents': [folder_id] if folder_id else []
-        }
-        
-        copied_file = drive_service.files().copy(
-            fileId=TEMPLATE_SPREADSHEET_ID,
-            body=file_metadata
-        ).execute()
-        
-        spreadsheet_id = copied_file['id']
+        file_metadata = {"name": title, "parents": [folder_id] if folder_id else []}
+
+        copied_file = (
+            drive_service.files()
+            .copy(fileId=TEMPLATE_SPREADSHEET_ID, body=file_metadata)
+            .execute()
+        )
+
+        spreadsheet_id = copied_file["id"]
         spreadsheet = client.open_by_key(spreadsheet_id)
-        
+
         print(f"✓ Template copied: {title}")
         print(f"  ID: {spreadsheet_id}")
-        
+
         # Now update with new config values
         if config:
             print("\nUpdating template with new values...")
             _update_template_values(spreadsheet, config)
-        
+
         url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}/edit"
-        
+
         print(f"\n✅ Financial model created from template!")
         print(f"URL: {url}")
-        
+
         return {
             "spreadsheet_id": spreadsheet_id,
             "title": title,
             "url": url,
             "method": "template_copy",
             "template_id": TEMPLATE_SPREADSHEET_ID,
-            "revenue_streams": [s["name"] for s in config.get("revenue_streams", [])] if config else []
+            "revenue_streams": (
+                [s["name"] for s in config.get("revenue_streams", [])] if config else []
+            ),
         }
-        
+
     except Exception as e:
         print(f"❌ Error copying template: {e}")
         print("Falling back to building from scratch...")
-        return create_financial_model_v2(company_name, config, use_humanoid_rent, folder_id)
+        return create_financial_model_v2(
+            company_name, config, use_humanoid_rent, folder_id
+        )
 
 
 def _update_template_values(spreadsheet, config):
@@ -4691,7 +5326,7 @@ def _update_template_values(spreadsheet, config):
     """
     try:
         assumptions = spreadsheet.worksheet("Assumptions")
-        
+
         # ====================
         # 1. GENERAL PARAMETERS (Rows 4-12)
         # ====================
@@ -4699,102 +5334,132 @@ def _update_template_values(spreadsheet, config):
         if general:
             print("  Updating general parameters...")
             updates = []
-            
+
             # Row 4: Tax Rate
             if "tax_rate" in general:
                 updates.append(("C4", general["tax_rate"]))
-            
+
             # Row 5: Capex
             if "capex" in general:
                 updates.append(("C5", general["capex"]))
-            
+
             # Row 6: Depreciation Years
             if "depreciation_years" in general:
                 updates.append(("C6", general["depreciation_years"]))
-            
+
             # Row 7: Debtor Days
             if "debtor_days" in general:
                 updates.append(("C7", general["debtor_days"]))
-            
+
             # Row 8: Creditor Days
             if "creditor_days" in general:
                 updates.append(("C8", general["creditor_days"]))
-            
+
             # Row 9: Interest Rate
             if "interest_rate" in general:
                 updates.append(("C9", general["interest_rate"]))
-            
+
             # Row 10-11: Funding (Equity & Debt)
             if "equity_infusion" in general:
                 # Year 0 equity
                 updates.append(("C10", general["equity_infusion"].get("year_0", 0)))
-            
+
             if "debt_drawdown" in general:
                 updates.append(("C11", general["debt_drawdown"].get("year_0", 0)))
-            
+
             # Row 12: Cost Inflation Rate
             if "cost_inflation" in general:
                 updates.append(("C12", general["cost_inflation"]))
-            
+
             # Apply all general parameter updates
             for cell, value in updates:
                 assumptions.update(cell, [[value]], value_input_option="USER_ENTERED")
                 rate_limit_delay(0.5)
-            
+
             print(f"    ✓ Updated {len(updates)} general parameters")
-        
+
         # ====================
         # 2. REVENUE STREAMS (Rows 15-38, supports up to 6 streams)
         # ====================
         streams = config.get("revenue_streams", [])
         if streams:
             print(f"  Updating {len(streams)} revenue streams...")
-            
+
             # Template rows start at 15 (after header at row 14)
             # Each stream takes 4 rows: Price, Volume, Growth, COGS%
             base_row = 15
-            
+
             for i, stream in enumerate(streams[:6]):  # Template supports max 6 streams
                 row_offset = i * 4
                 name = stream.get("name", f"Stream {i+1}")
-                
+
                 # Update stream name (Column A)
                 name_cell = f"A{base_row + row_offset}"
-                assumptions.update(name_cell, [[name + ": Price"]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    name_cell, [[name + ": Price"]], value_input_option="USER_ENTERED"
+                )
                 rate_limit_delay(0.3)
-                
+
                 # Update Price (Row 1 of stream)
                 price_row = base_row + row_offset
                 if "price" in stream:
-                    assumptions.update(f"C{price_row}", [[stream["price"]]], value_input_option="USER_ENTERED")
+                    assumptions.update(
+                        f"C{price_row}",
+                        [[stream["price"]]],
+                        value_input_option="USER_ENTERED",
+                    )
                     rate_limit_delay(0.3)
-                
+
                 # Update Volume (Row 2 of stream)
                 volume_row = price_row + 1
-                assumptions.update(f"A{volume_row}", [[name + ": Volume"]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    f"A{volume_row}",
+                    [[name + ": Volume"]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
                 if "volume" in stream:
-                    assumptions.update(f"C{volume_row}", [[stream["volume"]]], value_input_option="USER_ENTERED")
+                    assumptions.update(
+                        f"C{volume_row}",
+                        [[stream["volume"]]],
+                        value_input_option="USER_ENTERED",
+                    )
                     rate_limit_delay(0.3)
-                
+
                 # Update Growth (Row 3 of stream)
                 growth_row = volume_row + 1
-                assumptions.update(f"A{growth_row}", [[name + ": Growth"]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    f"A{growth_row}",
+                    [[name + ": Growth"]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
                 if "growth" in stream:
-                    assumptions.update(f"C{growth_row}", [[stream["growth"]]], value_input_option="USER_ENTERED")
+                    assumptions.update(
+                        f"C{growth_row}",
+                        [[stream["growth"]]],
+                        value_input_option="USER_ENTERED",
+                    )
                     rate_limit_delay(0.3)
-                
+
                 # Update COGS % (Row 4 of stream)
                 cogs_row = growth_row + 1
-                assumptions.update(f"A{cogs_row}", [[name + ": COGS %"]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    f"A{cogs_row}",
+                    [[name + ": COGS %"]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
                 if "cogs_percent" in stream:
-                    assumptions.update(f"C{cogs_row}", [[stream["cogs_percent"]]], value_input_option="USER_ENTERED")
+                    assumptions.update(
+                        f"C{cogs_row}",
+                        [[stream["cogs_percent"]]],
+                        value_input_option="USER_ENTERED",
+                    )
                     rate_limit_delay(0.3)
-                
+
                 print(f"    ✓ Updated stream {i+1}: {name}")
-            
+
             # If fewer than 6 streams, clear the unused ones
             if len(streams) < 6:
                 print(f"  Clearing unused revenue streams ({len(streams)+1}-6)...")
@@ -4803,81 +5468,125 @@ def _update_template_values(spreadsheet, config):
                     # Clear the stream name and set values to 0
                     for row in range(4):
                         cell_row = base_row + row_offset + row
-                        assumptions.update(f"A{cell_row}", [[f"(Unused Stream {i+1})"]], value_input_option="USER_ENTERED")
-                        assumptions.update(f"C{cell_row}", [[0]], value_input_option="USER_ENTERED")
+                        assumptions.update(
+                            f"A{cell_row}",
+                            [[f"(Unused Stream {i+1})"]],
+                            value_input_option="USER_ENTERED",
+                        )
+                        assumptions.update(
+                            f"C{cell_row}", [[0]], value_input_option="USER_ENTERED"
+                        )
                         rate_limit_delay(0.3)
-        
+
         # ====================
         # 3. FIXED COSTS (Rows 41-50, supports up to 10 categories)
         # ====================
         fixed_costs = config.get("fixed_costs", [])
         if fixed_costs:
             print(f"  Updating {len(fixed_costs)} fixed cost categories...")
-            
+
             base_row = 41
             for i, cost in enumerate(fixed_costs[:10]):  # Template supports max 10
                 cost_name = cost.get("name", f"Fixed Cost {i+1}")
                 cost_value = cost.get("annual_cost", 0)
-                
+
                 # Update cost name (Column A) and value (Column C)
-                assumptions.update(f"A{base_row + i}", [[cost_name]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    f"A{base_row + i}", [[cost_name]], value_input_option="USER_ENTERED"
+                )
                 rate_limit_delay(0.3)
-                assumptions.update(f"C{base_row + i}", [[cost_value]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    f"C{base_row + i}",
+                    [[cost_value]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             # Clear unused cost categories
             if len(fixed_costs) < 10:
                 for i in range(len(fixed_costs), 10):
-                    assumptions.update(f"A{base_row + i}", [[f"(Unused Cost {i+1})"]], value_input_option="USER_ENTERED")
-                    assumptions.update(f"C{base_row + i}", [[0]], value_input_option="USER_ENTERED")
+                    assumptions.update(
+                        f"A{base_row + i}",
+                        [[f"(Unused Cost {i+1})"]],
+                        value_input_option="USER_ENTERED",
+                    )
+                    assumptions.update(
+                        f"C{base_row + i}", [[0]], value_input_option="USER_ENTERED"
+                    )
                     rate_limit_delay(0.3)
-            
+
             print(f"    ✓ Updated {len(fixed_costs)} fixed costs")
-        
+
         # ====================
         # 4. CUSTOMER ACQUISITION (Rows 48-56)
         # ====================
         cac_params = config.get("customer_acquisition", {})
         if cac_params:
             print("  Updating customer acquisition parameters...")
-            
+
             # Row 48: CAC
             if "cac" in cac_params:
-                assumptions.update("C48", [[cac_params["cac"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C48", [[cac_params["cac"]]], value_input_option="USER_ENTERED"
+                )
                 rate_limit_delay(0.3)
-            
+
             # Row 49: New Customers Year 0
             if "new_customers_y0" in cac_params:
-                assumptions.update("C49", [[cac_params["new_customers_y0"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C49",
+                    [[cac_params["new_customers_y0"]]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             # Row 50: New Customer Growth
             if "new_customer_growth" in cac_params:
-                assumptions.update("C50", [[cac_params["new_customer_growth"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C50",
+                    [[cac_params["new_customer_growth"]]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             # Row 51: Churned Customers (formula or value)
             if "churned_customers" in cac_params:
-                assumptions.update("C51", [[cac_params["churned_customers"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C51",
+                    [[cac_params["churned_customers"]]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             # Row 53: Churn Rate
             if "churn_rate" in cac_params:
-                assumptions.update("C53", [[cac_params["churn_rate"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C53",
+                    [[cac_params["churn_rate"]]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             # Row 54: Customer Growth Rate
             if "customer_growth" in cac_params:
-                assumptions.update("C54", [[cac_params["customer_growth"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C54",
+                    [[cac_params["customer_growth"]]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             # Row 55: Customer Lifetime
             if "customer_lifetime" in cac_params:
-                assumptions.update("C55", [[cac_params["customer_lifetime"]]], value_input_option="USER_ENTERED")
+                assumptions.update(
+                    "C55",
+                    [[cac_params["customer_lifetime"]]],
+                    value_input_option="USER_ENTERED",
+                )
                 rate_limit_delay(0.3)
-            
+
             print("    ✓ Updated customer acquisition parameters")
-        
+
         # ====================
         # 5. UPDATE SOURCES & REFERENCES (Optional)
         # ====================
@@ -4886,31 +5595,42 @@ def _update_template_values(spreadsheet, config):
             try:
                 sources_sheet = spreadsheet.worksheet("Sources & References")
                 print("  Updating Sources & References with new market data...")
-                
+
                 # Update TAM/SAM/SOM if provided
                 if "tam" in sources_data:
-                    sources_sheet.update("B7", [[sources_data["tam"]]], value_input_option="USER_ENTERED")
+                    sources_sheet.update(
+                        "B7", [[sources_data["tam"]]], value_input_option="USER_ENTERED"
+                    )
                     rate_limit_delay(0.5)
-                
+
                 if "sam" in sources_data:
-                    sources_sheet.update("B41", [[sources_data["sam"]]], value_input_option="USER_ENTERED")
+                    sources_sheet.update(
+                        "B41",
+                        [[sources_data["sam"]]],
+                        value_input_option="USER_ENTERED",
+                    )
                     rate_limit_delay(0.5)
-                
+
                 if "som" in sources_data:
-                    sources_sheet.update("B51", [[sources_data["som"]]], value_input_option="USER_ENTERED")
+                    sources_sheet.update(
+                        "B51",
+                        [[sources_data["som"]]],
+                        value_input_option="USER_ENTERED",
+                    )
                     rate_limit_delay(0.5)
-                
+
                 print("    ✓ Updated market sizing data")
             except Exception as e:
                 print(f"    ⚠ Could not update Sources sheet: {e}")
-        
+
         print("  ✅ Template values comprehensively updated")
         print(f"     - Business model adapted to your config")
         print(f"     - All formulas preserved and auto-calculating")
-        
+
     except Exception as e:
         print(f"  ⚠ Warning: Could not update all template values: {e}")
         import traceback
+
         traceback.print_exc()
 
 
@@ -4919,8 +5639,8 @@ def create_financial_model_v2(
 ):
     """
     Create a new financial model from scratch (programmatic build).
-    
-    NOTE: For faster creation with guaranteed template fidelity, 
+
+    NOTE: For faster creation with guaranteed template fidelity,
     use create_from_template() instead.
 
     Args:
@@ -5012,7 +5732,7 @@ Examples:
   # Use preset configuration
   python create_financial_model.py --company "HumanoidRent" --humanoid-rent --from-template
         """,
-        formatter_class=argparse.RawDescriptionHelpFormatter
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--company", required=True, help="Company name")
     parser.add_argument("--config", help="Path to JSON config file")
@@ -5022,14 +5742,14 @@ Examples:
     parser.add_argument("--folder-id", help="Google Drive folder ID")
     parser.add_argument("--output", help="Output JSON file path")
     parser.add_argument(
-        "--from-template", 
-        action="store_true", 
-        help="Copy from template (RECOMMENDED - much faster, guaranteed fidelity)"
+        "--from-template",
+        action="store_true",
+        help="Copy from template (RECOMMENDED - much faster, guaranteed fidelity)",
     )
     parser.add_argument(
         "--build-from-scratch",
         action="store_true",
-        help="Build programmatically from scratch (slower, for debugging only)"
+        help="Build programmatically from scratch (slower, for debugging only)",
     )
 
     args = parser.parse_args()
@@ -5054,7 +5774,7 @@ Examples:
             if not args.from_template:
                 print("💡 Using template copy method (default, recommended)")
                 print("   Use --build-from-scratch to build programmatically instead\n")
-            
+
             result = create_from_template(
                 company_name=args.company,
                 config=config,
@@ -5072,30 +5792,32 @@ Examples:
         # ========================================
         # AUTO-VALIDATION (Post-Creation Quality Check)
         # ========================================
-        print("\n" + "="*60)
+        print("\n" + "=" * 60)
         print("🔍 RUNNING POST-CREATION VALIDATION")
-        print("="*60)
-        
+        print("=" * 60)
+
         sheet_id = result.get("sheet_id")
         if sheet_id:
             # Run template verification if copied from template
             if not args.build_from_scratch:
                 print("\n1. Template Fidelity Check...")
-                verify_cmd = f'python execution/verify_template_copy.py --sheet-id "{sheet_id}"'
+                verify_cmd = (
+                    f'python execution/verify_template_copy.py --sheet-id "{sheet_id}"'
+                )
                 verify_result = os.system(verify_cmd)
-                
+
                 if verify_result == 0:
                     print("   ✅ Template structure verified")
                 elif verify_result == 256:  # Exit code 1 (warnings)
                     print("   ⚠️  Template verification has warnings (review above)")
                 else:
                     print("   ❌ Template verification failed")
-            
+
             # Run comprehensive audit
             print("\n2. Financial Model Audit...")
             audit_cmd = f'python execution/audit_financial_model.py --sheet-id "{sheet_id}" --mode comprehensive'
             audit_result = os.system(audit_cmd)
-            
+
             if audit_result == 0:
                 print("   ✅ Model audit passed")
             else:
@@ -5103,17 +5825,19 @@ Examples:
 
             # Run sheet integrity verification
             print("\n3. Sheet Integrity Verification...")
-            integrity_cmd = f'python execution/verify_sheet_integrity.py --sheet-id "{sheet_id}"'
+            integrity_cmd = (
+                f'python execution/verify_sheet_integrity.py --sheet-id "{sheet_id}"'
+            )
             integrity_result = os.system(integrity_cmd)
 
             if integrity_result == 0:
                 print("   ✅ Sheet integrity verification passed")
             else:
                 print("   ⚠️  Sheet integrity verification found issues (review above)")
-            
-            print("\n" + "="*60)
+
+            print("\n" + "=" * 60)
             print("📊 MODEL CREATED AND VALIDATED")
-            print("="*60)
+            print("=" * 60)
             print(f"Sheet URL: {result.get('url')}")
             print("Review validation results above before using the model.")
         else:
