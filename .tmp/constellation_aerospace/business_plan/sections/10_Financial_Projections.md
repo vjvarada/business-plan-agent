@@ -8,9 +8,9 @@
 
 This section consolidates the 8-year (Y0–Y7 / 2026–2033) financial projections for Constellation Aerospace, synthesizing revenue (Section 07), cost structure (Section 08), and fundraising (Section 09) into a unified P&L, cash flow statement, and balance sheet summary. All projections use USD.
 
-**Headline numbers:** Revenue grows from **$0.4M (Y0) to $30.3M (Y7)**, with EBITDA turning positive in **Y3 ($1.4M)** and reaching **$15.7M by Y7 (52% margin)**. Net income turns positive in **Y4 ($1.5M)** after depreciation on ~$19.5M cumulative satellite CapEx. Cash flow turns positive on an annual basis in approximately **Y4–Y5** (Y4 is nearly cash-neutral at −$0.08M net; Y5 is clearly positive at $3.9M net), with cumulative cash remaining **positive throughout** the projection period.
+**Headline numbers:** Revenue grows from **$0.4M (Y0) to $30.3M (Y7)**, with EBITDA turning positive in **Y2–Y3** and reaching **$16.2M by Y7 (53% margin)**. Net income turns positive in **Y4 ($1.7M)** after depreciation on cumulative satellite CapEx. Cash flow turns positive on an annual basis in **Y4** (net +$0.17M; Y5 clearly positive at $4.0M net), with cumulative cash remaining **positive throughout** the projection period.
 
-The 3U CubeSat architecture is the key capital efficiency enabler: total constellation CapEx of **~$19.5M** (vs ~$41M for a 6U–16U fleet) means the $16.3M equity raise fully funds operations through profitability. Y0 is a focused build year — $1.0M goes to the Cassegrain telescope payload + Dhruva 3U bus, with a lean 15-person team costing only $0.21M. Combined with India-based OpEx of only **$6.1M at Y7** (supporting $30.3M revenue at a 20% OpEx-to-revenue ratio), the company achieves a rare combination: **space-grade capability with software-company capital efficiency**.
+The 3U CubeSat architecture is the key capital efficiency enabler: satellite-specific CapEx of **~$9.6M** (mfg + launch) vs ~$31.6M for a 6U–16U fleet. Y0 is a focused build year — $1.0M goes to the Cassegrain telescope payload + Dhruva 3U bus, with a lean 14-person team (8 FTE + 6 interns) costing only $0.17M. Combined with India-based OpEx of only **$5.6M at Y7** (supporting $30.3M revenue at a 19% OpEx-to-revenue ratio), the company achieves a rare combination: **space-grade capability with software-company capital efficiency**.
 
 ---
 
@@ -25,32 +25,32 @@ The 3U CubeSat architecture is the key capital efficiency enabler: total constel
 | **Gross Profit** | **0.18**   | **0.53**   | **1.80**   | **4.16**   | **7.68**   | **11.81**  | **15.84**  | **21.82**  |
 | _Gross Margin_   | _45%_      | _48%_      | _60%_      | _65%_      | _68%_      | _72%_      | _72%_      | _72%_      |
 |                  |            |            |            |            |            |            |            |            |
-| Headcount Cost   | (0.21)     | (0.45)     | (0.82)     | (1.28)     | (1.81)     | (2.33)     | (2.92)     | (3.60)     |
-| Fixed Costs      | (0.09)     | (0.56)     | (1.05)     | (1.46)     | (1.76)     | (2.05)     | (2.29)     | (2.53)     |
-| **Total OpEx**   | **(0.30)** | **(1.01)** | **(1.87)** | **(2.74)** | **(3.57)** | **(4.38)** | **(5.21)** | **(6.13)** |
+| Headcount Cost   | (0.17)     | (0.39)     | (0.69)     | (1.09)     | (1.54)     | (1.98)     | (2.49)     | (3.06)     |
+| Fixed Costs      | (0.09)     | (0.57)     | (1.07)     | (1.48)     | (1.78)     | (2.08)     | (2.32)     | (2.56)     |
+| **Total OpEx**   | **(0.26)** | **(0.96)** | **(1.76)** | **(2.57)** | **(3.32)** | **(4.06)** | **(4.81)** | **(5.62)** |
 |                  |            |            |            |            |            |            |            |            |
-| **EBITDA**       | **(0.12)** | **(0.48)** | **(0.07)** | **1.42**   | **4.11**   | **7.43**   | **10.63**  | **15.69**  |
-| _EBITDA Margin_  | _(30%)_    | _(44%)_    | _(2%)_     | _22%_      | _36%_      | _45%_      | _48%_      | _52%_      |
+| **EBITDA**       | **(0.08)** | **(0.43)** | **0.04**   | **1.59**   | **4.36**   | **7.75**   | **11.03**  | **16.20**  |
+| _EBITDA Margin_  | _(20%)_    | _(39%)_    | _1%_       | _25%_      | _39%_      | _47%_      | _50%_      | _53%_      |
 |                  |            |            |            |            |            |            |            |            |
 | D&A              | (0.20)     | (0.57)     | (1.17)     | (1.87)     | (2.65)     | (2.95)     | (2.98)     | (2.72)     |
-| **EBIT**         | **(0.32)** | **(1.05)** | **(1.24)** | **(0.45)** | **1.46**   | **4.48**   | **7.65**   | **12.97**  |
-| Tax (25%)        | ---        | ---        | ---        | ---        | ---        | (0.72)     | (1.91)     | (3.24)     |
-| **Net Income**   | **(0.32)** | **(1.05)** | **(1.24)** | **(0.45)** | **1.46**   | **3.76**   | **5.74**   | **9.73**   |
-| _Net Margin_     | _N/A_      | _N/A_      | _N/A_      | _N/A_      | _13%_      | _23%_      | _26%_      | _32%_      |
+| **EBIT**         | **(0.28)** | **(1.00)** | **(1.13)** | **(0.28)** | **1.71**   | **4.80**   | **8.05**   | **13.48**  |
+| Tax (25%)        | ---        | ---        | ---        | ---        | ---        | (0.96)     | (2.01)     | (3.37)     |
+| **Net Income**   | **(0.28)** | **(1.00)** | **(1.13)** | **(0.28)** | **1.71**   | **3.84**   | **6.04**   | **10.11**  |
+| _Net Margin_     | _N/A_      | _N/A_      | _N/A_      | _N/A_      | _15%_      | _23%_      | _27%_      | _33%_      |
 
-> **Tax note:** Accumulated net operating losses (NOL) of $3.06M through Y3 carry forward. Y4 EBIT ($1.46M) is fully offset by NOL (remaining NOL = $1.60M). Y5 taxable income = $4.48M - $1.60M remaining NOL = $2.88M x 25% = $0.72M tax. Y6+ fully taxable.
+> **Tax note:** Accumulated net operating losses (NOL) of $2.69M through Y3 carry forward. Y4 EBIT ($1.71M) is fully offset by NOL (remaining NOL = $0.98M). Y5 taxable income = $4.80M - $0.98M remaining NOL = $3.82M × 25% = $0.96M tax. Y6+ fully taxable.
 
 ### 1.2 Profitability Milestones
 
-| Milestone           | Year | Value  | Significance                      |
-| ------------------- | ---- | ------ | --------------------------------- |
-| EBITDA Positive     | Y3   | $1.42M | Operating model works             |
-| EBITDA >30% Margin  | Y4   | 36%    | Platform economics emerging       |
-| EBIT Positive       | Y4   | $1.46M | Profitable including depreciation |
-| Net Income Positive | Y4   | $1.46M | Fully profitable (NOL offset)     |
-| First Tax Payment   | Y5   | $0.72M | NOL partially exhausted           |
-| Net Margin >25%     | Y6   | 26%    | Mature profitability              |
-| Net Margin >30%     | Y7   | 32%    | Strong software-like margins      |
+| Milestone           | Year  | Value  | Significance                      |
+| ------------------- | ----- | ------ | --------------------------------- |
+| EBITDA Positive     | Y2–Y3 | $0.04M | Marginally positive Y2, solid Y3  |
+| EBITDA >30% Margin  | Y4    | 39%    | Platform economics emerging       |
+| EBIT Positive       | Y4    | $1.71M | Profitable including depreciation |
+| Net Income Positive | Y4    | $1.71M | Fully profitable (NOL offset)     |
+| First Tax Payment   | Y5    | $0.96M | NOL partially exhausted           |
+| Net Margin >25%     | Y6    | 27%    | Mature profitability              |
+| Net Margin >30%     | Y7    | 33%    | Strong software-like margins      |
 
 > **3U impact:** Net income turns positive in **Y4** (vs Y5 in a 6U--16U scenario) because annual D&A is $2.65M (vs $5.56M) --- the 3U architecture reduces the depreciation burden that delays profitability in traditional space companies.
 
@@ -82,26 +82,27 @@ The 3U CubeSat architecture is the key capital efficiency enabler: total constel
 
 | Category              | Y0       | Y1       | Y3       | Y5       | Y7       | % of OpEx (Y7) |
 | --------------------- | -------- | -------- | -------- | -------- | -------- | -------------- |
-| **Headcount (India)** | 0.21     | 0.45     | 1.28     | 2.33     | 3.60     | 59%            |
-| Cloud Infrastructure  | 0.01     | 0.12     | 0.40     | 0.60     | 0.80     | 13%            |
-| US Travel (BD)        | 0.02     | 0.10     | 0.18     | 0.20     | 0.20     | 3%             |
+| **Headcount (India)** | 0.17     | 0.39     | 1.09     | 1.98     | 3.06     | 54%            |
+| Cloud Infrastructure  | 0.01     | 0.12     | 0.40     | 0.60     | 0.80     | 14%            |
+| US Travel (BD)        | 0.02     | 0.10     | 0.18     | 0.20     | 0.20     | 4%             |
+| India Local Travel    | 0.01     | 0.01     | 0.02     | 0.03     | 0.03     | 1%             |
 | Office (Bangalore)    | 0.01     | 0.03     | 0.08     | 0.12     | 0.18     | 3%             |
 | Legal/Regulatory      | 0.02     | 0.06     | 0.15     | 0.20     | 0.25     | 4%             |
-| Insurance             | 0.00     | 0.03     | 0.08     | 0.12     | 0.15     | 2%             |
+| Insurance             | 0.00     | 0.03     | 0.08     | 0.12     | 0.15     | 3%             |
 | Marketing             | 0.00     | 0.04     | 0.12     | 0.20     | 0.25     | 4%             |
-| Software/Tools        | 0.01     | 0.04     | 0.08     | 0.12     | 0.15     | 2%             |
-| Other                 | 0.02     | 0.14     | 0.37     | 0.49     | 0.55     | 9%             |
-| **Total OpEx**        | **0.30** | **1.01** | **2.74** | **4.38** | **6.13** | **100%**       |
+| Software/Tools        | 0.01     | 0.04     | 0.08     | 0.12     | 0.15     | 3%             |
+| Other                 | 0.01     | 0.14     | 0.37     | 0.49     | 0.55     | 10%            |
+| **Total OpEx**        | **0.26** | **0.96** | **2.57** | **4.06** | **5.62** | **100%**       |
 
-> **Y0 OpEx is deliberately lean ($0.30M)** because the $1.3M pre-seed is concentrated on hardware/payload ($1.0M). Cloud, travel, insurance, and marketing are minimal since Y0 is an R&D/build year focused on the Cassegrain telescope and Dhruva 3U bus integration.
+> **Y0 OpEx is deliberately lean ($0.26M)** because the $1.3M pre-seed is concentrated on hardware/payload ($1.0M). Cloud, travel, insurance, and marketing are minimal since Y0 is an R&D/build year focused on the Cassegrain telescope and Dhruva 3U bus integration. Note: the pre-seed allocates $0.30M to operations (including ~$40K in one-time setup costs not in the recurring table).
 
 ### 3.2 OpEx Efficiency
 
 | Metric                  | Y0   | Y1   | Y3    | Y5    | Y7    |
 | ----------------------- | ---- | ---- | ----- | ----- | ----- |
-| OpEx / Revenue          | 75%  | 92%  | 43%   | 27%   | 20%   |
-| Revenue / Employee      | $27K | $50K | $114K | $178K | $233K |
-| Headcount / $1M Revenue | 37.5 | 20.0 | 8.8   | 5.6   | 4.3   |
+| OpEx / Revenue          | 65%  | 87%  | 40%   | 25%   | 19%   |
+| Revenue / Employee      | $29K | $52K | $123K | $191K | $250K |
+| Headcount / $1M Revenue | 35.0 | 19.1 | 8.1   | 5.2   | 4.0   |
 
 ---
 
@@ -120,7 +121,7 @@ The 3U CubeSat architecture is the key capital efficiency enabler: total constel
 
 > **Y0 CapEx detail ($1.0M):** Satellite Mfg/Bus $0.22M = Dhruva Aerospace 3U OTS bus ($200K) + compute/electronics ($20K). Payload Dev $0.78M = Cassegrain telescope optics & imaging ($500K) + thermal management ($20K) + integration/testing/GSE ($260K). No software CapEx or launch costs in Y0.
 >
-> **3U cost advantage:** Satellite manufacturing + launch totals $9.77M over 8 years (vs ~$31.6M for a 6U--16U fleet of equivalent size). At $300--600K per satellite (manufacturing + launch combined), Constellation builds a 22-satellite constellation for less than one-third the cost of a comparable larger-satellite fleet.
+> **3U cost advantage:** Satellite manufacturing + launch totals $9.77M over 8 years (vs ~$31.6M for a 6U--16U fleet of equivalent size). At $300--600K per satellite (manufacturing + launch combined), Constellation builds a 22-satellite constellation for roughly one-third the satellite cost of a comparable larger-satellite fleet.
 
 ### 4.2 Depreciation Schedule ($M)
 
@@ -159,10 +160,10 @@ Satellites and equipment depreciated straight-line over 5 years (LEO satellite d
 | Line Item                | Y0         | Y1         | Y2         | Y3         | Y4         | Y5         | Y6         | Y7         |
 | ------------------------ | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
 | **Operating Activities** |            |            |            |            |            |            |            |            |
-| EBITDA                   | (0.12)     | (0.48)     | (0.07)     | 1.42       | 4.11       | 7.43       | 10.63      | 15.69      |
-| Tax Paid                 | ---        | ---        | ---        | ---        | ---        | (0.72)     | (1.91)     | (3.24)     |
+| EBITDA                   | (0.08)     | (0.43)     | 0.04       | 1.59       | 4.36       | 7.75       | 11.03      | 16.20      |
+| Tax Paid                 | ---        | ---        | ---        | ---        | ---        | (0.96)     | (2.01)     | (3.37)     |
 | Working Capital Change   | (0.02)     | (0.04)     | (0.11)     | (0.20)     | (0.29)     | (0.31)     | (0.34)     | (0.50)     |
-| **Operating CF**         | **(0.14)** | **(0.52)** | **(0.18)** | **1.22**   | **3.82**   | **6.40**   | **8.38**   | **11.95**  |
+| **Operating CF**         | **(0.10)** | **(0.47)** | **(0.07)** | **1.39**   | **4.07**   | **6.48**   | **8.68**   | **12.33**  |
 |                          |            |            |            |            |            |            |            |            |
 | **Investing Activities** |            |            |            |            |            |            |            |            |
 | CapEx                    | (1.00)     | (1.85)     | (3.00)     | (3.50)     | (3.90)     | (2.50)     | (2.00)     | (1.70)     |
@@ -174,32 +175,33 @@ Satellites and equipment depreciated straight-line over 5 years (LEO satellite d
 | Series A Equity          | ---        | ---        | 12.00      | ---        | ---        | ---        | ---        | ---        |
 | **Financing CF**         | **1.30**   | **3.00**   | **12.00**  | **---**    | **---**    | **---**    | **---**    | **---**    |
 |                          |            |            |            |            |            |            |            |            |
-| **Net Cash Flow**        | **0.16**   | **0.63**   | **8.82**   | **(2.28)** | **(0.08)** | **3.90**   | **6.38**   | **10.25**  |
-| **Cumulative Cash**      | **0.16**   | **0.79**   | **9.61**   | **7.33**   | **7.25**   | **11.15**  | **17.53**  | **27.78**  |
+| **Net Cash Flow**        | **0.20**   | **0.68**   | **8.93**   | **(2.11)** | **0.17**   | **3.98**   | **6.68**   | **10.63**  |
+| **Cumulative Cash**      | **0.20**   | **0.88**   | **9.81**   | **7.70**   | **7.87**   | **11.85**  | **18.53**  | **29.16**  |
 
 ### 5.2 Cash Position Analysis
 
 ```
 Cumulative Cash Position ($M):
 
- $28 |                                              X
- $18 |                                         X
- $11 |                                    X
+ $29 |                                              X
+ $19 |                                         X
+ $12 |                                    X
  $10 |              X
-  $7 |                     X    X
+  $8 |                     X    X
   $1 |X    X
       +---+---+---+---+---+---+---+---+
         Y0  Y1  Y2  Y3  Y4  Y5  Y6  Y7
 
-  Y2: Series A provides $12M buffer -- cash peaks at $9.6M
-  Y3-Y4: CapEx draws down cash but it STAYS POSITIVE ($7.3M floor)
+  Y2: Series A provides $12M buffer -- cash peaks at $9.8M
+  Y3-Y4: CapEx draws down cash but it STAYS POSITIVE ($7.7M floor)
+  Y4: Cash flow turns positive (net +$0.17M)
   Y5+: Operating CF exceeds CapEx -- cash grows rapidly
-  Y7: Company has $27.8M cash -- fully self-funding
+  Y7: Company has $29.2M cash -- fully self-funding
 ```
 
 ### 5.3 No Capital Gap --- A Key Advantage of 3U Architecture
 
-**Unlike the 6U--16U scenario (which showed a $7.5M cumulative cash deficit at Y4), the 3U architecture results in cumulative cash remaining positive throughout the entire projection period.** The lowest cash point is $7.3M at Y3--Y4 --- a comfortable buffer.
+**Unlike the 6U--16U scenario (which showed a $7.5M cumulative cash deficit at Y4), the 3U architecture results in cumulative cash remaining positive throughout the entire projection period.** The lowest cash point is $7.7M at Y3 --- a comfortable buffer.
 
 This means:
 
@@ -220,11 +222,11 @@ This means:
 | Line Item                         | Y0       | Y2        | Y4        | Y7        |
 | --------------------------------- | -------- | --------- | --------- | --------- |
 | **Assets**                        |          |           |           |           |
-| Cash & Equivalents                | 0.16     | 9.61      | 7.25      | 27.78     |
+| Cash & Equivalents                | 0.20     | 9.81      | 7.87      | 29.16     |
 | Accounts Receivable               | 0.05     | 0.37      | 1.39      | 3.73      |
 | Net PP&E (Satellites + Equipment) | 0.80     | 3.91      | 6.79      | 4.34      |
 | Other Assets                      | 0.10     | 0.30      | 0.50      | 0.80      |
-| **Total Assets**                  | **1.11** | **14.19** | **15.93** | **36.65** |
+| **Total Assets**                  | **1.15** | **14.39** | **16.55** | **38.03** |
 |                                   |          |           |           |           |
 | **Liabilities**                   |          |           |           |           |
 | Accounts Payable                  | 0.03     | 0.15      | 0.44      | 1.04      |
@@ -233,11 +235,11 @@ This means:
 |                                   |          |           |           |           |
 | **Equity**                        |          |           |           |           |
 | Paid-In Capital                   | 1.30     | 16.30     | 16.30     | 16.30     |
-| Retained Earnings                 | (0.32)   | (2.61)    | (1.60)    | 18.64     |
-| ESOP Reserve                      | 0.08     | 0.25      | 0.49      | 0.17      |
-| **Total Equity**                  | **1.06** | **13.94** | **15.19** | **35.11** |
+| Retained Earnings                 | (0.28)   | (2.41)    | (0.98)    | 19.01     |
+| ESOP Reserve                      | 0.08     | 0.25      | 0.49      | 1.18      |
+| **Total Equity**                  | **1.10** | **14.14** | **15.81** | **36.49** |
 |                                   |          |           |           |           |
-| **Total L+E**                     | **1.11** | **14.19** | **15.93** | **36.65** |
+| **Total L+E**                     | **1.15** | **14.39** | **16.55** | **38.03** |
 
 > **Clean balance sheet:** No debt at any point. Retained earnings turn positive by Y5 as cumulative profits exceed cumulative losses. Total equity of $35M at Y7 reflects the compounding value of profitable operations.
 
@@ -250,10 +252,10 @@ This means:
 | Metric           | Y0    | Y1    | Y3    | Y5    | Y7    | Benchmark                 |
 | ---------------- | ----- | ----- | ----- | ----- | ----- | ------------------------- |
 | Gross Margin     | 45%   | 48%   | 65%   | 72%   | 72%   | Planet ~50%; SaaS 70--80% |
-| EBITDA Margin    | (30%) | (44%) | 22%   | 45%   | 52%   | Mature SaaS 30--40%       |
-| Net Margin       | N/A   | N/A   | N/A   | 23%   | 32%   | SaaS 15--25%              |
-| OpEx / Revenue   | 75%   | 92%   | 43%   | 27%   | 20%   | Best-in-class <30%        |
-| Rev / Employee   | $27K  | $50K  | $114K | $178K | $233K | Planet ~$270K             |
+| EBITDA Margin    | (20%) | (39%) | 25%   | 47%   | 53%   | Mature SaaS 30--40%       |
+| Net Margin       | N/A   | N/A   | N/A   | 23%   | 33%   | SaaS 15--25%              |
+| OpEx / Revenue   | 65%   | 87%   | 40%   | 25%   | 19%   | Best-in-class <30%        |
+| Rev / Employee   | $29K  | $52K  | $123K | $191K | $250K | Planet ~$270K             |
 | LTV:CAC          | ---   | 4.8x  | 9.2x  | 17.9x | 23.8x | Healthy >3x               |
 | CAC Payback (mo) | ---   | 20    | 13    | 9     | 7     | Target <18                |
 
@@ -264,21 +266,21 @@ This means:
 | Revenue ($M)            | 0.4 | 1.1  | 3.0  | 6.4  | 11.3 | 16.4 | 22.0 | 30.3 |
 | YoY Growth              | --- | 175% | 173% | 113% | 77%  | 45%  | 34%  | 38%  |
 | Customers               | 5   | 12   | 23   | 38   | 58   | 81   | 106  | 133  |
-| Headcount               | 15  | 22   | 38   | 56   | 75   | 92   | 110  | 130  |
+| Headcount               | 14  | 21   | 35   | 52   | 70   | 86   | 103  | 121  |
 | Satellites (cumulative) | 0   | 0    | 2    | 6    | 12   | 16   | 20   | 22   |
 
 ### 7.3 Capital Efficiency
 
-| Metric                                     | Value          | Benchmark                          |
-| ------------------------------------------ | -------------- | ---------------------------------- |
-| Total Equity Raised                        | $16.3M         | US competitors: $40--60M           |
-| Total CapEx (8yr)                          | $19.5M         | 6U--16U equivalent: ~$41M          |
-| Revenue at EBITDA Breakeven                | $3.0M (Y2)     | ---                                |
-| Revenue at Net Income Breakeven            | $11.3M (Y4)    | ---                                |
-| Capital Efficiency (Y7 Rev / Total Raised) | 1.86x          | Top quartile >1.5x                 |
-| Cumulative Revenue (8yr)                   | $90.9M         | ---                                |
-| Lowest Cash Point                          | $7.3M (Y3--Y4) | Always positive --- no capital gap |
-| Cash at Y7                                 | $27.8M         | Substantial war chest              |
+| Metric                                     | Value       | Benchmark                          |
+| ------------------------------------------ | ----------- | ---------------------------------- |
+| Total Equity Raised                        | $16.3M      | US competitors: $40--60M           |
+| Total CapEx (8yr)                          | ~$19.5M     | 6U--16U equivalent: ~$31.6M        |
+| Revenue at EBITDA Breakeven                | $3.0M (Y2)  | ---                                |
+| Revenue at Net Income Breakeven            | $11.3M (Y4) | ---                                |
+| Capital Efficiency (Y7 Rev / Total Raised) | 1.86x       | Top quartile >1.5x                 |
+| Cumulative Revenue (8yr)                   | $90.9M      | ---                                |
+| Lowest Cash Point                          | $7.7M (Y3)  | Always positive --- no capital gap |
+| Cash at Y7                                 | $29.2M      | Substantial war chest              |
 
 ---
 
@@ -323,19 +325,19 @@ This means:
 
 ### 9.1 Three Scenarios --- Y7 Outcomes
 
-| Metric                     | Conservative | Base Case      | Aggressive             |
-| -------------------------- | ------------ | -------------- | ---------------------- |
-| Y7 Revenue                 | $18.2M       | $30.3M         | $45.0M                 |
-| Y7 EBITDA                  | $6.4M        | $15.7M         | $25.2M                 |
-| Y7 EBITDA Margin           | 35%          | 52%            | 56%                    |
-| Y7 Net Income              | $2.8M        | $9.7M          | $18.5M                 |
-| Total Customers            | 80           | 133            | 180                    |
-| Satellites                 | 12           | 22             | 30                     |
-| Total CapEx                | $14M         | $19.5M         | $26M                   |
-| Lowest Cash Point          | ~$2M (Y4)    | $7.3M (Y3--Y4) | $4M (Y4)               |
-| Additional Capital Needed  | None         | None           | Optional $10M Series B |
-| Cash at Y7                 | $14M         | $27.8M         | $38M                   |
-| Implied Valuation (8x Rev) | $146M        | $242M          | $360M                  |
+| Metric                     | Conservative | Base Case  | Aggressive             |
+| -------------------------- | ------------ | ---------- | ---------------------- |
+| Y7 Revenue                 | $18.2M       | $30.3M     | $45.0M                 |
+| Y7 EBITDA                  | $6.4M        | $16.2M     | $25.2M                 |
+| Y7 EBITDA Margin           | 35%          | 53%        | 56%                    |
+| Y7 Net Income              | $2.8M        | $10.1M     | $18.5M                 |
+| Total Customers            | 80           | 133        | 180                    |
+| Satellites                 | 12           | 22         | 30                     |
+| Total CapEx                | $14M         | ~$19.5M    | $26M                   |
+| Lowest Cash Point          | ~$2M (Y4)    | $7.7M (Y3) | $4M (Y4)               |
+| Additional Capital Needed  | None         | None       | Optional $10M Series B |
+| Cash at Y7                 | $14M         | $29.2M     | $38M                   |
+| Implied Valuation (8x Rev) | $146M        | $242M      | $360M                  |
 
 ### 9.2 Scenario Assumptions
 
@@ -349,10 +351,10 @@ This means:
 | ------------------- | ------------- | ---------- |
 | Y7 Revenue          | $14.0M        | $30.3M     |
 | Y7 Gross Margin     | 50%           | 72%        |
-| Y7 EBITDA           | $5.5M         | $15.7M     |
-| Total CapEx (8yr)   | $4.0M         | $19.5M     |
+| Y7 EBITDA           | $5.5M         | $16.2M     |
+| Total CapEx (8yr)   | $4.0M         | ~$19.5M    |
 | Total Equity Needed | $4.3M         | $16.3M     |
-| Cash at Y7          | $12M          | $27.8M     |
+| Cash at Y7          | $12M          | $29.2M     |
 | Implied Valuation   | $70--112M     | $150--360M |
 
 > **The "No Satellites" path is viable but lower-ceiling.** It validates the analytics platform alone at $14M revenue, but the constellation investment is justified by 2x revenue and 22pp margin improvement. With 3U architecture, the incremental investment to build the constellation (~$15.5M more CapEx) generates $16M more Y7 revenue --- a compelling return.
@@ -401,13 +403,13 @@ This means:
 | Y7 Revenue             | 02 (SOM), 07 (Revenue) | $30.3M                 | $30.3M                 | Y     |
 | Y7 Customers           | 02 (SOM)               | 133                    | 133                    | Y     |
 | Y7 Avg ACV             | 07 (Revenue)           | $165K                  | $165K                  | Y     |
-| Y0 Headcount           | 08 (Team)              | 15                     | 15                     | Y     |
-| Y7 Headcount           | 08 (Team)              | 130                    | 130                    | Y     |
-| Y0 Headcount Cost      | 08 (Team)              | $0.21M                 | $0.21M                 | Y     |
-| Y7 Headcount Cost      | 08 (Team)              | $3.60M                 | $3.60M                 | Y     |
+| Y0 Headcount           | 08 (Team)              | 14                     | 14                     | Y     |
+| Y7 Headcount           | 08 (Team)              | 121                    | 121                    | Y     |
+| Y0 Headcount Cost      | 08 (Team)              | $0.17M                 | $0.17M                 | Y     |
+| Y7 Headcount Cost      | 08 (Team)              | $3.06M                 | $3.06M                 | Y     |
 | Y0 Fixed Costs         | 08 (Team)              | $0.09M                 | $0.09M                 | Y     |
-| Y7 Fixed Costs         | 08 (Team)              | $2.53M                 | $2.53M                 | Y     |
-| Y7 Total OpEx          | 08 (Team)              | $6.13M                 | $6.13M                 | Y     |
+| Y7 Fixed Costs         | 08 (Team)              | $2.56M                 | $2.56M                 | Y     |
+| Y7 Total OpEx          | 08 (Team)              | $5.62M                 | $5.62M                 | Y     |
 | Gross Margin Y0/Y7     | 07 (Revenue)           | 45%/72%                | 45%/72%                | Y     |
 | Total Equity Raised    | 09 (Fundraising)       | $16.3M                 | $16.3M                 | Y     |
 | Pre-Seed Amount        | 09 (Fundraising)       | $1.3M                  | $1.3M                  | Y     |
@@ -421,28 +423,28 @@ This means:
 
 ## 12. Key Insights
 
-- **Y0 is a focused build year:** $1.0M of the $1.3M pre-seed goes to the Cassegrain telescope + Dhruva 3U bus; EBITDA loss is only $0.12M thanks to the lean $0.30M OpEx
-- **EBITDA turns positive Y3 ($1.4M, 22% margin)** --- the India cost structure enables profitability at just $6.4M revenue
+- **Y0 is a focused build year:** $1.0M of the $1.3M pre-seed goes to the Cassegrain telescope + Dhruva 3U bus; EBITDA loss is only $0.08M thanks to the lean $0.26M OpEx
+- **EBITDA turns positive Y2–Y3 ($0.04M then $1.6M, 25% margin)** --- the India cost structure enables profitability at just $3–6M revenue
 - **Net income positive by Y4** --- 3U architecture reduces annual D&A to ~$2.7M (vs ~$5.6M for 6U--16U), pulling profitability forward by a full year
-- **Cumulative cash NEVER goes negative** --- the $16.3M equity raise fully funds ~$19.5M total CapEx plus operating losses, with a $7.3M minimum cash buffer
+- **Cumulative cash NEVER goes negative** --- the $16.3M equity raise fully funds ~$19.5M total CapEx plus operating losses, with a $7.7M minimum cash buffer
 - **No venture debt, no emergency dilution** --- the 3U architecture eliminates the structural capital gap that plagues most space companies
 - **Gross margin expands 45% to 72%** as own-constellation monitoring feeds replace third-party data resale
-- **$27.8M cash at Y7** --- the company is not just profitable but accumulating substantial cash reserves
-- **Revenue per employee reaches $233K by Y7** --- approaching Planet Labs ($270K) but at 83% lower per-employee cost
+- **$29.2M cash at Y7** --- the company is not just profitable but accumulating substantial cash reserves
+- **Revenue per employee reaches $250K by Y7** --- approaching Planet Labs ($270K) at 85–93% lower per-employee cost
 - **8-year cumulative revenue of $90.9M** on $16.3M equity investment demonstrates exceptional capital efficiency (5.6x)
 
 ---
 
 ## 13. Investment Implications
 
-1. **3U architecture is a capital efficiency breakthrough**: ~$19.5M total CapEx (vs $41M for 6U--16U) means no capital gap, no debt, and Series A as the last required round
-2. **Y0 capital allocation is tight and purposeful:** $1.0M hardware (Cassegrain + Dhruva bus) + $0.21M team + $0.09M operations = $1.3M, zero slack
+1. **3U architecture is a capital efficiency breakthrough**: satellite-specific CapEx ~$9.6M (mfg + launch) vs ~$31.6M for 6U–16U means no capital gap, no debt, and Series A as the last required round
+2. **Y0 capital allocation is tight and purposeful:** $1.0M hardware (Cassegrain + Dhruva bus) + $0.17M team + $0.09M operations = $1.3M, zero slack
 3. **Unit economics are compelling from Y1:** LTV:CAC >4x and improving, CAC payback <20 months
 4. **The margin expansion story is real:** 45% to 72% gross margin as own satellites replace third-party data --- validated by Planet Labs' economics
-5. **Cash flow is self-sustaining from ~Y4–Y5** --- operating cash flow exceeds CapEx spending from Y4 onward (Y4 is approximately break-even; Y5 is clearly positive)
+5. **Cash flow is self-sustaining from Y4** --- net cash flow turns positive in Y4 (+$0.17M); Y5 onward is clearly cash-generative
 6. **Multiple exit pathways at $150--370M:** defense prime acquisition, EO major consolidation, or IPO (Planet Labs precedent)
 7. **The "No Satellites" fallback validates the platform** at $14M revenue --- investors are not betting on constellation success alone
-8. **India cost structure is a durable competitive moat:** 83% savings persist as the team scales, creating permanent operating leverage
+8. **India cost structure is a durable competitive moat:** 85–93% savings persist as the team scales, creating permanent operating leverage
 
 ---
 

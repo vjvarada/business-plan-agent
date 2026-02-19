@@ -213,11 +213,11 @@ The India-based cost structure is both a risk mitigant (lower burn = more time t
 
 ### 5.1 CapEx Timing Mismatch
 
-| Attribute      | Detail                                                                                                                      |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **Risk**       | Constellation CapEx (~$19.5M total over 8 years) requires careful phasing against revenue ramp                              |
-| **Likelihood** | Medium (3U satellites cost 60–70% less than 6U–16U, substantially reducing the capital gap)                                 |
-| **Impact**     | Medium — cumulative cash remains positive throughout with $16.3M equity raised; risk is CapEx timing not absolute shortfall |
+| Attribute      | Detail                                                                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Risk**       | Constellation satellite CapEx (~$9.6M mfg + launch over 8 years; ~$19.5M total including ground/payload dev/software) requires careful phasing against revenue ramp |
+| **Likelihood** | Medium (3U satellites cost 60–70% less than 6U–16U, substantially reducing the capital gap)                                                                         |
+| **Impact**     | Medium — cumulative cash remains positive throughout with $16.3M equity raised; risk is CapEx timing not absolute shortfall                                         |
 
 **Mitigation Strategies:**
 
@@ -256,7 +256,7 @@ The India-based cost structure is both a risk mitigant (lower burn = more time t
 **Mitigation Strategies:**
 
 1. **Natural hedge** — USD revenue, INR costs; INR depreciation actually benefits the company
-2. **INR trend** — historical trend favors depreciation (from ~₹45 to ~₹83 in 15 years)
+2. **INR trend** — historical trend favors depreciation (from ~₹45 to ~₹91 in 15 years)
 3. **Contract pricing** — US/defense contracts denominated in USD; India contracts in INR
 4. **Scale buffer** — even with 10% INR appreciation, India costs remain 75%+ cheaper than US
 
@@ -368,7 +368,7 @@ The India-based cost structure is both a risk mitigant (lower burn = more time t
 ## 10. Key Insights
 
 - **Two critical risks** (gov concentration, ITAR compliance) require active board-level monitoring; satellite failure is de-risked by 3U unit economics ($300–400K per satellite vs $0.5–2M)
-- **3U architecture reduces financial risk significantly**: total constellation CapEx of ~$19M (vs $41M for 6U–16U), no structural capital gap, cumulative cash stays positive
+- **3U architecture reduces financial risk significantly**: satellite CapEx of ~$9.6M (mfg + launch) vs ~$31.6M for 6U–16U, no structural capital gap, cumulative cash stays positive
 - **India cost structure is dual-purpose**: a business advantage AND a risk mitigant — lower burn extends runway and provides time to recover from setbacks
 - **ITAR compliance is non-negotiable** and must be built into the company from Y0 — retrofitting is orders of magnitude harder
 - **"No Satellites" fallback** ($14M analytics business) provides a viable floor — the company is not binary; it degrades gracefully

@@ -6,33 +6,30 @@
 
 ## Executive Summary
 
-Constellation Aerospace operates with **core operations in Bangalore, India**, with founders handling US business development through travel. This India-first approach delivers a **dramatic cost advantage**: a 15-person founding team (10 FTE + 5 interns) costs approximately **₹1.76 Cr ($0.21M) in Y0** — vs $1.34M for an equivalent US-based team. The $1.3M pre-seed is allocated as **$1.0M for satellite payload development** (monolithic Cassegrain telescope + Dhruva 3U bus) and **$0.3M for people + operations**.
+Constellation Aerospace operates with **core operations in Bangalore, India**. One co-founder — an Australian passport holder and US green-card holder — maintains a base in the US for direct North American business development, supplemented by travel from India. This India-first approach delivers a **dramatic cost advantage**: a 14-person founding team (8 FTE + 6 interns) costs approximately **₹1.56 Cr ($0.17M) in Y0** — vs $2.38M for an equivalent US-based team at $170K average CTC. The $1.3M pre-seed is allocated as **$1.0M for satellite payload development** (monolithic Cassegrain telescope + Dhruva 3U bus integration) and **$0.3M for people + operations**.
 
-The Y0 team is **payload-engineering focused**: 4 of 6 FTE engineers work on the Cassegrain telescope build (Optics, Thermal, CAD, Systems), with AI/ML and platform development running in parallel. The organization grows from **15 people (Y0) to 130+ (Y7)**, with headcount cost scaling from **$0.21M to $3.6M**. Total fixed operating costs (headcount + non-headcount) reach **$6.1M by Y7**, supporting **$30.3M in revenue** and yielding a **revenue-per-employee of ~$233K**.
+The Y0 team is **payload-engineering focused**: 2 FTE + 1 PTE engineer work on the Cassegrain telescope, imager integration, and Jetson carrier board, with a CV/ML engineer building the analytics platform in parallel. The organization grows from **14 people (Y0) to ~121 (Y7)**, with headcount cost scaling from **$0.17M to $3.1M**. Total fixed operating costs (headcount + non-headcount) reach **$5.4M by Y7**, supporting **$30.3M in revenue** and yielding a **revenue-per-employee of ~$250K**.
 
 ---
 
 ## 1. Organization Structure
 
-### 1.1 Founding Team (Y0 — 15 People, Bangalore)
+### 1.1 Founding Team (Y0 — 14 People, Bangalore)
 
-| Role                       | Count  | Department            | Annual CTC (₹ LPA) | USD Cost   |
-| -------------------------- | ------ | --------------------- | ------------------ | ---------- |
-| CEO / Co-Founder           | 1      | Executive             | ₹25L               | $30K       |
-| CTO / Co-Founder           | 1      | Executive             | ₹25L               | $30K       |
-| Optics Engineer            | 1      | Payload Engineering   | ₹17L               | $20K       |
-| Thermal Engineer           | 1      | Payload Engineering   | ₹17L               | $20K       |
-| Systems Engineer           | 1      | Satellite Engineering | ₹17L               | $20K       |
-| AI/ML/CV Engineer          | 1      | Software Engineering  | ₹17L               | $20K       |
-| EA / Founders Office       | 1      | G&A                   | ₹17L               | $20K       |
-| Admin                      | 1      | G&A                   | ₹12.5L             | $15K       |
-| CAD Engineer               | 1      | Payload Engineering   | ₹10L               | $12K       |
-| Jr. Platform Developer     | 1      | Software Engineering  | ₹8L                | $10K       |
-| Interns (cross-functional) | 5      | Engineering / Ops     | ₹2.5L each         | $15K total |
-| **Total Y0**               | **15** |                       | **₹1.76 Cr**       | **$212K**  |
+| Role                           | Count  | Department           | Annual CTC (₹ LPA) | USD Cost   |
+| ------------------------------ | ------ | -------------------- | ------------------ | ---------- |
+| Chief Architect / Co-Founder   | 1      | Executive            | ₹30L               | $33K       |
+| Chief Operations / Co-Founder  | 1      | Executive            | ₹30L               | $33K       |
+| Mechatronics / System Engineer | 2      | Payload Engineering  | ₹15L each          | $33K total |
+| CV/ML Engineer                 | 1      | Software Engineering | ₹15L               | $16K       |
+| Optics + Jetson Engineer (PTE) | 1      | Payload Engineering  | ₹12L               | $13K       |
+| EA + Admin                     | 1      | G&A                  | ₹14L               | $15K       |
+| HR / People Ops                | 1      | G&A                  | ₹10L               | $11K       |
+| Interns (cross-functional)     | 6      | Engineering / Ops    | ₹2.5L each         | $16K total |
+| **Total Y0**                   | **14** |                      | **₹1.56 Cr**       | **$171K**  |
 
-> **CTC = Cost to Company** (Indian standard), including base salary, PF, gratuity, and variable pay. USD at ₹83 = $1.
-> **Y0 team is payload-focused:** 4 of 6 FTE engineers are dedicated to the Cassegrain telescope build (Optics, Thermal, CAD, Systems). AI/ML and Jr. Platform Developer start the analytics platform in parallel. 5 interns support across engineering and operations.
+> **CTC = Cost to Company** (Indian standard), including base salary, PF, gratuity, and variable pay. USD at ₹91 = $1.
+> **Y0 team is payload-focused:** 2 FTE Mechatronics/System engineers + 1 PTE Optics/Jetson engineer are dedicated to the Cassegrain telescope + imager + Jetson carrier board build. The CV/ML engineer builds the analytics platform in parallel using third-party imagery. 6 interns (5–7 range) support across engineering and operations.
 
 ### 1.2 Y0 Pre-Seed Budget Allocation ($1.3M)
 
@@ -45,36 +42,36 @@ The Y0 team is **payload-engineering focused**: 4 of 6 FTE engineers work on the
 | **Integration, Testing & Other** | **$260K**   | Assembly, environmental testing, GSE, ADCS, comms subsystems                        |
 | **Subtotal — Hardware/CapEx**    | **$1,000K** | Payload qualification + bus integration (no launch in Y0)                           |
 |                                  |             |                                                                                     |
-| **People / HR**                  | **$212K**   | 15-person team (see Section 1.1 above)                                              |
-| **Operations & Overhead**        | **$88K**    | Office, cloud, legal, travel, insurance, tools (see Section 3.1)                    |
+| **People / HR**                  | **$171K**   | 14-person team (see Section 1.1 above)                                              |
+| **Operations & Overhead**        | **$129K**   | Office, cloud, legal, travel, insurance, tools, India local transport (see Sec 3.1) |
 | **Subtotal — OpEx**              | **$300K**   |                                                                                     |
 |                                  |             |                                                                                     |
 | **Total Pre-Seed**               | **$1,300K** | Fully allocated; no unallocated buffer                                              |
 
-> **Note:** The $1M hardware budget is dedicated to building and qualifying the satellite payload (Cassegrain telescope + integration with Dhruva 3U bus). No satellite launch in Y0 — first launch target is Y1. The Jr. Platform Developer and AI/ML Engineer use this year to build the initial analytics platform using third-party data, generating $0.4M Y0 revenue with minimal COGS.
+> **Note:** The $1M hardware budget is dedicated to building and qualifying the satellite payload (Cassegrain telescope + imager + Jetson carrier board, integrated with Dhruva 3U bus). No satellite launch in Y0 — first launch target is Y1. The CV/ML Engineer uses this year to build the initial analytics platform using third-party data, generating $0.4M Y0 revenue with minimal COGS. India local travel (Uber commute, lab visits at ~₹2,000/day) is included in Operations & Overhead.
 
 ### 1.3 Headcount Growth Plan
 
 | Department             | Y0     | Y1     | Y2     | Y3     | Y4     | Y5     | Y6      | Y7      |
 | ---------------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------- | ------- |
-| **Engineering**        | 9      | 10     | 19     | 27     | 35     | 40     | 45      | 50      |
-| - Software             | 2      | 5      | 9      | 12     | 16     | 18     | 20      | 22      |
-| - Satellite/Hardware   | 6      | 3      | 7      | 10     | 13     | 15     | 17      | 19      |
-| - ML/AI                | 1      | 2      | 3      | 5      | 6      | 7      | 8       | 9       |
-| **Sales & Marketing**  | —      | 4      | 7      | 10     | 14     | 18     | 22      | 26      |
-| - Sales/BD             | —      | 3      | 6      | 9      | 12     | 15     | 19      | 23      |
+| **Engineering**        | 8      | 9      | 18     | 25     | 33     | 37     | 42      | 47      |
+| - Software             | 2      | 5      | 8      | 11     | 15     | 17     | 19      | 21      |
+| - Satellite/Hardware   | 5      | 3      | 7      | 9      | 12     | 14     | 16      | 18      |
+| - ML/AI                | 1      | 1      | 3      | 5      | 6      | 6      | 7       | 8       |
+| **Sales & Marketing**  | —      | 4      | 7      | 9      | 13     | 17     | 21      | 24      |
+| - Sales/BD             | —      | 3      | 6      | 8      | 11     | 14     | 18      | 21      |
 | - Marketing            | —      | 1      | 1      | 1      | 2      | 3      | 3       | 3       |
-| **Operations**         | 1      | 3      | 7      | 12     | 18     | 24     | 30      | 38      |
-| - Satellite Operations | —      | 1      | 4      | 7      | 11     | 15     | 19      | 24      |
-| - Customer Success     | —      | 1      | 1      | 2      | 4      | 5      | 7       | 9       |
-| - Data Operations      | 1      | 1      | 2      | 3      | 3      | 4      | 4       | 5       |
-| **G&A**                | 5      | 5      | 5      | 7      | 8      | 10     | 13      | 16      |
+| **Operations**         | 1      | 3      | 7      | 11     | 17     | 22     | 28      | 35      |
+| - Satellite Operations | —      | 1      | 4      | 7      | 10     | 14     | 18      | 22      |
+| - Customer Success     | —      | 1      | 1      | 2      | 4      | 5      | 6       | 8       |
+| - Data Operations      | 1      | 1      | 2      | 2      | 3      | 3      | 4       | 5       |
+| **G&A**                | 5      | 5      | 3      | 7      | 7      | 10     | 12      | 15      |
 | - Executive/Founders   | 2      | 2      | 2      | 3      | 3      | 3      | 3       | 3       |
-| - Finance/Legal        | —      | 1      | 1      | 2      | 3      | 4      | 6       | 8       |
-| - HR/Admin/EA          | 3      | 2      | 2      | 2      | 2      | 3      | 4       | 5       |
-| **Total Headcount**    | **15** | **22** | **38** | **56** | **75** | **92** | **110** | **130** |
+| - Finance/Legal        | —      | 1      | 1      | 2      | 2      | 4      | 5       | 7       |
+| - HR/Admin/EA          | 3      | 2      | —      | 2      | 2      | 3      | 4       | 5       |
+| **Total Headcount**    | **14** | **21** | **35** | **52** | **70** | **86** | **103** | **121** |
 
-> **Y0 includes 5 interns** distributed across Satellite/Hardware (2), Software (1), Data Ops (1), and HR/Admin/EA (1). Interns are short-term roles supporting payload development and platform bootstrapping. From Y0→Y1: interns depart (−5) but 12 FTE hires join, netting +7 to reach 22. **HR/Admin/EA** drops from 3→2 (intern leaves; EA + Admin continue as FTEs). **Satellite/Hardware** drops from 6→3 (2 interns leave + CAD Engineer transitions to software after payload CAD work completes); hardware ramps again from Y2 with constellation manufacturing. Software hiring accelerates from Y1 as the platform becomes the growth priority.
+> **Y0 includes 6 interns** distributed across Satellite/Hardware (2), Software (1), ML/AI (1), Data Ops (1), and HR/Admin (1). Interns are short-term roles supporting payload development and platform bootstrapping. From Y0→Y1: interns depart (−6) but 13 FTE hires join, netting +7 to reach 21. **HR/Admin/EA** drops from 3→2 (intern leaves; EA+Admin + HR continue as FTEs). **Satellite/Hardware** drops from 5→3 (2 interns leave; PTE Optics/Jetson transitions as payload completes CAD phase); hardware ramps again from Y2 with constellation manufacturing. Software hiring accelerates from Y1 as the platform becomes the growth priority.
 
 ---
 
@@ -105,14 +102,14 @@ The Y0 team is **payload-engineering focused**: 4 of 6 FTE engineers work on the
 
 | Department           | Y0 Avg (₹ LPA) | Y0 Avg (USD) | Y3 Avg (₹ LPA) | Y3 Avg (USD) | Y7 Avg (₹ LPA) | Y7 Avg (USD) |
 | -------------------- | -------------- | ------------ | -------------- | ------------ | -------------- | ------------ |
-| Engineering (FTE)    | ₹14L           | $17K         | ₹22L           | $27K         | ₹30L           | $36K         |
-| Sales & Marketing    | —              | —            | ₹20L           | $24K         | ₹25L           | $30K         |
-| Operations           | —              | —            | ₹12L           | $14K         | ₹15L           | $18K         |
-| G&A (incl. Founders) | ₹20L           | $24K         | ₹15L           | $18K         | ₹18L           | $22K         |
+| Engineering (FTE)    | ₹14L           | $15K         | ₹22L           | $24K         | ₹30L           | $33K         |
+| Sales & Marketing    | —              | —            | ₹20L           | $22K         | ₹25L           | $27K         |
+| Operations           | —              | —            | ₹12L           | $13K         | ₹15L           | $16K         |
+| G&A (incl. Founders) | ₹21L           | $23K         | ₹15L           | $16K         | ₹18L           | $20K         |
 | Interns              | ₹2.5L          | $3K          | —              | —            | —              | —            |
-| **Blended Average**  | **₹12L**       | **$14K**     | **₹19L**       | **$23K**     | **₹23L**       | **$28K**     |
+| **Blended Average**  | **₹11L**       | **$12K**     | **₹19L**       | **$21K**     | **₹23L**       | **$25K**     |
 
-> Y0 blended average is lower than Y1+ because 5 interns (₹2.5L each) pull the average down. FTE-only average is ₹16.5L ($20K).
+> Y0 blended average is lower than Y1+ because 6 interns (₹2.5L each) pull the average down. FTE-only average is ₹18L ($19K).
 
 ### 2.3 Total Headcount Cost
 
@@ -120,14 +117,14 @@ The Y0 team is **payload-engineering focused**: 4 of 6 FTE engineers work on the
 
 | Year                     | Y0         | Y1         | Y2         | Y3         | Y4         | Y5         | Y6         | Y7         |
 | ------------------------ | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| Headcount                | 15         | 22         | 38         | 56         | 75         | 92         | 110        | 130        |
-| Avg CTC (₹ LPA)          | ₹12L       | ₹17L       | ₹18L       | ₹19L       | ₹20L       | ₹21L       | ₹22L       | ₹23L       |
-| Total CTC (₹ Cr)         | ₹1.76 Cr   | ₹3.7 Cr    | ₹6.8 Cr    | ₹10.6 Cr   | ₹15.0 Cr   | ₹19.3 Cr   | ₹24.2 Cr   | ₹29.9 Cr   |
-| **Total CTC (USD)**      | **$0.21M** | **$0.45M** | **$0.82M** | **$1.28M** | **$1.81M** | **$2.33M** | **$2.92M** | **$3.60M** |
-| US Equivalent Cost       | $1.34M     | $3.24M     | $5.61M     | $9.07M     | $12.11M    | $14.85M    | $17.75M    | $20.97M    |
-| **India Cost Advantage** | **84%**    | **86%**    | **85%**    | **86%**    | **85%**    | **84%**    | **84%**    | **83%**    |
+| Headcount                | 14         | 21         | 35         | 52         | 70         | 86         | 103        | 121        |
+| Avg CTC (₹ LPA)          | ₹11L       | ₹17L       | ₹18L       | ₹19L       | ₹20L       | ₹21L       | ₹22L       | ₹23L       |
+| Total CTC (₹ Cr)         | ₹1.56 Cr   | ₹3.6 Cr    | ₹6.3 Cr    | ₹9.9 Cr    | ₹14.0 Cr   | ₹18.1 Cr   | ₹22.7 Cr   | ₹27.8 Cr   |
+| **Total CTC (USD)**      | **$0.17M** | **$0.39M** | **$0.69M** | **$1.09M** | **$1.54M** | **$1.98M** | **$2.49M** | **$3.06M** |
+| US Equivalent Cost       | $2.38M     | $3.57M     | $5.95M     | $8.84M     | $11.90M    | $14.62M    | $17.51M    | $20.57M    |
+| **India Cost Advantage** | **93%**    | **89%**    | **88%**    | **88%**    | **87%**    | **86%**    | **86%**    | **85%**    |
 
-> **India operations cost ~83–86% less than US equivalent** at comparable headcount. This is Constellation's structural cost advantage. Y0 advantage is 84%: $212K India vs $1.34M US for the same 15-person team (US founders $160K each, engineers $130–150K, interns $35K).
+> **India operations cost ~85–93% less than US equivalent** at comparable headcount (1:1 comparison at $170K average US CTC). This is Constellation's structural cost advantage. Y0 advantage is 93%: $171K India vs $2.38M US for the same 14-person team. The advantage narrows slightly at scale as India salaries inflate faster than US rates, but remains above 85% through Y7.
 
 ---
 
@@ -135,26 +132,27 @@ The Y0 team is **payload-engineering focused**: 4 of 6 FTE engineers work on the
 
 ### 3.1 Fixed Cost Categories (India-Optimized)
 
-| Category                  | Y0       | Y1        | Y2         | Y3         | Y5         | Y7         | Notes                                    |
-| ------------------------- | -------- | --------- | ---------- | ---------- | ---------- | ---------- | ---------------------------------------- |
-| **Office (Bangalore)**    | $12K     | $30K      | $50K       | $80K       | $120K      | $180K      | Coworking own space                      |
-| **Cloud Infrastructure**  | $8K      | $120K     | $250K      | $400K      | $600K      | $800K      | Minimal Y0; scales with platform         |
-| **Ground Station Ops**    | —        | $30K      | $100K      | $200K      | $350K      | $450K      | AWS GS + KSAT access                     |
-| **Insurance**             | $3K      | $25K      | $50K       | $80K       | $120K      | $150K      | Basic D&O Y0; expands with launches      |
-| **Legal & Regulatory**    | $15K     | $60K      | $100K      | $150K      | $200K      | $250K      | IP filings, basic ITAR consult Y0        |
-| **US Travel (BD)**        | $18K     | $100K     | $150K      | $180K      | $200K      | $200K      | 3–4 trips Y0; ramps with BD activity     |
-| **Marketing Programs**    | $3K      | $40K      | $80K       | $120K      | $200K      | $250K      | Website + basic presence Y0              |
-| **Software & Tools**      | $8K      | $40K      | $60K       | $80K       | $120K      | $150K      | SaaS licenses                            |
-| **R&D Consumables**       | $6K      | $80K      | $150K      | $100K      | $50K       | —          | Bench supplies (separate from $1M CapEx) |
-| **India Statutory Costs** | $5K      | $15K      | $25K       | $35K       | $50K       | $60K       | GST compliance, RoC filings              |
-| **Contingency**           | $8K      | $20K      | $30K       | $30K       | $40K       | $40K       |                                          |
-| **Total Fixed Costs**     | **$86K** | **$560K** | **$1.05M** | **$1.46M** | **$2.05M** | **$2.53M** |                                          |
+| Category                  | Y0       | Y1        | Y2         | Y3         | Y5         | Y7         | Notes                                               |
+| ------------------------- | -------- | --------- | ---------- | ---------- | ---------- | ---------- | --------------------------------------------------- |
+| **Office (Bangalore)**    | $12K     | $30K      | $50K       | $80K       | $120K      | $180K      | Coworking own space                                 |
+| **Cloud Infrastructure**  | $8K      | $120K     | $250K      | $400K      | $600K      | $800K      | Minimal Y0; scales with platform                    |
+| **Ground Station Ops**    | —        | $30K      | $100K      | $200K      | $350K      | $450K      | AWS GS + KSAT; Dhruva may bundle if using their bus |
+| **Insurance**             | $3K      | $25K      | $50K       | $80K       | $120K      | $150K      | Basic D&O Y0; expands with launches                 |
+| **Legal & Regulatory**    | $15K     | $60K      | $100K      | $150K      | $200K      | $250K      | IP filings, basic ITAR consult Y0                   |
+| **US Travel (BD)**        | $18K     | $100K     | $150K      | $180K      | $200K      | $200K      | 3–4 trips Y0; ramps with BD activity                |
+| **India Local Travel**    | $5K      | $10K      | $15K       | $20K       | $25K       | $30K       | Uber commute, lab visits (~₹2,000/day)              |
+| **Marketing Programs**    | $3K      | $40K      | $80K       | $120K      | $200K      | $250K      | Website + basic presence Y0                         |
+| **Software & Tools**      | $8K      | $40K      | $60K       | $80K       | $120K      | $150K      | SaaS licenses                                       |
+| **R&D Consumables**       | $6K      | $80K      | $150K      | $100K      | $50K       | —          | Bench supplies (separate from $1M CapEx)            |
+| **India Statutory Costs** | $5K      | $15K      | $25K       | $35K       | $50K       | $60K       | GST compliance, RoC filings                         |
+| **Contingency**           | $8K      | $20K      | $30K       | $30K       | $40K       | $40K       |                                                     |
+| **Total Fixed Costs**     | **$91K** | **$570K** | **$1.07M** | **$1.48M** | **$2.08M** | **$2.56M** |                                                     |
 
-> **Y0 fixed costs are deliberately lean ($86K)** because the pre-seed is concentrated on hardware/payload development ($1M). Cloud, travel, insurance, and marketing are kept minimal since Y0 is an R&D/build year. Costs ramp sharply in Y1 as the platform launches, BD travel increases, and ground station operations begin.
+> **Y0 fixed costs are deliberately lean ($91K)** because the pre-seed is concentrated on hardware/payload development ($1M). Cloud, travel, insurance, and marketing are kept minimal since Y0 is an R&D/build year. India local travel (₹2,000/day Uber commute) is a minor but recurring cost. Ground station access via Dhruva Space may be bundled if using their P-DoT bus, reducing Y1+ ground station costs (vs. standalone KSAT/AWS). Costs ramp sharply in Y1 as the platform launches, BD travel increases, and ground station operations begin.
 
 ### 3.2 US Travel Budget Detail
 
-Founders will handle North American BD through regular travel:
+Founders will handle North American BD through regular travel. One co-founder (Australian passport + US green-card holder) maintains a US base for direct client engagement:
 
 | Purpose                                    | Y0 (Pre-Seed)        | Y1+ (Growth Phase)            |
 | ------------------------------------------ | -------------------- | ----------------------------- |
@@ -172,24 +170,24 @@ Founders will handle North American BD through regular travel:
 
 | Component                   | Y0         | Y1         | Y2         | Y3         | Y5         | Y7         |
 | --------------------------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| Headcount Cost (India)      | $0.21M     | $0.45M     | $0.82M     | $1.28M     | $2.33M     | $3.60M     |
-| Fixed Costs                 | $0.09M     | $0.56M     | $1.05M     | $1.46M     | $2.05M     | $2.53M     |
-| **Total OpEx (excl. COGS)** | **$0.30M** | **$1.01M** | **$1.87M** | **$2.74M** | **$4.38M** | **$6.13M** |
+| Headcount Cost (India)      | $0.17M     | $0.39M     | $0.69M     | $1.09M     | $1.98M     | $3.06M     |
+| Fixed Costs                 | $0.09M     | $0.57M     | $1.07M     | $1.48M     | $2.08M     | $2.56M     |
+| **Total OpEx (excl. COGS)** | **$0.26M** | **$0.96M** | **$1.76M** | **$2.57M** | **$4.06M** | **$5.62M** |
 | Revenue                     | $0.4M      | $1.1M      | $3.0M      | $6.4M      | $16.4M     | $30.3M     |
-| **OpEx / Revenue**          | 75%        | 92%        | 62%        | 43%        | 27%        | 20%        |
+| **OpEx / Revenue**          | 65%        | 87%        | 59%        | 40%        | 25%        | 19%        |
 
-> Y0 OpEx / Revenue of 75% reflects the lean pre-seed operating structure — most of the $1.3M goes to hardware CapEx, not operating expenses. OpEx is only 20% of revenue by Y7.
+> Y0 OpEx / Revenue of 65% reflects the lean pre-seed operating structure — most of the $1.3M goes to hardware CapEx, not operating expenses. OpEx is only 19% of revenue by Y7. Note: the pre-seed budget allocates $300K to operations (including ~$40K in one-time setup costs not in the recurring fixed cost table).
 
 ### 4.1 Including COGS and CapEx
 
 | Category                          | Y0          | Y1          | Y2          | Y3          | Y5          | Y7          |
 | --------------------------------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| OpEx (above)                      | $0.30M      | $1.01M      | $1.87M      | $2.74M      | $4.38M      | $6.13M      |
+| OpEx (above)                      | $0.26M      | $0.96M      | $1.76M      | $2.57M      | $4.06M      | $5.62M      |
 | COGS (data procurement + sat ops) | $0.22M      | $0.57M      | $1.20M      | $2.24M      | $4.59M      | $8.48M      |
 | CapEx (payload dev + sat mfg)     | $1.00M      | $1.85M      | $3.00M      | $3.50M      | $2.50M      | $1.70M      |
-| **Total Cash Required**           | **$1.52M**  | **$3.43M**  | **$6.07M**  | **$8.48M**  | **$11.47M** | **$16.31M** |
+| **Total Cash Required**           | **$1.48M**  | **$3.38M**  | **$5.96M**  | **$8.31M**  | **$11.15M** | **$15.80M** |
 | Revenue                           | $0.4M       | $1.1M       | $3.0M       | $6.4M       | $16.4M      | $30.3M      |
-| **Net Cash Flow**                 | **-$1.12M** | **-$2.33M** | **-$3.07M** | **-$2.08M** | **$4.93M**  | **$13.99M** |
+| **Net Cash Flow**                 | **-$1.08M** | **-$2.28M** | **-$2.96M** | **-$1.91M** | **$5.25M**  | **$14.50M** |
 
 > **Cash flow turns positive in Y4** on an annual basis. Y0 CapEx of $1.0M is the monolithic Cassegrain telescope build + Dhruva 3U bus procurement. Total satellite-specific CapEx (mfg + launch) of ~$9.6M over 8 years vs ~$31.6M for a 6U–16U fleet.
 
@@ -201,31 +199,31 @@ Founders will handle North American BD through regular travel:
 
 | Metric                | Y0   | Y1   | Y3    | Y5    | Y7    | Benchmark            |
 | --------------------- | ---- | ---- | ----- | ----- | ----- | -------------------- |
-| Revenue / Employee    | $27K | $50K | $114K | $178K | $233K | Planet Labs ~$270K   |
-| Cost/Employee (India) | $14K | $20K | $23K  | $25K  | $28K  | US ~$120K            |
-| Revenue/Cost Multiple | 1.9  | 2.5  | 5.0   | 7.1   | 8.3   | Exceptional leverage |
+| Revenue / Employee    | $29K | $52K | $123K | $191K | $250K | Planet Labs ~$270K   |
+| Cost/Employee (India) | $12K | $19K | $21K  | $23K  | $25K  | US ~$170K            |
+| Revenue/Cost Multiple | 2.4  | 2.7  | 5.9   | 8.3   | 10.0  | Exceptional leverage |
 
-**Revenue-per-employee of $233K at Y7** approaches Planet Labs' benchmark, but at **83% lower cost per employee** — this is the India cost arbitrage in action. Y0 cost/employee is especially low ($14K) due to intern-heavy team composition.
+**Revenue-per-employee of $250K at Y7** approaches Planet Labs' benchmark, but at **85% lower cost per employee** — this is the India cost arbitrage in action. Y0 cost/employee is especially low ($12K) due to intern-heavy team composition (6 of 14).
 
 ### 5.2 Cost Efficiency vs US Competitor
 
 | Y7 Metric        | Constellation (India) | US Competitor (equivalent) | Advantage   |
 | ---------------- | --------------------- | -------------------------- | ----------- |
-| 130 employees    | $3.60M headcount      | $20.97M headcount          | 83% savings |
-| Fixed costs      | $2.53M                | $6.50M                     | 61% savings |
-| Total OpEx       | $6.13M                | $27.47M                    | 78% savings |
-| Operating margin | 80%                   | 9%                         | 71pp better |
+| 121 employees    | $3.06M headcount      | $20.57M headcount          | 85% savings |
+| Fixed costs      | $2.56M                | $6.50M                     | 61% savings |
+| Total OpEx       | $5.62M                | $27.07M                    | 79% savings |
+| Operating margin | 81%                   | 11%                        | 70pp better |
 
 ---
 
 ## 6. Key Insights
 
-- **India-based operations are the structural cost moat** — 84% cheaper than US equivalent at Y0, maintaining 83% advantage at scale
-- **Pre-seed of $1.3M is tightly allocated:** $1.0M hardware/CapEx (Cassegrain telescope + Dhruva 3U bus) + $0.21M HR (15-person payload-focused team) + $0.09M operations — zero slack
-- **Y0 is an R&D/build year:** 4 of 6 FTE engineers work on the payload; platform generates $0.4M from third-party data resale with just 2 software engineers
-- **Cash flow turns positive Y4** — the 3U architecture keeps total CapEx at $19.5M vs ~$41M for 6U–16U, preserving cash throughout
-- **130 people by Y7** supports $30.3M revenue at only $6.1M total OpEx (20% of revenue) — SaaS-like operating leverage
-- **US travel budget of $18K (Y0) $200K (Y7)** is the primary non-India cost — founders do BD directly until revenue supports a US hire
+- **India-based operations are the structural cost moat** — 93% cheaper than US equivalent at Y0, maintaining 85% advantage at scale (1:1 headcount comparison at $170K US CTC)
+- **Pre-seed of $1.3M is tightly allocated:** $1.0M hardware/CapEx (Cassegrain telescope + Dhruva 3U bus) + $0.17M HR (14-person payload-focused team: 8 FTE + 6 interns) + $0.13M operations (including India local travel) — zero slack
+- **Y0 is an R&D/build year:** 2 FTE + 1 PTE focus on the Cassegrain optics, hyperspectral imager, and Jetson carrier board; platform generates $0.4M from third-party data resale with just 2 software engineers
+- **Cash flow turns positive Y4** — the 3U architecture keeps total CapEx at $9.6M vs ~$31.6M for 6U–16U, preserving cash throughout
+- **121 people by Y7** supports $30.3M revenue at only $5.6M total OpEx (19% of revenue) — SaaS-like operating leverage
+- **US travel budget of $18K (Y0) $200K (Y7)** is the primary non-India cost — one co-founder (Australian passport + US green-card holder) maintains a US base for BD
 
 ---
 
@@ -237,20 +235,21 @@ Founders will handle North American BD through regular travel:
 | Pre-seed amount (Sec 09)     | $1.3M                | $1.3M (fully allocated in 1.2) | ✅       |
 | Y0 CapEx allocation (Sec 03) | $1.0M                | $1.0M (payload + bus)          | ✅       |
 | 3U Sat Bus source (Sec 03)   | Dhruva Aerospace OTS | $200K Dhruva bus               | ✅       |
-| Y0 OpEx                      | $0.30M (Sec 10)      | $0.30M                         | ✅       |
+| Y0 OpEx                      | $0.26M (Sec 10)      | $0.26M                         | ✅       |
 
-> ✅ **Cascade complete (v3):** Sections 03 and 10 have been updated to reflect Y0 CapEx of $1.0M and OpEx of $0.30M. All downstream projections align.
+> ✅ **Cascade complete (v4):** Updated headcount (14→121), costs at ₹91/$, US benchmark at $170K CTC. Sections 03 and 10 may need minor updates to reflect $0.26M OpEx (vs prior $0.30M). Fixed costs updated with India local travel and Dhruva ground station note.
 
 ---
 
 ## 8. Investment Implications
 
-1. **India cost base is a competitive weapon** — Constellation runs a 15-person team for $212K (Y0), scaling to 130 people for $3.6M (Y7), vs $21M for a US competitor
-2. **Pre-seed of $1.3M is fully allocated** with zero slack — $1M goes directly into Cassegrain telescope + Dhruva 3U bus, $0.3M covers lean operations for 12 months
-3. **Y0 is an R&D year by design** — the team builds the payload and bootstraps the platform; first satellite launch is a Y1 milestone funded by the Seed round
-4. **Tightly scoped Y0 reduces pre-seed risk** — Bluehill's $1.3M buys a qualified satellite payload, a working analytics platform, and $0.4M in revenue, all within 12 months
-5. **Cash flow positive by ~Y4–Y5** means Series A may be the last equity round needed (Series B optional for acceleration)
-6. **Founder-led BD** (US travel budget of $18K Y0) is cost-effective initially but should transition to a US-based hire by Y3–Y4
+1. **India cost base is a competitive weapon** — Constellation runs a 14-person team for $171K (Y0), scaling to 121 people for $3.06M (Y7), vs $20.57M for a US competitor at $170K average CTC. That’s 85–93% structural savings.
+2. **Pre-seed of $1.3M is fully allocated** with zero slack — $1M goes directly into Cassegrain telescope + Dhruva 3U bus, $0.30M covers lean operations (including $171K headcount for 8 FTE + 6 interns) for 12 months
+3. **Y0 is an R&D year by design** — the team builds the payload (Cassegrain + imager + Jetson carrier board) and bootstraps the platform; first satellite launch is a Y1 milestone funded by the Seed round
+4. **Tightly scoped Y0 reduces pre-seed risk** — Bluehill’s $1.3M buys a qualified satellite payload, a working analytics platform, and $0.4M in revenue, all within 12 months
+5. **Per-satellite payload cost of ~$200K** (after amortizing NRE) gives Constellation a 3–5× cost advantage on constellation scaling vs competitors building proprietary buses
+6. **Cash flow positive by ~Y4–Y5** means Series A may be the last equity round needed (Series B optional for acceleration)
+7. **Founder-led BD** from a US base (one co-founder holds Australian passport + US green card) keeps customer access high while maintaining India cost structure
 
 ---
 

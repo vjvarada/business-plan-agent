@@ -47,15 +47,15 @@ The total equity raise of $16–19M is purposefully modest for a space company �
 | **Compute & Electronics**     | $20K      | 2%       | Edge compute, sensors, power electronics                                 |
 | **Thermal Management**        | $20K      | 2%       | Thermal design, development, testing, materials                          |
 | **Integration & Testing**     | $260K     | 20%      | Assembly, environmental testing, GSE, ADCS, comms                        |
-| **People / HR**               | $212K     | 16%      | 15-person team (10 FTE + 5 interns) for 12 months                        |
-| **Operations & Overhead**     | $88K      | 7%       | Office, cloud, legal, travel, insurance, tools                           |
+| **People / HR**               | $171K     | 13%      | 14-person team (8 FTE + 6 interns) for 12 months                         |
+| **Operations & Overhead**     | $129K     | 10%      | Office, cloud, legal, travel, insurance, tools, India local transport    |
 | **Total**                     | **$1.3M** | **100%** |                                                                          |
 
-> **Note:** $1.0M (77%) goes to hardware/payload — building and qualifying the Cassegrain telescope + integrating with OTS Dhruva 3U bus. $0.3M (23%) covers the lean 15-person Bangalore team + operations. No satellite launch in Y0; first launch is a Seed milestone.
+> **Note:** $1.0M (77%) goes to hardware/payload — building and qualifying the Cassegrain telescope + integrating with OTS Dhruva 3U bus. $0.3M (23%) covers the lean 14-person Bangalore team (8 FTE + 6 interns) + operations (including India local travel). No satellite launch in Y0; first launch is a Seed milestone.
 
 **Key Milestones (Pre-Seed → Seed):**
 
-- ✓ Build 15-person founding team (Bangalore — payload-engineering focused)
+- ✓ Build 14-person founding team (Bangalore — payload-engineering focused: 2 FTE + 1 PTE on Cassegrain/imager/Jetson)
 - ✓ Build and qualify Cassegrain telescope payload
 - ✓ Integrate payload with Dhruva 3U satellite bus
 - ✓ Develop MVP analytics platform (third-party data integration)
@@ -258,7 +258,7 @@ The total equity raise of $16–19M is purposefully modest for a space company �
 ## 8. Key Insights
 
 - **$16–19M total equity** is lean for a space company — India cost base enables this, vs $40–60M for a US competitor building equivalent capability
-- **Pre-Seed secured** from Bluehill Capital — immediate execution possible with 15-person Bangalore team (10 FTE + 5 interns)
+- **Pre-Seed secured** from Bluehill Capital — immediate execution possible with 14-person Bangalore team (8 FTE + 6 interns)
 - **Each round achieves clear value inflection**: Pre-Seed MVP/pilots; Seed satellites launched + ARR; Series A operational constellation + $6M+ ARR
 - **Cash flow positive by Y5** — Series A may be the final equity round, with Series B optional for acceleration
 - **Founder ownership stays ~40% post-Series A** — strong alignment for long-term value creation
