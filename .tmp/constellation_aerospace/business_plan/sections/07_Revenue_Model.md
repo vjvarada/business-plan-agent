@@ -8,7 +8,7 @@
 
 Constellation Aerospace generates revenue through **three complementary streams**: (1) Platform Subscriptions — recurring analytics SaaS at $80K–175K ACV, (2) Data & Imagery Sales — archive imagery and continuous monitoring feeds on a consumption basis, and (3) Professional Services — custom analytics projects and consulting engagements. A fourth revenue category, **Government Contracts**, spans all three streams but is tracked separately due to its distinct procurement and billing structure.
 
-Total revenue grows from **$0.4M in Y0 to $30.3M in Y7**, driven by customer acquisition (5 133 total clients), ACV expansion ($80K $165K), and the transition from third-party data resale (~40% gross margin) to own-constellation data (~80% gross margin) starting in Y2–Y3. Unit economics reach maturity by Y5 with **LTV:CAC >4.0 and CAC payback <14 months**.
+Total revenue grows from **$0.2M in Y0 to $30.3M in Y7**, driven by customer acquisition (3 → 133 total clients), ACV expansion ($80K → $165K), and the transition from third-party data resale (~40% gross margin) to own-constellation data (~80% gross margin) starting in Y2–Y3. Unit economics reach maturity by Y5 with **LTV:CAC >4.0 and CAC payback <14 months**.
 
 ---
 
@@ -101,12 +101,12 @@ ACV expansion driven by: (1) customer migration to Enterprise tier, (2) data pro
 
 | Stream                           | Y0        | Y1        | Y2        | Y3        | Y4         | Y5         | Y7         |
 | -------------------------------- | --------- | --------- | --------- | --------- | ---------- | ---------- | ---------- |
-| Platform Subscriptions           | $0.2M     | $0.5M     | $0.9M     | $1.9M     | $3.9M      | $5.9M      | $8.3M      |
-| Data & Imagery                   | $0.05M    | $0.2M     | $0.6M     | $1.4M     | $2.1M      | $3.3M      | $5.1M      |
-| Professional Services            | $0.15M    | $0.3M     | $0.5M     | $0.6M     | $0.8M      | $1.2M      | $1.2M      |
+| Platform Subscriptions           | $0.10M    | $0.5M     | $0.9M     | $1.9M     | $3.9M      | $5.9M      | $8.3M      |
+| Data & Imagery                   | $0.02M    | $0.2M     | $0.6M     | $1.4M     | $2.1M      | $3.3M      | $5.1M      |
+| Professional Services            | $0.08M    | $0.3M     | $0.5M     | $0.6M     | $0.8M      | $1.2M      | $1.2M      |
 | Government Contracts (IDIQ/SBIR) | —         | $0.1M     | $1.0M     | $2.5M     | $4.5M      | $6.0M      | $8.0M      |
 | Gov. overlay via streams¹        | —         | —         | —         | —         | —          | —          | $7.7M      |
-| **Total Revenue**                | **$0.4M** | **$1.1M** | **$3.0M** | **$6.4M** | **$11.3M** | **$16.4M** | **$30.3M** |
+| **Total Revenue**                | **$0.2M** | **$1.1M** | **$3.0M** | **$6.4M** | **$11.3M** | **$16.4M** | **$30.3M** |
 
 > ¹ As government share grows from ~27% (Y1) to ~66% (Y7), an increasing volume of government spend flows through Platform/Data/Services contracts rather than separate IDIQ vehicles. At Y0–Y5, the IDIQ line captures substantially all incremental government revenue (totals match Table 3.2). By Y7, $7.7M of additional government revenue is embedded in the three stream lines above. **Table 3.2 below is the authoritative Commercial vs Government split.**
 
@@ -114,15 +114,15 @@ ACV expansion driven by: (1) customer migration to Enterprise tier, (2) data pro
 
 | Year                   | Y0        | Y1        | Y2        | Y3        | Y4         | Y5         | Y6         | Y7         |
 | ---------------------- | --------- | --------- | --------- | --------- | ---------- | ---------- | ---------- | ---------- |
-| **Commercial Revenue** | $0.4M     | $0.8M     | $1.2M     | $2.2M     | $3.8M      | $5.8M      | $8.2M      | $10.3M     |
+| **Commercial Revenue** | $0.2M     | $0.8M     | $1.2M     | $2.2M     | $3.8M      | $5.8M      | $8.2M      | $10.3M     |
 | **Government Revenue** | —         | $0.3M     | $1.8M     | $4.2M     | $7.5M      | $10.6M     | $13.8M     | $20.0M     |
-| **Total Revenue**      | **$0.4M** | **$1.1M** | **$3.0M** | **$6.4M** | **$11.3M** | **$16.4M** | **$22.0M** | **$30.3M** |
+| **Total Revenue**      | **$0.2M** | **$1.1M** | **$3.0M** | **$6.4M** | **$11.3M** | **$16.4M** | **$22.0M** | **$30.3M** |
 
 ### 3.3 Revenue Growth Rates
 
 | Year        | Y0Y1 | Y1Y2 | Y2Y3 | Y3Y4 | Y4Y5 | Y5Y6 | Y6Y7 |
 | ----------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Growth Rate | 175% | 173% | 113% | 77%  | 45%  | 34%  | 38%  |
+| Growth Rate | 450% | 173% | 113% | 77%  | 45%  | 34%  | 38%  |
 
 > **Growth deceleration** is natural: from startup hypergrowth (>100%) to sustainable scale (30–40%). By Y6–Y7, growth is driven by constellation capacity expansion and India market ramp. B2B SaaS median growth rate is ~25% [[1]](#ref-1) — Constellation exceeds this through Y7 due to multi-vector growth (new geos + new data products + new verticals).
 
@@ -134,10 +134,10 @@ ACV expansion driven by: (1) customer migration to Enterprise tier, (2) data pro
 
 | Metric              | Y0    | Y1    | Y3    | Y5   | Y7   | Notes                                                    |
 | ------------------- | ----- | ----- | ----- | ---- | ---- | -------------------------------------------------------- |
-| Blended CAC         | $80K  | $75K  | $65K  | $55K | $50K | Declines with brand + inbound growth                     |
-| Enterprise CAC      | $120K | $110K | $100K | $90K | $80K | Long sales cycles, dedicated reps                        |
+| Blended CAC         | $90K  | $80K  | $75K  | $75K | $75K | Enterprise-weighted; declines modestly with scale         |
+| Enterprise CAC      | $130K | $120K | $110K | $100K | $90K | Long sales cycles, dedicated reps                        |
 | SMB/Self-Serve CAC  | $5K   | $5K   | $4K   | $3K  | $3K  | Product-led growth, minimal touch                        |
-| New Customers/Year  | 5     | 8     | 18    | 30   | 40   | Per Section 02 SOM build                                 |
+| New Customers/Year  | 3     | 10    | 18    | 30   | 40   | Per Section 02 SOM build                                 |
 | Churn Rate (Annual) | 10%   | 12%   | 12%   | 10%  | 10%  | Enterprise retention improves [[2]](#ref-2)[[3]](#ref-3) |
 
 ### 4.2 Lifetime Value
@@ -148,10 +148,10 @@ ACV expansion driven by: (1) customer migration to Enterprise tier, (2) data pro
 | Gross Margin         | 48%     | 60%     | 68%    | 72%    | Improves with own data   |
 | Customer Lifetime    | 8.3 yrs | 8.3 yrs | 10 yrs | 10 yrs | =1/churn                 |
 | LTV (Gross Margin)   | $358K   | $598K   | $986K  | $1.19M | —                        |
-| LTV:CAC Ratio        | 4.8     | 9.2     | 17.9   | 23.8   | >3 healthy [[2]](#ref-2) |
-| CAC Payback (months) | 20      | 13      | 9      | 7      | <18 months target        |
+| LTV:CAC Ratio        | 4.5     | 8.6     | 13.9   | 15.8   | >3 healthy [[2]](#ref-2) |
+| CAC Payback (months) | 22      | 12      | 9      | 8      | <18 months target        |
 
-> **LTV:CAC** appears exceptionally strong from Y3+ because own-constellation data dramatically improves gross margins while CAC decreases with brand maturity. Planet Labs' economics validate this pattern — once satellites are operational, incremental data revenue has minimal COGS.
+> **LTV:CAC** is strong from Y3+ as own-constellation data dramatically improves gross margins. Y1 CAC payback of 22 months exceeds the 18-month target due to the enterprise-heavy sales mix and early-stage brand building; it falls below 12 months by Y3 as ACV expansion and margin improvement outpace CAC. Blended CAC is enterprise-weighted ($75K at maturity, not the $30–50K typical of self-serve SaaS) to reflect Constellation’s defense/enterprise-first GTM.
 
 ### 4.3 Gross Margin Breakdown
 
@@ -206,7 +206,7 @@ ACV expansion driven by: (1) customer migration to Enterprise tier, (2) data pro
 | Metric             | Section 02 (TAM/SOM) | This Section (Revenue)          | Aligned? |
 | ------------------ | -------------------- | ------------------------------- | -------- |
 | Y7 Revenue (Base)  | $30.3M               | $30.3M                          |          |
-| Total Clients Y7   | 133                  | 133 (5 new Y0 + growth - churn) |          |
+| Total Clients Y7   | 133                  | 133 (3 new Y0 + growth - churn) |          |
 | Avg ACV Y7         | $165K                | $165K                           |          |
 | SAM Penetration Y7 | 1.17%                | $30.3M / $2,600M = 1.17%        |          |
 | Annual Churn       | 12%                  | 12% (10% at maturity)           |          |

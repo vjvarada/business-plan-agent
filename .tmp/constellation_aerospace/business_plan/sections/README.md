@@ -14,7 +14,7 @@ This folder contains the section-based business plan for Constellation Aerospace
 | 04  | Competitive Analysis    | ✅ Draft v1 | Planet/BlackSky/SkyFi/Satellogic benchmarked; edge AI = unoccupied niche                                         |
 | 05  | Customer Validation     | ✅ Draft v1 | Pre-revenue; market demand validated by proxy; pilot plan for 5 design partners Y0                               |
 | 06  | Go-To-Market Strategy   | ✅ Draft v1 | Two-geography (NAM + India), 3 sales motions, gov procurement pathways                                           |
-| 07  | Revenue Model           | ✅ Draft v1 | $0.4M Y0 → $30.3M Y7; 3 streams + gov overlay; gross margin 45%→72%                                              |
+| 07  | Revenue Model           | ✅ Draft v1 | $0.2M Y0 → $30.3M Y7; 3 streams + gov overlay; gross margin 45%→72%                                              |
 | 08  | Team & Costs            | ✅ Draft v4 | India/Bangalore ops; 14→121 headcount; $0.17M→$3.06M; 85–93% cheaper than US ($170K benchmark)                   |
 | 09  | Fundraising Strategy    | ✅ Draft v1 | Pre-Seed $1.3M (Bluehill, secured) + Seed $3M + Series A $12-15M; exit $150-500M                                 |
 | 10  | Financial Projections   | ✅ Draft v1 | 8-yr P&L, CF, BS; EBITDA+ Y3, Net Income+ Y5; peak deficit $7.5M Y4; valuation $150-370M                         |

@@ -173,6 +173,8 @@ Not all potential buyers within target geographies are addressable today:
 | Government Contracts   | 5 contract vehicles $1.6M         | $8.0M      |           |
 | **Total**              |                                   | **$30.3M** | 1.17% SAM |
 
+> **Reconciliation with Section 07:** This SOM build allocates all revenue by product type (e.g., government-funded data purchases appear in “Data & Imagery”). Section 07’s revenue model splits by funding source instead: commercial stream revenue ($10.3M) + explicit government contracts ($8.0M IDIQ + $7.7M gov overlay via streams) + remaining commercial streams. Both approaches total $30.3M. Section 07’s Table 3.2 (Commercial vs Government split) is the authoritative view.
+
 #### Aggressive Scenario ($45M Year 7)
 
 | Stream                 | Metric                            | Y7 Value   | Revenue   |
@@ -189,16 +191,16 @@ Constellation's SOM ramps across three strategic phases:
 
 | Phase                            | Years | Revenue Focus                              | Key Milestones                                                                 | Est. Revenue |
 | -------------------------------- | ----- | ------------------------------------------ | ------------------------------------------------------------------------------ | ------------ |
-| **Phase 1: Analytics-First**     | Y0–Y2 | Platform subs + data resale + services     | Launch platform, 10–15 enterprise clients, book first satellite launch         | $0.5M $3M    |
-| **Phase 2: Constellation Build** | Y2–Y4 | + Own satellite data revenue               | First satellites operational, defense contracts signed                         | $3M $12M     |
-| **Phase 3: Scale**               | Y4–Y7 | Full stack: platform + own data + services | 10+ satellite constellation, India market entry, government contract portfolio | $12M $30M    |
+| **Phase 1: Analytics-First**     | Y0–Y2 | Platform subs + data resale + services     | Launch platform, 10–15 enterprise clients, book first satellite launch         | $0.2M–$3M   |
+| **Phase 2: Constellation Build** | Y2–Y4 | + Own satellite data revenue               | First satellites operational, defense contracts signed                         | $3M–$12M    |
+| **Phase 3: Scale**               | Y4–Y7 | Full stack: platform + own data + services | 10+ satellite constellation, India market entry, government contract portfolio | $12M–$30M   |
 
 ### 3.4 Customer Acquisition Trajectory (Base Case)
 
 | Year | New Clients | Churned | Total Clients | Avg ACV | Total ARR |
 | ---- | ----------- | ------- | ------------- | ------- | --------- |
-| Y0   | 5           | 0       | 5             | $80K    | $0.4M     |
-| Y1   | 8           | 1       | 12            | $90K    | $1.1M     |
+| Y0   | 3           | 0       | 3             | $80K    | $0.2M     |
+| Y1   | 10          | 1       | 12            | $90K    | $1.1M     |
 | Y2   | 12          | 1       | 23            | $100K   | $2.3M     |
 | Y3   | 18          | 3       | 38            | $120K   | $4.6M     |
 | Y4   | 25          | 5       | 58            | $130K   | $7.5M     |
@@ -206,7 +208,7 @@ Constellation's SOM ramps across three strategic phases:
 | Y6   | 35          | 10      | 106           | $155K   | $16.4M    |
 | Y7   | 40          | 13      | 133           | $165K   | $21.9M    |
 
-> **Churn assumption:** 12% annual logo churn (consistent with B2B SaaS benchmarks: 3.5–5% for enterprise, higher for SMB) [[16]](#ref-16)[[17]](#ref-17). Constellation targets mid-market/enterprise clients with multi-year contracts reducing effective churn.
+> **Churn assumption:** 12% annual logo churn (median for B2B SaaS per industry benchmarks — note that enterprise-only churn is typically 3.5–5%; our blended rate reflects a mix of enterprise and SMB clients) [[16]](#ref-16)[[17]](#ref-17). Constellation targets mid-market/enterprise clients with multi-year contracts reducing effective churn.
 
 > **ACV growth:** Driven by (1) platform feature expansion, (2) data upsell from own constellation, (3) professional services attach rate increasing.
 
@@ -220,8 +222,10 @@ Constellation's SOM ramps across three strategic phases:
 | Y7 Revenue / Global TAM | $30M / $7,000M = 0.43%      | Very conservative globally           |
 | Required Client Count   | 133 enterprise clients      | Achievable with 2-geo sales team     |
 | Avg ACV Growth (Y0Y7)   | $80K $165K (2.1 in 7 years) | Consistent with platform expansion   |
-| Revenue per Satellite   | ~$1.5M/sat (20 sats by Y7)  | Below Planet Labs' ~$1.2M/sat        |
-| vs BlackSky Trajectory  | BlackSky: ~$60M at 5 years  | Our Y5 ($12M) is more conservative   |
+| Revenue per Satellite   | ~$1.5M/sat total² (20 sats by Y7)  | Above Planet Labs' ~$1.2M/sat (see note) |
+| vs BlackSky Trajectory  | BlackSky: ~$60M at 5 years  | Our Y5 ($16M) is more conservative   |
+
+> ² The $1.5M/sat figure attributes ALL revenue ($30.3M ÷ 20 sats) to the constellation, including platform SaaS and professional services revenue that does not depend on owned satellites. Data-only revenue per satellite is ~$255K/sat ($5.1M ÷ 20 sats), well below Planet Labs. This total metric reflects Constellation's integrated platform model where satellites enhance — but don't wholly drive — revenue.
 
 ---
 

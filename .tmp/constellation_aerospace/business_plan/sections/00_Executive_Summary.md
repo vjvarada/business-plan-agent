@@ -89,7 +89,7 @@ The proprietary payload with on-board edge AI is the core technical differentiat
 
 **Tip-and-cue (Phase 3+):** Following the OroraTech model ("as many as two-thirds of the company's sensors might operate on partner satellites"), Constellation plans to add 6U reconnaissance satellites for targeted high-resolution imaging triggered by 3U survey detections. This is a Y5+ capability that multiplies the value of the existing constellation without replacing it.
 
-**CapEx advantage:** Total 8-year constellation CapEx of **~$9.6M** vs ~$31.6M for a comparable 6U–16U fleet — a significant CapEx reduction that fundamentally changes the capital efficiency equation.
+**CapEx advantage:** Total 8-year constellation CapEx of **~$9.8M** vs ~$31.6M for a comparable 6U–16U fleet — a significant CapEx reduction that fundamentally changes the capital efficiency equation.
 
 > _Detail: Section 03 - Technology Architecture_
 
@@ -110,9 +110,9 @@ The proprietary payload with on-board edge AI is the core technical differentiat
 
 | Metric       | Y0  | Y1   | Y2   | Y3   | Y4   | Y5   | Y6   | Y7   |
 | ------------ | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Revenue ($M) | 0.4 | 1.1  | 3.0  | 6.4  | 11.3 | 16.4 | 22.0 | 30.3 |
-| YoY Growth   | --- | 175% | 173% | 113% | 77%  | 45%  | 34%  | 38%  |
-| Customers    | 5   | 12   | 23   | 38   | 58   | 81   | 106  | 133  |
+| Revenue ($M) | 0.2 | 1.1  | 3.0  | 6.4  | 11.3 | 16.4 | 22.0 | 30.3 |
+| YoY Growth   | --- | 450% | 173% | 113% | 77%  | 45%  | 34%  | 38%  |
+| Customers    | 3   | 12   | 23   | 38   | 58   | 81   | 106  | 133  |
 | Avg ACV ($K) | 80  | 90   | 100  | 120  | 130  | 145  | 155  | 165  |
 | Gross Margin | 45% | 48%  | 60%  | 65%  | 68%  | 72%  | 72%  | 72%  |
 
@@ -120,8 +120,8 @@ The proprietary payload with on-board edge AI is the core technical differentiat
 
 | Metric      | Y1     | Y3     | Y5     | Y7     |
 | ----------- | ------ | ------ | ------ | ------ |
-| LTV:CAC     | 4.8x   | 9.2x   | 17.9x  | 23.8x  |
-| CAC Payback | 8.3 mo | 6.5 mo | 5.6 mo | 5.0 mo |
+| LTV:CAC     | 4.5x   | 8.6x   | 13.9x  | 15.8x  |
+| CAC Payback | 22 mo  | 12 mo  | 9 mo   | 8 mo   |
 
 > _Detail: Section 07 - Revenue Model_
 
@@ -131,7 +131,7 @@ The proprietary payload with on-board edge AI is the core technical differentiat
 
 | Factor           | Planet Labs      | BlackSky          | Constellation        |
 | ---------------- | ---------------- | ----------------- | -------------------- |
-| Revenue (Latest) | $244M            | ~$100M            | $0.4M (Y0)           |
+| Revenue (Latest) | $244M            | ~$100M            | $0.2M (Y0)           |
 | Architecture     | 200+ Doves, 3U   | 6-8 sats, 55cm    | 3U CubeSats, edge AI |
 | Edge Processing  | No (ground only) | No (ground only)  | Yes (on-satellite)   |
 | Tasking          | Limited          | Yes               | No (survey mode)     |
@@ -168,11 +168,10 @@ Target initial customers: Indian defense agencies, agricultural monitoring progr
 
 | Department          | Y0     | Y1     | Y3     | Y5     | Y7      |
 | ------------------- | ------ | ------ | ------ | ------ | ------- |
-| Engineering         | 7      | 11     | 20     | 33     | 43      |
+| Engineering         | 8      | 9      | 25     | 37     | 47      |
 | Operations          | 1      | 3      | 11     | 22     | 35      |
-| Sales and Marketing | ---    | 4      | 9      | 17     | 24      |
-| G&A                 | 5      | 3      | 5      | 7      | 10      |
-| Leadership          | 1      | ---    | 7      | 7      | 9       |
+| Sales and Marketing | —      | 4      | 9      | 17     | 24      |
+| G&A                 | 5      | 5      | 7      | 10     | 15      |
 | **Total**           | **14** | **21** | **52** | **86** | **121** |
 
 ### India Cost Advantage
@@ -211,8 +210,8 @@ Target initial customers: Indian defense agencies, agricultural monitoring progr
 | Net Income           | $10.1M (33% margin)    |
 | Total OpEx           | $5.6M (19% of revenue) |
 | Revenue per Employee | $250K                  |
-| Cumulative Cash      | $29.2M                 |
-| Total CapEx (8yr)    | ~$9.6M                 |
+| Cumulative Cash      | $29.1M                 |
+| Satellite CapEx (mfg+launch) | ~$9.8M          |
 | Total Equity Raised  | $16.3M                 |
 
 ### Capital Efficiency Comparison
@@ -220,11 +219,11 @@ Target initial customers: Indian defense agencies, agricultural monitoring progr
 | Metric                  | Constellation | US EO Competitor |
 | ----------------------- | ------------- | ---------------- |
 | Equity Raised           | $16.3M        | $40-60M          |
-| Total CapEx             | ~$9.6M        | ~$31.6M          |
+| Satellite CapEx (mfg+launch) | ~$9.8M   | ~$31.6M          |
 | Revenue / Employee (Y7) | $250K         | $150-200K        |
 | OpEx / Revenue (Y7)     | 19%           | 40-60%           |
 
-**Cash position:** Cumulative cash remains **positive throughout** the entire projection period. The lowest cash point is $7.7M at Y3 --- a comfortable buffer. Y7 cumulative cash reaches $29.2M.
+**Cash position:** Cumulative cash remains **positive throughout** the entire projection period. The lowest cash point is $7.6M at Y3 --- a comfortable buffer. Y7 cumulative cash reaches $29.1M.
 
 > _Detail: Section 10 - Financial Projections_
 
@@ -268,7 +267,7 @@ _Note: Exit value ranges reflect two valuation approaches --- DCF/multiples anal
 
 1. **$7B market, 1% penetration** --- Constellation targets only $30M of a $7B TAM. Even 50% underperformance yields a viable business at $15M revenue.
 
-2. **3U architecture = fraction of the CapEx** --- ~$9.6M total constellation cost vs $31.6M for larger form factors. Every dollar of equity goes further.
+2. **3U architecture = fraction of the CapEx** --- satellite CapEx ~$9.8M (mfg + launch) vs $31.6M for larger form factors. Every dollar of equity goes further.
 
 3. **Edge AI is the moat** --- On-satellite processing (80-95% bandwidth reduction) enables real-time analytics that competitors cannot replicate without redesigning their entire constellation.
 
@@ -276,7 +275,7 @@ _Note: Exit value ranges reflect two valuation approaches --- DCF/multiples anal
 
 5. **Government revenue = stability** --- 55-66% of revenue from defense/government contracts provides predictable, multi-year revenue streams with high switching costs.
 
-6. **Pre-Seed fully allocated, Seed launches the business** --- Bluehill Capital's $1.3M buys a qualified satellite payload + working analytics platform + $0.4M revenue, all within 12 months. Seed ($3M) funds the first satellite launch and growth.
+6. **Pre-Seed fully allocated, Seed launches the business** --- Bluehill Capital's $1.3M buys a qualified satellite payload + working analytics platform + $0.2M revenue (partial year), all within 12 months. Seed ($3M) funds the first satellite launch and growth.
 
 7. **Hosted payload model = deployment speed** --- By flying on commercial buses (Dhruva P-DoT), Constellation can scale its constellation faster than competitors building proprietary satellites. Per-satellite payload cost of ~$200K after NRE amortization.
 
@@ -292,7 +291,7 @@ _Note: Exit value ranges reflect two valuation approaches --- DCF/multiples anal
 | 2   | Cassegrain payload execution            | Medium     | Proven optical design; India manufacturing ecosystem; entire Y0 dedicated to qualification       |
 | 3   | Government contract concentration       | Medium     | Diversify across defense/civil/agriculture/commercial; no single customer >20% of revenue        |
 | 4   | US market access as India-based company | Low-Medium | ITAR-compliant data handling; US subsidiary for defense contracts; strong partnerships           |
-| 5   | CapEx timing vs revenue ramp            | Medium     | 3U per-unit cost ($300-600K) allows pause-and-assess; ~$9.6M CapEx fully funded by $16.3M equity |
+| 5   | CapEx timing vs revenue ramp            | Medium     | 3U per-unit cost ($300-600K) allows pause-and-assess; satellite CapEx ~$9.8M (mfg+launch) within $16.3M equity |
 
 **Downside protection:** Even under a "No Satellites" scenario (analytics platform only, using third-party imagery), the company achieves $14M Y7 revenue with 62% gross margin --- a viable standalone business.
 
@@ -307,11 +306,11 @@ _Note: Exit value ranges reflect two valuation approaches --- DCF/multiples anal
 | 00  | Executive Summary       | This document | Overview of all sections                                  |
 | 01  | Market Drivers          | Final         | $100B+ government investment driving EO demand            |
 | 02  | TAM/SAM/SOM Calculation | Final         | $7.0B TAM, $2.6B SAM, $30.3M SOM (Y7)                     |
-| 03  | Technology Architecture | Final         | 3U CubeSat + edge AI + hosted payload; ~$9.6M total CapEx |
+| 03  | Technology Architecture | Final         | 3U CubeSat + edge AI + hosted payload; ~$9.8M sat CapEx   |
 | 04  | Competitive Analysis    | Final         | Edge AI + India cost = unique positioning                 |
 | 05  | Customer Validation     | Final         | Pre-revenue validation framework                          |
 | 06  | Go-To-Market Strategy   | Final         | Defense-first, phased geographic expansion                |
-| 07  | Revenue Model           | Final         | 3 streams + gov overlay; $0.4M to $30.3M                  |
+| 07  | Revenue Model           | Final         | 3 streams + gov overlay; $0.2M to $30.3M                  |
 | 08  | Team and Costs          | Final         | 14 to 121 people; India 85–93% cost advantage             |
 | 09  | Fundraising Strategy    | Final         | $16.3M equity; Pre-Seed secured                           |
 | 10  | Financial Projections   | Final         | EBITDA+ Y3; Net income+ Y4; Cash always positive          |

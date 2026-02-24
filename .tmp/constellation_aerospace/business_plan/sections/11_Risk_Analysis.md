@@ -109,14 +109,14 @@ The India-based cost structure is both a risk mitigant (lower burn = more time t
 
 | Attribute      | Detail                                                                                              |
 | -------------- | --------------------------------------------------------------------------------------------------- |
-| **Risk**       | Over-reliance on government revenue (projected 60% at Y5)                                           |
+| **Risk**       | Government revenue concentration (~65% at Y5, ~66% at Y7)                                          |
 | **Likelihood** | High (by design; defense is primary GTM channel)                                                    |
 | **Impact**     | High — government budget cuts, contract loss, or policy changes could eliminate majority of revenue |
 
 **Mitigation Strategies:**
 
-1. **Commercial diversification** — target 45% commercial by Y7 (agriculture, energy, insurance verticals)
-2. **Multi-agency spread** — pursue NGA, NRO, DoD, USDA, DOE, and Indian MoD; no single agency >25% of government revenue
+1. **Commercial diversification** — Y7 commercial share is ~34% ($10.3M of $30.3M); target 50%+ by Y9–Y10 as agriculture, energy, and insurance verticals scale beyond initial government-led adoption
+2. **Multi-agency spread** — pursue NGA, NRO, DoD, USDA, DOE, and Indian MoD; no single agency >25% of government revenue (reduces single-contract risk within the government portfolio)
 3. **Multi-year IDIQ vehicles** — 5-year contract vehicles provide revenue predictability
 4. **Self-serve tier** — product-led growth creates hundreds of small users independent of government budgets
 5. **India defense parallel** — ISRO/MoD contracts provide geographic diversification within government segment
@@ -215,7 +215,7 @@ The India-based cost structure is both a risk mitigant (lower burn = more time t
 
 | Attribute      | Detail                                                                                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Risk**       | Constellation satellite CapEx (~$9.6M mfg + launch over 8 years; ~$19.5M total including ground/payload dev/software) requires careful phasing against revenue ramp |
+| **Risk**       | Constellation satellite CapEx (~$9.8M mfg + launch over 8 years; ~$19.5M total including ground/payload dev/software) requires careful phasing against revenue ramp |
 | **Likelihood** | Medium (3U satellites cost 60–70% less than 6U–16U, substantially reducing the capital gap)                                                                         |
 | **Impact**     | Medium — cumulative cash remains positive throughout with $16.3M equity raised; risk is CapEx timing not absolute shortfall                                         |
 
@@ -368,7 +368,7 @@ The India-based cost structure is both a risk mitigant (lower burn = more time t
 ## 10. Key Insights
 
 - **Two critical risks** (gov concentration, ITAR compliance) require active board-level monitoring; satellite failure is de-risked by 3U unit economics ($300–400K per satellite vs $0.5–2M)
-- **3U architecture reduces financial risk significantly**: satellite CapEx of ~$9.6M (mfg + launch) vs ~$31.6M for 6U–16U, no structural capital gap, cumulative cash stays positive
+- **3U architecture reduces financial risk significantly**: satellite CapEx of ~$9.8M (mfg + launch) vs ~$31.6M for 6U–16U, no structural capital gap, cumulative cash stays positive
 - **India cost structure is dual-purpose**: a business advantage AND a risk mitigant — lower burn extends runway and provides time to recover from setbacks
 - **ITAR compliance is non-negotiable** and must be built into the company from Y0 — retrofitting is orders of magnitude harder
 - **"No Satellites" fallback** ($14M analytics business) provides a viable floor — the company is not binary; it degrades gracefully

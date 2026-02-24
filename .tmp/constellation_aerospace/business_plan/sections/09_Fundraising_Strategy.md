@@ -56,12 +56,12 @@ The total equity raise of $16–19M is purposefully modest for a space company �
 **Key Milestones (Pre-Seed → Seed):**
 
 - ✓ Build 14-person founding team (Bangalore — payload-engineering focused: 2 FTE + 1 PTE on Cassegrain/imager/Jetson)
-- ✓ Build and qualify Cassegrain telescope payload
+- ✓ Build and qualify Cassegrain telescope payload (COTS telescope fallback within same budget if custom optics exceed schedule/cost)
 - ✓ Integrate payload with Dhruva 3U satellite bus
 - ✓ Develop MVP analytics platform (third-party data integration)
 - ✓ Secure 2–3 design partner pilots
 - ✓ Begin IN-SPACe licensing and regulatory process
-- ✓ Achieve $0.2–0.4M in pilot revenue/commitments
+- ✓ Achieve $0.1–$0.2M in pilot revenue/commitments
 
 ### 2.2 Seed ($3M — Target Y1)
 

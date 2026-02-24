@@ -281,7 +281,7 @@ Downlink > Ingest > Level 0 > Level 1 > Level 2 > Analytics > Delivery
 
 > **† Y0 CapEx detail:** Satellite Mfg/Bus $0.22M = Dhruva Aerospace 3U OTS bus ($200K) + compute/electronics ($20K). Payload Dev $0.78M = Cassegrain telescope optics & imaging ($500K) + thermal management ($20K) + integration/testing/GSE ($260K). No software CapEx in Y0 (tools in OpEx). No launch in Y0.
 >
-> **3U cost advantage:** Satellite manufacturing + launch CapEx of ~$9.6M over 8 years (sat mfg $7.07M + launch $2.70M) is roughly one-third what a 6U–16U fleet of equivalent size would cost (~$31.6M). The savings come primarily from satellite manufacturing (60–70% cheaper) and launch costs (lighter sats = cheaper rideshare slots). Total CapEx including ground segment, payload dev, and software is $19.5M, still well below the $16.3M equity raise when combined with operating cash flow.
+> **3U cost advantage:** Satellite manufacturing + launch CapEx of ~$9.8M over 8 years (sat mfg $7.07M + launch $2.70M) is roughly one-third what a 6U–16U fleet of equivalent size would cost (~$31.6M). The savings come primarily from satellite manufacturing (60–70% cheaper) and launch costs (lighter sats = cheaper rideshare slots). Total CapEx including ground segment, payload dev, and software is $19.5M, still well below the $16.3M equity raise when combined with operating cash flow.
 
 ---
 
@@ -293,7 +293,7 @@ Downlink > Ingest > Level 0 > Level 1 > Level 2 > Analytics > Delivery
 - **Phase 1 middleman tasking bridges the gap**: Third-party tasking resale generates revenue in Y0–Y2 while own constellation is built
 - **Monitoring feeds replace tasking**: Survey mode naturally produces continuous coverage data — ideal for subscriptions, change detection, and temporal analytics
 - **Own-constellation economics are compelling**: Gross margins improve from ~40% (resale) to ~80% (own data), fundamentally changing unit economics at scale
-- **3U satellite CapEx of ~$9.6M** (mfg + launch) vs ~$31.6M for 6U–16U means dramatically lower capital requirements, with no structural funding gap
+- **3U satellite CapEx of ~$9.8M** (mfg + launch) vs ~$31.6M for 6U–16U means dramatically lower capital requirements, with no structural funding gap
 - **The satellite onboard computing market ($2.15B) validates demand** for edge AI capabilities in space [[2]](#ref-2)
 
 ---
@@ -303,7 +303,7 @@ Downlink > Ingest > Level 0 > Level 1 > Level 2 > Analytics > Delivery
 1. **Technology is proven** — 3U CubeSats and edge computing are mature technologies being applied in a novel combination; no unproven physics required
 2. **Phase 1 de-risks execution** — revenue generation before satellite build validates market demand with minimal hardware risk; middleman tasking generates revenue immediately
 3. **Edge AI creates switching costs** — customers build workflows around Constellation's near-real-time monitoring and alert capabilities, increasing retention
-4. **3U architecture is capital-efficient** — satellite CapEx of ~$9.6M (mfg + launch) vs ~$31.6M for 6U–16U; total CapEx of ~$19.5M fully covered by $16.3M equity + operating cash flow
+4. **3U architecture is capital-efficient** — satellite CapEx of ~$9.8M (mfg + launch) vs ~$31.6M for 6U–16U; total CapEx of ~$19.5M fully covered by $16.3M equity + operating cash flow
 5. **No tasking simplifies operations** — survey-mode satellites require minimal ground-station commanding and scheduling complexity
 6. **The architecture scales linearly** — adding 3U satellites is incremental ($300–600K each), with each satellite contributing ~$1M/year in data revenue at maturity
 

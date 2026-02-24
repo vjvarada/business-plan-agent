@@ -48,7 +48,9 @@ The Y0 team is **payload-engineering focused**: 2 FTE + 1 PTE engineer work on t
 |                                  |             |                                                                                     |
 | **Total Pre-Seed**               | **$1,300K** | Fully allocated; no unallocated buffer                                              |
 
-> **Note:** The $1M hardware budget is dedicated to building and qualifying the satellite payload (Cassegrain telescope + imager + Jetson carrier board, integrated with Dhruva 3U bus). No satellite launch in Y0 — first launch target is Y1. The CV/ML Engineer uses this year to build the initial analytics platform using third-party data, generating $0.4M Y0 revenue with minimal COGS. India local travel (Uber commute, lab visits at ~₹2,000/day) is included in Operations & Overhead.
+> **Note:** The $1M hardware budget is dedicated to building and qualifying the satellite payload (Cassegrain telescope + imager + Jetson carrier board, integrated with Dhruva 3U bus). No satellite launch in Y0 — first launch target is Y1. The CV/ML Engineer uses this year to build the initial analytics platform using third-party data, generating $0.2M Y0 revenue (partial year, 3 paying clients) with minimal COGS. India local travel (Uber commute, lab visits at ~₹2,000/day) is included in Operations & Overhead.
+
+> **Hardware contingency:** The $500K optics budget follows a dual-path strategy: primary development of the custom monolithic Cassegrain telescope, with a commercial off-the-shelf (COTS) telescope assembly as a fallback within the same budget. If custom optics development exceeds budget or schedule, the team can pivot to a COTS unit ($50–100K), allocating the remaining funds to payload integration and testing. This ensures the Y0 hardware milestone is met within the $1.0M CapEx envelope regardless of the optical path chosen. Custom optics development resumes in subsequent satellite builds if needed.
 
 ### 1.3 Headcount Growth Plan
 
@@ -173,23 +175,23 @@ Founders will handle North American BD through regular travel. One co-founder (A
 | Headcount Cost (India)      | $0.17M     | $0.39M     | $0.69M     | $1.09M     | $1.98M     | $3.06M     |
 | Fixed Costs                 | $0.09M     | $0.57M     | $1.07M     | $1.48M     | $2.08M     | $2.56M     |
 | **Total OpEx (excl. COGS)** | **$0.26M** | **$0.96M** | **$1.76M** | **$2.57M** | **$4.06M** | **$5.62M** |
-| Revenue                     | $0.4M      | $1.1M      | $3.0M      | $6.4M      | $16.4M     | $30.3M     |
-| **OpEx / Revenue**          | 65%        | 87%        | 59%        | 40%        | 25%        | 19%        |
+| Revenue                     | $0.2M      | $1.1M      | $3.0M      | $6.4M      | $16.4M     | $30.3M     |
+| **OpEx / Revenue**          | 130%       | 87%        | 59%        | 40%        | 25%        | 19%        |
 
-> Y0 OpEx / Revenue of 65% reflects the lean pre-seed operating structure — most of the $1.3M goes to hardware CapEx, not operating expenses. OpEx is only 19% of revenue by Y7. Note: the pre-seed budget allocates $300K to operations (including ~$40K in one-time setup costs not in the recurring fixed cost table).
+> Y0 OpEx / Revenue of 130% reflects partial-year revenue recognition — only $0.2M in revenue against $0.26M OpEx. Most of the $1.3M pre-seed goes to hardware CapEx ($1.0M), not operating expenses. OpEx is only 19% of revenue by Y7. Note: the pre-seed budget allocates $300K to operations (including ~$40K in one-time setup costs not in the recurring fixed cost table).
 
 ### 4.1 Including COGS and CapEx
 
 | Category                          | Y0          | Y1          | Y2          | Y3          | Y5          | Y7          |
 | --------------------------------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | OpEx (above)                      | $0.26M      | $0.96M      | $1.76M      | $2.57M      | $4.06M      | $5.62M      |
-| COGS (data procurement + sat ops) | $0.22M      | $0.57M      | $1.20M      | $2.24M      | $4.59M      | $8.48M      |
+| COGS (data procurement + sat ops) | $0.11M      | $0.57M      | $1.20M      | $2.24M      | $4.59M      | $8.48M      |
 | CapEx (payload dev + sat mfg)     | $1.00M      | $1.85M      | $3.00M      | $3.50M      | $2.50M      | $1.70M      |
-| **Total Cash Required**           | **$1.48M**  | **$3.38M**  | **$5.96M**  | **$8.31M**  | **$11.15M** | **$15.80M** |
-| Revenue                           | $0.4M       | $1.1M       | $3.0M       | $6.4M       | $16.4M      | $30.3M      |
-| **Net Cash Flow**                 | **-$1.08M** | **-$2.28M** | **-$2.96M** | **-$1.91M** | **$5.25M**  | **$14.50M** |
+| **Total Cash Required**           | **$1.37M**  | **$3.38M**  | **$5.96M**  | **$8.31M**  | **$11.15M** | **$15.80M** |
+| Revenue                           | $0.2M       | $1.1M       | $3.0M       | $6.4M       | $16.4M      | $30.3M      |
+| **Net Cash Flow**                 | **-$1.17M** | **-$2.28M** | **-$2.96M** | **-$1.91M** | **$5.25M**  | **$14.50M** |
 
-> **Cash flow turns positive in Y4** on an annual basis. Y0 CapEx of $1.0M is the monolithic Cassegrain telescope build + Dhruva 3U bus procurement. Total satellite-specific CapEx (mfg + launch) of ~$9.6M over 8 years vs ~$31.6M for a 6U–16U fleet.
+> **Cash flow turns positive in Y4** on an annual basis. Y0 CapEx of $1.0M is the monolithic Cassegrain telescope build + Dhruva 3U bus procurement. Total satellite-specific CapEx (mfg + launch) of ~$9.8M over 8 years vs ~$31.6M for a 6U–16U fleet.
 
 ---
 
@@ -199,9 +201,9 @@ Founders will handle North American BD through regular travel. One co-founder (A
 
 | Metric                | Y0   | Y1   | Y3    | Y5    | Y7    | Benchmark            |
 | --------------------- | ---- | ---- | ----- | ----- | ----- | -------------------- |
-| Revenue / Employee    | $29K | $52K | $123K | $191K | $250K | Planet Labs ~$270K   |
+| Revenue / Employee    | $14K | $52K | $123K | $191K | $250K | Planet Labs ~$270K   |
 | Cost/Employee (India) | $12K | $19K | $21K  | $23K  | $25K  | US ~$170K            |
-| Revenue/Cost Multiple | 2.4  | 2.7  | 5.9   | 8.3   | 10.0  | Exceptional leverage |
+| Revenue/Cost Multiple | 1.2  | 2.7  | 5.9   | 8.3   | 10.0  | Exceptional leverage |
 
 **Revenue-per-employee of $250K at Y7** approaches Planet Labs' benchmark, but at **85% lower cost per employee** — this is the India cost arbitrage in action. Y0 cost/employee is especially low ($12K) due to intern-heavy team composition (6 of 14).
 
@@ -220,8 +222,8 @@ Founders will handle North American BD through regular travel. One co-founder (A
 
 - **India-based operations are the structural cost moat** — 93% cheaper than US equivalent at Y0, maintaining 85% advantage at scale (1:1 headcount comparison at $170K US CTC)
 - **Pre-seed of $1.3M is tightly allocated:** $1.0M hardware/CapEx (Cassegrain telescope + Dhruva 3U bus) + $0.17M HR (14-person payload-focused team: 8 FTE + 6 interns) + $0.13M operations (including India local travel) — zero slack
-- **Y0 is an R&D/build year:** 2 FTE + 1 PTE focus on the Cassegrain optics, hyperspectral imager, and Jetson carrier board; platform generates $0.4M from third-party data resale with just 2 software engineers
-- **Cash flow turns positive Y4** — the 3U architecture keeps total CapEx at $9.6M vs ~$31.6M for 6U–16U, preserving cash throughout
+- **Y0 is an R&D/build year:** 2 FTE + 1 PTE focus on the Cassegrain optics, hyperspectral imager, and Jetson carrier board; platform generates $0.2M from third-party data resale (partial year, 3 clients) with just 2 software engineers
+- **Cash flow turns positive Y4** — the 3U architecture keeps total CapEx at ~$9.8M vs ~$31.6M for 6U–16U, preserving cash throughout
 - **121 people by Y7** supports $30.3M revenue at only $5.6M total OpEx (19% of revenue) — SaaS-like operating leverage
 - **US travel budget of $18K (Y0) $200K (Y7)** is the primary non-India cost — one co-founder (Australian passport + US green-card holder) maintains a US base for BD
 
@@ -246,7 +248,7 @@ Founders will handle North American BD through regular travel. One co-founder (A
 1. **India cost base is a competitive weapon** — Constellation runs a 14-person team for $171K (Y0), scaling to 121 people for $3.06M (Y7), vs $20.57M for a US competitor at $170K average CTC. That’s 85–93% structural savings.
 2. **Pre-seed of $1.3M is fully allocated** with zero slack — $1M goes directly into Cassegrain telescope + Dhruva 3U bus, $0.30M covers lean operations (including $171K headcount for 8 FTE + 6 interns) for 12 months
 3. **Y0 is an R&D year by design** — the team builds the payload (Cassegrain + imager + Jetson carrier board) and bootstraps the platform; first satellite launch is a Y1 milestone funded by the Seed round
-4. **Tightly scoped Y0 reduces pre-seed risk** — Bluehill’s $1.3M buys a qualified satellite payload, a working analytics platform, and $0.4M in revenue, all within 12 months
+4. **Tightly scoped Y0 reduces pre-seed risk** — Bluehill's $1.3M buys a qualified satellite payload, a working analytics platform, and $0.2M in revenue (partial year), all within 12 months
 5. **Per-satellite payload cost of ~$200K** (after amortizing NRE) gives Constellation a 3–5× cost advantage on constellation scaling vs competitors building proprietary buses
 6. **Cash flow positive by ~Y4–Y5** means Series A may be the last equity round needed (Series B optional for acceleration)
 7. **Founder-led BD** from a US base (one co-founder holds Australian passport + US green card) keeps customer access high while maintaining India cost structure

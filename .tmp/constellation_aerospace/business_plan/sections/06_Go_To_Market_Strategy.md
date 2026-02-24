@@ -38,7 +38,7 @@ The GTM is structured around **three sales motions**: (1) Enterprise direct sale
 | Phase | Timeline | Focus | Revenue Target |
 |-------|----------|-------|---------------|
 | **Phase 1: Platform Launch** | M1–M6 | Build analytics SaaS; integrate third-party imagery; hire founding sales | $0 (pre-revenue) |
-| **Phase 2: Design Partners** | M6–M12 | 5–10 free pilots across defense, agriculture, energy; begin gov credential process | $0.2–0.5M |
+| **Phase 2: Design Partners** | M6–M12 | 5–10 free pilots across defense, agriculture, energy; begin gov credential process | $0.1–$0.2M |
 | **Phase 3: Enterprise Sales** | Y1–Y2 | Convert pilots to paid; first gov contract vehicles; enter India market | $1–3M |
 | **Phase 4: Constellation Leverage** | Y2–Y4 | Own-satellite data enables unique products; gov IDIQ awards; India defense entry | $3–12M |
 | **Phase 5: Scale** | Y4–Y7 | Full constellation operational; multi-geography expansion; platform marketplace | $12–30M |
@@ -185,7 +185,7 @@ Awareness (Content + Events)
 |--------|-----|-----|-----|-----|-----------|
 | ARR per Sales Rep | $150K | $300K | $400K | $500K | $400K–600K (B2B SaaS) |
 | Sales Cycle (Enterprise) | 9–12 months | 6–9 months | 4–6 months | 3–6 months | Improves with brand |
-| CAC Payback (months) | 18–24 | 12–18 | 10–14 | 8–12 | <18 months target [[6]](#ref-6) |
+| CAC Payback (months) | 20–24 | 10–14 | 8–10  | 7–9  | <18 months target [[6]](#ref-6) |
 | LTV:CAC Ratio | 2.0 | 3.0 | 4.0 | 5.0 | >3.0 healthy |
 
 ---
