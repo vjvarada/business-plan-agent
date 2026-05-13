@@ -132,13 +132,13 @@ ACV expansion driven by: (1) customer migration to Enterprise tier, (2) data pro
 
 ### 4.1 Customer Acquisition
 
-| Metric              | Y0    | Y1    | Y3    | Y5   | Y7   | Notes                                                    |
-| ------------------- | ----- | ----- | ----- | ---- | ---- | -------------------------------------------------------- |
-| Blended CAC         | $90K  | $80K  | $75K  | $75K | $75K | Enterprise-weighted; declines modestly with scale         |
+| Metric              | Y0    | Y1    | Y3    | Y5    | Y7   | Notes                                                    |
+| ------------------- | ----- | ----- | ----- | ----- | ---- | -------------------------------------------------------- |
+| Blended CAC         | $90K  | $80K  | $75K  | $75K  | $75K | Enterprise-weighted; declines modestly with scale        |
 | Enterprise CAC      | $130K | $120K | $110K | $100K | $90K | Long sales cycles, dedicated reps                        |
-| SMB/Self-Serve CAC  | $5K   | $5K   | $4K   | $3K  | $3K  | Product-led growth, minimal touch                        |
-| New Customers/Year  | 3     | 10    | 18    | 30   | 40   | Per Section 02 SOM build                                 |
-| Churn Rate (Annual) | 10%   | 12%   | 12%   | 10%  | 10%  | Enterprise retention improves [[2]](#ref-2)[[3]](#ref-3) |
+| SMB/Self-Serve CAC  | $5K   | $5K   | $4K   | $3K   | $3K  | Product-led growth, minimal touch                        |
+| New Customers/Year  | 3     | 10    | 18    | 30    | 40   | Per Section 02 SOM build                                 |
+| Churn Rate (Annual) | 10%   | 12%   | 12%   | 10%   | 10%  | Enterprise retention improves [[2]](#ref-2)[[3]](#ref-3) |
 
 ### 4.2 Lifetime Value
 

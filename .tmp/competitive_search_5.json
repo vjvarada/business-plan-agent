@@ -1,0 +1,79 @@
+{
+  "query": "Starcloud satellite technology GPU specs distributed inference ISL 2025 2026",
+  "total_results": 601,
+  "organic_results": [
+    {
+      "title": "Starcloud-1",
+      "link": "https://www.starcloud.com/starcloud-1",
+      "snippet": "Star\u0441loud-1 launched in November 2025 with the first Nvidia H100 GPU in space - vastly more AI compute than has been in space before. Satellite view of Earth ...",
+      "position": 1
+    },
+    {
+      "title": "How Starcloud Is Bringing Data Centers to Outer Space",
+      "link": "https://blogs.nvidia.com/blog/starcloud/",
+      "snippet": "The 60-kilogram Starcloud-1 satellite, about the size of a small fridge, is expected to offer 100x more powerful GPU compute than any previous ...",
+      "position": 2
+    },
+    {
+      "title": "Nvidia-backed Starcloud trains first AI model in space ...",
+      "link": "https://www.cnbc.com/2025/12/10/nvidia-backed-starcloud-trains-first-ai-model-in-space-orbital-data-centers.html",
+      "snippet": "Washington-based Starcloud launched a satellite with an Nvidia H100 graphics processing unit in early November, sending a chip into outer ...",
+      "position": 3
+    },
+    {
+      "title": "Starcloud plans its next moves after training first AI model ...",
+      "link": "https://www.geekwire.com/2025/starcloud-power-training-ai-space/",
+      "snippet": "Starcloud's first big move in space came with last month's launch of Starcloud-1, a 130-pound satellite equipped with an Nvidia H100 chip.",
+      "position": 4
+    },
+    {
+      "title": "Kilowatts to Compute: Data Centers on Earth and in Orbit",
+      "link": "https://balerionspace.substack.com/p/bsv-insights-0002-kilowatts-to-compute",
+      "snippet": "... distributed systems optimized for inference, both on Earth in orbit. ... Starcloud-1 launched in November 2025 and flies an NVIDIA H100 GPU ...",
+      "position": 5
+    },
+    {
+      "title": "Will Starcloud's Orbital Data Centers Solve AI Energy Crisis?",
+      "link": "https://futurumgroup.com/insights/will-starclouds-orbital-data-centers-solve-nvidias-terrestrial-energy-crisis/",
+      "snippet": "Are orbital data centers the cure to the AI energy crisis? Starcloud's recent funding validates the rapid shift to space-based AI compute.",
+      "position": 6
+    },
+    {
+      "title": "The Final Frontier For Data",
+      "link": "https://apogee-magazine.com/features/the-final-frontier-for-data/",
+      "snippet": "In November 2025, Starcloud launched an Nvidia H100 graphics ... The satellite carried an Nvidia H100 GPU, the first data center-class ...",
+      "position": 7
+    },
+    {
+      "title": "Nvidia Launches New Chips for Space Missions",
+      "link": "https://www.satellitetoday.com/technology/2026/03/17/nvidia-launches-new-chips-for-space-missions/",
+      "snippet": "Nvidia announced new chips for space missions geared toward applications like orbital data centers, geospatial intelligence and autonomous ...",
+      "position": 8
+    },
+    {
+      "title": "Starcloud's $170M Series A: The $1.1B Space Data Center ...",
+      "link": "https://tech-insider.org/starcloud-170-million-series-a-space-data-center-2026/",
+      "snippet": "Starcloud-1, launched in November 2025, weighs 130 pounds and carries a single Nvidia H100 GPU along with solar panels, radiation shielding, and ...",
+      "position": 9
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "How much is Starcloud worth?",
+      "snippet": "Starcloud Raises $170M Series A at $1.1B Valuation. As investors are throwing their weight behind orbital data centers, startup Starcloud today announced a $170M Series A at a $1.1B valuation\u2014just over two years after the company's founding."
+    },
+    {
+      "question": "How does Starcloud work?",
+      "snippet": "By processing this data in space, Starcloud delivers low-latency insights derived from Earth observation satellites' raw data, eliminating downlink bottlenecks and avoiding massive raw data transmissions to Earth."
+    },
+    {
+      "question": "What companies are trying to put data centers in space?",
+      "snippet": "Space data centers are attracting attention beyond the big tech names. Multiple startups and international players are racing to build compute infrastructure in orbit. Companies like PowerBank Corporation and Orbit AI are planning space\u2011based nodes or cloud services powered by solar energy."
+    },
+    {
+      "question": "Do satellites have GPUS?",
+      "snippet": "The 60-kilogram Starcloud-1 satellite, about the size of a small fridge, is expected to offer 100x more powerful GPU compute than any previous space-based operation. An engineer inspects the Starcloud-1 satellite planned for launch in November. The silver module inside the satellite houses the NVIDIA H100 GPU."
+    }
+  ],
+  "timestamp": "2026-05-11T19:43:13.233105"
+}

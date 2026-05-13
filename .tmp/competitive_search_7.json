@@ -1,0 +1,85 @@
+{
+  "query": "12U cubesat rideshare launch cost per kg 2025 2026 SpaceX Transporter",
+  "total_results": 99,
+  "organic_results": [
+    {
+      "title": "CubeSat Launch Vehicle Market Analysis 2026",
+      "link": "https://greenlaunch.space/feeds/blog/cubesat-launch-vehicle-market-analysis",
+      "snippet": "Reusability has reshaped launch economics. Falcon 9's partially reusable design dropped costs from ~$10,000/kg to ~$2,500/kg\u2014a 75% reduction\u2014 ...",
+      "position": 1
+    },
+    {
+      "title": "Transporter 12 | Falcon 9 Block 5",
+      "link": "https://nextspaceflight.com/launches/details/7009/",
+      "snippet": "SpaceX's SmallSat Rideshare Program provides small satellite operators with regularly scheduled, dedicated Falcon 9 rideshare missions to SSO ...",
+      "position": 2
+    },
+    {
+      "title": "How Much Does It Cost to Launch a Satellite in 2026?",
+      "link": "https://spacenexus.us/learn/satellite-launch-cost",
+      "snippet": "A small satellite (1-50 kg) can be launched via rideshare for $50,000-$500,000, or approximately $5,000-$10,000 per kilogram. SpaceX Transporter rideshare ...",
+      "position": 3
+    },
+    {
+      "title": "Smallsat Rideshare Program",
+      "link": "https://www.spacex.com/rideshare",
+      "snippet": "COST AS LOW AS $350k. $350k for 50kg to SSO with additional mass at $7k/kg. Affordable rates also available to Mid-Inclination LEO, GTO, and ...",
+      "position": 4
+    },
+    {
+      "title": "SpaceX Increases Falcon 9 Launch Prices to $74M",
+      "link": "https://satbase.com/articles/spacex-falcon-9-price-increase-2026",
+      "snippet": "SpaceX has increased Falcon 9 launch pricing to $74 million and raised rideshare rates to $7,000 per kilogram. We analyze historical pricing ...",
+      "position": 5
+    },
+    {
+      "title": "Cost Per Pound to Orbit: A Complete Launch Guide",
+      "link": "https://greenlaunch.space/feeds/blog/cost-per-pound-space-launch",
+      "snippet": "Rideshare programs on high-cadence rockets like SpaceX Transporter offer the lowest cost per pound at $7,000/kg for payloads with flexible ...",
+      "position": 6
+    },
+    {
+      "title": "The Economics of Rideshare Launches with SpaceX for ...",
+      "link": "https://medium.com/@lijiezhu/the-economics-of-rideshare-launches-with-spacex-for-smallsats-81392006ffec",
+      "snippet": "SpaceX advertises their smallsat rideshare pricing at around $5,000 per kilogram to Sun-synchronous orbit (SSO). That means: A 1U CubeSat (~1.3 ...",
+      "position": 7
+    },
+    {
+      "title": "CubeSat Market Research Report 2034",
+      "link": "https://dataintelo.com/report/global-cubesat-market",
+      "snippet": "SpaceX's Falcon 9 rideshare program, branded Transporter, offers prices as low as $5,500 per kilogram to sun-synchronous orbit as of 2025, compared to estimates ...",
+      "position": 8
+    },
+    {
+      "title": "SpaceX Increases Rideshare Prices",
+      "link": "https://payloadspace.com/spacex-increases-rideshare-prices/",
+      "snippet": "Rideshare: The price tag of a Falcon 9 Transporter launch increased by 18%, from $5,500 per kg to $6,500 per kg. The hike comes after a 10% ...",
+      "position": 9
+    },
+    {
+      "title": "A commercial 6U CubeSat bus today costs on the order ...",
+      "link": "https://www.facebook.com/john.walsons.3/posts/without-prejudice-satellite-hardware-costs-platform-cubesatmicrosat-bus-a-commer/2852068284994196/",
+      "snippet": "Launch Costs \u2022 Rideshare (Falcon 9 Transporter): SpaceX Rideshare offers very low price per mass: about $6,000 per kg (\u2248\u00a34,600/kg) of payload.",
+      "position": 10
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "How much does a CubeSat launch cost?",
+      "snippet": null
+    },
+    {
+      "question": "How much does SpaceX launch cost per kg?",
+      "snippet": null
+    },
+    {
+      "question": "How much is the Falcon 9 rideshare?",
+      "snippet": null
+    },
+    {
+      "question": "How much does a rocket lab CubeSat launch cost?",
+      "snippet": "CubeSat launch prices when Rocket Lab's booking system was released were: USD$50,000 \u2013 $90,000 for a 1u cube satellite launch. USD$180,000 \u2013 $250,000 for a 3u cube satellite launch (3 x 1u)"
+    }
+  ],
+  "timestamp": "2026-05-11T19:51:16.712476"
+}

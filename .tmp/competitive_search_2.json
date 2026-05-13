@@ -1,0 +1,62 @@
+{
+  "query": "SpaceX orbital data center Starlink compute Anthropic 2026",
+  "total_results": 54500,
+  "organic_results": [
+    {
+      "title": "Anthropic to consider using SpaceX orbital data center ...",
+      "link": "https://spacenews.com/anthropic-to-consider-using-spacex-orbital-data-center-satellites/",
+      "snippet": "Artificial intelligence company Anthropic will study use of orbital data centers being developed by SpaceX.",
+      "position": 1
+    },
+    {
+      "title": "Anthropic AI says deal struck to use SpaceX data centres",
+      "link": "https://www.cbc.ca/news/science/anthropic-ai-deal-spacex-data-centres-9.7190201",
+      "snippet": "Under the agreement, Anthropic will use the full computing power of SpaceX's Colossus 1 facility in Memphis, Tenn., which houses more than ...",
+      "position": 2
+    },
+    {
+      "title": "Anthropic Just Signed A Compute Deal With Elon Musk's ...",
+      "link": "https://www.forbes.com/sites/jonmarkman/2026/05/06/anthropic-just-signed-a-compute-deal-with-elon-musks-spacex/",
+      "snippet": "Anthropic is now running on SpaceX's supercomputer. The company that lands rockets is now powering your AI agent.",
+      "position": 3
+    },
+    {
+      "title": "r/space - Anthropic, SpaceX announce compute deal that ...",
+      "link": "https://www.reddit.com/r/space/comments/1t5joco/anthropic_spacex_announce_compute_deal_that/",
+      "snippet": "There's not just chips in space, the current Starlink constellation has as much compute and power generation and cooling capacity as a small ...",
+      "position": 4
+    },
+    {
+      "title": "Anthropic signs Elon Musk's SpaceX for Colossus 1 ...",
+      "link": "https://www.coindesk.com/tech/2026/05/06/anthropic-signs-elon-musk-s-spacex-for-colossus-1-compute-ahead-of-june-ipo",
+      "snippet": "Anthropic has signed a deal to use all compute capacity at SpaceX's Colossus 1 data center, securing access to more than 220,000 Nvidia GPUs ...",
+      "position": 5
+    },
+    {
+      "title": "Anthropic, SpaceX announce compute deal, includes ...",
+      "link": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+      "snippet": "Anthropic said it's forged a deal with SpaceX to use all of the compute capacity at the company's Colossus 1 data center in Memphis, Tennessee.",
+      "position": 6
+    },
+    {
+      "title": "Claude In Orbit: The Anthropic-SpaceX Deal ... - Tim Cadenbach",
+      "link": "https://www.tcdev.de/blog/claude-in-orbit-anthropic-spacex-and-the-environment/",
+      "snippet": "Anthropic signed a compute deal with SpaceX to take over the entire Colossus 1 data center in Memphis. That's over 300 megawatts and more than ...",
+      "position": 7
+    },
+    {
+      "title": "Anthropic is considering using SpaceX's orbital data center ...",
+      "link": "https://www.facebook.com/SpaceXFP/posts/anthropic-is-considering-using-spacexs-orbital-data-center-satellites-%EF%B8%8F-anthropi/1017809040767152/",
+      "snippet": "Elon Musk has backed the idea of orbital AI data centers, arguing that SpaceX could deploy AI satellites at under 100 kW per ton while managing ...",
+      "position": 8
+    },
+    {
+      "title": "SpaceX backs Anthropic with data centre deal amidst ...",
+      "link": "https://www.aljazeera.com/economy/2026/5/6/spacex-backs-anthropic-with-data-centre-deal-amidst-musks-openai-lawsuit",
+      "snippet": "Under the agreement announced on Wednesday, Anthropic will use the full computing power of SpaceX's Colossus 1 facility in Memphis, Tennessee, ...",
+      "position": 9
+    }
+  ],
+  "related_questions": [],
+  "timestamp": "2026-05-11T19:32:00.558422"
+}
