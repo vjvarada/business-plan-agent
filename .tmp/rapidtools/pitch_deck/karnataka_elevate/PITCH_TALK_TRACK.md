@@ -182,7 +182,15 @@ _[Pause.]_
 > **Honda HMSI Kolar** — 2.4 million motorcycles a year. CAD team 2–3 months backlogged on fixture requests. Our software runs on their internal network today. They invested ₹10 lakh in a Fracktal printer to run our output. That is not a trial. **That is Honda building production infrastructure around our software.** Paid licence converts Q2 2026. IATF 16949 co-development with their quality team.
 >
 > **XDM Manufacturing Bengaluru** — precision casting. Automated mould design for vacuum casting, running today. Split lines, material flow, shrinkage compensation — all automated. First production-grade mould qualifying now.
->
+
+> Centum and Tata Electronics in the pipeline.
+
+![](slides/slide_05.png)
+
+> We position ourselves cometitively against tradional CAD design tools, that are in many ways bleeding the Indian manufacturing system dry, with some of their licences going upto a Crore per seat. We are 10x faster, 5x cheaper, and require no CAD expertise.
+
+![](slides/slide_10.png)
+
 > Every feature on this slide is live: mesh import, GD&T at 0.1 mm, DfAM rules, STEP and STL export, LLM intent. **80% of the platform reuses across every new tool.** Each next tool: 100 engineering hours. **The grant funds acceleration. Not discovery.**
 
 _[Pause. Shift to roadmap.]_
@@ -205,12 +213,16 @@ _[Pause. Shift to roadmap.]_
 
 > "Karnataka. 3.4 million MSMEs. 30 lakh manufacturing workers. 15% of India's industrial output. The factories supplying Honda, TVS, Toyota in this state are losing weeks and lakhs on every tooling cycle.
 >
-> Direct jobs we create: 15 in Year 1, 40 in Year 2, 80-plus by Year 3. Every one in Bengaluru. Design, software, manufacturing engineering.
+> Direct jobs we create: 180-plus by Year 3. Every one in Bengaluru. Design, software, manufacturing engineering.
 >
+
+![](slides/slide_13.png)
+
 > The larger impact: 600 to 1,000 shop-floor workers who gain access to this tool. A production technician at ₹25,000 a month who learns fixture design with RapidTools earns an extra ₹15,000–20,000 a month. Moves from commodity labour to knowledge work. **That income lift is permanent. It compounds over a career.** SDG-8 — decent work — delivered by a software subscription. Not a government scheme.
 >
 > Import substitution: ₹600 crore of precision tooling leaves India every year for Germany, Japan, Taiwan. Our Year 3 customers redirect ₹16–24 crore of that back into Karnataka and Tamil Nadu. **Every fixture designed by RapidTools is a fixture not imported.**
 >
+![](slides/slide_14.png)
 > 3D printing uses 80 to 90% less material than CNC machining. Not a sustainability talking point. **A cost advantage. Lower cost. Lower waste. Local supply.**
 >
 > The job shop in Peenya gets the same tools as the Tier-1 supplier in Pune. That is how India closes the gap — not by building more factories, but by making every existing factory smarter."
@@ -221,13 +233,9 @@ _[Pause. Shift to roadmap.]_
 
 ### SLIDE 7 — MARKET LANDSCAPE — Dipasha (1:15) [scores: commercialisation, market depth]
 
-> "₹3.5 lakh crore globally — software, services, hardware, materials. India's addressable share: ₹15,000 crore today, ₹48,000 crore as we expand to Southeast Asia. Year 8 target: ₹875 crore. 1.8% penetration of the SAM.
+> "42B$ or ₹3.5 lakh crore globally — software, services, hardware, materials. India's addressable share: ₹15,000 crore today, ₹48,000 crore as we expand to Southeast Asia. Year 8 target: ₹875 crore. 1.8% penetration of the SAM.
 >
 > Three buyer types: 5,000 enterprise OEM plants like Honda and Toyota; 50,000 mid-market tier-1 and tier-2 suppliers; 500,000 MSMEs. One platform. Different price points.
->
-> Stratasys acquired Trinckle in 2025 to own this category globally. What Stratasys cannot do is serve India: prices calibrated for German customers, $50,000 machines and software, no presence in Peenya or Hosur. **They validated the category. The Indian market is open.**
->
-> Three moat walls. **Computational geometry depth** — 10 years of manufacturing-grade development, 4–5 years for a funded competitor to replicate. **India domain knowledge** — IATF 16949 co-development with Honda, XDM casting data, Peenya process knowledge — none of that exists elsewhere. **OEM relationships** — Honda paid for hardware before paying for software. TVS and Toyota in the pipeline. **Trust is not bought. It is earned over years. Vijay has 15 of them.**"
 
 ---
 
@@ -237,7 +245,7 @@ _[Pause. Shift to roadmap.]_
 
 > "Software at ₹2 lakh a year. Production team starts using it for fixture design. The software earns its fee in the first month. **That is the land.**
 >
-> The goal is not a subscription. The goal is the intelligence layer every factory runs through. Design services — send the spec, we return the file. Print on-site — buy a Fracktal printer. Printer needs material — consumables every month, forever. **That is the expand. That is the lock-in.**
+> The goal is the intelligence layer every factory runs through. Design services — send the spec, we return the file. Print on-site — buy a Fracktal printer. Printer needs material — consumables every month, forever. **That is the expand. That is the lock-in.**
 >
 > Year 3: 65% of customers on two or more streams. More streams, higher switching costs. Net Revenue Retention crosses 100%. **The business grows with zero new customers.**
 >
@@ -269,11 +277,11 @@ _[Pause. Shift to roadmap.]_
 
 > "Three-year ladder: ₹60 lakh, ₹3.5 crore, ₹10 crore. **EBITDA-positive at ₹1.2 crore by Year 3.**
 >
-> We break even at ₹10 crore — not the ₹15–20 crore typical for pure SaaS — because 25% of Year 3 revenue is design services. Real cash from intelligence work, not just licences.
+> But let me tell you what ₹10 crore actually requires. 120 customers. That is it. 120 manufacturers in India — out of a 150,000-strong addressable base in India alone. That is 0.08% of the India market. Against a combined India and Southeast Asia SAM of ₹48,000 crore, ₹10 crore is 0.02%.
 >
-> Software is 64% of mix at peak. Hardware and consumables add compounding recurring revenue — a Fracktal printer customer buys materials monthly for 7–10 years. Subscription is the floor. Platform streams are the upside.
+> We are profitable before we have registered on anyone's radar. This is the pessimistic case — conservative assumptions, no upsell, no network revenue, no aggregation layer. **The actuals will be larger.**
 >
-> Aggregation layer, smart routing, network revenues: none of it is in this model. **This is the conservative case.**"
+> We break even at ₹10 crore — not the ₹15–20 crore typical for pure SaaS — because 25% of Year 3 revenue is design services. Real cash from intelligence work, not just subscriptions. Software is 64% of mix at peak; hardware and consumables compound on top of it."
 
 ---
 
@@ -307,7 +315,6 @@ _[Pause. Shift to roadmap.]_
 
 ---
 
-![](slides/slide_01.png)
 
 ### CLOSE — Vijay (15 seconds)
 
