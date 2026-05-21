@@ -211,20 +211,17 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_12.png)
 
-> "Karnataka. 3.4 million MSMEs. 30 lakh manufacturing workers. 15% of India's industrial output. The factories supplying Honda, TVS, Toyota in this state are losing weeks and lakhs on every tooling cycle.
+> "Karnataka. 3.4 million MSMEs. 15% of India's industrial output. Honda, TVS, Toyota source from factories in this state — and those factories are losing weeks and lakhs on every single tooling cycle.
 >
-> Direct jobs we create: 180-plus by Year 3. Every one in Bengaluru. Design, software, manufacturing engineering.
+> Direct jobs we create: 180-plus by Year 3. Every one in Bengaluru. Manufacturing engineering and software design roles — built in Karnataka, not outsourced.
 
 ![](slides/slide_13.png)
 
-> The larger impact: 600 to 1,000 shop-floor workers who gain access to this tool. A production technician at ₹25,000 a month who learns fixture design with RapidTools earns an extra ₹15,000–20,000 a month. Moves from commodity labour to knowledge work. **That income lift is permanent. It compounds over a career.** SDG-8 — decent work — delivered by a software subscription. Not a government scheme.
+> The deeper impact: 600 to 1,000 shop-floor workers across our customer base gain access to this tool. A production technician earning ₹25,000 a month adds fixture design to their skillset — and earns ₹15,000 to 20,000 more every month. **That income lift is permanent. It compounds over a career.**
 >
-> Import substitution: ₹600 crore of precision tooling leaves India every year for Germany, Japan, Taiwan. Our Year 3 customers redirect ₹16–24 crore of that back into Karnataka and Tamil Nadu. **Every fixture designed by RapidTools is a fixture not imported.**
+> ₹600 crore of precision tooling leaves India every year — to Germany, Japan, Taiwan. Not because we cannot make it. Because we do not have the intelligence in our system to make it fast, cheap, and right the first time. Our Year 3 customers alone redirect ₹16 to 24 crore of that spend back into Karnataka. **Every fixture designed by RapidTools is a fixture not imported.**
 >
-> ![](slides/slide_14.png)
-> 3D printing uses 80 to 90% less material than CNC machining. Not a sustainability talking point. **A cost advantage. Lower cost. Lower waste. Local supply.**
->
-> The job shop in Peenya gets the same tools as the Tier-1 supplier in Pune. That is how India closes the gap — not by building more factories, but by making every existing factory smarter."
+> The job shop in Peenya gets the same capability as the Tier-1 supplier in Pune. That is how India closes the gap — not by building more factories, but by making every factory that already exists smarter."
 
 ---
 
@@ -232,9 +229,13 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_15.png)
 
-> "42B$ or ₹3.5 lakh crore globally — software, services, hardware, materials. India's addressable share: ₹15,000 crore today, ₹48,000 crore as we expand to Southeast Asia. Year 8 target: ₹875 crore. 1.8% penetration of the SAM.
+> "₹3.5 lakh crore globally — software, services, hardware, materials — the full manufacturing intelligence stack. India's addressable share today: ₹15,000 crore. Expand to Southeast Asia and that becomes ₹48,000 crore.
 >
-> Three buyer types: 5,000 enterprise OEM plants like Honda and Toyota; 50,000 mid-market tier-1 and tier-2 suppliers; 500,000 MSMEs. One platform. Different price points.
+> Three buyers. Five thousand enterprise OEM plants — Honda, Toyota, Tata. Fifty thousand mid-market tier-1 and tier-2 suppliers. Five hundred thousand MSMEs. One platform. Three price points. Every one of them already feeling the problem we just described.
+>
+> Year 8 target: ₹875 crore. 1.8% of the India-SEA SAM.
+>
+> Trinckle built this category in Europe and Stratasys paid to acquire them. Global demand validated. Nobody has built it for India — not at Indian price points, not inside Indian factories, not with Indian OEM certification. **That is the white space we are standing in.**"
 
 ---
 
@@ -242,15 +243,13 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_16.png)
 
-> "Software at ₹2 lakh a year. Production team starts using it for fixture design. The software earns its fee in the first month. **That is the land.**
+> "Software at ₹2 lakh a year. A production engineer starts with fixture design. In 30 days the licence has paid for itself. **That is the land.**
 >
-> The goal is the intelligence layer every factory runs through. Design services — send the spec, we return the file. Print on-site — buy a Fracktal printer. Printer needs material — consumables every month, forever. **That is the expand. That is the lock-in.**
+> Then — design services. On-site printing. Consumables every month for the next decade. Each stream raises the switching cost. Year 3: 65% of customers on two revenue streams or more. Net Revenue Retention above 100%. **The business grows with zero new customers.**
 >
-> Year 3: 65% of customers on two or more streams. More streams, higher switching costs. Net Revenue Retention crosses 100%. **The business grows with zero new customers.**
+> Six Authorised Resellers already signed. 5,500 warm manufacturing customers between them — the same buyers they already sell SOLIDWORKS and CNC tools to. RapidTools lands on the same sales call. No new doors to knock. Year 2 target: 50 customers. One percent conversion of a base that already trusts our resellers. **We are not creating demand. We are turning on a tap that already exists.**
 >
-> Six Authorised Resellers signed: USAM, 3D Works, Technoventor, Arunoday, OMO Global, Infinite Traders. Combined warm reach: 5,500 manufacturing customers, Day One. They already sell SOLIDWORKS and CNC tools to our exact buyer. RapidTools is a non-competing add-on on the same call. Year 2 target: 50 customers — 1% conversion of that base. **We are not creating demand. We are turning on a tap that already exists.**
->
-> Long term: embedded in hundreds of factories. A customer submits a spec, our AI routes it to the best machine in our network, quotes instantly, ships in 48 hours. **The software is the wedge. The network is the moat.**"
+> Long term — every factory running our software is a node. A customer submits a spec, we route to the best machine in the network, quote instantly, ship in 48 hours. **The software is the wedge. The network is the moat.**"
 
 ---
 
@@ -258,13 +257,9 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_18.png)
 
-> "Pricing on ROI, not cost-plus. A production manager pays ₹40–65,000 per fixture and waits 4–6 weeks. We charge ₹2 lakh a year for unlimited fixtures in 2 hours. **At two fixtures a month, the annual licence pays for itself in 30 days.**
+> "A production manager today pays ₹40 to 65,000 per fixture — and waits four to six weeks for it. We charge ₹2 lakh a year for unlimited fixtures in two hours. At two fixtures a month, the licence pays for itself in 30 days.
 >
-> **Year 3: ₹10 crore revenue. 58% gross margin. EBITDA-positive.**
->
-> Now — what does ₹10 crore actually represent? 120 customers across India. That is it. 120 manufacturers, out of 150,000 in our addressable base. **0.02% of our ₹48,000 crore India and Southeast Asia market.**
->
-> We become profitable before we have touched even a fraction of the market. This is the pessimistic case — built on conservative assumptions, not optimistic ones. The actuals will be larger."
+> Four revenue streams: SaaS at 64% of mix, design services at 25%, hardware at 8%, consumables compounding every month on top. Gross margin: 58% in Year 3. LTV to CAC: nine to one at enterprise, twenty to one at MSME. **The industry benchmark is three to one. We are running three to seven times above it.**"
 
 ---
 
@@ -272,17 +267,15 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_21.png)
 
-> "Three-year ladder: ₹60 lakh, ₹3.5 crore, ₹10 crore. **EBITDA-positive at ₹1.2 crore by Year 3.**
+> "Year 1: ₹60 lakh. Year 2: ₹3.5 crore. Year 3: ₹10 crore. **EBITDA-positive at ₹1.2 crore.**
 >
-> What this slide shows is not a ceiling. It is a proof of viability — what the business looks like with a deliberately conservative sales assumption. 120 customers in Year 3. Out of 150,000 manufacturers in India alone. 0.08% of the India addressable base. 0.02% of our ₹48,000 crore India and Southeast Asia SAM.
+> But I want you to hear what this slide actually is. It is not a forecast. It is a proof of viability.
 >
-> We become profitable at 0.02% market penetration. That tells you something important: the unit economics work. The product earns its fee. The model is sound.
+> ₹10 crore requires 120 customers — out of 150,000 manufacturers in India alone. 0.08% of the India market. 0.02% of our ₹48,000 crore India and Southeast Asia SAM. We are profitable before we have registered on anyone's radar.
 >
-> **The constraint on growth from this point is not the market. It is not the product. It is how aggressively we invest in sales and marketing.**
+> That tells you the unit economics work. The product earns its fee. The model holds.
 >
-> Every rupee we put into the VAR channel, into enterprise sales, into geographic expansion — directly converts to customers. The 150,000 manufacturers are there. The six resellers with 5,500 warm leads are already in place. This model is built on what we can reach with minimum sales effort. **The upside is a direct function of the capital we deploy into growth.**
->
-> This grant funds the product. The Seed round funds the sales motion. **That is when the curve stops being linear.**"
+> **From this point, growth is one question: how aggressively do we invest in sales?** Every rupee into the VAR channel converts directly to customers. The manufacturers are there. The resellers are warm. This grant builds the product. The Seed round builds the sales motion. **That is when the curve goes non-linear.**"
 
 ---
 
@@ -290,15 +283,15 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_22.png)
 
-> "Twelve months. Two tranches. Hard milestones — not intentions, not projections.
+> "Twelve months. Two tranches. Hard milestones — not intentions.
 >
-> **Month 6:** Honda and two additional paying customers on contract. Six production-ready tools live. IATF 16949 documentation complete. 100 fixture designs processed. First VAR invoice.
+> **Month 6:** Honda and two more paying customers on contract. Six tools in production. 100 fixture designs processed. First reseller invoice raised.
 >
-> **Month 12:** Eight paying customers. ₹60 lakh revenue. All 10 tools in production. 500 designs processed. TVS pilot complete. Seed round initiated. Six VARs activated.
+> **Month 12:** Eight paying customers. ₹60 lakh revenue. Ten tools live. 500 designs processed. TVS pilot complete. Seed round initiated.
 >
-> Every milestone has a receipted number: GST invoices, server logs, signed contracts, patent filing receipts. **Nothing is qualitative.**
+> Every milestone has a number attached — GST invoice, server log, signed contract. **Nothing in this plan is qualitative.** You either see the evidence, or the second tranche does not release.
 >
-> Team scales 2 to 8. TRL 6 to TRL 8. **₹1 crore buys: a revenue-generating platform, paying OEM logos, and the data foundation for the aggregation layer.**"
+> **₹1 crore buys a revenue-generating platform, Honda and TVS as paying logos, and the data foundation for the aggregation layer.**"
 
 ---
 
@@ -306,19 +299,19 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_23.png)
 
-> "₹1 crore. Every category within Elevate caps. Every rupee milestone-linked and auditable.
+> "₹1 crore. Every category within Elevate caps. Every rupee milestone-linked.
 >
-> R&D at 50% — above the 40% floor. Salaries at 20% — non-founder engineers only. Outsourcing 18%, marketing 7%, admin 5%. **Tranche 1: ₹50 lakh on company registration and first milestone evidence. Tranche 2: ₹50 lakh on Month 6 milestone pack.**
+> R&D at 50% — above the 40% minimum. Salaries at 20%, non-founder engineers only. Outsourcing 18%, marketing 7%, admin 5%. Tranche 1 releases on company registration. Tranche 2 releases on the Month 6 milestone pack — with receipts.
 >
-> The R&D line: cloud compute for the CAD kernel, printer lab for DfAM validation, metrology instruments, two Karnataka-origin patent filings, IATF 16949 consultancy. Each one builds the moat.
+> The R&D line funds the CAD kernel, the DfAM validation lab, two Karnataka-origin patent filings, and IATF 16949 certification alongside Honda's quality team. **Each one is a moat, not an expense.**
 >
-> **Return on ₹1 crore: ₹14.1 crore cumulative across Years 1–3. 14 times. 80-plus jobs. 65 MSMEs served. 2 patents. Karnataka's first deep-tech manufacturing intelligence company — built here, owned here, competing globally from here.**"
+> Return on ₹1 crore: ₹14.1 crore cumulative across three years. **Fourteen times. Eighty-plus jobs. Sixty-five MSMEs served. Two patents. Karnataka's first deep-tech manufacturing intelligence company — built here, owned here, competing globally from here.**"
 
 ---
 
 ### CLOSE — Vijay (15 seconds)
 
-> "China: 28%. India: 3%. The answer is not machines. It is not policy. **It is encoded manufacturing intelligence.** bloc42 is building that layer in Karnataka. ₹1 crore. 12 months. 14 times return. The gap closes here. Thank you."
+> "China: 28%. India: 3%. The gap is not machines. It is not policy. **It is encoded manufacturing intelligence.** bloc42 is building that layer — in Karnataka. ₹1 crore. Twelve months. Fourteen times return. The gap closes here. Thank you."
 
 ---
 
