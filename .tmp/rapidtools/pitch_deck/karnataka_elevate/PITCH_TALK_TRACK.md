@@ -57,9 +57,9 @@ Memorise the right-hand column verbatim. Each is a 10-second soundbite you drop 
 
 ---
 
-![](slides/slide_01.png)
-
 ### TITLE SLIDE — Dipasha opens (~75 seconds)
+
+![](slides/slide_01.png)
 
 > "Honourable jury — good morning.
 >
@@ -207,14 +207,13 @@ _[Pause. Shift to roadmap.]_
 
 ---
 
-![](slides/slide_12.png)
-
 ### SLIDE 5 — SOCIO-ECONOMIC IMPACT — Dipasha (1:30) [full 20 marks — slow down, speak clearly]
+
+![](slides/slide_12.png)
 
 > "Karnataka. 3.4 million MSMEs. 30 lakh manufacturing workers. 15% of India's industrial output. The factories supplying Honda, TVS, Toyota in this state are losing weeks and lakhs on every tooling cycle.
 >
 > Direct jobs we create: 180-plus by Year 3. Every one in Bengaluru. Design, software, manufacturing engineering.
->
 
 ![](slides/slide_13.png)
 
@@ -222,16 +221,16 @@ _[Pause. Shift to roadmap.]_
 >
 > Import substitution: ₹600 crore of precision tooling leaves India every year for Germany, Japan, Taiwan. Our Year 3 customers redirect ₹16–24 crore of that back into Karnataka and Tamil Nadu. **Every fixture designed by RapidTools is a fixture not imported.**
 >
-![](slides/slide_14.png)
+> ![](slides/slide_14.png)
 > 3D printing uses 80 to 90% less material than CNC machining. Not a sustainability talking point. **A cost advantage. Lower cost. Lower waste. Local supply.**
 >
 > The job shop in Peenya gets the same tools as the Tier-1 supplier in Pune. That is how India closes the gap — not by building more factories, but by making every existing factory smarter."
 
 ---
 
-![](slides/slide_15.png)
-
 ### SLIDE 7 — MARKET LANDSCAPE — Dipasha (1:15) [scores: commercialisation, market depth]
+
+![](slides/slide_15.png)
 
 > "42B$ or ₹3.5 lakh crore globally — software, services, hardware, materials. India's addressable share: ₹15,000 crore today, ₹48,000 crore as we expand to Southeast Asia. Year 8 target: ₹875 crore. 1.8% penetration of the SAM.
 >
@@ -239,9 +238,9 @@ _[Pause. Shift to roadmap.]_
 
 ---
 
-![](slides/slide_16.png)
-
 ### SLIDE 8 — BUSINESS MODEL — Vijay (1:30) [scores: commercialisation — full 20 here]
+
+![](slides/slide_16.png)
 
 > "Software at ₹2 lakh a year. Production team starts using it for fixture design. The software earns its fee in the first month. **That is the land.**
 >
@@ -255,13 +254,11 @@ _[Pause. Shift to roadmap.]_
 
 ---
 
-![](slides/slide_18.png)
-
 ### SLIDE 9 — REVENUE MODEL — Dipasha (0:45)
 
+![](slides/slide_18.png)
+
 > "Pricing on ROI, not cost-plus. A production manager pays ₹40–65,000 per fixture and waits 4–6 weeks. We charge ₹2 lakh a year for unlimited fixtures in 2 hours. **At two fixtures a month, the annual licence pays for itself in 30 days.**
->
-> Three tiers: Starter ₹2 lakh, Professional ₹5 lakh, Enterprise ₹12 lakh-plus. LTV:CAC: 9:1 at enterprise, 20:1 at MSME. Industry benchmark is 3:1. We are running 3 to 7 times above it.
 >
 > **Year 3: ₹10 crore revenue. 58% gross margin. EBITDA-positive.**
 >
@@ -271,23 +268,27 @@ _[Pause. Shift to roadmap.]_
 
 ---
 
-![](slides/slide_21.png)
-
 ### SLIDE 10 — FINANCIAL PROJECTIONS — Dipasha (1:00)
+
+![](slides/slide_21.png)
 
 > "Three-year ladder: ₹60 lakh, ₹3.5 crore, ₹10 crore. **EBITDA-positive at ₹1.2 crore by Year 3.**
 >
-> But let me tell you what ₹10 crore actually requires. 120 customers. That is it. 120 manufacturers in India — out of a 150,000-strong addressable base in India alone. That is 0.08% of the India market. Against a combined India and Southeast Asia SAM of ₹48,000 crore, ₹10 crore is 0.02%.
+> What this slide shows is not a ceiling. It is a proof of viability — what the business looks like with a deliberately conservative sales assumption. 120 customers in Year 3. Out of 150,000 manufacturers in India alone. 0.08% of the India addressable base. 0.02% of our ₹48,000 crore India and Southeast Asia SAM.
 >
-> We are profitable before we have registered on anyone's radar. This is the pessimistic case — conservative assumptions, no upsell, no network revenue, no aggregation layer. **The actuals will be larger.**
+> We become profitable at 0.02% market penetration. That tells you something important: the unit economics work. The product earns its fee. The model is sound.
 >
-> We break even at ₹10 crore — not the ₹15–20 crore typical for pure SaaS — because 25% of Year 3 revenue is design services. Real cash from intelligence work, not just subscriptions. Software is 64% of mix at peak; hardware and consumables compound on top of it."
+> **The constraint on growth from this point is not the market. It is not the product. It is how aggressively we invest in sales and marketing.**
+>
+> Every rupee we put into the VAR channel, into enterprise sales, into geographic expansion — directly converts to customers. The 150,000 manufacturers are there. The six resellers with 5,500 warm leads are already in place. This model is built on what we can reach with minimum sales effort. **The upside is a direct function of the capital we deploy into growth.**
+>
+> This grant funds the product. The Seed round funds the sales motion. **That is when the curve stops being linear.**"
 
 ---
 
-![](slides/slide_22.png)
-
 ### SLIDE 11 — PROJECT MILESTONES — Vijay (1:00) [scores: R&D + budget utilisation]
+
+![](slides/slide_22.png)
 
 > "Twelve months. Two tranches. Hard milestones — not intentions, not projections.
 >
@@ -301,9 +302,9 @@ _[Pause. Shift to roadmap.]_
 
 ---
 
-![](slides/slide_23.png)
-
 ### SLIDE 12 — TOTAL BUDGET — Vijay (0:45) [scores: budget allocation 10/10]
+
+![](slides/slide_23.png)
 
 > "₹1 crore. Every category within Elevate caps. Every rupee milestone-linked and auditable.
 >
@@ -314,7 +315,6 @@ _[Pause. Shift to roadmap.]_
 > **Return on ₹1 crore: ₹14.1 crore cumulative across Years 1–3. 14 times. 80-plus jobs. 65 MSMEs served. 2 patents. Karnataka's first deep-tech manufacturing intelligence company — built here, owned here, competing globally from here.**"
 
 ---
-
 
 ### CLOSE — Vijay (15 seconds)
 
