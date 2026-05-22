@@ -9,7 +9,13 @@
 
 ---
 
-## 0. The One-Line Reframe (memorise this — it anchors everything)
+## 0. Company One-Liner (use this when asked "what does bloc42 do?")
+
+> **"We are bloc42. We are encoding manufacturing intelligence into AI — so machinists in Peenya compete with factories in China, and India stakes its claim in a $16 trillion manufacturing opportunity."**
+
+---
+
+## 0b. The One-Line Reframe (memorise this — it anchors everything)
 
 > "India and China have roughly the same population. China makes 28% of everything the world buys. India makes 3%. The difference is not machines — India has the machines. **The difference is encoded manufacturing intelligence**: the knowledge of how to take a digital design and turn it into a manufacturable, quality part, fast, cheaply. China spent 40 years encoding that intelligence across millions of workers. **RapidTools is how India encodes it in software — and closes that gap in a decade, not a century.**"
 
@@ -60,6 +66,8 @@ Memorise the right-hand column verbatim. Each is a 10-second soundbite you drop 
 ### TITLE SLIDE — Dipasha opens (~75 seconds)
 
 ![](slides/slide_01.png)
+
+"We are bloc42. We are encoding manufacturing intelligence into AI — so machinists in Peenya compete with factories in China, and India stakes its claim in a $16 trillion manufacturing opportunity."
 
 > "Honourable jury — good morning.
 >
