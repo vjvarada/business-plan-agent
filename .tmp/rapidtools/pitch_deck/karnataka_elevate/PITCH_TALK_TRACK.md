@@ -125,13 +125,11 @@ _[Pause.]_
 >
 > The machines are ready. The workers are willing. **The knowledge is not in the system.**
 >
-> Most people think manufacturing is two steps: designer draws, machinist makes. There is a third step nobody talks about. Before the first cut, someone must design the tools that hold the part, guide every hole, shape every cavity. Fixtures. Jigs. Moulds. Not the product — the infrastructure for the product. Three to four weeks per fixture. ₹40,000. Across every revision, every new component, every one of 150,000 Indian manufacturers. **That is the chokepoint.**
+> Most people think manufacturing is two steps: designer draws, machinist makes. There steps in between nobody talks about. Before the first cut, someone must design the tools that hold the part, guide every hole, shape every cavity. Fixtures. Jigs. Moulds. Not the product — the infrastructure for the product.**That is the chokepoint.**
 >
 > Look at this slide. 29% of an automotive plant's capital frozen in tooling. 4 to 6 week lead times. ₹600 crore of precision tooling imported every year from Germany, Japan, Taiwan — not because we cannot make it, **but because we do not have the intelligence in the system to make it fast enough, cheaply enough, right the first time.**
 >
-> India's factories do in 6 weeks what a Shenzhen factory does in 48 hours. Not because of machines. Because of knowledge.
->
-> China produces nearly five times more industrial output per worker — World Bank 2024. More machines explains half that gap. **The rest is knowledge. And knowledge is what software can encode.**
+> India's factories do in 6 weeks what a Shenzhen factory does in 48 hours. Not because of machines. Because of knowledge. More machines explains half that gap. **The rest is knowledge. And knowledge is what software can encode.**
 >
 > **RapidTools encodes that intelligence.** Starting with tooling — because if you solve fixture design, everything downstream gets easier."
 
@@ -153,15 +151,15 @@ _[Pause.]_
 
 ![](slides/slide_03.png)
 
-> Generic AI cannot do this. Manufacturing requires precision and repeatability to fractions of a millimetre — every time, without fail. We took a different approach: a geometry engine built on the same foundation as CATIA and SolidWorks. Validated. Deterministic. **A 5 to 10 year engineering moat.**
+> Manufacturing requires precision and repeatability to fractions of a millimetre — every time, without fail. We took a different approach: a geometry engine built on the same foundation as CATIA and SolidWorks. Validated. Deterministic. **A 5 to 10 year engineering moat.**
 >
 > The AI does not design the fixture. It listens — routes what the engineer describes into the geometry engine. A machinist in Peenya with 15 years of hands-on knowledge but no software background gets a printable file.
 >
 > **We are not replacing machinists. We are amplifying them.**
 >
-> I'm a mechatronics engineer at the intersection of Manufacturing, Software, and Automation and i'm converted 15 years of experience, along with various other experts and encoding it in **Production software. Not research.**
+> I'm a mechatronics engineer at the intersection of Manufacturing, Software, and Automation and i'm converted 15 years of experience, along with various other experts and encoding it in **Production software.**
 >
-> Trinckle built the first automated fixture tool in Berlin in 2013. Stratasys acquired them in 2025. But Trinckle serves German customers at German prices. They cannot touch ₹2 lakh Indian price points. They cannot co-develop Honda's quality certification from the shop floor.
+> Trinckle built the first automated fixture tool in Berlin in 2013. Stratasys acquired them in 2025. But Trinckle serves German customers at German prices, almost 50L INR per licence, but they did validate the catagory of design automation.
 >
 > **They validated the category. We own the market they cannot reach.**"
 
@@ -171,10 +169,7 @@ _[Pause.]_
 
 ![](slides/slide_04.png)
 
-> **Two live pilots. Two real factories. Intent in, manufacturing-ready file out, printed part validated.**
->
-> **Honda HMSI Kolar** — 2.4 million motorcycles a year. CAD team 2–3 months backlogged on fixture requests. Our software runs on their internal network today. They invested ₹10 lakh in a Fracktal printer to run our output. That is not a trial. **That is Honda building production infrastructure around our software.** Paid licence converts Q2 2026. IATF 16949 co-development with their quality team.
->
+> **Honda HMSI Kolar** — 2.4 million motorcycles a year. CAD team 2–3 months backlogged on fixture requests. Our software runs on their internal network today.
 > **XDM Manufacturing Bengaluru** — precision casting. Automated mould design for vacuum casting, running today. Split lines, material flow, shrinkage compensation — all automated. First production-grade mould qualifying now.
 
 > Centum and Tata Electronics in the pipeline.
@@ -191,13 +186,12 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_11.png)
 
-> That is where we are. Here is where we are going.
->
 > The destination is a complete AI-enabled manufacturing platform. An engineer imports a part — enters material, volume, tolerances, process — and the system generates everything: the production plan, every manufacturing tool, accurate cost estimates, confirmed lead times. Automatically. No expert interpretation required.
 >
 > **Import a part. Get a full plan. Manufacture with certainty — deterministic, high-quality, every time.**
 >
-> Fixture design is the first domain. Mould design is the second. Each tool we build is one more domain of that platform. By the time we have ten tools live, an Indian manufacturer will be able to walk in with a part drawing and walk out with a complete production brief — no imported expertise, no weeks of back-and-forth, no guesswork on cost or timeline."
+> We started with Fixtures and Molds as we had direct customers that these tools can serve, but we have to cover the full manufacturing specturm.
+> Each tool we build is one more domain of that platform. By the time we have ten tools live, an Indian manufacturer will be able to walk in with a part drawing and walk out with a complete production brief — no imported expertise, no weeks of back-and-forth, no guesswork on cost or timeline."
 
 ---
 
@@ -211,7 +205,7 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_13.png)
 
-> The deeper impact: 600 to 1,000 shop-floor workers across our customer base gain access to this tool. A production technician earning ₹25,000 a month adds fixture design to their skillset — and earns ₹15,000 to 20,000 more every month. **That income lift is permanent. It compounds over a career.**
+> The deeper impact: 600 to 1,000 shop-floor workers across our customer base gain access to this tool. A production technician earning ₹25,000 a month adds fixture design to their skillset — and earns ₹15,000 to 20,000 more every month.
 >
 > ₹600 crore of precision tooling leaves India every year — to Germany, Japan, Taiwan. Not because we cannot make it. Because we do not have the intelligence in our system to make it fast, cheap, and right the first time. Our Year 3 customers alone redirect ₹16 to 24 crore of that spend back into Karnataka. **Every fixture designed by RapidTools is a fixture not imported.**
 >
@@ -261,9 +255,7 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_21.png)
 
-> "Year 1: ₹60 lakh. Year 2: ₹3.5 crore. Year 3: ₹10 crore. **EBITDA-positive at ₹1.2 crore.**
->
-> But I want you to hear what this slide actually is. It is not a forecast. It is a proof of viability.
+> is not a forecast. It is a proof of viability.
 >
 > ₹10 crore requires 120 customers — out of 150,000 manufacturers in India alone. 0.08% of the India market. 0.02% of our ₹48,000 crore India and Southeast Asia SAM. We are profitable before we have registered on anyone's radar.
 >
@@ -277,8 +269,6 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_22.png)
 
-> "Twelve months. Two tranches. Hard milestones — not intentions.
->
 > **Month 6:** Honda and two more paying customers on contract. Six tools in production. 100 fixture designs processed. First reseller invoice raised.
 >
 > **Month 12:** Eight paying customers. ₹60 lakh revenue. Ten tools live. 500 designs processed. TVS pilot complete. Seed round initiated.
@@ -293,8 +283,6 @@ _[Pause. Shift to roadmap.]_
 
 ![](slides/slide_23.png)
 
-> "₹1 crore. Every category within Elevate caps. Every rupee milestone-linked.
->
 > R&D at 50% — above the 40% minimum. Salaries at 20%, non-founder engineers only. Outsourcing 18%, marketing 7%, admin 5%. Tranche 1 releases on company registration. Tranche 2 releases on the Month 6 milestone pack — with receipts.
 >
 > The R&D line funds the CAD kernel, the DfAM validation lab, two Karnataka-origin patent filings, and IATF 16949 certification alongside Honda's quality team. **Each one is a moat, not an expense.**
