@@ -67,7 +67,7 @@ Memorise the right-hand column verbatim. Each is a 10-second soundbite you drop 
 
 ![](slides/slide_01.png)
 
-"We are bloc42. We are encoding manufacturing intelligence into AI — so machinists in Peenya compete with factories in China, and India stakes its claim in a $16 trillion manufacturing opportunity."
+> "We are bloc42. We are encoding manufacturing intelligence into AI — so machinists in Peenya compete with factories in China, and India stakes its claim in a $16 trillion manufacturing opportunity."
 
 > "Honourable jury — good morning.
 >
