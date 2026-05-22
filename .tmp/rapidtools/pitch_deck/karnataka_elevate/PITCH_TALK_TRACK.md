@@ -83,33 +83,17 @@ Memorise the right-hand column verbatim. Each is a 10-second soundbite you drop 
 
 _[Pause.]_
 
-> The problem is not infrastructure. Not policy. The 3,000 job shops in Peenya have been running for thirty years. India has the capacity.
+> The problem is not infrastructure. Not policy. The 3,000 job shops in Peenya have been running for thirty years. **India has the capacity. The gap is in how India builds.**
 >
-> **The gap is not in what India can build. The gap is in how India builds.**
+> China encoded manufacturing intelligence into every factory, every supplier, every engineer in their chain. That knowledge — how to take a design from a screen and produce a real part, on time, at cost — India does not have it yet.
 >
-> China built an **intelligence layer** — encoded knowledge inside every factory, every supplier, every engineer in their chain. The knowledge of how to take a design from a screen and produce a real part. On time. At cost. Every time. It took four decades.
->
-> **India does not have it yet.**
->
-> China manufactures **eight times more** than India does — same population, same ambition, different knowledge embedded in the system. Close even a fraction of that gap, and you have the largest economic opportunity in Asia.
->
-> Most people picture manufacturing like this: a designer draws a part, a machinist makes it. Two people. One step.
->
-> It does not work like that.
->
-> Between the designer and the machinist, there is an entire hidden phase of engineering that most people never see. Before anyone can cut, press, or mould the actual component — someone must first design and build the tools that make that production possible. Not the part. The tools _for_ the part.
->
-> **Fixtures** — clamps that hold the part in position. **Drill guides** — that land every hole precisely. **Assembly jigs** — that align components while they are joined. **Injection moulds** — a precision steel cavity, machined before a single plastic part is made.
->
-> One fixture: three to four weeks. ₹40,000. Multiply across 150,000 Indian manufacturers.
+> Between the designer and the machinist is a hidden phase nobody talks about. Fixtures. Jigs. Moulds. The tools that make production possible. One fixture: three to four weeks. ₹40,000. Across 150,000 Indian manufacturers.
 >
 > This is not a pain point.
 >
 > **This is the chokepoint.**
 >
-> Solve it — for every manufacturer in India — and you do not just build a software company.
->
-> **You move India's manufacturing share.**
+> Solve it — and you do not just build a software company. **You move India's manufacturing share.**
 >
 > Vijay will show you how we found it."
 
@@ -140,6 +124,8 @@ _[Pause.]_
 > **India does not have a manufacturing capacity problem. India has a manufacturing intelligence problem.**
 >
 > The machines are ready. The workers are willing. **The knowledge is not in the system.**
+>
+> Most people think manufacturing is two steps: designer draws, machinist makes. There is a third step nobody talks about. Before the first cut, someone must design the tools that hold the part, guide every hole, shape every cavity. Fixtures. Jigs. Moulds. Not the product — the infrastructure for the product. Three to four weeks per fixture. ₹40,000. Across every revision, every new component, every one of 150,000 Indian manufacturers. **That is the chokepoint.**
 >
 > Look at this slide. 29% of an automotive plant's capital frozen in tooling. 4 to 6 week lead times. ₹600 crore of precision tooling imported every year from Germany, Japan, Taiwan — not because we cannot make it, **but because we do not have the intelligence in the system to make it fast enough, cheaply enough, right the first time.**
 >
