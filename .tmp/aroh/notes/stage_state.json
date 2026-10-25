@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-10-24T21:45:06.744074",
+  "completed_stages": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "stage_history": [
+    {
+      "stage": "0",
+      "completed_at": "2026-10-24T22:06:38.564431",
+      "artifacts": {
+        "project": "aroh",
+        "company": "Aroh",
+        "config": null,
+        "sections_dir": ".tmp\\aroh\\business_plan\\sections"
+      }
+    },
+    {
+      "stage": "1",
+      "completed_at": "2026-10-24T22:43:35.438078",
+      "artifacts": {
+        "research_dir": ".tmp/aroh/research",
+        "consolidated_research_dir": ".tmp/consolidated_research"
+      }
+    },
+    {
+      "stage": "2",
+      "completed_at": "2026-10-24T23:06:55.099865",
+      "artifacts": {
+        "sections_dir": ".tmp/aroh/business_plan/sections",
+        "config": ".tmp\\aroh\\config\\aroh_config.json"
+      }
+    },
+    {
+      "stage": "3",
+      "completed_at": "2026-10-24T23:34:49.153092",
+      "artifacts": {
+        "config": ".tmp/aroh/config/aroh_config.json"
+      }
+    },
+    {
+      "stage": "4",
+      "completed_at": "2026-10-24T23:47:58.927113",
+      "artifacts": {
+        "config": ".tmp/aroh/config/aroh_config.json",
+        "model_mode": "local_first",
+        "local_model_path": ".tmp\\aroh\\financial_model\\aroh_financial_model.xlsx"
+      }
+    },
+    {
+      "stage": "4",
+      "completed_at": "2026-10-25T10:53:25.206596",
+      "artifacts": {
+        "config": ".tmp/aroh/config/aroh_config.json",
+        "model_mode": "local_first",
+        "local_model_path": ".tmp\\aroh\\financial_model\\aroh_financial_model.xlsx"
+      }
+    },
+    {
+      "stage": "5",
+      "completed_at": "2026-10-25T11:16:26.279346",
+      "artifacts": {
+        "model_mode": "local_first",
+        "local_model_path": ".tmp\\aroh\\financial_model\\aroh_financial_model.xlsx",
+        "local_sheet_gates": "approved",
+        "signoff_ready": true
+      }
+    }
+  ],
+  "artifacts": {
+    "project": "aroh",
+    "company": "Aroh",
+    "config": ".tmp/aroh/config/aroh_config.json",
+    "sections_dir": ".tmp/aroh/business_plan/sections",
+    "research_dir": ".tmp/aroh/research",
+    "consolidated_research_dir": ".tmp/consolidated_research",
+    "model_mode": "local_first",
+    "local_model_path": ".tmp\\aroh\\financial_model\\aroh_financial_model.xlsx",
+    "local_sheet_gates": "approved",
+    "signoff_ready": true
+  },
+  "last_updated": "2026-10-25T11:16:26.279552"
+}

@@ -1,0 +1,63 @@
+{
+  "required_sheets": [
+    "Sources & References",
+    "Assumptions",
+    "Headcount Plan",
+    "Revenue",
+    "Operating Costs",
+    "P&L",
+    "Cash Flow",
+    "Balance Sheet",
+    "Summary",
+    "Sensitivity Analysis",
+    "Valuation",
+    "Break-even Analysis",
+    "Funding Cap Table",
+    "Charts Data"
+  ],
+  "approved_sheets": {
+    "Sources & References": {
+      "approved_at": "2026-10-25T11:15:50.049779"
+    },
+    "Assumptions": {
+      "approved_at": "2026-10-25T11:15:52.884773"
+    },
+    "Headcount Plan": {
+      "approved_at": "2026-10-25T11:15:55.822891"
+    },
+    "Revenue": {
+      "approved_at": "2026-10-25T11:15:58.772834"
+    },
+    "Operating Costs": {
+      "approved_at": "2026-10-25T11:16:01.530045"
+    },
+    "P&L": {
+      "approved_at": "2026-10-25T11:16:04.313052"
+    },
+    "Cash Flow": {
+      "approved_at": "2026-10-25T11:16:07.133954"
+    },
+    "Balance Sheet": {
+      "approved_at": "2026-10-25T11:16:09.963170"
+    },
+    "Summary": {
+      "approved_at": "2026-10-25T11:16:12.888996"
+    },
+    "Sensitivity Analysis": {
+      "approved_at": "2026-10-25T11:16:15.618906"
+    },
+    "Valuation": {
+      "approved_at": "2026-10-25T11:16:18.352506"
+    },
+    "Break-even Analysis": {
+      "approved_at": "2026-10-25T11:16:20.943872"
+    },
+    "Funding Cap Table": {
+      "approved_at": "2026-10-25T11:16:23.559308"
+    },
+    "Charts Data": {
+      "approved_at": "2026-10-25T11:16:26.278610"
+    }
+  },
+  "last_updated": "2026-10-25T11:16:26.278856"
+}

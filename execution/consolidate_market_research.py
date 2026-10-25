@@ -218,6 +218,35 @@ def merge_research(existing_research, new_data, category):
     }
 
 
+def normalize_verified_findings(research):
+    """Convert agent-verified findings files into the SERP shape used below.
+
+    Verified files look like {"findings"|"competitors": [{"url", "source_title",
+    "finding"|"what_it_does", "figure", "tier", "confidence", ...}], ...}.
+    SERP files (with "organic_results") are returned unchanged.
+    """
+    if not isinstance(research, dict) or "organic_results" in research:
+        return research
+    items = next(
+        (v for v in research.values()
+         if isinstance(v, list) and v and isinstance(v[0], dict) and "url" in v[0]),
+        None,
+    )
+    if not items:
+        return research
+    results = []
+    for item in items:
+        # Some findings list several URLs separated by " ; " — keep the first
+        url = str(item.get("url", "")).split(" ; ")[0].strip()
+        detail = item.get("finding") or item.get("what_it_does") or ""
+        extras = [str(item[k]) for k in ("figure", "pricing", "funding_or_deal") if item.get(k)]
+        label = f"tier {item.get('tier', '?')}, {item.get('confidence', '?')} confidence"
+        snippet = " | ".join([detail, *extras, label])
+        results.append({"link": url, "title": item.get("source_title") or item.get("name", ""),
+                        "snippet": snippet})
+    return {"organic_results": results}
+
+
 def consolidate(research_dir, output_dir=None, incremental=True):
     """Consolidate all research files with categorization and incremental merging"""
 
@@ -333,7 +362,7 @@ def consolidate(research_dir, output_dir=None, incremental=True):
 
         try:
             with open(filepath, "r", encoding="utf-8") as f:
-                research = json.load(f)
+                research = normalize_verified_findings(json.load(f))
         except:
             continue
 

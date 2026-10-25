@@ -160,6 +160,27 @@ The builder also accepts the legacy flat config format:
 
 The builder normalizes both formats internally.
 
+### Per-Year Plans (cohort SaaS, hiring plans, partial years)
+
+Added 2026-10-25 (Aroh plan). When a growth rate can't describe the plan — customer cohorts, a named hiring plan, one-off costs, a short pre-launch period — give explicit per-year lists. A list **wins** over the scalar + growth rule; omit it and the original formulas are used (RapidTools models rebuild cell-for-cell identical).
+
+| Key | Where | Effect |
+| --- | ----- | ------ |
+| `num_years` | top level | Default for `--years` (CLI flag still overrides) |
+| `year_labels` | top level | Column headers and terminal-year labels, e.g. `["Pre-launch (Nov 2026–Mar 2027)", "FY2027–28", ...]` |
+| `period_months` | top level | Scales salary cost for partial periods, e.g. `[5, 12, 12, 12]` |
+| `volume_by_year` | revenue stream | Literal volumes per year (no growth formula) |
+| `cogs_pct_by_year` | revenue stream | Per-year COGS %; Operating Costs references the year column |
+| `count_by_year` | department | Literal headcount per year |
+| `salary_by_year` | department | Annual salary rate per year (beats `salary_growth`) |
+| `salary_growth` | department | Annual raise applied as `(1+g)^year` |
+| `in_cogs: true` | department | Salaries move to COGS ("COGS: Delivery team salaries"); still counted as fixed in Break-even |
+| `annual_cost_by_year` | fixed cost | Literal cost per year (no inflation formula) |
+| `capex_by_year` | `general` | Capex per year with straight-line depreciation by vintage |
+| `tax_loss_carryforward: true` | `general` | Tax on cumulative profit less tax already paid |
+
+Reference implementation: `.tmp/aroh/config/build_aroh_config.py` generates such a config from calculation scripts, and `.tmp/aroh/config/tieout.py` checks the computed workbook against them (±0.5%, balance sheet, cash ≥ 0).
+
 ---
 
 ## Build Order & Dependencies

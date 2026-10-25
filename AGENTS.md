@@ -129,6 +129,24 @@ python execution/consolidate_market_research.py \
 - Archived to `.tmp/research_archive/` after consolidation
 - Consolidated category files in `.tmp/consolidated_research/` for downstream use
 
+## Category Creation Narrative Standard (MANDATORY DEFAULT)
+
+**Every business plan, pitch deck and investor narrative is written as a category creation argument**, using three lenses together:
+
+- **Category Design** (*Play Bigger*): name the problem before the product, define the enemy (the status quo), the From → To shift, a 2–4 word category name and a written Point of View
+- **David Ogilvy**: one Big Idea, headlines that are claims, specific facts over adjectives, every section must sell
+- **Rory Sutherland**: psycho-logic, perceived value, anxiety reduction, costly signalling, removing buyer blame
+
+**Rules:**
+
+1. Write `00_Category_Design.md` **first**, before Market Drivers. All other sections must be consistent with it.
+2. Stage 0 (Scope Lock) includes the category design questions (missing-ness, enemy, name candidates, From → To, psychological job, create-vs-reposition trade-off).
+3. Market sizing for a new category uses three sourced layers: cost of the problem, budget migration, bottom-up accounts × ACV.
+4. **Persuasion never overrides evidence.** All reference, sourcing and Unicode standards below still apply.
+5. Run `python execution/check_category_narrative.py --sections-dir .tmp/<project>/business_plan/sections` after each section and before every stage sign-off.
+
+**Full directive:** `directives/CATEGORY_CREATION_NARRATIVE.md`
+
 ## Business Plan Documentation Standards (MANDATORY)
 
 **ALL business plan sections and documents MUST follow these formatting and quality standards.**
@@ -359,6 +377,13 @@ with open('.tmp/<project>/business_plan/sections/<filename>.md', 'r', encoding='
     if not missing and not unused:
         print(f'✓ All {len(anchors)} references properly linked')
 "
+
+# 3. Renumber references sequentially (merges repeated category headings,
+#    remaps every inline citation). Use --check to report without writing.
+python execution/renumber_references.py --file .tmp/<project>/business_plan/sections/<filename>.md
+
+# 4. Category creation narrative check (all sections)
+python execution/check_category_narrative.py --sections-dir .tmp/<project>/business_plan/sections
 ```
 
 ### Market Drivers Example (Gold Standard)
@@ -478,9 +503,12 @@ Required questioning behavior per stage:
 
 Minimum stage prompts (0-5):
 
-- **Stage 0 (Scope Lock):** business model, geographies, timeline, currency
+- **Stage 0 (Scope Lock):** business model, geographies, timeline, currency,
+  plus category design (missing-ness, enemy, category name, From → To,
+  psychological job, create-vs-reposition) — see
+  `directives/CATEGORY_CREATION_NARRATIVE.md`
 - **Stage 1 (TAM/SAM/SOM):** source preference, confidence thresholds,
-  estimate tolerance
+  estimate tolerance, three-layer category sizing
 - **Stage 2 (Revenue Drivers):** pricing, growth, churn, attachment logic
 - **Stage 3 (Cost Drivers):** COGS, hiring plan, fixed costs, CAC efficiency
 - **Stage 4 (Statements Build):** reporting format, scenario set, validation
@@ -1148,6 +1176,7 @@ SOFTWARE (Land) → HARDWARE (Expand) → CONSUMABLES (Recurring)
 ### Available Directives
 
 - `directives/business_planning.md` - Business Planning SOP
+- `directives/CATEGORY_CREATION_NARRATIVE.md` - Category creation lens (Play Bigger, Ogilvy, Sutherland) — default for all plans
 - `directives/FINANCIAL_MODEL_TEMPLATE.md` - RapidTools Template Reference
 - `directives/REUSABLE_PATTERNS.md` - Code patterns from development
 
@@ -1161,6 +1190,8 @@ SOFTWARE (Land) → HARDWARE (Expand) → CONSUMABLES (Recurring)
 ### Known Issues & Best Practices
 
 - **Google API Rate Limits**: Add 2-3 second delays between sheet operations to avoid 429 errors
+- **Config extraction falls back to RapidTools defaults**: `extract_config_from_plan.py` starts from the RapidTools template and only overwrites what its regexes match. It now records `_provenance` and exits 2 if core keys (tam, sam, som, revenue_streams, funding) are template values — never build a model from a config whose `_provenance.template_defaults` includes core keys. For non-RapidTools section formats, build the config from the assumption register instead
+- **Windows console encoding**: Scripts that print emoji/₹ crash on cp1252 consoles. `run_stepwise_workflow.py` now forces UTF-8 for itself and child scripts; for any other script run directly, set `PYTHONIOENCODING=utf-8`
 - **Percentage Formatting**: Use `update_financial_model.py --action fix-formatting` if percentages show as decimals
 - **Sources Sheet**: Always populate with actual market research data using `--action update-sources`
 - **Formula vs Hardcoded Values**: Calculated values in Sources sheet MUST use formulas (=B7\*B9), not hardcoded numbers
@@ -1280,6 +1311,7 @@ When populating the Sources & References sheet:
 ├── business_plan/
 │   └── sections/
 │       ├── README.md                      # Section index and usage guide
+│       ├── 00_Category_Design.md          # Big idea, enemy, From → To, POV (write first)
 │       ├── 01_Market_Drivers.md           # Why now? Macro trends
 │       ├── 02_TAM_SAM_SOM_Calculation.md  # Market sizing methodology
 │       ├── 03_Technology_Architecture.md  # Technical differentiation
@@ -1303,6 +1335,7 @@ When populating the Sources & References sheet:
 
 Sections build on each other. Follow this sequence:
 
+0. **Category Design** → Big Idea, the problem we name, the enemy, From → To, category name, Point of View, psychological job (see `directives/CATEGORY_CREATION_NARRATIVE.md`)
 1. **Market Drivers** → Establishes "Why Now?" with macro trends, government policies, industry shifts
 2. **TAM/SAM/SOM** → Sizes the market using researched data (requires Market Drivers context)
 3. **Technology** → Describes product/technical approach (informed by market needs)

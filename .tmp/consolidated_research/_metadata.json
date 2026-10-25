@@ -1,19 +1,19 @@
 {
-  "consolidated_at": "2026-02-17T11:00:19.290794",
-  "total_files": 9,
-  "total_sources": 24,
-  "unique_sources": 60,
+  "consolidated_at": "2026-10-25T01:03:05.862758",
+  "total_files": 1,
+  "total_sources": 25,
+  "unique_sources": 24,
   "duplicates_removed": 1,
-  "new_sources": 60,
+  "new_sources": 24,
   "mode": "incremental",
   "merge_stats": {
-    "new_sources_added": 23,
-    "existing_sources_preserved": 0,
+    "new_sources_added": 24,
+    "existing_sources_preserved": 104,
     "by_category": {
       "market": {
         "added": 0,
         "duplicates": 0,
-        "total": 0
+        "total": 44
       },
       "headcount": {
         "added": 0,
@@ -26,19 +26,19 @@
         "total": 0
       },
       "business_model": {
-        "added": 15,
+        "added": 0,
         "duplicates": 0,
         "total": 15
       },
       "competitors": {
         "added": 0,
         "duplicates": 0,
-        "total": 0
+        "total": 37
       },
       "benchmarks": {
-        "added": 8,
+        "added": 24,
         "duplicates": 0,
-        "total": 8
+        "total": 32
       },
       "general": {
         "added": 0,

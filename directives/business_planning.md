@@ -77,10 +77,13 @@ Gate state is persisted in `.tmp/<project>/notes/local_sheet_gates.json`.
 - Cross-section alignment verification before finalizing
 - Modular compilation into final documents or pitch decks
 
-### Section Sequence (11 Sections)
+### Section Sequence (00 + 11 Sections)
+
+> **Lens:** every section is written as a category creation argument — see `directives/CATEGORY_CREATION_NARRATIVE.md`. Section 00 is written first; filenames 01–11 are unchanged (config extraction depends on them).
 
 | #   | Section                 | Purpose                   | Key Outputs                                                |
 | --- | ----------------------- | ------------------------- | ---------------------------------------------------------- |
+| 00  | Category Design         | Define the category       | Big Idea, enemy, From → To, category name, POV             |
 | 01  | Market Drivers          | Why Now?                  | Government policies, industry shifts, timing justification |
 | 02  | TAM/SAM/SOM             | Market Sizing             | Bottoms-up market size with research citations             |
 | 03  | Technology Architecture | Technical Differentiation | Architecture diagrams, tech moats                          |
@@ -2669,3 +2672,11 @@ worksheet.format('C4:M4', pct_format)
 - Populated Sources & References with actual market research
 - Created seed pitch deck (investor type had API errors)
 - Learned: Always add rate limiting delays for Google API operations
+
+## Learnings from the Aroh build (2026-10)
+- **Pre-launch stubs:** show a part-year period as its own column labelled with its months (`period_months`), never annualised; growth after a stub is "n/m". Say plainly in the revenue section how much is recognised vs billed.
+- **Annual-upfront billing:** model billings, recognised revenue and deferred revenue separately (`deferred_revenue_by_year`); cash = EBITDA − tax − capex + Δdeferred; working-capital change row = −Δdeferred.
+- **Existing-shareholder funding:** flag rounds `existing_shareholders` so the cap table shows no dilution and Valuation excludes them from "outside capital raised".
+- **Config hygiene:** set `market_unit` for non-USD models and supply `sources` so Sources & References is populated.
+- **Compile and track:** `execution/compile_business_plan.py` builds the .md/.docx; `execution/pipeline_summary.py` summarises a prospect tracker.
+- **Approvals:** Stage 5 sheet approvals are the owner's; record only on their instruction.

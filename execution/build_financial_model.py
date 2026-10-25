@@ -105,8 +105,11 @@ def style_total_row(ws, row, start_col, end_col):
         )
 
 
-def year_headers(n=11, starting_year=None):
-    """Generate year column headers. Uses actual years if starting_year is set."""
+def year_headers(n=11, starting_year=None, labels=None):
+    """Generate year column headers. Uses explicit labels (e.g. "FY2027–28"), then
+    actual years if starting_year is set."""
+    if labels and len(labels) >= n:
+        return list(labels[:n])
     if starting_year:
         return [str(starting_year + i) for i in range(n)]
     return [f"Year {i}" for i in range(n)]
@@ -176,7 +179,8 @@ def normalize_config(raw: Dict[str, Any]) -> Dict[str, Any]:
             if isinstance(item, dict):
                 name = item.get("name", item.get("category", "Cost"))
                 cost = item.get("annual_cost", item.get("amount", item.get("value", 0)))
-                normalized.append({"name": name, "annual_cost": cost})
+                # Keep extra keys (e.g. annual_cost_by_year) for per-year plans
+                normalized.append({**item, "name": name, "annual_cost": cost})
         fc = normalized
     cfg["fixed_costs"] = fc
 
@@ -357,8 +361,58 @@ class FinancialModelBuilder:
         self._terminal_yr = min(val_cfg.get("terminal_year", 8), num_years - 1)
 
     def _year_headers(self):
-        """Year column headers using starting_year from config."""
-        return year_headers(self.num_years, self.starting_year)
+        """Year column headers using year_labels or starting_year from config."""
+        return year_headers(self.num_years, self.starting_year, self.config.get("year_labels"))
+
+    def _terminal_label(self):
+        """Label for the terminal year: its configured label (e.g. FY2029–30) if given."""
+        labels = self.config.get("year_labels")
+        if labels and len(labels) > self._terminal_yr:
+            return labels[self._terminal_yr]
+        return f"Year {self._terminal_yr}"
+
+    # ---- per-year plan helpers ----
+    # Configs may carry explicit *_by_year lists (cohort ramps, hiring plans,
+    # one-off costs) instead of a Year-0 value plus a growth rate. When a list is
+    # present it wins; when absent, the original growth formulas are used.
+
+    def _per_year(self, values):
+        """Pad/trim a by-year list to num_years (repeating the last value)."""
+        if not values:
+            return None
+        vals = list(values)[: self.num_years]
+        return vals + [vals[-1]] * (self.num_years - len(vals))
+
+    def _salary_term(self, dept, dr, cl, yr):
+        """Salary cost for one department-year: headcount × annual salary × period.
+
+        salary_by_year (annual rates) beats salary_growth; period_months scales a
+        partial year (e.g. a 5-month pre-launch Year 0)."""
+        salary_plan = self._per_year(dept.get("salary_by_year"))
+        if salary_plan:
+            term = f"{cl}{dr}*{round(salary_plan[yr], 2)}"
+        elif dept.get("salary_growth") and yr:
+            term = f"{cl}{dr}*B{dr}*(1+{dept['salary_growth']})^{yr}"
+        else:
+            term = f"{cl}{dr}*B{dr}"
+        months = self._per_year(self.config.get("period_months"))
+        if months and months[yr] != 12:
+            term += f"*{months[yr]}/12"
+        return f"({term})"
+
+    def _capex_schedule(self):
+        """Capex by year: capex_by_year if given, else Year-0 + annual."""
+        gen = self.config["general"]
+        by_year = self._per_year(gen.get("capex_by_year"))
+        if by_year:
+            return by_year
+        return [gen["capex_y0"]] + [gen["capex_annual"]] * (self.num_years - 1)
+
+    def _vintage_depreciation(self, yr):
+        """Straight-line depreciation in year yr across capex vintages."""
+        dep_yrs = self.config["general"]["depreciation_years"]
+        capex = self._capex_schedule()
+        return sum(capex[v] / dep_yrs for v in range(yr + 1) if yr - v < dep_yrs)
 
     # ---- public API ----
 
@@ -470,7 +524,7 @@ class FinancialModelBuilder:
         style_column_headers(
             ws,
             row,
-            ["Revenue Stream", "Value ($M)", "Source", "Confidence", "Notes"],
+            ["Revenue Stream", f"Value ({self.config.get('market_unit', '$M')})", "Source", "Confidence", "Notes"],
             end_col=5,
         )
         row += 1
@@ -509,7 +563,7 @@ class FinancialModelBuilder:
         ws.merge_cells(f"A{row}:E{row}")
         row += 1
         style_column_headers(
-            ws, row, ["Region", "SAM ($M)", "Years", "Notes", "Source"], end_col=5
+            ws, row, ["Region", f"SAM ({self.config.get('market_unit', '$M')})", "Years", "Notes", "Source"], end_col=5
         )
         row += 1
 
@@ -545,7 +599,7 @@ class FinancialModelBuilder:
         ws.merge_cells(f"A{row}:E{row}")
         row += 1
         som = self.config.get("som", {})
-        terminal_label = f"Year {self._terminal_yr}"
+        terminal_label = self._terminal_label()
         ws.cell(row, 1).value = f"{terminal_label} Revenue Target"
         ws.cell(row, 1).font = Font(size=10)
         ws.cell(row, 2).value = som.get(
@@ -572,13 +626,24 @@ class FinancialModelBuilder:
         )
         row += 1
 
-        # Placeholder rows for research citations
-        for i in range(1, 6):
-            ws.cell(row, 1).value = f"[{i}]"
-            ws.cell(row, 1).font = Font(size=10, color=Colors.GRAY)
-            ws.cell(row, 2).value = "(to be populated during research)"
-            ws.cell(row, 2).font = Font(size=10, italic=True, color=Colors.GRAY)
-            row += 1
+        # Citations from config "sources" when provided; otherwise placeholder rows
+        sources = self.config.get("sources")
+        if sources:
+            for i, src in enumerate(sources, 1):
+                ws.cell(row, 1).value = src.get("ref", f"[{i}]")
+                ws.cell(row, 2).value = src.get("source", "")
+                ws.cell(row, 3).value = src.get("data_point", "")
+                ws.cell(row, 4).value = src.get("value", "")
+                ws.cell(row, 5).value = src.get("url", "")
+                ws.cell(row, 5).font = Font(size=10, color=Colors.URL_BLUE)
+                row += 1
+        else:
+            for i in range(1, 6):
+                ws.cell(row, 1).value = f"[{i}]"
+                ws.cell(row, 1).font = Font(size=10, color=Colors.GRAY)
+                ws.cell(row, 2).value = "(to be populated during research)"
+                ws.cell(row, 2).font = Font(size=10, italic=True, color=Colors.GRAY)
+                row += 1
 
     # ================================================================
     # SHEET 2: Assumptions
@@ -654,11 +719,16 @@ class FinancialModelBuilder:
             ws.cell(row, 3).value = self.currency
             row += 1
 
-            # Volume row (with growth formulas)
+            # Volume row (per-year plan if given, else growth formulas)
+            vol_plan = self._per_year(stream.get("volume_by_year"))
             ws.cell(row, 1).value = f"{name}: Volume"
             ws.cell(row, 3).value = "Units"
             for yr in range(self.num_years):
                 col = 4 + yr
+                if vol_plan:
+                    ws.cell(row, col).value = vol_plan[yr]
+                    ws.cell(row, col).number_format = "#,##0.0"
+                    continue
                 if yr == 0:
                     ws.cell(row, col).value = volume
                 else:
@@ -669,16 +739,21 @@ class FinancialModelBuilder:
 
             # Growth row
             ws.cell(row, 1).value = f"{name}: Growth"
-            ws.cell(row, 2).value = growth
+            ws.cell(row, 2).value = "per-year plan" if vol_plan else growth
             ws.cell(row, 2).number_format = "0.0%"
             ws.cell(row, 3).value = "%"
             row += 1
 
-            # COGS % row
+            # COGS % row (per-year values in the year columns when given)
+            cogs_plan = self._per_year(stream.get("cogs_pct_by_year"))
             ws.cell(row, 1).value = f"{name}: COGS %"
             ws.cell(row, 2).value = cogs
             ws.cell(row, 2).number_format = "0.0%"
             ws.cell(row, 3).value = "%"
+            if cogs_plan:
+                for yr in range(self.num_years):
+                    ws.cell(row, 4 + yr).value = cogs_plan[yr]
+                    ws.cell(row, 4 + yr).number_format = "0.0%"
             row += 1
 
         self.row_refs["revenue_streams_end"] = row - 1
@@ -772,13 +847,16 @@ class FinancialModelBuilder:
             salary = dept["salary"]
             y0 = dept["y0_count"]
             growth = dept.get("growth", 0.30)
+            count_plan = self._per_year(dept.get("count_by_year"))
 
             ws.cell(row, 1).value = name
             ws.cell(row, 2).value = salary
             ws.cell(row, 2).number_format = "#,##0"
             for yr in range(self.num_years):
                 col = 3 + yr
-                if yr == 0:
+                if count_plan:
+                    ws.cell(row, col).value = count_plan[yr]
+                elif yr == 0:
                     ws.cell(row, col).value = y0
                 else:
                     prev = get_column_letter(col - 1)
@@ -810,15 +888,31 @@ class FinancialModelBuilder:
             col = 3 + yr
             cl = get_column_letter(col)
             parts = []
-            for dr in range(
+            for i, dr in enumerate(range(
                 self.row_refs["headcount_start"], self.row_refs["headcount_end"] + 1
-            ):
-                parts.append(f"({cl}{dr}*B{dr})")
+            )):
+                parts.append(self._salary_term(depts[i], dr, cl, yr))
             ws.cell(row, col).value = f'={"+".join(parts)}'
             ws.cell(row, col).number_format = "#,##0"
             ws.cell(row, col).font = Font(bold=True)
         style_total_row(ws, row, 1, self._end_col)
         self.row_refs["salary_cost_total"] = row
+
+        # Delivery teams (in_cogs) are charged to cost of goods, not operating expenses
+        cogs_idx = [i for i, d in enumerate(depts) if d.get("in_cogs")]
+        if cogs_idx:
+            row += 1
+            ws.cell(row, 1).value = "of which: delivery team (in COGS)"
+            for yr in range(self.num_years):
+                col = 3 + yr
+                cl = get_column_letter(col)
+                parts = []
+                for i in cogs_idx:
+                    dr = self.row_refs["headcount_start"] + i
+                    parts.append(self._salary_term(depts[i], dr, cl, yr))
+                ws.cell(row, col).value = f'={"+".join(parts)}'
+                ws.cell(row, col).number_format = "#,##0"
+            self.row_refs["salary_cogs"] = row
 
     # ================================================================
     # SHEET 4: Revenue
@@ -917,13 +1011,24 @@ class FinancialModelBuilder:
             ws.cell(row, 2).value = self.currency
             cogs_pct_row = ass_start + (idx * 4) + 3
             rev_row = self.row_refs["revenue_start"] + idx
+            per_year_cogs = bool(stream.get("cogs_pct_by_year"))
             for yr in range(self.num_years):
                 col = 3 + yr
                 cl = get_column_letter(col)
-                ws.cell(row, col).value = (
-                    f"=Revenue!{cl}{rev_row}*Assumptions!$B${cogs_pct_row}"
-                )
+                # Per-year COGS % sits in the Assumptions year columns (D onward)
+                pct_ref = (f"Assumptions!{get_column_letter(4 + yr)}${cogs_pct_row}"
+                           if per_year_cogs else f"Assumptions!$B${cogs_pct_row}")
+                ws.cell(row, col).value = f"=Revenue!{cl}{rev_row}*{pct_ref}"
                 ws.cell(row, col).number_format = "#,##0"
+            row += 1
+
+        if "salary_cogs" in self.row_refs:
+            ws.cell(row, 1).value = "COGS: Delivery team salaries"
+            ws.cell(row, 2).value = self.currency
+            for yr in range(self.num_years):
+                cl = get_column_letter(3 + yr)
+                ws.cell(row, 3 + yr).value = f"='Headcount Plan'!{cl}{self.row_refs['salary_cogs']}"
+                ws.cell(row, 3 + yr).number_format = "#,##0"
             row += 1
 
         self.row_refs["cogs_end"] = row - 1
@@ -953,10 +1058,13 @@ class FinancialModelBuilder:
         ws.cell(row, 1).value = "Salaries & Benefits"
         ws.cell(row, 2).value = self.currency
         sal_row = self.row_refs.get("salary_cost_total", 10)
+        cogs_sal_row = self.row_refs.get("salary_cogs")
         for yr in range(self.num_years):
             col = 3 + yr
             cl = get_column_letter(col)
             ws.cell(row, col).value = f"='Headcount Plan'!{cl}{sal_row}"
+            if cogs_sal_row:
+                ws.cell(row, col).value += f"-'Headcount Plan'!{cl}{cogs_sal_row}"
             ws.cell(row, col).number_format = "#,##0"
         self.row_refs["fixed_salaries"] = row
         row += 1
@@ -970,9 +1078,12 @@ class FinancialModelBuilder:
                 continue
             ws.cell(row, 1).value = cname
             ws.cell(row, 2).value = self.currency
+            cost_plan = self._per_year(cost.get("annual_cost_by_year"))
             for yr in range(self.num_years):
                 col = 3 + yr
-                if yr == 0:
+                if cost_plan:
+                    ws.cell(row, col).value = cost_plan[yr]
+                elif yr == 0:
                     ws.cell(row, col).value = cost["annual_cost"]
                 else:
                     prev = get_column_letter(col - 1)
@@ -1126,10 +1237,14 @@ class FinancialModelBuilder:
 
         ws.cell(row, 1).value = "Depreciation"
         ws.cell(row, 2).value = self.currency
+        use_vintages = bool(gen.get("capex_by_year"))
         for yr in range(self.num_years):
-            dep = capex_y0 / dep_yrs
-            if yr > 0:
-                dep += (capex_ann * min(yr, dep_yrs)) / dep_yrs
+            if use_vintages:
+                dep = self._vintage_depreciation(yr)
+            else:
+                dep = capex_y0 / dep_yrs
+                if yr > 0:
+                    dep += (capex_ann * min(yr, dep_yrs)) / dep_yrs
             ws.cell(row, 3 + yr).value = round(dep)
             ws.cell(row, 3 + yr).number_format = "#,##0"
         self.row_refs["pnl_depreciation"] = row
@@ -1176,11 +1291,18 @@ class FinancialModelBuilder:
         tax_rate = gen["tax_rate"]
         ws.cell(row, 1).value = f"Tax ({int(tax_rate*100)}%)"
         ws.cell(row, 2).value = self.currency
+        carry_forward = gen.get("tax_loss_carryforward", False)
+        pbt_row = self.row_refs["pnl_pbt"]
         for yr in range(self.num_years):
             cl = get_column_letter(3 + yr)
-            ws.cell(row, 3 + yr).value = (
-                f"=MAX(0,{cl}{self.row_refs['pnl_pbt']}*{tax_rate})"
-            )
+            if carry_forward and yr:
+                # Losses carried forward: tax on cumulative profit, less tax already paid
+                prev = get_column_letter(2 + yr)
+                ws.cell(row, 3 + yr).value = (
+                    f"=MAX(0,MAX(0,SUM($C{pbt_row}:{cl}{pbt_row}))*{tax_rate}-SUM($C{row}:{prev}{row}))"
+                )
+            else:
+                ws.cell(row, 3 + yr).value = f"=MAX(0,{cl}{pbt_row}*{tax_rate})"
             ws.cell(row, 3 + yr).number_format = "#,##0"
         self.row_refs["pnl_tax"] = row
         row += 1
@@ -1253,10 +1375,14 @@ class FinancialModelBuilder:
         self.row_refs["cf_depreciation"] = row
         row += 1
 
-        ws.cell(row, 1).value = "Working Capital Change"
+        deferred = self._per_year(self.config["general"].get("deferred_revenue_by_year"))
+        ws.cell(row, 1).value = ("Working Capital Change (negative = cash from deferred revenue)"
+                                 if deferred else "Working Capital Change")
         ws.cell(row, 2).value = self.currency
         for yr in range(self.num_years):
-            ws.cell(row, 3 + yr).value = 0
+            # Annual-upfront billing: cash arrives before revenue is recognised
+            ws.cell(row, 3 + yr).value = (-round(deferred[yr] - (deferred[yr - 1] if yr else 0))
+                                          if deferred else 0)
             ws.cell(row, 3 + yr).number_format = "#,##0"
         self.row_refs["cf_wc_change"] = row
         row += 1
@@ -1285,9 +1411,9 @@ class FinancialModelBuilder:
         gen = self.config["general"]
         ws.cell(row, 1).value = "Capital Expenditure"
         ws.cell(row, 2).value = self.currency
+        capex_plan = self._capex_schedule()
         for yr in range(self.num_years):
-            capex = gen["capex_y0"] if yr == 0 else gen["capex_annual"]
-            ws.cell(row, 3 + yr).value = -capex
+            ws.cell(row, 3 + yr).value = -capex_plan[yr]
             ws.cell(row, 3 + yr).number_format = "#,##0"
         self.row_refs["cf_capex"] = row
         row += 1
@@ -1405,13 +1531,20 @@ class FinancialModelBuilder:
 
         ws.cell(row, 1).value = "Net Fixed Assets"
         ws.cell(row, 2).value = self.currency
+        use_vintages = bool(gen.get("capex_by_year"))
+        capex_plan = self._capex_schedule()
         for yr in range(self.num_years):
-            cum_capex = capex_y0 + (capex_ann * yr)
-            cum_dep = (capex_y0 / dep_yrs) * min(yr + 1, dep_yrs)
-            if yr > 0:
-                cum_dep += sum(
-                    (capex_ann / dep_yrs) * min(yr - y, dep_yrs) for y in range(yr)
-                )
+            if use_vintages:
+                cum_capex = sum(capex_plan[: yr + 1])
+                # Sum the same rounded figures the P&L charges, so assets tie to equity
+                cum_dep = sum(round(self._vintage_depreciation(y)) for y in range(yr + 1))
+            else:
+                cum_capex = capex_y0 + (capex_ann * yr)
+                cum_dep = (capex_y0 / dep_yrs) * min(yr + 1, dep_yrs)
+                if yr > 0:
+                    cum_dep += sum(
+                        (capex_ann / dep_yrs) * min(yr - y, dep_yrs) for y in range(yr)
+                    )
             ws.cell(row, 3 + yr).value = round(max(0, cum_capex - cum_dep))
             ws.cell(row, 3 + yr).number_format = "#,##0"
         self.row_refs["bs_fixed_assets"] = row
@@ -1438,10 +1571,11 @@ class FinancialModelBuilder:
         ws.merge_cells(f"A{row}:{get_column_letter(self._end_col)}{row}")
         row += 1
 
-        ws.cell(row, 1).value = "Total Liabilities"
+        deferred = self._per_year(self.config["general"].get("deferred_revenue_by_year"))
+        ws.cell(row, 1).value = ("Total Liabilities (deferred revenue)" if deferred else "Total Liabilities")
         ws.cell(row, 2).value = self.currency
         for yr in range(self.num_years):
-            ws.cell(row, 3 + yr).value = 0
+            ws.cell(row, 3 + yr).value = round(deferred[yr]) if deferred else 0
             ws.cell(row, 3 + yr).number_format = "#,##0"
         self.row_refs["bs_liabilities"] = row
         row += 2
@@ -1547,8 +1681,12 @@ class FinancialModelBuilder:
         ws.cell(row, 2).value = "%"
         for yr in range(self.num_years):
             cl = get_column_letter(3 + yr)
+            months = self._per_year(self.config.get("period_months"))
             if yr == 0:
                 ws.cell(row, 3 + yr).value = 0
+            elif months and months[yr - 1] != 12:
+                # Growth against a part-year stub is not meaningful
+                ws.cell(row, 3 + yr).value = "n/m (prior period is a stub)"
             else:
                 prev = get_column_letter(2 + yr)
                 ws.cell(row, 3 + yr).value = (
@@ -1650,7 +1788,7 @@ class FinancialModelBuilder:
 
         # Terminal year column (dynamic, not hardcoded to Year 8)
         term_col = get_column_letter(3 + self._terminal_yr)
-        term_label = f"Year {self._terminal_yr}"
+        term_label = self._terminal_label()
 
         ws.cell(row, 1).value = f"{term_label} Revenue"
         ws.cell(row, 2).value = f"=0.8*C{row}"
@@ -1717,7 +1855,7 @@ class FinancialModelBuilder:
         row += 1
 
         term_col = get_column_letter(3 + self._terminal_yr)
-        term_label = f"Year {self._terminal_yr}"
+        term_label = self._terminal_label()
         ws.cell(row, 1).value = f"{term_label} Revenue"
         ws.cell(row, 2).value = f"='P&L'!{term_col}{self.row_refs['pnl_revenue']}"
         ws.cell(row, 2).number_format = "#,##0"
@@ -1738,15 +1876,20 @@ class FinancialModelBuilder:
 
         # Total funding raised
         rounds = self.config["funding"].get("rounds", [])
-        total_raised = sum(r.get("amount", 0) for r in rounds)
-        ws.cell(row, 1).value = "Total Capital Raised"
+        has_existing = any(r.get("existing_shareholders") for r in rounds)
+        total_raised = sum(r.get("amount", 0) for r in rounds if not r.get("existing_shareholders"))
+        ws.cell(row, 1).value = ("Outside Capital Raised (excludes existing shareholders)" if has_existing
+                                 else "Total Capital Raised")
         ws.cell(row, 2).value = total_raised
         ws.cell(row, 2).number_format = "#,##0"
         raised_row = row
         row += 1
 
         ws.cell(row, 1).value = "Return Multiple (Exit / Raised)"
-        ws.cell(row, 2).value = f"=IF(B{raised_row}=0,0,B{exit_val_row}/B{raised_row})"
+        if has_existing and total_raised == 0:
+            ws.cell(row, 2).value = "n/a (no outside capital in this case)"
+        else:
+            ws.cell(row, 2).value = f"=IF(B{raised_row}=0,0,B{exit_val_row}/B{raised_row})"
         ws.cell(row, 2).number_format = "0.0x"
         ws.cell(row, 2).font = Font(bold=True)
 
@@ -1862,11 +2005,16 @@ class FinancialModelBuilder:
         row += 1
 
         # Fixed costs (from P&L references)
-        ws.cell(row, 1).value = "Total Fixed Costs (OpEx + Headcount)"
+        cogs_sal_row = self.row_refs.get("salary_cogs")
+        ws.cell(row, 1).value = ("Total Fixed Costs (OpEx + Headcount, incl. delivery team)"
+                                 if cogs_sal_row else "Total Fixed Costs (OpEx + Headcount)")
         ws.cell(row, 2).value = self.currency
         for yr in range(self.num_years):
             cl = get_column_letter(3 + yr)
             ws.cell(row, 3 + yr).value = f"='P&L'!{cl}{self.row_refs['pnl_opex']}"
+            if cogs_sal_row:
+                # Delivery salaries sit in COGS but behave as fixed step costs
+                ws.cell(row, 3 + yr).value += f"+'Headcount Plan'!{cl}{cogs_sal_row}"
             ws.cell(row, 3 + yr).number_format = "#,##0"
         fixed_row = row
         row += 1
@@ -1928,6 +2076,13 @@ class FinancialModelBuilder:
             ws.cell(row, 1).value = rnd["name"]
             ws.cell(row, 2).value = rnd["amount"]
             ws.cell(row, 2).number_format = "#,##0"
+            if rnd.get("existing_shareholders"):
+                # Capital put in pro rata by current owners: no new price, no dilution
+                ws.cell(row, 3).value = "n/a (existing shareholders)"
+                ws.cell(row, 5).value = 0
+                ws.cell(row, 5).number_format = "0.0%"
+                row += 1
+                continue
             ws.cell(row, 3).value = rnd.get("pre_money", 0)
             ws.cell(row, 3).number_format = "#,##0"
             ws.cell(row, 4).value = f"=B{row}+C{row}"
@@ -1992,7 +2147,10 @@ def main():
     parser.add_argument("--config", "-c", help="Path to JSON config file")
     parser.add_argument("--company", help="Company name (uses minimal defaults)")
     parser.add_argument(
-        "--years", type=int, default=11, help="Years (default: 11 = Y0-Y10)"
+        "--years",
+        type=int,
+        default=None,
+        help="Years (default: config num_years, else 11 = Y0-Y10)",
     )
     parser.add_argument("--output", "-o", help="Output .xlsx path")
     parser.add_argument("--up-to", dest="up_to", help="Build sheets up to this name")
@@ -2050,7 +2208,8 @@ def main():
         output = f".tmp/{safe}_financial_model.xlsx"
 
     # Build
-    builder = FinancialModelBuilder(config, num_years=args.years)
+    num_years = args.years or config.get("num_years", 11)
+    builder = FinancialModelBuilder(config, num_years=num_years)
     if args.up_to:
         builder.build_up_to(args.up_to)
     elif args.sheets:

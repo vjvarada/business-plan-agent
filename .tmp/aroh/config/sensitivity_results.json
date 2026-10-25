@@ -1,0 +1,365 @@
+{
+  "Base case (57 → 150 → 300 → 500)": {
+    "customers_eoy": [
+      57,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.78,
+      25.3825,
+      52.5854,
+      95.7634
+    ],
+    "ebitda_cr": [
+      -2.7,
+      9.93,
+      20.35,
+      41.67
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.72,
+      9.96,
+      29.3,
+      67.92,
+      133.56
+    ],
+    "prelaunch_bridge_cr": 3.72,
+    "funding_need_cr": 3.72,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.28,
+      "10": 6.28
+    }
+  },
+  "Only 25 direct customers in pre-launch (vs 50)": {
+    "customers_eoy": [
+      32,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.53,
+      22.1278,
+      52.5686,
+      95.0744
+    ],
+    "ebitda_cr": [
+      -2.68,
+      5.64,
+      20.39,
+      41.11
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.43,
+      4.25,
+      22.99,
+      60.84,
+      126.28
+    ],
+    "prelaunch_bridge_cr": 3.43,
+    "funding_need_cr": 3.43,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.57,
+      "10": 6.57
+    }
+  },
+  "No direct customers in pre-launch (pilots only)": {
+    "customers_eoy": [
+      7,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.28,
+      18.8732,
+      52.5517,
+      94.3853
+    ],
+    "ebitda_cr": [
+      -2.58,
+      1.35,
+      20.42,
+      40.56
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.05,
+      -1.37,
+      16.75,
+      53.81,
+      119.06
+    ],
+    "prelaunch_bridge_cr": 3.05,
+    "funding_need_cr": 3.05,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.95,
+      "10": 6.95
+    }
+  },
+  "Ramp 30% slower (×0.7 on every target)": {
+    "customers_eoy": [
+      42,
+      105,
+      210,
+      350
+    ],
+    "revenue_cr": [
+      0.63,
+      18.0297,
+      36.8151,
+      67.0902
+    ],
+    "ebitda_cr": [
+      -2.63,
+      4.48,
+      10.84,
+      23.59
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.48,
+      6.6,
+      17.33,
+      41.0,
+      81.28
+    ],
+    "prelaunch_bridge_cr": 3.48,
+    "funding_need_cr": 3.48,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.52,
+      "10": 6.52
+    }
+  },
+  "Ramp halved (×0.5 on every target)": {
+    "customers_eoy": [
+      32,
+      75,
+      150,
+      250
+    ],
+    "revenue_cr": [
+      0.53,
+      13.1278,
+      26.3016,
+      47.9748
+    ],
+    "ebitda_cr": [
+      -2.68,
+      0.95,
+      4.08,
+      10.13
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.43,
+      4.25,
+      9.38,
+      22.66,
+      44.62
+    ],
+    "prelaunch_bridge_cr": 3.43,
+    "funding_need_cr": 3.43,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.57,
+      "10": 6.57
+    }
+  },
+  "Downside: previous plan (0 → 20 → 90 → 250)": {
+    "customers_eoy": [
+      0,
+      20,
+      90,
+      250
+    ],
+    "revenue_cr": [
+      0.0,
+      2.4,
+      13.0045,
+      40.0712
+    ],
+    "ebitda_cr": [
+      -2.54,
+      -5.65,
+      -4.93,
+      4.42
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -2.71,
+      -2.71,
+      -6.02,
+      -2.89,
+      20.06
+    ],
+    "prelaunch_bridge_cr": 2.71,
+    "funding_need_cr": 6.02,
+    "lowest_cash_by_seed_cr": {
+      "5": -1.02,
+      "10": 3.98
+    }
+  },
+  "Pilot conversion 50% (vs 70%)": {
+    "customers_eoy": [
+      55,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.7,
+      25.133,
+      52.5803,
+      95.7103
+    ],
+    "ebitda_cr": [
+      -2.77,
+      8.83,
+      18.71,
+      40.78
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.71,
+      9.49,
+      27.98,
+      64.87,
+      129.72
+    ],
+    "prelaunch_bridge_cr": 3.71,
+    "funding_need_cr": 3.71,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.29,
+      "10": 6.29
+    }
+  },
+  "Churn 20% (vs 10%)": {
+    "customers_eoy": [
+      57,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.78,
+      25.9955,
+      53.1724,
+      95.7967
+    ],
+    "ebitda_cr": [
+      -2.7,
+      10.23,
+      19.86,
+      40.56
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.72,
+      9.96,
+      29.09,
+      66.53,
+      130.38
+    ],
+    "prelaunch_bridge_cr": 3.72,
+    "funding_need_cr": 3.72,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.28,
+      "10": 6.28
+    }
+  },
+  "India-hosted AI costs 3× today's API": {
+    "customers_eoy": [
+      57,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.78,
+      25.3825,
+      52.5854,
+      95.7634
+    ],
+    "ebitda_cr": [
+      -2.8,
+      7.07,
+      14.06,
+      30.38
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.82,
+      9.86,
+      26.34,
+      58.67,
+      113.03
+    ],
+    "prelaunch_bridge_cr": 3.82,
+    "funding_need_cr": 3.82,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.18,
+      "10": 6.18
+    }
+  },
+  "Price ₹1.2L/month (−20%)": {
+    "customers_eoy": [
+      57,
+      150,
+      300,
+      500
+    ],
+    "revenue_cr": [
+      0.663,
+      21.5582,
+      44.156,
+      80.5359
+    ],
+    "ebitda_cr": [
+      -2.82,
+      6.11,
+      13.27,
+      28.88
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.72,
+      7.91,
+      21.72,
+      50.42,
+      99.37
+    ],
+    "prelaunch_bridge_cr": 3.72,
+    "funding_need_cr": 3.72,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.28,
+      "10": 6.28
+    }
+  },
+  "Combined: no direct pre-launch customers, ramp ×0.7, 2× AI": {
+    "customers_eoy": [
+      7,
+      105,
+      210,
+      350
+    ],
+    "revenue_cr": [
+      0.28,
+      13.4732,
+      36.7916,
+      66.1255
+    ],
+    "ebitda_cr": [
+      -2.61,
+      -1.88,
+      8.75,
+      18.89
+    ],
+    "cumulative_cash_no_seed_cr": [
+      -3.08,
+      -1.4,
+      8.17,
+      28.58,
+      64.66
+    ],
+    "prelaunch_bridge_cr": 3.08,
+    "funding_need_cr": 3.08,
+    "lowest_cash_by_seed_cr": {
+      "5": 1.92,
+      "10": 6.92
+    }
+  }
+}

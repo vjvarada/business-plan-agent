@@ -1,0 +1,438 @@
+{
+  "_meta": {
+    "project": "aroh",
+    "layer": "fundraising_benchmarks",
+    "compiled": "2026-10-25",
+    "method": "WebSearch (standard; two extended) + WebFetch. No SerpAPI or paid tools. Carta pages returned HTTP 403 on every fetch, so all Carta figures are search-snippet only.",
+    "fx_assumption": "INR 95 / USD (caller-supplied)",
+    "aroh_round_under_test": {
+      "raise": "INR 12 Cr (~US$1.26M)",
+      "dilution": "20%",
+      "pre_money": "INR 48 Cr (~US$5.05M)",
+      "post_money": "INR 60 Cr (~US$6.3M)",
+      "stage": "pre-revenue, Indian B2B AI SaaS"
+    },
+    "tier_legend": {
+      "1": "Primary data publisher / analyst / VC firm report (Tracxn, Inc42 data desk, Bain, Carta, Meritech, SaaS Capital, Bessemer, YC)",
+      "2": "Reputable press reporting primary data (PTI, Storyboard18, MediaBrief, Business Standard)",
+      "3": "Blogs, aggregators, advisory/marketing content"
+    },
+    "verified_how_legend": {
+      "fetched_page": "Primary page fetched and figure/wording read on the page",
+      "fetched_secondary": "Figure read on a fetched secondary page that cites the primary source; primary not opened",
+      "search_snippet": "Seen only in search-result summaries; page not opened or fetch blocked",
+      "derived": "Arithmetic by this agent from verified inputs; not stated by any source"
+    },
+    "verdict_pre_money": "WITHIN the indicative Indian seed ranges (upper half), ABOVE the median implied by Indian round-size data, and FAR BELOW US seed medians. No tier-1 source publishes an India seed pre-money median; see items FR-21 to FR-24."
+  },
+  "findings": [
+    {
+      "id": "FR-01",
+      "topic": "India seed round size",
+      "finding": "Inc42: seed-stage median ticket size flat at about $1M in H1 2025.",
+      "figure": "Median seed ticket ~US$1M (H1 2025)",
+      "quote": "the median ticket size for seed stage startups remained largely flat at $1 Mn.",
+      "source_title": "Indian Startup Funding Jumps 8% YoY To $5.7 Bn In H1 2025",
+      "publisher": "Inc42",
+      "date": "2025-07-01",
+      "url": "https://inc42.com/buzz/indian-startup-funding-jumps-8-yoy-to-5-7-bn-in-h1-2025",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-02",
+      "topic": "India seed round size",
+      "finding": "Median seed round in India Jan 1 - Aug 13, 2026 was INR 8.0 Cr (~US$0.8M), interquartile range INR 2.4-19.0 Cr; median Series A INR 50.8 Cr (~US$5.3M); median Series B INR 123.8 Cr (~US$13.0M). Based on a Tracxn export of 890 deals; post-money disclosed for only 39% of deals so valuation chart is directional (valuation medians in image, not readable).",
+      "figure": "Seed median INR 8.0 Cr (IQR 2.4-19.0 Cr); Series A median INR 50.8 Cr",
+      "quote": null,
+      "source_title": "India Startup Funding Report 2026: 890 Deals Analyzed",
+      "publisher": "FinVal Research & Consultancy (data: Tracxn export pulled 2026-08-13)",
+      "date": "2026-08-22",
+      "url": "https://finvalresearch.in/india-startup-funding-report-2026/",
+      "tier": 3,
+      "confidence": "MEDIUM",
+      "verified_how": "fetched_page (tier-3 analysis of tier-1 Tracxn data; underlying export not seen)"
+    },
+    {
+      "id": "FR-03",
+      "topic": "India seed round size",
+      "finding": "Per Tracxn's India Tech H1 2026 report (as reported by StartupFeed): seed round count fell from 797 to 420 YoY; average seed cheque rose from $0.8M to $1.3M (INR 7.6 Cr to 12.3 Cr); total seed funding $541M; average early-stage cheque $8.5M to $14.9M.",
+      "figure": "Average seed cheque US$1.3M (H1 2026)",
+      "quote": "Total seed funding still fell to $541 Mn (Rs 5,118 Cr), proving bigger cheques did not offset fewer deals.",
+      "source_title": "Seed Funding 2026: Bigger Cheques, Bolder Bets in India",
+      "publisher": "StartupFeed (citing Tracxn India Tech H1 2026 report)",
+      "date": "2026-06-27",
+      "url": "https://startupfeed.in/seed-funding-2026-india-bigger-cheques/",
+      "tier": 3,
+      "confidence": "MEDIUM",
+      "verified_how": "fetched_secondary (Tracxn H1 2026 report itself not opened)"
+    },
+    {
+      "id": "FR-04",
+      "topic": "India seed funding volume",
+      "finding": "Tracxn 9M 2026 (Jan 1 - Sep 21, 2026): seed funding fell 37% to $698M; early-stage rose 27% to $4.2B; late-stage ~$5.4B; 1,134 rounds, down 38% from 1,838; Enterprise Applications grew 49% to $3.5B.",
+      "figure": "Seed $698M (-37% YoY), 9M 2026",
+      "quote": "Seed funding fell 37% to $698M, while early-stage funding rose 27% to $4.2B and late-stage held roughly steady at $5.4B.",
+      "source_title": "India tech funding rises 7% to $10.3B as deal volume falls 38%: Tracxn",
+      "publisher": "MediaBrief (citing Tracxn India Tech 9M 2026 Report)",
+      "date": "2026-09-26",
+      "url": "https://mediabrief.com/india-tech-funding-rises-7-to-10-3b-as-deal-volume-falls-38-tracxn/",
+      "tier": 2,
+      "confidence": "HIGH",
+      "verified_how": "fetched_secondary"
+    },
+    {
+      "id": "FR-05",
+      "topic": "India seed funding volume",
+      "finding": "Tracxn full-year 2025: Indian tech funding $10.5B (-17%); seed-stage funding $1.1B, down 30% from 2024; early-stage $3.9B (+7%).",
+      "figure": "Seed $1.1B (2025, -30% YoY)",
+      "quote": "Seed-stage funding dropped to $1.1 billion, down 30% from 2024 and 25% from 2023,",
+      "source_title": "Tech startup funding falls 17% to $10.5 billion in 2025: Report",
+      "publisher": "People Matters (citing Tracxn)",
+      "date": "2025-12-19",
+      "url": "https://www.peoplematters.in/news/funding-and-investment/tech-startup-funding-falls-17percent-to-dollar105-billion-in-2025-report-47773",
+      "tier": 2,
+      "confidence": "HIGH",
+      "verified_how": "fetched_secondary"
+    },
+    {
+      "id": "FR-06",
+      "topic": "India overall median round size",
+      "finding": "Tracxn 9M 2025: seed funding $727M (-39% YoY); median round size (all stages) nearly doubled to $1.5M from $683K.",
+      "figure": "All-stage median round US$1.5M (9M 2025)",
+      "quote": "The median round size nearly doubled to $1.5 million from $683,000 in the same period last year.",
+      "source_title": "India overtakes Germany, France to become world's 3rd-largest tech startup hub: Tracxn",
+      "publisher": "Storyboard18 (citing Tracxn)",
+      "date": "2025-09-25",
+      "url": "https://www.storyboard18.com/special-coverage/india-overtakes-germany-france-to-become-worlds-3rd-largest-tech-startup-hub-tracxn-81545.htm",
+      "tier": 2,
+      "confidence": "HIGH",
+      "verified_how": "fetched_secondary"
+    },
+    {
+      "id": "FR-07",
+      "topic": "India overall median round size",
+      "finding": "PTI year-end wire: median deal size nearly doubled to about $1.4M in 2025 from roughly $700K in 2024 (article does not attribute the median to a named data source).",
+      "figure": "All-stage median ~US$1.4M (2025)",
+      "quote": "nearly doubled to about USD 1.4 million in 2025, from roughly USD 700,000 in 2024",
+      "source_title": "From funding winter to liquidity surge, 2025 marks turning point for Indian startups",
+      "publisher": "PTI via The Week",
+      "date": "2025-12-24",
+      "url": "https://www.theweek.in/wire-updates/business/2025/12/24/dcm2-biz-year-startups.html",
+      "tier": 2,
+      "confidence": "MEDIUM",
+      "verified_how": "fetched_page (source of median not named in article)"
+    },
+    {
+      "id": "FR-08",
+      "topic": "India seed / AI funding",
+      "finding": "Inc42 2025 annual: early-stage (seed) startups raised $793M across 433 deals (-12% YoY); overall median ticket across stages up 11% to $3M; AI was the top seed-stage sector with $161M; enterprise tech raised $1.8B (82 deals).",
+      "figure": "Seed $793M / 433 deals; all-stage median US$3M (2025, Inc42 basis)",
+      "quote": "early stage startups raising $793 Mn, down 12% YoY, across 433 deals in 2025.",
+      "source_title": "Indian Startup Funding Declines 8% YoY To $11 Bn In 2025",
+      "publisher": "Inc42",
+      "date": "2025-12-28",
+      "url": "https://inc42.com/features/indian-startup-funding-decline-8-yoy-to-11-bn-in-2025/",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page (note: Inc42 and Tracxn medians differ by methodology)"
+    },
+    {
+      "id": "FR-09",
+      "topic": "India VC market context",
+      "finding": "Bain India Venture Capital Report 2026: India VC/growth equity ~ $16B in 2025; software/SaaS funding rose ~1.5x YoY; small and mid-stage activity 'held firm'. No seed deal-size or valuation breakdown on the public page.",
+      "figure": "~US$16B VC (2025); SaaS funding ~1.5x YoY",
+      "quote": null,
+      "source_title": "India Venture Capital Report 2026",
+      "publisher": "Bain & Company / IVCA",
+      "date": "2026-04-01",
+      "url": "https://www.bain.com/insights/india-venture-capital-report-2026/",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-10",
+      "topic": "Seed dilution (US)",
+      "finding": "Carta, US startups, primary priced rounds: median seed round sold 19.5% (2025); less than 10% of 2025 software seed rounds sold 30%+.",
+      "figure": "Median seed dilution 19.5% (US, 2025)",
+      "quote": "the median seed round is 19.5% sold in this round",
+      "source_title": "Less Than 10 Percent of Seed Rounds Sell 30 Percent or More",
+      "publisher": "Carta",
+      "date": "2025 (approx. August; exact date NOT VERIFIED)",
+      "url": "https://carta.com/data/linkedin-seed-dilution-30-percent-under-10/",
+      "tier": 1,
+      "confidence": "MEDIUM",
+      "verified_how": "search_snippet (fetch returned HTTP 403)"
+    },
+    {
+      "id": "FR-11",
+      "topic": "Seed dilution (US)",
+      "finding": "Carta, US software rounds since 2021 (ex-bridges): after years at 20%, median dilution drifted to 19% at seed and 18% at Series A in 2025.",
+      "figure": "Seed 19% / Series A 18% (US software, 2025)",
+      "quote": "after many years with 20% dilution as the median at seed and Series A, that median has drifted down to 19% and 18% respectively so far in 2025",
+      "source_title": "Startup Dilution Per Round Is Not Rising Despite VC Claims",
+      "publisher": "Carta",
+      "date": "2025 (exact date NOT VERIFIED)",
+      "url": "https://carta.com/data/linkedin-dilution-not-rising-vc-data/",
+      "tier": 1,
+      "confidence": "MEDIUM",
+      "verified_how": "search_snippet (fetch returned HTTP 403)"
+    },
+    {
+      "id": "FR-12",
+      "topic": "Seed valuation and dilution (US, latest)",
+      "finding": "Carta, US software seed rounds closed in the six months to ~July 2026 (~1,000 rounds, no bridges): median valuation $24.3M on $4.1M raised; median dilution fell to 18%. Same post: Series A median $14.4M raised at $80M post-money. Pre-money ~ $20.2M is derived, assuming $24.3M is post-money (WaveUp describes it as post-money).",
+      "figure": "US software seed: $4.1M raised, $24.3M post, 18% dilution; Series A $14.4M at $80M post",
+      "quote": null,
+      "source_title": "Top Seed Valuations Hit Record Highs in Q2 2026 / Carta LinkedIn data post",
+      "publisher": "Carta",
+      "date": "2026-07 (approx.)",
+      "url": "https://carta.com/data/linkedin-seed-valuations-95th-percentile-2026/",
+      "tier": 1,
+      "confidence": "MEDIUM",
+      "verified_how": "search_snippet (Carta fetch blocked; figure also appears on waveup.com/blog/seed-round-benchmarks, tier 3, not fetched)"
+    },
+    {
+      "id": "FR-13",
+      "topic": "Seed dilution guidance",
+      "finding": "Y Combinator (Sam Altman): aim to sell about 20% in the seed round; 25% acceptable for a 'large' seed (> $2.5M); raise enough to reach the next significant milestone (no month count given).",
+      "figure": "~20% seed dilution target",
+      "quote": "You should aim to sell only about 20% of the company in your seed round",
+      "source_title": "Fundraising Advice for YC Companies",
+      "publisher": "Y Combinator",
+      "date": "2016-02-23",
+      "url": "https://www.ycombinator.com/blog/fundraising-advice-for-yc-companies",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page (dated 2016 guidance)"
+    },
+    {
+      "id": "FR-14",
+      "topic": "Public SaaS multiples",
+      "finding": "Meritech Software Pulse 28-Aug-2026 (published 2026-09-01): overall median EV / implied ARR = 4.7x (47% below pre-ZIRP 8.7x); top-10 median 19.1x. This CONFIRMS the source document's 'median ~4.7x implied ARR in August 2026' claim, provided it cites the 28-Aug edition (the 14-Aug edition shows 4.3x).",
+      "figure": "4.7x EV/implied ARR (28-Aug-2026)",
+      "quote": "the current overall median multiple of 4.7x is 47% below the pre-ZIRP median of 8.7x",
+      "source_title": "Meritech Software Pulse | 28-August-2026",
+      "publisher": "Meritech Capital",
+      "date": "2026-09-01",
+      "url": "https://meritech.substack.com/p/meritech-software-pulse-28-august",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-15",
+      "topic": "Public SaaS multiples (latest)",
+      "finding": "Meritech Software Pulse 09-Oct-2026 (published 2026-10-13): overall median EV / implied ARR = 4.4x (50% below pre-ZIRP 8.7x); top-10 median 21.7x. Implied ARR = quarterly total revenue x 4. Intermediate editions: 14-Aug 4.3x; 11-Sep 4.2x; 25-Sep 4.0x.",
+      "figure": "4.4x EV/implied ARR (09-Oct-2026, latest)",
+      "quote": "While the current overall median multiple of 4.4x is 50% below the pre-ZIRP median of 8.7x,",
+      "source_title": "Meritech Software Pulse | 09-October-2026",
+      "publisher": "Meritech Capital",
+      "date": "2026-10-13",
+      "url": "https://meritech.substack.com/p/meritech-software-pulse-09-october",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page (14-Aug 4.3x also fetched; 11-Sep 4.2x and 25-Sep 4.0x read via saasvaluationmultiple.com, tier 3)"
+    },
+    {
+      "id": "FR-16",
+      "topic": "Public SaaS multiples (growth premium)",
+      "finding": "Meritech 14-Aug-2026: only 14 public software companies trade above 10x NTM revenue and 63% trade below 5x; high-growth Rule-of-40 leaders trade at ~12.0x / 14.7x vs ~4.5x / 4.8x for lower-growth, higher-FCF peers.",
+      "figure": "63% of public software < 5x NTM revenue",
+      "quote": "Only 14 public software companies trade above 10x NTM revenue, and 63% trade below 5x.",
+      "source_title": "Meritech Software Pulse | 14-August-2026",
+      "publisher": "Meritech Capital",
+      "date": "2026-08-18",
+      "url": "https://meritech.substack.com/p/meritech-software-pulse-14-august",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-17",
+      "topic": "Private SaaS multiples",
+      "finding": "SaaS Capital (Jan 2025): SCI median 7.0x run-rate revenue at start of 2025; predicted private SaaS multiple 4.8x (bootstrapped) and 5.3x (equity-backed).",
+      "figure": "Private SaaS 4.8x (bootstrapped) / 5.3x (equity-backed) run-rate ARR",
+      "quote": "Data for equity-backed companies yields a predicted valuation multiple of 5.3x",
+      "source_title": "2025 Private SaaS Company Valuations",
+      "publisher": "SaaS Capital",
+      "date": "2025-01-24",
+      "url": "https://www.saas-capital.com/blog-posts/private-saas-company-valuations-multiples/",
+      "tier": 1,
+      "confidence": "HIGH (for Jan 2025); likely overstated for 2026 given SCI decline",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-18",
+      "topic": "Private/public SaaS multiples 2026 direction",
+      "finding": "SaaS Capital (Apr 2026): SaaS valuations hit decade-plus lows in Q1 2026 as markets priced AI as an existential threat; the SCI ARR multiple sits at decade-plus lows. Current numeric SCI value (as of 2026-09-30) is in an image on the index page and could not be read.",
+      "figure": "SCI at decade-plus low (numeric value NOT VERIFIED)",
+      "quote": "SaaS valuations hit decade-plus lows in Q1 2026 as markets priced in AI as an existential threat.",
+      "source_title": "Four early 2026 SaaS trends",
+      "publisher": "SaaS Capital",
+      "date": "2026-04-09",
+      "url": "https://www.saas-capital.com/blog-posts/four-early-2026-saas-trends/",
+      "tier": 1,
+      "confidence": "HIGH (direction); numeric NOT VERIFIED",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-19",
+      "topic": "Public cloud index multiple",
+      "finding": "BVP Nasdaq Emerging Cloud Index site shows 'Average Revenue Multiple' 8.9x, total market cap $2.8T, average revenue growth 20.6%. No as-of date, median or forward/trailing basis shown. Average is skewed upward by top names; prefer Meritech median.",
+      "figure": "8.9x average revenue multiple (date not shown)",
+      "quote": null,
+      "source_title": "BVP Nasdaq Emerging Cloud Index",
+      "publisher": "Bessemer Venture Partners",
+      "date": "accessed 2026-10-25 (as-of date NOT VERIFIED)",
+      "url": "https://cloudindex.bvp.com/",
+      "tier": 1,
+      "confidence": "LOW",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-20",
+      "topic": "SaaS operating benchmarks",
+      "finding": "Bessemer 'Scaling to $100 Million' (2021): at $1-10M ARR - growth avg ~200%, median 165%, top 230%+; NRR avg 140%, median 125%, top 145%+; gross margin avg 70%, median 72%, top 85%+; CAC payback avg ~15 months; targets <12 months SMB, <18 mid-market, <24 enterprise; invest in acquisition at CLTV/CAC >= 3x; efficiency score (FCF margin + growth) target ~70% at $25-50M ARR, ~50% at $100M+.",
+      "figure": "CAC payback <12 mo (SMB target); NRR median 125% at $1-10M ARR; GM median 72%",
+      "quote": "target CAC payback <12 months",
+      "source_title": "Scaling to $100 Million",
+      "publisher": "Bessemer Venture Partners",
+      "date": "2021-09-21",
+      "url": "https://www.bvp.com/atlas/scaling-to-100-million",
+      "tier": 1,
+      "confidence": "MEDIUM (2021 data, pre-AI cycle)",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-21",
+      "topic": "AI company growth benchmarks",
+      "finding": "Bessemer State of AI 2025: AI 'Shooting Stars' reach ~$3M ARR in year 1, ~$12M year 2, ~$40M year 3, ~$103M year 4, with ~60% gross margins and ~$164K ARR/FTE; 'Supernovas' ~$40M ARR year 1 and ~$125M year 2 at ~25% gross margin, $1.13M ARR/FTE.",
+      "figure": "Shooting Star: $3M -> $12M -> $40M -> $103M ARR; GM ~60%",
+      "quote": "with ~60% gross margins",
+      "source_title": "The State of AI 2025",
+      "publisher": "Bessemer Venture Partners",
+      "date": "2025-08-13",
+      "url": "https://www.bvp.com/atlas/the-state-of-ai-2025",
+      "tier": 1,
+      "confidence": "HIGH",
+      "verified_how": "fetched_page"
+    },
+    {
+      "id": "FR-22",
+      "topic": "Series A ARR bar (US)",
+      "finding": "Carta x SVB data (US B2B SaaS, 2024): median ARR at Series A ~ $3M; 75th percentile nearly $7M. SVB H1 2025 reportedly put median Series A company revenue at ~ $2.5M.",
+      "figure": "Median ARR at Series A ~US$3M; top quartile ~US$7M (US, 2024)",
+      "quote": "median ARR at Series A was about $3M while the 75th percentile hit nearly $7M",
+      "source_title": "7M ARR Gets You in the Top Quarter for Series A in 2025",
+      "publisher": "Carta (with SVB data)",
+      "date": "2025-07-08",
+      "url": "https://carta.com/data/linkedin-7m-arr-series-a-saas-2025/",
+      "tier": 1,
+      "confidence": "MEDIUM",
+      "verified_how": "search_snippet (Carta fetch blocked; SVB report page redirected to First Citizens and did not contain this figure)"
+    },
+    {
+      "id": "FR-23",
+      "topic": "India Series A round size",
+      "finding": "Median Indian Series A round INR 50.8 Cr (~US$5.3M), Jan-Aug 2026 (see FR-02). Inc42 'growth stage' (its Series A-B bucket) median ticket $8M in H1 2025 and Q3 2025.",
+      "figure": "India Series A median ~INR 50.8 Cr (~US$5.3M)",
+      "quote": null,
+      "source_title": "India Startup Funding Report 2026: 890 Deals Analyzed",
+      "publisher": "FinVal Research (Tracxn data); Inc42",
+      "date": "2026-08-22",
+      "url": "https://finvalresearch.in/india-startup-funding-report-2026/",
+      "tier": 3,
+      "confidence": "MEDIUM",
+      "verified_how": "fetched_page (FinVal); Inc42 $8M growth-stage median verified on fetched Inc42 H1 2025 page (FR-01 URL)"
+    },
+    {
+      "id": "FR-24",
+      "topic": "India seed pre-money (indicative only)",
+      "finding": "Treelife (advisory): indicative 2026 Indian pre-money ranges INR 25-70 Cr at seed (round INR 3-12 Cr) and INR 150-400 Cr at Series A (round INR 40-120 Cr). Article states these are 'indicative ranges, not statutory benchmarks' and cites no dataset for them.",
+      "figure": "Seed pre-money INR 25-70 Cr (indicative)",
+      "quote": "These are indicative ranges, not statutory benchmarks.",
+      "source_title": "How Startup Valuation works in India: Methods, Metrics, Strategies",
+      "publisher": "Treelife",
+      "date": "2026-06-04",
+      "url": "https://treelife.in/startups/how-startup-valuation-works-in-india/",
+      "tier": 3,
+      "confidence": "LOW",
+      "verified_how": "fetched_page (no underlying data source)"
+    },
+    {
+      "id": "FR-25",
+      "topic": "Aroh pre-money vs benchmarks (derived)",
+      "finding": "Implied India seed median post-money if the Tracxn-based median round (INR 8 Cr) is sold at ~20% dilution: ~INR 40 Cr post / ~INR 32 Cr pre. Aroh's INR 48 Cr pre is ~1.5x that implied median, inside Treelife's INR 25-70 Cr band, and ~25% of the US software seed median ($20.2M pre / $24.3M post). A INR 12 Cr raise is above the INR 8 Cr median but inside the INR 2.4-19 Cr interquartile range, and close to the H1 2026 Tracxn average seed cheque (INR 12.3 Cr).",
+      "figure": "Implied India median pre ~INR 32 Cr; Aroh INR 48 Cr",
+      "quote": null,
+      "source_title": "Derived from FR-02, FR-03, FR-10/11/13, FR-12, FR-24",
+      "publisher": "This analysis",
+      "date": "2026-10-25",
+      "url": null,
+      "tier": null,
+      "confidence": "LOW-MEDIUM (dilution for India assumed equal to US/YC norm)",
+      "verified_how": "derived"
+    }
+  ],
+  "not_verified": [
+    {
+      "item": "Tier-1 median seed pre-/post-money valuation for India (overall, SaaS or AI)",
+      "status": "NOT VERIFIED - no Tracxn, Inc42, Venture Intelligence, Bain, Blume, 3one4, Chiratae or Peak XV page found that publishes it. FinVal's Tracxn-based valuation chart is an image (unreadable) with 39% disclosure."
+    },
+    {
+      "item": "RaiseIQ blog: pre-money INR 10-25 Cr for pre-commercial DeepTech/AI, INR 20-55 Cr with pilot revenue",
+      "url": "https://raiseiq.in/blog/seed-valuation-benchmarks-india/",
+      "status": "NOT VERIFIED - search snippet only, tier 3, no dataset cited"
+    },
+    {
+      "item": "Kae Capital (via Echai Ventures): Indian seed $300K-$2M at $2M-$8M post, 15-25% dilution",
+      "status": "NOT VERIFIED - search snippet only"
+    },
+    {
+      "item": "Carta US median seed pre-money $16M (Q3 2025); AI seed pre-money $19M vs $13M non-AI (early 2025); PitchBook-NVCA seed pre-money $18.4M (Q1 2026)",
+      "status": "NOT VERIFIED - aggregator search snippets only"
+    },
+    {
+      "item": "Carta 2025 year-in-review: median dilution seed-Series C fell from ~18% to 16%",
+      "url": "https://carta.com/data/state-of-private-markets-q4-2025-full-report/",
+      "status": "NOT VERIFIED - search snippet only; fetch HTTP 403"
+    },
+    {
+      "item": "Current SaaS Capital Index numeric value (as of 2026-09-30); secondary claims of 3.8x (Mar 2026) or 5.5x (Q1 2026)",
+      "status": "NOT VERIFIED - value shown only in an image; secondary figures conflict"
+    },
+    {
+      "item": "Meritech NTM revenue median 3.3x (01-May-2026)",
+      "url": "https://meritech.substack.com/p/meritech-software-pulse-01-may-2026",
+      "status": "NOT VERIFIED - search snippet only"
+    },
+    {
+      "item": "BVP State of the Cloud 2026 edition",
+      "status": "NOT VERIFIED - not found; State of AI 2025 used instead"
+    },
+    {
+      "item": "YC guidance of 18-24 months runway",
+      "status": "NOT VERIFIED - YC guide pages returned empty/404; YC's verified advice is 'raise enough to reach your next significant milestone' (FR-13). Secondary summaries conflict (12-18 months vs ~24 months)."
+    },
+    {
+      "item": "Bessemer CAC payback 'good/better/best' bands (0-6 / 6-12 / 12-18 months)",
+      "status": "NOT VERIFIED - secondary blogs only; Bessemer's own page gives segment targets (FR-20)"
+    },
+    {
+      "item": "India ARR required at Series A (e.g., upGrowth 'Rs 5-15 Cr ARR')",
+      "status": "NOT VERIFIED - tier 3 snippet only; no tier-1 India Series A ARR benchmark found"
+    },
+    {
+      "item": "India SaaS M&A / exit revenue multiples (2025-2026)",
+      "status": "NOT VERIFIED - no Avendus/Bain/Chiratae figures found. JM Financial 'SaaS' thematic (Jul 2025) covers listed India SaaS valuations but contents were not readable. Global SaaS M&A median 4.1x revenue (SaaSRise, 2024-early 2025) seen only in snippet."
+    },
+    {
+      "item": "DealStreetAsia Q1 2026 India: seed + pre-seed $208.4M across 114 deals",
+      "url": "https://www.dealstreetasia.com/stories/india-deal-review-q1-2026-480069",
+      "status": "NOT VERIFIED - paywalled; seen in search snippet only"
+    }
+  ]
+}

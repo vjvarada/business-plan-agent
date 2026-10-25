@@ -1,0 +1,74 @@
+{
+  "tam_accounts": 38003,
+  "tam_arr_cr": {
+    "base_acv": 6840.54,
+    "low_acv": 3420.27
+  },
+  "sam": {
+    "conservative": {
+      "accounts": 4256,
+      "arr_cr_base_acv": 766,
+      "arr_cr_low_acv": 383
+    },
+    "base": {
+      "accounts": 8361,
+      "arr_cr_base_acv": 1505,
+      "arr_cr_low_acv": 752
+    },
+    "broad": {
+      "accounts": 14365,
+      "arr_cr_base_acv": 2586,
+      "arr_cr_low_acv": 1293
+    }
+  },
+  "som": {
+    "conservative": {
+      "customers": 100,
+      "exit_arr_cr": 18.0,
+      "penetration_vs_sam": {
+        "conservative": 2.3,
+        "base": 1.2,
+        "broad": 0.7
+      }
+    },
+    "base": {
+      "customers": 250,
+      "exit_arr_cr": 45.0,
+      "penetration_vs_sam": {
+        "conservative": 5.9,
+        "base": 3.0,
+        "broad": 1.7
+      }
+    },
+    "upside": {
+      "customers": 500,
+      "exit_arr_cr": 90.0,
+      "penetration_vs_sam": {
+        "conservative": 11.7,
+        "base": 6.0,
+        "broad": 3.5
+      }
+    }
+  },
+  "layer2": {
+    "copilot_10_execs_lakh": 2.994,
+    "pool_per_account_lakh": [
+      21.6,
+      31.7
+    ],
+    "acv_share_of_pool_pct": [
+      57,
+      83
+    ],
+    "pool_total_base_sam_cr": [
+      1805,
+      2650
+    ]
+  },
+  "layer1": {
+    "profit_uplift_per_firm_cr": 2.19,
+    "acv_as_pct_of_uplift": 8.2,
+    "value_at_stake_base_sam_cr": 18269,
+    "reactive_owner_hours_week": 24.5
+  }
+}

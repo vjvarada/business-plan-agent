@@ -9,7 +9,8 @@
     "1_market_foundation": [
       "serp_market_research.py",
       "consolidate_market_research.py",
-      "analyze_benchmarks.py"
+      "analyze_benchmarks.py",
+      "check_category_narrative.py"
     ],
     "2_revenue_drivers": [
       "extract_config_from_plan.py",
@@ -38,6 +39,8 @@
       "validate_financial_model.py",
       "export_model_summary.py",
       "audit_business_plan.py",
+      "check_category_narrative.py",
+      "compile_business_plan.py",
       "create_pitch_deck.py",
       "populate_pitch_deck.py"
     ],
@@ -70,7 +73,9 @@
     "shared_utilities": [
       "sheets_utils.py",
       "update_financial_model.py",
-      "run_stepwise_workflow.py"
+      "run_stepwise_workflow.py",
+      "renumber_references.py",
+      "pipeline_summary.py"
     ]
   }
 }

@@ -1,11 +1,8 @@
 {
   "category": "Business Model",
   "description": "Revenue models, pricing, unit economics",
-  "consolidated_at": "2026-02-17T11:00:19.290794",
-  "source_files": [
-    "revenue_planet_pricing.json",
-    "revenue_skyfi_pricing.json"
-  ],
+  "consolidated_at": "2026-10-25T01:03:05.862758",
+  "source_files": [],
   "sources": [
     {
       "title": "Is Planet Labs Building Revenue Stability Through ...",

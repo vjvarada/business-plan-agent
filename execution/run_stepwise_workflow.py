@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -70,7 +71,9 @@ def run_command(step: CommandStep, execute: bool) -> int:
         print("  ↳ Dry-run (not executed)")
         return 0
 
-    result = subprocess.run(step.cmd, check=False)
+    # Child scripts print emoji; force UTF-8 so cp1252 consoles don't crash them
+    env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
+    result = subprocess.run(step.cmd, check=False, env=env)
     return result.returncode
 
 
@@ -640,4 +643,7 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    # Windows consoles default to cp1252, which can't print the status glyphs
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     sys.exit(main())

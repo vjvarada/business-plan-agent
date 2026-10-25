@@ -1,0 +1,403 @@
+{
+  "base": [
+    {
+      "period": 0,
+      "months": 5,
+      "revenue_cr": 0.78,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 4,
+        "fdes": 4,
+        "customer_success": 2,
+        "sales": 0,
+        "total": 13
+      },
+      "cogs_cr": {
+        "ai": 0.05,
+        "servers": 0.21,
+        "customer_success": 0.15,
+        "fdes": 0.5,
+        "total": 0.91
+      },
+      "gross_profit_cr": -0.13,
+      "gross_margin_pct": -17.0,
+      "opex_cr": {
+        "engineering": 0.54,
+        "leadership": 0.9,
+        "sales_salaries": 0.0,
+        "commission": 0.0,
+        "marketing": 0.2,
+        "travel": 0.3,
+        "g_and_a": 0.1,
+        "dev_cloud": 0.4,
+        "security_one_time": 0.13,
+        "total": 2.57
+      },
+      "ebitda_cr": -2.7,
+      "exact_inr": {
+        "ai_hosting": 2626495,
+        "commission": 0,
+        "travel": 3000000,
+        "gross_profit": -1326495,
+        "ebitda": -26996435,
+        "claude_plans": 1199940,
+        "marketing": 2000000,
+        "g_and_a": 1000000,
+        "dev_cloud": 4000000
+      },
+      "capex_laptops_cr": 0.24,
+      "cac_lakh_per_new_customer": 0.9
+    },
+    {
+      "period": 1,
+      "months": 12,
+      "revenue_cr": 25.3825,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 4,
+        "fdes": 4,
+        "customer_success": 5,
+        "sales": 5,
+        "total": 21
+      },
+      "cogs_cr": {
+        "ai": 1.43,
+        "servers": 0.85,
+        "customer_success": 0.9,
+        "fdes": 1.2,
+        "total": 4.38
+      },
+      "gross_profit_cr": 21.0,
+      "gross_margin_pct": 82.7,
+      "opex_cr": {
+        "engineering": 1.3,
+        "leadership": 2.16,
+        "sales_salaries": 0.84,
+        "commission": 2.66,
+        "marketing": 1.0,
+        "travel": 0.7,
+        "g_and_a": 0.4,
+        "dev_cloud": 2.0,
+        "security_one_time": 0.0,
+        "total": 11.07
+      },
+      "ebitda_cr": 9.93,
+      "exact_inr": {
+        "ai_hosting": 22823001,
+        "commission": 26649000,
+        "travel": 7050000,
+        "gross_profit": 210001999,
+        "ebitda": 99343143,
+        "claude_plans": 2879856,
+        "marketing": 10000000,
+        "g_and_a": 4000000,
+        "dev_cloud": 20000000
+      },
+      "capex_laptops_cr": 0.1,
+      "cac_lakh_per_new_customer": 5.5
+    },
+    {
+      "period": 2,
+      "months": 12,
+      "revenue_cr": 52.5854,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 6,
+        "fdes": 6,
+        "customer_success": 10,
+        "sales": 8,
+        "total": 33
+      },
+      "cogs_cr": {
+        "ai": 3.14,
+        "servers": 1.29,
+        "customer_success": 1.98,
+        "fdes": 1.98,
+        "total": 8.39
+      },
+      "gross_profit_cr": 44.19,
+      "gross_margin_pct": 84.0,
+      "opex_cr": {
+        "engineering": 2.1,
+        "leadership": 2.38,
+        "sales_salaries": 1.32,
+        "commission": 4.46,
+        "marketing": 5.26,
+        "travel": 1.18,
+        "g_and_a": 3.16,
+        "dev_cloud": 4.0,
+        "security_one_time": 0.0,
+        "total": 23.84
+      },
+      "ebitda_cr": 20.35,
+      "exact_inr": {
+        "ai_hosting": 44342929,
+        "commission": 44550000,
+        "travel": 11785000,
+        "gross_profit": 441911071,
+        "ebitda": 203527647,
+        "claude_plans": 4319784,
+        "marketing": 52585400,
+        "g_and_a": 31551240,
+        "dev_cloud": 40000000
+      },
+      "capex_laptops_cr": 0.19,
+      "cac_lakh_per_new_customer": 7.6
+    },
+    {
+      "period": 3,
+      "months": 12,
+      "revenue_cr": 95.7634,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 10,
+        "fdes": 12,
+        "customer_success": 17,
+        "sales": 11,
+        "total": 53
+      },
+      "cogs_cr": {
+        "ai": 5.64,
+        "servers": 1.92,
+        "customer_success": 3.7,
+        "fdes": 4.36,
+        "total": 15.62
+      },
+      "gross_profit_cr": 80.14,
+      "gross_margin_pct": 83.7,
+      "opex_cr": {
+        "engineering": 3.8,
+        "leadership": 2.61,
+        "sales_salaries": 1.89,
+        "commission": 6.21,
+        "marketing": 9.58,
+        "travel": 1.64,
+        "g_and_a": 5.75,
+        "dev_cloud": 7.0,
+        "security_one_time": 0.0,
+        "total": 38.47
+      },
+      "ebitda_cr": 41.67,
+      "exact_inr": {
+        "ai_hosting": 75620931,
+        "commission": 62100000,
+        "travel": 16430000,
+        "gross_profit": 801427069,
+        "ebitda": 416684013,
+        "claude_plans": 7487616,
+        "marketing": 95763400,
+        "g_and_a": 57458040,
+        "dev_cloud": 70000000
+      },
+      "capex_laptops_cr": 0.35,
+      "cac_lakh_per_new_customer": 8.6
+    }
+  ],
+  "downside": [
+    {
+      "period": 0,
+      "months": 5,
+      "revenue_cr": 0.0,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 4,
+        "fdes": 2,
+        "customer_success": 0,
+        "sales": 0,
+        "total": 9
+      },
+      "cogs_cr": {
+        "ai": 0.01,
+        "servers": 0.2,
+        "customer_success": 0.0,
+        "fdes": 0.25,
+        "total": 0.25
+      },
+      "gross_profit_cr": -0.25,
+      "gross_margin_pct": null,
+      "opex_cr": {
+        "engineering": 0.53,
+        "leadership": 0.9,
+        "sales_salaries": 0.0,
+        "commission": 0.0,
+        "marketing": 0.2,
+        "travel": 0.03,
+        "g_and_a": 0.1,
+        "dev_cloud": 0.2,
+        "security_one_time": 0.13,
+        "total": 2.29
+      },
+      "ebitda_cr": -2.54,
+      "exact_inr": {
+        "ai_hosting": 2070763,
+        "commission": 0,
+        "travel": 250000,
+        "gross_profit": -2500000,
+        "ebitda": -25370713,
+        "claude_plans": 1079950,
+        "marketing": 2000000,
+        "g_and_a": 1000000,
+        "dev_cloud": 2000000
+      },
+      "capex_laptops_cr": 0.17,
+      "cac_lakh_per_new_customer": null
+    },
+    {
+      "period": 1,
+      "months": 12,
+      "revenue_cr": 2.4,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 4,
+        "fdes": 4,
+        "customer_success": 1,
+        "sales": 0,
+        "total": 12
+      },
+      "cogs_cr": {
+        "ai": 0.15,
+        "servers": 0.52,
+        "customer_success": 0.18,
+        "fdes": 1.2,
+        "total": 2.05
+      },
+      "gross_profit_cr": 0.35,
+      "gross_margin_pct": 14.6,
+      "opex_cr": {
+        "engineering": 1.3,
+        "leadership": 2.16,
+        "sales_salaries": 0.0,
+        "commission": 0.0,
+        "marketing": 1.0,
+        "travel": 0.14,
+        "g_and_a": 0.4,
+        "dev_cloud": 1.0,
+        "security_one_time": 0.0,
+        "total": 6.0
+      },
+      "ebitda_cr": -5.65,
+      "exact_inr": {
+        "ai_hosting": 6696977,
+        "commission": 0,
+        "travel": 1430000,
+        "gross_profit": 3503023,
+        "ebitda": -56486833,
+        "claude_plans": 2879856,
+        "marketing": 10000000,
+        "g_and_a": 4000000,
+        "dev_cloud": 10000000
+      },
+      "capex_laptops_cr": 0.06,
+      "cac_lakh_per_new_customer": 5.9
+    },
+    {
+      "period": 2,
+      "months": 12,
+      "revenue_cr": 13.0045,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 6,
+        "fdes": 6,
+        "customer_success": 3,
+        "sales": 3,
+        "total": 21
+      },
+      "cogs_cr": {
+        "ai": 0.79,
+        "servers": 0.68,
+        "customer_success": 0.59,
+        "fdes": 1.98,
+        "total": 4.04
+      },
+      "gross_profit_cr": 8.96,
+      "gross_margin_pct": 68.9,
+      "opex_cr": {
+        "engineering": 2.1,
+        "leadership": 2.38,
+        "sales_salaries": 0.66,
+        "commission": 1.94,
+        "marketing": 3.0,
+        "travel": 0.51,
+        "g_and_a": 1.3,
+        "dev_cloud": 2.0,
+        "security_one_time": 0.0,
+        "total": 13.89
+      },
+      "ebitda_cr": -4.93,
+      "exact_inr": {
+        "ai_hosting": 14667269,
+        "commission": 19440000,
+        "travel": 5145000,
+        "gross_profit": 89637731,
+        "ebitda": -49259053,
+        "claude_plans": 4319784,
+        "marketing": 30000000,
+        "g_and_a": 13000000,
+        "dev_cloud": 20000000
+      },
+      "capex_laptops_cr": 0.15,
+      "cac_lakh_per_new_customer": 8.7
+    },
+    {
+      "period": 3,
+      "months": 12,
+      "revenue_cr": 40.0712,
+      "headcount_eoy": {
+        "leaders": 3,
+        "developers": 10,
+        "fdes": 12,
+        "customer_success": 9,
+        "sales": 6,
+        "total": 40
+      },
+      "cogs_cr": {
+        "ai": 2.4,
+        "servers": 1.09,
+        "customer_success": 1.96,
+        "fdes": 4.36,
+        "total": 9.8
+      },
+      "gross_profit_cr": 30.27,
+      "gross_margin_pct": 75.5,
+      "opex_cr": {
+        "engineering": 3.8,
+        "leadership": 2.61,
+        "sales_salaries": 1.16,
+        "commission": 4.56,
+        "marketing": 6.0,
+        "travel": 1.21,
+        "g_and_a": 3.0,
+        "dev_cloud": 3.5,
+        "security_one_time": 0.0,
+        "total": 25.84
+      },
+      "ebitda_cr": 4.42,
+      "exact_inr": {
+        "ai_hosting": 34886087,
+        "commission": 45630000,
+        "travel": 12070000,
+        "gross_profit": 302663913,
+        "ebitda": 44232297,
+        "claude_plans": 7487616,
+        "marketing": 60000000,
+        "g_and_a": 30000000,
+        "dev_cloud": 35000000
+      },
+      "capex_laptops_cr": 0.34,
+      "cac_lakh_per_new_customer": 7.9
+    }
+  ],
+  "unit_economics_base_final": {
+    "cac_lakh": 8.6,
+    "year1_contribution_lakh": 15.8,
+    "year1_contribution_margin_pct": 87.7,
+    "onboarding_cost_per_customer_lakh": 0.62,
+    "setup_fee_net_of_onboarding_lakh": 5.38,
+    "payback_months_with_setup": 2.4,
+    "payback_months_without_setup": 6.5,
+    "ltv_5yr_lakh": 93.9,
+    "ltv_to_cac": 10.9
+  },
+  "base_cumulative_negative_ebitda_less_capex_cr": -2.94,
+  "downside_cumulative_negative_ebitda_less_capex_cr": -13.5
+}

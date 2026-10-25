@@ -1,0 +1,19 @@
+{
+  "report": [
+    "✓ P&L Revenue Y0: model 0.78 Cr vs calc 0.78 Cr (0.00%)",
+    "✓ P&L Revenue Y1: model 25.38 Cr vs calc 25.38 Cr (0.00%)",
+    "✓ P&L Revenue Y2: model 52.59 Cr vs calc 52.59 Cr (0.00%)",
+    "✓ P&L Revenue Y3: model 95.76 Cr vs calc 95.76 Cr (0.00%)",
+    "✓ P&L GROSS PROFIT Y0: model -0.13 Cr vs calc -0.13 Cr (0.00%)",
+    "✓ P&L GROSS PROFIT Y1: model 21.00 Cr vs calc 21.00 Cr (0.00%)",
+    "✓ P&L GROSS PROFIT Y2: model 44.19 Cr vs calc 44.19 Cr (0.00%)",
+    "✓ P&L GROSS PROFIT Y3: model 80.14 Cr vs calc 80.14 Cr (0.00%)",
+    "✓ P&L EBITDA Y0: model -2.70 Cr vs calc -2.70 Cr (0.00%)",
+    "✓ P&L EBITDA Y1: model 9.93 Cr vs calc 9.93 Cr (0.00%)",
+    "✓ P&L EBITDA Y2: model 20.35 Cr vs calc 20.35 Cr (0.00%)",
+    "✓ P&L EBITDA Y3: model 41.67 Cr vs calc 41.67 Cr (0.00%)",
+    "✓ Balance check: [0.0, 0.0, 1.192092895507812e-07, 0.0]",
+    "✓ Cash by year (Cr): [14.96, 32.53, 66.07, 121.28]"
+  ],
+  "failures": []
+}

@@ -1,10 +1,230 @@
 {
   "category": "Competitors",
   "description": "Competitive landscape, positioning",
-  "consolidated_at": "2026-02-17T11:00:19.290794",
-  "source_files": [
-    "competitors_planet.json",
-    "competitors_skyfi.json"
-  ],
-  "sources": []
+  "consolidated_at": "2026-10-25T01:03:05.862758",
+  "source_files": [],
+  "sources": [
+    {
+      "title": "Bond: Your AI Chief of Staff",
+      "url": "https://www.ycombinator.com/companies/bond",
+      "snippet": "Self-described 'Your AI Chief of Staff'. Connects to Slack, Jira, Notion, GitHub, Salesforce; chatbot, morning briefing, live KPI dashboard, automated alerts; recommends what the exec should focus on. Closest conceptual match to Aroh (org-level visibility + morning brief), but US startup-tool stack, no ERP/WhatsApp. | Not public; 'limited pilot spots' | Y Combinator Spring 2025; amount not disclosed. Team size 3, San Francisco; founder Chloe Samaha | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "WorkBoard Announces General Availability of Its Digital Chief of Staff and Leadership Coach Agents...",
+      "url": "https://www.businesswire.com/news/home/20250527067665/en/WorkBoard-Announces-General-Availability-of-Its-Digital-Chief-of-Staff-and-Leadership-Coach-Agents-and-Expanded-Capabilities-for-Microsoft-365-Copilot-Agent",
+      "snippet": "Enterprise OKR/strategy-execution vendor ships a 'digital Chief of Staff' agent: drives alignment and OKR setting, identifies risks, prepares meeting pre-reads, creates/updates scorecards; pulls from Teams, Slack, Jira, Salesforce. Available in Workday AI Marketplace and as Microsoft 365 Copilot agent. | Not public | Announced 2025-02-25; GA 2025-05-27 (a Sept 2025 release says 'launched in April' - inconsistent) | tier 1, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Nerve is joining OpenAI",
+      "url": "https://www.usenerve.com/blog/joining-openai",
+      "snippet": "Described by third parties as an 'enterprise AI Chief of Staff' to write, search, update and automate work across Slack, email, docs, CRM. Team joined OpenAI to build search for ChatGPT; product sunset within 30 days, billing suspended. | n/a (product sunset) | Acqui-hire by OpenAI; date reported as Feb 2026 (Caplight entry 2026-02-17) - NOT VERIFIED; terms undisclosed | tier 1, MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Aron lands $6M seed to build an AI chief of staff for procurement",
+      "url": "https://dealroom.co/news/161136-aron-lands-6m-seed-to-build-an-ai-chief-of-staff-for-procurement/",
+      "snippet": "'AI Chief of Staff for procurement': cleans spend data, finds savings, runs source-to-contract autonomously; connects to email, Slack, Teams. Shows the label being applied to a single function. | Not public | $8M total: $6M seed led by Storm Ventures + $2M pre-seed led by Menlo Ventures. Founded 2026 (founder Dominic Toselli, ex-Apple) | tier 2, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Fambot introduces an 'AI chief of staff' for families",
+      "url": "https://techcrunch.com/2026/09/01/fambot-introduces-an-ai-chief-of-staff-for-families/",
+      "snippet": "'AI chief of staff' for parents: reads email, calendar and WhatsApp groups; sends daily checklist and look-ahead. Consumer use of the label. | Free in beta; expects ~Netflix-subscription price later | $3.5M pre-seed co-led by NextView Ventures and Baukunst (+ Correlation, Karman, Founders Network) | tier 2, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "10 Best AI Chief of Staff Tools in 2026 (Ranked)",
+      "url": "https://usecarly.com/blog/best-ai-chief-of-staff/",
+      "snippet": "Markets itself as 'the closest thing to an actual AI chief of staff': email-addressable agent acting across 120+ tools. 'Carly Workforce' (July 2026) lets businesses deploy agents with company-domain email addresses. | $35/month (company blog) | Not found | tier 3, MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Reasonix Chief of Staff AI",
+      "url": "https://reasonixcos.com/",
+      "snippet": "'Agentic AI Chief of Staff for business execution': consolidates meetings, decisions, follow-ups into one workspace, human approval by default. Arabic version; Gulf focus. | Starter $0/seat/mo; Professional $49/seat/mo (coming soon); Business $199/seat/mo (coming soon); Enterprise custom | Not found | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "What Is an AI Chief of Staff? A 2026 Guide for SME Founders",
+      "url": "https://thesarahai.com/blog/what-is-an-ai-chief-of-staff",
+      "snippet": "WhatsApp-based AI Executive Assistant (tasks, meetings, reminders, delegation, daily/weekly briefs). 'AI Chief of Staff' tier in early access, demo only. Offices Abu Dhabi, Dubai, London, Riyadh, Toronto. Closest WhatsApp-native analogue; targets SMEs. | Executive Assistant $9.99/user/month; Chief of Staff tier demo-led, no price | Not found | tier 1, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Ambient: a New Brand, a New Product Design, New Funding, and a Narrowness of Focus",
+      "url": "https://www.ambient.us/blog/ambient-a-new-brand-a-new-product-design-new-funding-and-a-narrowness-of-focus/",
+      "snippet": "'AI Assistant for Chiefs of Staff' (own wording); third parties call it an AI chief of staff. Meeting prep dossiers, notes, red/yellow/green initiative tracking. | Not public (company says typically only the CoS needs a paid licence - search_snippet) | Investors named (Startup Haven, Sequoia Scout, First Check, Moment, Maven, others); amount not disclosed | tier 1, MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "AI Chief of Staff for Nonprofit Leaders, CEOs & Founders",
+      "url": "https://www.aichiefdesk.com/",
+      "snippet": "'AI Chief of Staff for Nonprofit Leaders, CEOs & Founders' - document-centric (grant proposals, board updates). | From $49/month | Not found | tier 1, LOW-MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "AI Chief of Staff: What It Does and How to Build One",
+      "url": "https://www.vybe.build/blog/ai-chief-of-staff",
+      "snippet": "Senchal: follow-up/accountability, chases owners, reports to CEO. Saga: EA replacement with morning briefings, EU data processing. ready when: tracks commitments across meetings/Slack/email. Vybe: agent platform used to build a custom AI CoS (class d). | Not stated | Not found | tier 3, LOW confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "What an AI Chief of Staff Actually Does (2026)",
+      "url": "https://get-alfred.ai/blog/what-an-ai-chief-of-staff-actually-does",
+      "snippet": "'AI assistant for client-facing teams': inbox triage, drafted replies for approval, morning brief, meeting prep; claims to cover the 'follow-through part' of a chief of staff's job. Publishes AI-CoS SEO content. | From $29.99/month; team $49.99/seat/month | Not found | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Lindy homepage",
+      "url": "https://www.lindy.ai/",
+      "snippet": "'AI employee' that plugs into tools (3,000+ integrations); EA use case for inbox and calendar. Does NOT use 'chief of staff' on its homepage (third-party review sites label it so). | Free ($50 credits); Team $49.99/mo for 5,000 pooled credits; top-ups $10/1,000 credits; Enterprise custom | Not checked | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Anthropic Launches Claude Duet to Work as a Proactive AI Chief of Staff",
+      "url": "https://techiexpert.com/anthropic-launches-claude-duet-to-work-as-a-proactive-ai-chief-of-staff/",
+      "snippet": "Proactive agent on a cloud computer (Claude Opus 5.5); connects Gmail, Slack, QuickBooks, Stripe, Gusto, DocuSign; morning briefing, hourly account checks, drafts emails, chases invoices, preps payroll; approval required before sending, paying, signing, deleting. Press describes it as built to work 'like a chief of staff' / 'digital chief of staff'. Highest-profile entrant to the label; brief + approval-gated execution pattern overlaps Aroh directly. | No extra fee beyond Claude Pro/Max; consumes usage limits | n/a | tier 3, MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "OpenAI introduces always-on dots agents",
+      "url": "https://www.reworked.co/digital-workplace/openai-introduces-alwayson-dots-agents/",
+      "snippet": "Always-on agents with their own cloud computer; 4,000+ app connectors; requests via ChatGPT, Slack, Teams; read-only 'proactive research'; user rules to allow/block/require approval. 'Specialist dots' for companies (procurement, invoices, support, contracts) in pilot. No 'chief of staff' wording found. | First dot included in Pro and Business Premium; extra dots priced later (not specified) | n/a (launched at DevDay) | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Meta launches personal AI agent Muse to help with everyday tasks",
+      "url": "https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks",
+      "snippet": "Consumer personal AI agent: sends email, books travel, fills forms, negotiates, checks out (Stripe Link); background long-running goals; dedicated 'Muse Secure VM'; approval for sensitive actions. Reachable via Muse app and WhatsApp (per AP/PBS). Not an enterprise/organisation product. | Free for most tasks; subscription tiers for more (per search snippets; PBS article silent on price) | n/a | tier 2, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Viral AI assistant Instinct now has its own email address",
+      "url": "https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/",
+      "snippet": "Invite-only consumer personal agent by text/phone: reservations, purchases, subscriptions; own email address per user (Sept 2026); group-chat agent (Oct 2026). Founder Noah Shinn. | Not found | $1B Series C at $10B valuation (Sequoia, Benchmark, Coatue per Reuters-citing reports), ~2026-09-28; prior round at $2.5B valuation (amount conflicts: $250M vs $350M). Dealroom lists $6.47B (outlier) | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Poke raises $10M, values company at $300M",
+      "url": "https://letsdatascience.com/news/poke-raises-10m-values-company-at-300m-caa657f0",
+      "snippet": "Text-message (iMessage/SMS) personal AI assistant. | Not checked | $15M seed led by General Catalyst at $100M valuation (2025) + $10M from Spark Capital at $300M post-money (date conflicts across sources) | tier 3, MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "AI exec assistant startup Fyxer raises $30m to expand to the US",
+      "url": "https://sifted.eu/articles/ai-exec-assistant-startup-fyxer-raises-30m-to-expand-to-the-us",
+      "snippet": "AI executive assistant for inbox management and meeting follow-ups (Gmail, Outlook, Teams, Zoom). | Not checked | $30M Series B led by Madrona (with Lakestar), Sept 2025; ARR reported ~$16-17M (sources vary) | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Ex-Entree investor raises $5M seed for AI admin agent Catch",
+      "url": "https://dealroom.co/news/148442-ex-entr-e-investor-raises-5m-seed-for-ai-admin-agent-catch",
+      "snippet": "AI agent for executive administration: connects email, calendar, phone; scheduling and travel; approval in chat before any financial transaction. Tel Aviv. | Not found | $5M seed co-led by Entree Capital and Pitango (+ Factorial Capital, Seedcamp) | tier 2, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Former OpenAI, Cognition Staffers Want AI to Help Run a Business",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-08/former-openai-cognition-staffers-want-ai-to-help-run-a-business",
+      "snippet": "'Engines': AI agents that own a whole business goal for weeks/months (e.g., retention, procurement cost, lead conversion). Founded by ex-OpenAI/Cognition staff; CEO Moritz Stephan (ex-Cognition chief of staff). Does not use the CoS label but targets 'help run a business'. | Not public | $60M seed led by Benchmark with Index Ventures (co-)lead; $285M valuation (company-stated); Elad Gil, Hanabi, Definition, Diffusion participated | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Microsoft 365 E7: a $99 'Frontier Suite', the Future or an Expensive Bundle?",
+      "url": "https://office-watch.com/2026/microsoft-365-e7-a-99-frontier-suite-the-future-or-an-expensive-bundle/",
+      "snippet": "Per-seat copilot in Word/Excel/PowerPoint/Outlook/Teams. Researcher agent (multi-step research over internal + web data, positioned as an exec's research assistant) and Analyst agent (Python-based data analysis). Copilot Cowork: research preview built with Anthropic for long-running multi-step work. Agent 365: control plane for agents. | Copilot India Rs 2,495/user/month (carried_forward); M365 E7 $99/user/month (GA 2026-05-01; bundles E5 + Copilot + Entra Suite + Agent 365); Agent 365 standalone $15/user/month; agent compute extra | n/a | tier 3, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Google Announces New Gemini Enterprise Agent Platform",
+      "url": "https://thejournal.com/articles/2026/05/04/google-announces-new-gemini-enterprise-agent-platform.aspx",
+      "snippet": "Announced at Google Cloud Next '26 as 'an evolution of Vertex AI': model choice, model building, agent building (Agent Studio low-code, ADK), governance (Agent Identity), Agent Gallery inside the Gemini Enterprise app. A developer/IT platform, not an exec-facing product. | Platform: consumption, not published in article. Gemini Enterprise app ~$21 (Business) / ~$30 (Standard) / ~$50-60 (Plus) per user/month - third-party, NOT VERIFIED on Google page | Google $750M partner innovation fund (not customer pricing) | tier 2, HIGH (name/positioning); LOW (app pricing) confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "SAP Delivers Joule Agents Across Ariba and Fieldglass in June 2026",
+      "url": "https://sapinsider.org/blogs/sap-delivers-joule-agents-across-ariba-and-fieldglass-in-june-2026/",
+      "snippet": "ERP-native assistant/agents. Sapphire 2026 (May, Orlando) 'Autonomous Enterprise' vision: 50+ Joule assistants orchestrating 200+ agents (search_snippet). Managed Joule Studio GA planned Q3 2026. Procurement agents in Ariba/Fieldglass (June 2026). 11 Joule Assistants rolling out (5 June, 6 Sept 2026). | Core Joule included in SAP cloud subscriptions + metered premium via AI units (search_snippet); Joule Agent Runtime free for Ariba/Fieldglass customers through 2026-12-31 (fetched); 12 months free Joule Studio design-time (search_snippet) | n/a | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Agentforce Pricing",
+      "url": "https://www.salesforce.com/agentforce/pricing/",
+      "snippet": "CRM-native agents (employee and customer-facing), Agentforce Builder, Agentforce Coworker. | Official: Foundations $0; Flex Credits $500 per 100k credits (20 credits/action, 30/voice action); $2 per conversation; add-ons $125/user/mo (Sales/Service/Field Service), $150 (Industries); Max Edition from $550/user/mo incl. 2.75M Flex Credits/org/yr; Agentforce User License $5/user/mo (needs Flex Credits); Agentforce Coworker User License $50/user/mo | n/a | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "ServiceNow, Inc. Form 10-K FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm",
+      "snippet": "Moveworks (enterprise AI assistant + enterprise search) folded into ServiceNow as 'AI-native front door for work'. | n/a | Completed 2025-12-15. Total purchase consideration $2.4B per FY2025 10-K auditor's report (developed-technology intangible $505M); announced March 2025 at $2.85B. Search snippet of 10-K table: goodwill $1,748M, intangibles $770M, net assets $2,407M. 7,805,995 shares issued in unregistered sale at close | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Workday Signs Definitive Agreement to Acquire Sana",
+      "url": "https://newsroom.workday.com/2025-09-16-Workday-Signs-Definitive-Agreement-to-Acquire-Sana",
+      "snippet": "Sana (Sana Agents no-code agent builder, Sana Learn) becomes Workday's single AI interface / 'front door for work'. | n/a | Definitive agreement 2025-09-16, ~ $1.1B for all outstanding shares (Workday press release); completed 2025-11-04 (search_snippet of Workday newsroom); relaunched as 'Sana from Workday' 2026-03-17 (NOT VERIFIED) | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Sarvam Epoch summary",
+      "url": "https://www.sarvam.ai/epoch/summary",
+      "snippet": "'Sarvam Epoch' is Sarvam's first developer conference (2 days, Bengaluru, from 2026-07-30), not a product. Announced: Sarvam Inference (serving Sarvam + open-weight models such as GLM 5.2, Gemma 4 from India data centres); Indus agent platform containing Work Agents (AI coworkers that draft, research, analyse, run processes; live), Voice Agents, Document/Coding Agents; custom model training in India; trillion-parameter model in ~6 months. ~2,000 Blackwell GPUs, HCLTech Odisha data-centre partnership. 500+ organisations using products. | Sarvam 105B $0.80 per million blended tokens; Voice Agents Rs 3.50/minute; Work Agents and Inference: no price published | Reported $74M extension of $300M Series B incl. NVIDIA (Inc42, search_snippet - NOT VERIFIED) | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Gupshup Launches AI Agent Library",
+      "url": "https://www.destinationcrm.com/Articles/CRM-News/CRM-Across-the-Wire/Gupshup-Launches-AI-Agent-Library-168048.aspx",
+      "snippet": "15 pre-built, customisable B2C agents (lead gen, product discovery, order management) on Gupshup Conversation Cloud across WhatsApp, SMS, RCS, voice, web; vertical packs for D2C/retail/FMCG and BFSI. 'Gupshup Superagent' early-access banner - no details. | Not published | n/a | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "AI and data leaders invest in Uniphore to accelerate Business AI",
+      "url": "https://www.uniphore.com/blog/ai-and-data-leaders-invest-in-uniphore-to-accelerate-business-ai/",
+      "snippet": "'Sovereign, composable, secure' four-layer platform: zero-copy data layer, knowledge layer, model layer, agentic layer (BPMN workflows, MCP). Launched 2025-06-09. Acquired Orby AI; announced Autonom8 acquisition. | Not public | $260M Series F at $2.5B valuation, 2025-10-22 (NVIDIA, AMD, Snowflake, Databricks, NEA, March Capital, others) | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Zoho Launches Zia LLM and Deepens AI Portfolio with Prebuilt Agents, Custom Agent Builder, MCP, and Marketplace",
+      "url": "https://vietnamnews.vn/media-outreach/1722178/zoho-launches-zia-llm-and-deepens-ai-portfolio-with-prebuilt-agents-custom-agent-builder-mcp-and-marketplace.html",
+      "snippet": "Indian SaaS suite (55+ apps) with in-house Zia LLM (1.3B/2.6B/7B), 25+ prebuilt Zia Agents and Agent Studio (700+ actions across Zoho apps); Zia LLM deployed in Zoho's US, India and EU data centres. For an owner: AI on top of Zoho CRM/Books/Analytics data, but only for firms running on Zoho. | Zoho One India All-Employee ~Rs 1,250-1,500/employee/month annual; Flexible User ~Rs 3,500/user/month (reseller figures, NOT VERIFIED on Zoho page); Zia agent pricing 'at GA' (not stated in announcement); 2026 guides cite ~30M free tokens/month then $1/M tokens (NOT VERIFIED) | n/a (bootstrapped) | tier 1, HIGH (features); LOW (pricing) confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Freshdesk Freddy AI pricing per agent in 2026",
+      "url": "https://www.eesel.ai/blog/freshdesk-freddy-ai-pricing-per-agent-2026",
+      "snippet": "AI in Freshdesk/Freshservice: Freddy Copilot for agents, Freddy AI Agent for self-service resolution. Support/ITSM-centric; no owner-level cross-system view. | Copilot ~$29/agent/month annual (Pro/Enterprise only); AI Agent sessions ~$49 per 100 beyond 500 included (third-party, NOT VERIFIED on Freshworks page) | n/a (listed) | tier 3, LOW-MEDIUM confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Coming Soon: TallyPrime 7.1 with AI",
+      "url": "https://www.tallyatcloud.com/articles/coming-soon-tallyprime-71-with-ai-the-future-of-smart-accounting-and-business-automation",
+      "snippet": "Dominant Indian SME accounting/ERP. No official AI assistant announcement found; 'TallyPrime 7.1 with AI' appears only in third-party speculative posts. Owners rely on third-party add-ons (e.g., AI Accountant). | NOT VERIFIED (AI feature pricing) | n/a | tier 3, LOW confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "AI BRIEF | Jio Haptik launches 'AI for All'...",
+      "url": "https://mediabrief.com/ai-brief-jio-haptik-launches-ai-for-all/",
+      "snippet": "WhatsApp and voice AI agents for SMB customer engagement on Interakt; 22 Indian languages; CRM integrations. Customer-facing, not owner-facing. | Entry Rs 10,000 (2,000 conversations per other reports), then pay-as-you-go (~Rs 3-5/conversation claimed) | Reliance Jio Platforms subsidiary | tier 2, MEDIUM-HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Yellow.ai review / pricing roundups",
+      "url": "https://costbench.com/software/ai-chatbot-platforms/yellow-ai",
+      "snippet": "Agentic customer-service platform (AI Agent Builder 2.0, agentic retrieval, agent assist). 'Nexus EDGE' moving to employee desktops reportedly launched 2026-09-29 (NOT VERIFIED). | Quote-based beyond free tier; AWS Marketplace Basic $10,000/yr, Standard $25,000/yr (third-party, NOT VERIFIED) | Not checked | tier 3, LOW confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Power BI pricing (India)",
+      "url": "https://www.microsoft.com/en-in/power-platform/products/power-bi/pricing",
+      "snippet": "Dashboards/BI; owner sees KPIs but must pull, interpret, act himself (no brief, no drafted actions). | India: Pro Rs 1,165/user/month; Premium Per User Rs 1,995/user/month (annual, GST extra); Fabric capacity variable | n/a | tier 1, HIGH confidence",
+      "file_source": "competitors_research_aroh.json"
+    },
+    {
+      "title": "Zoho Analytics pricing",
+      "url": "https://www.zoho.com/analytics/pricing.html",
+      "snippet": "BI with Ask Zia AI agent (NL to pipelines/reports), conversational analytics, automated/diagnostic insights, smart recommendations. | Not shown on pricing page (calculator/sales); NOT VERIFIED | n/a | tier 1, HIGH (features); n/a (price) confidence",
+      "file_source": "competitors_research_aroh.json"
+    }
+  ]
 }

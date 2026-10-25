@@ -527,8 +527,14 @@ Extracts from these sections:
         help="Create default config if no sections found",
     )
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
+    parser.add_argument(
+        "--allow-defaults",
+        action="store_true",
+        help="Exit 0 even if core keys fall back to RapidTools template defaults",
+    )
 
     args = parser.parse_args()
+    extracted_keys = set()
 
     # Determine company name
     company = args.company or "Company"
@@ -557,6 +563,12 @@ Extracts from these sections:
             extracted = extractor(filepath)
             if extracted:
                 config = merge_configs(config, extracted)
+                # Extractors can return keys whose values are empty or still the
+                # template's; only count values that actually came from the plan
+                template = create_default_config(company)
+                extracted_keys.update(
+                    k for k, v in extracted.items() if v and v != template.get(k)
+                )
                 if args.verbose:
                     print(f"    → Extracted: {list(extracted.keys())}")
             else:
@@ -571,6 +583,15 @@ Extracts from these sections:
 
     # Set company name
     config["company"] = company
+
+    # Record which keys came from the plan vs the RapidTools template defaults,
+    # so a section format the regexes don't recognise can't pass as real data
+    core_keys = {"tam", "sam", "som", "revenue_streams", "funding"}
+    defaulted = sorted(k for k in config if k not in extracted_keys and k != "company")
+    config["_provenance"] = {
+        "extracted_from_plan": sorted(extracted_keys),
+        "template_defaults": defaulted,
+    }
 
     # Determine output path
     if args.output:
@@ -604,6 +625,14 @@ Extracts from these sections:
     print(f"  1. Review and edit: {output_path}")
     print(f"  2. Build model:")
     print(f"     python execution/build_financial_model.py --config {output_path}")
+
+    missing_core = sorted(core_keys & set(defaulted))
+    if args.sections_dir and missing_core:
+        print(f"\n⚠️  TEMPLATE DEFAULTS USED for core keys: {missing_core}")
+        print("   These are RapidTools values, not this plan's. Edit the config by hand")
+        print("   or adapt the section wording to the extractor's patterns.")
+        if not args.allow_defaults:
+            return 2
 
     return 0
 

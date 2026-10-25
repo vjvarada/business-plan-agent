@@ -1,0 +1,440 @@
+{
+  "company": "Aroh",
+  "currency": "INR",
+  "starting_year": 2027,
+  "num_years": 4,
+  "period_months": [
+    5,
+    12,
+    12,
+    12
+  ],
+  "year_labels": [
+    "Pre-launch (Nov 2026–Mar 2027)",
+    "FY2027–28",
+    "FY2028–29",
+    "FY2029–30"
+  ],
+  "tax_rate": 0.2517,
+  "general": {
+    "tax_rate": 0.2517,
+    "capex_y0": 2400000,
+    "capex_annual": 1000000,
+    "capex_by_year": [
+      2400000,
+      1000000,
+      1900000,
+      3500000
+    ],
+    "depreciation_years": 3,
+    "debtor_days": 15,
+    "creditor_days": 30,
+    "interest_rate": 0.0,
+    "cost_inflation": 0.0,
+    "tax_loss_carryforward": true,
+    "billing": "annual_upfront",
+    "fx_inr_per_usd": 95,
+    "deferred_revenue_by_year": [
+      129000000.0,
+      224033000.00000003,
+      408598000.0,
+      651863000.0
+    ]
+  },
+  "revenue_streams": [
+    {
+      "name": "Command subscription",
+      "price": 1800000.0,
+      "volume": 106.23,
+      "growth": 0.0,
+      "cogs_pct": 0.11935842,
+      "volume_by_year": [
+        3.25,
+        106.23,
+        234.1494,
+        422.9856
+      ],
+      "cogs_pct_by_year": [
+        0.4489735,
+        0.11935842,
+        0.10521042,
+        0.09932166
+      ]
+    },
+    {
+      "name": "Setup fees",
+      "price": 600000.0,
+      "volume": 103.1,
+      "growth": 0.0,
+      "cogs_pct": 0,
+      "volume_by_year": [
+        3.25,
+        103.1,
+        131.85,
+        197.5
+      ],
+      "cogs_pct_by_year": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Extra executive seats",
+      "price": 120000.0,
+      "volume": 6.26,
+      "growth": 0.0,
+      "cogs_pct": 0,
+      "volume_by_year": [
+        0.0,
+        6.2583,
+        210.625,
+        648.0
+      ],
+      "cogs_pct_by_year": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "headcount": {
+    "departments": [
+      {
+        "name": "Leadership",
+        "salary": 7200000.0,
+        "salary_by_year": [
+          7200000.0,
+          7200000.0,
+          7920000.000000001,
+          8712000.000000002
+        ],
+        "y0_count": 3,
+        "growth": 0.0,
+        "count_by_year": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "in_cogs": false
+      },
+      {
+        "name": "Engineering",
+        "salary": 2520000.0,
+        "salary_by_year": [
+          2520000.0,
+          2520000.0,
+          2772000.0,
+          3049200.0000000005
+        ],
+        "y0_count": 4,
+        "growth": 0.0,
+        "count_by_year": [
+          4,
+          4,
+          6,
+          10
+        ],
+        "in_cogs": false
+      },
+      {
+        "name": "Forward-deployed engineers",
+        "salary": 3000000.0,
+        "salary_by_year": [
+          3000000.0,
+          3000000.0,
+          3300000.0000000005,
+          3630000.0000000005
+        ],
+        "y0_count": 4,
+        "growth": 0.0,
+        "count_by_year": [
+          4,
+          4,
+          6,
+          12
+        ],
+        "in_cogs": true
+      },
+      {
+        "name": "Customer success",
+        "salary": 1800000.0,
+        "salary_by_year": [
+          1800000.0,
+          1800000.0,
+          1980000.0000000002,
+          2178000.0000000005
+        ],
+        "y0_count": 2,
+        "growth": 0.0,
+        "count_by_year": [
+          2,
+          5,
+          10,
+          17
+        ],
+        "in_cogs": true
+      },
+      {
+        "name": "Sales lead",
+        "salary": 3600000.0,
+        "salary_by_year": [
+          3600000.0,
+          3600000.0,
+          3960000.0000000005,
+          4356000.000000001
+        ],
+        "y0_count": 0,
+        "growth": 0.0,
+        "count_by_year": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "in_cogs": false
+      },
+      {
+        "name": "Account executives",
+        "salary": 1200000.0,
+        "salary_by_year": [
+          1200000.0,
+          1200000.0,
+          1320000.0,
+          1452000.0000000002
+        ],
+        "y0_count": 0,
+        "growth": 0.0,
+        "count_by_year": [
+          0,
+          4,
+          7,
+          10
+        ],
+        "in_cogs": false
+      }
+    ]
+  },
+  "fixed_costs": [
+    {
+      "name": "Category-creation marketing",
+      "annual_cost": 10000000,
+      "annual_cost_by_year": [
+        2000000,
+        10000000,
+        52585400,
+        95763400
+      ]
+    },
+    {
+      "name": "General & administrative",
+      "annual_cost": 4000000,
+      "annual_cost_by_year": [
+        1000000,
+        4000000,
+        31551240,
+        57458040
+      ]
+    },
+    {
+      "name": "Sales commission",
+      "annual_cost": 26649000,
+      "annual_cost_by_year": [
+        0,
+        26649000,
+        44550000,
+        62100000
+      ]
+    },
+    {
+      "name": "Onboarding and pilot travel",
+      "annual_cost": 7050000,
+      "annual_cost_by_year": [
+        3000000,
+        7050000,
+        11785000,
+        16430000
+      ]
+    },
+    {
+      "name": "Claude plans for the team",
+      "annual_cost": 2879856,
+      "annual_cost_by_year": [
+        1199940,
+        2879856,
+        4319784,
+        7487616
+      ]
+    },
+    {
+      "name": "Development & operations cloud (agent swarms, CI, staging)",
+      "annual_cost": 20000000,
+      "annual_cost_by_year": [
+        4000000,
+        20000000,
+        40000000,
+        70000000
+      ]
+    },
+    {
+      "name": "Security & certification (one-time)",
+      "annual_cost": 0,
+      "annual_cost_by_year": [
+        1270000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "AI & hosting before revenue",
+      "annual_cost": 0,
+      "annual_cost_by_year": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "funding": {
+    "rounds": [
+      {
+        "name": "DEWiN pre-launch capital (existing shareholders)",
+        "amount": 50000000.0,
+        "year": 0,
+        "existing_shareholders": true
+      }
+    ]
+  },
+  "tam": {
+    "streams": [
+      {
+        "name": "Owner Intelligence — Indian firms ₹100–5,000 Cr (38,003 accounts × ₹18L)",
+        "value_m": 68405.4,
+        "source": "Probe42 (MCA filings), Mar 2026",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  "sam": {
+    "regions": [
+      {
+        "name": "India — base SAM (8,361 accounts)",
+        "value_m": 15050,
+        "years": "FY2027–30"
+      }
+    ]
+  },
+  "market_unit": "₹ M",
+  "som": {
+    "terminal_revenue_m": 957.6
+  },
+  "sources": [
+    {
+      "ref": "[1]",
+      "source": "Probe42 (MCA filings), Mar 2026",
+      "data_point": "Indian companies at ₹100–5,000 Cr revenue",
+      "value": "38,003",
+      "url": "https://resources.probe42.in/wp-content/uploads/2026/04/Probe-Monthly-Newsletter-March-2026.pdf"
+    },
+    {
+      "ref": "[2]",
+      "source": "Ministry of MSME via Kashmir Life",
+      "data_point": "Registered medium enterprises, 31 Jul 2026",
+      "value": "41,722",
+      "url": "https://kashmirlife.net/jammu-kashmir-records-over-9-64-lakh-msme-registrations-since-2020-447368/"
+    },
+    {
+      "ref": "[3]",
+      "source": "Bloom et al., QJE 2013 / NBER 16658",
+      "data_point": "Owner hours per week; profit gain from better management",
+      "value": "68 hrs; ~$230,000/yr",
+      "url": "https://www.nber.org/papers/w16658"
+    },
+    {
+      "ref": "[4]",
+      "source": "IMF DataMapper (WEO)",
+      "data_point": "India nominal GDP 2030",
+      "value": "US$6.13T",
+      "url": "https://www.imf.org/external/datamapper/api/v1/NGDPD/IND"
+    },
+    {
+      "ref": "[5]",
+      "source": "PayScale / Indeed India (2026)",
+      "data_point": "Chief of Staff, EA, MIS, analyst salaries",
+      "value": "₹21.6–31.7L pool",
+      "url": "https://www.payscale.com/research/IN/Job=Chief_of_Staff/Salary"
+    },
+    {
+      "ref": "[6]",
+      "source": "Microsoft (India)",
+      "data_point": "Microsoft 365 Copilot per user per month",
+      "value": "₹2,495",
+      "url": "https://www.microsoft.com/en-in/copilot/pricing/enterprise"
+    },
+    {
+      "ref": "[7]",
+      "source": "Metorite Cost Plan (22 Oct 2026)",
+      "data_point": "AI cost per request; busiest user requests/day",
+      "value": "$0.0030 / $0.0008; 432",
+      "url": "https://claude.ai/artifact/KENqXY5J6s59B8hqHEvAAq"
+    },
+    {
+      "ref": "[8]",
+      "source": "Meritech Software Pulse, 9 Oct 2026",
+      "data_point": "Median public software EV / implied ARR",
+      "value": "4.4x",
+      "url": "https://meritech.substack.com/p/meritech-software-pulse-09-october"
+    },
+    {
+      "ref": "[9]",
+      "source": "FinVal Research (Tracxn data), Aug 2026",
+      "data_point": "Median Indian seed round; median Series A",
+      "value": "₹8.0 Cr; ₹50.8 Cr",
+      "url": "https://finvalresearch.in/india-startup-funding-report-2026/"
+    },
+    {
+      "ref": "[10]",
+      "source": "Aroh assumption register",
+      "data_point": "Owner decisions A-001 to A-092",
+      "value": "see register",
+      "url": ".tmp/aroh/notes/assumption_register.md"
+    }
+  ],
+  "valuation": {
+    "terminal_year": 3,
+    "wacc": 0.35,
+    "terminal_growth": 0.05,
+    "exit_multiple": 5.0
+  },
+  "customer_acquisition": {
+    "cac": 860000,
+    "churn_rate": 0.1,
+    "new_customers_y0": 57.0,
+    "new_customers_by_year": [
+      57.0,
+      98.7,
+      165.0,
+      230.0
+    ]
+  },
+  "_provenance": {
+    "built_by": ".tmp/aroh/config/build_aroh_config.py",
+    "scenario": "base",
+    "sources": [
+      "notes/assumption_register.md",
+      "revenue_calc.py",
+      "cost_calc.py",
+      "sizing_calc.py"
+    ],
+    "pending_confirmation": [
+      "working assumptions A-072",
+      "seed size after A-068 ramp change"
+    ],
+    "template_defaults": []
+  }
+}
